@@ -2,59 +2,235 @@
 \chapter{Numerical Benchmarks}
 \labch{numbench}
 
+In the upcoming sections, we demonstrate the robustness and accuracy of our class of mass-momentum consistent numerical methods when applied to challenging high density-ratio flow configurations, primarily in comparison to the version of our method which does not maintain consistency between the mass and momentum advection. Most of the standard tests that exist in the current literature concerning numerical methods to tackle liquid-gas flows such as the decay of spurious currents in static and moving droplets, viscous damping of capillary waves etc., are carried out in the absence of any density jump (or viscosity jump) across the interface separating the fluids. In this chapter, we shall take a closer look in detail at the behavior of our methods when dealing with difficulties that arise due to the non-linear coupling between interfacial deformation/propagation, capillary and viscous forces, especially in the regime where the material properties across the interface are separated by orders of magnitude, particularly in which the flow features in question are poorly resolved. 
 
-%---------------------------------------------------------------
+In order to assess the performance of the different methods, we shall use an easier nomenclature to describe the different methods, which are as follows : 
+
+\begin{itemize}
+	\item \textbf{M1} Method with non-consistent momentum-mass transport.
+	\item \textbf{M2} Method with consistent momentum-mass transport, but not conservative. Uses half-fractions strategy. 
+	\item \textbf{M3} Method with consistent and conservative momentum-mass transport. Uses sub-grid strategy. 
+\end{itemize}
+
+
 \section{Static Droplet}
+\labsec{static}
 
-\paragraph{Setup}
-\blindtext
+A popular numerical benchmark in the existing literature relevant to surface tension dominated flows is the case of a spherical droplet of the denser fluid immersed in a quiescent surrounding medium of the lighter fluid. In the hydrostatic limit of the Navier-Stokes equations, the droplet should stay in equilibrium, with a curvature induced pressure jump across the interface corresponding to Laplace's equilibrium. In practice however, numerically reproducing such a trivial equilibrium condition is not as straighforward, as there exists a slight difference between the initial numerical interface and the exact analytical shape of the sphere, thereby resulting in the generation of the well documented '\textit{spurious}' or '\textit{parasitic}' currents of varying intensity in the velocity field \sidecite{lafaurie1994modelling, harvie2006analysis, popinet1999front}. A lot or progress has been made since in the context of \textit{well-balanced} surface tension formulations, that ensure consistency between the numerical stencils used for the discretization of the pressure gradient and the Heaviside approximation ($n \delta_{s}$) that projects the the surface force distribution onto the control volumes \cite{francois2006balanced,popinet2009accurate}. A significant contribution to the interpretation of these parasitic currents within the well-balanced framework was made by Popinet \cite{popinet2009accurate} which demonstrated that given sufficient time (of the order of viscous dissipation time-scales), a well-balanced method will relax to the '\textit{numerical}' equilibrium shape through the damping of the 'physically consistent' numerical capillary waves, therefore allowing us to recover the exact (to machine precision) Laplace equilibrium condition.
 
-\paragraph{Decay of Spurious Currents}
-\blindtext
+\subsection*{Setup}
 
-\paragraph{Spatial Convergence}
+% insert figure  
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{plots/static_drop/config.png}
+    \caption{Schematic of the static droplet of dense fluid surrounded by a quiescent medium of lighter fluid. A $40 \times 40$ grid is employed to spatially discretize the domain.}
+    \label{static_conf}
+\end{figure}
+
+% difference in our setup in terms of high-density ratios
+The key difference in our implementation of this classic test case from that of Popinet \sidecite{popinet2009accurate} is that we consider the effect of density contrast across the interface separating the fluids. As we have previously discussed, a sharp density jump across the interface has an amplification effect on the numerical errors incurred as a result of interfacial reconstructions, curvature estimation and various other truncations, thereby rendering the method unstable. We demonstrate that in our framework of mass consistent momentum transport coupled with a well-balanced surface tension discretization, density-ratios as large as $1000:1$ can be simulated without loss of numerical stability, in conjuction with the ability to recover the exact numerical equilibrium through the dissipation of spurious currents within relevant time-scales \sidenote{The viscous time-scale corresponding to the droplet length-scale is the most commonly used in literature.}.
+
+% specification of numerical problem setup, domain, densities and viscosities
+We consider a circular droplet of size $D$  placed at the centre of a square domain of side $L$. The densities of the heavier and lighter phases are $\rho_l$ and $\rho_g$ respectively, likewise for the viscosities $\mu_l$ and $\mu_g$, and $\sigma$ being the surface tension coefficient (fig. \ref{static_conf}). The ratio of the droplet size to the box is chosen as $D/L = 0.4$, coupled with a numerical resolution of $D/\Delta x= 12.8$ (where $\Delta x$ is the grid size). As for boundary conditions, we use symmetry conditions on all sides of the square domain.
+
+% specification of problem parameters and adimensional numbers 
+The problem incorporates two natural time-scales, the capillary oscillation scale and the viscous dissipation scale, which are defined below :
+
+\begin{align}
+        T_\sigma = \left(\frac{\rho_l D^3}{\sigma}\right)^{1/2} \quad , \quad T_\mu = \frac{\rho_l D^2}{\mu_l}
+\label{ts}
+\end{align}
+
+The ratio of these time-scales give us -
+
+\begin{align}
+        \frac{T_\mu}{T_\sigma} = \sqrt{\rho_l \sigma D}/\mu_l = \sqrt{La}
+\end{align}
+
+where $La$ is the Laplace number based upon the heavier fluid. In the present study, we introduce the density-ratio $\rho_l/\rho_g$ as another important parameter. In order to rescale our 'parasitic' velocity field, we define a velocity scale based on capillary oscillations as -
+
+\begin{align}
+        U_\sigma = \sqrt{\sigma/\rho_l D}
+\end{align}
+
+Additionally, the time-step in our numerical simulation must be smaller than the oscillation period corresponding to the grid wavenumber (fastest capillary wave with a time period $\sim \left( \rho_l \Delta x^3 / \sigma  \right)^{1/2} $ ) as a stability criterion \sidenote{Similar criteria are defined on the basis of the viscous and advection operators as well, with the smallest amongst the three selecting the numerical time-step}, as our surface tension model is explicit in time. For the scope of the present study, we shall not consider any viscosity contrast between the two fluids while varying the density-ratio, therefore $\mu_l/\mu_g = 1$ .
+
+
+\subsection*{Decay of Spurious Currents}
+
+In figures \ref{decay_nonmc} to \ref{decay_sagar}, we illustrate the decay of the root-mean-square of the spurious currents as a function of time, in the case of four different density-ratios, with three different Laplace numbers for each ratio. The first figure (\ref{decay_nonmc}) refers to simulations carried out without consistency between the momentum-mass transport (M1), the second (\ref{decay_daniel}) corresponds to that of the consistent but not conservative method (M2), and final one (\ref{decay_sagar}) refers to that of the consistent and conservative method (M3). The time is rescaled by the viscous dissipation scale, and the spurious currents by the capillary velocity scale. We can clearly observe that magnitude of the normalized spurious currents decay rapidly to the levels of machine precision, and that at much faster time-scales than $T_\mu$ for the higher density-ratio cases. It is important to note that the solver displays the desired functionality and robustness for density-ratios as well as Laplace numbers, both of which span several orders of magnitude.
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[]{plots/static_drop/nonmc.png}
+	\caption{\textbf{M1} Decay of normalized spurious currents as a function of viscous dissipation time-scales for different density-ratios and Laplace numbers. The currents seem to initially decay quickly for all higher density-ratios, and relax to the numerical equilibrium curvature even within $0.2 \cdot T_\mu$. For combinations of large $\rho_l / \rho_g$ and large $La$, the spurious currents seem to grow back to an order of magnitude ($10^{-3}$) which is quite far from that of machine precision ($10^{-14}$).}   
+    \label{decay_nonmc}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[]{plots/static_drop/daniel.png}
+	\caption{\textbf{M2} Decay of normalized spurious currents as a function of viscous dissipation time-scales for different density-ratios and Laplace numbers. The currents seem to initially decay quickly for all higher density-ratios, and relax to the numerical equilibrium curvature even within $0.2 \cdot T_\mu$. For combinations of large $\rho_l / \rho_g$ and large $La$, the spurious currents seem to grow back to an order of magnitude ($10^{-3}$) which is quite far from that of machine precision ($10^{-14}$). No considerable improvement is observed with respect to \textbf{M1}. }   
+    \label{decay_daniel}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[]{plots/static_drop/sagar.png}
+	\caption{\textbf{M3} Decay of normalized spurious currents as a function of viscous dissipation time-scales for different density-ratios and Laplace numbers. The currents seem to decay very quickly in the case of higher density-ratios, and relax to the numerical equilibrium curvature even within $0.2 \cdot T_\mu$. For all combinations of $\rho_l / \rho_g$ and the highest $La$ number, the spurious currents first decay very quickly and then grow back to an order of magnitude $10^{-3}$ at a slower pace. All other combinations of density-ratio and Laplace numbers do seem to decay to an order of magnitude close to machine precision ($10^{-14}$). There is a slight mprovement over \textbf{M1} and \textbf{M2}, especially for all except the highest Laplace number.}   
+    \label{decay_sagar}
+\end{figure}
+
+
+
+\subsection*{Spatial Convergence}
 \blindtext
 
 %---------------------------------------------------------------
 
 \section{Moving Droplet}
 
-\paragraph{Setup}
+An incisive numerical setup which evaluates the accuracy of the coupling between interfacial propagation and surface tension discretization was first proposed by Popinet \cite{popinet2009accurate}, subsequently employed in the comparative study of Abadie et al. \sidecite{abadie2015combined}. The manner in which this test differs from that of the static droplet is the presence of a uniform background velocity field, therefore serving as a better representation of droplets in complex surface tension dominated flows where they might be advected by the mean flow.
+
+\subsection*{Setup}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{plots/droplet_advect/config.png}
+    \caption{Schematic of the droplet of dense fluid advected in a surrounding medium of lighter fluid. A $64 \times 64$ grid is employed to spatially discretize the domain, which is spatially periodic in the direction of droplet advection.}
+    \label{moving_conf}
+\end{figure}
+
+In terms of the Laplace equilibrium, the hydrostatic solution is still valid in the frame of reference of the moving droplet. The point at which the solution in the moving reference frame diverges from that of the static droplet (\ref{sec:static}) is through the continuous injection of noise at the scale of the grid size. This 'numerical' noise emanates from the perturbations to the curvature estimates, which are in turn induced by the interfacial reconstructions carried out to propagate the interface. These fluctuating errors act as source terms for the momentum, thereby transforming the problem into that of viscous dissipation in the presence of continuous forcing (in the moving reference frame).
+
+In the present study, we evaluate our method using the advection of a droplet in a spatially periodic domain in the same setup as \cite{popinet2009accurate}, but with the important difference of including sharp density jumps across the interface. As previously discussed (\ref{sec:static}), high density-ratios tend to rapidly amplify the fluctuations induced by the myriad numerical approximations (interface reconstruction, curvature estimation etc) involved in the algorithm, thereby leading to loss of numerical stability.
+
+We again consider a circular droplet of size $D$ placed at the centre of a square domain of side $L$. The densities of the heavier and lighter phases are $\rho_l$ and $\rho_g$ respectively, likewise for the viscosities $\mu_l$ and $\mu_g$, and $\sigma$ being the surface tension coefficient (fig. \ref{static_conf}). A uniform velocity field $U$ is initialized on the entire domain (horizontal direction). The ratio of the droplet size to the box is $D/L = 0.4$, with $D/\Delta x= 25.6$ ($\Delta x$ being the grid size). As for boundary conditions, we use symmetry conditions on the top and bottom sides, and periodic boundary conditions on the horizontal direction (along which advection by $U$ takes place).
+
+We characterize by problem by introducing the following adimensional numbers (based on the heavier fluid) :
+
+\begin{align}
+        La = \frac{\rho_l \sigma D}{\mu_l^2} \quad , \quad We = \frac{\rho_l U^2 D}{\sigma}
+\end{align}
+
+In addition to the capillary and viscous time-scales for the static case (eqns. \ref{ts}), we have an additional scale defined as :
+
+\begin{align}
+     T_U = D/U
+\end{align}
+
+
+\subsection*{Evolution of Spurious Currents}
 \blindtext
 
-\paragraph{Evolution of Spurious Currents}
+\subsection*{Spatial Convergence}
 \blindtext
 
-\paragraph{Spatial Convergence}
-\blindtext
-
-\paragraph{Error Dependence : Laplace \& Weber numbers}
+\subsection*{Error Dependence : Laplace \& Weber numbers}
 \blindtext
 
 %---------------------------------------------------------------
 
 \section{Capillary Wave}
+One of fundamental features of immiscible multiphase flows involving interfaces are the presense and propagation of capillary waves. Therefore, a robust and accurate numerical method should not only be able to adequately resolve, but also accurately emulate the spatio-temporal evolution of such surface tension induced oscillations. A brief outline on the numerical implementations of capillary waves in existing literature is provided by Popinet in the comprehensive review \sidecite{popinet2018numerical}.
 
-\paragraph{Setup}
+\subsection*{Setup}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.6\textwidth]{plots/capwave/config.png}
+	\caption{Schematic of the initially perturbed planar interface separating two immiscible fluids of different densities and viscosities. A spatial resolution of $32 \times 96$ is used for spatial discretization (compared to $64 \times 192$ in Popinet \cite{popinet2009accurate}), with the width of the box corresponding to the size of the perturbed wavelength.}
+    \label{capwave_conf}
+\end{figure}
+
+
+Ideally, we would like to evaluate the accuracy of our method compared to the analytical solution of damped capillary oscillations. Analytical solutions exist for the case of extremely small initial perturbations, either in the inviscid limit (Lamb \sidecite{lamb1993hydrodynamics}) or the asymptotic limit of vanishing viscosity (Prosperetti \sidecite{prosperetti1980free,prosperetti1981motion}). In the present study, we use the configuration of the viscosity-damped capillary oscillations of a planar interface, as was first implemented and popularized by Popinet \& Zaleski \cite{popinet1999front}.  
+
+We consider a rectangular domain of dimensions $L \times 3L$, where $L$ corresponds to the wavelength of our initial perturbation. The densities of the heavier and lighter phases are $\rho_l$ and $\rho_g$ respectively, likewise for the viscosities $\mu_l$ and $\mu_g$, and $\sigma$ being the surface tension coefficient (fig. \ref{capwave_conf}). An intial perturbation amplitude of $L/100$ is used, coupled with a numerical resolution given by $L/\Delta x= 32$ ($\Delta x$ being the grid size). Symmetry conditions are applied on the top and bottom sides, with periodic conditions along the horizontal direction. We use the following adimensional parameters to characterize our problem : 
+
+\begin{align}
+	T_0 = T \omega_0 \quad , \quad La = \frac{\rho_l \sigma L}{\mu_l^2}  
+\end{align}
+
+where $La$ is the Laplace number based on the heavier fluid, and $\omega_0$ is defined using the dispersion relation \cite{popinet2009accurate} given as : 
+
+\begin{align}
+	\omega_0^2 =  \frac{\sigma k^3}{2 \rho_l} \quad, \qquad \text{where} \quad k = \frac{2\pi}{L}   
+\end{align}
+
+The dispersion relation is obtained via linear stability analysis at the inviscid limit \cite{lamb1993hydrodynamics}. In order to evaluate the influence of density-ratio on the performance of our method, we use 3 different numerical setups keeping the same Laplace number ($La = 3000$) as follows : 
+
+\begin{itemize}
+	\item $\rho_l/\rho_g = 1$ , $\mu_l/\mu_g = 1$  (Popinet \cite{popinet2009accurate}) 
+	\item $\rho_l/\rho_g = 10$ , $\mu_l/\mu_g = 1$   
+	\item $\rho_l/\rho_g = 1000.0/1.2$ , $\mu_l/\mu_g = 1.003\cdot 10^{-3}/1.8\cdot 10^{-5}$ (Air-Water) 
+\end{itemize}
+% verify the laplace numbers in the adimensional form and paris scripts
+
+
+\subsection*{Comparison with Prosperetti Solution}
 \blindtext
 
-\paragraph{Comparison with Prosperetti Solution}
-\blindtext
-
-\paragraph{Spatial Convergence}
+\subsection*{Spatial Convergence}
 \blindtext
 
 %---------------------------------------------------------------
 
 \section{Falling Raindrop}
 
-\paragraph{Setup}
+A flow configuration that combines the complexities of high density-ratios with the interaction between capillary, viscous and inertial stresses is that of a water droplet falling in air under the influence of gravitational acceleration. 
+
+
+\subsection*{Setup}
+The problem is characterized by a combination of Reynolds, Weber and Bond numbers, the definitions of which are as follows : 
+
+\begin{align}
+We=\frac{\rho_{g} U^2 d}{\sigma} \quad,\quad Re= \frac{\rho_{g} U d}{\mu_{g}} \quad,\quad Bo=\frac{\left(\rho_{l}-\rho_{g}\right) g d^2 }{\sigma}
+\end{align}
+
+where the subscripts $l$ and $g$ refer to the liquid phase (water) and the gas phase (air), respectively. In our particular numerical setup, $We \simeq 3.2 $, $Re \simeq 1455 $ and $Bo \simeq 1.2 $, thus corresponding to that of a $3mm$ diameter raindrop (a relatively large one) falling in air at an approximate terminal velocity of  $8$ m/s (interpolated from empirical data, refer to  \cite{gunn1949terminal}). The parameters in the problem setup are given in Table \ref{raindropprop}, and the schematic diagram given by Fig. \ref{setup}. The droplet is initially placed at the center of a cubic domain (3D), whose side is 4 times the diameter of the drop. 
+
+% Table of droplet setup parameters 
+\begin{table*}[h!]
+\begin{center}
+\begin{tabular}{ccccccc}
+\hline\hline
+$\rho_{g}$ & $\rho_{l}$ & $\mu_{g}$ 
+& $\mu_{l}$ & $\sigma$ & $d$ & $g$\\
+$\left(kg/m^3\right)$ & $\left(kg/m^3\right)$ & $\left(Pa \, s\right)$ 
+& $\left(Pa \,s \right)$ & $\left(N/m\right)$ & $(m)$ & $(m /s^{2})$ \\
+\hline
+1.2 & $0.9982 \times 10^3$ & $1.98 \times 10^{-5}$ & 
+$8.9 \times 10^{-4}$ & $0.0728$ & $3 \times 10^{-3}$ & $9.81$\\
+\hline\hline
+\end{tabular}
+\caption{Parameter values used in the simulation of a falling water droplet in air. 
+\label{raindropprop}}
+\end{center}
+\end{table*}
+% -----
+
+In order to properly reproduce and analyse the dynamics of a relatively large drop (high Reynolds flow) such as in our case, the numerical method has to accurately resolve the thin boundary layers, the interaction of such layers with the capillary forces and finally the non-linear feedback of the complex 3D vortical structures present in the wake behind the droplet. Therefore, our objective behind the demonstration of this particular test case is not to develop a high fidelity model of a raindrop, but rather carry out a stringent evaluation of the robustness of our numerical method compared to the standard version of our solver which is not momentum consistent. For such a low Weber number the capillary forces dominate and the droplet should remain intact, and definitely not undergoe any subsequent atomization. 
+
+
+% -----
+% Schemetic of case setup with boundary conditions
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{plots/raindrop/setup.png}
+\end{center}
+\caption{A 2D schematic of the numerical setup for the falling raindrop. We apply a uniform inflow velocity condition with $U_0(t)$ and an outflow velocity condition at the top which corresponds to zero gradient of the velocity at the boundary. Boundary conditions on the side walls correspond to those of free slip (no shear stress).}
+\label{setup}
+\end{figure}
+
+
+\subsection*{Temporal Evolution : Kinetic Energy, Mass, Moment of Inertia}
 \blindtext
 
-\paragraph{Temporal Evolution : Kinetic Energy, Mass, Moment of Inertia}
-\blindtext
-
-\paragraph{Convergence of Velocity \& Acceleration}
+\subsection*{Convergence of Velocity \& Acceleration}
 \blindtext
 
 
