@@ -12,6 +12,7 @@ In order to assess the performance of the different methods, we shall use an eas
 	\item \textbf{M3} Method with consistent and conservative momentum-mass transport. Uses sub-grid strategy. 
 \end{itemize}
 
+%------------------------------------------ STATIC DROP ---------------------------------------------
 
 \section{Static Droplet}
 \labsec{static}
@@ -30,7 +31,7 @@ A popular numerical benchmark in the existing literature relevant to surface ten
 \end{figure}
 
 % difference in our setup in terms of high-density ratios
-The key difference in our implementation of this classic test case from that of Popinet \sidecite{popinet2009accurate} is that we consider the effect of density contrast across the interface separating the fluids. As we have previously discussed, a sharp density jump across the interface has an amplification effect on the numerical errors incurred as a result of interfacial reconstructions, curvature estimation and various other truncations, thereby rendering the method unstable. We demonstrate that in our framework of mass consistent momentum transport coupled with a well-balanced surface tension discretization, density-ratios as large as $1000:1$ can be simulated without loss of numerical stability, in conjuction with the ability to recover the exact numerical equilibrium through the dissipation of spurious currents within relevant time-scales \sidenote{The viscous time-scale corresponding to the droplet length-scale is the most commonly used in literature.}.
+The key difference in our implementation of this classic test case from that of Popinet \sidecite{popinet2009accurate} is that we consider the effect of density contrast across the interface separating the fluids. As we have previously discussed, a sharp density jump across the interface may have an amplification effect on the numerical errors incurred as a result of interfacial reconstructions, curvature estimation and various other truncations, thereby rendering the method unstable. We demonstrate that in our framework of mass consistent momentum transport coupled with a well-balanced surface tension discretization, density-ratios as large as $1000:1$ can be simulated without loss of numerical stability, in conjuction with the ability to recover the exact numerical equilibrium through the dissipation of spurious currents within relevant time-scales \sidenote{The viscous time-scale corresponding to the droplet length-scale is the most commonly used in literature.}.
 
 % specification of numerical problem setup, domain, densities and viscosities
 We consider a circular droplet of size $D$  placed at the centre of a square domain of side $L$. The densities of the heavier and lighter phases are $\rho_l$ and $\rho_g$ respectively, likewise for the viscosities $\mu_l$ and $\mu_g$, and $\sigma$ being the surface tension coefficient (fig. \ref{static_conf}). The ratio of the droplet size to the box is chosen as $D/L = 0.4$, coupled with a numerical resolution of $D/\Delta x= 16$ (where $\Delta x$ is the grid size). As for boundary conditions, we use symmetry conditions on all sides of the square domain.
@@ -60,7 +61,7 @@ Additionally, the time-step in our numerical simulation must be smaller than the
 
 \subsection*{Decay of Spurious Currents}
 
-In figures \ref{decay_nonmc} to \ref{decay_sagar}, we illustrate the decay of the root-mean-square of the spurious currents as a function of time, in the case of four different density-ratios, with three different Laplace numbers for each ratio. The first figure (\ref{decay_nonmc}) refers to simulations carried out without consistency between the momentum-mass transport (M1), the second (\ref{decay_daniel}) corresponds to that of the consistent but not conservative method (M2), and final one (\ref{decay_sagar}) refers to that of the consistent and conservative method (M3). The time is rescaled by the viscous dissipation scale, and the spurious currents by the capillary velocity scale. We have two main observations, the rapid decay of the rescaled spurious currents for all combinations of density-ratios and Laplace numbers within approximately $0.2 T_{\mu}$, and the slower re-growth of the currents in question for combinations of non-unity density-ratios and large Laplace numbers, in all simulations except those carried out with \textbf{M3}. With method \textbf{M3}, the decayed currents keep hovering around levels of machine precision for remainder of time. Although there is a re-growth of the currents using the consistent method (\textbf{M2}) after $0.2 T_{\mu}$, the behavior is not quite alarming as the rate of this re-growth is quite low. Therefore, out of all the methods tested, the consistent and conservative method (\textbf{M3}) does seem to demonstrate the desired performance, especially when it comes to combinations of large density contrasts coupled with large Laplace numbers.   
+In figures \ref{decay_nonmc} to \ref{decay_sagar}, we illustrate the decay of the root-mean-square of the spurious currents as a function of time, in the case of four different density-ratios, with three different Laplace numbers for each ratio. The first figure (\ref{decay_nonmc}) refers to simulations carried out without consistency between the momentum-mass transport (\textbf{M1}), the second (\ref{decay_daniel}) corresponds to that of the consistent but not conservative method (\textbf{M2}), and final one (\ref{decay_sagar}) refers to that of the consistent and conservative method (\textbf{M3}). The time is rescaled by the viscous dissipation scale, and the spurious currents by the capillary velocity scale. We have two main observations, the rapid decay of the rescaled spurious currents for all combinations of density-ratios and Laplace numbers within approximately $0.2 T_{\mu}$, and the slower re-growth of the currents in question for combinations of non-unity density-ratios and large Laplace numbers, in all simulations except those carried out with \textbf{M3}. With method \textbf{M3}, the decayed currents keep hovering around levels of machine precision for remainder of time. Although there is a re-growth of the currents using the consistent method (\textbf{M2}) after $0.2 T_{\mu}$, the behavior is not quite alarming as the rate of this re-growth is quite low. Therefore, out of all the methods tested, the consistent and conservative method (\textbf{M3}) does seem to demonstrate the desired performance, especially when it comes to combinations of large density contrasts coupled with large Laplace numbers.   
 
 
 \begin{figure}[h!]
@@ -107,12 +108,11 @@ Fig. \ref{static_drop_conv} demonstrates the behavior of the shape errors define
 \end{figure}
 
 
-
-%---------------------------------------------------------------
+%------------------------------------------ MOVING DROP ---------------------------------------------
 
 \section{Moving Droplet}
 
-An incisive numerical setup which evaluates the accuracy of the coupling between interfacial propagation and surface tension discretization was first proposed by Popinet \cite{popinet2009accurate}, subsequently employed in the comparative study of Abadie et al. \sidecite{abadie2015combined}. The manner in which this test differs from that of the static droplet is the presence of a uniform background velocity field, therefore serving as a better representation of droplets in complex surface tension dominated flows where they might be advected by the mean flow.
+An incisive numerical setup that enables us to evaluate the accuracy of the coupling between interfacial propagation and surface tension discretization was first proposed by Popinet \cite{popinet2009accurate}, and subsequently employed in the comparative study of Abadie et al. \sidecite{abadie2015combined}. The manner in which this test differs from that of the static droplet is the addition of a uniform background velocity field, therefore serving as a better representation of droplets in complex surface tension dominated flows where they might be advected by the mean flow. In terms of the Laplace equilibrium, the hydrostatic solution is still valid in the frame of reference of the moving droplet. The point at which the solution in the moving reference frame diverges from that of the static droplet (\ref{sec:static}) is through the continuous injection of noise at the scale of the grid size. This 'numerical' noise emanates from the perturbations to the curvature estimates, which are in turn induced by the interfacial reconstructions carried out to propagate the interface (temporal integration) . These fluctuating errors act as source terms for the momentum, thereby transforming the problem into that of viscous dissipation in the presence of continuous forcing (in the reference frame of the moving drop).
 
 \subsection*{Setup}
 
@@ -123,13 +123,9 @@ An incisive numerical setup which evaluates the accuracy of the coupling between
     \label{moving_conf}
 \end{figure}
 
-In terms of the Laplace equilibrium, the hydrostatic solution is still valid in the frame of reference of the moving droplet. The point at which the solution in the moving reference frame diverges from that of the static droplet (\ref{sec:static}) is through the continuous injection of noise at the scale of the grid size. This 'numerical' noise emanates from the perturbations to the curvature estimates, which are in turn induced by the interfacial reconstructions carried out to propagate the interface. These fluctuating errors act as source terms for the momentum, thereby transforming the problem into that of viscous dissipation in the presence of continuous forcing (in the moving reference frame).
+In the present study, we evaluate our class of methods using the advection of a droplet in a spatially periodic domain using an identical setup as \cite{popinet2009accurate}, but with the important difference of including sharp density jumps across the interface as well as using lower spatial resolutions. As previously discussed (\ref{sec:static}), high density-ratios tend to amplify the fluctuations induced by the myriad numerical approximations (interface reconstruction, curvature estimation etc) involved in the algorithm.
 
-In the present study, we evaluate our method using the advection of a droplet in a spatially periodic domain in the same setup as \cite{popinet2009accurate}, but with the important difference of including sharp density jumps across the interface. As previously discussed (\ref{sec:static}), high density-ratios tend to rapidly amplify the fluctuations induced by the myriad numerical approximations (interface reconstruction, curvature estimation etc) involved in the algorithm, thereby leading to loss of numerical stability.
-
-We again consider a circular droplet of size $D$ placed at the centre of a square domain of side $L$. The densities of the heavier and lighter phases are $\rho_l$ and $\rho_g$ respectively, likewise for the viscosities $\mu_l$ and $\mu_g$, and $\sigma$ being the surface tension coefficient (fig. \ref{static_conf}). A uniform velocity field $U$ is initialized on the entire domain (horizontal direction). The ratio of the droplet size to the box is $D/L = 0.4$, with $D/\Delta x= 20$ ($\Delta x$ being the grid size). As for boundary conditions, we use symmetry conditions on the top and bottom sides, and periodic boundary conditions on the horizontal direction (along which advection by $U$ takes place).
-
-We characterize by problem by introducing the following adimensional numbers (based on the heavier fluid) :
+We consider a circular droplet of diameter $D$ placed at the centre of a square domain of side $L$. The densities of the heavier and lighter phases are $\rho_l$ and $\rho_g$ respectively, likewise for the viscosities $\mu_l$ and $\mu_g$, and $\sigma$ being the surface tension coefficient (fig. \ref{moving_conf}). A uniform velocity field $\boldsymbol{U}$ is initialized on the entire domain (only a horizontal component). The ratio of the droplet size to the box is $D/L = 0.4$, with $D/\Delta x= 20$ ($\Delta x$ being the grid size. \sidenote{In Popinet \cite{popinet2009accurate}, a resolution of $D / \Delta x = 25.6$ corresponding to a grid of $64 \times 64$ is used } ). As for boundary conditions, we use symmetry conditions on the top and bottom sides, and periodic boundary conditions on the horizontal direction (along which advection by $U$ takes place). We characterize by problem by introducing the following adimensional parameters (based on the heavier fluid) :
 
 \begin{align}
         La = \frac{\rho_l \sigma D}{\mu_l^2} \quad , \quad We = \frac{\rho_l U^2 D}{\sigma}
@@ -145,42 +141,49 @@ which is the time-scale of advection. In our subsequent analysis, we shall use $
 
 \subsection*{Evolution of Spurious Currents}
 
-Figures \ref{evo_nonmc} tp \ref{evo_sagar} depict the evolution of the root-mean-square (RMS) error of the velocity field in the moving frame of reference, as a function of different Laplace numbers, spanning over orders of magnitude with respect to density-ratio ($\rho_l/\rho_g$). We observe that the spurious currents do not decay to machine precision as in static droplet case, instead oscillate around a mean value of the order of $0.1 \% $ of the constant field $U$. For larger density-ratios, there is a slight upward trend with respect to a time-scale much larger than $T_U$, with the oscillations corresponding to a time-scale of the order $U/\Delta x$. All of the plots in figures \ref{evo_nonmc} tp \ref{evo_sagar} correspond to $We = 0.4$, alongside an additional simplification of no viscosity contrast across the interface i.e $\mu_l/\mu_g = 1$ .
-
-As evindenced by the persistence of the spurious currents due to the addition of interfacial propagation, further advancements should be made with respect to the combined performace of the interfacial transport, curvature computation and the surface tension model. Nonetheless, the present method seems to be quite numerically stable when dealing with the high density-ratios, and are not subject to rapid uncontrollable amplifications of the interfacial perturbations even for high Laplace numbers.
-
 \begin{figure}[h!]
     \centering
     \includegraphics[]{plots/droplet_advect/evo_nonmc.png}
-	\caption{\textbf{M1} Decay of normalized spurious currents as a function of viscous dissipation time-scales for different density-ratios and Laplace numbers. The currents seem to initially decay quickly for all higher density-ratios, and relax to the numerical equilibrium curvature even within $0.2 \cdot T_\mu$. For combinations of large $\rho_l / \rho_g$ and large $La$, the spurious currents seem to grow back to an order of magnitude ($10^{-8}$) which is quite far from that of machine precision ($10^{-14}$).}   
+	\caption{\textbf{M1} Time evolution of normalized spurious currents as a function of advection time-scales ($T_u$) for different combinations of density-ratio and Laplace numbers. The currents seem to hover around $10^{-3}$, with a larger Laplace number corresponding to a higher error for all density-ratios. $We = 0.4$ for all the cases presented.}   
     \label{evo_nonmc}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[]{plots/droplet_advect/evo_daniel.png}
-	\caption{\textbf{M2} Decay of normalized spurious currents as a function of viscous dissipation time-scales for different density-ratios and Laplace numbers. The currents seem to initially decay quickly for all higher density-ratios, and relax to the numerical equilibrium curvature even within $0.2 \cdot T_\mu$. For combinations of large $\rho_l / \rho_g$ and large $La$, the spurious currents seem to grow back to an order of magnitude ($10^{-8}$) which is quite far from that of machine precision ($10^{-14}$). No considerable improvement is observed with respect to \textbf{M1}. }   
+	\caption{\textbf{M2} Time evolution of normalized spurious currents as a function of advection time-scales ($T_u$) for different combinations of density-ratio and Laplace numbers. There seems to be no appreciable difference from the evolution seen in the case of \textbf{M1} (fig. \ref{evo_nonmc}). The currents seem to hover around $10^{-3}$, with a larger Laplace number corresponding to a higher error for all density-ratios. $We = 0.4$ for all the cases presented.}   
     \label{evo_daniel}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[]{plots/droplet_advect/evo_sagar.png}
-	\caption{\textbf{M3} Decay of normalized spurious currents as a function of viscous dissipation time-scales for different density-ratios and Laplace numbers. The currents seem to decay very quickly in the case of higher density-ratios, and relax to the numerical equilibrium curvature even within $0.2 \cdot T_\mu$. For all combinations of $\rho_l / \rho_g$ and $La$ numbers, the decayed spurious currents are not observed to grow back as in the cases of \textbf{M1} and \textbf{M2}, and hover around values close to machine precision ($10^{-14}$).}   
+	\caption{\textbf{M2} Time evolution of normalized spurious currents as a function of advection time-scales ($T_u$) for different combinations of density-ratio and Laplace numbers. In terms of the errors observed in \textbf{M1} and \textbf{M2}, we observe a decrease of roughly one order of magnitude. Although an upward trend is observed for large Laplace numbers, the growth rate is quite low. The currents seem to hover slightly above $10^{-4}$, with larger Laplace numbers corresponding to larger errors for all density-ratios. $We = 0.4$ for all the cases presented.}   
     \label{evo_sagar}
 \end{figure}
 
+Figures \ref{evo_nonmc} to \ref{evo_sagar} depict the evolution of the root-mean-square (RMS) error of the velocity field in the moving frame of reference, as a function of different Laplace numbers, spanning over density-ratios separated by orders of magnitude. The first figure (\ref{evo_nonmc}) refers to simulations carried out without consistency between the momentum-mass transport (\textbf{M1}), the second (\ref{evo_daniel}) corresponds to that of the consistent but not conservative method (\textbf{M2}), and final one (\ref{evo_sagar}) refers to that of the consistent and conservative method (\textbf{M3}). We again have a couple of important observations, the first being that spurious currents do not decay to machine precision as in static droplet case for all of the combinations and methods tested, instead they oscillate around a mean value of the order of $0.1-0.01 \% $ of the constant field $U$. The second observation is regarding the significantly smaller error (almost by one order of magnitude) in the case of the consistent and conservative method (\textbf{M3}) when compared to that of \textbf{M1} and \textbf{M2}. As a minor remark, in case of large Laplace numbers, the \textbf{M3} method displays a slight upward trend in the error evolution, which is not the case in either \textbf{M1} or \textbf{M2}. This is not too worrisome as the growth is over a time-scale much larger than $T_u$, with the oscillations corresponding to a time-scale of the order $U/\Delta x$. All of the plots in figures \ref{evo_nonmc} to \ref{evo_sagar} correspond to $We = 0.4$, alongside an additional simplification of equal viscosities across the interface i.e $\mu_l/\mu_g = 1$ .
+
+As evindenced by the persistence of these spurious currents due to the addition of grid-level noise emanating from interfacial reconstructions, further advancements should be made with respect to the combined performace of the interfacial transport, curvature computation and the surface tension model. Nonetheless, all the methods tested do seem to be quite numerically stable when dealing with the high density-ratios, and are not subject to rapid uncontrollable amplifications of the interfacial perturbations even for high Laplace numbers.
+
 \subsection*{Spatial Convergence}
 
-In fig. show the scaling of the error as a function of spatial resolution for the most stringent case of $\rho_l/\rho_g = 1000 $ , $La = 12000$. The error seems to convergence at somewhat less than first-order for the $L_\infty$ norm, and slightly faster than a first-order rate for the $L_2$ norm. This seems to be consistent with earlier studies (\cite{popinet2009accurate}) which were carried out for equal density fluids.
-
+In order to evaluate the performance of our class of methods at different resolutions, we define the errors as the maximum values of the norms $L_\infty$ and $L_2$ of the rescaled field $U_{rms}/U$ over time ($5$ times $T_u$). In fig. \ref{moving_drop_conv}, we show the scaling of the error as a function of spatial resolution for the most stringent case of $\rho_l/\rho_g = 1000 $ , $La = 12000$. The error seems to convergence at somewhat less than first-order for the $L_\infty$ norm, and slightly faster than a first-order rate for the $L_2$ norm. This seems to be consistent with earlier studies (\cite{popinet2009accurate}) which were carried out for equal density fluids. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{plots/droplet_advect/convergence_all.png}
+    \caption{First-order spatial convergence for the spurious current error norms in the moving frame of reference. $\rho_l/\rho_g = 1000 $ , $La = 12000$, $We = 0.4$ }   
+    \label{moving_drop_conv}
+\end{figure}
 
 \subsection*{Error Dependence : Laplace \& Weber numbers}
 
 Fig. demonstrates the behavior of the error as a function of differenet $We$ and $La$ numbers, all carried out for the largest density-ratio ($\rho_l/\rho_g$). The error (both $L_\infty$ and $L_2$) scales as $We^{-1/3}$, which is marginally different from the $We^{-1/2}$ scaling observed by Popinet \cite{popinet2009accurate} (although \cite{popinet2009accurate} had equal densities ($\rho_l/\rho_g = 1$)). In terms of Laplace numbers, the errors scale as $La^{1/6}$ , which is the same as that observed in \cite{popinet2009accurate} (again, for equal densities).
 
 
-%---------------------------------------------------------------
+
+
+%------------------------------------------ CAPILLARY WAVE ---------------------------------------------
 
 \section{Capillary Wave}
 One of fundamental features of immiscible multiphase flows involving interfaces are the presense and propagation of capillary waves. Therefore, a robust and accurate numerical method should not only be able to adequately resolve, but also accurately emulate the spatio-temporal evolution of such surface tension induced oscillations. A brief outline on the numerical implementations of capillary waves in existing literature is provided by Popinet in the comprehensive review \sidecite{popinet2018numerical}.
