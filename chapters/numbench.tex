@@ -168,18 +168,32 @@ As evindenced by the persistence of these spurious currents due to the addition 
 
 \subsection*{Spatial Convergence}
 
-In order to evaluate the performance of our class of methods at different resolutions, we define the errors as the maximum values of the norms $L_\infty$ and $L_2$ of the rescaled field $U_{rms}/U$ over time ($5$ times $T_u$). In fig. \ref{moving_drop_conv}, we show the scaling of the error as a function of spatial resolution for the most stringent case of $\rho_l/\rho_g = 1000 $ , $La = 12000$. The error seems to convergence at somewhat less than first-order for the $L_\infty$ norm, and slightly faster than a first-order rate for the $L_2$ norm. This seems to be consistent with earlier studies (\cite{popinet2009accurate}) which were carried out for equal density fluids. 
+In order to evaluate the performance of our class of methods at different resolutions, we define the errors as the maximum values of the norms $L_\infty$ and $L_2$ of the rescaled field $U_{rms}/U$ over time ($5$ times $T_u$). In fig. \ref{moving_drop_conv}, we show the scaling of the error as a function of spatial resolution for the most stringent case of $\rho_l/\rho_g = 1000 $ , $La = 12000$, for each of our different methods. As similarly observed in section \ref{sec:static}, in terms of both $L_\infty$ and $L_2$ norms, there is no appreciable difference in the behaviors of \textbf{M1} and \textbf{M2}. For \textbf{M3}, we do observe significantly lower maximum errors compared to other two methods, but at a cost of slightly less than first-order convergence. The overall convergence behavior of the class of methods we have tested seem to be consistent with earlier studies of Popinet \cite{popinet2009accurate} and others \sidenote{In existing literature, convergence rates have only been studied in case of equal density fluids across the interface} .  
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{plots/droplet_advect/convergence_all.png}
-    \caption{First-order spatial convergence for the spurious current error norms in the moving frame of reference. $\rho_l/\rho_g = 1000 $ , $La = 12000$, $We = 0.4$ }   
+	\caption{First-order (approximately) spatial convergence of the maximum of the spurious current error norms in the frame of reference of the moving droplet, for the most stringent parameter combination ($\rho_l/\rho_g = 1000 $ , $La = 12000$, $We = 0.4$). Methods \textbf{M1} and \textbf{M2} display similar convergence properties, whereas \textbf{M3} leads to significantly lower errors even though it doesn't quite follow the first-order convergence rate. }   
     \label{moving_drop_conv}
 \end{figure}
 
 \subsection*{Error Dependence : Laplace \& Weber numbers}
 
-Fig. demonstrates the behavior of the error as a function of differenet $We$ and $La$ numbers, all carried out for the largest density-ratio ($\rho_l/\rho_g$). The error (both $L_\infty$ and $L_2$) scales as $We^{-1/3}$, which is marginally different from the $We^{-1/2}$ scaling observed by Popinet \cite{popinet2009accurate} (although \cite{popinet2009accurate} had equal densities ($\rho_l/\rho_g = 1$)). In terms of Laplace numbers, the errors scale as $La^{1/6}$ , which is the same as that observed in \cite{popinet2009accurate} (again, for equal densities).
+As the final point of inquiry into the performance of our class of methods, figures \ref{web} and \ref{lap} demonstrate the influence of the Laplace and Weber numbers on the behavior of the maximum error norm as a function, carried out for the largest density-ratio ($\rho_l/\rho_g = 1000$). We only present the results obtained using the consistent and conservative method (\textbf{M3}), for a resolution corresponding to $D / \Delta x = 25.6$. As we can observe, the error (both $L_\infty$ and $L_2$) scales as $We^{-1/3}$ over 4 orders of magnitude, which is different from the $We^{-1/2}$ scaling observed by Popinet \cite{popinet2009accurate} \sidenote{ Although Popinet \cite{popinet2009accurate} had equal densities ($\rho_l/\rho_g = 1$) }. In terms of Laplace numbers, the errors scale as $La^{1/6}$ over two orders of magnitude, which is the same as that observed in \cite{popinet2009accurate} (for equal densities).
 
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.8\textwidth]{plots/droplet_advect/webers.pdf}
+\caption{ Scaling of the maximum error norm as a function of Weber ($La = 12000$, $\rho_l / \rho_g = 1000$). }
+    \label{web}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.8\textwidth]{plots/droplet_advect/laplaces.pdf}
+\caption{ Scaling of the maximum error norm as a function of Laplace ($We = 0.4$, $\rho_l / \rho_g = 1000$). }
+    \label{lap}
+\end{figure}
 
 
 
@@ -223,65 +237,52 @@ The dispersion relation is obtained via linear stability analysis at the invisci
 
 
 \subsection*{Comparison with Prosperetti Solution}
+
 \blindtext
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{plots/capwave/compare_nonmc.png}
+    \caption{Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Good agreement with theory is observed in the case of all 3 density-ratios. }
+    \label{capwave_nonmc}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{plots/capwave/compare_daniel.png}
+    \caption{Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Good agreement with theory is observed in the case of all 3 density-ratios. }
+    \label{capwave_daniel}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{plots/capwave/compare_sagar.png}
+    \caption{Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Good agreement with theory is observed in the case of all 3 density-ratios. }
+    \label{capwave_sagar}
+\end{figure}
+
 
 \subsection*{Spatial Convergence}
 \blindtext
 
-%---------------------------------------------------------------
-
-\section{Falling Raindrop}
-
-A flow configuration that combines the complexities of high density-ratios with the interaction between capillary, viscous and inertial stresses is that of a water droplet falling in air under the influence of gravitational acceleration. 
-
-
-\subsection*{Setup}
-The problem is characterized by a combination of Reynolds, Weber and Bond numbers, the definitions of which are as follows : 
-
-\begin{align}
-We=\frac{\rho_{g} U^2 d}{\sigma} \quad,\quad Re= \frac{\rho_{g} U d}{\mu_{g}} \quad,\quad Bo=\frac{\left(\rho_{l}-\rho_{g}\right) g d^2 }{\sigma}
-\end{align}
-
-where the subscripts $l$ and $g$ refer to the liquid phase (water) and the gas phase (air), respectively. In our particular numerical setup, $We \simeq 3.2 $, $Re \simeq 1455 $ and $Bo \simeq 1.2 $, thus corresponding to that of a $3mm$ diameter raindrop (a relatively large one) falling in air at an approximate terminal velocity of  $8$ m/s (interpolated from empirical data, refer to  \cite{gunn1949terminal}). The parameters in the problem setup are given in Table \ref{raindropprop}, and the schematic diagram given by Fig. \ref{setup}. The droplet is initially placed at the center of a cubic domain (3D), whose side is 4 times the diameter of the drop. 
-
-% Table of droplet setup parameters 
-\begin{table*}[h!]
-\begin{center}
-\begin{tabular}{ccccccc}
-\hline\hline
-$\rho_{g}$ & $\rho_{l}$ & $\mu_{g}$ 
-& $\mu_{l}$ & $\sigma$ & $d$ & $g$\\
-$\left(kg/m^3\right)$ & $\left(kg/m^3\right)$ & $\left(Pa \, s\right)$ 
-& $\left(Pa \,s \right)$ & $\left(N/m\right)$ & $(m)$ & $(m /s^{2})$ \\
-\hline
-1.2 & $0.9982 \times 10^3$ & $1.98 \times 10^{-5}$ & 
-$8.9 \times 10^{-4}$ & $0.0728$ & $3 \times 10^{-3}$ & $9.81$\\
-\hline\hline
-\end{tabular}
-\caption{Parameter values used in the simulation of a falling water droplet in air. 
-\label{raindropprop}}
-\end{center}
-\end{table*}
-% -----
-
-In order to properly reproduce and analyse the dynamics of a relatively large drop (high Reynolds flow) such as in our case, the numerical method has to accurately resolve the thin boundary layers, the interaction of such layers with the capillary forces and finally the non-linear feedback of the complex 3D vortical structures present in the wake behind the droplet. Therefore, our objective behind the demonstration of this particular test case is not to develop a high fidelity model of a raindrop, but rather carry out a stringent evaluation of the robustness of our numerical method compared to the standard version of our solver which is not momentum consistent. For such a low Weber number the capillary forces dominate and the droplet should remain intact, and definitely not undergoe any subsequent atomization. 
-
-
-% -----
-% Schemetic of case setup with boundary conditions
 \begin{figure}[h!]
-\begin{center}
-\includegraphics[width=0.8\textwidth]{plots/raindrop/setup.png}
-\end{center}
-\caption{A 2D schematic of the numerical setup for the falling raindrop. We apply a uniform inflow velocity condition with $U_0(t)$ and an outflow velocity condition at the top which corresponds to zero gradient of the velocity at the boundary. Boundary conditions on the side walls correspond to those of free slip (no shear stress).}
-\label{setup}
+    \centering
+    \includegraphics[width = 0.8\textwidth]{plots/capwave/conv_r1.png}
+    \caption{Approximately second-order spatial convergence is observed for all density-ratios.}
+    \label{conv_r1}
 \end{figure}
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{plots/capwave/conv_r10.png}
+    \caption{Approximately second-order spatial convergence is observed for all density-ratios.}
+    \label{conv_r10}
+\end{figure}
 
-\subsection*{Temporal Evolution : Kinetic Energy, Mass, Moment of Inertia}
-\blindtext
-
-\subsection*{Convergence of Velocity \& Acceleration}
-\blindtext
-
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{plots/capwave/conv_aw.png}
+    \caption{Approximately second-order spatial convergence is observed for all density-ratios.}
+    \label{conv_aw}
+\end{figure}
 
