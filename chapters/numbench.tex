@@ -200,19 +200,18 @@ As the final point of inquiry into the performance of our class of methods, figu
 %------------------------------------------ CAPILLARY WAVE ---------------------------------------------
 
 \section{Capillary Wave}
-One of fundamental features of immiscible multiphase flows involving interfaces are the presense and propagation of capillary waves. Therefore, a robust and accurate numerical method should not only be able to adequately resolve, but also accurately emulate the spatio-temporal evolution of such surface tension induced oscillations. A brief outline on the numerical implementations of capillary waves in existing literature is provided by Popinet in the comprehensive review \sidecite{popinet2018numerical}.
+One of fundamental features of immiscible multiphase flows involving interfaces are the presense and propagation of capillary waves. Therefore, a robust and accurate numerical method should not only be able to adequately resolve, but also accurately emulate the spatio-temporal evolution of such surface tension induced oscillations. A brief outline on the state-of-the-art numerical implementations of capillary waves (and surface tension models in general) existing in current literature is provided by Popinet in the comprehensive review \sidecite{popinet2018numerical}.
 
 \subsection*{Setup}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.6\textwidth]{plots/capwave/config.png}
+    \includegraphics[width = 0.6\textwidth]{plots/capwave/capwave_conf.png}
 	\caption{Schematic of the initially perturbed planar interface separating two immiscible fluids of different densities and viscosities. A spatial resolution of $32 \times 96$ is used for spatial discretization (compared to $64 \times 192$ in Popinet \cite{popinet2009accurate}), with the width of the box corresponding to the size of the perturbed wavelength.}
     \label{capwave_conf}
 \end{figure}
 
-
-Ideally, we would like to evaluate the accuracy of our method compared to the analytical solution of damped capillary oscillations. Analytical solutions exist for the case of extremely small initial perturbations, either in the inviscid limit (Lamb \sidecite{lamb1993hydrodynamics}) or the asymptotic limit of vanishing viscosity (Prosperetti \sidecite{prosperetti1980free,prosperetti1981motion}). In the present study, we use the configuration of the viscosity-damped capillary oscillations of a planar interface, as was first implemented and popularized by Popinet \& Zaleski \cite{popinet1999front}.  
+In the present study, we evaluate the accuracy of our class of methods by comparing with an analytical solution of damped capillary oscillations. Generally, analytical solutions exist only for cases corresponding to extremely small initial perturbations, that too either in the inviscid limit (Lamb \sidecite{lamb1993hydrodynamics}) or the asymptotic limit of vanishing viscosity (Prosperetti \sidecite{prosperetti1980free,prosperetti1981motion}). For our purposes, we use the configuration of the viscosity-damped capillary oscillations of a planar interface, as was first implemented and popularized by Popinet \& Zaleski \cite{popinet1999front}.  
 
 We consider a rectangular domain of dimensions $L \times 3L$, where $L$ corresponds to the wavelength of our initial perturbation. The densities of the heavier and lighter phases are $\rho_l$ and $\rho_g$ respectively, likewise for the viscosities $\mu_l$ and $\mu_g$, and $\sigma$ being the surface tension coefficient (fig. \ref{capwave_conf}). An intial perturbation amplitude of $L/100$ is used, coupled with a numerical resolution given by $L/\Delta x= 32$ ($\Delta x$ being the grid size). Symmetry conditions are applied on the top and bottom sides, with periodic conditions along the horizontal direction. We use the following adimensional parameters to characterize our problem : 
 
@@ -220,69 +219,85 @@ We consider a rectangular domain of dimensions $L \times 3L$, where $L$ correspo
 	T_0 = T \omega_0 \quad , \quad La = \frac{\rho_l \sigma L}{\mu_l^2}  
 \end{align}
 
-where $La$ is the Laplace number based on the heavier fluid, and $\omega_0$ is defined using the dispersion relation \cite{popinet2009accurate} given as : 
+where $La$ is the Laplace number based on the heavier fluid, and $\omega_0$ is defined using the dispersion relation used in Popinet \cite{popinet2009accurate} given as : 
 
 \begin{align}
 	\omega_0^2 =  \frac{\sigma k^3}{2 \rho_l} \quad, \qquad \text{where} \quad k = \frac{2\pi}{L}   
 \end{align}
 
-The dispersion relation is obtained via linear stability analysis at the inviscid limit \cite{lamb1993hydrodynamics}. In order to evaluate the influence of density-ratio on the performance of our method, we use 3 different numerical setups keeping the same Laplace number ($La = 3000$) as follows : 
+The dispersion relation is obtained via linear stability analysis at the inviscid limit \sidecite{lamb1993hydrodynamics}. In order to evaluate the influence of density-ratio on the performance of our class of methods, we use three different numerical setups keeping the same Laplace number ($La = 3000$) as follows : 
 
 \begin{itemize}
 	\item $\rho_l/\rho_g = 1$ , $\mu_l/\mu_g = 1$  (Popinet \cite{popinet2009accurate}) 
 	\item $\rho_l/\rho_g = 10$ , $\mu_l/\mu_g = 1$   
 	\item $\rho_l/\rho_g = 1000.0/1.2$ , $\mu_l/\mu_g = 1.003\cdot 10^{-3}/1.8\cdot 10^{-5}$ (Air-Water) 
 \end{itemize}
-% verify the laplace numbers in the adimensional form and paris scripts
 
+The final setup corresponds to that of an air-water interface (physical properties corresponding to $20^o$ Celsuis), which is the most stringent due to the significant density and viscosity jumps. 
 
 \subsection*{Comparison with Prosperetti Solution}
 
-\blindtext
+The theoretical solution to this configuration corresponds to the closed-form expressions of the planar interface shape evolution established by Prosperetti \cite{prosperetti1981motion,prosperetti1980free}, which takes into account the finite time-scales at which the vorticity (generated due to interface oscillations) diffuses into the bulk medium. These closed-form expressions are subsequently integrated using a fourth-order Runge-Kutta time integrator (details of which not described here), and used to assess the accuracy of the results obtained by our class of numerical methods. 
+
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{plots/capwave/compare_nonmc.png}
-    \caption{Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Good agreement with theory is observed in the case of all 3 density-ratios. }
+	\caption{\textbf{M1} Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. More or less good agreement with theory is observed for all the density-ratios tested. }
     \label{capwave_nonmc}
 \end{figure}
+
+As we can in figures \ref{capwave_nonmc} to \ref{capwave_sagar}, solutions from our class of numerical methods (circles) are compared to that of the theoretical (Prosperetti) solution (black curves), where the amplitude is normalized by the initial value ($A_0$) and the time rescaled by $T_0$. The first figure (\ref{capwave_nonmc}) refers to simulations carried out by the non-consistent method, the second (\ref{capwave_daniel}) corresponds to that of the consistent method, and the final one (\ref{capwave_sagar}) refers to that of the consistent and conservative method. We observe that there is hardly any appreciable qualitative difference between the results obtained via the different methods \textbf{M1}, \textbf{M2} and \textbf{M3}, although \textbf{M3} does seem to perforn marginally better when it comes to the most stringent case (air-water configuration). Surprisingly, even the non-consistent method (\textbf{M1}) does not seem to show any un-physical interfacial deformations for all the density-ratios tested, and that it is difficult to distinguish between the different methods for the lower density-ratios.  
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{plots/capwave/compare_daniel.png}
-    \caption{Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Good agreement with theory is observed in the case of all 3 density-ratios. }
+	\caption{\textbf{M2} Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Behavior is quite similar to \textbf{M1}, with good agreement with theory for all the density-ratios tested. }
     \label{capwave_daniel}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{plots/capwave/compare_sagar.png}
-    \caption{Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Good agreement with theory is observed in the case of all 3 density-ratios. }
+	\caption{\textbf{M3} Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Slightly better agreement with theory when comparing to \textbf{M1} and \textbf{M2}, for all density-ratios tested. }
     \label{capwave_sagar}
 \end{figure}
 
 
 \subsection*{Spatial Convergence}
-\blindtext
+
+The next step in our evaluation would be to quantify the accuracy of our numerical results to the Prosperetti solution using an integral (in time) error norm, the same as defined in \cite{popinet2009accurate} :       
+
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{plots/capwave/conv_r1.png}
-    \caption{Approximately second-order spatial convergence is observed for all density-ratios.}
+	\caption{Comparison of spatial convergence for the case of $\rho_l/\rho_g = 1 , La = 3000$, for our class of methods. There is no viscosity jump across the interface. All methods seem to demonstrate approximately second-order convergence. There seems to be no appreciable difference in the behavior of \textbf{M1} and \textbf{M2}, with \textbf{M3} displaying marginally lower errors compared to the others. }
     \label{conv_r1}
 \end{figure}
+
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{plots/capwave/conv_r10.png}
-    \caption{Approximately second-order spatial convergence is observed for all density-ratios.}
+	\caption{Comparison of spatial convergence for the case of $\rho_l/\rho_g = 10 , La = 3000$, for our class of methods. Again, there is no viscosity jump across the interface. All methods seem to demonstrate approximately second-order convergence upto $\L/ \Delta x = 32 $, beyond which there is a slight saturation in the rate of convergence. Qualitatively, \textbf{M1} and \textbf{M2} demonstrate similar behavior, with \textbf{M3} delivering slightly lower errors. In case of \textbf{M3}, the errors are marginally lower compared to \textbf{M1} and \textbf{M2} for higher resolutions. }
     \label{conv_r10}
 \end{figure}
+
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{plots/capwave/conv_aw.png}
-    \caption{Approximately second-order spatial convergence is observed for all density-ratios.}
+	\caption{Comparison of spatial convergence for the Air-Water case corresponding to $\rho_l/\rho_g = 1000.0/1.2 , \mu_l/\mu_g = 1.003\cdot 10^{-3}/1.8\cdot 10^{-5} , La = 3000 $, for our class of methods. All methods seem to demonstrate approximately second-order convergence. No appreciable difference is observed between \textbf{M1} and \textbf{M2}, with \textbf{M3} delivering slightly lower errors although there is some saturation in the convergence rate at higher resolutions. }
     \label{conv_aw}
 \end{figure}
+
+\begin{align}
+	L_2 = \frac{1}{L} \sqrt{\frac{\omega_0}{25} \int_{t=0}^{T} \left(h - h_{exact}\right)^2}
+\end{align}
+
+where $h$ is the maximum inteface height obtained using our numerical simulations, and $h_{exact}$ being the maximum height obtained via time integration of the Prosperetti solution. In figures \ref{conv_r1} to \ref{conv_aw} we demonstrate the rate of spatial convergence of the $L_2$ error norms for different density-ratios, simultaneously comparing the behavior of the different methods \textbf{M1}, \textbf{M2} and \textbf{M3} at each density-ratio. In all the results presented, we maintain $La = 3000$ for all density-ratios, spatial resolutions and methods tested.  
+
+In figure \ref{conv_r1} we observe roughly second-order spatial convergence when it comes to equal densities across the interface, with \textbf{M1} and \textbf{M2} displaying nearly identical behavior, whereas \textbf{M3} does marginally better with lower errors for all resolutions. When it comes to $\rho_l / \rho_g = 10$ in figure \ref{conv_r10}, we observe a saturation in the initial second-order convergence rate irrespective of whichever method is used, however \textbf{M3} performs slightly better in terms of error when compared \textbf{M1} and \textbf{M2}. Finally, figure \ref{conv_aw} demonstrates the roughly second-order convergence of all three methods when it comes to the air-water configuration, again, with \textbf{M3} performing merginally better with lower errors. Not surprisingly, the largest errors arise for the air-water configuration errors across all methods. 
+
 
