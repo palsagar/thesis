@@ -2,21 +2,84 @@
 \chapter{Methodology}
 \labch{method}
 
-
 %---------------------------------------------------------------
+% overview of chapter 
+In this chapter, we describe the basic numerical methodology behind our models 
+concerning the dynamics of immiscible liquid-gas interfacial flows, at the incompressible and isothermal limits. 
+These implementations are developed on the platforms 'PARIS Simulator' \cite{paris} and 
+'Basilisk' \cite{popinetbasilisk}, with considerable overlap between the two platforms in terms 
+of the treatment of the interface capturing schemes, transport of conserved quantities and surface tension models.
+\sidenote{The principle difference between 'PARIS Simulator' and 'Basilisk' is the ability to resolve the conservation
+laws on dynamically adaptive meshes in the case of 'Basilisk', whereas 'PARIS Simulator' only deals with regular Cartesian meshes.}
+The numerical implementations are based on finite volume discretizations on uniform or dynamically refined Cartesian grids , utilizing
+state of the art methods in interfacial reconstruction coupled with geometric
+transport of the corresponding fluxes, curvature computation and surface tension modeling. For more detailed
+descriptions of the general capabilities of 'PARIS Simulator’ and 'Basilisk', we refer the reader to the previously cited references. 
+
+
 \section{Governing Equations}
 
-\paragraph{Conservative versus Non-Consevative Formulations}
-\blindtext
+We use the one-fluid formulation for our system of governing equations, thus solving 
+the incompressible Navier-Stokes equations throughout the whole domain including regions 
+of variable density and viscosity, which itself depend on the explicit 
+location of the interface separating the two fluids.
+In the absence of mass tranfer, the velocity field is continuous across
+the interface at the incompressible limit, with the interface evolving according to the local velocity vector.  
+Generally, we have a choice regarding how to model the convective operator
+of the incompressible Navier-Stokes equations. There is a well established corpus of 
+numerical methods tailored specifically to deal with non-conservative 
+\sidenote{also referred to as the strong form, necessitating certain orders of smoothness of the primitive variable} form of the convective 
+operator that appear in transport equations of mass and momentum 
+\sidenote{These methods are descendants of the class of numerical schemes used to solve hyperbolic partial differential equations.}
+, which perform quite well in the context of single phase flows.
+However, in interfacial flows we often deal with discontinuities that arise as a consequence
+of the contrast in material properties between the two fluids. Therefore, even though the velocity field
+remains continuous throughout the domain, the otherwise smooth density (mass) and momentum fields 
+contain sharp jumps (discontinuities) localized at the interfacial position.     
+
+
+
+
+
+% in incompressible flows, the velocity field is continuous in the absence of mass transfer across the interface 
+
+\begin{align} 
+	\frac{\partial \rho}{\partial t} + \nabla\cdot \left(\rho\boldsymbol{u}\right) &= 0 \nonumber \\
+	\frac{\partial}{\partial t} \left(\rho\boldsymbol{u}\right) + \nabla\left(\rho\boldsymbol{u}\otimes\boldsymbol{u}\right)  &= -\nabla p + \nabla \cdot \left(2 \mu \boldsymbol{D}\right) + \sigma \kappa \delta_{s}\boldsymbol{n} + \rho \boldsymbol{g}
+\label{nseqn}
+\end{align}
+
+
+with $\rho$ and $\mu$ being the density and dynamical viscosity respectively, and therefore are the physical quantities which are discontinuous across the interface. The volumetric sources are modeled by the acceleration $g$, and the deformation rate tensor $\boldsymbol{D}$ used to model the viscous stresses is defined as:  
+
+\begin{align}
+	\boldsymbol{D} = \frac{1}{2}\left[\nabla \boldsymbol{u} + \nabla \boldsymbol{u}^{T}\right]  
+\end{align}
+
+
+The term $\sigma \kappa \delta_{s}\boldsymbol{n}$ represents the surface tension forces in the framework of the continuum surface-force model (CSF). The normal vector to the interface is $\boldsymbol{n}$, with $\sigma$ being the coefficient of surface tension and $\kappa$ the local interfacial curvature. The operator $\delta_{s}$ is the Dirac delta function, the numerical approximation of which, allows us to map the interfacial surface force distribution onto their volumetric equivalents for our Cartesian control volumes. In the case of incompressible flows, advection of mass is equivalent to the advection of volume, and within the Volume-of-Fluid framework the Eulerian transport of the interface allows us to track the temporal evolution of the volume fractions of the two fluids. Thus, the transport of the interface governs the temporal evolution of the volume fraction field as: 
+
+% explain continuous nature of velocity field in limit of no mass transfer 
+
+% explain one-fluid model NS eqns
 
 \paragraph{Description of Operators}
 \blindtext
 
+
+% also explain how diffusion and capillary force operators are computed, briefly
+
+
 \paragraph{Evolution of phase-characteristic function}
 \blindtext
 
+
+% evolution of marker function - marker functiona approximated by LS, VOF etc
+
 \paragraph{Material Properties}
 \blindtext
+
+% possibility of harmonic mean in play 
 
 %---------------------------------------------------------------
 
