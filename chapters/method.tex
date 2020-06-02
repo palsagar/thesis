@@ -36,8 +36,7 @@ However, in interfacial flows we often deal with discontinuities that arise as a
 of the contrast in material properties between the two fluids. Therefore, even though the velocity field
 remains continuous throughout the domain, the otherwise smooth density (mass) and momentum fields 
 contain sharp jumps (discontinuities) localized at the interfacial position.     
-
-
+Therefore, we choose to formulate our governing equations in a conservative form i.e involving divergence of fluxes instead of gradients of the primitive variables when it comes to the convective operator. More detailed discussions and analyses about the comparative advantages of the conservative formulation in the context of flows involving large density-ratios is the focus of the subsequent chapters. Thus, the equations are as follows :  
 
 
 
@@ -53,21 +52,18 @@ contain sharp jumps (discontinuities) localized at the interfacial position.
 with $\rho$ and $\mu$ being the density and dynamical viscosity respectively, and therefore are the physical quantities which are discontinuous across the interface. The volumetric sources are modeled by the acceleration $g$, and the deformation rate tensor $\boldsymbol{D}$ used to model the viscous stresses is defined as:  
 
 \begin{align}
-	\boldsymbol{D} = \frac{1}{2}\left[\nabla \boldsymbol{u} + \nabla \boldsymbol{u}^{T}\right]  
+	\boldsymbol{D} = \frac{1}{2}\left[\nabla \boldsymbol{u} + \left(\nabla \boldsymbol{u}\right)^{T}\right]  
 \end{align}
 
 
-The term $\sigma \kappa \delta_{s}\boldsymbol{n}$ represents the surface tension forces in the framework of the continuum surface-force model (CSF). The normal vector to the interface is $\boldsymbol{n}$, with $\sigma$ being the coefficient of surface tension and $\kappa$ the local interfacial curvature. The operator $\delta_{s}$ is the Dirac delta function, the numerical approximation of which, allows us to map the interfacial surface force distribution onto their volumetric equivalents for our Cartesian control volumes. In the case of incompressible flows, advection of mass is equivalent to the advection of volume, and within the Volume-of-Fluid framework the Eulerian transport of the interface allows us to track the temporal evolution of the volume fractions of the two fluids. Thus, the transport of the interface governs the temporal evolution of the volume fraction field as: 
-
-% explain continuous nature of velocity field in limit of no mass transfer 
-
-% explain one-fluid model NS eqns
-
-\paragraph{Description of Operators}
-\blindtext
-
-
-% also explain how diffusion and capillary force operators are computed, briefly
+The term $\sigma \kappa \delta_{s}\boldsymbol{n}$ models the surface tension forces in the 
+framework of the continuum surface-force (CSF) method. The normal vector to the interface 
+is $\boldsymbol{n}$, with $\sigma$ being the coefficient of surface tension and $\kappa$ the 
+local interfacial curvature. The operator $\delta_{s}$ is the Dirac delta function, 
+the numerical approximation of which allows us to map the singular surface force distribution
+along the interface onto their volumetric equivalents for our Cartesian control volumes. 
+At the incompressible limit, the advection of mass is equivalent to that of the advection of volume.
+within the Volume-of-Fluid framework the Eulerian transport of the interface allows us to track the temporal evolution of the volume fractions of the two fluids. Thus, the transport of the interface governs the temporal evolution of the volume fraction field as: 
 
 
 \paragraph{Evolution of phase-characteristic function}
@@ -76,10 +72,17 @@ The term $\sigma \kappa \delta_{s}\boldsymbol{n}$ represents the surface tension
 
 % evolution of marker function - marker functiona approximated by LS, VOF etc
 
-\paragraph{Material Properties}
+% possibility of harmonic mean in play 
+
+
+\paragraph{Description of Operators}
 \blindtext
 
-% possibility of harmonic mean in play 
+
+% also explain how diffusion and capillary force operators are computed, briefly
+
+
+
 
 %---------------------------------------------------------------
 
