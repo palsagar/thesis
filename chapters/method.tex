@@ -43,7 +43,7 @@ Therefore, we choose to formulate our governing equations in a conservative form
 % in incompressible flows, the velocity field is continuous in the absence of mass transfer across the interface 
 
 \begin{align} 
-	\frac{\partial \rho}{\partial t} + \nabla\cdot \left(\rho\boldsymbol{u}\right) &= 0 \nonumber \\
+	\frac{\partial \rho}{\partial t} + \nabla\cdot \left(\rho\boldsymbol{u}\right) &= 0 \label{mass} \\
 	\frac{\partial}{\partial t} \left(\rho\boldsymbol{u}\right) + \nabla\left(\rho\boldsymbol{u}\otimes\boldsymbol{u}\right)  &= -\nabla p + \nabla \cdot \left(2 \mu \boldsymbol{D}\right) + \sigma \kappa \delta_{s}\boldsymbol{n} + \rho \boldsymbol{g}
 \label{nseqn}
 \end{align}
@@ -62,13 +62,24 @@ is $\boldsymbol{n}$, with $\sigma$ being the coefficient of surface tension and 
 local interfacial curvature. The operator $\delta_{s}$ is the Dirac delta function, 
 the numerical approximation of which allows us to map the singular surface force distribution
 along the interface onto their volumetric equivalents for our Cartesian control volumes. 
-At the incompressible limit, the advection of mass is equivalent to that of the advection of volume.
-within the Volume-of-Fluid framework the Eulerian transport of the interface allows us to track the temporal evolution of the volume fractions of the two fluids. Thus, the transport of the interface governs the temporal evolution of the volume fraction field as: 
+At the incompressible limit, the advection of mass given by equation \ref{mass} can be 
+treated as equivalent to that of the advection of volume.
 
 
 \paragraph{Evolution of phase-characteristic function}
-\blindtext
+Within the framework of interface capturing schemes, the 
+temporal evolution of the interface separating the two fluids
+can be modeled by the following advection equation : 
 
+\begin{align} 
+	\frac{\partial \chi}{\partial t} + \boldsymbol{u}\nabla\chi = 0 	
+\label{chi}
+\end{align}
+
+
+where $\chi$ is the phase-characteristic function. The two main (and the most popular)
+approaches in the context of interface capturing schemes are the  
+which is mathematically equivalent to a Heaviside function in space and time. This function returns $1$ where the space is occupied by the first fluid, and $0$ for the second fluid. At the macroscopic length scales under consideration, the interface evolution as described by equation \ref{chi} is modeled as having infinitesimal thickness under the continuum hypothesis. The coupling of the interfacial evolution with the equations of fluid motion as described in \ref{nseqn} is provided by :  
 
 % evolution of marker function - marker functiona approximated by LS, VOF etc
 
