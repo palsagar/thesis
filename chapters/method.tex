@@ -7,7 +7,7 @@
 In this chapter, we describe the basic numerical methodology behind our models 
 concerning the dynamics of immiscible liquid-gas interfacial flows, at the incompressible and isothermal limits. 
 These implementations are developed on the platforms 'PARIS Simulator' \cite{paris} and 
-'Basilisk' \cite{popinetbasilisk}, with considerable overlap between the two platforms in terms 
+'Basilisk' \cite{basilisk}, with considerable overlap between the two platforms in terms 
 of the treatment of the interface capturing schemes, transport of conserved quantities and surface tension models.
 \sidenote{The principle difference between 'PARIS Simulator' and 'Basilisk' is the ability to resolve the conservation
 laws on dynamically adaptive meshes in the case of 'Basilisk', whereas 'PARIS Simulator' only deals with regular Cartesian meshes.}
@@ -76,14 +76,40 @@ can be modeled by the following advection equation :
 \label{chi}
 \end{align}
 
+where $\chi$ is the phase-characteristic function. 
+At the macroscopic length scales under consideration, the interface evolution
+as described by equation \ref{chi} is modeled as having infinitesimal thickness
+under the continuum hypothesis. The coupling of the interfacial evolution with
+the equations of fluid motion as described in \ref{nseqn} is provided by :  
 
-where $\chi$ is the phase-characteristic function. The two main (and the most popular)
-approaches in the context of interface capturing schemes are the  
-which is mathematically equivalent to a Heaviside function in space and time. This function returns $1$ where the space is occupied by the first fluid, and $0$ for the second fluid. At the macroscopic length scales under consideration, the interface evolution as described by equation \ref{chi} is modeled as having infinitesimal thickness under the continuum hypothesis. The coupling of the interfacial evolution with the equations of fluid motion as described in \ref{nseqn} is provided by :  
 
-% evolution of marker function - marker functiona approximated by LS, VOF etc
+\begin{equation}
+\begin{aligned} 
+	\rho(\boldsymbol x,t) &= \rho_{1}\chi(\boldsymbol x,t) + \left(1 - \chi(\boldsymbol x,t)\right)\rho_{2} \\ 
+	\mu(\boldsymbol x,t) &= \mu_{1}\chi(\boldsymbol x,t) + \left(1 - \chi(\boldsymbol x,t)\right)\mu_{2}  
+\end{aligned}
+  \label{rho-mu}
+\end{equation}
 
-% possibility of harmonic mean in play 
+
+The two main (and the most popular)
+approaches in the context of interface capturing schemes are the 
+are the volume-of-fluid (VOF) method first developed by Hirt and Nichols \cite{hirt1981volume}, 
+and the level set class of methods pioneered by Osher and Sethian \cite{osher1988fronts}.
+The principal difference between the two approaches lies in the manner in which
+the function $\chi$ is modeled, either as a smooth differentiable function in
+the case of level sets, or as a Heaviside function with its inherent discontinuity.  
+Each class of methods has its own set of merits (and demerits) relative to each other. 
+Generally speaking, volume-of-fluid based methods display superior mass conservation
+\sidenote{VOF based methods implicitly track the evolution of the discontinuous density field, 
+which is not the case in level set based methods. }
+whereas in terms of interface curvature computation, level set based methods hold an advantage
+\sidenote{The differentiable nature of the level set function lends itself
+to straightforward curvature computation routines. } . 
+
+For a more detailed and nuanced evaluation of the comparitive advantages of the different interfacial transport methods, we refer the reader to the recent review by Mirjalili et al. \cite{mirjalili2017interface} on the given subject.     
+
+
 
 
 \paragraph{Description of Operators}
