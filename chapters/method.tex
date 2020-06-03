@@ -25,6 +25,9 @@ of variable density and viscosity, which itself depend on the explicit
 location of the interface separating the two fluids.
 In the absence of mass tranfer, the velocity field is continuous across
 the interface at the incompressible limit, with the interface evolving according to the local velocity vector.  
+
+\subsection*{Conservative Formulation}
+
 Generally, we have a choice regarding how to model the convective operator
 of the incompressible Navier-Stokes equations. There is a well established corpus of 
 numerical methods tailored specifically to deal with non-conservative 
@@ -66,7 +69,7 @@ At the incompressible limit, the advection of mass given by equation \ref{mass} 
 treated as equivalent to that of the advection of volume.
 
 
-\paragraph{Evolution of phase-characteristic function}
+\subsection*{Interface Capturing}
 Within the framework of interface capturing schemes, the 
 temporal evolution of the interface separating the two fluids
 can be modeled by the following advection equation : 
@@ -76,20 +79,24 @@ can be modeled by the following advection equation :
 \label{chi}
 \end{align}
 
-where $\chi$ is the phase-characteristic function. 
+where $\chi$ is the phase-characteristic function, that marks the 
+separation between the two phases in question. Mathematically, the function $\chi$
+is equivalent to a Heaviside function in space and time. 
 At the macroscopic length scales under consideration, the interface evolution
 as described by equation \ref{chi} is modeled as having infinitesimal thickness
 under the continuum hypothesis. The coupling of the interfacial evolution with
-the equations of fluid motion as described in \ref{nseqn} is provided by :  
+the equations of fluid motion as described in \ref{mass} and \ref{nseqn} is provided by :  
 
+\begin{align}
+	\rho &= \rho_{1}\chi + \left(1 - \chi\right)\rho_{2} \label {rho_chi} \\ 
+	\mu  &= \mu_{1}\chi  + \left(1 - \chi\right)\mu_{2}  
+  \label{mu_chi}
+\end{align}
 
-\begin{equation}
-\begin{aligned} 
-	\rho(\boldsymbol x,t) &= \rho_{1}\chi(\boldsymbol x,t) + \left(1 - \chi(\boldsymbol x,t)\right)\rho_{2} \\ 
-	\mu(\boldsymbol x,t) &= \mu_{1}\chi(\boldsymbol x,t) + \left(1 - \chi(\boldsymbol x,t)\right)\mu_{2}  
-\end{aligned}
-  \label{rho-mu}
-\end{equation}
+where $\rho_{1}$, $\rho_{2}$ are the densities of fluids 1 and 2 respectively, 
+likewise for viscosities $\mu_{1}$ and $\mu_{2}$. Under certain circumstances, 
+it is beneficial to opt for a weighted harmonic mean description of the 
+variable dynamic viscosity, instead of the weighted arithmetic mean as in equation \ref{mu_chi}. 
 
 
 The two main (and the most popular)
@@ -97,8 +104,9 @@ approaches in the context of interface capturing schemes are the
 are the volume-of-fluid (VOF) method first developed by Hirt and Nichols \cite{hirt1981volume}, 
 and the level set class of methods pioneered by Osher and Sethian \cite{osher1988fronts}.
 The principal difference between the two approaches lies in the manner in which
-the function $\chi$ is modeled, either as a smooth differentiable function in
-the case of level sets, or as a Heaviside function with its inherent discontinuity.  
+the Heaviside function $\chi$ is modeled in the discrete sense, 
+either as a smooth differentiable field in
+the case of level sets, or as a sharp discontinuous field in the volume-of-fluid (VOF) context.  
 Each class of methods has its own set of merits (and demerits) relative to each other. 
 Generally speaking, volume-of-fluid based methods display superior mass conservation
 \sidenote{VOF based methods implicitly track the evolution of the discontinuous density field, 
@@ -106,39 +114,48 @@ which is not the case in level set based methods. }
 whereas in terms of interface curvature computation, level set based methods hold an advantage
 \sidenote{The differentiable nature of the level set function lends itself
 to straightforward curvature computation routines. } . 
-
-For a more detailed and nuanced evaluation of the comparitive advantages of the different interfacial transport methods, we refer the reader to the recent review by Mirjalili et al. \cite{mirjalili2017interface} on the given subject.     
-
-
-
-
-\paragraph{Description of Operators}
-\blindtext
-
-
-% also explain how diffusion and capillary force operators are computed, briefly
-
-
+For a more detailed and nuanced evaluation of the comparitive advantages of 
+the different interfacial transport methods, we refer the reader to the 
+recent review by Mirjalili et al. \cite{mirjalili2017interface} on the given subject.     
 
 
 %---------------------------------------------------------------
 
-\section{Interface Tracking}
+\section{Interfacial Transport}
+Our numerical studies are based on the Volume-of-Fluid methodology. 
+We refer to the discontinuous approximation to the Heaviside function
+\sidenote{A comprehensive discussion about the different types of approximations
+to the interface Heaviside function can be found in Popinet \cite{popinet2018numerical}}
+$\chi$ as the volume fraction field or colour function interchageably, which 
+is defined below in the context of finite volume discretization : 
 
-\paragraph{Volume-of-Fluid : PLIC Methodology}
+\begin{align} 
+	C_{ijk}\left(t\right) = \frac{1}{\Delta V} \displaystyle\int_{\Delta V} \chi(\boldsymbol{x},t) \,d\boldsymbol x 
+\end{align}
+
+where $C$ is the colour function with its values lying between $0$ and $1$, with $i$,$j$ and $k$ being the indices to the corresponding discretized control volume of volume $\Delta V$.  
+
+\subsection*{Volume-of-Fluid : PLIC Methodology}
 \blindtext
 
-\paragraph{Flux Computation : CIAM , WY}
+\subsection*{Flux Computation : CIAM , WY}
 \blindtext
 
 %---------------------------------------------------------------
 
 \section{Time Marching}
 
-\paragraph{Spatio-Temporal Discretization}
+\subsection*{Spatio-Temporal Discretization}
 \blindtext
 
-\paragraph{Pressure-Projection Algorithm}
+\subsection*{Pressure-Poisson Projection}
 \blindtext
 
+\section{Source Terms}
 
+\subsection*{Surface Tension}
+
+
+\subsection*{Viscous Diffusion}
+
+\blindtext
