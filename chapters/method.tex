@@ -173,6 +173,29 @@ These images are reproduced with permission from Scardovelli and Zaleski \cite{z
 \end{figure}
 
 \subsection*{Flux Computation}
+Once the geometric PLIC reconstructions have been carried out, 
+the interface segments are advected using the the velocity field. 
+This entails computation of fluxes of the colour function, which 
+can be computed via algebraic transport schemes (generally less accurate), 
+or by using geometric reconstructions in either Eulerian, Lagrangian or hybrid frameworks.
+In the context of our numerical platforms (`PARIS' and `Basilisk'), 
+state-of-the-art \sidenote{The reader can refer to 
+\cite{paris,basilisk} for further details}  
+geometrical flux reconstruction procedues are utilised. 
+The temporal integration of the fluxes could be carried out either as a 
+series of one dimensional propagations along each of the spatial directions, 
+termed as direction-split, or carried out in one single sweep, 
+termed as multidimensional or unsplit.
+
+Direction-split methods are more intuitive and easier to develop (extension to 
+3D in particular), but suffer from lack of conservation (to the order of 
+machine precision) when it comes to 3D (see \cite{weymouth2010conservative}). 
+Multidimensional (unsplit) methods have an advantage in that respect due to the 
+fact that they are conservative by nature of their design, but are inherently 
+more complicated to develop and implement, with no straightforward extension from 2D to 3D.    
+For a more detailed and nuanced evaluation of the comparitive advantages of 
+interfacial transport methods, we refer the reader to the recent review by 
+Mirjalili et al. \cite{mirjalili2017interface} on the given subject.     
 The propagation of the interface can be described by the evolution of
 the colour function (volume fraction field) as - 
 
@@ -188,10 +211,6 @@ We can express the same in the conservative form as -
 \label{cvof_con}
 \end{align}
 
-
-The conservation of mass reduces down to transport of the discrete volume fraction field (VOF) in our incompressible framework - 
-
-followed by geometric computation of fluxes in order to integrate in time. In this study, we will not delve into the details of the geometric reconstruction of the interface from the discrete volume fraction field, hence we refer the readers to \cite{gueyffier} for a thorough desciption. Moving onto temporal integration, we utilize the algorithm proposed by Weymouth \& Yue \cite{weymouth2010conservative}, which is essentially an explicit forward Euler method in the direction-split sense. The advantages of using this particular method are :
 
 %---------------------------------------------------------------
 
