@@ -79,8 +79,8 @@ can be modeled by the following advection equation :
 \label{chi}
 \end{align}
 
-where $\chi$ is the phase-characteristic function, that marks the 
-separation between the two phases in question. Mathematically, the function $\chi$
+where $\chi$ is the phase-characteristic function, that has different values 
+in each phase \sidenote{Generally, $\chi$ is assigned values of $0$ in one phase and $1$ in the other. } . Mathematically, the function $\chi$
 is equivalent to a Heaviside function in space and time. 
 At the macroscopic length scales under consideration, the interface evolution
 as described by equation \ref{chi} is modeled as having infinitesimal thickness
@@ -121,7 +121,7 @@ recent review by Mirjalili et al. \cite{mirjalili2017interface} on the given sub
 
 %---------------------------------------------------------------
 
-\section{Interfacial Transport}
+\section{Interfacial Transport : VOF}
 Our numerical studies are based on the Volume-of-Fluid methodology. 
 We refer to the discontinuous approximation to the Heaviside function
 \sidenote{A comprehensive discussion about the different types of approximations
@@ -133,13 +133,65 @@ is defined below in the context of finite volume discretization :
 	C_{ijk}\left(t\right) = \frac{1}{\Delta V} \displaystyle\int_{\Delta V} \chi(\boldsymbol{x},t) \,d\boldsymbol x 
 \end{align}
 
-where $C$ is the colour function with its values lying between $0$ and $1$, with $i$,$j$ and $k$ being the indices to the corresponding discretized control volume of volume $\Delta V$.  
+where $C$ is the colour function with its values lying between $0$ and $1$, 
+with $i$,$j$ and $k$ being the indices to the corresponding discretized control volume of volume $\Delta V$.  
+There are two steps involved in the VOF method, the reconstruction of the interface and its 
+subsequent propagation (advection). We present a brief overview of the two steps in the following sections,
+as going into detailed descriptions of the reconstruction and propagation procedures are 
+not the focus of the present body of work \sidenote{Detailed descriptions of these methods
+can be found in the seminal monograph by Tryggvason, Scardovelli and Zaleski \cite{zaleskibook}}.  
 
-\subsection*{Volume-of-Fluid : PLIC Methodology}
-\blindtext
 
-\subsection*{Flux Computation : CIAM , WY}
-\blindtext
+\subsection*{PLIC representation}
+We employ means of geometric reconstructions to explicitly define the 
+interface location using the discrete colour function information. 
+The interface is represented by disjointed line segments under 
+the PLIC (piecewise linear interface construction)
+framework as illustrated in figure \ref{vof_plic}, with the images reproduced 
+from the the review by Scardovelli and Zaleski \sidecite{zaleskiannual}. 
+Such reconstructions involve the determination of interface normals 
+using the Mixed Youngs Centered method, the detailed description 
+of which can be found in \cite{zaleskibook}. 
+
+\begin{figure}[!h]
+\begin{center}
+\begin{tabular}{cc}
+\hspace*{-1.0cm}
+\includegraphics[width=0.5\textwidth]{plots/methodology/vof_basic.png} &
+\hspace{-0.2cm}%
+\includegraphics[width=0.473\textwidth]{plots/methodology/vof_plic.png} \\ 
+\hspace{-0.2cm}%
+(a) & (b) \\
+\end{tabular}
+\end{center}
+\caption{ Exlicit definition of the interface location using the volume-of-fluid approach. 
+These images are reproduced with permission from Scardovelli and Zaleski \cite{zaleskiannual}.
+(a) The exact discrete representation of a circular arc on a regular Cartesian grid using the colour function field (volume fraction).
+(b) The piecewise linear (PLIC) approximation to the smooth circular arc shown in (a), which entails second-order spatial accuracy.   
+}
+\label{vof_plic}
+\end{figure}
+
+\subsection*{Flux Computation}
+The propagation of the interface can be described by the evolution of
+the colour function (volume fraction field) as - 
+
+\begin{align} 
+	\frac{\partial C}{\partial t} + \boldsymbol{u} \cdot \nabla C = 0  	
+\label{cvof_non}
+\end{align}
+
+We can express the same in the conservative form as - 
+
+\begin{align} 
+	\frac{\partial C}{\partial t} + \nabla \cdot \left(C \boldsymbol{u}\right) = C \left(\nabla \cdot \boldsymbol{u}\right) 	
+\label{cvof_con}
+\end{align}
+
+
+The conservation of mass reduces down to transport of the discrete volume fraction field (VOF) in our incompressible framework - 
+
+followed by geometric computation of fluxes in order to integrate in time. In this study, we will not delve into the details of the geometric reconstruction of the interface from the discrete volume fraction field, hence we refer the readers to \cite{gueyffier} for a thorough desciption. Moving onto temporal integration, we utilize the algorithm proposed by Weymouth \& Yue \cite{weymouth2010conservative}, which is essentially an explicit forward Euler method in the direction-split sense. The advantages of using this particular method are :
 
 %---------------------------------------------------------------
 
