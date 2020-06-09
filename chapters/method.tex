@@ -69,7 +69,7 @@ At the incompressible limit, the advection of mass given by equation \ref{mass} 
 treated as equivalent to that of the advection of volume.
 
 
-\subsection*{Interface Capturing}
+\subsection*{Material Properties}
 Within the framework of interface capturing schemes, the 
 temporal evolution of the interface separating the two fluids
 can be modeled by the following advection equation : 
@@ -114,10 +114,8 @@ which is not the case in level set based methods. }
 whereas in terms of interface curvature computation, level set based methods hold an advantage
 \sidenote{The differentiable nature of the level set function lends itself
 to straightforward curvature computation routines. } . 
-For a more detailed and nuanced evaluation of the comparitive advantages of 
-the different interfacial transport methods, we refer the reader to the 
-recent review by Mirjalili et al. \cite{mirjalili2017interface} on the given subject.     
-
+A detailed exposition into the different classes of interfacial transport
+methods can be found in the seminal monograph by Tryggvason, Scardovelli and Zaleski \cite{zaleskibook}
 
 %---------------------------------------------------------------
 
@@ -138,8 +136,8 @@ with $i$,$j$ and $k$ being the indices to the corresponding discretized control 
 There are two steps involved in the VOF method, the reconstruction of the interface and its 
 subsequent propagation (advection). We present a brief overview of the two steps in the following sections,
 as going into detailed descriptions of the reconstruction and propagation procedures are 
-not the focus of the present body of work \sidenote{Detailed descriptions of these methods
-can be found in the seminal monograph by Tryggvason, Scardovelli and Zaleski \cite{zaleskibook}}.  
+not the focus of the present body of work \sidenote{In-depth explanations into these numerical 
+techniques can be found in \cite{zaleskibook, zaleskiannual,vof_1,vof_2}.}.  
 
 
 \subsection*{PLIC representation}
@@ -189,7 +187,9 @@ termed as multidimensional or unsplit.
 
 Direction-split methods are more intuitive and easier to develop (extension to 
 3D in particular), but suffer from lack of conservation (to the order of 
-machine precision) when it comes to 3D (see \cite{weymouth2010conservative}). 
+machine precision) when it comes to 3D \sidenote{
+A detailed exposition of this problem along with a noteworthy solution  
+can be found in the work by Weymouth and Yue \cite{weymouth2010conservative}}. 
 Multidimensional (unsplit) methods have an advantage in that respect due to the 
 fact that they are conservative by nature of their design, but are inherently 
 more complicated to develop and implement, with no straightforward extension from 2D to 3D.    
@@ -210,6 +210,57 @@ We can express the same in the conservative form as -
 	\frac{\partial C}{\partial t} + \nabla \cdot \left(C \boldsymbol{u}\right) = C \left(\nabla \cdot \boldsymbol{u}\right) 	
 \label{cvof_con}
 \end{align}
+
+As one can observe, the ``compression'' term on the right hand side of equation 
+\ref{cvof_con} equals to zero in the context of incompressible flows without mass 
+transfer, but it is important to keep this term in our numerical formulation within 
+the direction-split framework. Discretization of the above equation results in :
+
+\begin{align}
+	C_{i,j,k}^{n,d+1} = C_{i,j,k}^{n,d} - F_{+}^{n,d}\left(C \right) - F_{-}^{n,d}\left(C \right) + \overline{C}^{n}\left(\frac{\Delta u}{\Delta x}\right)^{n,d}_{i,j,k}  
+  \label{cvof_discrete}
+\end{align}
+
+The above equation represents an advection substep, the superscripts $n$ and $d$ refer to the timestep and 
+direction of integration respectively. The notation $d=0$ refers to the field 
+at the $n^{th}$ timestep, before any integration is performed along any direction. 
+The fluxes $F_{\pm}^{n,d}(C)$ in equation \ref{cvof_discrete} are derived through geometrical reconstructions. 
+After each substep, the interface is reconstructed once again with the updated 
+volume fraction field in order to compute the fluxes for the next advection substep.  
+Finally, the volume fraction field for the next timestep is given by -
+
+\begin{align}
+	 C^{n+1}_{i,j,k} = C^{n,3}_{i,j,k}  
+\end{align}
+
+The interpretation and numerical approximation of the prefactor $\overline{C}_{i,j,k}^{n}$ 
+to the directional divergence, as well as the fluxes $F_{\pm}^{n,d}(C)$, depend 
+on the exact nature of the geometrical advection scheme in question, 
+which in our context is either CIAM (Lagrangian explicit) or Weymouth-Yue (Eulerian implicit) 
+\sidenote{The classification of Lagrangian explicit and Eulerian implicit 
+are in accordance with the paper by Aulisa et al. \cite{aulisa2003}}.
+A brief outline of these two methods is presented in the subsequent sections.   
+
+\paragraph{CIAM} 
+This scheme was originally described in the work of Li \cite{li95}, `CIAM' being an 
+abbreviation for the French title `\textit{Calcul d'interface affine par morceaux}', 
+which can be thought of as a straightforward Lagrangian transport of the interface Heaviside function. 
+After the interface segments are reconstructed from the discrete colour function 
+at the start of the time-step, the interfacial points are transported by the component of the 
+velocity field \sidenote{The temporal integration of the position
+is carried out using a first-order explicit estimate in time, 
+along with a linear interpolation of the component of the velocity field.}
+corresponding to the direction of transport. A geometrical interpretation of the scheme
+is illustrated in figure \ref{ciam}, reproduced from the seminal work of Gueyffier et al. \cite{gueyffier}. 
+\begin{figure}[!h]
+\includegraphics[width=1.0\textwidth]{plots/methodology/ciam.png} 
+\caption{}
+\label{ciam}
+\end{figure}
+
+
+\paragraph{Weymouth and Yue : Eulerian Explicit}
+
 
 
 %---------------------------------------------------------------
