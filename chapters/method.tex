@@ -189,7 +189,7 @@ Direction-split methods are more intuitive and easier to develop (extension to
 3D in particular), but suffer from lack of conservation (to the order of 
 machine precision) when it comes to 3D \sidenote{
 A detailed exposition of this problem along with a noteworthy solution  
-can be found in the work by Weymouth and Yue \cite{weymouth2010conservative}}. 
+can be found in the work by Weymouth and Yue \cite{wy}}. 
 Multidimensional (unsplit) methods have an advantage in that respect due to the 
 fact that they are conservative by nature of their design, but are inherently 
 more complicated to develop and implement, with no straightforward extension from 2D to 3D.    
@@ -217,7 +217,7 @@ transfer, but it is important to keep this term in our numerical formulation wit
 the direction-split framework. Discretization of the above equation results in :
 
 \begin{align}
-	C_{i,j,k}^{n,d+1} = C_{i,j,k}^{n,d} - F_{+}^{n,d}\left(C \right) - F_{-}^{n,d}\left(C \right) + \overline{C}^{n}\left(\frac{\Delta u}{\Delta x}\right)^{n,d}_{i,j,k}  
+	C_{i,j,k}^{n,d+1} = C_{i,j,k}^{n,d} - F_{+}^{n,d}\left(C \right) - F_{-}^{n,d}\left(C \right) + \overline{C}_{i,j,k}^{n,d}\left(\frac{\Delta u}{\Delta x}\right)^{n,d}_{i,j,k}  
   \label{cvof_discrete}
 \end{align}
 
@@ -233,7 +233,7 @@ Finally, the volume fraction field for the next timestep is given by -
 	 C^{n+1}_{i,j,k} = C^{n,3}_{i,j,k}  
 \end{align}
 
-The interpretation and numerical approximation of the prefactor $\overline{C}_{i,j,k}^{n}$ 
+The interpretation and numerical approximation of the prefactor $\overline{C}_{i,j,k}^{n,d}$ 
 to the directional divergence, as well as the fluxes $F_{\pm}^{n,d}(C)$, depend 
 on the exact nature of the geometrical advection scheme in question, 
 which in our context is either CIAM (Lagrangian explicit) or Weymouth-Yue (Eulerian implicit) 
@@ -241,7 +241,7 @@ which in our context is either CIAM (Lagrangian explicit) or Weymouth-Yue (Euler
 are in accordance with the paper by Aulisa et al. \cite{aulisa2003}}.
 A brief outline of these two methods is presented in the subsequent sections.   
 
-\paragraph{CIAM} 
+\paragraph{Lagrangian Explicit} 
 This scheme was originally described in the work of Li \cite{li95}, `CIAM' being an 
 abbreviation for the French title `\textit{Calcul d'interface affine par morceaux}', 
 which can be thought of as a straightforward Lagrangian transport of the interface Heaviside function. 
@@ -254,14 +254,50 @@ corresponding to the direction of transport. A geometrical interpretation of the
 is illustrated in figure \ref{ciam}, reproduced from the seminal work of Gueyffier et al. \cite{gueyffier}. 
 \begin{figure}[!h]
 \includegraphics[width=1.0\textwidth]{plots/methodology/ciam.png} 
-\caption{}
+\caption{
+Lagrangian transport of the interface segments using the CIAM scheme, the image
+is reproduced with permission from Gueyffier et al. \cite{gueyffier}. 
+A 2D schemetic of the geometric calculation of the fluxes of the volume 
+fraction field is shown, for the advection substep along the horizontal direction.
+The central cell ($i,j,k$) undergoes a net compression during this substep.
+The fluxes $\Phi^{-}$ , $\Phi^{0}$ and $\Phi^{+}$ are the volumes under the 
+advected interface segments advected by the interpolated velocity field,
+intersected by the $(i,j,k)$ cell boundaries. 
+}
 \label{ciam}
 \end{figure}
 
+As one can infer from the geometrical representation in figure \ref{ciam}, 
+the fluxes $F_{\pm}^{n,d}(C)$ correspond to the volumes $\Phi^{-}$ and $\Phi^{+}$. 
+Thus, the updated field $C_{i,j,k}^{n,d+1}$ is the sum of the 
+three contributions $\Phi^{-}$ , $\Phi^{0}$ and $\Phi^{+}$. 
+We can rewrite equation \ref{cvof_discrete} specifically for the CIAM scheme as -  
 
-\paragraph{Weymouth and Yue : Eulerian Explicit}
+\begin{align}
+C_{i,j,k}^{n,d+1} =  C_{i,j,k}^{n,d}\left[1 + \left(\frac{\Delta u}{\Delta x}\right)^{n,d}_{i,j,k} \right] - F_{+}^{n,d}\left(C \right) - F_{-}^{n,d}\left(C \right)   
+\label{ciam_discrete}
+\end{align}
 
+where the compression coefficient $\overline{C}_{i,j,k}^{n,d}$ is simply equal 
+to the value of the colour function $C_{i,j,k}^{n,d}$ at the start of the 
+corresponding advection substep. Although the flux terms cancel upon integration 
+throughout the whole domain, one can clearly see that the compression terms do 
+not sum up to zero due to the changing prefactor in front of the directional divergences. 
+This precise issue brings us to the next advection scheme.      
 
+\paragraph{Eulerian Implicit}
+This advection scheme was developed by Weymouth and Yue \cite{wy} in order to 
+specifically tackle the problem of discrete conservation when it comes to direction-split 
+geometrical advection schemes \sidenote{By `discrete conservation' we mean that the sum of 
+the directional divergences sum upto zero, to the accuracy of machine precision.}. 
+The scheme fundamentally employs a forward Eulerian method in order to carry out temporal 
+integration of the fluxes, with the fluxes themselves computed as the quantity of the substance 
+entering or exiting a given control volume through its fixed surfaces. 
+
+\begin{align}
+	\overline{C}_{i,j,k}^{n,d} &= 0 \quad \text{if} \quad C_{i,j,k}^{n,0} < 0.5 \\
+	\overline{C}_{i,j,k}^{n,d} &= 1 \quad \text{if} \quad C_{i,j,k}^{n,0} \geq 0.5 
+\end{align}
 
 %---------------------------------------------------------------
 
