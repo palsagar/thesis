@@ -217,14 +217,19 @@ transfer, but it is important to keep this term in our numerical formulation wit
 the direction-split framework. Discretization of the above equation results in :
 
 \begin{align}
-	C_{i,j,k}^{n,d+1} = C_{i,j,k}^{n,d} - F_{+}^{n,d}\left(C \right) - F_{-}^{n,d}\left(C \right) + \overline{C}_{i,j,k}^{n,d}\left(\frac{\Delta u}{\Delta x}\right)^{n,d}_{i,j,k}  
+	C_{i,j,k}^{n,d+1} = C_{i,j,k}^{n,d} - F_{+}^{n,d}\left(C \right) - F_{-}^{n,d}\left(C \right) + \overline{C}_{i,j,k}^{n,d}\left(\frac{\Delta u_q}{\Delta x}\right)^{n,d}_{i,j,k}  
   \label{cvof_discrete}
 \end{align}
 
 The above equation represents an advection substep, the superscripts $n$ and $d$ refer to the timestep and 
 direction of integration respectively. The notation $d=0$ refers to the field 
 at the $n^{th}$ timestep, before any integration is performed along any direction. 
-The fluxes $F_{\pm}^{n,d}(C)$ in equation \ref{cvof_discrete} are derived through geometrical reconstructions. 
+The fluxes $F_{\pm}^{n,d}(C)$ in equation \ref{cvof_discrete} are derived through geometrical reconstructions
+\sidenote{For details regarding geometric flux reconstruction, refer to \cite{zaleskibook, zaleskiannual}}.
+The $+$ and $-$ subcripts refer to the orientation with respect to the central cell ($i,j,k$).
+The subscript $q$ refers to the direction corresponding to that given advection substep 
+i.e either $X$, $Y$ or $Z$. In our case, our numerical platforms are based on cubic 
+(regular Cartesian) grids, consequently there is no requirement for a subscript with $\Delta x$. 
 After each substep, the interface is reconstructed once again with the updated 
 volume fraction field in order to compute the fluxes for the next advection substep.  
 Finally, the volume fraction field for the next timestep is given by -
@@ -247,11 +252,9 @@ abbreviation for the French title `\textit{Calcul d'interface affine par morceau
 which can be thought of as a straightforward Lagrangian transport of the interface Heaviside function. 
 After the interface segments are reconstructed from the discrete colour function 
 at the start of the time-step, the interfacial points are transported by the component of the 
-velocity field \sidenote{The temporal integration of the position
-is carried out using a first-order explicit estimate in time, 
-along with a linear interpolation of the component of the velocity field.}
-corresponding to the direction of transport. A geometrical interpretation of the scheme
+velocity field corresponding to the direction of transport. A geometrical interpretation of the scheme
 is illustrated in figure \ref{ciam}, reproduced from the seminal work of Gueyffier et al. \cite{gueyffier}. 
+
 \begin{figure}[!h]
 \includegraphics[width=1.0\textwidth]{plots/methodology/ciam.png} 
 \caption{
@@ -262,7 +265,7 @@ fraction field is shown, for the advection substep along the horizontal directio
 The central cell ($i,j,k$) undergoes a net compression during this substep.
 The fluxes $\Phi^{-}$ , $\Phi^{0}$ and $\Phi^{+}$ are the volumes under the 
 advected interface segments advected by the interpolated velocity field,
-intersected by the $(i,j,k)$ cell boundaries. 
+intersected by the $(i,j,k)$ cell boundaries.
 }
 \label{ciam}
 \end{figure}
@@ -274,7 +277,7 @@ three contributions $\Phi^{-}$ , $\Phi^{0}$ and $\Phi^{+}$.
 We can rewrite equation \ref{cvof_discrete} specifically for the CIAM scheme as -  
 
 \begin{align}
-C_{i,j,k}^{n,d+1} =  C_{i,j,k}^{n,d}\left[1 + \left(\frac{\Delta u}{\Delta x}\right)^{n,d}_{i,j,k} \right] - F_{+}^{n,d}\left(C \right) - F_{-}^{n,d}\left(C \right)   
+C_{i,j,k}^{n,d+1} =  C_{i,j,k}^{n,d}\left[1 + \left(\frac{\Delta u_q}{\Delta x}\right)^{n,d}_{i,j,k} \right] - F_{+}^{n,d}\left(C \right) - F_{-}^{n,d}\left(C \right)   
 \label{ciam_discrete}
 \end{align}
 
@@ -292,7 +295,24 @@ geometrical advection schemes \sidenote{By `discrete conservation' we mean that 
 the directional divergences sum upto zero, to the accuracy of machine precision.}. 
 The scheme fundamentally employs a forward Eulerian method in order to carry out temporal 
 integration of the fluxes, with the fluxes themselves computed as the quantity of the substance 
-entering or exiting a given control volume through its fixed surfaces. 
+entering or exiting a given control volume through its fixed surfaces
+\sidenote{This is in contrast with the flux computation method in the case of CIAM, where }. 
+
+\begin{figure}[!h]
+\includegraphics[width=1.0\textwidth]{plots/methodology/wy.png} 
+\caption{
+A 2D schemetic of the Eulerian (geometric) flux calculation  
+using the Weymouth-Yue \cite{wy} scheme, for the advection substep
+along the horizontal direction.
+The colour fraction of the central cell ($i,j$) is updated during this substep,
+through the addition of the fluxes (coloured regions), with the green polygon corresponding
+to the volume entering the cell $i,j$ from the $i-1,j$ and the red one corresponding to
+that exiting $i,j$ into $i+1,j$. The geometric flux calculations are made on the basis
+of the interfacial positions at the start of the substep.
+}
+\label{ciam}
+\end{figure}
+
 
 \begin{align}
 	\overline{C}_{i,j,k}^{n,d} &= 0 \quad \text{if} \quad C_{i,j,k}^{n,0} < 0.5 \\
