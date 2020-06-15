@@ -253,7 +253,7 @@ which can be thought of as a straightforward Lagrangian transport of the interfa
 After the interface segments are reconstructed from the discrete colour function 
 at the start of the time-step, the interfacial points are transported by the component of the 
 velocity field corresponding to the direction of transport. A geometrical interpretation of the scheme
-is illustrated in figure \ref{ciam}, reproduced from the seminal work of Gueyffier et al. \cite{gueyffier}. 
+is illustrated in figure \ref{fig:ciam}, reproduced from the seminal work of Gueyffier et al. \cite{gueyffier}. 
 
 \begin{figure}[!h]
 \includegraphics[width=1.0\textwidth]{plots/methodology/ciam.png} 
@@ -267,10 +267,10 @@ The fluxes $\Phi^{-}$ , $\Phi^{0}$ and $\Phi^{+}$ are the volumes under the
 advected interface segments advected by the interpolated velocity field,
 intersected by the $(i,j,k)$ cell boundaries.
 }
-\label{ciam}
+\label{fig:ciam}
 \end{figure}
 
-As one can infer from the geometrical representation in figure \ref{ciam}, 
+As one can infer from the geometrical representation in figure \ref{fig:ciam}, 
 the fluxes $F_{\pm}^{n,d}(C)$ correspond to the volumes $\Phi^{-}$ and $\Phi^{+}$. 
 Thus, the updated field $C_{i,j,k}^{n,d+1}$ is the sum of the 
 three contributions $\Phi^{-}$ , $\Phi^{0}$ and $\Phi^{+}$. 
@@ -295,45 +295,212 @@ geometrical advection schemes \sidenote{By `discrete conservation' we mean that 
 the directional divergences sum upto zero, to the accuracy of machine precision.}. 
 The scheme fundamentally employs a forward Eulerian method in order to carry out temporal 
 integration of the fluxes, with the fluxes themselves computed as the quantity of the substance 
-entering or exiting a given control volume through its fixed surfaces
-\sidenote{This is in contrast with the flux computation method in the case of CIAM, where }. 
+entering or exiting a given control volume through its fixed surfaces, as shown in figure \ref{fig:wy}. 
+This is in contrast with the flux computation method in the case of CIAM, 
+where the interface segments are propagated forward in time in a Lagrangian fashion. 
 
 \begin{figure}[!h]
 \includegraphics[width=1.0\textwidth]{plots/methodology/wy.png} 
-\caption{
-A 2D schemetic of the Eulerian (geometric) flux calculation  
-using the Weymouth-Yue \cite{wy} scheme, for the advection substep
-along the horizontal direction.
-The colour fraction of the central cell ($i,j$) is updated during this substep,
+\caption{ A 2D schemetic of the Eulerian (geometric) flux calculation  
+using the Weymouth-Yue \cite{wy} scheme for the advection substep
+along the horizontal direction, with the interface reconstructed 
+using the volume fraction field at the start of the substep.
+The colour fraction of the central cell ($i,j$) is updated during this substep
 through the addition of the fluxes (coloured regions), with the green polygon corresponding
 to the volume entering the cell $i,j$ from the $i-1,j$ and the red one corresponding to
 that exiting $i,j$ into $i+1,j$. The geometric flux calculations are made on the basis
-of the interfacial positions at the start of the substep.
-}
-\label{ciam}
+of the interfacial positions at the start of the substep, and the face centered velocities 
+of the cell in question.}
+\label{fig:wy}
 \end{figure}
 
+The subtle but important tactic used in this scheme lies in the manner in which the 
+prefactor to the compression term \sidenote{Compression coefficient is used 
+as a short-hand version of 'prefactor to the compression term'.}  is treated, with its definition being : 
 
 \begin{align}
-	\overline{C}_{i,j,k}^{n,d} &= 0 \quad \text{if} \quad C_{i,j,k}^{n,0} < 0.5 \\
-	\overline{C}_{i,j,k}^{n,d} &= 1 \quad \text{if} \quad C_{i,j,k}^{n,0} \geq 0.5 
+\overline{C}_{i,j,k}^{n,d} = H \left( C_{i,j,k}^{n,0} - 1/2 \right)
+\label{wy_cond}
 \end{align}
+
+where $H$ is a one-dimensional Heaviside function. This renders the compression coefficient 
+independent of the direction of the advection substep, consequently enabling the 
+three discrete directional divergences to sum up to zero \sidenote{In numerical terms, we
+can only ensure that they sum up to the accuracy of the Poisson solver $\sim 10^{-3} - 10^{-6}$
+, with the limiting factor being the level of machine accuracy ($\sim 10^{-14} - 10^{-17}$). }
+Therefore, the scheme is able to demonstrate volume conservation, subject to local 
+CFL restrictions \sidenote{For a proof of discrete volume conservation subject to certain
+CFL criteria, refer to the appendix of \cite{wy}.}. To summarise, we can rewrite equation \ref{cvof_discrete}
+for the Weymouth-Yue scheme as - 
+
+\begin{align}
+C_{i,j,k}^{n,d+1} =  C \left[1 + \left(\frac{\Delta u_q}{\Delta x}\right)^{n,d}_{i,j,k} \right] - F_{+}^{n,d}\left(C \right) - F_{-}^{n,d}\left(C \right)   
+\label{wy_discrete}
+\end{align}
+
+where $C$ is a constant with a value of either $0$ or $1$, determined by the value of $C_{i,j,k}^{n,0}$ according to equation \ref{wy_cond}.  
 
 %---------------------------------------------------------------
 
 \section{Time Marching}
 
-\subsection*{Spatio-Temporal Discretization}
-\blindtext
+In order to describe the overall numerical algorithm for the one-fluid Navier-Stokes equations with variable density and viscosity, we choose to the reframe our equations in a more convenient operator form, as presented below : 
+
+\begin{align}
+   \frac{\partial}{\partial t} \left( \rho \boldsymbol{u} \right) = L\left( \rho,\boldsymbol{u} \right) - \nabla p
+\end{align}
+
+The operator $L$ in the above expression can be decomposed in an explicit fashion as : 
+
+\begin{align}
+   L = L_{adv} + L_{\mu} + L_{\sigma} + L_{g} 
+   \label{opr}
+\end{align}
+
+where the $L_{adv}$ represents the conservative advection, 
+$L_{\mu}$ represents the diffusive forces generated by viscous stresses,
+$L_{\sigma}$ represents the capillary forces arising from the surface tension model
+and finally $L_{g}$ represents the volumetric (body forces) source term. 
+
+\subsection*{Spatio-temporal Discretization}
+
+We apply the spatially discretized versions of these operators (denoted by the superscript $h$) 
+onto the primary variables ($C,\boldsymbol{u}$), and march forward in time using a small, 
+possibly variable time-step $\tau$ such that $t_{n+1} = t_{n} + \tau$. 
+We shall be dropping the subscript $i,j,k$ from this point onwards, with the understanding 
+that the operators in equation \ref{opr} apply uniformly to all control volumes. 
+In the first part of the algorithm, the volume fraction field $C^{n}$ is updated to the next timestep 
+, with the superscript $n$ signifying discretization in time. The operation can be written as follows -       
+
+\begin{align}
+C^{n+1} = C^{n} + \tau L^{h}_{vof}\left( C^{n},\boldsymbol{u}^{n}\right)  
+\label{cvof_update}
+\end{align}
+
+The temporal evolution of the volume fraction field represented above by the 
+operator $L^{h}_{vof}$ is in accordance with the Lagrangian explicit or Eulerian implicit 
+advection schemes, as described in the previous sections. 
+Once we have obtained the updated field $C^{n+1}$, we can move on to 
+the temporal update of our momentum field given by -
+
+\begin{align}
+\rho^{n+1}\cdot \boldsymbol{u}^{*} &= \rho^{n}\cdot \boldsymbol{u}^{n} + \tau L^{h}_{adv}\left( C^{n},\boldsymbol{u}^{n} \right) + \nonumber \\
+				      & \tau \left[ L^{h}_{\mu}\left(C^{n+1},\boldsymbol{u}^{n}\right) + L^{h}_{\sigma}\left(C^{n+1}\right) + L^{h}_{g}\left(C^{n+1}\right)\right]
+\label{mom_update}
+\end{align}
+
+The advection operator $L^{h}_{adv}$ is implemented as high-order spatial schemes 
+coupled with a choice of non-linear flux limiters such as 
+QUICK, ENO, WENO, Superbee, Verstappen, BCG, for regions of constant density
+\sidenote{These high-order spatial schemes are based on well established methods 
+developed to deal with hyperbolic conservation laws, for more details refer to the 
+studies of Leveque \cite{flim_1} and Sweby \cite{flim_2}.}. 
+For control volumes in the vicinity of the interface location, we revert to lower order
+schemes due to the sharp jumps in the material properties across the interface.  
+The functionality of the operator $L^{h}_{adv}$ near the interface is tighly coupled
+to that of $L^{h}_{vof}$ from equation \ref{cvof_update}, 
+so as to ensure consistency in the discrete advection of mass and momentum 
+The details regarding this coupling shall be the focus 
+of subsequent chapters, where it is covered in more depth.
 
 \subsection*{Pressure-Poisson Projection}
-\blindtext
+
+The velocity field is evolved using a classical time-splitting projection method 
+as described in the seminal work of Chorin \cite{chorin1969convergence}, 
+which involves predicting an `intermediate' velocity field $\boldsymbol{u}^{*}$ 
+as given by equation \ref{mom_update}, followed by a correction step as follows -       
+
+\begin{align}
+\boldsymbol{u}^{n+1} = \boldsymbol{u}^{*} - \frac{\tau}{\rho^{n+1}}\nabla^{h}p^{n+1}
+\label{ufinal}
+\end{align}
+
+The discrete pressure field required to correct the intermediate velocity 
+is determined by imposing the conservation of mass, which in our incompressible 
+framework reduces to necessitating the resulting velocity field to be divergence-free (solenoidal) - 
+
+\begin{align}
+\nabla^{h}\cdot\boldsymbol{u}^{n+1} = 0
+\label{div}
+\end{align}
+
+Thus, combining equations \ref{ufinal} and \ref{div}, 
+we are left with a variable coefficient Poisson equation for the pressure :  
+
+\begin{align}
+\nabla^{h}\cdot\left(\frac{\tau}{\rho^{n+1}}\nabla^{h}p^{n+1}\right) = \nabla^{h}\cdot \boldsymbol{u}^{*} 
+	\label{poisson}
+\end{align}
+
+The default Poisson solver used in `PARIS Simulator' to invert the elliptic operator 
+appearing in eqn. \ref{poisson} is a red-black 
+Gauss-Seidel (GS) solver with overrelaxation \sidecite{briggs1987}. 
+There is also has an in-house implementation of a multigrid solver 
+for structured grids with $2^{n}$ number of points per direction, 
+utilizing a fully parallelized V-Cycle scheme \cite{briggs1987}. 
+Relaxation operations are applied starting from the finest to the coarsest first, 
+and then from the coarsest to the finest, with the number of relaxation operations 
+being a user-adjustable parameter. Having a native multigrid solver allows 
+for an efficient solution of the Poisson equation without the necessity
+of having external libraries/pre-conditioners (e.g. HYPRE) installed on the system.
+When it comes to `Basilisk', an atypical multigrid solver is implemented using 
+a ``half'' V-cycle in order to deal with the spatial inhomogeity of the grid size
+arising due to adaptive mesh refinement. 
+For more details regarding the differences between the multigrid solver of `Basilisk'
+and the classical implementation of a multigrid, one can refer to \sidecite{popinet_gerris}.
+
+
+The whole set of operations described up to this point, 
+constitutes a temporal integration scheme of the first-order, which can be expressed as -
+
+\begin{align}
+\left(C^{n+1},\boldsymbol{u}^{n+1}\right) = L_{1}\left( C^{n},\boldsymbol{u}^{n} \right)
+\end{align}
+
+where $L_{1}$ is the operator consisting of all the steps described 
+so far, applied to the primary fields $C$ and $\boldsymbol{u}$. 
+Therefore, a second-order time integration can easily be 
+computed by using $L_{1}$ to get a first prediction -   
+
+\begin{align}
+\left(C^{**},\boldsymbol{u}^{**}\right) = L_{1}\left( C^{n},\boldsymbol{u}^{n} \right)
+\end{align}
+
+The superscript $**$ refers to our first order prediction of the primary variables. 
+Therefore, the second-order estimate can be obtained via averaging -  
+
+\begin{align}
+\left(C^{n+1},\boldsymbol{u}^{n+1}\right) = \frac{1}{2}\left[ \left(C^{**},\boldsymbol{u}^{**} \right) + L_{1}\left( C^{**},\boldsymbol{u}^{**} \right) \right]
+\end{align}
+
+%---------------------------------------------------------------
 
 \section{Source Terms}
+The detailed descriptions of the methods used in our numerical platforms to deal with surface tension,
+viscosity and body forces have already been carried out in \cite{paris, basilisk, popinet2009accurate}, 
+therefore we briefly touch upon certain aspects of the operators in question, in particular, 
+their interaction with the volume fraction field.
 
 \subsection*{Surface Tension}
+We use the Continuum Surface Force method (CSF) as our model for surface tension, 
+coupled with height functions for curvature computation. 
+The height functions used in our implementation were first introduced in \cite{popinet2009accurate}
+, subsequently tested, revised and improved in \cite{bornia2011properties,owkes2015mesh}. 
+In general, the height functions are used to compute the curvature field based 
+on second-order finite differences applied to the heights. 
+Although, in regions of poor interfacial resolution 
+\sidenote{These are regions where the local radius of curvature is comparable to the grid size}, 
+the method reverts to certain fallbacks, one of which is curve fitting instead of height functions.  
+The resulting curvature field is coupled with a well-balanced discretization with
+respect to the discrete pressure gradient, with the same discretization 
+stencil applied to the volumetric (body) force term as well. 
 
 
 \subsection*{Viscous Diffusion}
+We use second-order spatial discretizations of the viscous stresses, using centered differences
+\sidenote{The exact implementation differs slightly between `Basilisk' and `PARIS Simulator'}. 
+The (variable) dynamic viscosity is computed based on the  
+volume fraction field via weighted arithmetic or harmonic averaging (equations \ref{mu_chi}). 
+The temporal treatment of the viscous term can be either in explicit or semi-implicit fashion,  
+, but in the context of the present study we will be sticking exclusively with the explicit version.     
 
-\blindtext
