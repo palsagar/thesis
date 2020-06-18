@@ -131,11 +131,272 @@ involving the sudden interaction of a droplet at rest with a uniform gas flow.
 The resulting large un-physical pressure gradients across the interface 
 eventually lead to its rapid destabilization and concomitant breakup.  
 
+\begin{figure*}
+\begin{center}
+\begin{tabular}{cc}
+\hspace*{-1.0cm}
+\includegraphics[width=0.8\textwidth]{plots/raindrop/pressure_compare.png} &
+\hspace{-0.4cm}%
+\includegraphics[width=0.8\textwidth]{plots/raindrop/nonmc_16ppd_pressure.png}\\
+\hspace{-0.8cm}%
+(a) & (b)
+\end{tabular}
+\end{center}
+\caption{The origin of the pressure peak in the front of the droplet. 
+(a) The profile of the pressure on the axis a few timesteps after initialisation 
+with the standard, non-consistent method (red curve) and the present method (green curve). 
+Much larger pressure gradients are present across the interface using the non-consistent method. 
+(b) The pressure distribution immediately after the start of the simulation 
+using the standard, non-consistent method. The pressure peak has not yet resulted
+in the formation of a dimple. In all figures the droplet resolution corresponds to $D/h = 16$.
+The simulations are carried out with the CIAM advection method, in conjunction with the Superbee limiter.}
+\label{pressure_1}
+\end{figure*}
 
+\begin{figure*}
+\begin{center}
+\begin{tabular}{cc}
+\hspace*{-1.0cm}
+\includegraphics[width=0.8\textwidth]{plots/raindrop/ke_compare.png} &
+\hspace{-0.4cm}%
+\includegraphics[width=0.8\textwidth]{plots/raindrop/mc_16ppd_pressure.png}\\
+\hspace{-0.8cm}%
+(a) & (b)
+\end{tabular}
+\end{center}
+\caption{ (a) Comparison of the temporal evolution of droplet kinetic energy. 
+The non-consistent method displays spikes in the kinetic energy that are 3 
+orders of magnitude larger than that of the present consistent method, 
+leading to rapid destabilization. 
+(b) The pressure distribution immediately after the start of the simulation 
+using the present method. In all figures the droplet resolution corresponds to $D/h = 16$.
+The simulations are carried out with the CIAM advection method, in conjunction with the Superbee limiter.}
+\label{pressure_2}
+\end{figure*}
+
+\begin{figure*}
+\begin{center}
+\begin{tabular}{cc}
+\hspace*{-1.0cm}
+\includegraphics[width=0.8\textwidth]{plots/raindrop/mc_vorticity_zoom.png} & 
+\hspace{-0.4cm}%
+\includegraphics[width=0.8\textwidth]{plots/raindrop/mc_vorticity.png} \\ 
+\hspace{-0.8cm}%
+(a) & (b)
+\end{tabular}
+\end{center}
+\caption{Flow field around the $3 mm$ droplet with $D/h = 16$ immediately 
+after the start of the simulation with the present method, 
+demonstrating the contours of the norm of the vorticity field (black lines) . 
+The 2D cross-section in these figures corresponds to the 
+mid-plane slice along the Z axis, where the inflow is along 
+the X axis and gravity opposite to it. (a) The velocity magnitude. 
+As one can observe, the boundary layer is resolved by only 2-3 cells. 
+(b) The velocity component in the Y direction, perpendicular to the flow. 
+As the flow develops further, a marked separation of the boundary layers is observed with 
+a more complex vortical region in the wake.
+The figures correspond to simulations carried out with the 
+CIAM advection method, in conjunction with the Superbee limiter.}
+\label{flow_field}
+\end{figure*}
+
+
+Visualization of the flow around the droplets (Figure \ref{flow_field}) 
+illustrates the challenging nature of the flow configuration, 
+even for such a seemingly simple physical problem. 
+As one can observe, the boundary layers are extremely thin. 
+Therefore, even though the velocity field is continuous across the 
+interface (in the discrete sense) in the absence of mass transfer, 
+there is the appearance of strong velocity variations at the 
+scale of the grid size for such coarse levels of grid refinement. 
+We observe that applying the numerical method described in this 
+paper brings a considerable and systematic improvement over a 
+spectrum of different flux limiters (WENO, ENO, Superbee, QUICK, Verstappen) 
+and CFL numbers, as evidenced by comparing the figures \ref{pressure_1} and \ref{pressure_2}. 
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width=1.25\textwidth]{plots/raindrop/raindrop_explode.png}
+\end{center}
+\caption{A comparison of the temporal evolution between the standard 
+non-consistent method (top row) and the present method (bottom row), 
+using the combination of CIAM advection scheme coupled with the Superbee flux limiter. 
+The flow is along the positive X direction, with gravity along the opposite direction. 
+The red contour indicates the isosurface of the volume fraction 
+field corresponding to a value of $0.5$, whereas the black contours 
+surrounding the drop represent isosurfaces of the magnitude of vorticity. 
+The raindrop with the non-consistent method displays massive deformations 
+leading to artificial breakup as a result of rapidly growing numerical instabilities. 
+The droplet resolution for both methods is $D/h = 16$ .}
+\label{explode_compare}
+\end{figure*}
 
 %---------------------------------------------------------------
 
 \section{Effect of Mass-Momentum Consistent Transport}
 
+To summarize, the simulations broadly fall into three categories. 
+The first two categories concern those that use the present 
+mass-momentum consistent method, and as a result maintain 
+physical values of the kinetic energy and smooth interface shapes. 
+Certain simulations amongst the ones carried out with the present 
+method display some numerical instabilities (but not leading 
+to catastrophic deformation) as a function of the choice of 
+advection scheme (CIAM/WY) and 
+flux limiter (QUICK/WENO/ENO/Superbee/Verstappen) combination. 
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width = 1.5\textwidth]{plots/raindrop/multiplot_raindrop.png}
+\end{center}
+\vspace*{-0.5cm}
+\caption{Temporal evolution of quantities of interest to evaluate the 
+performance of our present method for different spatial resolutions. 
+(a) Kinetic energy of the droplet. 
+(b) Moment of inertia of the droplet along the flow (X) direction. 
+(c) and (d) Moment of inertia of the droplet along the directions 
+perpendicular to flow (Y,Z), evolution of $I_{yy}$ 
+seems to be more or less identical to $I_{zz}$.}
+\label{multi}
+\end{figure*}
+
+Finally, there are simulations carried out with the standard 
+non-consistent method that rapidly blow up, displaying marked peaks 
+or spikes in kinetic energy as a function of time, 
+associated with massively deformed interface shapes (see figure \ref{explode_compare}). 
+Therefore, our studies suggest that certain combinations 
+of the advection scheme and the flux limiter are 
+numerically more robust than others, in particular, the most stable combinations 
+are that of CIAM advection with 
+Superbee limiter and the WY advection with QUICK limiter. 
+As a minor remark, the CIAM advection with the Superbee limiter appear to be quite diffusive. 
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width = 1.0\textwidth]{plots/raindrop/dropl_velocity_accel_ppd.png}
+\end{center}
+\vspace*{-0.5cm}
+\caption{Comparison of droplet velocity as a function of time, 
+for different droplet resolutions. 
+The droplet velocities correspond to that of their respective center of masses. 
+Inset : Convergence of the droplet acceleration as a function of resolution, 
+computed using the best linear fit over the temporal variation 
+of their respective velocities. 
+The error bars signify the asymptotic standard 
+error (least-squares) corresponding to the obtained linear fits.} 
+\label{drop_vel}
+\end{figure*}
+
+\begin{figure*}
+\begin{center}
+\begin{tabular}{cc}
+\hspace*{-1.0cm}
+\includegraphics[width=0.7\textwidth]{plots/raindrop/raindrop_mass_conv_16ppd.png} & 
+\hspace{-0.2cm}%
+\includegraphics[width=0.7\textwidth]{plots/raindrop/raindrop_mass_conv_clipping.png} \\ 
+\hspace{-0.2cm}%
+(a) & (b) \\
+\hspace*{-1.0cm}
+\includegraphics[width=0.7\textwidth]{plots/raindrop/raindrop_mass_conv_resolution.png} & 
+\hspace{-0.2cm}%
+\includegraphics[width=0.7\textwidth]{plots/raindrop/acc_conv.png} \\ 
+\hspace{-0.2cm}%
+(c) & (d)
+\end{tabular}
+\end{center}
+\caption{Relative change in the mass of the droplet 
+as a function of time in plots (a), (b) and (c). 
+The simulations are carried out with a resolution of $D/h = 16$, 
+for a total time of $0.1$ milliseconds. 
+The symbol ``WY'' in the legend corresponds to those run using 
+the Weymouth-Yue advection scheme in combination with the QUICK limiter, 
+and ``CIAM'' corresponds to the CIAM scheme in combination with the Superbee limiter. 
+(a) The dependence of the mass conservation properties of 
+the scheme as a function of the Poisson solver tolerance is tested. 
+For the WY-QUICK combination, using a stricter tolerance results 
+in better mass conservation, whereas the conservation properties of the 
+CIAM-Superbee combination seems to be independent of the tolerance.
+(b) Dependence of the mass conservation on the clipping parameter employed. 
+The CIAM-Superbee combination again seems to be impervious to changes in clipping, 
+whereas WY-QUICK seems to perform slightly better by lowering the parameter.
+(c) Dependence of the mass conservation properties on the droplet resolution. 
+The WY-QUICK combination displays better results for all except the lowest resolution.   
+(d) Variation of the relative error from the least-squares fit on the droplet acceleration, 
+in the frame of reference of the static box. 
+The corresponding droplet accelerations are plotted in the inset of figure \ref{drop_vel}. 
+The reduction in the relative error follows roughly second-order spatial convergence.}
+\label{mass_conv}
+\end{figure*}
+
+We illustrate the performance of the present method through the 
+results of our simulations in Figure \ref{multi}. 
+The spatial resolutions correspond to $D/h = 8, 16, 32 $ and $64$ 
+using the WY advection scheme in combination with the QUICK flux limiter, 
+while keeping the same value for the inflow velocity boundary condition. 
+The quantities of interest while examining the robustness of the 
+method are the temporal evolution of the droplet kinetic energy 
+(Fig. \ref{multi}. (a) ) and the moment of inertia of the droplet 
+along the three directions (Fig. \ref{multi}. (b),(c),(d)) . 
+The inflow is along the X direction with gravity opposite to it. 
+The moment of inertia is used as a descriptor of the 'average' droplet shape, 
+with the three moments of inertia along the different axes $I_m$ defined as - 
+
+
+\begin{align}
+	I_m = \int_{\mathcal{D}} H x_m^2 d \boldsymbol{x} \quad , \quad \text{where}, \quad 1 \le m \le 3
+\end{align}
+
+where $\mathcal{D}$ is the computational domain and $x_m$ is the 
+distance of the interface relative to the center of mass of the droplet.   
+The kinetic energy of the droplet evolves in a relatively smooth manner, 
+without the presence of sudden spikes and falls which are emblematic of 
+the standard non-consistent version of our method (refer to Fig. \ref{pressure_2}). 
+Such abrupt changes in kinetic energy of the droplet have been 
+found to be associated with instants when the droplet undergoes 
+`artificial' atomization or breakup, henceforth resulting in 
+the catastrophic loss of stability for the numerical method. 
+We observe a systematic drop in the amount of the droplet 
+kinetic energy as we increase resolution, with the most probable explanation 
+being that of the suppression of spurious interfacial 
+oscillations which are rampant at low resolutions. 
+There is also a component of the kinetic energy of the droplet 
+associated with the internal coherent vortical structures generated due to 
+the interaction of aerodynamic shear at the interface, 
+evidenced by the non-zero value of the kinetic 
+energy even for the most highly resolved droplets. 
+Finally, the moment of inertia of the droplet appears to evolve 
+in a smooth manner for all droplet resolutions, with higher 
+resolutions exhibiting lower amounts of inertia as a result of 
+the more compact shapes obtained once the 
+spurious interfacial deformation modes are subdued. 
+This observation holds true for the moment of inertia curves regardless of direction.           
+
+
+We have to keep in mind that the velocity inflow condition 
+does not correspond to the `exact' teminal velocity 
+field an actual falling raindrop might experience, 
+hence the droplet in our numerical setup does have some 
+finite acceleration due to the imbalance 
+between the aerodynamic forces and gravity. 
+In Figure \ref{drop_vel}, we demonstrate the velocity of 
+the center of mass of the droplet (in the frame of reference 
+of the box enclosing the droplet) as a function of time, 
+and its behavior as we increase the droplet resolution. 
+As one can observe, due to the imbalance of forces acting on the droplet, 
+it undergoes a net acceleration as evidenced by the approximately 
+linear increase (absolute value) in the velocity as a function of time. 
+The temporal variation in the droplet velocity is fitted to a 
+linear polynomial in order to evaluate the droplet acceleration 
+by means of a standard least-squares approach, for each droplet resolution. 
+We illustrate (inset Figure \ref{drop_vel}) that we achieve more 
+accurate fits as a consequence of higher droplet resolutions, 
+as evidenced by a decrease in the standard error on the fits 
+ranging from $\pm 11.1 \%$ for $D/h = 8$ to a value of $\pm 0.12 \%$ 
+for the highest resolution of $D/h = 64$. 
+The results obtained in this section indicate that especially 
+when it comes to low resolutions, 
+our numerical method can be used to get relatively good 
+estimates of the underlying flow features of the droplet 
+without observing an un-physical evolution as a consequence of discretization errors.           
 
 
