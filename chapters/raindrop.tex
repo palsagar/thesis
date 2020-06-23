@@ -115,6 +115,9 @@ between discrete mass and momentum transport.}
 of our numerical method results in the catastrophic 
 deformations of the droplet as illustrated in Fig. \ref{explode_compare}, 
 which we describe as `fictitious' or `artificial' atomization. 
+
+\subsection*{Instability Mechanism}
+
 We propose the following explanation in order to account for such numerical artifacts. 
 To start with, we neglect gravity and viscous effects at this relatively large Reynolds number. 
 Also, we are interested in steady-state flow 
@@ -242,10 +245,6 @@ Therefore, even though the velocity field is continuous across the
 interface (in the discrete sense) in the absence of mass transfer, 
 there is the appearance of strong velocity variations at the 
 scale of the grid size for such coarse levels of grid refinement. 
-We observe that applying the numerical method described in this 
-paper brings a considerable and systematic improvement over a 
-spectrum of different flux limiters (WENO, ENO, Superbee, QUICK, Verstappen) 
-and CFL numbers, as evidenced by comparing the figures \ref{pressure_1} and \ref{pressure_2}. 
 
 \begin{figure*}
 \begin{center}
@@ -268,7 +267,40 @@ The droplet resolution for both methods is $D/h = 16$ .}
 
 %---------------------------------------------------------------
 
-\section{Effect of Mass-Momentum Consistent Transport}
+\section{Stabilization Strategies}
+
+The cascading nature of the numerical instabilities that lead to 
+the eventual (un-physical) fragmentation of droplet is not just a 
+cause of concern in the context of modeling a raindrop, but it has important
+implications within the more broader scope of 
+atomization and other complex fragmentation phenomena. 
+
+
+\subsection*{Primary Concern}
+Arguably, the most important objective of numerical investigations of physical
+phenomena involving fragmentation is the quantification of the size of 
+the features that result from a series of topological changes 
+\sidenote{In the context of surface tension dominated flows, these features are 
+primarily drops and bubbles, occassionally one can also be 
+interested in transient features such as thin sheets, ligaments etc. }. 
+A typical example is the statistical distributions of drop sizes, 
+where the drops are generated via some fragmentation mechanism. 
+\sidenote{These are generally in the form of probability density functions (PDF).}
+As demonstrated in the present studies using the standard non-consistent method,  
+the artificially atomized drop leads to the generation of a large number of 
+smaller fragments, which if counted, will skew the resulting droplet size 
+distributions towards the smaller sizes.
+Therefore, the falling raindrop serves as a faithful representation of the 
+numerous under-resolved features that are typically omnipresent in
+numerical studies of complex fragmentation phenomena.  
+The inability to discern between the drops resulting from physically consistent 
+mechanisms and those that result from `numerical fragmentation' is exactly
+why there is a need to develop numerical schemes that circumvent the occurrence
+of such numerical instabilities.  
+
+
+
+\subsection*{Consistent Mass-Momentum Transport}
 
 The most common and brute force approach that one can apply 
 in order to suppress or circumvent such numerical instabilities is 
@@ -283,7 +315,7 @@ conservative formulation
 is the formulation of the convective operators in the conservative manner i.e
 divergence of fluxes instead of gradients of the primary (discontinuous) variables.} 
 of the Navier-Stokes equations, in order
-to render the discrete transport of mass consistent with that of momentum. 
+to achieve consistency in the discrete transport of mass and momentum. 
 In this section, we shall take a closer look at how the utilisation of 
 the consistent method enables us not only to stabilize majority of the numerical
 instabilities we have come across, but also delivers relatively good approximations 
@@ -291,10 +323,11 @@ of the flow dynamics involved. A thorough and detailed exposition of the princip
 behind the consistent method and the different strategies towards achieving consistent
 transport is covered in the ensuing chapter.  
 
-
-
-
-To summarize, the simulations broadly fall into three categories. 
+We observe that applying the method that ensures consistent mass-momentum 
+transport brings a considerable and systematic improvement over a 
+spectrum of different flux limiters (WENO, ENO, Superbee, QUICK, Verstappen) 
+and CFL numbers, as evidenced by comparing the figures \ref{pressure_1} and \ref{pressure_2}. 
+Broadly speaking, the simulations broadly fall into three categories. 
 The first two categories concern those that use the method ensuring  
 consistent mass-momentum transport, and as a result maintain 
 physical values of the kinetic energy and smooth interface shapes. 
@@ -314,10 +347,11 @@ flux limiter (QUICK/WENO/ENO/Superbee/Verstappen) combination.
 \vspace*{-0.5cm}
 \caption{A juxtaposition of the different manifestations of  
 `artificial' atomization one encounters while using the standard 
-method that does not involve consistency between the discrete transport
-of mass and momentum. One can clearly observe that the un-physical
-fragmentation of the raindrop is symptomatic of the non-consistent 
-method, systematically across all combinations of flux limiters and advection schemes. 
+method that does not involve consistency between the discrete transport of mass and momentum. 
+The red contours indicate the isosurface of the volume fraction 
+field corresponding to a value of $0.5$, acting as a good proxy for the exact interfacial position. 
+One can clearly observe that the un-physical fragmentation of the raindrop is symptomatic 
+of the non-consistent method, systematically across all combinations of flux limiters and advection schemes. 
 The symbol ``WY'' in the legend corresponds to those run using 
 the Weymouth-Yue advection scheme, and ``CIAM'' corresponds to the CIAM scheme. 
 Brief descriptions of these advection schemes can be found in the preceding chapter \ref{ch:method}.
@@ -441,7 +475,7 @@ where $\mathcal{D}$ is the computational domain and $x_m$ is the
 distance of the interface relative to the center of mass of the droplet.   
 The kinetic energy of the droplet evolves in a relatively smooth manner, 
 without the presence of sudden spikes and falls which are emblematic of 
-the standard non-consistent version of our method (refer to Fig. \ref{pressure_2}). 
+the standard non-consistent method (refer to Fig. \ref{pressure_2}). 
 Such abrupt changes in kinetic energy of the droplet have been 
 found to be associated with instants when the droplet undergoes 
 `artificial' atomization or breakup, henceforth resulting in 
@@ -449,7 +483,7 @@ the catastrophic loss of stability for the numerical method.
 We observe a systematic drop in the amount of the droplet 
 kinetic energy as we increase resolution, with the most probable explanation 
 being that of the suppression of spurious interfacial 
-oscillations which are rampant at low resolutions. 
+oscillations which are rampant at lower resolutions. 
 There is also a component of the kinetic energy of the droplet 
 associated with the internal coherent vortical structures generated due to 
 the interaction of aerodynamic shear at the interface, 
