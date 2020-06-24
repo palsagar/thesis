@@ -2,56 +2,61 @@
 \chapter{Consistent Mass-Momentum Transport}
 \labch{momcons}
 
+% intro : PARIS Simulator, necessity due to large density-ratios ? 
 
-%---------------------------------------------------------------
-\section{Principles of Momentum Consistent Schemes}
 
-\paragraph{Major Iterations in Literature}
-\blindtext
+% ----------------------------------------------------------------------------------------------------------------------
 
-\paragraph{Overview of Methods}
-\blindtext
+\section{General Principles}
 
-\paragraph{Our Strategies}
-\blindtext
+%intro : what do you mean by consistent transport?  
 
-%---------------------------------------------------------------
 
-\section{Consistent Flux Computation}
+\subsection*{Major Iterations in Literature}
 
-\paragraph{Schematic}
-\blindtext
+% literature review 
+% modified comparison charts with CAF paper added
 
-\paragraph{Numerical Stencils}
-\blindtext
+\subsection*{Our Approach}
 
-%---------------------------------------------------------------
+% approach of reconstruction on staggered cells, geometric flux computations , well-balanced surface force model 
 
-\section{Reconstruction on Staggered Cells}
 
-\paragraph{Half-Fractions Method}
-\blindtext
+% ----------------------------------------------------------------------------------------------------------------------
 
-\paragraph{Sub-Grid Method}
-\blindtext
 
-%---------------------------------------------------------------
+\section{Consistent Transport : Basic Expressions}
 
-\section{Sub-Grid Strategy}
+% intro : advection of a generic conserved quantity 
 
-\paragraph{Consistency and Conservation}
-\blindtext
+\subsection*{Advection of Density}
 
-\paragraph{Restriction and Prolongation Operators}
-\blindtext
+% VOF - rho consistency with compression term etc
 
-%---------------------------------------------------------------
+\subsection*{Advection of Momentum}
 
-\section{Summary of Methods}
+% model of computing consistent mass-momentum fluxes
 
-\paragraph{Flowchart : Half-Fractions Method}
-\blindtext
+\subsection*{Advected Velocity}
 
-\paragraph{Flowchart : Sub-Grid Method}
-\blindtext
+% computation of slope limiters with diagram, distinction in bulk and interfacial regions
 
+
+% ----------------------------------------------------------------------------------------------------------------------
+
+
+\section{Staggered Reconstructions}
+
+% intro : staggered configuration of primary variables, control volumes for staggered advection 
+
+\subsection*{Shifted Fractions Method}
+
+% algorithm, flow chart , how to reconstruct on shifted grid, lack of conservation 
+
+\subsection*{Sub-Grid Method}
+
+% algorithm, flow chart, prolongation and restriction operations, consistent + conservative 
+
+\subsection*{Source Terms}
+
+% 1/rho terms in ST , reconstructing curvatures from sub-grid information etc 

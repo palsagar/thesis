@@ -1,0 +1,213 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\nonumberline Contents}{v}{chapter*.1}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\defcounter {refsection}{0}\relax
+\etoc@startlocaltoc {2}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Multiphase Flows}{1}{section*.4}
+\defcounter {refsection}{0}\relax
+\contentsline {subparagraph}{\nonumberline Brief description of multiphase flows in nature}{1}{section*.5}
+\defcounter {refsection}{0}\relax
+\contentsline {subparagraph}{\nonumberline Surface tension dominated flows}{1}{section*.6}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Fragmentation}{1}{section*.7}
+\defcounter {refsection}{0}\relax
+\contentsline {subparagraph}{\nonumberline Brief description of atomization}{1}{section*.8}
+\defcounter {refsection}{0}\relax
+\contentsline {subparagraph}{\nonumberline Importance of drop size distributions}{1}{section*.9}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Numerical Platforms}{2}{section*.10}
+\defcounter {refsection}{0}\relax
+\contentsline {subparagraph}{\nonumberline PARIS Simulator}{2}{section*.11}
+\defcounter {refsection}{0}\relax
+\contentsline {subparagraph}{\nonumberline Basilisk}{2}{section*.12}
+\defcounter {refsection}{0}\relax
+\contentsline {part}{\nonumberline Numerical Development}{3}{part*.14}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\numberline {2}Methodology}{4}{chapter.2}
+\defcounter {refsection}{0}\relax
+\etoc@startlocaltoc {3}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {2.1}Governing Equations}{4}{section.2.1}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {2.2}Interfacial Transport : VOF}{6}{section.2.2}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Lagrangian Explicit}{8}{section*.20}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Eulerian Implicit}{9}{section*.22}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {2.3}Time Marching}{10}{section.2.3}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {2.4}Source Terms}{12}{section.2.4}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\numberline {3}Artificial Atomization : The Falling Raindrop}{14}{chapter.3}
+\defcounter {refsection}{0}\relax
+\etoc@startlocaltoc {4}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {3.1}Problem Setup}{14}{section.3.1}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {3.2}Numerical Instabilities}{15}{section.3.2}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {3.3}Stabilization Strategies}{18}{section.3.3}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\numberline {4}Consistent Mass-Momentum Transport}{24}{chapter.4}
+\defcounter {refsection}{0}\relax
+\etoc@startlocaltoc {5}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {4.1}Principles of Momentum Consistent Schemes}{24}{section.4.1}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Major Iterations in Literature}{24}{section*.41}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Overview of Methods}{24}{section*.42}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Our Strategies}{24}{section*.43}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {4.2}Consistent Flux Computation}{24}{section.4.2}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Schematic}{24}{section*.44}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Numerical Stencils}{25}{section*.45}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {4.3}Reconstruction on Staggered Cells}{25}{section.4.3}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Half-Fractions Method}{25}{section*.46}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Sub-Grid Method}{25}{section*.47}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {4.4}Sub-Grid Strategy}{25}{section.4.4}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Consistency and Conservation}{25}{section*.48}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Restriction and Prolongation Operators}{26}{section*.49}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {4.5}Summary of Methods}{26}{section.4.5}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Flowchart : Half-Fractions Method}{26}{section*.50}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Flowchart : Sub-Grid Method}{26}{section*.51}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\numberline {5}Numerical Benchmarks}{27}{chapter.5}
+\defcounter {refsection}{0}\relax
+\etoc@startlocaltoc {6}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {5.1}Static Droplet}{27}{section.5.1}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {5.2}Moving Droplet}{32}{section.5.2}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {5.3}Capillary Wave}{37}{section.5.3}
+\defcounter {refsection}{0}\relax
+\contentsline {part}{\nonumberline Physics of Fragmentation}{43}{part*.82}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\numberline {6}Ligament Mediated Paradigm}{44}{chapter.6}
+\defcounter {refsection}{0}\relax
+\etoc@startlocaltoc {7}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {6.1}Mechanism of Drop Formation}{44}{section.6.1}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Disintegration of Jets \& Shear Layers}{44}{section*.83}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Expansion of Sheets}{44}{section*.84}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Effervescent Atomization}{44}{section*.85}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Drop Impacts}{44}{section*.86}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {6.2}Theories of Fragmentation}{45}{section.6.2}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Cascade Mechanism : Log-Normal Distribution}{45}{section*.87}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Corrugation-Coalescence Mechanism : Gamma Distribution}{45}{section*.88}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\numberline {7}Droplet Generation in Corrugated Ligaments}{46}{chapter.7}
+\defcounter {refsection}{0}\relax
+\etoc@startlocaltoc {8}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {7.1}Numerical Setup}{46}{section.7.1}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Platform : Basilisk}{46}{section*.89}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Computational Schematic}{46}{section*.90}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Random Surface Generation}{46}{section*.91}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Parameterization}{46}{section*.92}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {7.2}Ligament Breakup}{47}{section.7.2}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline 3D vs. 2D Simulations}{47}{section*.93}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Effect of Spatial Resolution}{47}{section*.94}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Effect of Droplet Removal}{47}{section*.95}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Effect of Corrugation Amplitude}{47}{section*.96}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Effect of Ohnesorge Number}{47}{section*.97}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Effect of Cut-Off Wavenumber}{48}{section*.98}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Effect of Aspect Ratio}{48}{section*.99}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Quantization of Waves}{48}{section*.100}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\numberline {8}Statistics of Drop Sizes}{49}{chapter.8}
+\defcounter {refsection}{0}\relax
+\etoc@startlocaltoc {9}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {8.1}Monte Carlo Approach to DNS}{49}{section.8.1}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Characterization of Ligament Ensembles}{49}{section*.101}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {8.2}Millimeter Scale Ensembles}{49}{section.8.2}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Diameter Distributions}{49}{section*.102}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Mass Distributions}{49}{section*.103}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Equivalent Diameters}{49}{section*.104}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Local Distribution of Large Drop Sizes}{50}{section*.105}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {8.3}Exploration of Parameter Space $\Phi $}{50}{section.8.3}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Bifurcation Parameter : Corrugation Amplitude}{50}{section*.106}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Scaling of $D/W$ : Function of Parameter Space}{50}{section*.107}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline \textit {To be added}}{50}{section*.108}
+\defcounter {refsection}{0}\relax
+\contentsline {part}{\nonumberline Conclusions \& Perspectives}{51}{part*.110}
+\defcounter {refsection}{0}\relax
+\contentsline {part}{\nonumberline Appendix}{53}{part*.112}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{54}{appendix.A}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{54}{section.A.1}
+\defcounter {refsection}{0}\relax
+\contentsline {subsection}{\nonumberline Heading on Level\xspace 2 (subsection)}{54}{section*.113}
+\defcounter {refsection}{0}\relax
+\contentsline {subsubsection}{\nonumberline Heading on Level\xspace 3 (subsubsection)}{54}{section*.114}
+\defcounter {refsection}{0}\relax
+\contentsline {paragraph}{\nonumberline Heading on Level\xspace 4 (paragraph)}{55}{section*.115}
+\defcounter {refsection}{0}\relax
+\contentsline {section}{\numberline {A.2}Lists}{55}{section.A.2}
+\defcounter {refsection}{0}\relax
+\contentsline {subsection}{\nonumberline Example for list\xspace (itemize)}{55}{section*.116}
+\defcounter {refsection}{0}\relax
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*itemize)}{55}{section*.117}
+\defcounter {refsection}{0}\relax
+\contentsline {subsection}{\nonumberline Example for list\xspace (enumerate)}{55}{section*.118}
+\defcounter {refsection}{0}\relax
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*enumerate)}{56}{section*.119}
+\defcounter {refsection}{0}\relax
+\contentsline {subsection}{\nonumberline Example for list\xspace (description)}{56}{section*.120}
+\defcounter {refsection}{0}\relax
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*description)}{56}{section*.121}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\nonumberline Bibliography}{57}{chapter*.122}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{Notation}{59}{chapter*.123}
