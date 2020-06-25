@@ -4,20 +4,193 @@
 
 % intro : PARIS Simulator, necessity due to large density-ratios ? 
 
+The stability of numerical methods that attempt to model 
+interfacial flows involving large density contrasts 
+face several challenges, key amongst them being the transport of 
+mathematical discontinuities that arise from the contrast in
+the material properties of the fluids involved. 
+Extremely small numerical errors are ubiquitous as a consequence of the 
+numerous approximations involved at each and every step of the algorithm 
+\sidenote{Approximations are made while interfacial propagation
+, curvature computation, surface tension modeling etc.}. 
+In the context of such flows, such errors generally result in physically
+inconsistent mass and momentum transfer across the interface, often from
+the denser phase towards the lighter phase.
+The presence of large density or viscosity contrasts tend to amplify
+the growth of these cascading numerical errors, eventually
+leading to significant (often catastrophic) interfacial deformations
+followed rapidly by a loss of numerical stability. 
+In this chapter, we present a detailed exposition of our class 
+of numerical methods which are designed specifically to circumvent or
+suppress the growth of such numerical instabilities when dealing with
+flows entailing large density-ratios. 
+The implementations of the numerical algorithms are developed for 
+finite volume discretizations using uniform Cartesian grids in 3D, 
+on the `PARIS Simulator' \cite{paris} numerical platform.      
+Some contents of the chapter are primarily derived 
+from the recent study by Fuster et al. \sidecite{caf_momcons}, 
+in which the author is a primary contributor. 
 
 % ----------------------------------------------------------------------------------------------------------------------
 
 \section{General Principles}
 
-%intro : what do you mean by consistent transport?  
+%intro : what do you mean by consistent transport? 
+In the past two decades, considerable efforts have been made 
+in the design of numerical methods to deal with large density-ratios. 
+The underlying principle behind these endeavours is that the governing 
+equations for the transport of mass and momentum are modeled using a 
+conservative formulation (divergence of fluxes), instead of standard 
+non-conservative forms which themselves were adapted directly from 
+techniques developed originally for single-phase flows. 
+This formulation enables one to render the discrete transport of 
+momentum \textit{consistent} with respect to the discrete transport of mass  
+\sidenote{First of all, the transport of mass (density) has to be made
+consistent with that of the geometric transport of volume fraction.}. 
+Such a tight coupling of the propagation of errors between the discrete 
+mass and momentum fields enables alleviation of many of the issues 
+that plague such numerical methods, especially in the 
+context of low to moderate spatial resolutions. 
+A secondary but important mitigating factor is the advancements 
+made in the modeling of capillary forces, resulting in the adoption of 
+consistent and \textit{well-balanced} surface tension formulations.
+\sidenote{Consistency in the context of surface tension models refers to the ability 
+of methods to progressively achieve more accurate estimations of interfacial 
+curvature as a result of increasing spatial resolution, 
+whereas well-balanced refers to the ability to recover certain static 
+equilibrium solutions pertaining to surface tension dominated flows 
+without the perpetual presence of parasitic or spurious currents in the velocity fields.}.
+We refer the reader to influential works of Popinet \cite{popinet2018numerical,popinet2009accurate}
+to get a better understanding of the issues surrounding surface tension implementations.  
 
 
 \subsection*{Major Iterations in Literature}
 
 % literature review 
+
+% Rudman (1998) :
+The first study to address the issue of consistency between mass 
+and momentum transport was the seminal work of Rudman \sidecite{rudman1998volume}.
+The fundamental hurdle in the implementation of mass-momentum 
+consistent transport for staggered configurations of primary variables 
+(pressure and velocity) is the inherent difficulty in reconstructing mass 
+(defined on centered control volumes) and its corresponding fluxes 
+onto the staggered control volumes on which momentum is defined. 
+Rudman introduced the strategy of carrying out mass advection 
+\sidenote{Mass advection was carried out using using algebraic flux reconstructions.} 
+on a grid twice as fine as that of momentum, 
+thereby enabling a `natural' and intutive 
+way to reconstruct mass and its fluxes onto staggered momentum control volumes. 
+However, the method uses a VOF based convolution technique for curvature computation, 
+which is neither consistent nor well-balanced.    
+
+
+% Bussmann et al. (2002) :
+Bussmann et al. \sidecite{bussmann2002modeling} were able to 
+circumvent the issue surrounding staggered grids altogether 
+by using a collocated arrangement in the context of hexahedral 
+unstructured meshes, coupled with an unsplit Eulerian flux computation method.    
+The study though makes no mention of any surface tension model. 
+
+
+% Raessi & Pitsch (2012) | Ghods & Hermann (2013):
+Level set based methods in the context of mass-momentum consistent 
+transport were implemented first by Raessi and Pitsch \sidecite{raessi2012consistent}, 
+followed by Ghods and Hermann \cite{ghods2013consistent}. 
+In the former, the consistency problem is tackled by means of a 
+semi-Lagrangian approach, computing geometric level set derived 
+fluxes at two different time intervals, whereas in the latter, 
+a collocated arrangement is used. 
+Nonetheless, both methods face certain drawbacks, notably the 
+applicability only to 2D in case of Raessi and Pitsch, 
+as well as a lack of well-balanced surface tension models for both these methods.   
+
+
+% LeChenadec & Pitsch (2013) | Owkes & Desjardins (2017) : 
+Recent advances concerning volume-of-fluid based methods that 
+employ unsplit (conservative) geometric flux reconstructions 
+were made by LeChenadec and Pitsch \sidecite{le2013monotonicity}
+, and later by Owkes and Desjardins \cite{owkes2017mass}. 
+LeChenadec and Pitsch utilize a Lagrangian remap method in order 
+to construct consistent mass-momentum fluxes for the staggered control volumes, 
+while Owkes and Desjardins use mass advection on a doubly refined grid 
+(same principle as Rudman) to achieve consistency.     
+Although \cite{le2013monotonicity} implements a well-balanced surface tension model, 
+the VOF convolution based curvature computation is not consistent. 
+In case of \sidecite{owkes2017mass}, they use mesh-decoupled height functions 
+to compute curvature while coupling it with a well-balanced surface tension model. 
+However, their semi-Lagrangian flux computation procedure 
+involving streak tubes and flux polyhedra are extremely convoluted in 3D.     
+
+
+% Vaudor et al. (2017) | Zuzio et al. (2020) : 
+Certain methods attempt to combine the qualities of both 
+VOF and level set methodologies (CLSVOF), as proposed in the works of 
+Vaudor et al. \sidecite{vaudor2017consistent}, 
+and more recently by Zuzio et al. \cite{zuzio2020new}. 
+They both tackle the consistency issue by means of projecting 
+the direction-split geometric fluxes onto a twice finer grid, 
+which are subsequently recombined to reconstruct consistent 
+fluxes for mass and momentum for the staggered control volumes. 
+This approach allows them to bypass the requirement of conducting 
+mass advection on a twice finer grid (as in the original Rudman method), 
+thereby deriving the benefits of a sub grid without the 
+added computational cost of doubly refined mass transport. 
+In addition, both Vaudor et al. \cite{vaudor2017consistent} and 
+Zuzio et al. \sidecite{zuzio2020new} adopt well-balanced surface tension 
+models with consistent level set based curvature estimation. 
+However, the purported advantages of both these methods with 
+regards to reduced computational costs is not quite evident, 
+as additional complexities are introduced due to the projection 
+(reconstruction) of fluxes onto a the twice finer mesh, 
+which would not be necessary in the first place if mass transport 
+had been carried out on the twice finer mesh itself. 
+
+
+% Patel & Natarajan (2017) : 
+Patel and Natarajan \sidecite{patel2017novel} developed a hybrid 
+staggered-collocated approach to solve the consistency issue on 
+polygonal unstructured meshes, complemented with a well-balanced surface tension model. 
+Nevertheless, the VOF advection is based on algebraic transport, 
+not to mention the use of a VOF convolution based 
+curvature computation, which is inherently not consistent. 
+
+
+% Nangia et el. (2019) : 
+More recently, Nangia et al. \sidecite{nangia2019robust} developed a 
+CSLVOF method for dynamically refined staggered Cartesian grids. 
+They utilize Cubic Upwind Interpolation (CUI) schemes to 
+reconstruct consistent mass and momentum fluxes on the staggered 
+control volumes, using the information from the additional mass 
+advection equation they solve alongside the level set function.   
+However, the reconstruction of mass fluxes using CUI schemes are 
+inherently algebraic, with their comparative advantage against fluxes 
+computed via geometric constructions being an open question 
+\sidenote{refer to Mirjalili et al. \cite{mirjalili2017interface}. }.
+
+To get a bird's eye view of the numerous features employed by the methods 
+in existing literature, we refer the reader to tables %\ref{table_vof} and \ref{table_ls}, 
+which respectively provide systematic overviews of the VOF based and level set based approaches.    
+
 % modified comparison charts with CAF paper added
 
+
+
 \subsection*{Our Approach}
+%
+% adopt the strategy of mass advection on a 
+%twice finer grid in order to enable consistent reconstruction of 
+%mass and momentum on the staggered control volumes, in the spirit of Rudman \cite{rudman1998volume}. 
+%A geometric representation of the interface within the VOF framework is utilized, 
+%along with geometric reconstruction of fluxes whose 
+%temporal integration is a carried out in a direction-split manner. 
+%A key contribution of this work is to extend the conservative 
+%direction-split mass transport algorithm of Weymouth and Yue \sidecite{wy} 
+%to the direction-split transport of momentum. 
+%We demonstrate that adoption of these strategies lead to significant 
+%improvements in terms of stability, robustness and accuracy of the solver, 
+%therefore enabling the simulation of flows with more realistic density and 
+%viscosity ratios compared to the standard non consistent formulations. 
 
 % approach of reconstruction on staggered cells, geometric flux computations , well-balanced surface force model 
 
@@ -25,7 +198,7 @@
 % ----------------------------------------------------------------------------------------------------------------------
 
 
-\section{Consistent Transport : Basic Expressions}
+\section{Basic Expressions}
 
 % intro : advection of a generic conserved quantity 
 

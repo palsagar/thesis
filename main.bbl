@@ -938,6 +938,372 @@
       \field{type}{phdthesis}
       \field{year}{2012}
     \endentry
+    \entry{rudman1998volume}{article}{}
+      \name{author}{1}{}{%
+        {{hash=33b7386d6d48b81c8ad90efd09b244da}{%
+           family={Rudman},
+           familyi={R\bibinitperiod},
+           given={Murray},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{33b7386d6d48b81c8ad90efd09b244da}
+      \strng{fullhash}{33b7386d6d48b81c8ad90efd09b244da}
+      \strng{bibnamehash}{33b7386d6d48b81c8ad90efd09b244da}
+      \strng{authorbibnamehash}{33b7386d6d48b81c8ad90efd09b244da}
+      \strng{authornamehash}{33b7386d6d48b81c8ad90efd09b244da}
+      \strng{authorfullhash}{33b7386d6d48b81c8ad90efd09b244da}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal for numerical methods in fluids}
+      \field{number}{2}
+      \field{title}{A volume-tracking method for incompressible multifluid flows with large density variations}
+      \field{volume}{28}
+      \field{year}{1998}
+      \field{pages}{357\bibrangedash 378}
+      \range{pages}{22}
+    \endentry
+    \entry{bussmann2002modeling}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=136fa23b33180694653b3b4b7a3995d3}{%
+           family={Bussmann},
+           familyi={B\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=af98f57c1d8bd71722c829d6cf1e1ec1}{%
+           family={Kothe},
+           familyi={K\bibinitperiod},
+           given={Douglas\bibnamedelima B},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=3dbe4c44d6d4073910e26c0e68d71910}{%
+           family={Sicilian},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {American Society of Mechanical Engineers}%
+      }
+      \strng{namehash}{c9708c0ea61ac656c66a54ccce332eae}
+      \strng{fullhash}{c9708c0ea61ac656c66a54ccce332eae}
+      \strng{bibnamehash}{c9708c0ea61ac656c66a54ccce332eae}
+      \strng{authorbibnamehash}{c9708c0ea61ac656c66a54ccce332eae}
+      \strng{authornamehash}{c9708c0ea61ac656c66a54ccce332eae}
+      \strng{authorfullhash}{c9708c0ea61ac656c66a54ccce332eae}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ASME 2002 Joint US-European Fluids Engineering Division Conference}
+      \field{title}{Modeling high density ratio incompressible interfacial flows}
+      \field{year}{2002}
+      \field{pages}{707\bibrangedash 713}
+      \range{pages}{7}
+    \endentry
+    \entry{raessi2012consistent}{article}{}
+      \name{author}{2}{}{%
+        {{hash=16287fe43ab0f1c91481a00f4377227b}{%
+           family={Raessi},
+           familyi={R\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d7cd14c413c20374e2c84d697c237e0d}{%
+           family={Pitsch},
+           familyi={P\bibinitperiod},
+           given={Heinz},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e9bea121ee0b8add911a4437d9c89e0e}
+      \strng{fullhash}{e9bea121ee0b8add911a4437d9c89e0e}
+      \strng{bibnamehash}{e9bea121ee0b8add911a4437d9c89e0e}
+      \strng{authorbibnamehash}{e9bea121ee0b8add911a4437d9c89e0e}
+      \strng{authornamehash}{e9bea121ee0b8add911a4437d9c89e0e}
+      \strng{authorfullhash}{e9bea121ee0b8add911a4437d9c89e0e}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Fluids}
+      \field{title}{Consistent mass and momentum transport for simulating incompressible interfacial flows with large density ratios using the level set method}
+      \field{volume}{63}
+      \field{year}{2012}
+      \field{pages}{70\bibrangedash 81}
+      \range{pages}{12}
+    \endentry
+    \entry{ghods2013consistent}{article}{}
+      \name{author}{2}{}{%
+        {{hash=63b5c0fdd393535ffee8fb6c8ce4d30e}{%
+           family={Ghods},
+           familyi={G\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cb229f22fda85b68a3bfaf07bfe1b031}{%
+           family={Herrmann},
+           familyi={H\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{61c89e1bd5eecdbded4ce8726d124e7c}
+      \strng{fullhash}{61c89e1bd5eecdbded4ce8726d124e7c}
+      \strng{bibnamehash}{61c89e1bd5eecdbded4ce8726d124e7c}
+      \strng{authorbibnamehash}{61c89e1bd5eecdbded4ce8726d124e7c}
+      \strng{authornamehash}{61c89e1bd5eecdbded4ce8726d124e7c}
+      \strng{authorfullhash}{61c89e1bd5eecdbded4ce8726d124e7c}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica Scripta}
+      \field{number}{T155}
+      \field{title}{A consistent rescaled momentum transport method for simulating large density ratio incompressible multiphase flows using level set methods}
+      \field{volume}{2013}
+      \field{year}{2013}
+      \field{pages}{014050}
+      \range{pages}{1}
+    \endentry
+    \entry{le2013monotonicity}{article}{}
+      \name{author}{2}{}{%
+        {{hash=fc86c2c548abd3b20de8aec8a986b763}{%
+           family={Le\bibnamedelima Chenadec},
+           familyi={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=d7cd14c413c20374e2c84d697c237e0d}{%
+           family={Pitsch},
+           familyi={P\bibinitperiod},
+           given={Heinz},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{f0c6c18982abac8fe59a2d8de3392e3a}
+      \strng{fullhash}{f0c6c18982abac8fe59a2d8de3392e3a}
+      \strng{bibnamehash}{f0c6c18982abac8fe59a2d8de3392e3a}
+      \strng{authorbibnamehash}{f0c6c18982abac8fe59a2d8de3392e3a}
+      \strng{authornamehash}{f0c6c18982abac8fe59a2d8de3392e3a}
+      \strng{authorfullhash}{f0c6c18982abac8fe59a2d8de3392e3a}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{A monotonicity preserving conservative sharp interface flow solver for high density ratio two-phase flows}
+      \field{volume}{249}
+      \field{year}{2013}
+      \field{pages}{185\bibrangedash 203}
+      \range{pages}{19}
+    \endentry
+    \entry{owkes2017mass}{article}{}
+      \name{author}{2}{}{%
+        {{hash=15c5dc7b684142f15145a639fb27b919}{%
+           family={Owkes},
+           familyi={O\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=401172d8fa3016959e591fe085008d28}{%
+           family={Desjardins},
+           familyi={D\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7f6f3ac72c46758936c314e43fadb283}
+      \strng{fullhash}{7f6f3ac72c46758936c314e43fadb283}
+      \strng{bibnamehash}{7f6f3ac72c46758936c314e43fadb283}
+      \strng{authorbibnamehash}{7f6f3ac72c46758936c314e43fadb283}
+      \strng{authornamehash}{7f6f3ac72c46758936c314e43fadb283}
+      \strng{authorfullhash}{7f6f3ac72c46758936c314e43fadb283}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{A mass and momentum conserving unsplit semi-Lagrangian framework for simulating multiphase flows}
+      \field{volume}{332}
+      \field{year}{2017}
+      \field{pages}{21\bibrangedash 46}
+      \range{pages}{26}
+    \endentry
+    \entry{vaudor2017consistent}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2da77014e2ee3d5b54b4fc921b3d5457}{%
+           family={Vaudor},
+           familyi={V\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=743ed0a711912f8a3785d222381c7767}{%
+           family={M{é}nard},
+           familyi={M\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bc8ee198b0072628d12d08b33fd4c383}{%
+           family={Aniszewski},
+           familyi={A\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d1a784fc115790fffbd409f5356a14ea}{%
+           family={Doring},
+           familyi={D\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2e4d0f5d431adc000a3e93516d40fbda}{%
+           family={Berlemont},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{cf82b899bc05acd470a4dd95ff3669c3}
+      \strng{fullhash}{f3be8b43e6de80386d494e218eb4e954}
+      \strng{bibnamehash}{cf82b899bc05acd470a4dd95ff3669c3}
+      \strng{authorbibnamehash}{cf82b899bc05acd470a4dd95ff3669c3}
+      \strng{authornamehash}{cf82b899bc05acd470a4dd95ff3669c3}
+      \strng{authorfullhash}{f3be8b43e6de80386d494e218eb4e954}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Fluids}
+      \field{title}{A consistent mass and momentum flux computation method for two phase flows. Application to atomization process}
+      \field{volume}{152}
+      \field{year}{2017}
+      \field{pages}{204\bibrangedash 216}
+      \range{pages}{13}
+    \endentry
+    \entry{zuzio2020new}{article}{}
+      \name{author}{4}{}{%
+        {{hash=cd8723e4d76bf7c209e0a2cfdbdf07d7}{%
+           family={Zuzio},
+           familyi={Z\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0e2a9d0f3197726d46fe6845eb1baa97}{%
+           family={Orazzo},
+           familyi={O\bibinitperiod},
+           given={Annagrazia},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bbb030921e68a2058e5831cb29a8c97a}{%
+           family={Estival{è}zes},
+           familyi={E\bibinitperiod},
+           given={Jean-Luc},
+           giveni={J\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=ba5a0bcfc2cc20a1afaeb1eca515b409}{%
+           family={Lagrange},
+           familyi={L\bibinitperiod},
+           given={Isabelle},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{477112cc0551da824a68363ba09da332}
+      \strng{fullhash}{6b86655fa9fd1d606e1b21d589b97c5a}
+      \strng{bibnamehash}{477112cc0551da824a68363ba09da332}
+      \strng{authorbibnamehash}{477112cc0551da824a68363ba09da332}
+      \strng{authornamehash}{477112cc0551da824a68363ba09da332}
+      \strng{authorfullhash}{6b86655fa9fd1d606e1b21d589b97c5a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{A new efficient momentum preserving Level-Set/VOF method for high density and momentum ratio incompressible two-phase flows}
+      \field{volume}{410}
+      \field{year}{2020}
+      \field{pages}{109342}
+      \range{pages}{1}
+    \endentry
+    \entry{patel2017novel}{article}{}
+      \name{author}{2}{}{%
+        {{hash=26e042af711fccd0be27c48a4c69e418}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Jitendra\bibnamedelima Kumar},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=e906c0fb9fd241d69041bb8fed2845c0}{%
+           family={Natarajan},
+           familyi={N\bibinitperiod},
+           given={Ganesh},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0cc4e74d7cc2bee62fa37d24cf119a15}
+      \strng{fullhash}{0cc4e74d7cc2bee62fa37d24cf119a15}
+      \strng{bibnamehash}{0cc4e74d7cc2bee62fa37d24cf119a15}
+      \strng{authorbibnamehash}{0cc4e74d7cc2bee62fa37d24cf119a15}
+      \strng{authornamehash}{0cc4e74d7cc2bee62fa37d24cf119a15}
+      \strng{authorfullhash}{0cc4e74d7cc2bee62fa37d24cf119a15}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of computational physics}
+      \field{title}{A novel consistent and well-balanced algorithm for simulations of multiphase flows on unstructured grids}
+      \field{volume}{350}
+      \field{year}{2017}
+      \field{pages}{207\bibrangedash 236}
+      \range{pages}{30}
+    \endentry
+    \entry{nangia2019robust}{article}{}
+      \name{author}{4}{}{%
+        {{hash=962916707f239e56921b3db2672c1402}{%
+           family={Nangia},
+           familyi={N\bibinitperiod},
+           given={Nishant},
+           giveni={N\bibinitperiod}}}%
+        {{hash=bc4a795ef24ee147b65dc4a9c5664653}{%
+           family={Griffith},
+           familyi={G\bibinitperiod},
+           given={Boyce\bibnamedelima E},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=05c346d9f75674f8412fe127d65f769a}{%
+           family={Patankar},
+           familyi={P\bibinitperiod},
+           given={Neelesh\bibnamedelima A},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=658a9dad3c1c798cc9a00773214098b9}{%
+           family={Bhalla},
+           familyi={B\bibinitperiod},
+           given={Amneet\bibnamedelimb Pal\bibnamedelima Singh},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e389d8f26d798998246ceb7752aec912}
+      \strng{fullhash}{29aea1e624819cf52c9856164eebdeeb}
+      \strng{bibnamehash}{e389d8f26d798998246ceb7752aec912}
+      \strng{authorbibnamehash}{e389d8f26d798998246ceb7752aec912}
+      \strng{authornamehash}{e389d8f26d798998246ceb7752aec912}
+      \strng{authorfullhash}{29aea1e624819cf52c9856164eebdeeb}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{A robust incompressible Navier-Stokes solver for high density ratio multiphase flows}
+      \field{volume}{390}
+      \field{year}{2019}
+      \field{pages}{548\bibrangedash 594}
+      \range{pages}{47}
+    \endentry
     \entry{lafaurie1994modelling}{article}{}
       \name{author}{5}{}{%
         {{hash=3905002481153cdeca2ae5429cd1a483}{%
@@ -975,8 +1341,8 @@
       \strng{authorbibnamehash}{b700707f3015779e88403c31ced78ca5}
       \strng{authornamehash}{b700707f3015779e88403c31ced78ca5}
       \strng{authorfullhash}{681988830391f139eb1092cde09b8f74}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1014,8 +1380,8 @@
       \strng{authorbibnamehash}{036356849cc05933093c7c0928f7d392}
       \strng{authornamehash}{036356849cc05933093c7c0928f7d392}
       \strng{authorfullhash}{036356849cc05933093c7c0928f7d392}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied mathematical modelling}
@@ -1048,8 +1414,8 @@
       \strng{authorbibnamehash}{0b8abc6caee0f8be0e200cb641915d5a}
       \strng{authornamehash}{0b8abc6caee0f8be0e200cb641915d5a}
       \strng{authorfullhash}{0b8abc6caee0f8be0e200cb641915d5a}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal for Numerical Methods in Fluids}
@@ -1102,8 +1468,8 @@
       \strng{authorbibnamehash}{9ded59a9366e4faee450daaa0dd0623e}
       \strng{authornamehash}{9ded59a9366e4faee450daaa0dd0623e}
       \strng{authorfullhash}{a9bd25f985e1ffdcbbfbad4692995c64}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1141,8 +1507,8 @@
       \strng{authorbibnamehash}{71e14f252343ca323d897083592dd8e2}
       \strng{authornamehash}{71e14f252343ca323d897083592dd8e2}
       \strng{authorfullhash}{71e14f252343ca323d897083592dd8e2}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
