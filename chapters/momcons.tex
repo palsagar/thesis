@@ -246,7 +246,7 @@ obtained through the finite volume discretization of the interface Heaviside fun
 
 \begin{align}
 {\cijk^{n+1} - \cijk^{n}} = - \sum_{\textrm{faces} \, f} F^{(c)}_f + \int_{t_n}^{t_{n+1}}  
-	{\textrm{d}}t \int_\Omega  H \,\nabla \cdot \boldsymbol{u}\,  {\textrm {d}}\X   \,,
+	{\textrm{d}}t \int_\Omega  H \, \left(\nabla \cdot \boldsymbol{u}\right) \,  {\textrm {d}}\X   \,,
 \label{sumf}
 \end{align}
 
@@ -327,28 +327,40 @@ even if the flow is incompressible.
 
 \subsection*{Advection of Conserved Scalars}  
 
-Consider the advection of a generic \textit{conserved} scalar quantity $\phi$ by a continuous velocity field
+In order to achieve consistent transport of the discontinuous fields 
+of mass and momentum, we start by trying to understand the advection 
+of a generic \textit{conserved} scalar quantity $\phi$ by a continuous velocity field - 
+
+
 \begin{align}
 	\dert \phi + \nabla \cdot \left( \phi \, \boldsymbol{u} \right)  = 0 
 \label{phiconv}
 \end{align}
 
-We assume that $\phi$ is smoothly varying except on the interface where it may be discontinuous.
-Indeed finding a correct scheme for the advection of this discontinuity, at the same speed as the advection of the 
-volume fraction, is the goal of the present study.
-The smoothness of the advected quantity away from the interface
-is verified for the density $\rho$, the momentum $\rho \boldsymbol{u}$ or the internal energy 
-$\rho e$. We first integrate \eqref{phiconv} in time
+
+where the field $\phi$ is smoothly varying except 
+at the interface position, where it may be discontinuous.
+The essence of this study lies in the search of a scheme that  
+propagates this discontinuity ($\phi$) at the same speed as 
+that of the advection of volume fraction.
+
+\marginnote{The smoothness of the advected quantity away from the interface
+is verified for fields such as density $\rho$, momentum $\rho \boldsymbol{u}$ 
+and internal energy $\rho e$.}
+
+Temporal integration of the spatially discretized version of \eqref{phiconv} gives us - 
 
 \begin{align}
 \pijk^{n+1} - \pijk^{n} = - \sum_{\textrm{faces}\, f} F^{(\phi)}_f 
 \label{sumfp}
 \end{align}
 
-
-The sum on the right-hand side is the sum over faces $f$ of cell $i,j,k$ 
+\marginnote{The sum on the right-hand side is the sum over faces $f$ of cell $i,j,k$ 
 of the fluxes $F^{(\phi)}_f$ of $\phi$, which are defined as the color function fluxes
-$F^{(c)}_f$ in \eqref{faceint}
+$F^{(c)}_f$ in \eqref{faceint}.}
+
+
+where the fluxes are defined as -
 
 \begin{align}
 	F_f^{(\phi)} = \int_{t_n}^{t_{n+1}} {\textrm {d}}t \int_{f} u_f(\X,t) \,\phi(\X,t) \,
@@ -356,21 +368,17 @@ $F^{(c)}_f$ in \eqref{faceint}
 \label{pfaceint}
 \end{align}
 
-
 In order to ``extract'' the discontinuity we introduce the 
- characteristic function $H(\X,t)$
-
+ interface Heaviside function $ H(\X,t) $
 
 \begin{align}
 F_f^{(\phi)} = 
-\int_{t_n}^{t_{n+1}} {\textrm d}t \int_{f} [ u_f  \,H \,\phi  +  u_f \,(1-H) \,\phi ] 
-\, {\textrm d}\X \,, 
+\int_{t_n}^{t_{n+1}} {\textrm d}t \int_{f} \left[ u_f  \,H \,\phi  +  u_f \,(1-H) \,\phi \right] 
+\, {\textrm d}\X \, 
 \label{fluxphi}
 \end{align}
 
-
-and rewrite it as
-
+Therefore, the flux can be decomposed into two components as -
 
 \begin{align}
 F_f^{(\phi)} = 
@@ -379,8 +387,7 @@ F_f^{(\phi)} =
 \label{barphi}
 \end{align}
 
-
-where the face averages $\bar \phi_s$, $s=1,2$, are
+where the face averages $\bar \phi_s$, $s=1,2$, are defined as - 
 
 
 \begin{align} 
@@ -391,10 +398,13 @@ u_f \,H_s\,{\textrm d}\X} \,,
 \end{align}
 
 
-and $H_1=H$, $H_2= 1-H$. Expression \eqref{barphi} can be written in terms 
-of the fluxes $F^{(c)}_f$ and $F^{(1-c)}_f$, this second one being obtained by 
-replacing $H$ with $1-H$ in \eqref{faceint}
+and $H_1=H$, $H_2= 1-H$. 
+The total flux can be rearranged as a sum of the constituents 
+corresponding to the different `fluids' - 
 
+\marginnote{Expression \eqref{barphi} can be written in terms 
+of the fluxes $F^{(c)}_f$ and $F^{(1-c)}_f$, this second one being obtained by 
+replacing $H$ with $1-H$ in \eqref{faceint}}
 
 \begin{align}
 F_f^{(\phi)} = \bar \phi_1 \,F_f^{(c)} +  \bar \phi_2 \,F_f^{(1-c)} \,.

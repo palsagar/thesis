@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  25 JUN 2020 18:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  25 JUN 2020 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5526,6 +5526,18 @@ Package marginnote Info: right page because not two side mode on input line 305
 .
 Package marginnote Info: xpos seems to be 70.56284pt,
 (marginnote)             \marginnoterightadjust ignored on input line 305.
+Package marginnote Info: Margin note 40.2 is on absolute page 40
+(marginnote)              on input line 349.
+Package marginnote Info: right page because not two side mode on input line 349
+.
+Package marginnote Info: xpos seems to be 70.56284pt,
+(marginnote)             \marginnoterightadjust ignored on input line 349.
+Package marginnote Info: Margin note 40.3 is on absolute page 40
+(marginnote)              on input line 360.
+Package marginnote Info: right page because not two side mode on input line 360
+.
+Package marginnote Info: xpos seems to be 70.56284pt,
+(marginnote)             \marginnoterightadjust ignored on input line 360.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
@@ -5536,6 +5548,12 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [28] (./main.mw)
 \openout5 = `main.mw'.
 
+Package marginnote Info: Margin note 41.1 is on absolute page 41
+(marginnote)              on input line 407.
+Package marginnote Info: right page because not two side mode on input line 407
+.
+Package marginnote Info: xpos seems to be 70.56284pt,
+(marginnote)             \marginnoterightadjust ignored on input line 407.
 ) (./chapters/numbench.tex
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
@@ -8207,11 +8225,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58641 strings out of 494847
- 1090752 string characters out of 6179080
- 1935573 words of memory out of 5000000
- 60136 multiletter control sequences out of 15000+600000
- 714597 words of font info for 359 fonts, out of 8000000 for 9000
+ 58647 strings out of 494847
+ 1090807 string characters out of 6179080
+ 1935624 words of memory out of 5000000
+ 60139 multiletter control sequences out of 15000+600000
+ 715977 words of font info for 362 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  113i,20n,108p,10476b,3229s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texm
@@ -8239,7 +8257,7 @@ c/newpx/zplbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zplr.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (75 pages, 3785815 bytes).
+Output written on main.pdf (75 pages, 3786366 bytes).
 PDF statistics:
  1749 PDF objects out of 2073 (max. 8388607)
  1563 compressed objects within 16 object streams
