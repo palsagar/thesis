@@ -1,0 +1,238 @@
+In this section we detail only the necessary steps to 
+illustrate the momentum advection method based on the VOF method.
+To simplify the presentation we rescale space and time variables so 
+that the cell volume and the time step are both equal to 1. 
+Any velocity component $u$ becomes $u^\prime = u \tau / h$ and 
+the $\cijk$ value is also the measure of the volume of reference fluid in cell 
+$i,j,k$.
+At the beginning of any simulation the volume fraction field is
+initialized with the {\sc Vofi} library described in \cite{bna2015numerical} 
+and \cite{bna2016vofi}. This allows a highly accurate numerical integration of 
+the measure of fluid volumes. 
+
+\subsubsection{Normal vector and plane constant determination} 
+
+The VOF method proceeds in two steps, reconstruction and advection. 
+In the first step we consider a PLIC reconstruction in each cell cut by the 
+interface where the unit normal vector $\N$ is computed 
+with the MYC method described in \cite{Tryggvason11}. We then consider
+the colinear normal vector $\M$ whose components satisfy the relation
+$|m_x| + |m_y| + |m_z|=1$. Given the
+volume $V=\cijk$ in cell $i,j,k$ occupied by fluid 1 and the normal $\M$
+we consider the family of planes 
+\be 
+\M \cdot \X = \alpha \label{mxalpha}
+\nd 
+By changing the value of the plane constant $\alpha$ a different
+volume of fluid 1 is cut in the cell. The correct value of
+$\alpha$ is determined by the resolution of a cubic equation \cite{Scardovelli00}.
+
+\subsubsection{General split-direction advection}
+\label{generalsplit}
+The interface reconstruction at time $t_{n}$ is then used to obtain the  
+position of the interface and the volumes $\cijk$ at the next discrete time $t_{n+1}$. 
+The following discussion of momentum advection is based on 
+two VOF advection methods, Lagrangian Explicit and Weymouth and Yue's 
+schemes. We first describe their common features. 
+
+After addition and subtraction of a term proportional to the velocity divergence, 
+equation (\ref{interfadv}) leads to 
+\be
+\dert H + \nabla \cdot (\U H) = H\, \nabla \cdot \U \,.
+\nd
+This equation is integrated in the time step and cell volume
+\be
+{\cijk^{n+1} - \cijk^{n}} = - \sum_{\rm{faces}\, f} F^{(c)}_f + \int_{t_n}^{t_{n+1}}  
+{\rm d}t \int_\Omega  H \,\nabla \cdot \U\,  {\rm d}\X   \,,
+\label{sumf}
+\nd
+where the first term on the right-hand side is the sum over the cell faces $f$  
+of the fluxes $F^{(c)}_f$ of $(\U H)$. Obviously the ``compression'' term on the 
+right-hand side disappears for incompressible flow, however it is essential 
+in split-advection methods.  In the previous equation the flux $F_f^{(c)}$ is 
+\be
+F_f^{(c)} = \int_{t_n}^{t_{n+1}} {\rm d}t \int_{f} u_f(\X,t) H(\X,t) \, {\rm d}\X \,,
+\label{faceint}
+\nd
+where $u_f = \U\cdot \N_f$.
+Once an approximation for the evolution of $(\U H)$ during
+the time step is chosen, a four-dimensional integral remains to be
+computed in equation (\ref{faceint}). The two methods we consider here
+are directionally split and are also designed to preserve the
+property $0 \le \cijk \le 1$ which we call $C$-bracketing. It
+is important to preserve $C$-bracketing in order to avoid arbitrary addition or
+removal of mass. Furthermore they do not produce in the bulk of the
+two fluids deviations from the correct values $0$ and $1$.
+
+
+Directional splitting results in the breakdown of equation (\ref{sumf}) 
+into three equations
+\be
+{\cijk^{n,l+1} - \cijk^{n,l}} = - F^{(c)}_{m-} - F^{(c)}_{m+} 
++ c_m \partial_{m}^h u_m \,,
+\label{sumf2}
+\nd
+where the superscript $l=0,1,2$ is the substep index, i.e.
+$\cijk^{n,0} = \cijk^{n}$ and $\cijk^{n,3} = \cijk^{n+1}$. 
+The face with subscript $m-$ is the ``left'' face in direction $m$ with 
+$F^{(c)}_{m-} \ge 0$ if the flow is locally from right to left. A similar reasoning 
+applies to the ``right'' face $m+$.
+ We have also  approximated the compression term in 
+(\ref{sumf}) by
+\be
+ \int_{t_n}^{t_{n+1}}  {\rm d}t \int_\Omega  H \partial_m u_m  {\rm d}\X \simeq  c_m 
+ \partial_{m}^h u_m \,, 
+ \label{comp}
+\nd
+with no implicit summation rule. 
+ In the RHS of (\ref{sumf2}) and (\ref{comp}) the flux terms $F_{f}^{(c)}$ and the 
+ partial derivative $\partial_{m} u_m$ must
+be evaluated with the same discretized velocities. In particular,
+$\partial_{m}^h u_m$ is a finite difference or finite volume approximation of the 
+spatial derivative of the $m$th component of the velocity vector in direction $m$, and
+the ``compression coefficient'' $c_m$ approximates the color fraction. 
+Its exact expression is dependent on the advection method and 
+it preserves the $C$-bracketing condition. 
+Since the coefficient $c_m$ may not be the same along the three Cartesian 
+directions, the sum $\sum_m c_m \partial_{m}^h u_m$ is not necessarily vanishing
+even if the flow is incompressible.
+After each advection substep (\ref{sumf2}), the interface is reconstructed
+with the updated volumes $\cijk^{n,l+1}$, then the 
+fluxes $F^{(c)}_{f}$ are computed for the next substep. 
+
+In each substep the velocity field in direction $m$ is usually dependent
+only on the spatial component $x_m$, $u_m (x_m)$. This approximation ensures that the 
+fluid areas fluxing across a cell side are rectangular in two dimensions, as shown in
+Figs. \ref{lagfig} and \ref{eulflux}. The multi-dimensionality of the flow
+is considered in unsplit methods, where the fluxing areas are described by more 
+complex polygons \cite{Cervone09}.
+
+\subsubsection{Lagrangian Explicit advection}
+
+The Lagrangian Explicit / CIAM method refers to a specific type
+of split advection and it is most naturally explained
+as a Lagrangian transport of the Heaviside function \cite{li95,Scardovelli02} . 
+The velocity field is linearly interpolated between the face velocities $u_{m-}$ on
+the left and $u_{m+}$ on the right, so that 
+$u_m (x_m) = - u_{m-}( 1 - x_m) + u_{m+} x_m$, with the origin of
+$x_m$ on the left face. 
+The equation of motion $d x_m / dt = u_m (x_m)$ is integrated with a
+first-order in time, explicit $u_m (x^n_m)$ approximation, to get in rescaled variables 
+\be
+x_m^{n+1} =  - u_{m-} +  (1 +  u_{m+} + u_{m-}) \,x^n_m \,.
+\label{map}
+\nd
+This transformation gives the position of advected points as a function of the 
+original position and compresses distances along direction $m$ by a factor 
+$(1 + u_{m+} +  u_{m-})$. Points over faces and linear interface are advected
+in the same way, and 
+in the two-dimensional case of Fig. \ref{lagfig} the advection substep results 
+in the three contributions $V_1$, $V_2$ and $V_3$ to the central cell.
+The intermediate value of the color function in the central cell
+will be given by the sum of these three contributions.
+\begin{figure}
+\begin{center}
+    \includegraphics[width=\textwidth]{Figures/LE_mapping-horbis.pdf}
+\end{center}
+\caption{Formation of the areas  $V_1,V_2$ and $V_3$ by Lagrangian advection in the 
+horizontal direction: initial reconstruction with the horizontal velocities on the faces 
+of the central cell (left); segments and areas $V_i$ after Lagrangian 
+advection (right). In three dimensions rectangles become cuboids.}
+\label{lagfig}
+\end{figure}
+
+There is a correspondence between the geometrical interpretation of the Lagrangian 
+Explicit advection and the definition \eqref{faceint} of $F^{(c)}_{f}$. 
+For example, for the central cell of Fig. \ref{lagfig} the flux on
+the left face is from left to right, since $u_{1;i-1/2,j} > 0$.
+Then with $m = 1$ and $f=1-$, we have $V_{1} =  - F^{(c)}_{1-} > 0$ and 
+$u_{1-} =\U\cdot \N_{1-} < 0$.
+The final expression of the substep is 
+\be
+\cijk^{n,l+1} =  \cijk^{n,l} (1  +  u_{m+} +  u_{m-} )  - F^{(c)}_{m-} - F^{(c)}_{m+} \,,
+\label{sumflag}
+\nd
+which shows that the approximation of the derivative is 
+$\partial_m^h u_m = u_{m+}  + u_{m-}$ and the compression coefficient is
+\be
+c_m = \cijk^{n,l} 
+\label{cmle}
+\nd
+In order to remove spurious asymmetries in the flow it is important
+to change the order of split advections at each timestep. Then
+the compression coefficient in the horizontal advection, $m=1$, can
+be associated to the first substep, $l=0$, in timestep $n$, and to
+the last substep, $l=2$, in the next timestep.
+The sequence of three Lagrangian substeps (\ref{sumf2}) 
+does not result in volume conservation
+\be
+{\cijk^{n+1} - \cijk^{n}} = - \sum_{\rm{faces}\, f} F^{(c)}_f 
++ \sum_{m=1}^{3} c_{m}\,(u_{m+}  + u_{m-}) \,.
+\label{sumfall}
+\nd
+While the flux terms cancel upon integration over the domain, the sum of the compressive 
+terms does not vanish since $c_m$ changes at each substep $l$.
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=\textwidth]{Figures/EI_mapping-horbis}
+\end{center}
+\caption{Eulerian flux representation for advection in the horizontal direction: 
+same initial reconstruction and horizontal velocities of Fig. \ref{lagfig} (left); 
+fluxes, or areas $V_1$ and $V_3$, are calculated directly from the interface
+reconstruction in each cell (right)}
+\label{eulflux}
+\end{figure}
+
+\subsubsection{Weymouth and Yue's advection}
+
+The (WY) split advection is exactly mass-conserving  \cite{Weymouth:2010hy}. 
+In this method the compression coefficient is independent of direction $m$, 
+so that $c_m = c$, and is defined as
+\be
+c = H \big( \cijk^n - 1/2 \big) 
+\label{cmwy}
+\nd
+where $H$ is a one-dimensional Heaviside function, 
+that is $c=0$ if $\cijk^n < 1/2$ and $c=1$ if  $\cijk^n \ge 1/2$. 
+The fluxes $F^{(c)}_f$ are also defined differently. 
+The reference phase fluxed through the left face in direction $m=1$ 
+is equal to the volume fraction in a cuboid of width $u_{i-1/2,j,k}$ 
+adjacent to the left face $f=1-$. This fluxed volume 
+corresponds to ``Eulerian Implicit'' (EI) advection in the terminology 
+of \cite{Scardovelli02} and is represented in 2D by the area $V_1$ of 
+Fig. \ref{eulflux}. Using these definitions,  
+Weymouth and Yue were able to show that the final result obeys 
+$C$-bracketing \cite{Weymouth:2010hy}. 
+
+This split advection scheme conserves volume at machine accuracy. 
+Indeed the summation of three substeps (\ref{sumf2}) results in 
+\be
+{\cijk^{n+1} - \cijk^{n}} = - \sum_{\rm{faces}\, f} F^{(c)}_f 
++ c \sum_{m=1}^{3} \partial_{m}^h u_m \label{sumfall2}
+\nd
+Since $\sum_{m=1}^{3} \partial_{m}^h u_m = \sum_{m=1}^{3} (u_{m+}  + u_{m-}) $ is 
+the finite-volume expression for $\nabla \cdot \U$, it disappears and mass 
+is conserved at the 
+accuracy with which condition (\ref{divu}) is satisfied. 
+
+\subsubsection{Clipping}
+\label{clipping}
+
+The algorithm that has been coded involves a number of additional
+steps designed to avoid unwanted effects of arithmetic floating point
+round-off error. The most important one is clipping: at the end of
+each directional advection, the values of $\cijk$ are reset so that
+$C_{ijk}$ is set to $0$ if $C_{ijk} < \eps_c$ or to
+$1$ if $C_{ijk} > 1 - \eps_c$. When there is no surface tension 
+%with large curvature $\kappa h$ 
+the choice $\eps_c = 10^{-12}$ works well.
+Otherwise $\eps_c = 10^{-8}$ gives more stable results with smoother
+interface shapes. This stronger clipping is a necessity for some
+simulations with WY, as we observe that WY produces many more ``wisps'', 
+i.e. cells with tiny values of $1-\cijk$
+inside fluid 1 or $\cijk$ inside fluid 2.
+We have not yet been able to determine the origin of this need for a more
+forceful clipping with WY, but it could be related to the fact that the
+CIAM method has a geometrical interpretation, while WY is intrisically algebraic
+in nature.

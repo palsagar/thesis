@@ -214,7 +214,192 @@ viscosity ratios compared to the standard non-consistent formulations.
 
 \section{Basic Expressions}
 
-% intro : advection of a generic conserved quantity 
+% intro : interfacial propagation 
+
+\newcommand{\dert}[1]{\frac{\partial #1}{\partial t}}
+\newcommand{\cijk}{C_{i,j,k}}
+\newcommand{\pijk}{\phi_{i,j,k}}
+\newcommand{\X}{\boldsymbol{x}}
+\newcommand{\N}{\boldsymbol{n}}
+
+We start with the advection of the interface position, which in 
+the VOF framework is given by - 
+
+\marginnote{In the VOF approach, the approximation to the interface Heaviside 
+function contains a sharp discontinuity, in contrast to the level set approach 
+where the approximation is continuous in the discrete sense.}
+
+
+\begin{align}
+	\dert H + \nabla \cdot (\boldsymbol{u} H) = H\, \left(\nabla \cdot \boldsymbol{u} \right) \,
+	\label{heaviside}
+\end{align}
+
+
+Integrating this equation in time after carrying 
+out spatial discretization, one obtains -    
+
+
+\marginnote{$\cijk^n$ is the colour function or volume fraction field at time step $n$ 
+obtained through the finite volume discretization of the interface Heaviside function.}
+
+
+\begin{align}
+{\cijk^{n+1} - \cijk^{n}} = - \sum_{\textrm{faces} \, f} F^{(c)}_f + \int_{t_n}^{t_{n+1}}  
+	{\textrm{d}}t \int_\Omega  H \,\nabla \cdot \boldsymbol{u}\,  {\textrm {d}}\X   \,,
+\label{sumf}
+\end{align}
+
+
+where the first term on the right-hand side is the summation over the cell faces $f$  
+of the fluxes $F^{(c)}_f$ of $(\boldsymbol{u} H)$ 
+\sidenote{These fluxes are computed via geometrical reconstructions,
+and not via high-order non-linear interpolation schemes which are 
+the standard (in the absence of discontinuities) . } . 
+As one can clearly observe, the ``compression'' term on the 
+right-hand side of equation \eqref{heaviside} disappears for incompressible flow, 
+however it is essential in the context of direction-split geometric advection schemes.
+The definition of the geometric fluxes in mathematical form is -  
+
+\begin{align}
+	F_f^{(c)} = \int_{t_n}^{t_{n+1}} {\textrm {d}}t \int_{f} u_f(\X,t) H(\X,t) \, {\textrm{d}}\X \,,
+\label{faceint}
+\end{align}
+
+where $u_f = \boldsymbol{u}\cdot \N_f$ 
+\sidenote{Component of the velocity normal to the control surface $f$.}.
+Once an approximation for the evolution of $(\boldsymbol{u} H)$ during
+the time step is chosen, a four-dimensional integral remains to be
+computed in equation (\ref{faceint}).
+The advection schemes used are CIAM and Weymouth-Yue, which have been 
+described briefly in chapter \ref{ch:method}. 
+
+Directional splitting results in the breakdown of equation (\ref{sumf}) 
+into three equations, one for each advection substep -
+
+
+\begin{align}
+{\cijk^{n,l+1} - \cijk^{n,l}} = - F^{(c)}_{m-} - F^{(c)}_{m+} 
++ c_m \partial_{m}^h u_m \,,
+\label{sumf2}
+\end{align}
+
+
+\marginnote{The superscript $l=0,1,2$ is the substep index, i.e.
+$\cijk^{n,0} = \cijk^{n}$ and $\cijk^{n,3} = \cijk^{n+1}$. 
+The face with subscript $m-$ is the ``left'' face in direction $m$ with 
+$F^{(c)}_{m-} \ge 0$ if the flow is locally from right to left. A similar reasoning 
+applies to the ``right'' face $m+$.}
+
+After each advection substep (\ref{sumf2}), the interface is reconstructed
+with the updated volumes $\cijk^{n,l+1}$, then the 
+fluxes $F^{(c)}_{f}$ are computed for the next substep. 
+Importantly, we have approximated the compression term in (\ref{sumf}) by -
+
+\begin{align}
+	\int_{t_n}^{t_{n+1}}  {\textrm {d}}t \int_\Omega  H \partial_m u_m  {\textrm {d}}\X \simeq  c_m 
+ \partial_{m}^h u_m \, 
+ \label{comp}
+\end{align}
+
+\marginnote{There is no implicit summation carried out over $m$.} 
+
+On the right hand sides of (\ref{sumf2}) and (\ref{comp}) 
+the flux terms $F_{f}^{(c)}$ and the 
+ partial derivative $\partial_{m} u_m$ must
+be evaluated using identical discretized velocities.
+The expression $\partial_{m}^h u_m$ is a finite volume approximation of the 
+spatial derivative corresponding to the $m$th component 
+of the velocity vector in direction $m$, and
+the ``compression coefficient'' $c_m$ approximates the color fraction. 
+Its exact expression is dependent on the advection method
+\sidenote{Refer to chapter \ref{ch:method} to see the difference in
+the definition of the compression coefficient corresponding to
+the CIAM and Weymouth-Yue methods.}
+and it also entails the desirable property of $C$-bracketing
+\sidenote{The preservation of $0 \le \cijk \le 1$ 
+is referred to as $C$-bracketing. }. 
+Due to the possible dependence of the 
+compression coefficient $c_m$ on the Cartesian direction
+corresponding to the advection substep, 
+the sum $\sum_m c_m \partial_{m}^h u_m$ may not necessarily vanish
+even if the flow is incompressible.
+
+\subsection*{Advection of Conserved Scalars}  
+
+Consider the advection of a generic \textit{conserved} scalar quantity $\phi$ by a continuous velocity field
+\begin{align}
+	\dert \phi + \nabla \cdot \left( \phi \, \boldsymbol{u} \right)  = 0 
+\label{phiconv}
+\end{align}
+
+We assume that $\phi$ is smoothly varying except on the interface where it may be discontinuous.
+Indeed finding a correct scheme for the advection of this discontinuity, at the same speed as the advection of the 
+volume fraction, is the goal of the present study.
+The smoothness of the advected quantity away from the interface
+is verified for the density $\rho$, the momentum $\rho \boldsymbol{u}$ or the internal energy 
+$\rho e$. We first integrate \eqref{phiconv} in time
+
+\begin{align}
+\pijk^{n+1} - \pijk^{n} = - \sum_{\textrm{faces}\, f} F^{(\phi)}_f 
+\label{sumfp}
+\end{align}
+
+
+The sum on the right-hand side is the sum over faces $f$ of cell $i,j,k$ 
+of the fluxes $F^{(\phi)}_f$ of $\phi$, which are defined as the color function fluxes
+$F^{(c)}_f$ in \eqref{faceint}
+
+\begin{align}
+	F_f^{(\phi)} = \int_{t_n}^{t_{n+1}} {\textrm {d}}t \int_{f} u_f(\X,t) \,\phi(\X,t) \,
+	{\textrm {d}}\X
+\label{pfaceint}
+\end{align}
+
+
+In order to ``extract'' the discontinuity we introduce the 
+ characteristic function $H(\X,t)$
+
+
+\begin{align}
+F_f^{(\phi)} = 
+\int_{t_n}^{t_{n+1}} {\textrm d}t \int_{f} [ u_f  \,H \,\phi  +  u_f \,(1-H) \,\phi ] 
+\, {\textrm d}\X \,, 
+\label{fluxphi}
+\end{align}
+
+
+and rewrite it as
+
+
+\begin{align}
+F_f^{(\phi)} = 
+\bar \phi_1 \int_{t_n}^{t_{n+1}} {\textrm d}t \int_{f} u_f \,H \,{\textrm d}\X + 
+\bar \phi_2 \int_{t_n}^{t_{n+1}} {\textrm d}t \int_{f} u_f \,(1-H) \,{\textrm d}\X \,,
+\label{barphi}
+\end{align}
+
+
+where the face averages $\bar \phi_s$, $s=1,2$, are
+
+
+\begin{align} 
+\bar \phi_s = \frac{\int_{t_n}^{t_{n+1}} {\textrm d}t \int_{f} \phi \,u_f \,H_s  
+{\textrm d}\X}{\int_{t_n}^{t_{n+1}} {\textrm d}t \int_{f}  
+u_f \,H_s\,{\textrm d}\X} \,,  
+\label{barphi2}
+\end{align}
+
+
+and $H_1=H$, $H_2= 1-H$. Expression \eqref{barphi} can be written in terms 
+of the fluxes $F^{(c)}_f$ and $F^{(1-c)}_f$, this second one being obtained by 
+replacing $H$ with $1-H$ in \eqref{faceint}
+
+
+\begin{align}
+F_f^{(\phi)} = \bar \phi_1 \,F_f^{(c)} +  \bar \phi_2 \,F_f^{(1-c)} \,.
+\label{fluxphi12}
+\end{align}
 
 \subsection*{Advection of Density}
 
