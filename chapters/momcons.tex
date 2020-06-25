@@ -63,7 +63,6 @@ without the perpetual presence of parasitic or spurious currents in the velocity
 We refer the reader to influential works of Popinet \cite{popinet2018numerical,popinet2009accurate}
 to get a better understanding of the issues surrounding surface tension implementations.  
 
-
 \subsection*{Major Iterations in Literature}
 
 % literature review 
@@ -177,23 +176,38 @@ which respectively provide systematic overviews of the VOF based and level set b
 
 
 \subsection*{Our Approach}
-%
-% adopt the strategy of mass advection on a 
-%twice finer grid in order to enable consistent reconstruction of 
-%mass and momentum on the staggered control volumes, in the spirit of Rudman \cite{rudman1998volume}. 
-%A geometric representation of the interface within the VOF framework is utilized, 
-%along with geometric reconstruction of fluxes whose 
-%temporal integration is a carried out in a direction-split manner. 
-%A key contribution of this work is to extend the conservative 
-%direction-split mass transport algorithm of Weymouth and Yue \sidecite{wy} 
-%to the direction-split transport of momentum. 
-%We demonstrate that adoption of these strategies lead to significant 
-%improvements in terms of stability, robustness and accuracy of the solver, 
-%therefore enabling the simulation of flows with more realistic density and 
-%viscosity ratios compared to the standard non consistent formulations. 
 
-% approach of reconstruction on staggered cells, geometric flux computations , well-balanced surface force model 
+In the present body of work, we start by precisely defining the
+essential (desired) attributes of a numerical scheme that 
+ensures discrete consistency between mass and momentum transport : 
 
+\begin{itemize}
+	\item The discontinuity of the mass (volume fraction 
+		derived density field) should propagate at the 
+		exact `numerical' speed as that of 
+		the discontinuity of the momentum field. 
+	\item The numerical transport of momentum should be performed 
+		in a manner consistent to the transport of mass for 
+		each direction, implying that the momentum fluxes must 
+		be obtained directly from geometrically 
+		computed fluxes of mass (volume). 
+\end{itemize}
+
+In order to tackle the challenge of consistent transport on staggered control 
+volume configurations, we have developed two different strategies, namely, 
+the \textit{shifted fractions} method and the \textit{sub-grid} method. 
+The former uses geometrical reconstructions to derive a 
+\textit{shifted} volume fraction field which is centered on the staggered
+control volumes, whereas the latter adopts the Rudman \cite{rudman1998volume} 
+strategy of volume advection on a twice finer grid in order to 
+enable consistent reconstruction of mass and momentum on the staggered control volumes. 
+Another key contribution of this body of work is to extend the conservative 
+direction-split mass transport algorithm of Weymouth and Yue \sidecite{wy} 
+to the direction-split transport of momentum. 
+In the ensuing chapter, we demonstrate that adoption of these strategies 
+lead to significant improvements in terms of numerical stability and robustness,
+therefore enabling the modeling of flows with more realistic density and 
+viscosity ratios compared to the standard non-consistent formulations. 
 
 % ----------------------------------------------------------------------------------------------------------------------
 
