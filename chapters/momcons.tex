@@ -699,6 +699,145 @@ transport of momentum allows the discrete transport to be exactly conservative.
 
 % computation of slope limiters with diagram, distinction in bulk and interfacial regions
 
+The momentum equation (\ref{sumfmom2}) can be approximated either
+ 1) in the bulk of the phases or 2) in the neighborhood of the interface.
+In the first case the expression simplifies considerably since both the density
+and the color fraction are constant and the spurious compression terms cancel out
+
+
+\begin{align}
+{u^{n,3}_q - u_q^{n}} =  - \sum_{\textrm{faces} \, \textrm{f}}  \bar u_{q} u_f 
+\label{sumfmomtot}
+\end{align}
+
+
+We distinguish an ``advecting'' velocity $u_{f}= \boldsymbol{u} \cdot \N_f $ and an ``advected velocity'' 
+component $\bar u_{q,f}$, involving an average over face $f$. Both velocity components
+require an interpolation from their position in the staggered grid to where they are needed.
+Thus the scheme in the bulk is 
+
+
+\begin{align}
+{u^{n,3}_q - u_q^{n}} =  - \sum_{\textrm{faces} \, \textrm{f}}  \bar u_{q}^{\textrm{(advected)}} 
+u^{\textrm{(advecting)}}_f   
+\label{sumfmomtotbulk}
+\end{align}
+	
+while near the interface is 
+
+\begin{align}
+	{(\rho u_q)^{n,3} - (\rho u_q)^{n}} =  - \sum_{\textrm{faces} \, \textrm{f}}  \bar u_{q}^{\textrm{(advected)}}  
+F^{(\rho)}_{f} + \sum_{m=1}^3 \tilde u_q C_m^{(\rho)} \, 
+\label{advect-ed-ing-2}
+\end{align}
+
+
+Momentum advection in our model is described by these two equations which are
+solved on a cubic grid with a finite-volume method. In the previous sections
+we have derived a new expression for the momentum fluxes and the
+compression term, i.e. the RHS of \eqref{advect-ed-ing-2}, that is consistent
+with the volume fraction advection.  
+
+To estimate the advecting velocities $u_f^{\textrm{(advecting)}}$ we use a centered scheme.
+The staggered 2D grid of Fig. \ref{stag-grid} has the same variables
+arrangement that is found in 3D on a plane perpendicular to the $z$-axis and through the 
+pressure point $p_{i,j,k}$. To illustrate the procedure we consider a face perpendicular
+to the horizontal direction $1$, in particular $f=1-$. 
+There are two cases. In the first case the advected component is not aligned with the 
+face normal, this corresponds to $q=2$. The $u_2$ control volume in 
+Fig. \ref{stag-grid} is centered on $i,j+1/2,k$, and face $f=1-$ is then 
+centered on $i-1/2,j+1/2,k$. The advecting velocity  $u_{1-}^{\textrm{(advecting)}}$ 
+is not given on this point and has to be interpolated 
+
+
+\begin{align}
+ u_{1;i-1/2,j+1/2,k}^{\textrm{(advecting)}} = \frac12 \big( u_{1;i-1/2,j,k} + u_{1;i-1/2,j+1,k} 
+\big) \,
+\label{uf2}
+\end{align}
+
+
+In the second case the advected component is aligned with the 
+face normal, this corresponds to $q=1$. The $u_1$ control volume 
+in Fig. \ref{stag-grid} is centered on $i+1/2,j,k$ and face $f=1-$ is then 
+centered on $i,j,k$. The interpolation is now
+
+
+\begin{align}
+	u_{1;i,j,k}^{\textrm{(advecting)}} = \frac12 \big( u_{1;i-1/2,j,k} + u_{1;i+1/2,j,k} \big) \,
+\label{uf1} 
+\end{align}
+ 
+Now we turn to the interpolation of the \textit{advected} velocity $\bar u_{q}$ in
+(\ref{advect-ed-ing-2}). The interpolants we use in this case are
+one-dimensional and operate on the velocities $u_q$, on the center of their 
+control volume, that are regularly spaced on a segment aligned 
+with the direction of the advection, that is perpendicular to face $f$. 
+We still consider an advection along the horizontal direction $1$. 
+In Fig. \ref{advect-ed-ing-fig}, with the lighter notation $\phi = u_q$,
+we need to interpolate the advected velocity on the left face
+of the reference control volume $\Omega$.
+For the advected velocity $u_1$ and the advecting velocity \eqref{uf1} on face
+$f=1-$ the correspondence with the $\phi$ values in Fig. \ref{advect-ed-ing-fig} is
+
+
+\begin{align}
+\phi_{-3/2} = u_{1;i-3/2,j,k}, \quad \phi_{-1/2} = u_{1;i-1/2,j,k}, \quad   
+\phi_{1/2} = u_{1;i+1/2,j,k}, \;\cdots
+\end{align}
+
+
+while for the advected velocity  $u_2$ and the advecting velocity \eqref{uf2} is
+
+
+\begin{align}
+\phi_{-3/2} = u_{2;i-2,j+1/2,k}, \quad  \phi_{-1/2} = u_{2;i-1,j+1/2,k}, 
+\quad  \phi_{1/2} = u_{2;i,j+1/2,k}, \;\cdots
+\end{align}
+
+
+The extension of these results to an advection along the other two directions $q=2,3$ 
+follows easily. We need to predict $\phi_0$ on face $f=1-$ in Fig. \ref{advect-ed-ing-fig}
+to serve as an approximation of $\bar u_q$ given in (\ref{barudef}). We consider 
+an interpolation function $f$ that computes 
+this value as a function of the four nearest points,
+and in an upwind manner based on the sign of the {\em advecting} velocity $u_f$
+
+
+\begin{align}
+	\phi_0 = f \big( \phi_{-3/2}, \phi_{-1/2}, \phi_{1/2},\phi_{3/2},{\textrm{sign}}(u_f)
+\big) \,
+\label{simpleinterp}
+\end{align}
+
+In this study we have extensively tested two kinds of interpolations:
+
+
+\begin{enumerate}
+\item a scheme that uses a QUICK third order interpolant in the bulk, away from the interface 
+and a simple first order upwind flux near the interface. We call this scheme QUICK-UW;
+\item a scheme that uses a Superbee slope limiter \cite{roe1985some} for the flux in the 
+bulk and a more complex Superbee limiter tuned to a shifted interpolation point near the 
+interface.  We naturally call this scheme ``Superbee''. 
+\end{enumerate}
+
+
+The details of the two schemes are given in \ref{appinterp}.
+
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=\textwidth]{plots/advect-ed-ing.pdf}
+\end{center}
+\caption{The reference control volume $\Omega$ for the advected velocity component 
+$\phi=u_q$ is shown. A horizontal advection is here considered and both the advecting velocity 
+$u_f$ and the advected velocity require an interpolation for their value on the left face 
+$f=1-$: (a) the value $\bar u_q = \phi_0$ (full circle) is interpolated 
+(see \ref{appinterp}) from the values $\phi=u_q$ on the nodes (open circles);
+(b) a more sophisticated interpolation predicts the value $\phi(\hat x)$ where $\hat x$ is
+at the center of the ``donating'' region $\Omega_D$ (see \ref{appinterp}).}
+\label{advect-ed-ing-fig}
+\end{figure}
 
 
 
