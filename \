@@ -658,17 +658,14 @@ Although the weighted averages $\bar u_q$ and $\tilde u_q$ have been defined,
 but the manner in which they are estimated shall be covered in the following section. 
 
 In the context of the CIAM advection scheme, the compression coefficient
-for the volume fraction field is $C^{n,l}$, similarly, for the 
-central interpolated velocity we take $\tilde u_q = u_q^{n,l}$. 
-Due to the summation of the directional divergences not cancelling out,
-the resulting momentum transport after three directionally-split advections
-and the result is not exactly conservative. 
-On the other hand, the compression coefficient is independent 
-of the advection substep in the context of the Weymouth-Yue advection scheme. 
-The final expression for the compression coefficient becomes - 
+in the volume fraction advection from \eqref{cmle} is $C^{n,l}$, and for the 
+central interpolated velocity we take $\tilde u_q = u_q^{n,l}$. The compression
+term in (\ref{sumfmom2}) does not cancel out when the final momentum is computed 
+after three directionally-split advections and the result is not exactly conservative. 
+On the other hand with the WY scheme, the compression coefficient
+in the volume fraction advection from \eqref{cmwy} is $c$,
+that is independent of direction $m$ and \eqref{central} becomes
 
-\marginnote{The Weymouth-Yue coefficient is a constant value $c$,
-that is independent of direction $m$.}
 
 \begin{align}
 C_m^{(\rho)} =  \Big( \rho_1 c + \rho_2 (1-c ) \Big) \,\partial_{m}^h u_m  \,.
@@ -676,12 +673,11 @@ C_m^{(\rho)} =  \Big( \rho_1 c + \rho_2 (1-c ) \Big) \,\partial_{m}^h u_m  \,.
 \end{align}
 
 
-Since there is no bracketing on the any velocity component, 
-we take $\tilde u_q = u_q^{n}$, which is independent of the substep $l$.
-Provided that the velocity field is discretely solenoidal, i.e.  
-$\sum_{m=1}^3 \partial_{m}^h u_m =0$, after the three direction 
-split advections (\ref{sumfmom2}) one obtains 
-a cancellation of the compression terms, finally resulting in 
+Since there is no bracketing on the velocity components, we take 
+$\tilde u_q = u_q^{n}$ which is independent on the substep $l$.
+Provided the velocity field is incompressible, that is 
+$\sum_{m=1}^3 \partial_{m}^h u_m =0$, after the three split advections (\ref{sumfmom2}) 
+one obtains a cancellation of the compression terms and 
 
 
 \begin{align}
@@ -690,19 +686,17 @@ a cancellation of the compression terms, finally resulting in
 \end{align}
 
 
-The extension of the Weymouth-Yue mass (volume) advection scheme to the consistent
-transport of momentum allows the discrete transport to be exactly conservative. 
+The momentum transport coupled with WY advection is thus exactly 
+conservative. The advected interpolated velocity $\bar u_q$ and the velocity
+$u_f$ normal to face $f$ are discussed in the next section.
 
 
 
-\subsection*{Velocity Interpolations}
+
+
+\subsection*{Advected Velocity}
 
 % computation of slope limiters with diagram, distinction in bulk and interfacial regions
-
-
-
-
-
 
 
 % ----------------------------------------------------------------------------------------------------------------------
