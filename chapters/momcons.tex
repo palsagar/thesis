@@ -194,6 +194,8 @@ ensures discrete consistency between mass and momentum transport :
 \end{itemize}
 
 In order to tackle the challenge of consistent transport on staggered control 
+\sidenote{`PARIS Simulator' has a staggered configuration of primitive 
+variables on regular Cartesian control volumes.}
 volume configurations, we have developed two different strategies, namely, 
 the \textit{shifted fractions} method and the \textit{sub-grid} method. 
 The former uses geometrical reconstructions to derive a 
@@ -678,11 +680,15 @@ C_m^{(\rho)} =  \Big( \rho_1 c + \rho_2 (1-c ) \Big) \,\partial_{m}^h u_m  \,.
 
 Since there is no bracketing on the any velocity component, 
 we take $\tilde u_q = u_q^{n}$, which is independent of the substep $l$.
-Provided that the velocity field is discretely solenoidal, i.e.  
-$\sum_{m=1}^3 \partial_{m}^h u_m =0$, after the three direction 
-split advections (\ref{sumfmom2}) one obtains 
-a cancellation of the compression terms, finally resulting in 
 
+
+\marginnote{The compression terms sum up to  
+the accuracy to which the solenoidal nature 
+of the velocity field is discretely verified  
+.}
+
+The final expression after cancellation of the compression terms,
+having undergone three advection substeps \eqref{sumfmom2} is  
 
 \begin{align}
 	{\mijk^{n,3} - \mijk^{n}} =  - \sum_{\textrm{faces} \, \textrm{f}}  \bar u_{q}  F^{(\rho)}_{f} . 
@@ -690,19 +696,26 @@ a cancellation of the compression terms, finally resulting in
 \end{align}
 
 
-The extension of the Weymouth-Yue mass (volume) advection scheme to the consistent
-transport of momentum allows the discrete transport to be exactly conservative. 
-
+Therefore, the extension of the Weymouth-Yue mass (volume) 
+advection scheme to the consistent
+transport of momentum allows the discrete 
+transport to be exactly conservative. 
 
 
 \subsection*{Velocity Interpolations}
 
 % computation of slope limiters with diagram, distinction in bulk and interfacial regions
 
-The momentum equation (\ref{sumfmom2}) can be approximated either
- 1) in the bulk of the phases or 2) in the neighborhood of the interface.
-In the first case the expression simplifies considerably since both the density
-and the color fraction are constant and the spurious compression terms cancel out
+The direction-split momentum transport given by \eqref{sumfmom2}
+can be carried out in either of the bulk of the phases, or at
+close proximity to the interface location. The treatment away 
+from the interface can be approximated as - 
+
+\marginnote{
+In the bulk, the expression simplifies considerably due to the 
+density and volume fraction being constant, hence resulting in the
+cancellation of the spurious compression terms. 
+.}
 
 
 \begin{align}
@@ -711,11 +724,16 @@ and the color fraction are constant and the spurious compression terms cancel ou
 \end{align}
 
 
-We distinguish an ``advecting'' velocity $u_{f}= \boldsymbol{u} \cdot \N_f $ and an ``advected velocity'' 
-component $\bar u_{q,f}$, involving an average over face $f$. Both velocity components
-require an interpolation from their position in the staggered grid to where they are needed.
-Thus the scheme in the bulk is 
-
+Here, we distinguish between an ``advecting'' velocity 
+$u_{f}= \boldsymbol{u} \cdot \N_f $
+\sidenote{The ``advecting'' velocity computes the fluxes of volume fraction.},
+and an ``advected velocity'' component $\bar u_{q,f}$, 
+which is basically an average over the face $f$. 
+Due to the momentum transport being carried out on 
+staggered control volumes, both these velocity components
+require some interpolations from their original positions
+onto the necessary positions on the staggered grid.
+Using this new nomenclature, \eqref{sumfmomtot} becomes -
 
 \begin{align}
 {u^{n,3}_q - u_q^{n}} =  - \sum_{\textrm{faces} \, \textrm{f}}  \bar u_{q}^{\textrm{(advected)}} 
@@ -723,7 +741,16 @@ u^{\textrm{(advecting)}}_f
 \label{sumfmomtotbulk}
 \end{align}
 	
-while near the interface is 
+Now, moving onto the approximation in the neighbourhood
+of the interface, we get - 
+
+\marginnote{
+In the previous section
+we had derived a new expression for the momentum fluxes and the
+compression term, i.e. the RHS of \eqref{advect-ed-ing-2}, that is consistent
+with the discrete transport of the volume fraction.  
+.}
+
 
 \begin{align}
 	{(\rho u_q)^{n,3} - (\rho u_q)^{n}} =  - \sum_{\textrm{faces} \, \textrm{f}}  \bar u_{q}^{\textrm{(advected)}}  
@@ -732,11 +759,24 @@ F^{(\rho)}_{f} + \sum_{m=1}^3 \tilde u_q C_m^{(\rho)} \,
 \end{align}
 
 
-Momentum advection in our model is described by these two equations which are
-solved on a cubic grid with a finite-volume method. In the previous sections
-we have derived a new expression for the momentum fluxes and the
-compression term, i.e. the RHS of \eqref{advect-ed-ing-2}, that is consistent
-with the volume fraction advection.  
+The crux of our model for momentum advection is described 
+by these two equations (\eqref{sumfmomtotbulk} \& \eqref{advect-ed-ing-2}).
+
+
+\begin{figure}
+\begin{center}
+    \includegraphics[width=\textwidth]{plots/advect-ed-ing.pdf}
+\end{center}
+\caption{The reference control volume $\Omega$ for the advected velocity component 
+$\phi=u_q$ is shown. A horizontal advection is here considered and both the advecting velocity 
+$u_f$ and the advected velocity require an interpolation for their value on the left face 
+$f=1-$: (a) the value $\bar u_q = \phi_0$ (full circle) is interpolated 
+(see \ref{appinterp}) from the values $\phi=u_q$ on the nodes (open circles);
+(b) a more sophisticated interpolation predicts the value $\phi(\hat x)$ where $\hat x$ is
+at the center of the ``donating'' region $\Omega_D$ (see \ref{appinterp}).}
+\label{advect-ed-ing-fig}
+\end{figure}
+
 
 To estimate the advecting velocities $u_f^{\textrm{(advecting)}}$ we use a centered scheme.
 The staggered 2D grid of Fig. \ref{stag-grid} has the same variables
@@ -825,19 +865,6 @@ interface.  We naturally call this scheme ``Superbee''.
 The details of the two schemes are given in \ref{appinterp}.
 
 
-\begin{figure}
-\begin{center}
-    \includegraphics[width=\textwidth]{plots/advect-ed-ing.pdf}
-\end{center}
-\caption{The reference control volume $\Omega$ for the advected velocity component 
-$\phi=u_q$ is shown. A horizontal advection is here considered and both the advecting velocity 
-$u_f$ and the advected velocity require an interpolation for their value on the left face 
-$f=1-$: (a) the value $\bar u_q = \phi_0$ (full circle) is interpolated 
-(see \ref{appinterp}) from the values $\phi=u_q$ on the nodes (open circles);
-(b) a more sophisticated interpolation predicts the value $\phi(\hat x)$ where $\hat x$ is
-at the center of the ``donating'' region $\Omega_D$ (see \ref{appinterp}).}
-\label{advect-ed-ing-fig}
-\end{figure}
 
 
 

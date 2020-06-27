@@ -33,7 +33,7 @@
 \defcounter {refsection}{0}\relax
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces The reference control volume $\Omega $ for the advected velocity component $\phi =u_q$ is shown. A horizontal advection is here considered and both the advecting velocity $u_f$ and the advected velocity require an interpolation for their value on the left face $f=1-$: (a) the value $\mathaccentV {bar}016u_q = \phi _0$ (full circle) is interpolated (see \ref {appinterp}) from the values $\phi =u_q$ on the nodes (open circles); (b) a more sophisticated interpolation predicts the value $\phi (\mathaccentV {hat}2C6x)$ where $\mathaccentV {hat}2C6x$ is at the center of the ``donating'' region $\Omega _D$ (see \ref {appinterp}).\relax }}{34}{figure.caption.47}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces The reference control volume $\Omega $ for the advected velocity component $\phi =u_q$ is shown. A horizontal advection is here considered and both the advecting velocity $u_f$ and the advected velocity require an interpolation for their value on the left face $f=1-$: (a) the value $\mathaccentV {bar}016u_q = \phi _0$ (full circle) is interpolated (see \ref {appinterp}) from the values $\phi =u_q$ on the nodes (open circles); (b) a more sophisticated interpolation predicts the value $\phi (\mathaccentV {hat}2C6x)$ where $\mathaccentV {hat}2C6x$ is at the center of the ``donating'' region $\Omega _D$ (see \ref {appinterp}).\relax }}{33}{figure.caption.47}
 \defcounter {refsection}{0}\relax
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax
