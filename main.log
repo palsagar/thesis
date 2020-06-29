@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  29 JUN 2020 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  29 JUN 2020 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3115,18 +3115,18 @@ Writing index file main.idx
 \glo@main@file=\write22
 \openout5 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 59.
+Package glossaries Info: Writing glossary file main.glo on input line 60.
 \@nomenclaturefile=\write23
 \openout5 = `main.nlo'.
 
 Writing nomenclature file main.nlo
-LaTeX Font Info:    Try loading font information for T1+zpllf on input line 68.
+LaTeX Font Info:    Try loading font information for T1+zpllf on input line 69.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/t1zpllf.fd
 File: t1zpllf.fd 2015/01/17 v1.0 font definition file for T1/zpl/lf
 )
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 9.70001pt on input line 68.
+(Font)              scaled to size 9.70001pt on input line 69.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -3139,60 +3139,60 @@ File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 68.
-LaTeX Font Info:    Try loading font information for OML+npxmi on input line 68
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 69.
+LaTeX Font Info:    Try loading font information for OML+npxmi on input line 69
 .
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 68.
-LaTeX Font Info:    Try loading font information for U+npxexa on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for U+npxexa on input line 69.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 69.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 68.
-LaTeX Font Info:    Try loading font information for LMS+npxsy on input line 68
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for LMS+npxsy on input line 69
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/08/13 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 69.
 LaTeX Font Info:    Try loading font information for LMX+npxexx on input line 6
-8.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/08/13 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 68.
-LaTeX Info: Redefining \microtypecontext on input line 68.
+LaTeX Info: Redefining \selectfont on input line 69.
+LaTeX Info: Redefining \microtypecontext on input line 69.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -3237,7 +3237,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box123
-Package hyperref Info: Link coloring ON on input line 68.
+Package hyperref Info: Link coloring ON on input line 69.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -3248,10 +3248,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 \c@section@level=\count548
 LaTeX Info: Redefining \Ref on input line 515.
 )
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
-LaTeX Info: Redefining \nameref on input line 68.
-LaTeX Info: Redefining \Ref on input line 68.
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \Ref on input line 69.
 Package marginnote Info: \pdfoutput not 0 or unimportant and
 (marginnote)             \pdflastxpos or \lastxpos available.
 (marginnote)             Extended position detection mode activated.
@@ -3372,16 +3372,16 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 68.
-Package biblatex Info: Reference segment=0 on input line 68.
+Package biblatex Info: Reference section=0 on input line 69.
+Package biblatex Info: Reference segment=0 on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\title' on input line 77.
+(hyperref)                removing `\title' on input line 78.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\author' on input line 80.
+(hyperref)                removing `\author' on input line 81.
 
 
 Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
@@ -3434,74 +3434,74 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 44.9403pt
 (typearea)              \baselineskip   = 12.84009pt
-(typearea)              on input line 157.
+(typearea)              on input line 158.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 157.
+(typearea)             dimensions of LaTeX on input line 158.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\title' on input line 159.
+(hyperref)                removing `\title' on input line 160.
 
-LaTeX Font Info:    Try loading font information for T1+qhv on input line 159.
+LaTeX Font Info:    Try loading font information for T1+qhv on input line 160.
 (/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 9.02084pt on input line 159.
+(Font)              scaled to size 9.02084pt on input line 160.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `qhv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <10> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 159.
+(Font)              Font shape `T1/qhv/b/n' tried instead on input line 160.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 9.02084pt on input line 159.
+(Font)              scaled to size 9.02084pt on input line 160.
 LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 159.
+(Font)              Font shape `T1/qhv/b/n' tried instead on input line 160.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 18.70923pt on input line 159.
+(Font)              scaled to size 18.70923pt on input line 160.
 LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <12> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 159.
+(Font)              Font shape `T1/qhv/b/n' tried instead on input line 160.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 10.82501pt on input line 159.
+(Font)              scaled to size 10.82501pt on input line 160.
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 13.968pt on input line 159.
+(Font)              scaled to size 13.968pt on input line 160.
 LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 1
-59.
+60.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/ot1zpltlf.fd
 File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 13.968pt on input line 159.
+(Font)              scaled to size 13.968pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 10.18501pt on input line 159.
+(Font)              scaled to size 10.18501pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 7.663pt on input line 159.
-LaTeX Font Info:    Try loading font information for U+npxmia on input line 159
+(Font)              scaled to size 7.663pt on input line 160.
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 160
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Try loading font information for U+npxsym on input line 159
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 160
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Try loading font information for U+npxsyc on input line 159
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 160
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 13.968pt on input line 159.
+(Font)              scaled to size 13.968pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 10.18501pt on input line 159.
+(Font)              scaled to size 10.18501pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 7.663pt on input line 159.
-LaTeX Font Info:    Try loading font information for U+msa on input line 159.
+(Font)              scaled to size 7.663pt on input line 160.
+LaTeX Font Info:    Try loading font information for U+msa on input line 160.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -3509,7 +3509,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 159.
+LaTeX Font Info:    Try loading font information for U+msb on input line 160.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -3988,36 +3988,36 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \openout5 = `main.xdy'.
 
 LaTeX Font Info:    Font shape `T1/zpllf/bx/n' in size <10> not available
-(Font)              Font shape `T1/zpllf/b/n' tried instead on input line 159.
+(Font)              Font shape `T1/zpllf/b/n' tried instead on input line 160.
 LaTeX Font Info:    Font shape `T1/zpllf/b/n' will be
-(Font)              scaled to size 9.70001pt on input line 159.
+(Font)              scaled to size 9.70001pt on input line 160.
 LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
-(Font)              scaled to size 10.0pt on input line 159.
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 159.
+(Font)              scaled to size 10.0pt on input line 160.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 160.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 159.
+(Font)              scaled to size 8.50006pt on input line 160.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 9.70001pt on input line 159.
+(Font)              scaled to size 9.70001pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 7.08101pt on input line 159.
+(Font)              scaled to size 7.08101pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 5.335pt on input line 159.
+(Font)              scaled to size 5.335pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 9.70001pt on input line 159.
+(Font)              scaled to size 9.70001pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 7.08101pt on input line 159.
+(Font)              scaled to size 7.08101pt on input line 160.
 LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 5.335pt on input line 159.
+(Font)              scaled to size 5.335pt on input line 160.
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 7.08101pt on input line 159.
+(Font)              scaled to size 7.08101pt on input line 160.
 \openout5 = `main.mw'.
 
  [2
@@ -4057,37 +4057,37 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 44.9403pt
 (typearea)              \baselineskip   = 12.84009pt
-(typearea)              on input line 159.
+(typearea)              on input line 160.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 159.
+(typearea)             dimensions of LaTeX on input line 160.
 \tf@toc=\write24
 \openout5 = `main.toc'.
 
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 20.11783pt on input line 183.
+(Font)              scaled to size 20.11783pt on input line 184.
 LaTeX Font Info:    Font shape `T1/zpllf/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/zpllf/b/n' tried instead on input line 183.
+(Font)              Font shape `T1/zpllf/b/n' tried instead on input line 184.
 LaTeX Font Info:    Font shape `T1/zpllf/b/n' will be
-(Font)              scaled to size 20.11783pt on input line 183.
+(Font)              scaled to size 20.11783pt on input line 184.
 Package tocbasic Info: character protrusion at toc deactivated on input line 18
-3.
+4.
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 11.64001pt on input line 183.
+(Font)              scaled to size 11.64001pt on input line 184.
 LaTeX Font Info:    Font shape `T1/zpllf/m/sc' will be
-(Font)              scaled to size 11.64001pt on input line 183.
+(Font)              scaled to size 11.64001pt on input line 184.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpllf/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/zpllf/bx/sc' in size <12> not available
-(Font)              Font shape `T1/zpllf/b/sc' tried instead on input line 183.
+(Font)              Font shape `T1/zpllf/b/sc' tried instead on input line 184.
 
 LaTeX Font Info:    Font shape `T1/zpllf/b/sc' will be
-(Font)              scaled to size 11.64001pt on input line 183.
+(Font)              scaled to size 11.64001pt on input line 184.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpllf/b/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/zpllf/m/sl' will be
-(Font)              scaled to size 9.70001pt on input line 183.
+(Font)              scaled to size 9.70001pt on input line 184.
 \openout5 = `main.mw'.
 
  [5
@@ -4103,7 +4103,7 @@ LaTeX Font Info:    Font shape `T1/zpllf/m/sl' will be
 \openout5 = `main.mw'.
 
 Package tocbasic Info: character protrusion at lof deactivated on input line 18
-4.
+5.
  (./main.lof
 Overfull \hbox (1.90321pt too wide) in paragraph at lines 12--12
  [][] [][][]\T1/zpllf/m/n/10 (-20) A 2D schemetic of the Eu-le-rian (ge-o-met-r
@@ -4128,14 +4128,23 @@ ic) flux cal-cu-la-tion us-ing the Weymouth-
  [9] (./main.mw)
 \openout5 = `main.mw'.
 
+
+
+LaTeX Warning: Reference `Pois' on page x undefined on input line 42.
+
 \openout5 = `main.mw'.
 
- [10] (./main.mw)
+[10] (./main.mw)
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+ [11] (./main.mw)
 \openout5 = `main.mw'.
 
 
 
-LaTeX Warning: Command \L invalid in math mode on input line 76.
+LaTeX Warning: Command \L invalid in math mode on input line 80.
 
 Missing character: There is no Š in font zpl-Regular-tlf-ot1!
 )
@@ -4143,15 +4152,10 @@ Missing character: There is no Š in font zpl-Regular-tlf-ot1!
 \openout5 = `main.lof'.
 
 Package tocbasic Info: character protrusion at lot deactivated on input line 19
-0.
+1.
  (./main.lot)
 \tf@lot=\write26
 \openout5 = `main.lot'.
-
-\openout5 = `main.mw'.
-
- [11] (./main.mw)
-\openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
 
@@ -4289,21 +4293,21 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 
 part without number
 LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 204.
+(Font)              Font shape `T1/qhv/b/n' tried instead on input line 205.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 22.44386pt on input line 204.
+(Font)              scaled to size 22.44386pt on input line 205.
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 24.13362pt on input line 204.
+(Font)              scaled to size 24.13362pt on input line 205.
 LaTeX Font Info:    Font shape `T1/zpllf/m/sc' will be
-(Font)              scaled to size 24.13362pt on input line 204.
+(Font)              scaled to size 24.13362pt on input line 205.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpllf/m/sc/24.88'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/zpllf/bx/sc' in size <24.88> not available
-(Font)              Font shape `T1/zpllf/b/sc' tried instead on input line 204.
+(Font)              Font shape `T1/zpllf/b/sc' tried instead on input line 205.
 
 LaTeX Font Info:    Font shape `T1/zpllf/b/sc' will be
-(Font)              scaled to size 24.13362pt on input line 204.
+(Font)              scaled to size 24.13362pt on input line 205.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpllf/b/sc/24.88'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -4479,13 +4483,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--149
 
 \openout5 = `main.mw'.
 
-<plots/methodology/vof_basic.png, id=604, 409.53pt x 393.47pt>
+<plots/methodology/vof_basic.png, id=628, 409.53pt x 393.47pt>
 File: plots/methodology/vof_basic.png Graphic file (type png)
 <use plots/methodology/vof_basic.png>
 Package pdftex.def Info: plots/methodology/vof_basic.png  used on input line 15
 8.
 (pdftex.def)             Requested size: 152.2236pt x 146.25404pt.
-<plots/methodology/vof_plic.png, id=605, 370.38374pt x 394.47375pt>
+<plots/methodology/vof_plic.png, id=629, 370.38374pt x 394.47375pt>
 File: plots/methodology/vof_plic.png Graphic file (type png)
 <use plots/methodology/vof_plic.png>
 Package pdftex.def Info: plots/methodology/vof_plic.png  used on input line 160
@@ -4561,7 +4565,7 @@ LaTeX Font Info:    Font shape `T1/zpllf/m/it' will be
 
 \openout5 = `main.mw'.
 
-<plots/methodology/ciam.png, id=646, 890.32625pt x 397.485pt>
+<plots/methodology/ciam.png, id=670, 890.32625pt x 397.485pt>
 File: plots/methodology/ciam.png Graphic file (type png)
 <use plots/methodology/ciam.png>
 Package pdftex.def Info: plots/methodology/ciam.png  used on input line 259.
@@ -4588,7 +4592,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-<plots/methodology/wy.png, id=665, 256.0767pt x 145.9854pt>
+<plots/methodology/wy.png, id=689, 256.0767pt x 145.9854pt>
 File: plots/methodology/wy.png Graphic file (type png)
 <use plots/methodology/wy.png>
 Package pdftex.def Info: plots/methodology/wy.png  used on input line 303.
@@ -4611,6 +4615,8 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [9 <./plots/methodology/ciam.png> <./plots/methodology/wy.png>] (./main.mw)
 \openout5 = `main.mw'.
 
+LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
+(Font)              scaled to size 5.335pt on input line 358.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
@@ -4825,7 +4831,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 ] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/raindrop/setup.png, id=771, 285.10515pt x 325.215pt>
+<plots/raindrop/setup.png, id=795, 285.10515pt x 325.215pt>
 File: plots/raindrop/setup.png Graphic file (type png)
 <use plots/raindrop/setup.png>
 Package pdftex.def Info: plots/raindrop/setup.png  used on input line 91.
@@ -4844,13 +4850,13 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-<plots/raindrop/pressure_compare.png, id=787, 1027.84pt x 891.33pt>
+<plots/raindrop/pressure_compare.png, id=811, 1027.84pt x 891.33pt>
 File: plots/raindrop/pressure_compare.png Graphic file (type png)
 <use plots/raindrop/pressure_compare.png>
 Package pdftex.def Info: plots/raindrop/pressure_compare.png  used on input lin
 e 172.
 (pdftex.def)             Requested size: 243.54993pt x 211.20345pt.
-<plots/raindrop/nonmc_16ppd_pressure.png, id=788, 1027.84pt x 891.33pt>
+<plots/raindrop/nonmc_16ppd_pressure.png, id=812, 1027.84pt x 891.33pt>
 File: plots/raindrop/nonmc_16ppd_pressure.png Graphic file (type png)
 <use plots/raindrop/nonmc_16ppd_pressure.png>
 Package pdftex.def Info: plots/raindrop/nonmc_16ppd_pressure.png  used on input
@@ -4861,13 +4867,13 @@ Overfull \hbox (5.35889pt too wide) in paragraph at lines 170--178
  [] 
  []
 
-<plots/raindrop/ke_compare.png, id=789, 578.16pt x 433.62pt>
+<plots/raindrop/ke_compare.png, id=813, 578.16pt x 433.62pt>
 File: plots/raindrop/ke_compare.png Graphic file (type png)
 <use plots/raindrop/ke_compare.png>
 Package pdftex.def Info: plots/raindrop/ke_compare.png  used on input line 195.
 
 (pdftex.def)             Requested size: 243.54895pt x 182.66171pt.
-<plots/raindrop/mc_16ppd_pressure.png, id=790, 1027.84pt x 891.33pt>
+<plots/raindrop/mc_16ppd_pressure.png, id=814, 1027.84pt x 891.33pt>
 File: plots/raindrop/mc_16ppd_pressure.png Graphic file (type png)
 <use plots/raindrop/mc_16ppd_pressure.png>
 Package pdftex.def Info: plots/raindrop/mc_16ppd_pressure.png  used on input li
@@ -4878,13 +4884,13 @@ Overfull \hbox (5.35791pt too wide) in paragraph at lines 193--201
  [] 
  []
 
-<plots/raindrop/mc_vorticity_zoom.png, id=791, 1027.84pt x 891.33pt>
+<plots/raindrop/mc_vorticity_zoom.png, id=815, 1027.84pt x 891.33pt>
 File: plots/raindrop/mc_vorticity_zoom.png Graphic file (type png)
 <use plots/raindrop/mc_vorticity_zoom.png>
 Package pdftex.def Info: plots/raindrop/mc_vorticity_zoom.png  used on input li
 ne 217.
 (pdftex.def)             Requested size: 243.54993pt x 211.20345pt.
-<plots/raindrop/mc_vorticity.png, id=792, 1027.84pt x 891.33pt>
+<plots/raindrop/mc_vorticity.png, id=816, 1027.84pt x 891.33pt>
 File: plots/raindrop/mc_vorticity.png Graphic file (type png)
 <use plots/raindrop/mc_vorticity.png>
 Package pdftex.def Info: plots/raindrop/mc_vorticity.png  used on input line 21
@@ -4895,7 +4901,7 @@ Overfull \hbox (5.35889pt too wide) in paragraph at lines 215--223
  [] 
  []
 
-<plots/raindrop/raindrop_explode.png, id=794, 304.9794pt x 147.1899pt>
+<plots/raindrop/raindrop_explode.png, id=818, 304.9794pt x 147.1899pt>
 File: plots/raindrop/raindrop_explode.png Graphic file (type png)
 <use plots/raindrop/raindrop_explode.png>
 Package pdftex.def Info: plots/raindrop/raindrop_explode.png  used on input lin
@@ -4938,7 +4944,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [18 <./plots/raindrop/raindrop_explode.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/raindrop/combined_failures_raindrop.png, id=819, 284.5029pt x 698.3691pt
+<plots/raindrop/combined_failures_raindrop.png, id=843, 284.5029pt x 698.3691pt
 >
 File: plots/raindrop/combined_failures_raindrop.png Graphic file (type png)
 <use plots/raindrop/combined_failures_raindrop.png>
@@ -4953,44 +4959,42 @@ Package pdftex.def Info: plots/raindrop/combined_failures_raindrop.png  used on
 
 \openout5 = `main.mw'.
 
-<plots/raindrop/multiplot_raindrop.png, id=823, 650.43pt x 505.89pt>
+<plots/raindrop/multiplot_raindrop.png, id=847, 650.43pt x 505.89pt>
 File: plots/raindrop/multiplot_raindrop.png Graphic file (type png)
 <use plots/raindrop/multiplot_raindrop.png>
 Package pdftex.def Info: plots/raindrop/multiplot_raindrop.png  used on input l
 ine 370.
 (pdftex.def)             Requested size: 456.67743pt x 355.19354pt.
-<plots/raindrop/dropl_velocity_accel_ppd.png, id=825, 722.7pt x 578.16pt>
+<plots/raindrop/dropl_velocity_accel_ppd.png, id=849, 722.7pt x 578.16pt>
 File: plots/raindrop/dropl_velocity_accel_ppd.png Graphic file (type png)
 <use plots/raindrop/dropl_velocity_accel_ppd.png>
 Package pdftex.def Info: plots/raindrop/dropl_velocity_accel_ppd.png  used on i
 nput line 399.
 (pdftex.def)             Requested size: 304.4472pt x 243.55777pt.
-<plots/raindrop/raindrop_mass_conv_16ppd.png, id=826, 650.43pt x 505.89pt>
+<plots/raindrop/raindrop_mass_conv_16ppd.png, id=850, 650.43pt x 505.89pt>
 File: plots/raindrop/raindrop_mass_conv_16ppd.png Graphic file (type png)
 <use plots/raindrop/raindrop_mass_conv_16ppd.png>
 Package pdftex.def Info: plots/raindrop/raindrop_mass_conv_16ppd.png  used on i
 nput line 419.
 (pdftex.def)             Requested size: 213.10422pt x 165.74773pt.
-<plots/raindrop/raindrop_mass_conv_clipping.png, id=827, 650.43pt x 505.89pt>
+<plots/raindrop/raindrop_mass_conv_clipping.png, id=851, 650.43pt x 505.89pt>
 File: plots/raindrop/raindrop_mass_conv_clipping.png Graphic file (type png)
 <use plots/raindrop/raindrop_mass_conv_clipping.png>
 Package pdftex.def Info: plots/raindrop/raindrop_mass_conv_clipping.png  used o
 n input line 421.
 (pdftex.def)             Requested size: 213.10422pt x 165.74773pt.
-<plots/raindrop/raindrop_mass_conv_resolution.png, id=828, 578.16pt x 433.62pt>
+<plots/raindrop/raindrop_mass_conv_resolution.png, id=852, 578.16pt x 433.62pt>
 
 File: plots/raindrop/raindrop_mass_conv_resolution.png Graphic file (type png)
 <use plots/raindrop/raindrop_mass_conv_resolution.png>
 Package pdftex.def Info: plots/raindrop/raindrop_mass_conv_resolution.png  used
  on input line 425.
 (pdftex.def)             Requested size: 213.10422pt x 159.82817pt.
-<plots/raindrop/acc_conv.png, id=829, 578.16pt x 433.62pt>
+<plots/raindrop/acc_conv.png, id=853, 578.16pt x 433.62pt>
 File: plots/raindrop/acc_conv.png Graphic file (type png)
 <use plots/raindrop/acc_conv.png>
 Package pdftex.def Info: plots/raindrop/acc_conv.png  used on input line 427.
 (pdftex.def)             Requested size: 213.10422pt x 159.82817pt.
-LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
-(Font)              scaled to size 5.335pt on input line 472.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
@@ -5708,7 +5712,7 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 
 pdfTeX warning: pdflatex (file ./plots/stag-grid.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<plots/stag-grid.pdf, id=1038, 189.70876pt x 157.58875pt>
+<plots/stag-grid.pdf, id=1062, 189.70876pt x 157.58875pt>
 File: plots/stag-grid.pdf Graphic file (type pdf)
 <use plots/stag-grid.pdf>
 Package pdftex.def Info: plots/stag-grid.pdf  used on input line 775.
@@ -5729,7 +5733,7 @@ Package marginnote Info: right page because not two side mode on input line 803
 .
 Package marginnote Info: xpos seems to be 70.56284pt,
 (marginnote)             \marginnoterightadjust ignored on input line 803.
-<plots/advect-ed-ing.pdf, id=1052, 812.03375pt x 241.90375pt>
+<plots/advect-ed-ing.pdf, id=1076, 812.03375pt x 241.90375pt>
 File: plots/advect-ed-ing.pdf Graphic file (type pdf)
 <use plots/advect-ed-ing.pdf>
 Package pdftex.def Info: plots/advect-ed-ing.pdf  used on input line 811.
@@ -5784,7 +5788,7 @@ Package marginnote Info: Margin note 46.3 is on absolute page 46
 (marginnote)              on input line 921.
 Package marginnote Info: right page because not two side mode on input line 921
 .
-Package marginnote Info: xpos seems to be 313.26846pt,
+Package marginnote Info: xpos seems to be 325.33495pt,
 (marginnote)             \marginnoterightadjust ignored on input line 921.
 \openout5 = `main.mw'.
 
@@ -5807,7 +5811,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 921--921
 
  []
 
-) (./chapters/numbench.tex
+Package marginnote Info: Margin note 46.4 is on absolute page 46
+(marginnote)              on input line 942.
+Package marginnote Info: right page because not two side mode on input line 942
+.
+Package marginnote Info: xpos seems to be 70.56284pt,
+(marginnote)             \marginnoterightadjust ignored on input line 942.
+
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
  []
@@ -5817,6 +5827,78 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [34] (./main.mw)
 \openout5 = `main.mw'.
 
+Package marginnote Info: Margin note 47.1 is on absolute page 47
+(marginnote)              on input line 958.
+Package marginnote Info: right page because not two side mode on input line 958
+.
+Package marginnote Info: xpos seems to be 70.56284pt,
+(marginnote)             \marginnoterightadjust ignored on input line 958.
+LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
+(Font)              scaled to size 6.01399pt on input line 958.
+<plots/shifted_fractions.pdf, id=1130, 320.93813pt x 280.82869pt>
+File: plots/shifted_fractions.pdf Graphic file (type pdf)
+<use plots/shifted_fractions.pdf>
+Package pdftex.def Info: plots/shifted_fractions.pdf  used on input line 982.
+(pdftex.def)             Requested size: 304.47322pt x 266.4215pt.
+
+Overfull \hbox (156.52655pt too wide) has occurred while \output is active
+[][][] 
+ []
+
+\openout5 = `main.mw'.
+
+[35 <./plots/shifted_fractions.pdf>] (./main.mw)
+\openout5 = `main.mw'.
+
+Package marginnote Info: Margin note 48.1 is on absolute page 48
+(marginnote)              on input line 1019.
+Package marginnote Info: right page because not two side mode on input line 101
+9.
+Package marginnote Info: xpos seems to be 70.56284pt,
+(marginnote)             \marginnoterightadjust ignored on input line 1019.
+Package marginnote Info: Margin note 48.2 is on absolute page 48
+(marginnote)              on input line 1029.
+Package marginnote Info: right page because not two side mode on input line 102
+9.
+Package marginnote Info: xpos seems to be 371.08592pt,
+(marginnote)             \marginnoterightadjust ignored on input line 1029.
+
+
+LaTeX Warning: Reference `halffractions' on page 36 undefined on input line 106
+0.
+
+
+LaTeX Warning: Reference `eulflux' on page 36 undefined on input line 1062.
+
+<plots/momcons_diagram_daniel.pdf, id=1156, 978.01549pt x 533.7617pt>
+File: plots/momcons_diagram_daniel.pdf Graphic file (type pdf)
+<use plots/momcons_diagram_daniel.pdf>
+Package pdftex.def Info: plots/momcons_diagram_daniel.pdf  used on input line 1
+080.
+(pdftex.def)             Requested size: 304.43523pt x 166.14854pt.
+
+LaTeX Warning: Reference `Pois' on page 36 undefined on input line 1092.
+
+) (./chapters/numbench.tex
+Overfull \hbox (156.52655pt too wide) has occurred while \output is active
+[][][] 
+ []
+
+\openout5 = `main.mw'.
+
+[36] (./main.mw)
+\openout5 = `main.mw'.
+
+
+Overfull \hbox (156.52655pt too wide) has occurred while \output is active
+[][][] 
+ []
+
+\openout5 = `main.mw'.
+
+[37 <./plots/momcons_diagram_daniel.pdf>] (./main.mw)
+\openout5 = `main.mw'.
+
 
 chapter 5.
 
@@ -5824,7 +5906,7 @@ Overfull \hbox (163.88783pt too wide) in paragraph at lines 2--2
 [][]
  []
 
-Package marginnote Info: Margin note 47.1 is on absolute page 47
+Package marginnote Info: Margin note 50.1 is on absolute page 50
 (marginnote)              on input line 2.
 Package marginnote Info: right page because not two side mode on input line 2.
 Package marginnote Info: xpos seems to be 70.56284pt,
@@ -5841,7 +5923,7 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 
 \openout5 = `main.mw'.
 
-Package marginnote Info: Margin note 47.2 is on absolute page 47
+Package marginnote Info: Margin note 50.2 is on absolute page 50
 (marginnote)              on input line 20.
 Package marginnote Info: right page because not two side mode on input line 20.
 
@@ -5920,13 +6002,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--20
 
 \openout5 = `main.mw'.
 
-[35
+[38
 
 
 ] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/static_drop/config.png, id=1133, 244.2726pt x 280.8894pt>
+<plots/static_drop/config.png, id=1212, 244.2726pt x 280.8894pt>
 File: plots/static_drop/config.png Graphic file (type png)
 <use plots/static_drop/config.png>
 Package pdftex.def Info: plots/static_drop/config.png  used on input line 28.
@@ -5935,7 +6017,7 @@ Package pdftex.def Info: plots/static_drop/config.png  used on input line 28.
 
 \openout5 = `main.mw'.
 
-Package marginnote Info: Margin note 48.1 is on absolute page 48
+Package marginnote Info: Margin note 51.1 is on absolute page 51
 (marginnote)              on input line 34.
 Package marginnote Info: right page because not two side mode on input line 34.
 
@@ -5969,10 +6051,10 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[36 <./plots/static_drop/config.png>] (./main.mw)
+[39 <./plots/static_drop/config.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/static_drop/decay_nonmc.png, id=1149, 578.16pt x 578.16pt>
+<plots/static_drop/decay_nonmc.png, id=1229, 578.16pt x 578.16pt>
 File: plots/static_drop/decay_nonmc.png Graphic file (type png)
 <use plots/static_drop/decay_nonmc.png>
 Package pdftex.def Info: plots/static_drop/decay_nonmc.png  used on input line 
@@ -5985,16 +6067,16 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[37] (./main.mw)
+[40] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/static_drop/decay_daniel.png, id=1160, 578.16pt x 578.16pt>
+<plots/static_drop/decay_daniel.png, id=1239, 578.16pt x 578.16pt>
 File: plots/static_drop/decay_daniel.png Graphic file (type png)
 <use plots/static_drop/decay_daniel.png>
 Package pdftex.def Info: plots/static_drop/decay_daniel.png  used on input line
  76.
 (pdftex.def)             Requested size: 304.43839pt x 304.43839pt.
-<plots/static_drop/decay_sagar.png, id=1161, 578.16pt x 578.16pt>
+<plots/static_drop/decay_sagar.png, id=1240, 578.16pt x 578.16pt>
 File: plots/static_drop/decay_sagar.png Graphic file (type png)
 <use plots/static_drop/decay_sagar.png>
 Package pdftex.def Info: plots/static_drop/decay_sagar.png  used on input line 
@@ -6015,7 +6097,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[38 <./plots/static_drop/decay_nonmc.png> <./plots/static_drop/decay_daniel.png
+[41 <./plots/static_drop/decay_nonmc.png> <./plots/static_drop/decay_daniel.png
 >] (./main.mw)
 \openout5 = `main.mw'.
 
@@ -6026,10 +6108,10 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[39 <./plots/static_drop/decay_sagar.png>] (./main.mw)
+[42 <./plots/static_drop/decay_sagar.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/static_drop/static_drop_convergence.png, id=1178, 578.16pt x 505.89pt>
+<plots/static_drop/static_drop_convergence.png, id=1257, 578.16pt x 505.89pt>
 File: plots/static_drop/static_drop_convergence.png Graphic file (type png)
 <use plots/static_drop/static_drop_convergence.png>
 Package pdftex.def Info: plots/static_drop/static_drop_convergence.png  used on
@@ -6043,7 +6125,7 @@ Package pdftex.def Info: plots/static_drop/static_drop_convergence.png  used on
 
 \openout5 = `main.mw'.
 
-Package marginnote Info: Margin note 52.1 is on absolute page 52
+Package marginnote Info: Margin note 55.1 is on absolute page 55
 (marginnote)              on input line 115.
 Package marginnote Info: right page because not two side mode on input line 115
 .
@@ -6070,7 +6152,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--115
 
  []
 
-<plots/droplet_advect/config.png, id=1183, 244.2726pt x 280.8894pt>
+<plots/droplet_advect/config.png, id=1262, 244.2726pt x 280.8894pt>
 File: plots/droplet_advect/config.png Graphic file (type png)
 <use plots/droplet_advect/config.png>
 Package pdftex.def Info: plots/droplet_advect/config.png  used on input line 12
@@ -6090,14 +6172,14 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[40 <./plots/static_drop/static_drop_convergence.png>] (./main.mw)
+[43 <./plots/static_drop/static_drop_convergence.png>] (./main.mw)
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
 
-<plots/droplet_advect/evo_nonmc.png, id=1196, 578.16pt x 650.43pt>
+<plots/droplet_advect/evo_nonmc.png, id=1276, 578.16pt x 650.43pt>
 File: plots/droplet_advect/evo_nonmc.png Graphic file (type png)
 <use plots/droplet_advect/evo_nonmc.png>
 Package pdftex.def Info: plots/droplet_advect/evo_nonmc.png  used on input line
@@ -6110,10 +6192,10 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[41 <./plots/droplet_advect/config.png>] (./main.mw)
+[44 <./plots/droplet_advect/config.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/droplet_advect/evo_daniel.png, id=1205, 578.16pt x 650.43pt>
+<plots/droplet_advect/evo_daniel.png, id=1285, 578.16pt x 650.43pt>
 File: plots/droplet_advect/evo_daniel.png Graphic file (type png)
 <use plots/droplet_advect/evo_daniel.png>
 Package pdftex.def Info: plots/droplet_advect/evo_daniel.png  used on input lin
@@ -6123,7 +6205,7 @@ e 153.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<plots/droplet_advect/evo_sagar.png, id=1207, 578.16pt x 650.43pt>
+<plots/droplet_advect/evo_sagar.png, id=1287, 578.16pt x 650.43pt>
 File: plots/droplet_advect/evo_sagar.png Graphic file (type png)
 <use plots/droplet_advect/evo_sagar.png>
 Package pdftex.def Info: plots/droplet_advect/evo_sagar.png  used on input line
@@ -6139,14 +6221,14 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[42 <./plots/droplet_advect/evo_nonmc.png>] (./main.mw)
+[45 <./plots/droplet_advect/evo_nonmc.png>] (./main.mw)
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
 
-<plots/droplet_advect/convergence_all.png, id=1224, 578.16pt x 505.89pt>
+<plots/droplet_advect/convergence_all.png, id=1304, 578.16pt x 505.89pt>
 File: plots/droplet_advect/convergence_all.png Graphic file (type png)
 <use plots/droplet_advect/convergence_all.png>
 Package pdftex.def Info: plots/droplet_advect/convergence_all.png  used on inpu
@@ -6175,7 +6257,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[43 <./plots/droplet_advect/evo_daniel.png>] (./main.mw)
+[46 <./plots/droplet_advect/evo_daniel.png>] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -6185,17 +6267,17 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[44 <./plots/droplet_advect/evo_sagar.png> <./plots/droplet_advect/convergence_
+[47 <./plots/droplet_advect/evo_sagar.png> <./plots/droplet_advect/convergence_
 all.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/droplet_advect/webers.pdf, id=1246, 628.74902pt x 529.7391pt>
+<plots/droplet_advect/webers.pdf, id=1324, 628.74902pt x 529.7391pt>
 File: plots/droplet_advect/webers.pdf Graphic file (type pdf)
 <use plots/droplet_advect/webers.pdf>
 Package pdftex.def Info: plots/droplet_advect/webers.pdf  used on input line 18
 6.
 (pdftex.def)             Requested size: 243.56097pt x 205.2071pt.
-<plots/droplet_advect/laplaces.pdf, id=1247, 693.06927pt x 581.77347pt>
+<plots/droplet_advect/laplaces.pdf, id=1325, 693.06927pt x 581.77347pt>
 File: plots/droplet_advect/laplaces.pdf Graphic file (type pdf)
 <use plots/droplet_advect/laplaces.pdf>
 Package pdftex.def Info: plots/droplet_advect/laplaces.pdf  used on input line 
@@ -6205,7 +6287,7 @@ Package pdftex.def Info: plots/droplet_advect/laplaces.pdf  used on input line
 
 \openout5 = `main.mw'.
 
-Package marginnote Info: Margin note 57.1 is on absolute page 57
+Package marginnote Info: Margin note 60.1 is on absolute page 60
 (marginnote)              on input line 203.
 Package marginnote Info: right page because not two side mode on input line 203
 .
@@ -6232,7 +6314,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--203
 
  []
 
-<plots/capwave/capwave_conf.png, id=1250, 258.9675pt x 347.8596pt>
+<plots/capwave/capwave_conf.png, id=1328, 258.9675pt x 347.8596pt>
 File: plots/capwave/capwave_conf.png Graphic file (type png)
 <use plots/capwave/capwave_conf.png>
 Package pdftex.def Info: plots/capwave/capwave_conf.png  used on input line 209
@@ -6249,7 +6331,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[45 <./plots/droplet_advect/webers.pdf> <./plots/droplet_advect/laplaces.pdf
+[48 <./plots/droplet_advect/webers.pdf> <./plots/droplet_advect/laplaces.pdf
 
 pdfTeX warning: pdflatex (file ./plots/droplet_advect/laplaces.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
@@ -6260,7 +6342,7 @@ ion: multiple pdfs with page group included in a single page
 
 \openout5 = `main.mw'.
 
-Package marginnote Info: Margin note 58.1 is on absolute page 58
+Package marginnote Info: Margin note 61.1 is on absolute page 61
 (marginnote)              on input line 214.
 Package marginnote Info: right page because not two side mode on input line 214
 .
@@ -6297,7 +6379,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--214
 
 \openout5 = `main.mw'.
 
-Package marginnote Info: Margin note 58.2 is on absolute page 58
+Package marginnote Info: Margin note 61.2 is on absolute page 61
 (marginnote)              on input line 214.
 Package marginnote Info: right page because not two side mode on input line 214
 .
@@ -6352,7 +6434,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--214
 
 \openout5 = `main.mw'.
 
-Package marginnote Info: Margin note 58.3 is on absolute page 59
+Package marginnote Info: Margin note 61.3 is on absolute page 62
 (marginnote)              on input line 228.
 Package marginnote Info: right page because not two side mode on input line 228
 .
@@ -6386,7 +6468,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[46 <./plots/capwave/capwave_conf.png>] (./main.mw)
+[49 <./plots/capwave/capwave_conf.png>] (./main.mw)
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -6401,7 +6483,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-<plots/capwave/compare_nonmc.png, id=1329, 578.16pt x 650.43pt>
+<plots/capwave/compare_nonmc.png, id=1409, 578.16pt x 650.43pt>
 File: plots/capwave/compare_nonmc.png Graphic file (type png)
 <use plots/capwave/compare_nonmc.png>
 Package pdftex.def Info: plots/capwave/compare_nonmc.png  used on input line 24
@@ -6414,16 +6496,16 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[47 <./plots/capwave/compare_nonmc.png>] (./main.mw)
+[50 <./plots/capwave/compare_nonmc.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/capwave/compare_daniel.png, id=1341, 578.16pt x 650.43pt>
+<plots/capwave/compare_daniel.png, id=1421, 578.16pt x 650.43pt>
 File: plots/capwave/compare_daniel.png Graphic file (type png)
 <use plots/capwave/compare_daniel.png>
 Package pdftex.def Info: plots/capwave/compare_daniel.png  used on input line 2
 54.
 (pdftex.def)             Requested size: 243.54895pt x 273.99255pt.
-<plots/capwave/compare_sagar.png, id=1342, 578.16pt x 650.43pt>
+<plots/capwave/compare_sagar.png, id=1422, 578.16pt x 650.43pt>
 File: plots/capwave/compare_sagar.png Graphic file (type png)
 <use plots/capwave/compare_sagar.png>
 Package pdftex.def Info: plots/capwave/compare_sagar.png  used on input line 26
@@ -6440,16 +6522,16 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[48 <./plots/capwave/compare_daniel.png> <./plots/capwave/compare_sagar.png>]
+[51 <./plots/capwave/compare_daniel.png> <./plots/capwave/compare_sagar.png>]
 (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/capwave/conv_r1.png, id=1350, 578.16pt x 505.89pt>
+<plots/capwave/conv_r1.png, id=1430, 578.16pt x 505.89pt>
 File: plots/capwave/conv_r1.png Graphic file (type png)
 <use plots/capwave/conv_r1.png>
 Package pdftex.def Info: plots/capwave/conv_r1.png  used on input line 274.
 (pdftex.def)             Requested size: 243.54895pt x 213.10532pt.
-<plots/capwave/conv_r10.png, id=1351, 578.16pt x 505.89pt>
+<plots/capwave/conv_r10.png, id=1431, 578.16pt x 505.89pt>
 File: plots/capwave/conv_r10.png Graphic file (type png)
 <use plots/capwave/conv_r10.png>
 Package pdftex.def Info: plots/capwave/conv_r10.png  used on input line 282.
@@ -6459,7 +6541,7 @@ Package pdftex.def Info: plots/capwave/conv_r10.png  used on input line 282.
 LaTeX Warning: Command \L invalid in math mode on input line 283.
 
 Missing character: There is no Š in font zpl-Regular-tlf-ot1!
-<plots/capwave/conv_aw.png, id=1352, 578.16pt x 505.89pt>
+<plots/capwave/conv_aw.png, id=1432, 578.16pt x 505.89pt>
 File: plots/capwave/conv_aw.png Graphic file (type png)
 <use plots/capwave/conv_aw.png>
 Package pdftex.def Info: plots/capwave/conv_aw.png  used on input line 290.
@@ -6474,7 +6556,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[49 <./plots/capwave/conv_r1.png> <./plots/capwave/conv_r10.png>] (./main.mw)
+[52 <./plots/capwave/conv_r1.png> <./plots/capwave/conv_r10.png>] (./main.mw)
 \openout5 = `main.mw'.
 
 )
@@ -6484,7 +6566,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[50 <./plots/capwave/conv_aw.png>] (./main.mw)
+[53 <./plots/capwave/conv_aw.png>] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -6526,7 +6608,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 part without number
 \openout5 = `main.mw'.
 
-[51
+[54
 
 
 
@@ -6576,19 +6658,14 @@ Overfull \hbox (163.88783pt too wide) in paragraph at lines 2--2
 [][]
  []
 
-Package marginnote Info: Margin note 64.1 is on absolute page 64
+Package marginnote Info: Margin note 67.1 is on absolute page 67
 (marginnote)              on input line 2.
 Package marginnote Info: right page because not two side mode on input line 2.
 Package marginnote Info: xpos seems to be 70.56284pt,
 (marginnote)             \marginnoterightadjust ignored on input line 2.
-
-Underfull \hbox (badness 2401) in paragraph at lines 2--2
-[][] [][]\T1/zpllf/b/n/9 Mech-a-nism of Drop For-ma-
- []
-
 \openout5 = `main.mw'.
 
-[52
+[55
 
 
 
@@ -6602,51 +6679,11 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[53] (./main.mw)
-\openout5 = `main.mw'.
-
-
-chapter 7.
-
-Overfull \hbox (163.88783pt too wide) in paragraph at lines 2--2
-[][]
- []
-
-Package marginnote Info: Margin note 66.1 is on absolute page 66
-(marginnote)              on input line 2.
-Package marginnote Info: right page because not two side mode on input line 2.
-Package marginnote Info: xpos seems to be 70.56284pt,
-(marginnote)             \marginnoterightadjust ignored on input line 2.
-\openout5 = `main.mw'.
-
-[54
-
-
-] (./main.mw)
-\openout5 = `main.mw'.
-
-
-Overfull \hbox (156.52655pt too wide) has occurred while \output is active
-[][][] 
- []
-
-\openout5 = `main.mw'.
-
-[55] (./main.mw)
-\openout5 = `main.mw'.
-
-) (./chapters/dropstat.tex
-Overfull \hbox (156.52655pt too wide) has occurred while \output is active
-[][][] 
- []
-
-\openout5 = `main.mw'.
-
 [56] (./main.mw)
 \openout5 = `main.mw'.
 
 
-chapter 8.
+chapter 7.
 
 Overfull \hbox (163.88783pt too wide) in paragraph at lines 2--2
 [][]
@@ -6660,6 +6697,46 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 \openout5 = `main.mw'.
 
 [57
+
+
+] (./main.mw)
+\openout5 = `main.mw'.
+
+
+Overfull \hbox (156.52655pt too wide) has occurred while \output is active
+[][][] 
+ []
+
+\openout5 = `main.mw'.
+
+[58] (./main.mw)
+\openout5 = `main.mw'.
+
+) (./chapters/dropstat.tex
+Overfull \hbox (156.52655pt too wide) has occurred while \output is active
+[][][] 
+ []
+
+\openout5 = `main.mw'.
+
+[59] (./main.mw)
+\openout5 = `main.mw'.
+
+
+chapter 8.
+
+Overfull \hbox (163.88783pt too wide) in paragraph at lines 2--2
+[][]
+ []
+
+Package marginnote Info: Margin note 72.1 is on absolute page 72
+(marginnote)              on input line 2.
+Package marginnote Info: right page because not two side mode on input line 2.
+Package marginnote Info: xpos seems to be 70.56284pt,
+(marginnote)             \marginnoterightadjust ignored on input line 2.
+\openout5 = `main.mw'.
+
+[60
 
 
 ] (./main.mw)
@@ -6689,7 +6766,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[58] (./main.mw)
+[61] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -6731,7 +6808,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 part without number
 \openout5 = `main.mw'.
 
-[59
+[62
 
 
 
@@ -6745,7 +6822,7 @@ Overfull \hbox (4.58882pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[60] (./main.mw)
+[63] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -6787,7 +6864,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 part without number
 \openout5 = `main.mw'.
 
-[61
+[64
 
 
 
@@ -6849,7 +6926,7 @@ Overfull \hbox (163.88783pt too wide) in paragraph at lines 3--3
 
 \openout5 = `main.mw'.
 
-[62
+[65
 
 
 
@@ -6870,7 +6947,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[63] (./main.mw)
+[66] (./main.mw)
 \openout5 = `main.mw'.
 
 )
@@ -6880,7 +6957,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[64] (./main.mw)
+[67] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -6922,7 +6999,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 chapter without number
 \openout5 = `main.mw'.
 
-[65
+[68
 
 
 
@@ -6933,13 +7010,13 @@ chapter without number
 
 \openout5 = `main.mw'.
 
- [66] (./main.mw)
+ [69] (./main.mw)
 \openout5 = `main.mw'.
 
  (./main.nls
 \openout5 = `main.mw'.
 
- [67] (./main.mw)
+ [70] (./main.mw)
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -6951,12 +7028,12 @@ chapter without number
 \openout5 = `main.mw'.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
 LaTeX Font Info:    Font shape `T1/zpllf/m/it' will be
-(Font)              scaled to size 8.73001pt on input line 280.
+(Font)              scaled to size 8.73001pt on input line 281.
 \@gls@deffile=\write27
 \openout5 = `main.glsdefs'.
 
@@ -7263,7 +7340,7 @@ LaTeX Font Info:    Font shape `T1/zpllf/m/it' will be
 (./main.gls)
 \openout5 = `main.mw'.
 
- [68
+ [71
 
 
 ] (./main.mw)
@@ -7274,8 +7351,8 @@ LaTeX Font Info:    Font shape `T1/zpllf/m/it' will be
 runsystem(makeindex main.idx)...executed safely (allowed).
 
  (./main.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 337.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
  (./main.aux
 \openout5 = `main.mw'.
 
@@ -8473,9 +8550,29 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
 
 \openout5 = `main.mw'.
 
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 337.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 338.
+
+
+LaTeX Warning: There were undefined references.
+
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -8499,11 +8596,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58763 strings out of 494847
- 1092422 string characters out of 6179080
- 1940550 words of memory out of 5000000
- 60198 multiletter control sequences out of 15000+600000
- 716890 words of font info for 365 fonts, out of 8000000 for 9000
+ 58814 strings out of 494847
+ 1093254 string characters out of 6179080
+ 1943149 words of memory out of 5000000
+ 60220 multiletter control sequences out of 15000+600000
+ 720067 words of font info for 367 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  113i,20n,108p,10476b,3229s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texm
@@ -8531,10 +8628,10 @@ c/newpx/zplbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zplr.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (80 pages, 3823411 bytes).
+Output written on main.pdf (83 pages, 3971966 bytes).
 PDF statistics:
- 1895 PDF objects out of 2073 (max. 8388607)
- 1697 compressed objects within 17 object streams
- 431 named destinations out of 1000 (max. 500000)
- 41485 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1978 PDF objects out of 2073 (max. 8388607)
+ 1770 compressed objects within 18 object streams
+ 450 named destinations out of 1000 (max. 500000)
+ 42007 words of extra memory for PDF output out of 42996 (max. 10000000)
 
