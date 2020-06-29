@@ -1304,6 +1304,30 @@
       \field{pages}{548\bibrangedash 594}
       \range{pages}{47}
     \endentry
+    \entry{roe1985some}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=83e4d4524efff64874fe7d8343d9f437}{%
+           family={Roe},
+           familyi={R\bibinitperiod},
+           given={Philip\bibnamedelima L},
+           giveni={P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{83e4d4524efff64874fe7d8343d9f437}
+      \strng{fullhash}{83e4d4524efff64874fe7d8343d9f437}
+      \strng{bibnamehash}{83e4d4524efff64874fe7d8343d9f437}
+      \strng{authorbibnamehash}{83e4d4524efff64874fe7d8343d9f437}
+      \strng{authornamehash}{83e4d4524efff64874fe7d8343d9f437}
+      \strng{authorfullhash}{83e4d4524efff64874fe7d8343d9f437}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ams}
+      \field{title}{Some contributions to the modelling of discontinuous flows}
+      \field{year}{1985}
+      \field{pages}{163\bibrangedash 193}
+      \range{pages}{31}
+    \endentry
     \entry{lafaurie1994modelling}{article}{}
       \name{author}{5}{}{%
         {{hash=3905002481153cdeca2ae5429cd1a483}{%
@@ -1601,7 +1625,6 @@
       \range{pages}{7}
     \endentry
   \enddatalist
-  \missing{roe1985some}
 \endrefsection
 \endinput
 

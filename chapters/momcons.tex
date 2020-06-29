@@ -709,7 +709,7 @@ transport to be exactly conservative.
 The direction-split momentum transport given by \eqref{sumfmom2}
 can be carried out in either of the bulk of the phases, or at
 close proximity to the interface location. The treatment away 
-from the interface can be approximated as - 
+from the interface is expressed as - 
 
 \marginnote{
 In the bulk, the expression simplifies considerably due to the 
@@ -745,10 +745,10 @@ Now, moving onto the approximation in the neighbourhood
 of the interface, we get - 
 
 \marginnote{
-In the previous section
-we had derived a new expression for the momentum fluxes and the
-compression term, i.e. the RHS of \eqref{advect-ed-ing-2}, that is consistent
-with the discrete transport of the volume fraction.  
+In the previous section we had derived a 
+new expression for the momentum fluxes and the
+compression term, i.e. the RHS of \eqref{advect-ed-ing-2}, 
+that is consistent with the discrete transport of the volume fraction.  
 .}
 
 
@@ -761,6 +761,49 @@ F^{(\rho)}_{f} + \sum_{m=1}^3 \tilde u_q C_m^{(\rho)} \,
 
 The crux of our model for momentum advection is described 
 by these two equations (\eqref{sumfmomtotbulk} \& \eqref{advect-ed-ing-2}).
+We start by pointing out the staggered spatial arrangement of our
+primary variables (presssure, velocity, volume fraction), 
+as illustrated by Fig. \ref{stag-grid} in a 2D representation.  
+\sidenote{Figure \ref{stag-grid} has the same variables
+arrangement that is found in 3D on a plane perpendicular to the $z$-axis and through the 
+pressure point $p_{i,j,k}$. 
+}
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{plots/stag-grid.pdf}
+\end{center}
+\caption{A 2D schematic of the staggered spatial configuration of the
+pressure and velocity variables.
+The pressure $p_{i,j}$ is based on the center of its control volume (light colour area);
+the horizontal velocity component $u_{1;i+1/2,j}$ is defined in the middle of the
+right edge of the pressure control volume and centered on its control volume
+(dash-dotted area); the vertical velocity component $u_{2;i,j+1/2}$ is defined in the
+middle of the top edge and centered on its corresponding control volume (dashed area).
+The volume fraction is defined at the same location as that of the pressure, 
+resulting in pressure and density being centered on identical control volumes.  
+}
+\label{stag-grid}
+\end{figure}
+
+
+To estimate the advecting velocities $u_f^{\textrm{(advecting)}}$ we use a centered scheme.
+Consider a face perpendicular to the horizontal direction $1$
+\sidenote{
+In particular , $f=1-$. 
+}
+There are two cases, the first corresponding to when 
+the advected component is not aligned with the 
+face normal, which is the case with $q=2$. 
+
+\marginnote{
+The $u_2$ control volume in Fig. \ref{stag-grid} is centered on $i,j+1/2,k$, and face $f=1-$ is then 
+centered on $i-1/2,j+1/2,k$. 
+}
+
+The advecting velocity  $u_{1-}^{\textrm{(advecting)}}$ 
+is not given on this point, therefore it has to be interpolated as - 
 
 
 \begin{figure}
@@ -771,23 +814,13 @@ by these two equations (\eqref{sumfmomtotbulk} \& \eqref{advect-ed-ing-2}).
 $\phi=u_q$ is shown. A horizontal advection is here considered and both the advecting velocity 
 $u_f$ and the advected velocity require an interpolation for their value on the left face 
 $f=1-$: (a) the value $\bar u_q = \phi_0$ (full circle) is interpolated 
-(see \ref{appinterp}) from the values $\phi=u_q$ on the nodes (open circles);
+(see \ref{appendix}) from the values $\phi=u_q$ on the nodes (open circles);
 (b) a more sophisticated interpolation predicts the value $\phi(\hat x)$ where $\hat x$ is
-at the center of the ``donating'' region $\Omega_D$ (see \ref{appinterp}).}
+at the center of the ``donating'' region $\Omega_D$ (see \ref{appendix}).}
 \label{advect-ed-ing-fig}
 \end{figure}
 
 
-To estimate the advecting velocities $u_f^{\textrm{(advecting)}}$ we use a centered scheme.
-The staggered 2D grid of Fig. \ref{stag-grid} has the same variables
-arrangement that is found in 3D on a plane perpendicular to the $z$-axis and through the 
-pressure point $p_{i,j,k}$. To illustrate the procedure we consider a face perpendicular
-to the horizontal direction $1$, in particular $f=1-$. 
-There are two cases. In the first case the advected component is not aligned with the 
-face normal, this corresponds to $q=2$. The $u_2$ control volume in 
-Fig. \ref{stag-grid} is centered on $i,j+1/2,k$, and face $f=1-$ is then 
-centered on $i-1/2,j+1/2,k$. The advecting velocity  $u_{1-}^{\textrm{(advecting)}}$ 
-is not given on this point and has to be interpolated 
 
 
 \begin{align}
@@ -798,9 +831,13 @@ is not given on this point and has to be interpolated
 
 
 In the second case the advected component is aligned with the 
-face normal, this corresponds to $q=1$. The $u_1$ control volume 
+face normal, corresponding to $q=1$. 
+\marginnote{
+The $u_1$ control volume 
 in Fig. \ref{stag-grid} is centered on $i+1/2,j,k$ and face $f=1-$ is then 
-centered on $i,j,k$. The interpolation is now
+centered on $i,j,k$.
+}
+In this case, the interpolation becomes -  
 
 
 \begin{align}
@@ -808,17 +845,25 @@ centered on $i,j,k$. The interpolation is now
 \label{uf1} 
 \end{align}
  
-Now we turn to the interpolation of the \textit{advected} velocity $\bar u_{q}$ in
-(\ref{advect-ed-ing-2}). The interpolants we use in this case are
+
+Thus far, we have covered only interpolations
+concerning the ``advecting'' velocity, which is basically
+used to compute fluxes of the volume fraction. 
+Now we turn our attention to interpolations of the \textit{advected}
+velocity $\bar u_{q}$ which appears in \eqref{advect-ed-ing-2}. 
+\marginnote{
+The interpolants we use in this case are
 one-dimensional and operate on the velocities $u_q$, on the center of their 
-control volume, that are regularly spaced on a segment aligned 
-with the direction of the advection, that is perpendicular to face $f$. 
-We still consider an advection along the horizontal direction $1$. 
-In Fig. \ref{advect-ed-ing-fig}, with the lighter notation $\phi = u_q$,
-we need to interpolate the advected velocity on the left face
+control volumes, that are regularly spaced on a segment aligned 
+with the direction of the advection, that is also perpendicular to face $f$. 
+}
+In Fig. \ref{advect-ed-ing-fig}, we demonstrate the principle 
+behind our interpolation scheme along the horizontal direction $1$, 
+with the lighter notation $\phi = u_q$.
+The objective is to interpolate the ``advected'' velocity on the left face
 of the reference control volume $\Omega$.
-For the advected velocity $u_1$ and the advecting velocity \eqref{uf1} on face
-$f=1-$ the correspondence with the $\phi$ values in Fig. \ref{advect-ed-ing-fig} is
+In case of advected velocity $u_1$ and the advecting velocity \eqref{uf1} on face
+$f=1-$, the relationship with the $\phi$ values in Fig. \ref{advect-ed-ing-fig} is -
 
 
 \begin{align}
@@ -827,7 +872,8 @@ $f=1-$ the correspondence with the $\phi$ values in Fig. \ref{advect-ed-ing-fig}
 \end{align}
 
 
-while for the advected velocity  $u_2$ and the advecting velocity \eqref{uf2} is
+whereas in the case of the ``advected'' velocity $u_2$ and the advecting velocity \eqref{uf2},
+the relationship turns out to be -
 
 
 \begin{align}
@@ -835,39 +881,47 @@ while for the advected velocity  $u_2$ and the advecting velocity \eqref{uf2} is
 \quad  \phi_{1/2} = u_{2;i,j+1/2,k}, \;\cdots
 \end{align}
 
-
-The extension of these results to an advection along the other two directions $q=2,3$ 
-follows easily. We need to predict $\phi_0$ on face $f=1-$ in Fig. \ref{advect-ed-ing-fig}
-to serve as an approximation of $\bar u_q$ given in (\ref{barudef}). We consider 
-an interpolation function $f$ that computes 
+In order to get a prediction of $\phi_0$ on the 
+face $f=1-$ in Fig. \ref{advect-ed-ing-fig}
+\sidenote{ $\phi_0$ serves as an approximation of 
+$\bar u_q$ given in \eqref{barudef}.
+}
+we utilize an interpolation function $f$ that computes 
 this value as a function of the four nearest points,
-and in an upwind manner based on the sign of the {\em advecting} velocity $u_f$
+and in an upwind manner based on the sign of the 
+\textit{advecting} velocity $u_f$. Thus, the interpolation
+can be expressed in the functional form as - 
 
+\marginnote{
+The extension of these approximations to advection along 
+the other two directions $q=2,3$ is straightforward. 
+}
 
 \begin{align}
-	\phi_0 = f \big( \phi_{-3/2}, \phi_{-1/2}, \phi_{1/2},\phi_{3/2},{\textrm{sign}}(u_f)
-\big) \,
+\phi_0 = f \left( \phi_{-3/2}, \phi_{-1/2}, \phi_{1/2},\phi_{3/2},\textrm{sign}(u_f) \right)
 \label{simpleinterp}
 \end{align}
 
-In this study we have extensively tested two kinds of interpolations:
 
+Throughout this body of work, we have extensively tested and used 
+two variants of such interpolation functions, the exact implementation 
+of which can be found in Appendix A. The interpolation functions are :
+
+
+\marginnote{The reader can refer to influential works of 
+LeVeque \cite{flim_1} and Sweby \cite{flim_2} regaring the role
+of non-linear flux limiters such as QUICK, Superbee, WENO/ENO etc 
+in the context of numerical methods for hyperbolic conservation laws. 
+}
 
 \begin{enumerate}
-\item a scheme that uses a QUICK third order interpolant in the bulk, away from the interface 
-and a simple first order upwind flux near the interface. We call this scheme QUICK-UW;
-\item a scheme that uses a Superbee slope limiter \cite{roe1985some} for the flux in the 
+\item a scheme that uses a QUICK 
+third order interpolant in the bulk, away from the interface 
+and a simple first order upwind flux near the interface. 
+\item a scheme that uses a Superbee slope limiter \sidecite{roe1985some} for the flux in the 
 bulk and a more complex Superbee limiter tuned to a shifted interpolation point near the 
-interface.  We naturally call this scheme ``Superbee''. 
+interface.  
 \end{enumerate}
-
-
-The details of the two schemes are given in \ref{appinterp}.
-
-
-
-
-
 
 
 
