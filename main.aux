@@ -643,16 +643,20 @@
 \abx@aux@backref{146}{roe1985some}{0}{34}{34}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.3}Advection on Staggered Grids}{34}{section.4.3}}
 \newmarginnote{note.46.4}{{46}{4624406sp}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces The reference control volume $\Omega $ for the advected velocity component $\phi =u_q$ is shown. A horizontal advection is here considered and both the advecting velocity $u_f$ and the advected velocity require an interpolation for their value on the left face $f=1-$: (a) the value $\mathaccentV {bar}016u_q = \phi _0$ (full circle) is interpolated (see \ref  {appendix}) from the values $\phi =u_q$ on the nodes (open circles); (b) a more sophisticated interpolation predicts the value $\phi (\mathaccentV {hat}2C6x)$ where $\mathaccentV {hat}2C6x$ is at the center of the ``donating'' region $\Omega _D$ (see \ref  {appendix}).\relax }}{35}{figure.caption.50}}
-\newlabel{shift_frac}{{\relax 4.3}{35}{The reference control volume $\Omega $ for the advected velocity component $\phi =u_q$ is shown. A horizontal advection is here considered and both the advecting velocity $u_f$ and the advected velocity require an interpolation for their value on the left face $f=1-$: (a) the value $\bar u_q = \phi _0$ (full circle) is interpolated (see \ref {appendix}) from the values $\phi =u_q$ on the nodes (open circles); (b) a more sophisticated interpolation predicts the value $\phi (\hat x)$ where $\hat x$ is at the center of the ``donating'' region $\Omega _D$ (see \ref {appendix}).\relax }{figure.caption.50}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces A 2D schematic of the reconstruction procedure used in the \textit  {shifted fractions} method. In this case, advection of the horizontal component of momentum is considered. The half-fractions from the centered control volumes $\Omega _{i,j}$ and $\Omega _{i+1,j}$ (dash-dotted area) are added together to obtain the volume fraction in the shifted (staggered) volume $\Omega _{i+1/2,j}$. Similarly, the half-fractions from $\Omega _{i-1,j}$ and $\Omega _{i,j}$ (dotted area) are combined to obtain the volume fraction $\Omega _{i-1/2,j}$. Once this horizontally shifted volume fraction field is reconstructed, the corresponding density, momentum and ``advected'' velocity fields can be computed in order to carry out consistent transport of mass and momentum on this staggered configuration. \relax }}{35}{figure.caption.50}}
+\newlabel{shift_frac}{{\relax 4.3}{35}{A 2D schematic of the reconstruction procedure used in the \textit {shifted fractions} method. In this case, advection of the horizontal component of momentum is considered. The half-fractions from the centered control volumes $\Omega _{i,j}$ and $\Omega _{i+1,j}$ (dash-dotted area) are added together to obtain the volume fraction in the shifted (staggered) volume $\Omega _{i+1/2,j}$. Similarly, the half-fractions from $\Omega _{i-1,j}$ and $\Omega _{i,j}$ (dotted area) are combined to obtain the volume fraction $\Omega _{i-1/2,j}$. Once this horizontally shifted volume fraction field is reconstructed, the corresponding density, momentum and ``advected'' velocity fields can be computed in order to carry out consistent transport of mass and momentum on this staggered configuration. \relax }{figure.caption.50}{}}
 \gdef\@@FBset@viii{\global\c@FBcnt35}
 \newlabel{global_eqns}{{\relax 4.37}{35}{Advection on Staggered Grids}{equation.4.3.37}{}}
 \newmarginnote{note.47.1}{{47}{4624406sp}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces A bird's eye view of the \textit  {shifted fractions} method, highlighting the operations performed at each time stepi. This method achieves consistency in the discrete transport of mass and momentum on the staggered control volumes. In the interest of brevity, we present a 2D case for the density on the grid $i,j$ and horizontal velocity $u_1$ on the staggered grid $i+1/2,j$. The evolution of the velocity component $u_2$ on the staggered grid $i,j+1/2$ is similar. The initial variables $\rho ^n$, $u_1^n$, $u_2^n$ are inside the ellipses. The interpolated ``advecting'' components $u_1$ and $u_2$ have superscript $n$. The shifted density $\rho ^{n,0}$ is constructed with the shifted fractions of $C$ to initialize the momentum component $(\rho u_1)^{n,0}$. The first split advection is along the $x$ direction to variables with superscript $n,1$, the second one is along the $y$ direction to variables with superscript $n,2$. The updated density is $\rho ^{n,2}=\rho ^{n+1}$ while the horizontal velocity $u_1^{n,2}=u_1^{*}$ enters the RHS of the Poisson-like equation \ref  {poisson}. \relax }}{36}{figure.caption.51}}
+\newlabel{momcons_daniel}{{\relax 4.4}{36}{A bird's eye view of the \textit {shifted fractions} method, highlighting the operations performed at each time stepi. This method achieves consistency in the discrete transport of mass and momentum on the staggered control volumes. In the interest of brevity, we present a 2D case for the density on the grid $i,j$ and horizontal velocity $u_1$ on the staggered grid $i+1/2,j$. The evolution of the velocity component $u_2$ on the staggered grid $i,j+1/2$ is similar. The initial variables $\rho ^n$, $u_1^n$, $u_2^n$ are inside the ellipses. The interpolated ``advecting'' components $u_1$ and $u_2$ have superscript $n$. The shifted density $\rho ^{n,0}$ is constructed with the shifted fractions of $C$ to initialize the momentum component $(\rho u_1)^{n,0}$. The first split advection is along the $x$ direction to variables with superscript $n,1$, the second one is along the $y$ direction to variables with superscript $n,2$. The updated density is $\rho ^{n,2}=\rho ^{n+1}$ while the horizontal velocity $u_1^{n,2}=u_1^{*}$ enters the RHS of the Poisson-like equation \ref {poisson}. \relax }{figure.caption.51}{}}
+\gdef\@@FBset@ix{\global\c@FBcnt36}
 \newmarginnote{note.48.1}{{48}{4624406sp}}
 \newmarginnote{note.48.2}{{48}{24319487sp}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Diagram of the time step. For simplicity is represented the 2D case for the density on the grid $i,j$ and horizontal velocity $u_1$ on the staggered grid $i+1/2,j$. The evolution of the velocity component $u_2$ on the staggered grid $i,j+1/2$ is similar. The initial variables $\rho ^n$, $u_1^n$, $u_2^n$ are inside the ellipses. The interpolated ``advecting'' components $u_1$ and $u_2$ have superscript $n$. The shifted density $\rho ^{n,0}$ is constructed with the shifted fractions of $C$ to initialize the momentum component $(\rho u_1)^{n,0}$. The first split advection is along the $x$ direction to variables with superscript $n,1$, the second one is along the $y$ direction to variables with superscript $n,2$. The updated density is $\rho ^{n,2}=\rho ^{n+1}$ while the horizontal velocity $u_1^{n,2}=u_1^{*}$ enters the RHS of the Poisson-like equation \textup  {\hbox {\mathsurround \z@ \normalfont  (\ignorespaces \ref  {Pois}\unskip \@@italiccorr )}}.\relax }}{37}{figure.caption.51}}
-\newlabel{figscheme}{{\relax 4.4}{37}{Diagram of the time step. For simplicity is represented the 2D case for the density on the grid $i,j$ and horizontal velocity $u_1$ on the staggered grid $i+1/2,j$. The evolution of the velocity component $u_2$ on the staggered grid $i,j+1/2$ is similar. The initial variables $\rho ^n$, $u_1^n$, $u_2^n$ are inside the ellipses. The interpolated ``advecting'' components $u_1$ and $u_2$ have superscript $n$. The shifted density $\rho ^{n,0}$ is constructed with the shifted fractions of $C$ to initialize the momentum component $(\rho u_1)^{n,0}$. The first split advection is along the $x$ direction to variables with superscript $n,1$, the second one is along the $y$ direction to variables with superscript $n,2$. The updated density is $\rho ^{n,2}=\rho ^{n+1}$ while the horizontal velocity $u_1^{n,2}=u_1^{*}$ enters the RHS of the Poisson-like equation \eqref {Pois}.\relax }{figure.caption.51}{}}
-\gdef\@@FBset@ix{\global\c@FBcnt37}
+\abx@aux@segm{0}{0}{rudman1998volume}
+\abx@aux@count{0}{rudman1998volume}
+\newmarginnote{note.48.3}{{49}{18399455sp}}
+\abx@aux@backref{147}{rudman1998volume}{0}{37}{37}
 \BKM@entry{id=18,open,dest={636861707465722E35},srcline={2}}{5C3337365C3337375C3030304E5C303030755C3030306D5C303030655C303030725C303030695C303030635C303030615C3030306C5C3030305C3034305C303030425C303030655C3030306E5C303030635C303030685C3030306D5C303030615C303030725C3030306B5C30303073}
 \BKM@entry{id=19,open,dest={73656374696F6E2E352E31},srcline={17}}{5C3337365C3337375C303030535C303030745C303030615C303030745C303030695C303030635C3030305C3034305C303030445C303030725C3030306F5C303030705C3030306C5C303030655C30303074}
 \abx@aux@cite{lafaurie1994modelling}
@@ -696,24 +700,24 @@
 \newlabel{ch:numbench}{{5}{38}{Numerical Benchmarks}{etoc@tocid.6}{}}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {5.1}Static Droplet}{38}{section.5.1}}
 \newlabel{sec:static}{{5.1}{38}{Static Droplet}{section.5.1}{}}
-\abx@aux@backref{147}{lafaurie1994modelling}{0}{38}{38}
-\abx@aux@backref{148}{harvie2006analysis}{0}{38}{38}
-\abx@aux@backref{149}{popinet1999front}{0}{38}{38}
+\abx@aux@backref{148}{lafaurie1994modelling}{0}{38}{38}
+\abx@aux@backref{149}{harvie2006analysis}{0}{38}{38}
+\abx@aux@backref{150}{popinet1999front}{0}{38}{38}
 \newmarginnote{note.50.2}{{50}{6910546sp}}
-\abx@aux@backref{150}{lafaurie1994modelling}{0}{38}{38}
 \abx@aux@backref{151}{lafaurie1994modelling}{0}{38}{38}
 \abx@aux@backref{152}{lafaurie1994modelling}{0}{38}{38}
 \abx@aux@backref{153}{lafaurie1994modelling}{0}{38}{38}
-\abx@aux@backref{154}{harvie2006analysis}{0}{38}{38}
+\abx@aux@backref{154}{lafaurie1994modelling}{0}{38}{38}
 \abx@aux@backref{155}{harvie2006analysis}{0}{38}{38}
 \abx@aux@backref{156}{harvie2006analysis}{0}{38}{38}
 \abx@aux@backref{157}{harvie2006analysis}{0}{38}{38}
-\abx@aux@backref{158}{popinet1999front}{0}{38}{38}
+\abx@aux@backref{158}{harvie2006analysis}{0}{38}{38}
 \abx@aux@backref{159}{popinet1999front}{0}{38}{38}
 \abx@aux@backref{160}{popinet1999front}{0}{38}{38}
 \abx@aux@backref{161}{popinet1999front}{0}{38}{38}
-\abx@aux@backref{162}{popinet2009accurate}{0}{38}{38}
-\abx@aux@backref{163}{francois2006balanced}{0}{38}{38}
+\abx@aux@backref{162}{popinet1999front}{0}{38}{38}
+\abx@aux@backref{163}{popinet2009accurate}{0}{38}{38}
+\abx@aux@backref{164}{francois2006balanced}{0}{38}{38}
 \abx@aux@segm{0}{0}{popinet2009accurate}
 \abx@aux@count{0}{popinet2009accurate}
 \abx@aux@segm{0}{0}{popinet2009accurate}
@@ -721,16 +725,16 @@
 \abx@aux@segm{0}{0}{popinet2009accurate}
 \abx@aux@segm{0}{0}{popinet2009accurate}
 \abx@aux@segm{0}{0}{popinet2009accurate}
-\abx@aux@backref{164}{popinet2009accurate}{0}{39}{39}
+\abx@aux@backref{165}{popinet2009accurate}{0}{39}{39}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Schematic of the static droplet of dense fluid surrounded by a quiescent medium of lighter fluid. A $40 \times 40$ grid is employed to spatially discretize the domain.\relax }}{39}{figure.caption.55}}
 \newlabel{static_conf}{{\relax 5.1}{39}{Schematic of the static droplet of dense fluid surrounded by a quiescent medium of lighter fluid. A $40 \times 40$ grid is employed to spatially discretize the domain.\relax }{figure.caption.55}{}}
 \gdef\@@FBset@x{\global\c@FBcnt39}
-\abx@aux@backref{165}{popinet2009accurate}{0}{39}{39}
-\newmarginnote{note.51.1}{{51}{9942947sp}}
 \abx@aux@backref{166}{popinet2009accurate}{0}{39}{39}
+\newmarginnote{note.51.1}{{51}{9942947sp}}
 \abx@aux@backref{167}{popinet2009accurate}{0}{39}{39}
 \abx@aux@backref{168}{popinet2009accurate}{0}{39}{39}
 \abx@aux@backref{169}{popinet2009accurate}{0}{39}{39}
+\abx@aux@backref{170}{popinet2009accurate}{0}{39}{39}
 \newlabel{ts}{{\relax 5.1}{40}{Setup}{equation.5.1.1}{}}
 \abx@aux@segm{0}{0}{popinet2009accurate}
 \abx@aux@count{0}{popinet2009accurate}
@@ -743,7 +747,7 @@
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces \textbf  {M3} Decay of normalized spurious currents as a function of viscous dissipation time-scales for different density-ratios and Laplace numbers. The currents seem to decay very quickly in the case of higher density-ratios, and relax to the numerical equilibrium curvature even within $0.2 \cdot T_\mu $. For all combinations of $\rho _l / \rho _g$ and $La$ numbers, the decayed spurious currents are not observed to grow back as in the cases of \textbf  {M1} and \textbf  {M2}, and hover around values close to machine precision ($10^{-14}$).\relax }}{42}{figure.caption.59}}
 \newlabel{decay_sagar}{{\relax 5.4}{42}{\textbf {M3} Decay of normalized spurious currents as a function of viscous dissipation time-scales for different density-ratios and Laplace numbers. The currents seem to decay very quickly in the case of higher density-ratios, and relax to the numerical equilibrium curvature even within $0.2 \cdot T_\mu $. For all combinations of $\rho _l / \rho _g$ and $La$ numbers, the decayed spurious currents are not observed to grow back as in the cases of \textbf {M1} and \textbf {M2}, and hover around values close to machine precision ($10^{-14}$).\relax }{figure.caption.59}{}}
 \gdef\@@FBset@xiii{\global\c@FBcnt42}
-\abx@aux@backref{170}{popinet2009accurate}{0}{42}{42}
+\abx@aux@backref{171}{popinet2009accurate}{0}{42}{42}
 \newlabel{shape_err_norms}{{\relax 5.4}{42}{Spatial Convergence}{equation.5.1.4}{}}
 \BKM@entry{id=20,open,dest={73656374696F6E2E352E32},srcline={113}}{5C3337365C3337375C3030304D5C3030306F5C303030765C303030695C3030306E5C303030675C3030305C3034305C303030445C303030725C3030306F5C303030705C3030306C5C303030655C30303074}
 \abx@aux@segm{0}{0}{popinet2009accurate}
@@ -762,20 +766,20 @@
 \newlabel{static_drop_conv}{{\relax 5.5}{43}{Second-order spatial convergence for the spurious current error norms corresponding to the most stringent parameter combination ($\rho _l/\rho _g = 1000$ , $La = 12000$) . Both of the norms ($L_\infty $ and $L_2$) seem to demonstrate a roughly second order rate of spatial convergence with each of the methods tested. However, \textbf {M3} has a marginally lower $L_2$ error compared to both \textbf {M1} and \textbf {M2} for all resolutions tested. There is negligible difference observed in the shape errors between \textbf {M1} and \textbf {M2} in both of the norm definitions.\relax }{figure.caption.61}{}}
 \gdef\@@FBset@xiv{\global\c@FBcnt43}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {5.2}Moving Droplet}{43}{section.5.2}}
-\abx@aux@backref{171}{popinet2009accurate}{0}{43}{43}
-\abx@aux@backref{172}{abadie2015combined}{0}{43}{43}
-\newmarginnote{note.55.1}{{55}{20775894sp}}
+\abx@aux@backref{172}{popinet2009accurate}{0}{43}{43}
 \abx@aux@backref{173}{abadie2015combined}{0}{43}{43}
+\newmarginnote{note.55.1}{{55}{20775894sp}}
 \abx@aux@backref{174}{abadie2015combined}{0}{43}{43}
 \abx@aux@backref{175}{abadie2015combined}{0}{43}{43}
 \abx@aux@backref{176}{abadie2015combined}{0}{43}{43}
-\abx@aux@backref{177}{popinet2009accurate}{0}{43}{43}
+\abx@aux@backref{177}{abadie2015combined}{0}{43}{43}
+\abx@aux@backref{178}{popinet2009accurate}{0}{43}{43}
 \abx@aux@segm{0}{0}{popinet2009accurate}
 \abx@aux@count{0}{popinet2009accurate}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Schematic of the droplet of dense fluid advected in a surrounding medium of lighter fluid. A $50 \times 50$ grid is employed to spatially discretize the domain, which is spatially periodic in the direction of droplet advection.\relax }}{44}{figure.caption.63}}
 \newlabel{moving_conf}{{\relax 5.6}{44}{Schematic of the droplet of dense fluid advected in a surrounding medium of lighter fluid. A $50 \times 50$ grid is employed to spatially discretize the domain, which is spatially periodic in the direction of droplet advection.\relax }{figure.caption.63}{}}
 \gdef\@@FBset@xv{\global\c@FBcnt44}
-\abx@aux@backref{178}{popinet2009accurate}{0}{44}{44}
+\abx@aux@backref{179}{popinet2009accurate}{0}{44}{44}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces \textbf  {M1} Time evolution of normalized spurious currents as a function of advection time-scales ($T_u$) for different combinations of density-ratio and Laplace numbers. The currents seem to hover around $10^{-3}$, with a larger Laplace number corresponding to a higher error for all density-ratios. $We = 0.4$ for all the cases presented.\relax }}{45}{figure.caption.65}}
 \newlabel{evo_nonmc}{{\relax 5.7}{45}{\textbf {M1} Time evolution of normalized spurious currents as a function of advection time-scales ($T_u$) for different combinations of density-ratio and Laplace numbers. The currents seem to hover around $10^{-3}$, with a larger Laplace number corresponding to a higher error for all density-ratios. $We = 0.4$ for all the cases presented.\relax }{figure.caption.65}{}}
 \gdef\@@FBset@xvi{\global\c@FBcnt45}
@@ -790,7 +794,7 @@
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces \textbf  {M2} Time evolution of normalized spurious currents as a function of advection time-scales ($T_u$) for different combinations of density-ratio and Laplace numbers. There seems to be no appreciable difference from the evolution seen in the case of \textbf  {M1} (fig. \ref  {evo_nonmc}). The currents seem to hover around $10^{-3}$, with a larger Laplace number corresponding to a higher error for all density-ratios. $We = 0.4$ for all the cases presented.\relax }}{46}{figure.caption.66}}
 \newlabel{evo_daniel}{{\relax 5.8}{46}{\textbf {M2} Time evolution of normalized spurious currents as a function of advection time-scales ($T_u$) for different combinations of density-ratio and Laplace numbers. There seems to be no appreciable difference from the evolution seen in the case of \textbf {M1} (fig. \ref {evo_nonmc}). The currents seem to hover around $10^{-3}$, with a larger Laplace number corresponding to a higher error for all density-ratios. $We = 0.4$ for all the cases presented.\relax }{figure.caption.66}{}}
 \gdef\@@FBset@xvii{\global\c@FBcnt46}
-\abx@aux@backref{179}{popinet2009accurate}{0}{46}{46}
+\abx@aux@backref{180}{popinet2009accurate}{0}{46}{46}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces \textbf  {M3} Time evolution of normalized spurious currents as a function of advection time-scales ($T_u$) for different combinations of density-ratio and Laplace numbers. In terms of the errors observed in \textbf  {M1} and \textbf  {M2}, we observe a decrease of roughly one order of magnitude. Although an upward trend is observed for large Laplace numbers, the growth rate is quite low. The currents seem to hover slightly above $10^{-4}$, with larger Laplace numbers corresponding to larger errors for all density-ratios. $We = 0.4$ for all the cases presented.\relax }}{47}{figure.caption.67}}
 \newlabel{evo_sagar}{{\relax 5.9}{47}{\textbf {M3} Time evolution of normalized spurious currents as a function of advection time-scales ($T_u$) for different combinations of density-ratio and Laplace numbers. In terms of the errors observed in \textbf {M1} and \textbf {M2}, we observe a decrease of roughly one order of magnitude. Although an upward trend is observed for large Laplace numbers, the growth rate is quite low. The currents seem to hover slightly above $10^{-4}$, with larger Laplace numbers corresponding to larger errors for all density-ratios. $We = 0.4$ for all the cases presented.\relax }{figure.caption.67}{}}
 \gdef\@@FBset@xviii{\global\c@FBcnt47}
@@ -813,16 +817,16 @@
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.12}{\ignorespaces  Scaling of the maximum error norm as a function of Laplace ($We = 0.4$, $\rho _l / \rho _g = 1000$). \relax }}{48}{figure.caption.72}}
 \newlabel{lap}{{\relax 5.12}{48}{Scaling of the maximum error norm as a function of Laplace ($We = 0.4$, $\rho _l / \rho _g = 1000$). \relax }{figure.caption.72}{}}
 \gdef\@@FBset@xxi{\global\c@FBcnt48}
-\abx@aux@backref{181}{popinet2009accurate}{0}{48}{48}
-\abx@aux@backref{180}{popinet2009accurate}{0}{48}{48}
 \abx@aux@backref{182}{popinet2009accurate}{0}{48}{48}
+\abx@aux@backref{181}{popinet2009accurate}{0}{48}{48}
+\abx@aux@backref{183}{popinet2009accurate}{0}{48}{48}
 \@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {5.3}Capillary Wave}{48}{section.5.3}}
-\abx@aux@backref{183}{popinet2018numerical}{0}{48}{48}
-\newmarginnote{note.60.1}{{60}{19669491sp}}
 \abx@aux@backref{184}{popinet2018numerical}{0}{48}{48}
+\newmarginnote{note.60.1}{{60}{19669491sp}}
 \abx@aux@backref{185}{popinet2018numerical}{0}{48}{48}
 \abx@aux@backref{186}{popinet2018numerical}{0}{48}{48}
 \abx@aux@backref{187}{popinet2018numerical}{0}{48}{48}
+\abx@aux@backref{188}{popinet2018numerical}{0}{48}{48}
 \abx@aux@cite{lamb1993hydrodynamics}
 \abx@aux@segm{0}{0}{lamb1993hydrodynamics}
 \abx@aux@count{0}{lamb1993hydrodynamics}
@@ -860,42 +864,42 @@
 \abx@aux@segm{0}{0}{lamb1993hydrodynamics}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.13}{\ignorespaces Schematic of the initially perturbed planar interface separating two immiscible fluids of different densities and viscosities. A spatial resolution of $32 \times 96$ is used for spatial discretization (compared to $64 \times 192$ in Popinet \cite {popinet2009accurate}), with the width of the box corresponding to the size of the perturbed wavelength.\relax }}{49}{figure.caption.74}}
 \newlabel{capwave_conf}{{\relax 5.13}{49}{Schematic of the initially perturbed planar interface separating two immiscible fluids of different densities and viscosities. A spatial resolution of $32 \times 96$ is used for spatial discretization (compared to $64 \times 192$ in Popinet \cite {popinet2009accurate}), with the width of the box corresponding to the size of the perturbed wavelength.\relax }{figure.caption.74}{}}
-\abx@aux@backref{188}{popinet2009accurate}{0}{49}{49}
+\abx@aux@backref{189}{popinet2009accurate}{0}{49}{49}
 \gdef\@@FBset@xxii{\global\c@FBcnt49}
-\abx@aux@backref{189}{lamb1993hydrodynamics}{0}{49}{49}
-\newmarginnote{note.61.1}{{61}{7699321sp}}
 \abx@aux@backref{190}{lamb1993hydrodynamics}{0}{49}{49}
+\newmarginnote{note.61.1}{{61}{7699321sp}}
 \abx@aux@backref{191}{lamb1993hydrodynamics}{0}{49}{49}
 \abx@aux@backref{192}{lamb1993hydrodynamics}{0}{49}{49}
 \abx@aux@backref{193}{lamb1993hydrodynamics}{0}{49}{49}
-\abx@aux@backref{194}{prosperetti1980free}{0}{49}{49}
-\abx@aux@backref{195}{prosperetti1981motion}{0}{49}{49}
+\abx@aux@backref{194}{lamb1993hydrodynamics}{0}{49}{49}
+\abx@aux@backref{195}{prosperetti1980free}{0}{49}{49}
+\abx@aux@backref{196}{prosperetti1981motion}{0}{49}{49}
 \newmarginnote{note.61.2}{{61}{5616551sp}}
-\abx@aux@backref{196}{prosperetti1980free}{0}{49}{49}
 \abx@aux@backref{197}{prosperetti1980free}{0}{49}{49}
 \abx@aux@backref{198}{prosperetti1980free}{0}{49}{49}
 \abx@aux@backref{199}{prosperetti1980free}{0}{49}{49}
-\abx@aux@backref{200}{prosperetti1981motion}{0}{49}{49}
+\abx@aux@backref{200}{prosperetti1980free}{0}{49}{49}
 \abx@aux@backref{201}{prosperetti1981motion}{0}{49}{49}
 \abx@aux@backref{202}{prosperetti1981motion}{0}{49}{49}
 \abx@aux@backref{203}{prosperetti1981motion}{0}{49}{49}
-\abx@aux@backref{204}{popinet1999front}{0}{49}{49}
-\abx@aux@backref{205}{popinet2009accurate}{0}{49}{49}
+\abx@aux@backref{204}{prosperetti1981motion}{0}{49}{49}
+\abx@aux@backref{205}{popinet1999front}{0}{49}{49}
+\abx@aux@backref{206}{popinet2009accurate}{0}{49}{49}
 \abx@aux@segm{0}{0}{popinet2009accurate}
 \abx@aux@count{0}{popinet2009accurate}
 \abx@aux@segm{0}{0}{prosperetti1981motion}
 \abx@aux@segm{0}{0}{prosperetti1980free}
 \abx@aux@count{0}{prosperetti1980free}
 \abx@aux@count{0}{prosperetti1981motion}
-\abx@aux@backref{206}{lamb1993hydrodynamics}{0}{50}{50}
-\newmarginnote{note.61.3}{{62}{9692350sp}}
 \abx@aux@backref{207}{lamb1993hydrodynamics}{0}{50}{50}
+\newmarginnote{note.61.3}{{62}{9692350sp}}
 \abx@aux@backref{208}{lamb1993hydrodynamics}{0}{50}{50}
 \abx@aux@backref{209}{lamb1993hydrodynamics}{0}{50}{50}
 \abx@aux@backref{210}{lamb1993hydrodynamics}{0}{50}{50}
-\abx@aux@backref{211}{popinet2009accurate}{0}{50}{50}
-\abx@aux@backref{212}{prosperetti1980free}{0}{50}{50}
-\abx@aux@backref{213}{prosperetti1981motion}{0}{50}{50}
+\abx@aux@backref{211}{lamb1993hydrodynamics}{0}{50}{50}
+\abx@aux@backref{212}{popinet2009accurate}{0}{50}{50}
+\abx@aux@backref{213}{prosperetti1980free}{0}{50}{50}
+\abx@aux@backref{214}{prosperetti1981motion}{0}{50}{50}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.14}{\ignorespaces \textbf  {M1} Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. More or less good agreement with theory is observed for all the density-ratios tested. \relax }}{50}{figure.caption.76}}
 \newlabel{capwave_nonmc}{{\relax 5.14}{50}{\textbf {M1} Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. More or less good agreement with theory is observed for all the density-ratios tested. \relax }{figure.caption.76}{}}
 \gdef\@@FBset@xxiii{\global\c@FBcnt50}
@@ -907,7 +911,7 @@
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.16}{\ignorespaces \textbf  {M3} Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Slightly better agreement with theory when comparing to \textbf  {M1} and \textbf  {M2}, for all density-ratios tested. \relax }}{51}{figure.caption.78}}
 \newlabel{capwave_sagar}{{\relax 5.16}{51}{\textbf {M3} Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Slightly better agreement with theory when comparing to \textbf {M1} and \textbf {M2}, for all density-ratios tested. \relax }{figure.caption.78}{}}
 \gdef\@@FBset@xxv{\global\c@FBcnt51}
-\abx@aux@backref{214}{popinet2009accurate}{0}{52}{52}
+\abx@aux@backref{215}{popinet2009accurate}{0}{52}{52}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {\relax 5.17}{\ignorespaces Comparison of spatial convergence for the case of $\rho _l/\rho _g = 1 , La = 3000$, for our class of methods. There is no viscosity jump across the interface. All methods seem to demonstrate approximately second-order convergence. There seems to be no appreciable difference in the behavior of \textbf  {M1} and \textbf  {M2}, with \textbf  {M3} displaying marginally lower errors compared to the others. \relax }}{52}{figure.caption.80}}
 \newlabel{conv_r1}{{\relax 5.17}{52}{Comparison of spatial convergence for the case of $\rho _l/\rho _g = 1 , La = 3000$, for our class of methods. There is no viscosity jump across the interface. All methods seem to demonstrate approximately second-order convergence. There seems to be no appreciable difference in the behavior of \textbf {M1} and \textbf {M2}, with \textbf {M3} displaying marginally lower errors compared to the others. \relax }{figure.caption.80}{}}
 \gdef\@@FBset@xxvi{\global\c@FBcnt52}

@@ -943,9 +943,9 @@ and $n$ corresponds to that in time.}
 
 
 \begin{align}
-C^{n+1} &= C^{n} + \tau L^{h}_{vof}\left( C^{n},\boldsymbol{u}^{n}\right) \\  
-\rho^{n+1}\cdot \boldsymbol{u}^{*} &= \rho^{n}\cdot \boldsymbol{u}^{n} + \tau L^{h}_{adv}\left( C^{n},\boldsymbol{u}^{n} \right) + \nonumber \\
-				      & \tau \left[ L^{h}_{\mu}\left(C^{n+1},\boldsymbol{u}^{n}\right) + L^{h}_{\sigma}\left(C^{n+1}\right) + L^{h}_{g}\left(C^{n+1}\right)\right]
+	C^{n+1} &= C^{n} + \tau L^{h}_{\textrm{vof}}\left( C^{n},\boldsymbol{u}^{n}\right) \\  
+	\rho^{n+1}\cdot \boldsymbol{u}^{*} &= \rho^{n}\cdot \boldsymbol{u}^{n} + \tau L^{h}_{\textrm{adv}}\left( C^{n},\boldsymbol{u}^{n} \right) + \nonumber \\
+				      & \tau \left[ L^{h}_{\mu}\left(C^{n+1},\boldsymbol{u}^{n}\right) + L^{h}_{\sigma}\left(C^{n+1}\right) + L^{h}_{\textrm{g}}\left(C^{n+1}\right)\right]
 \label{global_eqns}
 \end{align}
 
@@ -960,7 +960,7 @@ and finally $L_{g}$ represents the volumetric (body forces) source term.
 
 In the preceding sections, we have thus far dealt with the 
 intricacies concerning the coupling of the VOF advection ($L^{h}_{\textrm{vof}}$)  
-with that of the momentum advection ($L_{\textrm{adv}}$). In this section, we
+with that of the momentum advection ($L^{h}_{\textrm{adv}}$). In this section, we
 describe two distinct strategies that we have implemented in order to achieve 
 discrete consistency between mass (VOF) and momentum transport, specifically 
 in the context of staggered Cartesian grids, with the configuration
@@ -979,15 +979,21 @@ the centered volume fraction field onto the staggered control volumes
 
 \begin{figure}
 \begin{center}
-    \includegraphics[width=\textwidth]{plots/shifted_fractions.pdf}
+\includegraphics[width=\textwidth]{plots/shifted_fractions.pdf}
 \end{center}
-\caption{The reference control volume $\Omega$ for the advected velocity component 
-$\phi=u_q$ is shown. A horizontal advection is here considered and both the advecting velocity 
-$u_f$ and the advected velocity require an interpolation for their value on the left face 
-$f=1-$: (a) the value $\bar u_q = \phi_0$ (full circle) is interpolated 
-(see \ref{appendix}) from the values $\phi=u_q$ on the nodes (open circles);
-(b) a more sophisticated interpolation predicts the value $\phi(\hat x)$ where $\hat x$ is
-at the center of the ``donating'' region $\Omega_D$ (see \ref{appendix}).}
+\caption{A 2D schematic of the reconstruction procedure 
+used in the \textit{shifted fractions} method. 
+In this case, advection of the horizontal component of momentum is considered.
+The half-fractions from the centered control volumes 
+$\Omega_{i,j}$ and $\Omega_{i+1,j}$ (dash-dotted area) are added together
+to obtain the volume fraction in the shifted (staggered) volume $\Omega_{i+1/2,j}$.
+Similarly, the half-fractions from $\Omega_{i-1,j}$ and $\Omega_{i,j}$ (dotted area)
+are combined to obtain the volume fraction $\Omega_{i-1/2,j}$.
+Once this horizontally shifted volume fraction field is reconstructed, 
+the corresponding density, momentum and ``advected'' velocity fields can be 
+computed in order to carry out consistent transport of mass and momentum
+on this staggered configuration. 
+}
 \label{shift_frac}
 \end{figure}
 
@@ -1060,7 +1066,11 @@ $\tilde \rho_q^{n+1} = \rho_q^{n,3}$.
 \begin{center}
     \includegraphics[width=\textwidth]{plots/momcons_diagram_daniel.pdf}
 \end{center}
-\caption{Diagram of the time step. For simplicity is represented the 2D case for the
+\caption{A bird's eye view of the \textit{shifted fractions} method,
+highlighting the operations performed at each time stepi. 
+This method achieves consistency in the discrete transport 
+of mass and momentum on the staggered control volumes.
+In the interest of brevity, we present a 2D case for the
 density on the grid $i,j$ and horizontal velocity $u_1$ on the staggered grid $i+1/2,j$.
 The evolution of the velocity component $u_2$ on the staggered grid $i,j+1/2$ is similar.
 The initial variables $\rho^n$, $u_1^n$, $u_2^n$ are inside the ellipses. The interpolated
@@ -1070,40 +1080,87 @@ $(\rho u_1)^{n,0}$. The first split advection is along the $x$ direction  to
 variables with superscript $n,1$, the second one is along the $y$ direction to
 variables with superscript $n,2$. The updated density is $\rho^{n,2}=\rho^{n+1}$
 while the horizontal velocity $u_1^{n,2}=u_1^{*}$ enters the RHS of the Poisson-like
-equation \eqref{Pois}.}
+equation \ref{poisson}. }
 \label{momcons_daniel}
 \end{figure}
 
 
-We remark that the advected velocity components $u_q$ are updated at each substep,
+An important point to note from the above algorithm is that 
+the advected velocity components $u_q$ are updated at each substep,
 while the advecting velocities $u_f$ are interpolated from the initial
-velocity field $\boldsymbol{u}^n$ at time $t_n$. The shifted fractions of Fig. \ref{halffractions}
-are computed by the same routine that is computing the Eulerian fluxes $V_1$ and
-$V_3$ of Fig. \ref{eulflux}.
-
-The three momentum components $(\rho_q u_q)^{n+1}$ at the beginning of next time step
-$t_{n+1}$ require the computation of the three ``shifted''  volume fractions $C^{n+1}_q$
-and densities $\rho^{n+1}_q$ starting from $C^{n+1}$. However, these densities
-$\rho^{n+1}_q$ are different from the densities $\tilde \rho_q^{n+1} = \rho_q^{n,3}$
-computed in the previous  time step by directly advecting the 
-``shifted'' volume fractions $C^{n}_q$. The reason for this difference is that the
-linear reconstruction is approximate and it is not even continuous on the 
-boundary of its control volume. As a matter of facts, at each substep we have
-four slightly different interface reconstructions. This implies that momentum is
-not conserved between two time steps. We note that  attempting to always use only the three 
-sets $C^{n}_{q}$  and evolve them by the VOF method on the staggered cells 
-would maintain conservation but result in the three staggered grids evolving independently 
-of each other and eventually diverging.
+velocity field $\boldsymbol{u}^n$ at time $t_n$. 
+The shifted fractions of Fig. \ref{shift_frac}
+are computed using routines that are already part of our
+geometrical toolbox, used primarily in flux computation. 
 
 
+In essence, we have a consistent transport of density (mass)
+and momentum on the staggered grids, while simultaneously 
+carrying out advection of the volume fraction field on the centered grid. 
+\marginnote{
+A naive attempt to achieve momentum conservation could entail always using the 
+shifted fields $C^{n}_{q}$ and evolve them by the VOF method on the staggered cells. 
+Such an approach would render the scheme conservative, but would result in the  
+independent evolution of the three staggered grids, eventually leading to divergence.
+}
+As a consequence, the momentum components $(\rho_q u_q)^{n+1}$ 
+(at time step $t_{n+1}$) that are derived from the 
+corresponding ``shifted'' volume fractions $C^{n+1}_q$ 
+and densities $\rho^{n+1}_q$  (obtained from $C^{n+1}$)
+are different from the densities $\tilde \rho_q^{n+1} = \rho_q^{n,3}$
+, which were computed during the previous time step 
+by directly advecting the ``shifted'' volume fractions $C^{n}_q$. 
+The origin of this discrepancy is the approximate nature of the  
+linear reconstruction of the interfaces, which is not 
+even continuous on the boundary of its control volume.
+Therefore, this implies that the momentum is not exactly
+conserved between two time steps, even though the Weymouth-Yue method
+ensures conservative transport of the momentum on the staggered control volumes. 
 
 
-
+%--------------------------------------------------------------------------------------
 
 
 \subsection*{Sub-Grid Method}
 
-% algorithm, flow chart, prolongation and restriction operations, consistent + conservative 
+In this strategy, the difficulty associated with consistent 
+transport on staggered control volumes is resolved by advecting  
+the volume fraction (mass) on a twice finer grid 
+\sidenote{The grid is twice as fine when compared to the control volume for 
+momentum.}, very much in the spirit of Rudman's \cite{rudman1998volume} original work. 
+Compared to the shifted fractions method in the previous section, the presence of the 
+sub-grid volume fraction field facilitates a more `natural' computation of not only 
+the staggered volume fraction field $C^{n+1}_q$, but more importantly its fluxes. 
+\sidenote{In the shifted fractions method, flux computations on the staggered 
+cells necessitate another round of interfacial reconstructions based on the shifted 
+volume fraction field, whereas the sub-grid volume fraction information enables one
+to circumvent the reconstructions and obtain the fluxes directly using simple surface integrals.}
+
+The primary motivation regarding the development of this method is the issue of 
+conservation (lack of) concerning the discrete transport of momentum in case of
+the shifted fractions method.    
+
+\subsubsection*{Spatial Configuration : Coarse \& Sub-Grid Variables}
+
+\begin{figure}[h!]
+\includegraphics[width = \textwidth]{plots/grid.png} 
+\centering
+\caption{Arrangement of primary variables on the coarse and fine grids. The figure on the left corresponds to the coarse grid, and the one on the right corresponds to the fine grid arrangement.}
+\label{sub_grid}
+\end{figure}
+
+At the coarse grid level, the pressure and velocity fields are defined in a staggered configuration, with pressures at the cell centers (centroids) and velocities on the cell face centers. Fig. \ref{grid} demonstrates the arrangement of variables, which one can easily extrapolate to 3D during implementation, but for the sake of clarity we illustrate its 2D equivalent. The volume fraction $C$ (labeled $c$ in the figure) is defined on a grid that is twice as fine than that of the pressure/velocity grid, we shall henceforth refer to it as the fine grid. Therefore in 3D, each cubic control volume is divided into eight constituent smaller cubic volumes at the centroids of which, the volume fraction field is centered. 
+
+
+
+\subsubsection*{Multiscale Coupling : Restriction \& Prolongation Operations}
+
+
+\subsubsection*{Algorithm}
+
+
+
+%--------------------------------------------------------------------------------------
 
 \subsection*{Source Terms}
 
