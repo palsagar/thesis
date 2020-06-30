@@ -1149,7 +1149,6 @@ volume fraction field $C^{n+1}_q$, but more importantly its fluxes.
 
 
 
-
 \subsubsection*{Spatial Configuration : Coarse \& Sub-Grid Variables}
 
 \begin{figure}[h!]
@@ -1163,14 +1162,15 @@ one on the right corresponding to the sub-grid.
 Superposition of these two figures, one on top of each other,
 represent the intricate relationships between the two sets of variables.
 The velocities on the sub-grid level are simple first 
-or zeroth order interpolations of the coarse grid velocities.}
+or zeroth order interpolations of the coarse grid velocities.
+}
 \label{sub_grid}
 \end{figure}
 
 To start, we describe the spatial orientation of the different 
 variables on the two grid levels.   
 \marginnote{The notations for the variables are slightly
-different that those used in the previous sections. 
+different that those used in the previous sections (Fig. \ref{stag-grid}.) 
 }
 
 
@@ -1190,10 +1190,126 @@ smaller cubic volumes at the centroids of which, the volume fraction field is ce
 
 \subsubsection*{Multiscale Coupling : Restriction \& Prolongation Operations}
 
+As is paradigmatic for dual-grid methods in the context of Navier-Stokes solvers, in the present method we solve the numerical transport of mass at the fine grid level, and that of the momentum (velocity) at the coarse grid level. In pressure-projection based methods such as ours, the predominant bottleneck in terms of computational speed is the solution to the discrete Poisson equation, the problem size of which is governed by the number of cells/points discretizing the velocity (or pressure) field. Therefore, solving the mass advection equation on the fine grid allows us to obtain more accurate solutions to the flow physics under consideration, while enabling us to circumvent the extremely high computational costs associated with solving a Poisson problem at a twice finer resolution (i.e. 8 times the original problem size in 3D).  
+
+\paragraph{\textbf{Prolongation}}
+
+In order to advect the mass on the fine grid, we need to reconstruct a velocity field at the corresponding resolution using the information of the coarse grid velocity, for each time-step. In order to achieve this, we have constructed a prolongation operator which asserts the following relations between the fine and coarse grid velocity fields : 
+
+\begin{equation}
+  \begin{aligned}
+  	  u_{2i-\frac{1}{2},2j} = u_{2i-\frac{1}{2},2j+1} &= U_{i-\frac{1}{2},j} \\ 
+            u_{2i+\frac{3}{2},2j} = u_{2i+\frac{3}{2},2j+1} &= U_{i+\frac{1}{2},j} \\ 
+  	  u_{2i+\frac{1}{2},2j} = u_{2i+\frac{1}{2},2j+1} &= 0.5\left(U_{i+\frac{1}{2},j} + U_{i-\frac{1}{2},j}\right) \\
+  	  v_{2i,2j-\frac{1}{2}} = v_{2i+1,2j-\frac{1}{2}} &= V_{i,j+\frac{1}{2}} \\ 
+            v_{2i,2j+\frac{3}{2}} = v_{2i+1,2j+\frac{3}{2}} &= V_{i,j-\frac{1}{2}} \\
+  	  v_{2i,2j+\frac{1}{2}} = v_{2i+1,2j+\frac{1}{2}} &= 0.5\left(V_{i,j+\frac{1}{2}} + V_{i,j-\frac{1}{2}}\right) 
+  \end{aligned}
+\end{equation}
+
+% verify order of scheme : zeroth or first 
+
+The notations in the above equations refer to the description of the coarse and fine grid variables in fig. \ref{grid}. The first-order interpolation applied to the coarse grid velocity field ensures discrete incompressibility at the fine grid level, a direct consequence of the solenoidal nature of the coarse grid velocity field. The choice of the prolongation operator is the same as that used in the originial method of Rudman (\cite{rudman1998volume}), whereas higher order interpolation schemes would necessitate solving a local Poisson problem to render the fine grid velocity field solenoidal. In the present study, we have chosen to eschew the added complexity of solving local Poisson problems through our prolongation operators, therefore sticking with the much simpler Rudman inspired interpolations. 
+
+
+\paragraph{\textbf{Restriction}}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = \textwidth]{plots/restriction.png}
+    \caption{A 2D illustration of the restriction operations involved between the fine and coarse level grids, where the fine grid boundaries are denoted by the dashed lines, and that of the coarse grid by solid lines. The presence of the volume fraction field at the fine grid level facilitates a 'natural' volume integral reconstruction of the density fields for both the centered and staggered arrangements at the coarse level.} 
+    \label{restrict}
+\end{figure}
+
+Implementing a numerical method that ensures discrete consistency between mass and momentum transport on a staggered configuration poses the additional challenge of reconstructing the density and momentum fields on the staggered control volumes, and the subsequent transport of those quantities using equations \ref{vof} and \ref{mom} to obtain the intermediate field $u^{*}$. We resolve this additional complexity by applying restriction operators on our fine grid density (mass) field in the spirit of Rudman (\cite{rudman1998volume}), which are nothing but simple volume integrals of the fine grid field mapped onto the domains corresponding to the coarse grid control volumes. In fig. \ref{restrict}, we demonstrate the volume integration mapping between the fine and coarse grid control volumes, which are implemented as restriction operators at each time-step to compute certain coarse grid fields, the details of which are follows : 
+
+
+\begin{itemize}
+
+	\item \textit{Fine Grid $\longmapsto$ Coarse Staggered Grid}
+          
+	  \begin{description}
+		  \item[Momentum Field] The fine grid volume fraction (mass) field is restricted to obtain a staggered density field at the coarse grid level (\ref{restrict}), which on combining with the velocity field produces the staggered momentum field.    
+		\item[Momentum Fluxes] The fine grid geometric fluxes of volume fraction (mass) are restricted to obtain coarse grid fluxes for the staggered volumes (fig. \ref{algo}), which on combining with relation \ref{momcons} gives us the corresponding momentum fluxes.   
+	  \end{description}
+
+  \item \textit{Fine Grid $\longmapsto$ Coarse Centered Grid}
+
+          \begin{description}
+		  \item[Density \& Viscosity Field] Fine grid volume fraction field is restricted to obtain a centered volume fraction field at the coarse grid level, which on combining with the model \ref{rho-mu}, generates the centered density and viscosity fields at the coarse grid level.   
+	  \end{description}
+
+\end{itemize}
+
+
 
 \subsubsection*{Algorithm}
 
+To summarize the overall algorithm pertaining to the advection operator in our one-fluid Navier-Stokes framework, we present fig. \ref{algo}, which illustrates a 2D version (for sake of brevity) of the coupled, consistent and conservative mass-momentum transport, highlighting the interaction between the variables defined on the different grids. The variables in red are all defined on the coarse level, and those in green are at the fine grid level. The operators $R$ and $P$ denote the restriction and prolongation operations respectively. The 'tilde' on top of the variables (e.g. $\tilde{\rho}^{n} $) are used to convery that the variables are centered with respect to the staggered control volumes at the coarse grid level. The fine grid velocities $\bar{u}^{n}$ and $\bar{v}^{n}$ represent the velocities which are staggered with respect to the fine grid density field. The variables with known values at the start of the advection are surrounded by black elliptical borders, and the variables we obtain at the end of all the directional sweeps are $u^{*}$ and $\rho^{n+1}$, as we have explained in the previous sections. 
 
+% flowchart of the algorithm 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width = \textwidth]{plots/momcons_sagar.png}
+    \caption{Global view of the numerical algorithm elucidating the coupling between the fine and coarse grid. We illustrate the 2D implementation for sake of simplicity, with the advection carried out first along the $x$ direction, and then along $y$. Extension of the above algorithm to 3D is straightforward.}
+    \label{momcons_sagar}
+\end{figure}
+
+
+
+\begin{enumerate}
+
+\item Interface reconstruction at time $t_n$ using data $C^{n}$.
+        
+	\marginnote{$q=1,2,3$ is the component index, 
+	e.g $\rho_1$ in $\Omega_{i+1/2,j,k}$ for the 
+	horizontal momentum component $\rho_1 u_1$.
+	}
+
+\item Computation of half-fractions as shown in Fig. \ref{shift_frac},
+	in order to obtain the ``shifted'' fraction field $C^{n}_q$ and $\rho^{n}_q$
+	in the staggered control volumes.
+\item Computation of all three momentum components $(\rho_q u_q)^{n}$
+	at $t_n$.
+	\marginnote{ The fluxes of momentum are derived from those of mass
+		using the relation \eqref{frou} ,
+		which in turn are obtained in a consistent fashion from 
+		the fluxes corresponding to `shifted' volume fraction field.}
+
+\item Advection of all three momentum components along one coordinate direction,
+	say $x$ direction, using \eqref{sumfmom2} to obtain the updated momentum components
+	$(\rho_q u_q)^{n,1}$ after the first substep.
+
+\item Advection of the ``shifted'' density field $\rho^{n}_q$ on the staggered volumes 
+	using VOF consistent advection, along the $x$ direction in order to
+	 obtain the updated volume fractions after the first substep.
+
+\item Extraction of the provisional velocity components 
+	\sidenote{These provisional velocities are required
+		to compute the ``advected'' velocities using 
+		the non-linear flux limiters, as described in \eqref{advect-ed-ing-2}.}
+	$u_q^{n,1}$ after the first substep, i.e. $u_q^{n,1} = (\rho_q u_q)^{n,1}/\rho_q^{n,1}$.
+
+\item The above operations are repeated for the different momentum components, shifted
+volume fractions and densities, and velocity components for the next two substeps
+with split advections along the $y$ and $z$ directions.
+\sidenote{At each time step, the sequence $x, y, z$ is permuted, in order to avoid 
+any systematic biases in error propagation.}
+Finally, we obtain $(\rho_q u_q)^{n+1} = (\rho_q u_q)^{n,3}$ and
+$\tilde \rho_q^{n+1} = \rho_q^{n,3}$. 
+
+\item In parallel, the centered volume fraction field $C^{n}$ 
+	is advected in order to obtain $C^{n+1} = C^{n,3}$ using the VOF advection method. 
+
+\end{enumerate}
+
+Considering the overall approach, the key differences between our present algorithm and the implementations in the original works of Rudman and Weymouth-Yue are : 
+
+\begin{description}
+	\item[Rudman (1998)\cite{rudman1998volume} ] The use of a conservative geometrical mass (volume fraction) transport framework instead of an algebraic one in the original method, which is applied to fine grid volume fraction field.  
+	\item[Weymouth \& Yue (2010) \cite{weymouth2010conservative}] The extension of the original method for conservative direction-split transport to the momentum field, culminating in the consistency between mass and the discrete transport of momentum in the context of staggered Cartesian grids in 3D. 
+\end{description}
 
 %--------------------------------------------------------------------------------------
 
