@@ -1190,11 +1190,28 @@ smaller cubic volumes at the centroids of which, the volume fraction field is ce
 
 \subsubsection*{Multiscale Coupling : Restriction \& Prolongation Operations}
 
-As is paradigmatic for dual-grid methods in the context of Navier-Stokes solvers, in the present method we solve the numerical transport of mass at the fine grid level, and that of the momentum (velocity) at the coarse grid level. In pressure-projection based methods such as ours, the predominant bottleneck in terms of computational speed is the solution to the discrete Poisson equation, the problem size of which is governed by the number of cells/points discretizing the velocity (or pressure) field. Therefore, solving the mass advection equation on the fine grid allows us to obtain more accurate solutions to the flow physics under consideration, while enabling us to circumvent the extremely high computational costs associated with solving a Poisson problem at a twice finer resolution (i.e. 8 times the original problem size in 3D).  
+As is paradigmatic for dual-grid methods in the context of 
+Navier-Stokes solvers, in the present method we solve the 
+numerical transport of mass at the fine grid level, and that 
+of the momentum (velocity) at the coarse grid level. 
+In pressure-projection based methods such as ours, the predominant 
+bottleneck in terms of computational speed is the 
+solution to the discrete Poisson equation, the problem size of 
+which is governed by the number of cells/points 
+discretizing the velocity (or pressure) field. 
+Therefore, solving the mass advection equation on the fine grid 
+allows us to obtain more accurate solutions to the flow physics 
+under consideration, while enabling us to circumvent the extremely 
+high computational costs associated with solving a Poisson problem 
+at a twice finer resolution (i.e. 8 times the original problem size in 3D).  
 
 \paragraph{\textbf{Prolongation}}
 
-In order to advect the mass on the fine grid, we need to reconstruct a velocity field at the corresponding resolution using the information of the coarse grid velocity, for each time-step. In order to achieve this, we have constructed a prolongation operator which asserts the following relations between the fine and coarse grid velocity fields : 
+In order to advect the mass on the fine grid, we need to reconstruct 
+a velocity field at the corresponding resolution using 
+the information of the coarse grid velocity, for each time-step. 
+In order to achieve this, we have constructed a prolongation operator 
+which asserts the following relations between the fine and coarse grid velocity fields : 
 
 \begin{equation}
   \begin{aligned}
@@ -1209,34 +1226,77 @@ In order to advect the mass on the fine grid, we need to reconstruct a velocity 
 
 % verify order of scheme : zeroth or first 
 
-The notations in the above equations refer to the description of the coarse and fine grid variables in fig. \ref{grid}. The first-order interpolation applied to the coarse grid velocity field ensures discrete incompressibility at the fine grid level, a direct consequence of the solenoidal nature of the coarse grid velocity field. The choice of the prolongation operator is the same as that used in the originial method of Rudman (\cite{rudman1998volume}), whereas higher order interpolation schemes would necessitate solving a local Poisson problem to render the fine grid velocity field solenoidal. In the present study, we have chosen to eschew the added complexity of solving local Poisson problems through our prolongation operators, therefore sticking with the much simpler Rudman inspired interpolations. 
+The notations in the above equations refer to the description 
+of the coarse and fine grid variables in fig. \ref{grid}. 
+The first-order interpolation applied to the coarse grid 
+velocity field ensures discrete incompressibility at the 
+fine grid level, a direct consequence of the solenoidal 
+nature of the coarse grid velocity field. 
+The choice of the prolongation operator is the same as that 
+used in the originial method of Rudman (\cite{rudman1998volume}), 
+whereas higher order interpolation schemes would necessitate 
+solving a local Poisson problem to render the fine grid velocity field solenoidal. 
+In the present study, we have chosen to eschew the added 
+complexity of solving local Poisson problems through our prolongation operators, 
+therefore sticking with the much simpler Rudman inspired interpolations. 
 
 
 \paragraph{\textbf{Restriction}}
 
+
 \begin{figure}[h!]
-    \centering
-    \includegraphics[width = \textwidth]{plots/restriction.png}
-    \caption{A 2D illustration of the restriction operations involved between the fine and coarse level grids, where the fine grid boundaries are denoted by the dashed lines, and that of the coarse grid by solid lines. The presence of the volume fraction field at the fine grid level facilitates a 'natural' volume integral reconstruction of the density fields for both the centered and staggered arrangements at the coarse level.} 
+\centering
+\includegraphics[width = \textwidth]{plots/restriction.png}
+\caption{A 2D illustration of the restriction operations involved
+	between the fine and coarse level grids, where the fine 
+	grid boundaries are denoted by the dashed lines, 
+	and that of the coarse grid by solid lines. 
+	The presence of the volume fraction field at the fine 
+	grid level facilitates a 'natural' volume integral 
+	reconstruction of the density fields for both 
+	the centered and staggered arrangements at the coarse level.} 
     \label{restrict}
 \end{figure}
 
-Implementing a numerical method that ensures discrete consistency between mass and momentum transport on a staggered configuration poses the additional challenge of reconstructing the density and momentum fields on the staggered control volumes, and the subsequent transport of those quantities using equations \ref{vof} and \ref{mom} to obtain the intermediate field $u^{*}$. We resolve this additional complexity by applying restriction operators on our fine grid density (mass) field in the spirit of Rudman (\cite{rudman1998volume}), which are nothing but simple volume integrals of the fine grid field mapped onto the domains corresponding to the coarse grid control volumes. In fig. \ref{restrict}, we demonstrate the volume integration mapping between the fine and coarse grid control volumes, which are implemented as restriction operators at each time-step to compute certain coarse grid fields, the details of which are follows : 
+
+Implementing a numerical method that ensures discrete consistency 
+between mass and momentum transport on a staggered configuration 
+poses the additional challenge of reconstructing the density and 
+momentum fields on the staggered control volumes, and the 
+subsequent transport of those quantities using equations 
+\ref{vof} and \ref{mom} to obtain the intermediate field $u^{*}$. 
+We resolve this additional complexity by applying restriction operators 
+on our fine grid density (mass) field in the spirit of 
+Rudman (\cite{rudman1998volume}), which are nothing but simple volume 
+integrals of the fine grid field mapped onto the domains corresponding 
+to the coarse grid control volumes. 
+In fig. \ref{restrict}, we demonstrate the volume integration 
+mapping between the fine and coarse grid control volumes, 
+which are implemented as restriction operators at each time-step
+to compute certain coarse grid fields, the details of which are follows : 
 
 
 \begin{itemize}
-
 	\item \textit{Fine Grid $\longmapsto$ Coarse Staggered Grid}
           
 	  \begin{description}
-		  \item[Momentum Field] The fine grid volume fraction (mass) field is restricted to obtain a staggered density field at the coarse grid level (\ref{restrict}), which on combining with the velocity field produces the staggered momentum field.    
-		\item[Momentum Fluxes] The fine grid geometric fluxes of volume fraction (mass) are restricted to obtain coarse grid fluxes for the staggered volumes (fig. \ref{algo}), which on combining with relation \ref{momcons} gives us the corresponding momentum fluxes.   
+		  \item[Momentum Field] The fine grid volume fraction (mass) field
+			  is restricted to obtain a staggered density field at the 
+			  coarse grid level (\ref{restrict}), which on combining with 
+			  the velocity field produces the staggered momentum field.    
+		\item[Momentum Fluxes] The fine grid geometric fluxes of volume fraction 
+			(mass) are restricted to obtain coarse grid fluxes for the 
+			  staggered volumes (fig. \ref{algo}), which on combining with 
+			  relation \ref{momcons} gives us the corresponding momentum fluxes.   
 	  \end{description}
 
   \item \textit{Fine Grid $\longmapsto$ Coarse Centered Grid}
 
           \begin{description}
-		  \item[Density \& Viscosity Field] Fine grid volume fraction field is restricted to obtain a centered volume fraction field at the coarse grid level, which on combining with the model \ref{rho-mu}, generates the centered density and viscosity fields at the coarse grid level.   
+		  \item[Density \& Viscosity Field] Fine grid volume fraction field is 
+			  restricted to obtain a centered volume fraction field at the 
+			  coarse grid level, which on combining with the model \ref{rho-mu}, 
+			  generates the centered density and viscosity fields at the coarse grid level.   
 	  \end{description}
 
 \end{itemize}
@@ -1245,14 +1305,34 @@ Implementing a numerical method that ensures discrete consistency between mass a
 
 \subsubsection*{Algorithm}
 
-To summarize the overall algorithm pertaining to the advection operator in our one-fluid Navier-Stokes framework, we present fig. \ref{algo}, which illustrates a 2D version (for sake of brevity) of the coupled, consistent and conservative mass-momentum transport, highlighting the interaction between the variables defined on the different grids. The variables in red are all defined on the coarse level, and those in green are at the fine grid level. The operators $R$ and $P$ denote the restriction and prolongation operations respectively. The 'tilde' on top of the variables (e.g. $\tilde{\rho}^{n} $) are used to convery that the variables are centered with respect to the staggered control volumes at the coarse grid level. The fine grid velocities $\bar{u}^{n}$ and $\bar{v}^{n}$ represent the velocities which are staggered with respect to the fine grid density field. The variables with known values at the start of the advection are surrounded by black elliptical borders, and the variables we obtain at the end of all the directional sweeps are $u^{*}$ and $\rho^{n+1}$, as we have explained in the previous sections. 
+To summarize the overall algorithm pertaining to the advection 
+operator in our one-fluid Navier-Stokes framework, 
+we present fig. \ref{algo}, which illustrates a 2D version 
+(for sake of brevity) of the coupled, consistent and conservative 
+mass-momentum transport, highlighting the interaction between the 
+variables defined on the different grids. 
+The variables in red are all defined on the coarse level, 
+and those in green are at the fine grid level. 
+The operators $R$ and $P$ denote the restriction and prolongation operations respectively.
+The 'tilde' on top of the variables (e.g. $\tilde{\rho}^{n} $) are 
+used to convery that the variables are centered with respect to the 
+staggered control volumes at the coarse grid level. 
+The fine grid velocities $\bar{u}^{n}$ and $\bar{v}^{n}$ represent the 
+velocities which are staggered with respect to the fine grid density field. 
+The variables with known values at the start of the advection are 
+surrounded by black elliptical borders, and the variables we obtain at the 
+end of all the directional sweeps are $u^{*}$ and $\rho^{n+1}$, 
+as we have explained in the previous sections. 
 
-% flowchart of the algorithm 
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width = \textwidth]{plots/momcons_sagar.png}
-    \caption{Global view of the numerical algorithm elucidating the coupling between the fine and coarse grid. We illustrate the 2D implementation for sake of simplicity, with the advection carried out first along the $x$ direction, and then along $y$. Extension of the above algorithm to 3D is straightforward.}
+    \caption{Global view of the numerical algorithm elucidating the coupling between 
+	the fine and coarse grid. We illustrate the 2D implementation f
+	or sake of simplicity, with the advection carried out first along 
+	the $x$ direction, and then along $y$. 
+	Extension of the above algorithm to 3D is straightforward.}
     \label{momcons_sagar}
 \end{figure}
 
@@ -1304,11 +1384,18 @@ $\tilde \rho_q^{n+1} = \rho_q^{n,3}$.
 
 \end{enumerate}
 
-Considering the overall approach, the key differences between our present algorithm and the implementations in the original works of Rudman and Weymouth-Yue are : 
+Considering the overall approach, the key differences between our 
+present algorithm and the implementations in the 
+original works of Rudman and Weymouth-Yue are : 
 
 \begin{description}
-	\item[Rudman (1998)\cite{rudman1998volume} ] The use of a conservative geometrical mass (volume fraction) transport framework instead of an algebraic one in the original method, which is applied to fine grid volume fraction field.  
-	\item[Weymouth \& Yue (2010) \cite{weymouth2010conservative}] The extension of the original method for conservative direction-split transport to the momentum field, culminating in the consistency between mass and the discrete transport of momentum in the context of staggered Cartesian grids in 3D. 
+	\item[Rudman (1998)\cite{rudman1998volume} ] The use of a conservative geometrical 
+		mass (volume fraction) transport framework instead of an algebraic one in 
+		the original method, which is applied to fine grid volume fraction field.  
+	\item[Weymouth \& Yue (2010) \cite{weymouth2010conservative}] The extension of the 
+		original method for conservative direction-split transport to the momentum field, 
+		culminating in the consistency between mass and the discrete transport of 
+		momentum in the context of staggered Cartesian grids in 3D. 
 \end{description}
 
 %--------------------------------------------------------------------------------------
