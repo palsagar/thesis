@@ -1128,28 +1128,63 @@ transport on staggered control volumes is resolved by advecting
 the volume fraction (mass) on a twice finer grid 
 \sidenote{The grid is twice as fine when compared to the control volume for 
 momentum.}, very much in the spirit of Rudman's \cite{rudman1998volume} original work. 
-Compared to the shifted fractions method in the previous section, the presence of the 
-sub-grid volume fraction field facilitates a more `natural' computation of not only 
-the staggered volume fraction field $C^{n+1}_q$, but more importantly its fluxes. 
+
+The primary motivation regarding the development of this 
+method is the issue of conservation (lack of) concerning 
+the discrete transport of momentum in case of the shifted fractions method.     
+Basically, the issue arises quite simply due to the fact that the volume fraction 
+$C^{n+1}$ used to construct the staggered momentum field at the start of a 
+new time step is \textit{not} the identical to that which is obtained 
+via advection on the staggered control volumes itself ($C_{q}^{n+1}$). 
 \sidenote{In the shifted fractions method, flux computations on the staggered 
 cells necessitate another round of interfacial reconstructions based on the shifted 
 volume fraction field, whereas the sub-grid volume fraction information enables one
 to circumvent the reconstructions and obtain the fluxes directly using simple surface integrals.}
+The sub-grid method is able to evade these complications that arise due to
+the parallel evolution of two different volume fraction fields by conducting 
+volume fraction on solely on the twice refined grid.  
+An additional advantage of the having the sub-grid volume fraction field is that 
+it facilitates a more `natural' computation of not only the staggered 
+volume fraction field $C^{n+1}_q$, but more importantly its fluxes. 
 
-The primary motivation regarding the development of this method is the issue of 
-conservation (lack of) concerning the discrete transport of momentum in case of
-the shifted fractions method.    
+
+
 
 \subsubsection*{Spatial Configuration : Coarse \& Sub-Grid Variables}
 
 \begin{figure}[h!]
-\includegraphics[width = \textwidth]{plots/grid.png} 
+\includegraphics[width = \textwidth]{plots/sub_grid.pdf} 
 \centering
-\caption{Arrangement of primary variables on the coarse and fine grids. The figure on the left corresponds to the coarse grid, and the one on the right corresponds to the fine grid arrangement.}
+\caption{A 2D schematic of the arrangement of primary variables 
+on the coarse and sub-grid levels. 
+The control volume is decomposed into the two figures, the one
+on the left corresponding to the coarse grid variables, while the 
+one on the right corresponding to the sub-grid. 
+Superposition of these two figures, one on top of each other,
+represent the intricate relationships between the two sets of variables.
+The velocities on the sub-grid level are simple first 
+or zeroth order interpolations of the coarse grid velocities.}
 \label{sub_grid}
 \end{figure}
 
-At the coarse grid level, the pressure and velocity fields are defined in a staggered configuration, with pressures at the cell centers (centroids) and velocities on the cell face centers. Fig. \ref{grid} demonstrates the arrangement of variables, which one can easily extrapolate to 3D during implementation, but for the sake of clarity we illustrate its 2D equivalent. The volume fraction $C$ (labeled $c$ in the figure) is defined on a grid that is twice as fine than that of the pressure/velocity grid, we shall henceforth refer to it as the fine grid. Therefore in 3D, each cubic control volume is divided into eight constituent smaller cubic volumes at the centroids of which, the volume fraction field is centered. 
+To start, we describe the spatial orientation of the different 
+variables on the two grid levels.   
+\marginnote{The notations for the variables are slightly
+different that those used in the previous sections. 
+}
+
+
+At the coarse grid level, the pressure and velocity fields are 
+defined in a staggered configuration, with pressures at the cell 
+centers (centroids) and velocities on the cell face centers. 
+Fig. \ref{grid} demonstrates the arrangement of variables, 
+which one can easily extrapolate to 3D during implementation, 
+but for the sake of clarity we illustrate its 2D equivalent. 
+The volume fraction $C$ (labeled $c$ in the figure) is defined on 
+a grid that is twice as fine than that of the pressure/velocity grid, 
+we shall henceforth refer to it as the fine grid. 
+Therefore in 3D, each cubic control volume is divided into eight constituent 
+smaller cubic volumes at the centroids of which, the volume fraction field is centered. 
 
 
 

@@ -64,124 +64,124 @@
 \defcounter {refsection}{0}\relax
 \contentsline {section}{\numberline {4.3}Advection on Staggered Grids}{34}{section.4.3}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {5}Numerical Benchmarks}{38}{chapter.5}
+\contentsline {chapter}{\numberline {5}Numerical Benchmarks}{39}{chapter.5}
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {6}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {5.1}Static Droplet}{38}{section.5.1}
+\contentsline {section}{\numberline {5.1}Static Droplet}{39}{section.5.1}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {5.2}Moving Droplet}{43}{section.5.2}
+\contentsline {section}{\numberline {5.2}Moving Droplet}{44}{section.5.2}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {5.3}Capillary Wave}{48}{section.5.3}
+\contentsline {section}{\numberline {5.3}Capillary Wave}{49}{section.5.3}
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Physics of Fragmentation}{54}{part*.84}
+\contentsline {part}{\nonumberline Physics of Fragmentation}{55}{part*.88}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {6}Ligament Mediated Paradigm}{55}{chapter.6}
+\contentsline {chapter}{\numberline {6}Ligament Mediated Paradigm}{56}{chapter.6}
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {7}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {6.1}Mechanism of Drop Formation}{55}{section.6.1}
+\contentsline {section}{\numberline {6.1}Mechanism of Drop Formation}{56}{section.6.1}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Disintegration of Jets \& Shear Layers}{55}{section*.85}
+\contentsline {paragraph}{\nonumberline Disintegration of Jets \& Shear Layers}{56}{section*.89}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Expansion of Sheets}{55}{section*.86}
+\contentsline {paragraph}{\nonumberline Expansion of Sheets}{56}{section*.90}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Effervescent Atomization}{55}{section*.87}
+\contentsline {paragraph}{\nonumberline Effervescent Atomization}{56}{section*.91}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Drop Impacts}{55}{section*.88}
+\contentsline {paragraph}{\nonumberline Drop Impacts}{56}{section*.92}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {6.2}Theories of Fragmentation}{56}{section.6.2}
+\contentsline {section}{\numberline {6.2}Theories of Fragmentation}{57}{section.6.2}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Cascade Mechanism : Log-Normal Distribution}{56}{section*.89}
+\contentsline {paragraph}{\nonumberline Cascade Mechanism : Log-Normal Distribution}{57}{section*.93}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Corrugation-Coalescence Mechanism : Gamma Distribution}{56}{section*.90}
+\contentsline {paragraph}{\nonumberline Corrugation-Coalescence Mechanism : Gamma Distribution}{57}{section*.94}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {7}Droplet Generation in Corrugated Ligaments}{57}{chapter.7}
+\contentsline {chapter}{\numberline {7}Droplet Generation in Corrugated Ligaments}{58}{chapter.7}
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {8}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {7.1}Numerical Setup}{57}{section.7.1}
+\contentsline {section}{\numberline {7.1}Numerical Setup}{58}{section.7.1}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Platform : Basilisk}{57}{section*.91}
+\contentsline {paragraph}{\nonumberline Platform : Basilisk}{58}{section*.95}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Computational Schematic}{57}{section*.92}
+\contentsline {paragraph}{\nonumberline Computational Schematic}{58}{section*.96}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Random Surface Generation}{57}{section*.93}
+\contentsline {paragraph}{\nonumberline Random Surface Generation}{58}{section*.97}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Parameterization}{57}{section*.94}
+\contentsline {paragraph}{\nonumberline Parameterization}{58}{section*.98}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {7.2}Ligament Breakup}{58}{section.7.2}
+\contentsline {section}{\numberline {7.2}Ligament Breakup}{59}{section.7.2}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline 3D vs. 2D Simulations}{58}{section*.95}
+\contentsline {paragraph}{\nonumberline 3D vs. 2D Simulations}{59}{section*.99}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Effect of Spatial Resolution}{58}{section*.96}
+\contentsline {paragraph}{\nonumberline Effect of Spatial Resolution}{59}{section*.100}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Effect of Droplet Removal}{58}{section*.97}
+\contentsline {paragraph}{\nonumberline Effect of Droplet Removal}{59}{section*.101}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Effect of Corrugation Amplitude}{58}{section*.98}
+\contentsline {paragraph}{\nonumberline Effect of Corrugation Amplitude}{59}{section*.102}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Effect of Ohnesorge Number}{58}{section*.99}
+\contentsline {paragraph}{\nonumberline Effect of Ohnesorge Number}{59}{section*.103}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Effect of Cut-Off Wavenumber}{59}{section*.100}
+\contentsline {paragraph}{\nonumberline Effect of Cut-Off Wavenumber}{60}{section*.104}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Effect of Aspect Ratio}{59}{section*.101}
+\contentsline {paragraph}{\nonumberline Effect of Aspect Ratio}{60}{section*.105}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Quantization of Waves}{59}{section*.102}
+\contentsline {paragraph}{\nonumberline Quantization of Waves}{60}{section*.106}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {8}Statistics of Drop Sizes}{60}{chapter.8}
+\contentsline {chapter}{\numberline {8}Statistics of Drop Sizes}{61}{chapter.8}
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {9}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {8.1}Monte Carlo Approach to DNS}{60}{section.8.1}
+\contentsline {section}{\numberline {8.1}Monte Carlo Approach to DNS}{61}{section.8.1}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Characterization of Ligament Ensembles}{60}{section*.103}
+\contentsline {paragraph}{\nonumberline Characterization of Ligament Ensembles}{61}{section*.107}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {8.2}Millimeter Scale Ensembles}{60}{section.8.2}
+\contentsline {section}{\numberline {8.2}Millimeter Scale Ensembles}{61}{section.8.2}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Diameter Distributions}{60}{section*.104}
+\contentsline {paragraph}{\nonumberline Diameter Distributions}{61}{section*.108}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Mass Distributions}{60}{section*.105}
+\contentsline {paragraph}{\nonumberline Mass Distributions}{61}{section*.109}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Equivalent Diameters}{60}{section*.106}
+\contentsline {paragraph}{\nonumberline Equivalent Diameters}{61}{section*.110}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Local Distribution of Large Drop Sizes}{61}{section*.107}
+\contentsline {paragraph}{\nonumberline Local Distribution of Large Drop Sizes}{62}{section*.111}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {8.3}Exploration of Parameter Space $\Phi $}{61}{section.8.3}
+\contentsline {section}{\numberline {8.3}Exploration of Parameter Space $\Phi $}{62}{section.8.3}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Bifurcation Parameter : Corrugation Amplitude}{61}{section*.108}
+\contentsline {paragraph}{\nonumberline Bifurcation Parameter : Corrugation Amplitude}{62}{section*.112}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Scaling of $D/W$ : Function of Parameter Space}{61}{section*.109}
+\contentsline {paragraph}{\nonumberline Scaling of $D/W$ : Function of Parameter Space}{62}{section*.113}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline \textit {To be added}}{61}{section*.110}
+\contentsline {paragraph}{\nonumberline \textit {To be added}}{62}{section*.114}
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Conclusions \& Perspectives}{62}{part*.112}
+\contentsline {part}{\nonumberline Conclusions \& Perspectives}{63}{part*.116}
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Appendix}{64}{part*.114}
+\contentsline {part}{\nonumberline Appendix}{65}{part*.118}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{65}{appendix.A}
+\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{66}{appendix.A}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{65}{section.A.1}
+\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{66}{section.A.1}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Heading on Level\xspace 2 (subsection)}{65}{section*.115}
+\contentsline {subsection}{\nonumberline Heading on Level\xspace 2 (subsection)}{66}{section*.119}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Heading on Level\xspace 3 (subsubsection)}{65}{section*.116}
+\contentsline {subsubsection}{\nonumberline Heading on Level\xspace 3 (subsubsection)}{66}{section*.120}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Heading on Level\xspace 4 (paragraph)}{66}{section*.117}
+\contentsline {paragraph}{\nonumberline Heading on Level\xspace 4 (paragraph)}{67}{section*.121}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {A.2}Lists}{66}{section.A.2}
+\contentsline {section}{\numberline {A.2}Lists}{67}{section.A.2}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Example for list\xspace (itemize)}{66}{section*.118}
+\contentsline {subsection}{\nonumberline Example for list\xspace (itemize)}{67}{section*.122}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*itemize)}{66}{section*.119}
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*itemize)}{67}{section*.123}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Example for list\xspace (enumerate)}{66}{section*.120}
+\contentsline {subsection}{\nonumberline Example for list\xspace (enumerate)}{67}{section*.124}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*enumerate)}{67}{section*.121}
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*enumerate)}{68}{section*.125}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Example for list\xspace (description)}{67}{section*.122}
+\contentsline {subsection}{\nonumberline Example for list\xspace (description)}{68}{section*.126}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*description)}{67}{section*.123}
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*description)}{68}{section*.127}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\nonumberline Bibliography}{68}{chapter*.124}
+\contentsline {chapter}{\nonumberline Bibliography}{69}{chapter*.128}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{Notation}{71}{chapter*.125}
+\contentsline {chapter}{Notation}{72}{chapter*.129}
