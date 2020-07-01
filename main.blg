@@ -1,17 +1,17 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
-[0] Config.pm:305> INFO - Logfile is 'main.blg'
-[24] biber:313> INFO - === mar. juin 30, 2020, 20:55:23
-[49] Biber.pm:371> INFO - Reading 'main.bcf'
-[123] Biber.pm:857> INFO - Found 46 citekeys in bib section 0
-[139] Biber.pm:3981> INFO - Processing section 0
-[150] Biber.pm:4154> INFO - Looking for bibtex format file 'main.bib' for section 0
-[153] bibtex.pm:1468> INFO - LaTeX decoding ...
-[227] bibtex.pm:1294> INFO - Found BibTeX data source 'main.bib'
-[500] Utils.pm:169> WARN - I didn't find a database entry for 'weymouth2010conservative' (section 0)
-[535] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[535] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[535] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[535] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
-[567] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[584] bbl.pm:720> INFO - Output to main.bbl
-[584] Biber.pm:110> INFO - WARNINGS: 1
+[1] Config.pm:305> INFO - Logfile is 'main.blg'
+[32] biber:313> INFO - === mer. juil.  1, 2020, 11:25:38
+[54] Biber.pm:371> INFO - Reading 'main.bcf'
+[126] Biber.pm:857> INFO - Found 46 citekeys in bib section 0
+[141] Biber.pm:3981> INFO - Processing section 0
+[152] Biber.pm:4154> INFO - Looking for bibtex format file 'main.bib' for section 0
+[155] bibtex.pm:1468> INFO - LaTeX decoding ...
+[218] bibtex.pm:1294> INFO - Found BibTeX data source 'main.bib'
+[484] Utils.pm:169> WARN - I didn't find a database entry for 'weymouth2010conservative' (section 0)
+[519] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[520] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[520] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[520] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[550] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[565] bbl.pm:720> INFO - Output to main.bbl
+[565] Biber.pm:110> INFO - WARNINGS: 1

@@ -1126,8 +1126,9 @@ ensures conservative transport of the momentum on the staggered control volumes.
 In this strategy, the difficulty associated with consistent 
 transport on staggered control volumes is resolved by advecting  
 the volume fraction (mass) on a twice finer grid 
-\sidenote{The grid is twice as fine when compared to the control volume for 
-momentum.}, very much in the spirit of Rudman's \cite{rudman1998volume} original work. 
+\sidenote{
+The grid is twice as fine when compared to the control volume for momentum.
+} , very much in the spirit of Rudman's \cite{rudman1998volume} original work. 
 
 The primary motivation regarding the development of this 
 method is the issue of conservation (lack of) concerning 
@@ -1136,10 +1137,12 @@ Basically, the issue arises quite simply due to the fact that the volume fractio
 $C^{n+1}$ used to construct the staggered momentum field at the start of a 
 new time step is \textit{not} the identical to that which is obtained 
 via advection on the staggered control volumes itself ($C_{q}^{n+1}$). 
-\sidenote{In the shifted fractions method, flux computations on the staggered 
+\sidenote{
+In the shifted fractions method, flux computations on the staggered 
 cells necessitate another round of interfacial reconstructions based on the shifted 
 volume fraction field, whereas the sub-grid volume fraction information enables one
-to circumvent the reconstructions and obtain the fluxes directly using simple surface integrals.}
+to circumvent the reconstructions and obtain the fluxes directly using simple surface integrals.
+}
 The sub-grid method is able to evade these complications that arise due to
 the parallel evolution of two different volume fraction fields by conducting 
 volume fraction on solely on the twice refined grid.  
@@ -1160,7 +1163,7 @@ The control volume is decomposed into the two figures, the one
 on the left corresponding to the coarse grid variables, while the 
 one on the right corresponding to the sub-grid. 
 Superposition of these two figures, one on top of each other,
-represent the intricate relationships between the two sets of variables.
+represent the spatial relationships between the two sets of variables.
 The velocities on the sub-grid level are simple first 
 or zeroth order interpolations of the coarse grid velocities.
 }
@@ -1168,77 +1171,89 @@ or zeroth order interpolations of the coarse grid velocities.
 \end{figure}
 
 To start, we describe the spatial orientation of the different 
-variables on the two grid levels.   
+variables on the two refinement levels of the grid.   
 \marginnote{The notations for the variables are slightly
 different that those used in the previous sections (Fig. \ref{stag-grid}.) 
+The velocity component in the horizontal and vertical directions 
+are now denoted as $U$ and $V$ respectively, and the pressure by $p$. 
 }
-
-
 At the coarse grid level, the pressure and velocity fields are 
 defined in a staggered configuration, with pressures at the cell 
-centers (centroids) and velocities on the cell face centers. 
-Fig. \ref{grid} demonstrates the arrangement of variables, 
+centers (centroids in 3D) and velocities on the cell face centers. 
+In Fig. \ref{sub_grid}, we demonstrate the arrangement of variables, 
 which one can easily extrapolate to 3D during implementation, 
 but for the sake of clarity we illustrate its 2D equivalent. 
-The volume fraction $C$ (labeled $c$ in the figure) is defined on 
-a grid that is twice as fine than that of the pressure/velocity grid, 
-we shall henceforth refer to it as the fine grid. 
+The volume fraction $C$ 
+\sidenote{ The volume fraction field $C$ is denoted as $c$ in Fig. \ref{sub_grid}. 
+} is only defined on a grid that is twice as fine than 
+that of the pressure/velocity grid, which we refer to as the sub-grid. 
 Therefore in 3D, each cubic control volume is divided into eight constituent 
 smaller cubic volumes at the centroids of which, the volume fraction field is centered. 
-
 
 
 \subsubsection*{Multiscale Coupling : Restriction \& Prolongation Operations}
 
 As is paradigmatic for dual-grid methods in the context of 
-Navier-Stokes solvers, in the present method we solve the 
-numerical transport of mass at the fine grid level, and that 
-of the momentum (velocity) at the coarse grid level. 
+Navier-Stokes solvers, we carry out mass transport 
+at the sub-grid level, and momentum transport at the coarse level. 
 In pressure-projection based methods such as ours, the predominant 
 bottleneck in terms of computational speed is the 
-solution to the discrete Poisson equation, the problem size of 
-which is governed by the number of cells/points 
-discretizing the velocity (or pressure) field. 
+iterative solution to the discrete Poisson equation. 
+\sidenote{
+The problem size of such elliptical 
+partial differential equations is governed by 
+the number of cells/points discretizing the velocity (or pressure) field. 
+If we choose to solve the problem on a mesh with
+twice the resolution in 3D, that would lead to an 8 fold increase 
+in the problem size for the discrete pressure-Poisson problem.   
+}
 Therefore, solving the mass advection equation on the fine grid 
-allows us to obtain more accurate solutions to the flow physics 
-under consideration, while enabling us to circumvent the extremely 
-high computational costs associated with solving a Poisson problem 
-at a twice finer resolution (i.e. 8 times the original problem size in 3D).  
+allows us not only to obtain more accurate solutions to the flow physics 
+involved, but also enables us to avoid the significantly higher  
+computational costs associated with solving a Poisson problem 
+at a twice finer resolution.  
 
 \paragraph{\textbf{Prolongation}}
 
-In order to advect the mass on the fine grid, we need to reconstruct 
-a velocity field at the corresponding resolution using 
-the information of the coarse grid velocity, for each time-step. 
-In order to achieve this, we have constructed a prolongation operator 
-which asserts the following relations between the fine and coarse grid velocity fields : 
+In order to advect the volume fraction at the sub-grid level, 
+we need to reconstruct a velocity field at the level of resolution using 
+information from the coarse grid velocity field.
+\marginnote{ 
+The prolongation operator has to be used at the start of each new time step,
+in order to compute the sub-grid velocity field. 
+}
+In order to achieve this, we have implemented a prolongation operator 
+which asserts the following relations between the velocities on the two refinement levels  
 
-\begin{equation}
-  \begin{aligned}
+\begin{align}
   	  u_{2i-\frac{1}{2},2j} = u_{2i-\frac{1}{2},2j+1} &= U_{i-\frac{1}{2},j} \\ 
             u_{2i+\frac{3}{2},2j} = u_{2i+\frac{3}{2},2j+1} &= U_{i+\frac{1}{2},j} \\ 
-  	  u_{2i+\frac{1}{2},2j} = u_{2i+\frac{1}{2},2j+1} &= 0.5\left(U_{i+\frac{1}{2},j} + U_{i-\frac{1}{2},j}\right) \\
+  	  u_{2i+\frac{1}{2},2j} = u_{2i+\frac{1}{2},2j+1} &= \left(U_{i+\frac{1}{2},j} + U_{i-\frac{1}{2},j}\right) / 2 \\
   	  v_{2i,2j-\frac{1}{2}} = v_{2i+1,2j-\frac{1}{2}} &= V_{i,j+\frac{1}{2}} \\ 
             v_{2i,2j+\frac{3}{2}} = v_{2i+1,2j+\frac{3}{2}} &= V_{i,j-\frac{1}{2}} \\
-  	  v_{2i,2j+\frac{1}{2}} = v_{2i+1,2j+\frac{1}{2}} &= 0.5\left(V_{i,j+\frac{1}{2}} + V_{i,j-\frac{1}{2}}\right) 
-  \end{aligned}
-\end{equation}
+  	  v_{2i,2j+\frac{1}{2}} = v_{2i+1,2j+\frac{1}{2}} &= \left(V_{i,j+\frac{1}{2}} + V_{i,j-\frac{1}{2}}\right) / 2 
+\end{align}
 
-% verify order of scheme : zeroth or first 
 
 The notations in the above equations refer to the description 
-of the coarse and fine grid variables in fig. \ref{grid}. 
+of the coarse and sub-grid variables in Fig. \ref{sub_grid}. 
 The first-order interpolation applied to the coarse grid 
-velocity field ensures discrete incompressibility at the 
-fine grid level, a direct consequence of the solenoidal 
-nature of the coarse grid velocity field. 
-The choice of the prolongation operator is the same as that 
-used in the originial method of Rudman (\cite{rudman1998volume}), 
-whereas higher order interpolation schemes would necessitate 
-solving a local Poisson problem to render the fine grid velocity field solenoidal. 
-In the present study, we have chosen to eschew the added 
-complexity of solving local Poisson problems through our prolongation operators, 
-therefore sticking with the much simpler Rudman inspired interpolations. 
+velocity field ensures discrete incompressibility 
+\sidenote{This is a direct consequence of the solenoidal 
+nature of the coarse grid velocity field.
+}
+at the sub-grid level.
+The choice of interpolation order used in the  prolongation operator 
+is identical to that of the originial method of Rudman (\cite{rudman1998volume}). 
+In the current version of the sub-grid method, we have chosen to eschew the added 
+complexity of solving local Poisson problems 
+\sidenote{
+The use of higher order interpolation schemes would necessitate 
+finding the solutions of local Poisson problems, in order to 
+render the sub-grid velocity field discretely divergence-free. 
+}
+through our prolongation operators, therefore sticking with 
+the much simpler Rudman inspired interpolations. 
 
 
 \paragraph{\textbf{Restriction}}
@@ -1398,8 +1413,4 @@ original works of Rudman and Weymouth-Yue are :
 		momentum in the context of staggered Cartesian grids in 3D. 
 \end{description}
 
-%--------------------------------------------------------------------------------------
 
-\subsection*{Source Terms}
-
-% 1/rho terms in ST , reconstructing curvatures from sub-grid information etc 
