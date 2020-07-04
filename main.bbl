@@ -80,8 +80,8 @@
       \strng{authorbibnamehash}{17e367e9a705496b472f620b5b2b181a}
       \strng{authornamehash}{17e367e9a705496b472f620b5b2b181a}
       \strng{authorfullhash}{7bf80c34d720cf641679d494d0f29946}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{PArallel, Robust, Interface Simulator (PARIS)}
@@ -101,8 +101,8 @@
       \strng{authorbibnamehash}{315b27c79127c304f318dea9e0bfaa28}
       \strng{authornamehash}{315b27c79127c304f318dea9e0bfaa28}
       \strng{authorfullhash}{315b27c79127c304f318dea9e0bfaa28}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{URL http://basilisk. fr}
@@ -130,8 +130,8 @@
       \strng{authorbibnamehash}{70b0cdd07cf135b60e9bac4335a50844}
       \strng{authornamehash}{70b0cdd07cf135b60e9bac4335a50844}
       \strng{authorfullhash}{70b0cdd07cf135b60e9bac4335a50844}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of computational physics}
@@ -955,8 +955,8 @@
       \strng{authorbibnamehash}{33b7386d6d48b81c8ad90efd09b244da}
       \strng{authornamehash}{33b7386d6d48b81c8ad90efd09b244da}
       \strng{authorfullhash}{33b7386d6d48b81c8ad90efd09b244da}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal for numerical methods in fluids}
@@ -1026,8 +1026,8 @@
       \strng{authorbibnamehash}{e9bea121ee0b8add911a4437d9c89e0e}
       \strng{authornamehash}{e9bea121ee0b8add911a4437d9c89e0e}
       \strng{authorfullhash}{e9bea121ee0b8add911a4437d9c89e0e}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computers \& Fluids}
@@ -1623,6 +1623,338 @@
       \field{year}{1981}
       \field{pages}{1217\bibrangedash 1223}
       \range{pages}{7}
+    \endentry
+    \entry{vill_1}{article}{}
+      \name{author}{1}{}{%
+        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
+           family={Villermaux},
+           familyi={V\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews}%
+      }
+      \strng{namehash}{db99ae44e5e03e687e084e29c29e0a0e}
+      \strng{fullhash}{db99ae44e5e03e687e084e29c29e0a0e}
+      \strng{bibnamehash}{db99ae44e5e03e687e084e29c29e0a0e}
+      \strng{authorbibnamehash}{db99ae44e5e03e687e084e29c29e0a0e}
+      \strng{authornamehash}{db99ae44e5e03e687e084e29c29e0a0e}
+      \strng{authorfullhash}{db99ae44e5e03e687e084e29c29e0a0e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annu. Rev. Fluid Mech.}
+      \field{title}{Fragmentation}
+      \field{volume}{39}
+      \field{year}{2007}
+      \field{pages}{419\bibrangedash 446}
+      \range{pages}{28}
+    \endentry
+    \entry{vill_2}{article}{}
+      \name{author}{3}{}{%
+        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
+           family={Villermaux},
+           familyi={V\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e3101ba808ac2c883e695e515b738d5a}{%
+           family={Marmottant},
+           familyi={M\bibinitperiod},
+           given={Ph},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e9fcf2c3a5c95aae1c436169505821a0}{%
+           family={Duplat},
+           familyi={D\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{b79a04f0f2eca828549ccf6dbe47f52d}
+      \strng{fullhash}{b79a04f0f2eca828549ccf6dbe47f52d}
+      \strng{bibnamehash}{b79a04f0f2eca828549ccf6dbe47f52d}
+      \strng{authorbibnamehash}{b79a04f0f2eca828549ccf6dbe47f52d}
+      \strng{authornamehash}{b79a04f0f2eca828549ccf6dbe47f52d}
+      \strng{authorfullhash}{b79a04f0f2eca828549ccf6dbe47f52d}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{7}
+      \field{title}{Ligament-mediated spray formation}
+      \field{volume}{92}
+      \field{year}{2004}
+      \field{pages}{074501}
+      \range{pages}{1}
+    \endentry
+    \entry{vill_4}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d3bc0f56fc6f3b9e64aae8e5ab4555b0}{%
+           family={Marmottant},
+           familyi={M\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
+           family={Villermaux},
+           familyi={V\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{fullhash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{bibnamehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{authorbibnamehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{authornamehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{authorfullhash}{50eda88669c28ae91e47af1eced7b8ab}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of fluid mechanics}
+      \field{title}{On spray formation}
+      \field{volume}{498}
+      \field{year}{2004}
+      \field{pages}{73}
+      \range{pages}{1}
+    \endentry
+    \entry{vill_3}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d3bc0f56fc6f3b9e64aae8e5ab4555b0}{%
+           family={Marmottant},
+           familyi={M\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
+           family={Villermaux},
+           familyi={V\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{fullhash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{bibnamehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{authorbibnamehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{authornamehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{authorfullhash}{50eda88669c28ae91e47af1eced7b8ab}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of fluids}
+      \field{number}{8}
+      \field{title}{Fragmentation of stretched liquid ligaments}
+      \field{volume}{16}
+      \field{year}{2004}
+      \field{pages}{2732\bibrangedash 2741}
+      \range{pages}{10}
+    \endentry
+    \entry{vill_5}{article}{}
+      \name{author}{2}{}{%
+        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
+           family={Villermaux},
+           familyi={V\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=21c59ed30d6216a02343f0994a557bf9}{%
+           family={Bossa},
+           familyi={B\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{60d0987e1cf1bc631d79158a9af44890}
+      \strng{fullhash}{60d0987e1cf1bc631d79158a9af44890}
+      \strng{bibnamehash}{60d0987e1cf1bc631d79158a9af44890}
+      \strng{authorbibnamehash}{60d0987e1cf1bc631d79158a9af44890}
+      \strng{authornamehash}{60d0987e1cf1bc631d79158a9af44890}
+      \strng{authorfullhash}{60d0987e1cf1bc631d79158a9af44890}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Drop fragmentation on impact}
+      \field{volume}{668}
+      \field{year}{2011}
+      \field{pages}{412}
+      \range{pages}{1}
+    \endentry
+    \entry{vill_6}{article}{}
+      \name{author}{2}{}{%
+        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
+           family={Villermaux},
+           familyi={V\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=21c59ed30d6216a02343f0994a557bf9}{%
+           family={Bossa},
+           familyi={B\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{60d0987e1cf1bc631d79158a9af44890}
+      \strng{fullhash}{60d0987e1cf1bc631d79158a9af44890}
+      \strng{bibnamehash}{60d0987e1cf1bc631d79158a9af44890}
+      \strng{authorbibnamehash}{60d0987e1cf1bc631d79158a9af44890}
+      \strng{authornamehash}{60d0987e1cf1bc631d79158a9af44890}
+      \strng{authorfullhash}{60d0987e1cf1bc631d79158a9af44890}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Physics}
+      \field{number}{9}
+      \field{title}{Single-drop fragmentation determines size distribution of raindrops}
+      \field{volume}{5}
+      \field{year}{2009}
+      \field{pages}{697\bibrangedash 702}
+      \range{pages}{6}
+    \endentry
+    \entry{vill_7}{article}{}
+      \name{author}{2}{}{%
+        {{hash=913c44cc97507cd4dd92548afc9d616b}{%
+           family={Bremond},
+           familyi={B\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
+           family={Villermaux},
+           familyi={V\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{4e3e12045649acb1f10b1472b1b9119e}
+      \strng{fullhash}{4e3e12045649acb1f10b1472b1b9119e}
+      \strng{bibnamehash}{4e3e12045649acb1f10b1472b1b9119e}
+      \strng{authorbibnamehash}{4e3e12045649acb1f10b1472b1b9119e}
+      \strng{authornamehash}{4e3e12045649acb1f10b1472b1b9119e}
+      \strng{authorfullhash}{4e3e12045649acb1f10b1472b1b9119e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Atomization by jet impact}
+      \field{volume}{549}
+      \field{year}{2006}
+      \field{pages}{273}
+      \range{pages}{1}
+    \endentry
+    \entry{bonn}{article}{}
+      \name{author}{5}{}{%
+        {{hash=231c9e0a60615ebe410ecc6f2e8cb4bd}{%
+           family={Kooij},
+           familyi={K\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1f65674f8fd6f79d6ad2f51173565fcc}{%
+           family={Sijs},
+           familyi={S\bibinitperiod},
+           given={Rick},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7c70961da18423033215150e09193754}{%
+           family={Denn},
+           familyi={D\bibinitperiod},
+           given={Morton\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
+           family={Villermaux},
+           familyi={V\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e0d063d075775a44282c09623b6dec87}{%
+           family={Bonn},
+           familyi={B\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{32f85e32d97858f1f8ad5f04cdeccab7}
+      \strng{fullhash}{bfcf351f1fe88b5f014bb277e6f7f2fb}
+      \strng{bibnamehash}{32f85e32d97858f1f8ad5f04cdeccab7}
+      \strng{authorbibnamehash}{32f85e32d97858f1f8ad5f04cdeccab7}
+      \strng{authornamehash}{32f85e32d97858f1f8ad5f04cdeccab7}
+      \strng{authorfullhash}{bfcf351f1fe88b5f014bb277e6f7f2fb}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review X}
+      \field{number}{3}
+      \field{title}{What determines the drop size in sprays?}
+      \field{volume}{8}
+      \field{year}{2018}
+      \field{pages}{031019}
+      \range{pages}{1}
+    \endentry
+    \entry{mckinley}{article}{}
+      \name{author}{5}{}{%
+        {{hash=4a8aba20919e4d4290973b629a87d6da}{%
+           family={Keshavarz},
+           familyi={K\bibinitperiod},
+           given={Bavand},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2548358e234586e3aada2cb6396811b8}{%
+           family={Houze},
+           familyi={H\bibinitperiod},
+           given={Eric\bibnamedelima C},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=8066e4bc680c2d5cf42e582e7cf0cd85}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=e11d626a5e1cbc1114057ef46b7bd7e3}{%
+           family={Koerner},
+           familyi={K\bibinitperiod},
+           given={Michael\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=818bebd9cb267cc937a9a073dcf0583e}{%
+           family={McKinley},
+           familyi={M\bibinitperiod},
+           given={Gareth\bibnamedelima H},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{18c9bdefe2183d7ed75855321470f194}
+      \strng{fullhash}{e2137f3f2a8a96513889a87be2f8f5f1}
+      \strng{bibnamehash}{18c9bdefe2183d7ed75855321470f194}
+      \strng{authorbibnamehash}{18c9bdefe2183d7ed75855321470f194}
+      \strng{authornamehash}{18c9bdefe2183d7ed75855321470f194}
+      \strng{authorfullhash}{e2137f3f2a8a96513889a87be2f8f5f1}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{15}
+      \field{title}{Ligament mediated fragmentation of viscoelastic liquids}
+      \field{volume}{117}
+      \field{year}{2016}
+      \field{pages}{154502}
+      \range{pages}{1}
     \endentry
   \enddatalist
 \endrefsection
