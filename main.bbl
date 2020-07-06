@@ -80,8 +80,8 @@
       \strng{authorbibnamehash}{17e367e9a705496b472f620b5b2b181a}
       \strng{authornamehash}{17e367e9a705496b472f620b5b2b181a}
       \strng{authorfullhash}{7bf80c34d720cf641679d494d0f29946}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{PArallel, Robust, Interface Simulator (PARIS)}
@@ -101,8 +101,8 @@
       \strng{authorbibnamehash}{315b27c79127c304f318dea9e0bfaa28}
       \strng{authornamehash}{315b27c79127c304f318dea9e0bfaa28}
       \strng{authorfullhash}{315b27c79127c304f318dea9e0bfaa28}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{URL http://basilisk. fr}
@@ -742,8 +742,8 @@
       \strng{authorbibnamehash}{c04f099aa691206643c8e0e71d2fe81d}
       \strng{authornamehash}{c04f099aa691206643c8e0e71d2fe81d}
       \strng{authorfullhash}{363de97b4244152392184e38dc627e85}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -776,8 +776,8 @@
       \strng{authorbibnamehash}{7f6f3ac72c46758936c314e43fadb283}
       \strng{authornamehash}{7f6f3ac72c46758936c314e43fadb283}
       \strng{authorfullhash}{7f6f3ac72c46758936c314e43fadb283}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -930,8 +930,8 @@
       \strng{authorbibnamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
       \strng{authornamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
       \strng{authorfullhash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Large eddy simulation of liquid jet primary breakup}
@@ -1624,6 +1624,192 @@
       \field{pages}{1217\bibrangedash 1223}
       \range{pages}{7}
     \endentry
+    \entry{vill_3}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d3bc0f56fc6f3b9e64aae8e5ab4555b0}{%
+           family={Marmottant},
+           familyi={M\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
+           family={Villermaux},
+           familyi={V\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{fullhash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{bibnamehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{authorbibnamehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{authornamehash}{50eda88669c28ae91e47af1eced7b8ab}
+      \strng{authorfullhash}{50eda88669c28ae91e47af1eced7b8ab}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of fluids}
+      \field{number}{8}
+      \field{title}{Fragmentation of stretched liquid ligaments}
+      \field{volume}{16}
+      \field{year}{2004}
+      \field{pages}{2732\bibrangedash 2741}
+      \range{pages}{10}
+    \endentry
+    \entry{rayleigh1879a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c64c188dda50449eb5826d916df1a85a}{%
+           family={Rayleigh},
+           familyi={R\bibinitperiod},
+           given={Lord},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{fullhash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{bibnamehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{authorbibnamehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{authornamehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{authorfullhash}{c64c188dda50449eb5826d916df1a85a}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proc. R. Soc. London}
+      \field{number}{196-199}
+      \field{title}{On the capillary phenomena of jets}
+      \field{volume}{29}
+      \field{year}{1879}
+      \field{pages}{71\bibrangedash 97}
+      \range{pages}{27}
+    \endentry
+    \entry{rayleigh1879b}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c64c188dda50449eb5826d916df1a85a}{%
+           family={Rayleigh},
+           familyi={R\bibinitperiod},
+           given={Lord},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Narnia}%
+      }
+      \strng{namehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{fullhash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{bibnamehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{authorbibnamehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{authornamehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{authorfullhash}{c64c188dda50449eb5826d916df1a85a}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the London Mathematical Society}
+      \field{number}{1}
+      \field{title}{On the stability, or instability, of certain fluid motions}
+      \field{volume}{1}
+      \field{year}{1879}
+      \field{pages}{57\bibrangedash 72}
+      \range{pages}{16}
+    \endentry
+    \entry{rutland1971non}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6767da9a613533d46dd63a6c378a92a6}{%
+           family={Rutland},
+           familyi={R\bibinitperiod},
+           given={DF},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4e314c104bff5bbe92c5601a47018f67}{%
+           family={Jameson},
+           familyi={J\bibinitperiod},
+           given={GJ},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{0fef940aba78ad02ef7b366aebda1378}
+      \strng{fullhash}{0fef940aba78ad02ef7b366aebda1378}
+      \strng{bibnamehash}{0fef940aba78ad02ef7b366aebda1378}
+      \strng{authorbibnamehash}{0fef940aba78ad02ef7b366aebda1378}
+      \strng{authornamehash}{0fef940aba78ad02ef7b366aebda1378}
+      \strng{authorfullhash}{0fef940aba78ad02ef7b366aebda1378}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{number}{2}
+      \field{title}{A non-linear effect in the capillary instability of liquid jets}
+      \field{volume}{46}
+      \field{year}{1971}
+      \field{pages}{267\bibrangedash 271}
+      \range{pages}{5}
+    \endentry
+    \entry{nature}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4e75d39b7a00cc78c40dc33fb91d0ca6}{%
+           family={Best},
+           familyi={B\bibinitperiod},
+           given={ACi},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{4e75d39b7a00cc78c40dc33fb91d0ca6}
+      \strng{fullhash}{4e75d39b7a00cc78c40dc33fb91d0ca6}
+      \strng{bibnamehash}{4e75d39b7a00cc78c40dc33fb91d0ca6}
+      \strng{authorbibnamehash}{4e75d39b7a00cc78c40dc33fb91d0ca6}
+      \strng{authornamehash}{4e75d39b7a00cc78c40dc33fb91d0ca6}
+      \strng{authorfullhash}{4e75d39b7a00cc78c40dc33fb91d0ca6}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quarterly Journal of the Royal Meteorological Society}
+      \field{number}{333}
+      \field{title}{Drop-size distribution in cloud and fog}
+      \field{volume}{77}
+      \field{year}{1951}
+      \field{pages}{418\bibrangedash 426}
+      \range{pages}{9}
+    \endentry
+    \entry{industrial}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8bba0cf61886a213c55130ec5a4d0caa}{%
+           family={Babinsky},
+           familyi={B\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a322fcf80b967d0c367e9fa7a50a2eef}{%
+           family={Sojka},
+           familyi={S\bibinitperiod},
+           given={PE},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{33c00046128ba0692cdeb83b9d65f99f}
+      \strng{fullhash}{33c00046128ba0692cdeb83b9d65f99f}
+      \strng{bibnamehash}{33c00046128ba0692cdeb83b9d65f99f}
+      \strng{authorbibnamehash}{33c00046128ba0692cdeb83b9d65f99f}
+      \strng{authornamehash}{33c00046128ba0692cdeb83b9d65f99f}
+      \strng{authorfullhash}{33c00046128ba0692cdeb83b9d65f99f}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress in energy and combustion science}
+      \field{number}{4}
+      \field{title}{Modeling drop size distributions}
+      \field{volume}{28}
+      \field{year}{2002}
+      \field{pages}{303\bibrangedash 329}
+      \range{pages}{27}
+    \endentry
     \entry{vill_1}{article}{}
       \name{author}{1}{}{%
         {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
@@ -1723,40 +1909,6 @@
       \field{year}{2004}
       \field{pages}{73}
       \range{pages}{1}
-    \endentry
-    \entry{vill_3}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d3bc0f56fc6f3b9e64aae8e5ab4555b0}{%
-           family={Marmottant},
-           familyi={M\bibinitperiod},
-           given={Philippe},
-           giveni={P\bibinitperiod}}}%
-        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
-           family={Villermaux},
-           familyi={V\bibinitperiod},
-           given={Emmanuel},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Institute of Physics}%
-      }
-      \strng{namehash}{50eda88669c28ae91e47af1eced7b8ab}
-      \strng{fullhash}{50eda88669c28ae91e47af1eced7b8ab}
-      \strng{bibnamehash}{50eda88669c28ae91e47af1eced7b8ab}
-      \strng{authorbibnamehash}{50eda88669c28ae91e47af1eced7b8ab}
-      \strng{authornamehash}{50eda88669c28ae91e47af1eced7b8ab}
-      \strng{authorfullhash}{50eda88669c28ae91e47af1eced7b8ab}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physics of fluids}
-      \field{number}{8}
-      \field{title}{Fragmentation of stretched liquid ligaments}
-      \field{volume}{16}
-      \field{year}{2004}
-      \field{pages}{2732\bibrangedash 2741}
-      \range{pages}{10}
     \endentry
     \entry{vill_5}{article}{}
       \name{author}{2}{}{%
