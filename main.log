@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  7 JUL 2020 16:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  7 JUL 2020 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7026,7 +7026,15 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 _sheet_hole.png>] (./main.mw)
 \openout5 = `main.mw'.
 
+\openout5 = `main.mw'.
 
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+) (./chapters/dropstat.tex
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
  []
@@ -7046,16 +7054,6 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [64] (./main.mw)
 \openout5 = `main.mw'.
 
-) (./chapters/dropstat.tex
-Overfull \hbox (156.52655pt too wide) has occurred while \output is active
-[][][] 
- []
-
-\openout5 = `main.mw'.
-
-[65] (./main.mw)
-\openout5 = `main.mw'.
-
 
 chapter 8.
 
@@ -7063,14 +7061,14 @@ Overfull \hbox (163.88783pt too wide) in paragraph at lines 2--2
 [][]
  []
 
-Package marginnote Info: Margin note 80.1 is on absolute page 80
+Package marginnote Info: Margin note 79.1 is on absolute page 79
 (marginnote)              on input line 2.
 Package marginnote Info: right page because not two side mode on input line 2.
 Package marginnote Info: xpos seems to be 70.56284pt,
 (marginnote)             \marginnoterightadjust ignored on input line 2.
 \openout5 = `main.mw'.
 
-[66
+[65
 
 
 ] (./main.mw)
@@ -7100,7 +7098,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[67] (./main.mw)
+[66] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -7142,7 +7140,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 part without number
 \openout5 = `main.mw'.
 
-[68
+[67
 
 
 
@@ -7156,7 +7154,7 @@ Overfull \hbox (4.58882pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[69] (./main.mw)
+[68] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -7198,7 +7196,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 part without number
 \openout5 = `main.mw'.
 
-[70
+[69
 
 
 
@@ -7260,7 +7258,7 @@ Overfull \hbox (163.88783pt too wide) in paragraph at lines 3--3
 
 \openout5 = `main.mw'.
 
-[71
+[70
 
 
 
@@ -7281,7 +7279,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[72] (./main.mw)
+[71] (./main.mw)
 \openout5 = `main.mw'.
 
 )
@@ -7291,7 +7289,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[73] (./main.mw)
+[72] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -7333,7 +7331,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 chapter without number
 \openout5 = `main.mw'.
 
-[74
+[73
 
 
 
@@ -7344,18 +7342,18 @@ chapter without number
 
 \openout5 = `main.mw'.
 
+ [74] (./main.mw)
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
  [75] (./main.mw)
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
- [76] (./main.mw)
 \openout5 = `main.mw'.
 
  (./main.nls
 \openout5 = `main.mw'.
 
- [77] (./main.mw)
+ [76] (./main.mw)
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -7679,7 +7677,7 @@ LaTeX Font Info:    Font shape `T1/zpllf/m/it' will be
 (./main.gls)
 \openout5 = `main.mw'.
 
- [78
+ [77
 
 
 ] (./main.mw)
@@ -7693,94 +7691,6 @@ runsystem(makeindex main.idx)...executed safely (allowed).
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
  (./main.aux
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -9004,8 +8914,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  59007 strings out of 494847
- 1097367 string characters out of 6179080
- 1956722 words of memory out of 5000000
+ 1097380 string characters out of 6179080
+ 1956951 words of memory out of 5000000
  60321 multiletter control sequences out of 15000+600000
  720460 words of font info for 370 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -9035,10 +8945,10 @@ c/newpx/zplbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zplr.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (92 pages, 5102836 bytes).
+Output written on main.pdf (91 pages, 5099611 bytes).
 PDF statistics:
- 2247 PDF objects out of 2487 (max. 8388607)
- 2014 compressed objects within 21 object streams
- 511 named destinations out of 1000 (max. 500000)
+ 2250 PDF objects out of 2487 (max. 8388607)
+ 2018 compressed objects within 21 object streams
+ 513 named destinations out of 1000 (max. 500000)
  42045 words of extra memory for PDF output out of 42996 (max. 10000000)
 

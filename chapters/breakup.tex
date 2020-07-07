@@ -189,51 +189,62 @@ liquid rearrangements, as well as the coalescence dynamics following the ligamen
 
 %---------------------------------------------------------------
 \section{Numerical Setup}
-We perform direct numerical simulations of the two-phase 
-Navier-Stokes equations under the incompressible framework. 
-Material properties correspond to that of air-water systems at 20 degrees Celsius. 
+Our numerical experiments entail direct numerical simulations of the two-phase
+Navier-Stokes equations, employing the one-fluid model which  
+solves only a single set of governing equations throughout the whole domain,
+where the domains are composed of regions of variable density and viscosity. 
+In order to reproduce the free-surface dynamics, a Volume-of-Fluid 
+\sidenote{
+A more detailed evaluation of the comparitive advantages of different  
+interfacial tracking approaches (e.g. VOF, level set, phase field etc) 
+can be found in the comprehensive review by Scardovelli and Zaleski 
+\cite{zaleskiannual}, or in a more recent exposition by  
+Mirjalili et al. \cite{mirjalili2017interface} on the same topic.
+}
+(VOF) approach is used to capture the interface, the explicit location 
+of which marks the separation between the two fluids.
+The immiscible nature of the flows under consideration translates to the 
+absence of mass tranfer across the interface, thereby rendering the 
+velocity field continuous across the interface at the incompressible limit. 
+The study is primarily focused on isothermal air-water systems, with 
+the material properties corresponding to that at 20 degrees Celcius. 
+
+
+\paragraph{Platform : Basilisk}
+
+
+\subsection*{Computational Schematic}
 Simulations are carried out in the axi-symmetric framework, 
 therefore excluding the existence of azimuthal modes with 
 respect to the central axis of the ligament. 
 
-\paragraph{Platform : Basilisk}
-\blindtext
+Material properties correspond to that of air-water systems at 20 degrees Celsius. 
 
-\paragraph{Computational Schematic}
-\blindtext
+\subsection*{Random Surface Generation}
 
-\paragraph{Random Surface Generation}
-\blindtext
+\subsection*{Adimensional Formulation}
 
-\paragraph{Parameterization}
-\blindtext
-
-\paragraph{Quantization of Waves}
-\blindtext
+\subsubsection*{Quantization of Waves}
 
 %---------------------------------------------------------------
 
 \section{Impact of Initial Conditions}
 
-\paragraph{3D vs. 2D Simulations}
-\blindtext
+\subsection*{Numerical Parameters}
 
-\paragraph{Effect of Spatial Resolution}
-\blindtext
+\subsubsection*{2D vs. 3D}
 
-\paragraph{Effect of Droplet Removal}
-\blindtext
+\subsubsection*{Spatial Resolution}
 
-\paragraph{Effect of Corrugation Amplitude}
-\blindtext
-
-\paragraph{Effect of Ohnesorge Number}
-\blindtext
-
-\paragraph{Effect of Cut-Off Wavenumber}
-\blindtext
-
-\paragraph{Effect of Aspect Ratio}
-\blindtext
+\subsubsection*{Droplet Removal}
 
 
+\subsection*{Physical Parameters}
+
+\subsubsection*{Corrugation Amplitude}
+
+\subsubsection*{Ohnesorge Number}
+
+\subsubsection*{Cut-Off Frequency}
+
+\subsubsection*{Aspect-Ratio}
