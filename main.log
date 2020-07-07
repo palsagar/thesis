@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  6 JUL 2020 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  7 JUL 2020 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4493,13 +4493,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--149
 
 \openout5 = `main.mw'.
 
-<plots/methodology/vof_basic.png, id=700, 409.53pt x 393.47pt>
+<plots/methodology/vof_basic.png, id=710, 409.53pt x 393.47pt>
 File: plots/methodology/vof_basic.png Graphic file (type png)
 <use plots/methodology/vof_basic.png>
 Package pdftex.def Info: plots/methodology/vof_basic.png  used on input line 15
 8.
 (pdftex.def)             Requested size: 152.2236pt x 146.25404pt.
-<plots/methodology/vof_plic.png, id=701, 370.38374pt x 394.47375pt>
+<plots/methodology/vof_plic.png, id=711, 370.38374pt x 394.47375pt>
 File: plots/methodology/vof_plic.png Graphic file (type png)
 <use plots/methodology/vof_plic.png>
 Package pdftex.def Info: plots/methodology/vof_plic.png  used on input line 160
@@ -4573,7 +4573,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-<plots/methodology/ciam.png, id=740, 890.32625pt x 397.485pt>
+<plots/methodology/ciam.png, id=750, 890.32625pt x 397.485pt>
 File: plots/methodology/ciam.png Graphic file (type png)
 <use plots/methodology/ciam.png>
 Package pdftex.def Info: plots/methodology/ciam.png  used on input line 259.
@@ -4600,7 +4600,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-<plots/methodology/wy.png, id=759, 256.0767pt x 145.9854pt>
+<plots/methodology/wy.png, id=769, 256.0767pt x 145.9854pt>
 File: plots/methodology/wy.png Graphic file (type png)
 <use plots/methodology/wy.png>
 Package pdftex.def Info: plots/methodology/wy.png  used on input line 303.
@@ -4839,7 +4839,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 ] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/raindrop/setup.png, id=863, 285.10515pt x 325.215pt>
+<plots/raindrop/setup.png, id=874, 285.10515pt x 325.215pt>
 File: plots/raindrop/setup.png Graphic file (type png)
 <use plots/raindrop/setup.png>
 Package pdftex.def Info: plots/raindrop/setup.png  used on input line 91.
@@ -4858,13 +4858,13 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-<plots/raindrop/pressure_compare.png, id=880, 1027.84pt x 891.33pt>
+<plots/raindrop/pressure_compare.png, id=890, 1027.84pt x 891.33pt>
 File: plots/raindrop/pressure_compare.png Graphic file (type png)
 <use plots/raindrop/pressure_compare.png>
 Package pdftex.def Info: plots/raindrop/pressure_compare.png  used on input lin
 e 172.
 (pdftex.def)             Requested size: 243.54993pt x 211.20345pt.
-<plots/raindrop/nonmc_16ppd_pressure.png, id=881, 1027.84pt x 891.33pt>
+<plots/raindrop/nonmc_16ppd_pressure.png, id=891, 1027.84pt x 891.33pt>
 File: plots/raindrop/nonmc_16ppd_pressure.png Graphic file (type png)
 <use plots/raindrop/nonmc_16ppd_pressure.png>
 Package pdftex.def Info: plots/raindrop/nonmc_16ppd_pressure.png  used on input
@@ -4875,13 +4875,13 @@ Overfull \hbox (5.35889pt too wide) in paragraph at lines 170--178
  [] 
  []
 
-<plots/raindrop/ke_compare.png, id=882, 578.16pt x 433.62pt>
+<plots/raindrop/ke_compare.png, id=892, 578.16pt x 433.62pt>
 File: plots/raindrop/ke_compare.png Graphic file (type png)
 <use plots/raindrop/ke_compare.png>
 Package pdftex.def Info: plots/raindrop/ke_compare.png  used on input line 195.
 
 (pdftex.def)             Requested size: 243.54895pt x 182.66171pt.
-<plots/raindrop/mc_16ppd_pressure.png, id=883, 1027.84pt x 891.33pt>
+<plots/raindrop/mc_16ppd_pressure.png, id=893, 1027.84pt x 891.33pt>
 File: plots/raindrop/mc_16ppd_pressure.png Graphic file (type png)
 <use plots/raindrop/mc_16ppd_pressure.png>
 Package pdftex.def Info: plots/raindrop/mc_16ppd_pressure.png  used on input li
@@ -4892,13 +4892,13 @@ Overfull \hbox (5.35791pt too wide) in paragraph at lines 193--201
  [] 
  []
 
-<plots/raindrop/mc_vorticity_zoom.png, id=884, 1027.84pt x 891.33pt>
+<plots/raindrop/mc_vorticity_zoom.png, id=894, 1027.84pt x 891.33pt>
 File: plots/raindrop/mc_vorticity_zoom.png Graphic file (type png)
 <use plots/raindrop/mc_vorticity_zoom.png>
 Package pdftex.def Info: plots/raindrop/mc_vorticity_zoom.png  used on input li
 ne 217.
 (pdftex.def)             Requested size: 243.54993pt x 211.20345pt.
-<plots/raindrop/mc_vorticity.png, id=885, 1027.84pt x 891.33pt>
+<plots/raindrop/mc_vorticity.png, id=895, 1027.84pt x 891.33pt>
 File: plots/raindrop/mc_vorticity.png Graphic file (type png)
 <use plots/raindrop/mc_vorticity.png>
 Package pdftex.def Info: plots/raindrop/mc_vorticity.png  used on input line 21
@@ -4909,7 +4909,7 @@ Overfull \hbox (5.35889pt too wide) in paragraph at lines 215--223
  [] 
  []
 
-<plots/raindrop/raindrop_explode.png, id=887, 304.9794pt x 147.1899pt>
+<plots/raindrop/raindrop_explode.png, id=897, 304.9794pt x 147.1899pt>
 File: plots/raindrop/raindrop_explode.png Graphic file (type png)
 <use plots/raindrop/raindrop_explode.png>
 Package pdftex.def Info: plots/raindrop/raindrop_explode.png  used on input lin
@@ -4952,7 +4952,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [18 <./plots/raindrop/raindrop_explode.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/raindrop/combined_failures_raindrop.png, id=913, 284.5029pt x 698.3691pt
+<plots/raindrop/combined_failures_raindrop.png, id=923, 284.5029pt x 698.3691pt
 >
 File: plots/raindrop/combined_failures_raindrop.png Graphic file (type png)
 <use plots/raindrop/combined_failures_raindrop.png>
@@ -4967,38 +4967,38 @@ Package pdftex.def Info: plots/raindrop/combined_failures_raindrop.png  used on
 
 \openout5 = `main.mw'.
 
-<plots/raindrop/multiplot_raindrop.png, id=917, 650.43pt x 505.89pt>
+<plots/raindrop/multiplot_raindrop.png, id=927, 650.43pt x 505.89pt>
 File: plots/raindrop/multiplot_raindrop.png Graphic file (type png)
 <use plots/raindrop/multiplot_raindrop.png>
 Package pdftex.def Info: plots/raindrop/multiplot_raindrop.png  used on input l
 ine 370.
 (pdftex.def)             Requested size: 456.67743pt x 355.19354pt.
-<plots/raindrop/dropl_velocity_accel_ppd.png, id=919, 722.7pt x 578.16pt>
+<plots/raindrop/dropl_velocity_accel_ppd.png, id=929, 722.7pt x 578.16pt>
 File: plots/raindrop/dropl_velocity_accel_ppd.png Graphic file (type png)
 <use plots/raindrop/dropl_velocity_accel_ppd.png>
 Package pdftex.def Info: plots/raindrop/dropl_velocity_accel_ppd.png  used on i
 nput line 399.
 (pdftex.def)             Requested size: 304.4472pt x 243.55777pt.
-<plots/raindrop/raindrop_mass_conv_16ppd.png, id=920, 650.43pt x 505.89pt>
+<plots/raindrop/raindrop_mass_conv_16ppd.png, id=930, 650.43pt x 505.89pt>
 File: plots/raindrop/raindrop_mass_conv_16ppd.png Graphic file (type png)
 <use plots/raindrop/raindrop_mass_conv_16ppd.png>
 Package pdftex.def Info: plots/raindrop/raindrop_mass_conv_16ppd.png  used on i
 nput line 419.
 (pdftex.def)             Requested size: 213.10422pt x 165.74773pt.
-<plots/raindrop/raindrop_mass_conv_clipping.png, id=921, 650.43pt x 505.89pt>
+<plots/raindrop/raindrop_mass_conv_clipping.png, id=931, 650.43pt x 505.89pt>
 File: plots/raindrop/raindrop_mass_conv_clipping.png Graphic file (type png)
 <use plots/raindrop/raindrop_mass_conv_clipping.png>
 Package pdftex.def Info: plots/raindrop/raindrop_mass_conv_clipping.png  used o
 n input line 421.
 (pdftex.def)             Requested size: 213.10422pt x 165.74773pt.
-<plots/raindrop/raindrop_mass_conv_resolution.png, id=922, 578.16pt x 433.62pt>
+<plots/raindrop/raindrop_mass_conv_resolution.png, id=932, 578.16pt x 433.62pt>
 
 File: plots/raindrop/raindrop_mass_conv_resolution.png Graphic file (type png)
 <use plots/raindrop/raindrop_mass_conv_resolution.png>
 Package pdftex.def Info: plots/raindrop/raindrop_mass_conv_resolution.png  used
  on input line 425.
 (pdftex.def)             Requested size: 213.10422pt x 159.82817pt.
-<plots/raindrop/acc_conv.png, id=923, 578.16pt x 433.62pt>
+<plots/raindrop/acc_conv.png, id=933, 578.16pt x 433.62pt>
 File: plots/raindrop/acc_conv.png Graphic file (type png)
 <use plots/raindrop/acc_conv.png>
 Package pdftex.def Info: plots/raindrop/acc_conv.png  used on input line 427.
@@ -5720,7 +5720,7 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 
 pdfTeX warning: pdflatex (file ./plots/stag-grid.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<plots/stag-grid.pdf, id=1131, 189.70876pt x 157.58875pt>
+<plots/stag-grid.pdf, id=1141, 189.70876pt x 157.58875pt>
 File: plots/stag-grid.pdf Graphic file (type pdf)
 <use plots/stag-grid.pdf>
 Package pdftex.def Info: plots/stag-grid.pdf  used on input line 775.
@@ -5741,7 +5741,7 @@ Package marginnote Info: right page because not two side mode on input line 803
 .
 Package marginnote Info: xpos seems to be 70.56284pt,
 (marginnote)             \marginnoterightadjust ignored on input line 803.
-<plots/advect-ed-ing.pdf, id=1145, 812.03375pt x 241.90375pt>
+<plots/advect-ed-ing.pdf, id=1155, 812.03375pt x 241.90375pt>
 File: plots/advect-ed-ing.pdf Graphic file (type pdf)
 <use plots/advect-ed-ing.pdf>
 Package pdftex.def Info: plots/advect-ed-ing.pdf  used on input line 811.
@@ -5843,7 +5843,7 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 (marginnote)             \marginnoterightadjust ignored on input line 958.
 LaTeX Font Info:    Font shape `T1/zpllf/m/n' will be
 (Font)              scaled to size 6.01399pt on input line 958.
-<plots/shifted_fractions.pdf, id=1198, 320.93813pt x 280.82869pt>
+<plots/shifted_fractions.pdf, id=1208, 320.93813pt x 280.82869pt>
 File: plots/shifted_fractions.pdf Graphic file (type pdf)
 <use plots/shifted_fractions.pdf>
 Package pdftex.def Info: plots/shifted_fractions.pdf  used on input line 982.
@@ -5872,7 +5872,7 @@ Package marginnote Info: right page because not two side mode on input line 103
 6.
 Package marginnote Info: xpos seems to be 371.08592pt,
 (marginnote)             \marginnoterightadjust ignored on input line 1036.
-<plots/momcons_diagram_daniel.pdf, id=1223, 978.01549pt x 533.7617pt>
+<plots/momcons_diagram_daniel.pdf, id=1234, 978.01549pt x 533.7617pt>
 File: plots/momcons_diagram_daniel.pdf Graphic file (type pdf)
 <use plots/momcons_diagram_daniel.pdf>
 Package pdftex.def Info: plots/momcons_diagram_daniel.pdf  used on input line 1
@@ -5906,7 +5906,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-<plots/sub_grid.pdf, id=1252, 123.59715pt x 53.34985pt>
+<plots/sub_grid.pdf, id=1262, 123.59715pt x 53.34985pt>
 File: plots/sub_grid.pdf Graphic file (type pdf)
 <use plots/sub_grid.pdf>
 Package pdftex.def Info: plots/sub_grid.pdf  used on input line 1174.
@@ -5951,7 +5951,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [38 <./plots/sub_grid.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/subgrid_restriction.pdf, id=1282, 329.98581pt x 375.27504pt>
+<plots/subgrid_restriction.pdf, id=1292, 329.98581pt x 375.27504pt>
 File: plots/subgrid_restriction.pdf Graphic file (type pdf)
 <use plots/subgrid_restriction.pdf>
 Package pdftex.def Info: plots/subgrid_restriction.pdf  used on input line 1280
@@ -5977,7 +5977,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [39 <./plots/subgrid_restriction.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/momcons_sagar.png, id=1315, 845.7999pt x 533.8344pt>
+<plots/momcons_sagar.png, id=1325, 845.7999pt x 533.8344pt>
 File: plots/momcons_sagar.png Graphic file (type png)
 <use plots/momcons_sagar.png>
 Package pdftex.def Info: plots/momcons_sagar.png  used on input line 1361.
@@ -6129,7 +6129,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--20
 ] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/static_drop/config.png, id=1371, 244.2726pt x 280.8894pt>
+<plots/static_drop/config.png, id=1381, 244.2726pt x 280.8894pt>
 File: plots/static_drop/config.png Graphic file (type png)
 <use plots/static_drop/config.png>
 Package pdftex.def Info: plots/static_drop/config.png  used on input line 28.
@@ -6175,7 +6175,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [43 <./plots/static_drop/config.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/static_drop/decay_nonmc.png, id=1387, 578.16pt x 578.16pt>
+<plots/static_drop/decay_nonmc.png, id=1397, 578.16pt x 578.16pt>
 File: plots/static_drop/decay_nonmc.png Graphic file (type png)
 <use plots/static_drop/decay_nonmc.png>
 Package pdftex.def Info: plots/static_drop/decay_nonmc.png  used on input line 
@@ -6191,13 +6191,13 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [44] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/static_drop/decay_daniel.png, id=1397, 578.16pt x 578.16pt>
+<plots/static_drop/decay_daniel.png, id=1407, 578.16pt x 578.16pt>
 File: plots/static_drop/decay_daniel.png Graphic file (type png)
 <use plots/static_drop/decay_daniel.png>
 Package pdftex.def Info: plots/static_drop/decay_daniel.png  used on input line
  76.
 (pdftex.def)             Requested size: 304.43839pt x 304.43839pt.
-<plots/static_drop/decay_sagar.png, id=1398, 578.16pt x 578.16pt>
+<plots/static_drop/decay_sagar.png, id=1408, 578.16pt x 578.16pt>
 File: plots/static_drop/decay_sagar.png Graphic file (type png)
 <use plots/static_drop/decay_sagar.png>
 Package pdftex.def Info: plots/static_drop/decay_sagar.png  used on input line 
@@ -6232,7 +6232,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [46 <./plots/static_drop/decay_sagar.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/static_drop/static_drop_convergence.png, id=1415, 578.16pt x 505.89pt>
+<plots/static_drop/static_drop_convergence.png, id=1425, 578.16pt x 505.89pt>
 File: plots/static_drop/static_drop_convergence.png Graphic file (type png)
 <use plots/static_drop/static_drop_convergence.png>
 Package pdftex.def Info: plots/static_drop/static_drop_convergence.png  used on
@@ -6273,7 +6273,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--115
 
  []
 
-<plots/droplet_advect/config.png, id=1420, 244.2726pt x 280.8894pt>
+<plots/droplet_advect/config.png, id=1430, 244.2726pt x 280.8894pt>
 File: plots/droplet_advect/config.png Graphic file (type png)
 <use plots/droplet_advect/config.png>
 Package pdftex.def Info: plots/droplet_advect/config.png  used on input line 12
@@ -6300,7 +6300,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-<plots/droplet_advect/evo_nonmc.png, id=1434, 578.16pt x 650.43pt>
+<plots/droplet_advect/evo_nonmc.png, id=1444, 578.16pt x 650.43pt>
 File: plots/droplet_advect/evo_nonmc.png Graphic file (type png)
 <use plots/droplet_advect/evo_nonmc.png>
 Package pdftex.def Info: plots/droplet_advect/evo_nonmc.png  used on input line
@@ -6316,7 +6316,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [48 <./plots/droplet_advect/config.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/droplet_advect/evo_daniel.png, id=1443, 578.16pt x 650.43pt>
+<plots/droplet_advect/evo_daniel.png, id=1453, 578.16pt x 650.43pt>
 File: plots/droplet_advect/evo_daniel.png Graphic file (type png)
 <use plots/droplet_advect/evo_daniel.png>
 Package pdftex.def Info: plots/droplet_advect/evo_daniel.png  used on input lin
@@ -6326,7 +6326,7 @@ e 153.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<plots/droplet_advect/evo_sagar.png, id=1445, 578.16pt x 650.43pt>
+<plots/droplet_advect/evo_sagar.png, id=1455, 578.16pt x 650.43pt>
 File: plots/droplet_advect/evo_sagar.png Graphic file (type png)
 <use plots/droplet_advect/evo_sagar.png>
 Package pdftex.def Info: plots/droplet_advect/evo_sagar.png  used on input line
@@ -6349,7 +6349,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-<plots/droplet_advect/convergence_all.png, id=1462, 578.16pt x 505.89pt>
+<plots/droplet_advect/convergence_all.png, id=1473, 578.16pt x 505.89pt>
 File: plots/droplet_advect/convergence_all.png Graphic file (type png)
 <use plots/droplet_advect/convergence_all.png>
 Package pdftex.def Info: plots/droplet_advect/convergence_all.png  used on inpu
@@ -6392,13 +6392,13 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 all.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/droplet_advect/webers.pdf, id=1483, 628.74902pt x 529.7391pt>
+<plots/droplet_advect/webers.pdf, id=1493, 628.74902pt x 529.7391pt>
 File: plots/droplet_advect/webers.pdf Graphic file (type pdf)
 <use plots/droplet_advect/webers.pdf>
 Package pdftex.def Info: plots/droplet_advect/webers.pdf  used on input line 18
 6.
 (pdftex.def)             Requested size: 243.56097pt x 205.2071pt.
-<plots/droplet_advect/laplaces.pdf, id=1484, 693.06927pt x 581.77347pt>
+<plots/droplet_advect/laplaces.pdf, id=1494, 693.06927pt x 581.77347pt>
 File: plots/droplet_advect/laplaces.pdf Graphic file (type pdf)
 <use plots/droplet_advect/laplaces.pdf>
 Package pdftex.def Info: plots/droplet_advect/laplaces.pdf  used on input line 
@@ -6435,7 +6435,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--203
 
  []
 
-<plots/capwave/capwave_conf.png, id=1487, 258.9675pt x 347.8596pt>
+<plots/capwave/capwave_conf.png, id=1497, 258.9675pt x 347.8596pt>
 File: plots/capwave/capwave_conf.png Graphic file (type png)
 <use plots/capwave/capwave_conf.png>
 Package pdftex.def Info: plots/capwave/capwave_conf.png  used on input line 209
@@ -6602,7 +6602,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-<plots/capwave/compare_nonmc.png, id=1567, 578.16pt x 650.43pt>
+<plots/capwave/compare_nonmc.png, id=1577, 578.16pt x 650.43pt>
 File: plots/capwave/compare_nonmc.png Graphic file (type png)
 <use plots/capwave/compare_nonmc.png>
 Package pdftex.def Info: plots/capwave/compare_nonmc.png  used on input line 24
@@ -6618,13 +6618,13 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [54 <./plots/capwave/compare_nonmc.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/capwave/compare_daniel.png, id=1579, 578.16pt x 650.43pt>
+<plots/capwave/compare_daniel.png, id=1590, 578.16pt x 650.43pt>
 File: plots/capwave/compare_daniel.png Graphic file (type png)
 <use plots/capwave/compare_daniel.png>
 Package pdftex.def Info: plots/capwave/compare_daniel.png  used on input line 2
 54.
 (pdftex.def)             Requested size: 243.54895pt x 273.99255pt.
-<plots/capwave/compare_sagar.png, id=1580, 578.16pt x 650.43pt>
+<plots/capwave/compare_sagar.png, id=1591, 578.16pt x 650.43pt>
 File: plots/capwave/compare_sagar.png Graphic file (type png)
 <use plots/capwave/compare_sagar.png>
 Package pdftex.def Info: plots/capwave/compare_sagar.png  used on input line 26
@@ -6645,12 +6645,12 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/capwave/conv_r1.png, id=1588, 578.16pt x 505.89pt>
+<plots/capwave/conv_r1.png, id=1599, 578.16pt x 505.89pt>
 File: plots/capwave/conv_r1.png Graphic file (type png)
 <use plots/capwave/conv_r1.png>
 Package pdftex.def Info: plots/capwave/conv_r1.png  used on input line 274.
 (pdftex.def)             Requested size: 243.54895pt x 213.10532pt.
-<plots/capwave/conv_r10.png, id=1589, 578.16pt x 505.89pt>
+<plots/capwave/conv_r10.png, id=1600, 578.16pt x 505.89pt>
 File: plots/capwave/conv_r10.png Graphic file (type png)
 <use plots/capwave/conv_r10.png>
 Package pdftex.def Info: plots/capwave/conv_r10.png  used on input line 282.
@@ -6660,7 +6660,7 @@ Package pdftex.def Info: plots/capwave/conv_r10.png  used on input line 282.
 LaTeX Warning: Command \L invalid in math mode on input line 283.
 
 Missing character: There is no Š in font zpl-Regular-tlf-ot1!
-<plots/capwave/conv_aw.png, id=1590, 578.16pt x 505.89pt>
+<plots/capwave/conv_aw.png, id=1601, 578.16pt x 505.89pt>
 File: plots/capwave/conv_aw.png Graphic file (type png)
 <use plots/capwave/conv_aw.png>
 Package pdftex.def Info: plots/capwave/conv_aw.png  used on input line 290.
@@ -6818,7 +6818,7 @@ Package marginnote Info: Margin note 75.1 is on absolute page 75
 Package marginnote Info: right page because not two side mode on input line 3.
 Package marginnote Info: xpos seems to be 70.56284pt,
 (marginnote)             \marginnoterightadjust ignored on input line 3.
-<plots/ligament_breakup/lig_mar_vill_pof04.png, id=1648, 960.58875pt x 694.595p
+<plots/ligament_breakup/lig_mar_vill_pof04.png, id=1658, 960.58875pt x 694.595p
 t>
 File: plots/ligament_breakup/lig_mar_vill_pof04.png Graphic file (type png)
 <use plots/ligament_breakup/lig_mar_vill_pof04.png>
@@ -6854,11 +6854,11 @@ Package pdftex.def Info: plots/ligament_breakup/lig_mar_vill_pof04.png  used on
 \openout5 = `main.mw'.
 
 Package marginnote Info: Margin note 75.2 is on absolute page 76
-(marginnote)              on input line 78.
-Package marginnote Info: right page because not two side mode on input line 78.
+(marginnote)              on input line 79.
+Package marginnote Info: right page because not two side mode on input line 79.
 
 Package marginnote Info: xpos seems to be 178.3977pt,
-(marginnote)             \marginnoterightadjust ignored on input line 78.
+(marginnote)             \marginnoterightadjust ignored on input line 79.
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -6876,7 +6876,7 @@ Package marginnote Info: xpos seems to be 178.3977pt,
 \openout5 = `main.mw'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
 
  []
 
@@ -6889,11 +6889,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \openout5 = `main.mw'.
 
 Package marginnote Info: Margin note 75.3 is on absolute page 76
-(marginnote)              on input line 81.
-Package marginnote Info: right page because not two side mode on input line 81.
+(marginnote)              on input line 82.
+Package marginnote Info: right page because not two side mode on input line 82.
 
 Package marginnote Info: xpos seems to be 326.51782pt,
-(marginnote)             \marginnoterightadjust ignored on input line 81.
+(marginnote)             \marginnoterightadjust ignored on input line 82.
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -6927,16 +6927,16 @@ Package marginnote Info: xpos seems to be 326.51782pt,
 \openout5 = `main.mw'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
 
  []
 
 Package marginnote Info: Margin note 75.4 is on absolute page 76
-(marginnote)              on input line 93.
-Package marginnote Info: right page because not two side mode on input line 93.
+(marginnote)              on input line 94.
+Package marginnote Info: right page because not two side mode on input line 94.
 
 Package marginnote Info: xpos seems to be 70.56284pt,
-(marginnote)             \marginnoterightadjust ignored on input line 93.
+(marginnote)             \marginnoterightadjust ignored on input line 94.
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -6973,12 +6973,44 @@ Package marginnote Info: xpos seems to be 70.56284pt,
  <./plots/ligament_breakup/lig_mar_vill_pof04.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/ligament_breakup/lig_protoblobs.png, id=1680, 593.21625pt x 116.435pt>
+<plots/ligament_breakup/lig_protoblobs.png, id=1689, 593.21625pt x 116.435pt>
 File: plots/ligament_breakup/lig_protoblobs.png Graphic file (type png)
 <use plots/ligament_breakup/lig_protoblobs.png>
 Package pdftex.def Info: plots/ligament_breakup/lig_protoblobs.png  used on inp
-ut line 115.
+ut line 105.
 (pdftex.def)             Requested size: 140.5554pt x 27.58786pt.
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+<plots/ligament_breakup/lig_sheet_hole.png, id=1692, 283.0575pt x 440.64626pt>
+File: plots/ligament_breakup/lig_sheet_hole.png Graphic file (type png)
+<use plots/ligament_breakup/lig_sheet_hole.png>
+Package pdftex.def Info: plots/ligament_breakup/lig_sheet_hole.png  used on inp
+ut line 129.
+(pdftex.def)             Requested size: 140.56091pt x 218.81647pt.
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 135--135
+[][][]\T1/zpllf/b/n/8 Figure 7.3[][]: []\T1/zpllf/m/n/8 (+20) Suc-ces-sive stag
+es in the
+ []
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -6990,7 +7022,8 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[62 <./plots/ligament_breakup/lig_protoblobs.png>] (./main.mw)
+[62 <./plots/ligament_breakup/lig_protoblobs.png> <./plots/ligament_breakup/lig
+_sheet_hole.png>] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -8936,6 +8969,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
 
 \openout5 = `main.mw'.
 
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 338.
@@ -8962,11 +9003,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58992 strings out of 494847
- 1096939 string characters out of 6179080
- 1955118 words of memory out of 5000000
- 60312 multiletter control sequences out of 15000+600000
- 720329 words of font info for 369 fonts, out of 8000000 for 9000
+ 59007 strings out of 494847
+ 1097367 string characters out of 6179080
+ 1956722 words of memory out of 5000000
+ 60321 multiletter control sequences out of 15000+600000
+ 720460 words of font info for 370 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  113i,20n,108p,10476b,3229s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texm
@@ -8994,10 +9035,10 @@ c/newpx/zplbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zplr.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/newpx/zplx-regular.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (92 pages, 5073756 bytes).
+Output written on main.pdf (92 pages, 5102836 bytes).
 PDF statistics:
- 2225 PDF objects out of 2487 (max. 8388607)
- 1994 compressed objects within 20 object streams
- 508 named destinations out of 1000 (max. 500000)
- 42040 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 2247 PDF objects out of 2487 (max. 8388607)
+ 2014 compressed objects within 21 object streams
+ 511 named destinations out of 1000 (max. 500000)
+ 42045 words of extra memory for PDF output out of 42996 (max. 10000000)
 

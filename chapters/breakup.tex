@@ -20,11 +20,12 @@ of the thread-like structure (Fig. \ref{lig_stretch} ).
 \begin{marginfigure}[3cm]
 \centering
 \includegraphics{plots/ligament_breakup/lig_mar_vill_pof04.png}
-\caption{Fragmentation of stretched liquid (Newtonian) ligaments, reproduced 
-	from Marmottant \& Villermaux \cite{vill_3}.
+\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed 
+	immediately after retraction of a capillary tube. 
+	Image reproduced from Marmottant \& Villermaux \cite{vill_3}.
        	The complex rearrangement of the liquid volumes 
-	inside the ligament results in its disintegration 
-	into droplet of various sizes. 
+	inside the ligament plays a key role in its subsequent 
+	disintegration into droplet of various sizes. 
 	}
 \label{lig_stretch}
 \end{marginfigure}
@@ -96,8 +97,20 @@ is $n$, which characterizes the corrugations in the initial
 geometrical shape of the ligament, defined as  
 
 \begin{align}
-	n \equiv \frac{1}{\left(\langle d^{2} \rangle - \langle d \rangle^{2} \right) / \langle d \rangle^{2}}
+	n \equiv \frac{1}{\left(\langle d^{2} \rangle - \langle d \rangle^{2} \right) / \langle d \rangle^{2}} \, ,  
 \end{align}
+
+\begin{marginfigure}
+\centering
+\includegraphics{plots/ligament_breakup/lig_protoblobs.png}
+\caption{Representation of the liquid volumes in an isolated ligament as `blobs'
+	of sizes $d$ matching the corresponding the local thicknesses, 
+	just before the destabilization into droplets. 
+	Image reproduced from Villermaux \cite{vill_1}.
+	}
+\label{blobs}
+\end{marginfigure}
+
 
 where the quantities in the brackets $\langle \quad \rangle$ represent the mean
 and the diameters $d_i$ correspond to that of the blobs as shown in Fig. \ref{blobs}.
@@ -110,35 +123,63 @@ As a corollary to this prediction, a broader distribution of drop sizes arise ou
 of the disintegration of strongly corrugated (rough) ligaments, whereas smoother 
 ligaments with uniform thickness lead to a narrower (monodisperse) distributions. 
 
+
 \begin{marginfigure}
 \centering
-\includegraphics{plots/ligament_breakup/lig_protoblobs.png}
-\caption{Representation of the liquid volumes in an isolated ligament as `blobs'
-	of sizes $d_0$ corresponding to the local thickness,
-	,reproduced from Villermaux \cite{vill_1}.
+\includegraphics{plots/ligament_breakup/lig_sheet_hole.png}
+\caption{Successive stages in the breakup of a ligament into drops. 
+	The system shown here is that of a perforated liquid sheet, 
+	where the growth of such perforations due to capillary retraction 
+	of the liquid rims lead to the formation of networks of connected ligaments. 
+	Image reproduced from Lhuissier and Villermaux \cite{sheet_hole}.
 	}
-\label{blobs}
+\label{lig_network}
 \end{marginfigure}
 
 
-
-
 % Difficulties associated 
+Over the last two decades, a handful of studies have been conducted 
+with the aim of carrying out detailed observations surrounding 
+the aforementioned ``coalescence cascade'', whereby the drops 
+constitutive of the ligament tend to coalesce and form larger drops
+as and when they detach from the initial thread-like structure.
+Most notable amongst those studies is the one by Marmottant and Villermaux \cite{vill_3},
+wherein they illustrate the successive stages of the disintegration of 
+liquid ligaments formed when capillary tubes are rapidly retracted from 
+the surface of a liquid pool (refer to Fig. \ref{lig_stretch}). 
+Another set of observations were presented by Lhuissier and Villermaux \cite{sheet_hole},
+where the disintegration phase sets in starting from a transient configuration
+of the ligaments arranged in a spider-web like network (Fig. \ref{lig_network}).  
+A more recent experiment is that of Keshavarz et al. \cite{mckinley},
+which is inspired by the capillary tube retractions of \cite{vill_3} 
+but directed towards the behaviour of non-Newtonian fluids.
+The fundamental limitation that is common to experiments cited above 
+is the inability to precisely control the initial conditions.
+In other words, generating ligaments conforming `\textit{exactly}'
+to a specified geometrical shape is practically (almost) impossible 
+due to the inherent difficulties associated with the control of free-surface flows.  
+In the absence of such precise control and reproducibility of the initial 
+ligament corrugations, one has to resort to a posteriori correlations between 
+the the width of the final drop size distributions and qualitative descriptions 
+of the initial surface profiles.
+A central theme of the current chapter is concerning the design and conception
+of `numerical' experiments that lend themselves to accurate and repeatable 
+specifications of the initial conditions of the ligaments in question.  
+An additional advantage offered by our high-fidelity numerical approach 
+is the access to a much wider range (compared to physical experiments) within the 
+space of all control parameters that influence the dispersion in the drop size distributions, 
+not to mention the higher levels of temporal resolution on offer 
+that enable better tracking of the non-linear dynamics near pinch-off
+\sidenote{The characteristic time-scale of the flow near the 
+vicinity of the breakup is given by $ t_{\sigma} \sim \left(\rho r^3 / \sigma \right)^{1/2} $, thus
+leading to faster flows and contraction of the time-scales as the local thickness ($r$) 
+decreases to zero. In our numerical methods, we can adaptively select the time
+interval over which the integration of the governing equations are carried out, to 
+accommodate such non-linearly accelerating flows.}. 
 
-
-
-%Due to the complex nature of such fragmentation processes, 
-%it has proven to be quite a difficult challenge for both 
-%experimental and numerical studies to establish the 
-%mechanistic link between the initial surface corrugations 
-%and the resulting drop size distributions.  
-%
-%
-%In the present study, we have developed a numerical experiment 
-%that grants us precise control over both quantitative and 
-%qualitative aspects of such random corrugations, and its subsequent 
-%influence on the resulting droplet sizes. 
-
+The combination of these two features enables us to quantitatively map the 
+influence that the degree of smoothness of the initial ligament has on the ensuing 
+liquid rearrangements, as well as the coalescence dynamics following the ligament. 
 
 
 \section{Breakup Regimes}
