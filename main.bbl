@@ -451,8 +451,8 @@
       \strng{authorbibnamehash}{5076e1b934a3a19846922c2e7a80fe7b}
       \strng{authornamehash}{5076e1b934a3a19846922c2e7a80fe7b}
       \strng{authorfullhash}{a16c39068a00d4428385afcbca91e270}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -477,8 +477,8 @@
       \strng{authorbibnamehash}{5f61775c2fbdd179d018bb797bd0ce1d}
       \strng{authornamehash}{5f61775c2fbdd179d018bb797bd0ce1d}
       \strng{authorfullhash}{5f61775c2fbdd179d018bb797bd0ce1d}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Comptes rendus de l'Acad{é}mie des sciences. S{é}rie II, M{é}canique, physique, chimie, astronomie}
@@ -636,8 +636,8 @@
       \strng{authorbibnamehash}{2fd91fff9fdf3ea062aceb9d97330f94}
       \strng{authornamehash}{2fd91fff9fdf3ea062aceb9d97330f94}
       \strng{authorfullhash}{2fd91fff9fdf3ea062aceb9d97330f94}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Carver, MB (1984)“Numerical Computation of Phase Separation in Two Fluid Flow,” ASME Journal of Fluids Engineering}
@@ -693,8 +693,8 @@
       \strng{authorbibnamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authornamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authorfullhash}{da4f5a8595565561cf6c514b5634ccc7}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -868,8 +868,8 @@
       \strng{authorbibnamehash}{93ecfaa5e2b90a3820387e76bebf52d9}
       \strng{authornamehash}{93ecfaa5e2b90a3820387e76bebf52d9}
       \strng{authorfullhash}{93ecfaa5e2b90a3820387e76bebf52d9}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Meteorology}
@@ -902,8 +902,8 @@
       \strng{authorbibnamehash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
       \strng{authornamehash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
       \strng{authorfullhash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1093,8 +1093,8 @@
       \strng{authorbibnamehash}{f0c6c18982abac8fe59a2d8de3392e3a}
       \strng{authornamehash}{f0c6c18982abac8fe59a2d8de3392e3a}
       \strng{authorfullhash}{f0c6c18982abac8fe59a2d8de3392e3a}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -2140,6 +2140,337 @@
       \field{year}{2013}
       \field{pages}{361}
       \range{pages}{1}
+    \endentry
+    \entry{agbag}{article}{}
+      \name{author}{9}{}{%
+        {{hash=1179fa54fdde996ed63894bbd16ebb1b}{%
+           family={Agbaglah},
+           familyi={A\bibinitperiod},
+           given={Gilou},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9b8b6eb05dd7ea63cc51c5b2f7a33d5d}{%
+           family={Delaux},
+           familyi={D\bibinitperiod},
+           given={S{é}bastien},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8b1ea46c19f9e8d728a6062d2779e425}{%
+           family={Fuster},
+           familyi={F\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=77664cbb435aa9141abfe96a12cb33d7}{%
+           family={Hoepffner},
+           familyi={H\bibinitperiod},
+           given={J{é}r{ô}me},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d90d2c0ead12d4fe8d3aa2bbe909c435}{%
+           family={Josserand},
+           familyi={J\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=da4f5a8595565561cf6c514b5634ccc7}{%
+           family={Popinet},
+           familyi={P\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+        {{hash=00411df5a537d3ed2953a0d3b8898c69}{%
+           family={Ray},
+           familyi={R\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
+           family={Scardovelli},
+           familyi={S\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{bf512a32574d8053128a099523fef638}
+      \strng{fullhash}{3ea2885ff842e75c2c7612d70efd4fcc}
+      \strng{bibnamehash}{bf512a32574d8053128a099523fef638}
+      \strng{authorbibnamehash}{bf512a32574d8053128a099523fef638}
+      \strng{authornamehash}{bf512a32574d8053128a099523fef638}
+      \strng{authorfullhash}{3ea2885ff842e75c2c7612d70efd4fcc}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Comptes Rendus Mecanique}
+      \field{number}{2-3}
+      \field{title}{Parallel simulation of multiphase flows using octree adaptivity and the volume-of-fluid method}
+      \field{volume}{339}
+      \field{year}{2011}
+      \field{pages}{194\bibrangedash 207}
+      \range{pages}{14}
+    \endentry
+    \entry{csf}{article}{}
+      \name{author}{3}{}{%
+        {{hash=232311a263b8f81ecd7769b2d58bdac8}{%
+           family={Brackbill},
+           familyi={B\bibinitperiod},
+           given={Jeremiah\bibnamedelima U},
+           giveni={J\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=af98f57c1d8bd71722c829d6cf1e1ec1}{%
+           family={Kothe},
+           familyi={K\bibinitperiod},
+           given={Douglas\bibnamedelima B},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=450741c01ebdd62e4f97ab6d478fc764}{%
+           family={Zemach},
+           familyi={Z\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \strng{fullhash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \strng{bibnamehash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \strng{authorbibnamehash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \strng{authornamehash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \strng{authorfullhash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of computational physics}
+      \field{number}{2}
+      \field{title}{A continuum method for modeling surface tension}
+      \field{volume}{100}
+      \field{year}{1992}
+      \field{pages}{335\bibrangedash 354}
+      \range{pages}{20}
+    \endentry
+    \entry{basilisk_1}{article}{}
+      \name{author}{3}{}{%
+        {{hash=35329540fb5431424f1af6d6a95d90aa}{%
+           family={Deike},
+           familyi={D\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+        {{hash=605bcfec4ba65c70aa20a43b0987e4be}{%
+           family={Popinet},
+           familyi={P\bibinitperiod},
+           given={Stephane},
+           giveni={S\bibinitperiod}}}%
+        {{hash=eae60827d5b8b0fae8badfec7b35d11a}{%
+           family={Melville},
+           familyi={M\bibinitperiod},
+           given={W.\bibnamedelimi Kendall},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{b7a5015779f5c96ccc6489b10103380b}
+      \strng{fullhash}{b7a5015779f5c96ccc6489b10103380b}
+      \strng{bibnamehash}{b7a5015779f5c96ccc6489b10103380b}
+      \strng{authorbibnamehash}{b7a5015779f5c96ccc6489b10103380b}
+      \strng{authornamehash}{b7a5015779f5c96ccc6489b10103380b}
+      \strng{authorfullhash}{b7a5015779f5c96ccc6489b10103380b}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Capillary effects on wave breaking}
+      \field{volume}{769}
+      \field{year}{2015}
+      \field{pages}{541\bibrangedash 569}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1017/jfm.2015.103
+      \endverb
+    \endentry
+    \entry{basilisk_3}{article}{}
+      \name{author}{3}{}{%
+        {{hash=35329540fb5431424f1af6d6a95d90aa}{%
+           family={Deike},
+           familyi={D\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+        {{hash=eae60827d5b8b0fae8badfec7b35d11a}{%
+           family={Melville},
+           familyi={M\bibinitperiod},
+           given={W.\bibnamedelimi Kendall},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=33dd5ed435ec6d727e06c27776df80c2}{%
+           family={Popinet},
+           familyi={P\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{eed2c34bf14a034d84b60f8279cb880b}
+      \strng{fullhash}{eed2c34bf14a034d84b60f8279cb880b}
+      \strng{bibnamehash}{eed2c34bf14a034d84b60f8279cb880b}
+      \strng{authorbibnamehash}{eed2c34bf14a034d84b60f8279cb880b}
+      \strng{authornamehash}{eed2c34bf14a034d84b60f8279cb880b}
+      \strng{authorfullhash}{eed2c34bf14a034d84b60f8279cb880b}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Air entrainment and bubble statistics in breaking waves}
+      \field{volume}{801}
+      \field{year}{2016}
+      \field{pages}{91\bibrangedash 129}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1017/jfm.2016.372
+      \endverb
+    \endentry
+    \entry{basilisk_2}{article}{}
+      \name{author}{7}{}{%
+        {{hash=35329540fb5431424f1af6d6a95d90aa}{%
+           family={Deike},
+           familyi={D\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b3a5d160133563abc9f112ee2d7c3c56}{%
+           family={Ghabache},
+           familyi={G\bibinitperiod},
+           given={Elisabeth},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0df92646d240dcad04764a3d0a3e2362}{%
+           family={Liger-Belair},
+           familyi={L\bibinithyphendelim B\bibinitperiod},
+           given={G{é}rard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a045fa02c65d13865c6f1637aa6cd296}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Arup\bibnamedelima K},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+        {{hash=da4f5a8595565561cf6c514b5634ccc7}{%
+           family={Popinet},
+           familyi={P\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b3cb54911501484dcd64d056ec340450}{%
+           family={S{é}on},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{8e112ea3a8033f71e09dc27c7681ba2f}
+      \strng{fullhash}{a50aa7eac12b270c9de89646bf4456cf}
+      \strng{bibnamehash}{8e112ea3a8033f71e09dc27c7681ba2f}
+      \strng{authorbibnamehash}{8e112ea3a8033f71e09dc27c7681ba2f}
+      \strng{authornamehash}{8e112ea3a8033f71e09dc27c7681ba2f}
+      \strng{authorfullhash}{a50aa7eac12b270c9de89646bf4456cf}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Fluids}
+      \field{number}{1}
+      \field{title}{Dynamics of jets produced by bursting bubbles}
+      \field{volume}{3}
+      \field{year}{2018}
+      \field{pages}{013603}
+      \range{pages}{1}
+    \endentry
+    \entry{basilisk_5}{article}{}
+      \name{author}{4}{}{%
+        {{hash=76e086c863b91a33d9a9dfb563704905}{%
+           family={Berny},
+           familyi={B\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod}}}%
+        {{hash=35329540fb5431424f1af6d6a95d90aa}{%
+           family={Deike},
+           familyi={D\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b3cb54911501484dcd64d056ec340450}{%
+           family={S{é}on},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=da4f5a8595565561cf6c514b5634ccc7}{%
+           family={Popinet},
+           familyi={P\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{af3f96c2964bdf560cb12ed97dc46a91}
+      \strng{fullhash}{42b73a1446f3aaa062be4ebb939b96ac}
+      \strng{bibnamehash}{af3f96c2964bdf560cb12ed97dc46a91}
+      \strng{authorbibnamehash}{af3f96c2964bdf560cb12ed97dc46a91}
+      \strng{authornamehash}{af3f96c2964bdf560cb12ed97dc46a91}
+      \strng{authorfullhash}{42b73a1446f3aaa062be4ebb939b96ac}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Fluids}
+      \field{number}{3}
+      \field{title}{Role of all jet drops in mass transfer from bursting bubbles}
+      \field{volume}{5}
+      \field{year}{2020}
+      \field{pages}{033605}
+      \range{pages}{1}
+    \endentry
+    \entry{basilisk_4}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1673539d082790cc5af4ebed06ce932e}{%
+           family={L{ó}pez-Herrera},
+           familyi={L\bibinithyphendelim H\bibinitperiod},
+           given={JM},
+           giveni={J\bibinitperiod}}}%
+        {{hash=da4f5a8595565561cf6c514b5634ccc7}{%
+           family={Popinet},
+           familyi={P\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1312e6d290313bb6d7beb9c00446c87a}{%
+           family={Castrej{ó}n-Pita},
+           familyi={C\bibinithyphendelim P\bibinitperiod},
+           given={AA},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7e0886fe65a03fba1005fd0817105a2b}
+      \strng{fullhash}{7e0886fe65a03fba1005fd0817105a2b}
+      \strng{bibnamehash}{7e0886fe65a03fba1005fd0817105a2b}
+      \strng{authorbibnamehash}{7e0886fe65a03fba1005fd0817105a2b}
+      \strng{authornamehash}{7e0886fe65a03fba1005fd0817105a2b}
+      \strng{authorfullhash}{7e0886fe65a03fba1005fd0817105a2b}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Non-Newtonian Fluid Mechanics}
+      \field{title}{An adaptive solver for viscoelastic incompressible two-phase problems applied to the study of the splashing of weakly viscoelastic droplets}
+      \field{volume}{264}
+      \field{year}{2019}
+      \field{pages}{144\bibrangedash 158}
+      \range{pages}{15}
     \endentry
   \enddatalist
 \endrefsection

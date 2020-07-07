@@ -53,7 +53,9 @@ classical analysis of the Rayleigh-Plateau instability \cite{rayleigh1879a,rayle
 
 
 % Corrugation-coalescence model
-Linear theory based on the the Rayleigh breakup of infinitely
+\section{Coalescence Cascade}
+
+Linear theory based on the Rayleigh breakup of infinitely
 long liquid cylinders in a quiescent medium predicts the disintegration
 of the thread along regular intervals, the length of which is governed
 by the fastest growing spatial frequency. 
@@ -160,7 +162,7 @@ to a specified geometrical shape is practically (almost) impossible
 due to the inherent difficulties associated with the control of free-surface flows.  
 In the absence of such precise control and reproducibility of the initial 
 ligament corrugations, one has to resort to a posteriori correlations between 
-the the width of the final drop size distributions and qualitative descriptions 
+the width of the final drop size distributions and qualitative descriptions 
 of the initial surface profiles.
 A central theme of the current chapter is concerning the design and conception
 of `numerical' experiments that lend themselves to accurate and repeatable 
@@ -176,7 +178,6 @@ leading to faster flows and contraction of the time-scales as the local thicknes
 decreases to zero. In our numerical methods, we can adaptively select the time
 interval over which the integration of the governing equations are carried out, to 
 accommodate such non-linearly accelerating flows.}. 
-
 The combination of these two features enables us to quantitatively map the 
 influence that the degree of smoothness of the initial ligament has on the ensuing 
 liquid rearrangements, as well as the coalescence dynamics following the ligament. 
@@ -194,23 +195,65 @@ Navier-Stokes equations, employing the one-fluid model which
 solves only a single set of governing equations throughout the whole domain,
 where the domains are composed of regions of variable density and viscosity. 
 In order to reproduce the free-surface dynamics, a Volume-of-Fluid 
-\sidenote{
+(VOF) approach is used to capture the interface, the explicit location 
+of which marks the separation between the two fluids.
+
+
+\begin{marginfigure}
+\centering
+\includegraphics{plots/ligament_breakup/octree.png}
+\caption{A schematic of the octree grid used in Basilisk, and its
+	corresponding logical structure (quadtree in 2D).
+	Image reproduced from Agbaglah et al. \cite{agbag}.
+	}
+\label{octree}
+\end{marginfigure}
+
+
 A more detailed evaluation of the comparitive advantages of different  
 interfacial tracking approaches (e.g. VOF, level set, phase field etc) 
 can be found in the comprehensive review by Scardovelli and Zaleski 
 \cite{zaleskiannual}, or in a more recent exposition by  
 Mirjalili et al. \cite{mirjalili2017interface} on the same topic.
-}
-(VOF) approach is used to capture the interface, the explicit location 
-of which marks the separation between the two fluids.
 The immiscible nature of the flows under consideration translates to the 
 absence of mass tranfer across the interface, thereby rendering the 
 velocity field continuous across the interface at the incompressible limit. 
 The study is primarily focused on isothermal air-water systems, with 
 the material properties corresponding to that at 20 degrees Celcius. 
 
+\paragraph{Numerical Platform : Basilisk}
 
-\paragraph{Platform : Basilisk}
+\begin{marginfigure}
+\centering
+\includegraphics{plots/ligament_breakup/multi_scale.png}
+\caption{ A demonstration of multiscale capabilties
+of Basilisk, wherein the mesh dynamically adapts in order
+to resolve the smaller scale flow features in the vicinity of
+the interface location. 
+Image reproduced from Agbaglah et al. \cite{agbag}.
+}
+\label{amr}
+\end{marginfigure}
+
+
+We solve our set of governing equations using the open-source toolbox 
+Basilisk \cite{basilisk}, which couples finite-volume discretization 
+on octree meshes (Fig. \ref{octree}) to solve the two-phase 
+Navier-Stokes equations with surface tension.
+The use of adaptive mesh refinement (AMR) in conjunction with the octree structure
+allows an extremely efficient (compared to uniform grids) utilization of 
+computational resources especially when dealing with the multiscale nature (see Fig. \ref{amr}) 
+of surface tension dominated flows, where the bulk of the computational power
+is diverted towards resolving regions in close proximity to the interface location. 
+The solver utilizes a robust and accurate implementation 
+of the CSF \cite{csf} (Continuum Surface Force) surface tension model 
+that governs the volumetric distribution of the capillary forces on the dynamically 
+refined grid (refer to \cite{popinet2009accurate} for more details). 
+The numerical methods used in Basilisk have been extensively validated
+through studies conducted on a variety of free-surface flows, 
+recent examples being on the topic of air entrainement through wave breaking
+\cite{basilisk_1, basilisk_3}, jets created due to bursting bubbles \cite{basilisk_2, basilisk_5}
+modeling of viscoelastic droplet splashes \cite{basilisk_4} and many more.
 
 
 \subsection*{Computational Schematic}
@@ -219,6 +262,9 @@ therefore excluding the existence of azimuthal modes with
 respect to the central axis of the ligament. 
 
 Material properties correspond to that of air-water systems at 20 degrees Celsius. 
+
+Only corrugations, no shear 
+
 
 \subsection*{Random Surface Generation}
 

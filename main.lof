@@ -97,6 +97,10 @@
 \defcounter {refsection}{0}\relax
 \contentsline {figure}{\numberline {\relax 7.3}{\ignorespaces Successive stages in the breakup of a ligament into drops. The system shown here is that of a perforated liquid sheet, where the growth of such perforations due to capillary retraction of the liquid rims lead to the formation of networks of connected ligaments. Image reproduced from Lhuissier and Villermaux \cite {sheet_hole}. \relax }}{62}{figure.caption.100}
 \defcounter {refsection}{0}\relax
+\contentsline {figure}{\numberline {\relax 7.4}{\ignorespaces A schematic of the octree grid used in Basilisk, and its corresponding logical structure (quadtree in 2D). Image reproduced from Agbaglah et al. \cite {agbag}. \relax }}{63}{figure.caption.101}
+\defcounter {refsection}{0}\relax
+\contentsline {figure}{\numberline {\relax 7.5}{\ignorespaces A demonstration of multiscale capabilties of Basilisk, wherein the mesh dynamically adapts in order to resolve the smaller scale flow features in the vicinity of the interface location. Image reproduced from Agbaglah et al. \cite {agbag}. \relax }}{63}{figure.caption.103}
+\defcounter {refsection}{0}\relax
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax
 \addvspace {10\p@ }
