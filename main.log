@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  8 JUL 2020 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  8 JUL 2020 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7169,11 +7169,21 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [65 <./plots/ligament_breakup/schematic.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/ligament_breakup/wave_quant.pdf, id=1814, 310.98471pt x 171.50485pt>
+
+Overfull \hbox (156.52655pt too wide) has occurred while \output is active
+[][][] 
+ []
+
+\openout5 = `main.mw'.
+
+[66 <./plots/ligament_breakup/profile.pdf>] (./main.mw)
+\openout5 = `main.mw'.
+
+<plots/ligament_breakup/wave_quant.pdf, id=1840, 310.98471pt x 171.50485pt>
 File: plots/ligament_breakup/wave_quant.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/wave_quant.pdf>
 Package pdftex.def Info: plots/ligament_breakup/wave_quant.pdf  used on input l
-ine 384.
+ine 447.
 (pdftex.def)             Requested size: 304.45923pt x 167.90611pt.
 )
 (./chapters/dropstat.tex
@@ -7183,12 +7193,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[66 <./plots/ligament_breakup/profile.pdf> <./plots/ligament_breakup/wave_quant
-.pdf
-
-pdfTeX warning: pdflatex (file ./plots/ligament_breakup/wave_quant.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->] (./main.mw)
+[67 <./plots/ligament_breakup/wave_quant.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -7198,7 +7203,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[67] (./main.mw)
+[68] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -7208,14 +7213,14 @@ Overfull \hbox (163.88783pt too wide) in paragraph at lines 2--2
 [][]
  []
 
-Package marginnote Info: Margin note 82.1 is on absolute page 82
+Package marginnote Info: Margin note 83.1 is on absolute page 83
 (marginnote)              on input line 2.
 Package marginnote Info: right page because not two side mode on input line 2.
 Package marginnote Info: xpos seems to be 70.56284pt,
 (marginnote)             \marginnoterightadjust ignored on input line 2.
 \openout5 = `main.mw'.
 
-[68
+[69
 
 
 ] (./main.mw)
@@ -7245,7 +7250,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[69] (./main.mw)
+[70] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -7287,7 +7292,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 part without number
 \openout5 = `main.mw'.
 
-[70
+[71
 
 
 
@@ -7301,7 +7306,7 @@ Overfull \hbox (4.58882pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[71] (./main.mw)
+[72] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -7343,7 +7348,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 part without number
 \openout5 = `main.mw'.
 
-[72
+[73
 
 
 
@@ -7405,7 +7410,7 @@ Overfull \hbox (163.88783pt too wide) in paragraph at lines 3--3
 
 \openout5 = `main.mw'.
 
-[73
+[74
 
 
 
@@ -7426,7 +7431,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[74] (./main.mw)
+[75] (./main.mw)
 \openout5 = `main.mw'.
 
 )
@@ -7436,7 +7441,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[75] (./main.mw)
+[76] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -7478,7 +7483,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 chapter without number
 \openout5 = `main.mw'.
 
-[76
+[77
 
 
 
@@ -7489,12 +7494,12 @@ chapter without number
 
 \openout5 = `main.mw'.
 
- [77] (./main.mw)
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
  [78] (./main.mw)
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+ [79] (./main.mw)
 \openout5 = `main.mw'.
 
 LaTeX Font Info:    Font shape `T1/zpllf/m/sc' will be
@@ -7505,7 +7510,7 @@ Package microtype Info: Character `029' is missing
  (./main.nls
 \openout5 = `main.mw'.
 
- [79] (./main.mw)
+ [80] (./main.mw)
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -7829,7 +7834,7 @@ LaTeX Font Info:    Font shape `T1/zpllf/m/it' will be
 (./main.gls)
 \openout5 = `main.mw'.
 
- [80
+ [81
 
 
 ] (./main.mw)
@@ -9113,8 +9118,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59114 strings out of 494847
- 1100027 string characters out of 6179080
+ 59122 strings out of 494847
+ 1100118 string characters out of 6179080
  1961356 words of memory out of 5000000
  60389 multiletter control sequences out of 15000+600000
  724332 words of font info for 376 fonts, out of 8000000 for 9000
@@ -9146,10 +9151,10 @@ are/texlive/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/newpx/zplx-regular.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (94 pages, 5316957 bytes).
+Output written on main.pdf (95 pages, 5322791 bytes).
 PDF statistics:
- 2398 PDF objects out of 2487 (max. 8388607)
- 2149 compressed objects within 22 object streams
- 531 named destinations out of 1000 (max. 500000)
+ 2410 PDF objects out of 2487 (max. 8388607)
+ 2160 compressed objects within 22 object streams
+ 537 named destinations out of 1000 (max. 500000)
  44126 words of extra memory for PDF output out of 51595 (max. 10000000)
 
