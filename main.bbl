@@ -2472,6 +2472,64 @@
       \field{pages}{144\bibrangedash 158}
       \range{pages}{15}
     \endentry
+    \entry{rng}{article}{}
+      \name{author}{2}{}{%
+        {{hash=37a788e3dbb975370d88203dfba379ec}{%
+           family={Matsumoto},
+           familyi={M\bibinitperiod},
+           given={Makoto},
+           giveni={M\bibinitperiod}}}%
+        {{hash=88d8b870701ad221060b0c7ef21a2df8}{%
+           family={Nishimura},
+           familyi={N\bibinitperiod},
+           given={Takuji},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{fullhash}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{bibnamehash}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{authorbibnamehash}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{authornamehash}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{authorfullhash}{adc651ab76aa3abcc9d94787b0adae82}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Modeling and Computer Simulation (TOMACS)}
+      \field{number}{1}
+      \field{title}{Mersenne twister: a 623-dimensionally equidistributed uniform pseudo-random number generator}
+      \field{volume}{8}
+      \field{year}{1998}
+      \field{pages}{3\bibrangedash 30}
+      \range{pages}{28}
+    \endentry
+    \entry{gnusl}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4d553f5dccc3b426815e5951e6ce28ad}{%
+           family={Gough},
+           familyi={G\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Network Theory Ltd.}%
+      }
+      \strng{namehash}{4d553f5dccc3b426815e5951e6ce28ad}
+      \strng{fullhash}{4d553f5dccc3b426815e5951e6ce28ad}
+      \strng{bibnamehash}{4d553f5dccc3b426815e5951e6ce28ad}
+      \strng{authorbibnamehash}{4d553f5dccc3b426815e5951e6ce28ad}
+      \strng{authornamehash}{4d553f5dccc3b426815e5951e6ce28ad}
+      \strng{authorfullhash}{4d553f5dccc3b426815e5951e6ce28ad}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GNU scientific library reference manual}
+      \field{year}{2009}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

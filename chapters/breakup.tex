@@ -185,6 +185,14 @@ liquid rearrangements, as well as the coalescence dynamics following the ligamen
 
 \section{Breakup Regimes}
 
+\blindtext
+
+\blindtext
+
+
+\blindtext
+
+
 % Brief review, eggers , Keller-Miksis and Viscous regimes
 
 
@@ -228,8 +236,7 @@ the material properties corresponding to that at 20 degrees Celcius.
 \includegraphics{plots/ligament_breakup/multi_scale.png}
 \caption{ A demonstration of multiscale capabilties
 of Basilisk, wherein the mesh dynamically adapts in order
-to resolve the smaller scale flow features in the vicinity of
-the interface location. 
+to resolve the smaller scale features of the interface. 
 Image reproduced from Agbaglah et al. \cite{agbag}.
 }
 \label{amr}
@@ -257,26 +264,137 @@ modeling of viscoelastic droplet splashes \cite{basilisk_4} and many more.
 
 
 \subsection*{Computational Schematic}
-Simulations are carried out in the axi-symmetric framework, 
-therefore excluding the existence of azimuthal modes with 
-respect to the central axis of the ligament. 
 
-Material properties correspond to that of air-water systems at 20 degrees Celsius. 
+As discussed in the previous sections, the 
+dynamics of the liquid volume rearrangements 
+within the ligaments are quite involved 
+due to the non-trivial interactions between
+the inertial, viscous and capillary effects 
+at different length and time scales that span
+over several orders of magnitude.
+In order to isolate the direct influence of 
+initial geometrical shape of the ligament on 
+the subsequent dynamics, we have decided to 
+exclude the inertial forces \sidenote{
+We use inertial forces as an umbrella term
+to describe all the forces that might contribute to
+the ``stretching'' of the ligament, 
+thus opposing the capillary deformations.
+These primarily include the remnant flow within
+the ligament bulk, the aerodynamic shear at the interface
+and the acceleration of the ligament itself into 
+the surrounding gas medium. 
+}
+with respect to the initial conditions. 
+Therefore, we opt for a very particular type of setup,
+with infinitely long ligaments having zero initial kinetic energy, 
+and spatial periodicity in the geometrical shape along the axis. 
+We carry out the simulations in an axisymmetric framework, 
+therefore excluding any azimuthal variations
+in the initial shape as a consequence of this simplification. 
+Fig. \ref{schematic} illustrates the a 2D schematic of the
+computational setup, where the domain is a square of side $L$. 
+The bottom side of the box acts as the axis of symmetry for 
+the corrugated ligament (detailed view in the inset of Fig. \ref{schematic}), 
+which has an unperturbed (mean) radius $R$. 
+Due to the periodicity of the ligaments in the axial direction, 
+we impose periodic boundary conditions for the primary variables 
+on the left and right faces of the domain.
+Symmetry conditions are imposed on the bottom side, 
+with impenetrable free-slip conditions applied on the top side. 
 
-Only corrugations, no shear 
 
+\begin{figure}
+\centering
+\includegraphics{plots/ligament_breakup/schematic.pdf}
+\caption{ A 2D schematic of the computational domain.
+An infinitely long and axisymmetric corrugated ligament
+of mean radius $R$ is placed in a square box of side $L$.
+The bottom side of the box acts as the axis of symmetry 
+for the ligament, with spatial periodicity along the horizontal 
+direction. Inset : A close up view of the corrugated profile
+of the ligament, where the local radius is defined as 
+the sum of the unperturbed (mean) radius $R$ and the local 
+perturbation $\epsilon(x)$. The material properties of the 
+liquid and gas phases are denoted with the subscripts $l$ and $g$
+respectively, which in our case corresponds to an air-water system
+with the surface tension coefficient $\sigma$. 
+}
+\label{schematic}
+\end{figure}
 
 \subsection*{Random Surface Generation}
+
+A key ingredient of this investigation on the impact 
+of corrugations is the ability to precisely
+control the quantitative aspects of the initial 
+corrugated surface profile of the ligament. 
+Towards that objective, we construct a surface 
+using the superposition of random overlapping waves, 
+corresponding to an overall spatial period $L$ of the resulting profile. 
+The aspect of ``randomness'' is achieved by  
+using a state of the art white noise generation algorithm,
+introduced in the seminal work of Matsumoto and Nishimura \sidecite{rng}.
+A robust and open source implementation of the aforementioned algorithm 
+is available in the GNU Scientific Library toolkit \cite{gnusl},
+and thus readily incorporated into our numerical platform Basilisk.   
+
+\begin{figure}
+\centering
+\includegraphics{plots/ligament_breakup/profile.pdf}
+	\caption{ Radial profile of the noisy and the subsequently 
+	low-pass filtered surface of the ligament, corresponding to 
+	one spatial period along its axis. 
+	Inset : Spectral densities of the initial noisy signal
+        and the corresponding filtered signal. Only a handful
+	of small wavenumbers are chosen to create the surface. 
+}
+\label{surface}
+\end{figure}
+
+
+The initial noisy surface generated by the white noise algorithm
+contains extremely sharp edges corresponding to infinite values of 
+interfacial curvature (see Fig. \ref{surface}), which are present due
+to the inclusion of perturbations corresponding to large wavenumbers. 
+In order to avoid the ``smoothening'' of these edges by our numerical method,   
+we remove these high frequency modes \textit{a priori} in a controllable fashion. 
+As demonstrated in Fig. \ref{surface}, the noisy surface is treated by a low-pass filter 
+in order to obtain the final description of the ligament's radial profile. 
+
+The radial profile corresponding to an individual ligament simulation is 
+uniquely determined by the value of the seed used as 
+input for our random noise generator, therefore we are 
+able to ensure that none of the ligaments in our 
+ensembles are identical by simply using unique seeds for each realization. 
+The amplitude of the surface corrugations are controlled by the 
+dispersion of the initial white noise signal. 
+The volume of the corrugated ligament per unit spatial period 
+is controlled by our choice of ligament aspect-ratio.    
+
 
 \subsection*{Adimensional Formulation}
 
 \subsubsection*{Quantization of Waves}
 
+\blindtext
+
+\begin{figure}
+\centering
+\includegraphics{plots/ligament_breakup/wave_quant.pdf}
+\caption{ A demonstration of multiscale capabilties
+of Basilisk, wherein the mesh dynamically adapts in order
+to resolve the smaller scale flow features in the vicinity of
+the interface location. 
+}
+\label{quant}
+\end{figure}
+
 %---------------------------------------------------------------
 
 \section{Impact of Initial Conditions}
 
-\subsection*{Numerical Parameters}
+\subsection*{Numerical Tuning}
 
 \subsubsection*{2D vs. 3D}
 

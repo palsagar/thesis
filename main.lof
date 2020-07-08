@@ -97,9 +97,15 @@
 \defcounter {refsection}{0}\relax
 \contentsline {figure}{\numberline {\relax 7.3}{\ignorespaces Successive stages in the breakup of a ligament into drops. The system shown here is that of a perforated liquid sheet, where the growth of such perforations due to capillary retraction of the liquid rims lead to the formation of networks of connected ligaments. Image reproduced from Lhuissier and Villermaux \cite {sheet_hole}. \relax }}{62}{figure.caption.100}
 \defcounter {refsection}{0}\relax
-\contentsline {figure}{\numberline {\relax 7.4}{\ignorespaces A schematic of the octree grid used in Basilisk, and its corresponding logical structure (quadtree in 2D). Image reproduced from Agbaglah et al. \cite {agbag}. \relax }}{63}{figure.caption.101}
+\contentsline {figure}{\numberline {\relax 7.4}{\ignorespaces A schematic of the octree grid used in Basilisk, and its corresponding logical structure (quadtree in 2D). Image reproduced from Agbaglah et al. \cite {agbag}. \relax }}{64}{figure.caption.101}
 \defcounter {refsection}{0}\relax
-\contentsline {figure}{\numberline {\relax 7.5}{\ignorespaces A demonstration of multiscale capabilties of Basilisk, wherein the mesh dynamically adapts in order to resolve the smaller scale flow features in the vicinity of the interface location. Image reproduced from Agbaglah et al. \cite {agbag}. \relax }}{63}{figure.caption.103}
+\contentsline {figure}{\numberline {\relax 7.5}{\ignorespaces A demonstration of multiscale capabilties of Basilisk, wherein the mesh dynamically adapts in order to resolve the smaller scale features of the interface. Image reproduced from Agbaglah et al. \cite {agbag}. \relax }}{64}{figure.caption.103}
+\defcounter {refsection}{0}\relax
+\contentsline {figure}{\numberline {\relax 7.6}{\ignorespaces A 2D schematic of the computational domain. An infinitely long and axisymmetric corrugated ligament of mean radius $R$ is placed in a square box of side $L$. The bottom side of the box acts as the axis of symmetry for the ligament, with spatial periodicity along the horizontal direction. Inset : A close up view of the corrugated profile of the ligament, where the local radius is defined as the sum of the unperturbed (mean) radius $R$ and the local perturbation $\epsilon (x)$. The material properties of the liquid and gas phases are denoted with the subscripts $l$ and $g$ respectively, which in our case corresponds to an air-water system with the surface tension coefficient $\sigma $. \relax }}{65}{figure.caption.105}
+\defcounter {refsection}{0}\relax
+\contentsline {figure}{\numberline {\relax 7.7}{\ignorespaces Radial profile of the noisy and the subsequently low-pass filtered surface of the ligament, corresponding to one spatial period along its axis. Inset : Spectral densities of the initial noisy signal and the corresponding filtered signal. Only a handful of small wavenumbers are chosen to create the surface. \relax }}{66}{figure.caption.107}
+\defcounter {refsection}{0}\relax
+\contentsline {figure}{\numberline {\relax 7.8}{\ignorespaces A demonstration of multiscale capabilties of Basilisk, wherein the mesh dynamically adapts in order to resolve the smaller scale flow features in the vicinity of the interface location. \relax }}{66}{figure.caption.110}
 \defcounter {refsection}{0}\relax
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax
