@@ -610,8 +610,8 @@
       \strng{authorbibnamehash}{f20dc923f2774277b97f4fe078cf0897}
       \strng{authornamehash}{f20dc923f2774277b97f4fe078cf0897}
       \strng{authorfullhash}{f20dc923f2774277b97f4fe078cf0897}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Mathematics of computation}
@@ -994,8 +994,8 @@
       \strng{authorbibnamehash}{c9708c0ea61ac656c66a54ccce332eae}
       \strng{authornamehash}{c9708c0ea61ac656c66a54ccce332eae}
       \strng{authorfullhash}{c9708c0ea61ac656c66a54ccce332eae}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{ASME 2002 Joint US-European Fluids Engineering Division Conference}
@@ -1059,8 +1059,8 @@
       \strng{authorbibnamehash}{61c89e1bd5eecdbded4ce8726d124e7c}
       \strng{authornamehash}{61c89e1bd5eecdbded4ce8726d124e7c}
       \strng{authorfullhash}{61c89e1bd5eecdbded4ce8726d124e7c}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physica Scripta}
@@ -2529,6 +2529,109 @@
       \field{labeltitlesource}{title}
       \field{title}{GNU scientific library reference manual}
       \field{year}{2009}
+    \endentry
+    \entry{eggers1997nonlinear}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6766e94f9360b3ab5ff97031d7ca7802}{%
+           family={Eggers},
+           familyi={E\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{fullhash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{bibnamehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{authorbibnamehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{authornamehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{authorfullhash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of modern physics}
+      \field{number}{3}
+      \field{title}{Nonlinear dynamics and breakup of free-surface flows}
+      \field{volume}{69}
+      \field{year}{1997}
+      \field{pages}{865}
+      \range{pages}{1}
+    \endentry
+    \entry{plateau1849}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ee6af9be3f94580489e4a9ac792bc71e}{%
+           family={Plateau},
+           familyi={P\bibinitperiod},
+           given={JP},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \strng{fullhash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \strng{bibnamehash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \strng{authorbibnamehash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \strng{authornamehash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \strng{authorfullhash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{M{é}moires de l'Acad{é}mie Royale des Sciences, des Lettres et des Beaux-Arts de Belgique}
+      \field{title}{Recherches exp{é}rimentales et th{é}orique sur les figures d'{é}quilibre d'une masse liquide sans pesanteur.}
+      \field{volume}{23}
+      \field{year}{1849}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+    \endentry
+    \entry{chandra}{book}{}
+      \name{author}{1}{}{%
+        {{hash=2cdd974df31a73795c3a486550391e0c}{%
+           family={Chandrasekhar},
+           familyi={C\bibinitperiod},
+           given={Subrahmanyan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Courier Corporation}%
+      }
+      \strng{namehash}{2cdd974df31a73795c3a486550391e0c}
+      \strng{fullhash}{2cdd974df31a73795c3a486550391e0c}
+      \strng{bibnamehash}{2cdd974df31a73795c3a486550391e0c}
+      \strng{authorbibnamehash}{2cdd974df31a73795c3a486550391e0c}
+      \strng{authornamehash}{2cdd974df31a73795c3a486550391e0c}
+      \strng{authorfullhash}{2cdd974df31a73795c3a486550391e0c}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Hydrodynamic and hydromagnetic stability}
+      \field{year}{1961}
+    \endentry
+    \entry{weber1931}{article}{}
+      \name{author}{1}{}{%
+        {{hash=39cfec22393bdab34071ef33460cb3a1}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{39cfec22393bdab34071ef33460cb3a1}
+      \strng{fullhash}{39cfec22393bdab34071ef33460cb3a1}
+      \strng{bibnamehash}{39cfec22393bdab34071ef33460cb3a1}
+      \strng{authorbibnamehash}{39cfec22393bdab34071ef33460cb3a1}
+      \strng{authornamehash}{39cfec22393bdab34071ef33460cb3a1}
+      \strng{authorfullhash}{39cfec22393bdab34071ef33460cb3a1}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Z. Angew. Math. Mech.}
+      \field{title}{Disintegration of liquid jets}
+      \field{volume}{1}
+      \field{year}{1931}
+      \field{pages}{136\bibrangedash 159}
+      \range{pages}{24}
     \endentry
   \enddatalist
 \endrefsection
