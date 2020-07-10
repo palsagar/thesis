@@ -107,6 +107,10 @@
 \defcounter {refsection}{0}\relax
 \contentsline {figure}{\numberline {\relax 7.8}{\ignorespaces The dispersion relation of the Rayleigh-Plateau instability \cite {rayleigh1879a, plateau1849}, expressing the growth rate of the small amplitude perturbations as a function of the reduced wavenumber \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces \ref {rayleigh_plateau}\unskip \@@italiccorr )}}. The vertical dashed line A represents the upper limit to the perturbation wavelength, corresponding to the domain size $L$. At the opposite end of the spectrum, E represents smallest wavelength limited by the grid size $1/2^M$, where $M$ is the maximum level of resolution for our octree grid. B corresponds to the wavenumber with the maximum growth based on linear theory, whereas C represents the limit beyond which all perturbations are stable. The number of discrete modes that fall within the unstable part of the spectrum ($\Delta K$) is a linear function of the ligament aspect ratio. \relax }}{67}{figure.caption.110}
 \defcounter {refsection}{0}\relax
+\contentsline {figure}{\numberline {\relax 7.9}{\ignorespaces Fragmentation of stretched liquid (Newtonian) ligaments formed. \relax }}{69}{figure.caption.112}
+\defcounter {refsection}{0}\relax
+\contentsline {figure}{\numberline {\relax 7.10}{\ignorespaces Fragmentation of stretched liquid (Newtonian) ligaments formed. \relax }}{70}{figure.caption.113}
+\defcounter {refsection}{0}\relax
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax
 \addvspace {10\p@ }
