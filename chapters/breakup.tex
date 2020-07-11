@@ -542,17 +542,40 @@ complex liquid rearrangements within the ligament bulk.
 
 \section{Impact of Initial Conditions}
 
+% dynamics of millimeter scale water ligaments in air
+% time-scales in milliseconds 
+% slow time scales and fast time scales
+
+
 \subsection*{Numerical Tuning}
 
 
 \paragraph{2D versus 3D}
 
+% Oh = 0.01 
+% amp = 0.4
+% K_cut = 50
+% l/R = 100 (aspect ratio = 50)
+% maxlevel = 9 
+
+% 2D : 54 secs @ 16 procs 
+% 3D : 976 secs @ 16 procs
 
 \paragraph{Spatial Resolution}
 
+% same parameters, with l9,l10,l11 
 
-\paragraph{Droplet Removal}
+% L11 : 516 secs @ 16 procs
+% L10 : 156 secs @ 16 procs 
+% L9  : 54 secs @ 16 procs 
 
+\begin{figure*}
+\centering
+\includegraphics{plots/ligament_breakup/resolution_compare.pdf}
+\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
+	}
+\label{res_comp}
+\end{figure*}
 
 
 \begin{figure*}
@@ -573,8 +596,41 @@ complex liquid rearrangements within the ligament bulk.
 
 \subsubsection*{Corrugation Amplitude}
 
+\begin{figure*}
+\centering
+\includegraphics{plots/ligament_breakup/amplitude_compare.pdf}
+\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
+	}
+\label{amp_comp}
+\end{figure*}
+
 \subsubsection*{Ohnesorge Number}
+
+\begin{figure*}
+\centering
+\includegraphics{plots/ligament_breakup/ohnesorge_compare.pdf}
+\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
+	}
+\label{amp_comp}
+\end{figure*}
 
 \subsubsection*{Cut-Off Frequency}
 
+\begin{figure*}
+\centering
+\includegraphics{plots/ligament_breakup/wave_compare.pdf}
+\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
+	}
+\label{wave_comp}
+\end{figure*}
+
 \subsubsection*{Aspect-Ratio}
+
+\begin{figure*}
+\centering
+\includegraphics{plots/ligament_breakup/aspect_compare.pdf}
+\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
+	}
+\label{asp_comp}
+\end{figure*}
+
