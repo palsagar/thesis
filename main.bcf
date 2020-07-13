@@ -2188,14 +2188,14 @@
     <bcf:citekey order="252">rng</bcf:citekey>
     <bcf:citekey order="253">rng</bcf:citekey>
     <bcf:citekey order="254">gnusl</bcf:citekey>
-    <bcf:citekey order="255">eggers1997nonlinear</bcf:citekey>
-    <bcf:citekey order="256">rayleigh1879a</bcf:citekey>
-    <bcf:citekey order="256">plateau1849</bcf:citekey>
+    <bcf:citekey order="255">plateau1849</bcf:citekey>
+    <bcf:citekey order="256">eggers1997nonlinear</bcf:citekey>
     <bcf:citekey order="257">rayleigh1879a</bcf:citekey>
     <bcf:citekey order="257">plateau1849</bcf:citekey>
-    <bcf:citekey order="258">chandra</bcf:citekey>
-    <bcf:citekey order="259">weber1931</bcf:citekey>
-    <bcf:citekey order="260">plateau1849</bcf:citekey>
+    <bcf:citekey order="258">rayleigh1879a</bcf:citekey>
+    <bcf:citekey order="258">plateau1849</bcf:citekey>
+    <bcf:citekey order="259">chandra</bcf:citekey>
+    <bcf:citekey order="260">weber1931</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

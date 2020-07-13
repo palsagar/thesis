@@ -2530,6 +2530,31 @@
       \field{title}{GNU scientific library reference manual}
       \field{year}{2009}
     \endentry
+    \entry{plateau1849}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ee6af9be3f94580489e4a9ac792bc71e}{%
+           family={Plateau},
+           familyi={P\bibinitperiod},
+           given={JP},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \strng{fullhash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \strng{bibnamehash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \strng{authorbibnamehash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \strng{authornamehash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \strng{authorfullhash}{ee6af9be3f94580489e4a9ac792bc71e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{M{é}moires de l'Acad{é}mie Royale des Sciences, des Lettres et des Beaux-Arts de Belgique}
+      \field{title}{Recherches exp{é}rimentales et th{é}orique sur les figures d'{é}quilibre d'une masse liquide sans pesanteur.}
+      \field{volume}{23}
+      \field{year}{1849}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+    \endentry
     \entry{eggers1997nonlinear}{article}{}
       \name{author}{1}{}{%
         {{hash=6766e94f9360b3ab5ff97031d7ca7802}{%
@@ -2557,31 +2582,6 @@
       \field{volume}{69}
       \field{year}{1997}
       \field{pages}{865}
-      \range{pages}{1}
-    \endentry
-    \entry{plateau1849}{article}{}
-      \name{author}{1}{}{%
-        {{hash=ee6af9be3f94580489e4a9ac792bc71e}{%
-           family={Plateau},
-           familyi={P\bibinitperiod},
-           given={JP},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{ee6af9be3f94580489e4a9ac792bc71e}
-      \strng{fullhash}{ee6af9be3f94580489e4a9ac792bc71e}
-      \strng{bibnamehash}{ee6af9be3f94580489e4a9ac792bc71e}
-      \strng{authorbibnamehash}{ee6af9be3f94580489e4a9ac792bc71e}
-      \strng{authornamehash}{ee6af9be3f94580489e4a9ac792bc71e}
-      \strng{authorfullhash}{ee6af9be3f94580489e4a9ac792bc71e}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{M{é}moires de l'Acad{é}mie Royale des Sciences, des Lettres et des Beaux-Arts de Belgique}
-      \field{title}{Recherches exp{é}rimentales et th{é}orique sur les figures d'{é}quilibre d'une masse liquide sans pesanteur.}
-      \field{volume}{23}
-      \field{year}{1849}
-      \field{pages}{1\bibrangedash 1}
       \range{pages}{1}
     \endentry
     \entry{chandra}{book}{}

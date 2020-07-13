@@ -449,6 +449,9 @@ In our particular case, only the modes corresponding to
 the the longest $n_c$ wavelengths ($L$, $L/2$, $L/3$ ... $L/n_c$) 
 are left with any excitation once the initial noisy profile is 
 passed through the low-pass filter.}. 
+The general and important result that a liquid cylinder is unstable 
+only to perturbations of wavelength larger than $\pi$ times the diameter
+is was first demonstrated in the original work of Plateau \cite{plateau1849}.
 The subsequent evolution of these low frequency modes  
 is determined by the dynamical response of the system in question, 
 subject to the underlying governing equations. 
@@ -511,9 +514,6 @@ A similar conclusion can be drawn from \eqref{weber_chandra},
 that all the perturbations correponding to $x \geq 1 $ are 
 stable with respect to linear theory. 
 \marginnote{
-The general and important result that a liquid cylinder is unstable 
-only to perturbations of wavelength larger than $\pi$ times the diameter
-is derived from the original work of Plateau \cite{plateau1849}.
 }
 In Fig. \ref{quant}, we illustrate this principle using the dispersion 
 relation of the inviscid Rayleigh-Plateau instability as a toy model. 
@@ -538,19 +538,141 @@ kick into place, hence the interaction between the different modes.
 between these unstable modes will play a key role in the
 complex liquid rearrangements within the ligament bulk. 
 
-%---------------------------------------------------------------
+\subsection*{Numerical Fine Tuning}
+As we have discussed in the previous part (A) of the thesis,  
+one has to pay particular attention to several aspects pertaining to 
+the numerical stability of solvers when dealing with surface tension 
+dominated flows involving significant contrasts in material properties 
+across the interface (such as our system of water ligaments in air). 
+In our use of `Basilisk', we opt to use the standard non-conservative
+formulation of the Navier-Stokes equations, which does not maintain 
+consistency between mass and momentum transport. 
+But, in this case we are able to circumvent effects such as `artificial
+atomization' mainly due to two reasons :
 
-\section{Impact of Initial Conditions}
+\begin{marginfigure}
+\centering
+\includegraphics{plots/ligament_breakup/lig_mesh.pdf}
+\caption{ Dynamically adapted octree meshes in the periphery 
+of the interface location, with the refinement criteria based on
+limiting gradients of volume fraction and velocity. The interface
+is represented by the white contours, the colormap on the left half is
+based on the axial velocity component, whereas the one on the right 
+correponds to that of vorticity. 
+The colors red and blue correspond to 
+the higher and lower end values respectively, in case of both colormaps. 
+	}
+\label{lig_mesh}
+\end{marginfigure}
 
-% dynamics of millimeter scale water ligaments in air
-% time-scales in milliseconds 
-% slow time scales and fast time scales
+\begin{itemize}
+	\item The use of adaptive mesh refinement based on the octree grids in Basilisk allows 
+		us to attain much higher levels of numerical resolution for the smaller/thinner 
+		liquid structures, while using significantly coarser meshes away from the interface.
+		For example, in our current simulations (see Fig. \ref{lig_mesh}), the number of cells
+		in the domain (2D) are of the order $10^4$, whereas an equivalent \textit{uniform} mesh 
+		(2D) would result in a problem size of order $10^6$, thereby differing by a factor of 100.
+	\item The absence of the interaction of aerodynamic shear forces with the interface, in our particular
+		problem configuration. This prohibits the `numerical mixing' of the gas velocity with the
+		liquid density in the vicinity of poorly resolved interfacial cells, the concomitant 
+		un-physical momentum tranfer resulting in the rapid destabilization of the interface.   
+\end{itemize}
 
+Furthermore, we have to tune the `knobs' of the 
+solver concerning the criteria and corresponding 
+thresholds regarding the dynamic mesh refinement. 
+In all of the simulations/results demonstrated 
+from this point onwards, the mesh adaptation is 
+made according to the value of the local 
+gradients of the volume fraction field, 
+as well as local gradients of the velocity field components.  
+The corresponding values of the thresholds are $10^{-3}$ 
+and $10^{-1}$ for the volume fraction and velocity components respectively. 
+The time step for the numerical integration is in itself dependent on the 
+size of the smallest cells, as well as the local velocities. 
+Therefore, we opt for a fixed CFL criteria in order to choose the time step, 
+with the upper bound of the local CFL number throughout the domain being set to $0.05$.
 
-\subsection*{Numerical Tuning}
+\begin{marginfigure}[-6cm]
+\centering
+\includegraphics{plots/ligament_breakup/drop_removal.pdf}
+	\caption{Illustration of the effects of our ``droplet removal'' feature, 
+	with the figure on the left corresponding to simulations that filter out
+	structures that are resolved by 10 cells or less, with the one on the right
+	showing results with no droplet removal in place. The box (dashed line) in the 
+	right hand side figure displays the extremely small structures that consume 
+	a disproportionate amount of computational resources, without having any meaningful
+	impact on the dynamics that we are interested in. The colormap on the left side of the axis of 
+	symmetry corresponds to the axial component of velocity, whereas the one on the right refers
+	to the level of numerical resolution. The colors red and blue correspond to the higher 
+	and lower end values respectively, in case of both colormaps. 
+	}
+\label{drop_remove}
+\end{marginfigure}
 
+Another numerical parameter that has a big influence on the performance of 
+the numerical method is what we refer to as ``droplet removal'', 
+which essentially removes extremely small and poorly 
+resolved structures that float around in the domain. 
+In our experience, these small `debris' like structures (see Fig. \ref{drop_remove})
+hamper the simulations in several ways e.g. demanding extra computational 
+resources in the form of additionally refined cells, 
+or by imposing extremely small time steps (due to restrictions of 
+local CFL number based on cell size) used for the numerical integration. 
+The removal of these structures do not have any effect on the 
+underlying dynamics of the breakups and coalescences, and their sizes 
+are verified to be orders of magnitude below those corresponding to satellite drops. 
+Our threshold for removal correponds to structures that are resolved by 10 cells or less. 
+With regards to the iterative Poisson solver, we set a tolerance of $10^{-3}$, which in our
+operator-split framework (see \eqref{ufinal}) corresponds to the 
+accuracy by which the incompressibility condition \eqref{div} is verified. 
 
-\paragraph{2D versus 3D}
+\subsubsection*{2D versus 3D}
+
+An important question to ask ourselves before we conduct any large scale
+study is the feasibility of carrying out full 3D simulations. 
+In Basilisk, we have the option of carrying out axisymmetric simulations
+that resolve the underlying governing equations on cylindrical coordinates. 
+Due to the axial symmetry in the construction of our ligaments, carrying 
+out 2D axisymmetric simulations instead of full 3D ones seem to offer a more 
+computationally efficient approach, especially as we are interested in studying
+the dynamics of thousands of such ligaments. 
+We start with ligaments that correspond to the following parameters
+
+\begin{align}
+	Oh &= 10^{-2} \quad, \quad \varepsilon = 0.4  \\
+	\Lambda &= 50 \quad , \quad K = 2\pi .
+\label{base_params}
+\end{align}
+
+The numerical resolution in our feasibility studies (in both 2D and 3D) correspond to 
+$W / \Delta x_{\textrm{min}} = 10.24$, where $\Delta x_{\textrm{min}}$ is the size 
+of the smallest grid cell in the octree (quadtree in 2D) mesh. 
+The computations were carried out on 16 processors in parallel, within the framework
+of parallelization through domain decomposition.
+The computational times required to resolve the dynamics up to $T = 30$ are $54$ seconds 
+and $976$ seconds for the 2D and 3D cases, respectively. 
+In figures \ref{2d_3d_short} and \ref{2d_3d_long}, we illustrate the differences 
+in the temporal evolution between a full 3D simulation and its 2D (axisymmetric)
+equivalent, on fast and slow time scales respectively. 
+As one can observe, the major qualitative difference 
+lies in the excitation of certain azimuthal modes in the 3D case, 
+which cannot be captured in the 2D case due to the 
+imposition of symmetry about the central axis.
+Such a subtle difference in the dynamics may 
+explain the slightly higher tendency towards coalescence 
+in the 2D case, due to the fact that some of the energy from 
+the axial modes is transferred into the azimuthal modes in the 3D case. 
+Apart from that, the 3D simulations also resolve some 
+finer thread like structures that appear in the vicinity 
+of the breakup region, the details of which are missing in the 2D simulations.  
+Overlooking some finer aspects captured by the 3D simulations,  
+there seem to be no major discrenible differences between the 2D and 3D simulations,
+when considering the breakup and coalescence dynamics over both short and long time scales.
+But in terms of computational resources, there is almost a factor of $20$ in terms 
+of
+Hence, from this point onwards, we carry out our studies within the 2D axisymmetric 
+
 
 % Oh = 0.01 
 % amp = 0.4
@@ -560,22 +682,6 @@ complex liquid rearrangements within the ligament bulk.
 
 % 2D : 54 secs @ 16 procs 
 % 3D : 976 secs @ 16 procs
-
-\paragraph{Spatial Resolution}
-
-% same parameters, with l9,l10,l11 
-
-% L11 : 516 secs @ 16 procs
-% L10 : 156 secs @ 16 procs 
-% L9  : 54 secs @ 16 procs 
-
-\begin{figure*}
-\centering
-\includegraphics{plots/ligament_breakup/resolution_compare.pdf}
-\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
-	}
-\label{res_comp}
-\end{figure*}
 
 
 \begin{figure*}
@@ -593,6 +699,33 @@ complex liquid rearrangements within the ligament bulk.
 	}
 \label{2d_3d_long}
 \end{figure*}
+\subsubsection*{Spatial Resolution}
+
+% same parameters, with l9,l10,l11 
+
+% L11 : 516 secs @ 16 procs
+% L10 : 156 secs @ 16 procs 
+% L9  : 54 secs @ 16 procs 
+\begin{figure*}
+\centering
+\includegraphics{plots/ligament_breakup/resolution_compare.pdf}
+\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
+	}
+\label{res_comp}
+\end{figure*}
+
+
+
+\section{Impact of Initial Conditions}
+
+
+
+
+% dynamics of millimeter scale water ligaments in air
+% time-scales in milliseconds 
+% slow time scales and fast time scales
+
+
 
 \subsubsection*{Corrugation Amplitude}
 
@@ -619,8 +752,7 @@ complex liquid rearrangements within the ligament bulk.
 \begin{figure*}
 \centering
 \includegraphics{plots/ligament_breakup/wave_compare.pdf}
-\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
-	}
+	\caption{\blindtext}
 \label{wave_comp}
 \end{figure*}
 
