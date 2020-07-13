@@ -668,11 +668,15 @@ finer thread like structures that appear in the vicinity
 of the breakup region, the details of which are missing in the 2D simulations.  
 Overlooking some finer aspects captured by the 3D simulations,  
 there seem to be no major discrenible differences between the 2D and 3D simulations,
-when considering the breakup and coalescence dynamics over both short and long time scales.
-But in terms of computational resources, there is almost a factor of $20$ in terms 
-of
-Hence, from this point onwards, we carry out our studies within the 2D axisymmetric 
-
+with the 2D simulations acting as an accurate reduced order model concerning the 
+breakup and coalescence dynamics over both short and long time scales.
+Looking at the feasibility in terms of computational resources, the 3D simulations 
+are substantially more expensive than their 2D counterparts, by almost a factor of $20$ in most cases. 
+Considering the fact that we plan to carry out thousands of such simulations, the 
+slightly more accurate dynamics modeled by the 3D simulations do not justify the
+approximately 20 fold increase in computational cost.   
+Hence, from this point onwards unless mentioned otherwise, all of the 
+simulations or results we present correspond to the 2D axisymmetric framework.
 
 % Oh = 0.01 
 % amp = 0.4
@@ -683,22 +687,33 @@ Hence, from this point onwards, we carry out our studies within the 2D axisymmet
 % 2D : 54 secs @ 16 procs 
 % 3D : 976 secs @ 16 procs
 
-
 \begin{figure*}
 \centering
 \includegraphics{plots/ligament_breakup/3d_vs_2d_short.pdf}
-\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
-	}
+	\caption{Temporal evolution of the ligament dynamics over \textit{short} time scales. 
+	The physical parameters correspond to those defined in \eqref{base_params}.
+	The top row (light blue shapes) represents the 2D axisymmetric simulations, 
+	and the bottom row (deep blue shapes) represents full 3D simulations.
+	The distances between the structures in the 3D case seem to be different from
+	that of the 2D case, but in fact it is merely an effect of the 3D viewing angles
+	used to represent the 3D case.}
 \label{2d_3d_short}
 \end{figure*}
 
 \begin{figure*}
 \centering
 \includegraphics{plots/ligament_breakup/3d_vs_2d_long.pdf}
-\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
-	}
+	\caption{Temporal evolution of the ligament dynamics over \textit{long} time scales. 
+	The physical parameters correspond to those defined in \eqref{base_params}.
+	The top row (light blue shapes) represents the 2D axisymmetric simulations, 
+	and the bottom row (deep blue shapes) represents full 3D simulations.
+	The distances between the structures in the 3D case seem to be different from
+	that of the 2D case, but in fact it is merely an effect of the 3D viewing angles
+	used to represent the 3D case.}
 \label{2d_3d_long}
 \end{figure*}
+
+
 \subsubsection*{Spatial Resolution}
 
 % same parameters, with l9,l10,l11 
