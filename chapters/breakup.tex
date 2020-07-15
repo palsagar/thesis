@@ -413,7 +413,7 @@ or any global parameters specific to the problem.
 } 
 to the characteristic length scale of the problem ($R$).
 The geometrical shape of the ligament can 
-be characterized by a combination of the 
+be characterized by a combination of the initial
 corrugation amplitude ($\varepsilon$),
 cut-off wavenumber ($K$) and the aspect ratio ($\Lambda$), defined as   
 
@@ -602,7 +602,8 @@ with the upper bound of the local CFL number throughout the domain being set to 
 	showing results with no droplet removal in place. The box (dashed line) in the 
 	right hand side figure displays the extremely small structures that consume 
 	a disproportionate amount of computational resources, without having any meaningful
-	impact on the dynamics that we are interested in. The colormap on the left side of the axis of 
+	impact on the dynamics that we are interested in. 
+	The colormap on the left side of the axis of 
 	symmetry corresponds to the axial component of velocity, whereas the one on the right refers
 	to the level of numerical resolution. The colors red and blue correspond to the higher 
 	and lower end values respectively, in case of both colormaps. 
@@ -724,6 +725,36 @@ simulations or results we present correspond to the 2D axisymmetric framework.
 
 \subsubsection*{Spatial Resolution}
 
+Arguably the most important parameter on which the fidelity of our
+numerical simulations hinges on is the spatial resolution or grid size. 
+The octree structure in our solver entails successive refinements in the  
+size of the cubic cell (square cell in 2D) by factors of $2$ in each direction.
+\marginnote{In our simulations, the square domain of size $L$ has a minimum 
+level of refinement corresponding to a grid size of $L/\Delta x = 2^{-4}$,
+where $\Delta x$ is the size of the square cell.}  
+As we have discussed before, we use the adaptive mesh refinement capabilities 
+of Basilisk to add greater resolution to regions in the vicinity of the interface, 
+therefore we have to impose an upper limit to the level of refinement as well. 
+Henceforth, we refer to this upper limit as ``maxlevel'', 
+where a ``maxlevel'' of $10$ correponds to a grid size of $L/ \Delta x = 2^{-10}$,  
+In Fig. \ref{res_comp} we illustrate the differences between simulations carried out
+using three different ``maxlevels'', corresponding to identical ligaments that
+are characterized by the non-dimensional parameters given in \eqref{base_params}.
+The computational cost of the most resolved simulation characterized by a ``maxlevel''
+of $11$ ($W / \Delta x_{\textrm{min}} = 40.96$) is $516$ seconds\sidenote{
+These simulations are carried out in parallel on 16 processors. }, 
+for ``maxlevel'' of 10 ($W / \Delta x_{\textrm{min}} = 20.48$) is $156$ seconds, and finally 
+for ``maxlevel'' of 9 ($W / \Delta x_{\textrm{min}} = 10.24$) is $54$ seconds. 
+Comparing the simulations at the different resolutions, we do not observe any substantial 
+differences in the dynamics at intermediate as well as long time scales.
+\marginnote{
+As a minor remark, we point out that coalescences take place marginally faster for the 
+lower resolutions compared to the one as the ``maxlevel'' of $11$. 
+}
+Judging by the qualitative and quantitative similarities between the simulations corresponding 
+to ``maxlevels'' $10$ and $11$, we conclude that our simulations are converged (more or less),
+and that a ``maxlevel'' of $10$ serves as an optimal level of refinement for our future simulations.  
+
 % same parameters, with l9,l10,l11 
 
 % L11 : 516 secs @ 16 procs
@@ -732,7 +763,19 @@ simulations or results we present correspond to the 2D axisymmetric framework.
 \begin{figure*}
 \centering
 \includegraphics{plots/ligament_breakup/resolution_compare.pdf}
-\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
+	\caption{Dynamics of the ligament destabilization (closeup), subsequent breakup 
+	and eventual coalescences over \textit{intermediate} time scales.
+	The top row represents simulations carried out at a ``maxlevel'' of $11$,
+	the middle and bottom rows represents those carried out at ``maxlevels'' of
+	$10$ and $9$ respectively. 
+	The colormap is kept the same across all figures, where the left 
+	side of the axis of symmetry in each figure corresponds to the axial component of 
+	velocity (values from $-1$ to $1$), whereas the one on the right refers to 
+	the \textit{level} of numerical resolution (from levels $4$ to $11$). 
+	The colors red and blue correspond to the higher and lower 
+	end values respectively, in case of both colormaps. 
+	As one goes from the middle to the top row, there are no significant distinctions 
+	between the interface shapes (black curves), especially at long time scales such as $T=20$. 
 	}
 \label{res_comp}
 \end{figure*}
@@ -741,50 +784,111 @@ simulations or results we present correspond to the 2D axisymmetric framework.
 
 \section{Impact of Initial Conditions}
 
+The characteristic length scale of the problem is the radius $R$ of our ligaments, 
+which are in turn determined by the choice of Ohnesorge number, given that we are dealing with air-water systems.
+On the other hand, the global dynamics of the ligament breakup take place over a multitude of different time scales, 
+in particular the penultimate stages of the non-linear breakup which occur on successively shrinking (faster) time scales.  
+We direct our attention towards understanding the dynamics over much larger time scales rather than those  
+associated with the self-similar collapse of the liquid bridges that lead to the formation of drops. 
+In this study, we loosely define \textit{short} time scales as $1 \leq T \leq 10$, \textit{intermediate} as 
+$T \leq 20 $ and \textit{long} time scales as $T > 20 $. 
+The combination of $Oh$, $\varepsilon$, $\Lambda$ and $K$ used to 
+characterize our problem also act as initial conditions that specify the 
+randomly corrugated geometrical shape of the ligament.  
+In this section, we take a closer look at the differences in the dynamics of ligament destabilization 
+and the ensuing coalescences brought about by the difference in the initial shapes of the ligament in question.
+
+\paragraph{Corrugation Amplitude}
+The parameter $\varepsilon$ is defined as the mean of the  
+
+
+\paragraph{Ohnesorge Number}
+
+\paragraph{Cut-Off Frequency}
+
+\paragraph{Aspect-Ratio}
 
 
 
-% dynamics of millimeter scale water ligaments in air
-% time-scales in milliseconds 
-% slow time scales and fast time scales
-
-
-
-\subsubsection*{Corrugation Amplitude}
 
 \begin{figure*}
 \centering
 \includegraphics{plots/ligament_breakup/amplitude_compare.pdf}
-\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
+	\caption{Dynamics of the ligament destabilization (closeup), subsequent breakup 
+	and eventual coalescences over \textit{short} time scales.
+	Simulations of identical ligament surface profiles
+	subject to different initial corrugation amplitudes, with the smallest 
+	amplitude represented by the top row and the largest amplitude by the bottom row. 
+	The colormap is kept the same across all figures, where the left 
+	side of the axis of symmetry in each figure corresponds to the axial component of 
+	velocity (values from $-1$ to $1$), whereas the one on the right refers to 
+	the vorticity (values from $-1$ to $1$) perpendicular to the plane. 
+	The colors red and blue correspond to the higher and lower 
+	end values respectively, in case of both colormaps. 
+	The interface shapes are represented by the black contours.
 	}
 \label{amp_comp}
 \end{figure*}
 
-\subsubsection*{Ohnesorge Number}
 
 \begin{figure*}
 \centering
 \includegraphics{plots/ligament_breakup/ohnesorge_compare.pdf}
-\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
+	\caption{Dynamics of the ligament destabilization (closeup), subsequent breakup 
+	and eventual coalescences over \textit{intermediate} time scales.
+	Simulations of identical ligament surface profiles
+	at different length scales in accordance with the  
+	Ohnesorge numbers that characterize them, with the smallest 
+	length scale represented by the top row ($Oh = 0.1$) and the largest 
+	length scale by the bottom row ($Oh = 0.001$). 
+	The colormap is kept the same across all figures, where the left 
+	side of the axis of symmetry in each figure corresponds to the axial component of 
+	velocity (values from $-1$ to $1$), whereas the one on the right refers to 
+	the vorticity (values from $-1$ to $1$) perpendicular to the plane. 
+	The colors red and blue correspond to the higher and lower 
+	end values respectively, in case of both colormaps. 
+	The interface shapes are represented by the white contours.
 	}
-\label{amp_comp}
+\label{ohne_comp}
 \end{figure*}
 
-\subsubsection*{Cut-Off Frequency}
 
 \begin{figure*}
 \centering
 \includegraphics{plots/ligament_breakup/wave_compare.pdf}
-	\caption{\blindtext}
+	\caption{Dynamics of the ligament destabilization (closeup), subsequent breakup 
+	and eventual coalescences over \textit{intermediate} time scales.
+	Simulations of ligament surface profiles that differ due to the 
+	different set of random waves used to generate them, with the 
+	profile corresponding to the lowest cut-off frequency represented 
+	by the top row and the highest cut-off by the bottom row. 
+	The colormap is kept the same across all figures, where the left 
+	side of the axis of symmetry in each figure corresponds to the axial component of 
+	velocity (values from $-1$ to $1$), whereas the one on the right refers to 
+	the vorticity (values from $-1$ to $1$) perpendicular to the plane. 
+	The colors red and blue correspond to the higher and lower 
+	end values respectively, in case of both colormaps. 
+	The interface shapes are represented by the black contours.
+	}
 \label{wave_comp}
 \end{figure*}
 
-\subsubsection*{Aspect-Ratio}
 
 \begin{figure*}
 \centering
 \includegraphics{plots/ligament_breakup/aspect_compare.pdf}
-\caption{Fragmentation of stretched liquid (Newtonian) ligaments formed. 
+	\caption{Dynamics of the ligament destabilization, subsequent breakup 
+	and eventual coalescences over \textit{intermediate} time scales.
+	Simulations for identical ligament surface profiles
+	corresponding to different aspect ratios (having identical radii), 
+	with the shorter ligament represented by the top row and the longer one by the bottom row. 
+	The colormap is kept the same across all figures, where the left 
+	side of the axis of symmetry in each figure corresponds to the axial component of 
+	velocity (values from $-1$ to $1$), whereas the one on the right refers to 
+	the vorticity (values from $-1$ to $1$) perpendicular to the plane. 
+	The colors red and blue correspond to the higher and lower 
+	end values respectively, in case of both colormaps. 
+	The interface shapes are represented by the black contours.
 	}
 \label{asp_comp}
 \end{figure*}
