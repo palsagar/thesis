@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  15 JUL 2020 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  16 JUL 2020 12:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7169,6 +7169,12 @@ File: plots/ligament_breakup/profile.pdf Graphic file (type pdf)
 Package pdftex.def Info: plots/ligament_breakup/profile.pdf  used on input line
  344.
 (pdftex.def)             Requested size: 304.45824pt x 152.22911pt.
+Package marginnote Info: Margin note 81.2 is on absolute page 82
+(marginnote)              on input line 386.
+Package marginnote Info: right page because not two side mode on input line 386
+.
+Package marginnote Info: xpos seems to be 158.31221pt,
+(marginnote)             \marginnoterightadjust ignored on input line 386.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
@@ -7179,18 +7185,12 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [65 <./plots/ligament_breakup/schematic.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-Package marginnote Info: Margin note 82.1 is on absolute page 82
-(marginnote)              on input line 383.
-Package marginnote Info: right page because not two side mode on input line 383
+Package marginnote Info: Margin note 82.1 is on absolute page 83
+(marginnote)              on input line 430.
+Package marginnote Info: right page because not two side mode on input line 430
 .
 Package marginnote Info: xpos seems to be 70.56284pt,
-(marginnote)             \marginnoterightadjust ignored on input line 383.
-Package marginnote Info: Margin note 82.2 is on absolute page 83
-(marginnote)              on input line 432.
-Package marginnote Info: right page because not two side mode on input line 432
-.
-Package marginnote Info: xpos seems to be 70.56284pt,
-(marginnote)             \marginnoterightadjust ignored on input line 432.
+(marginnote)             \marginnoterightadjust ignored on input line 430.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
@@ -7206,11 +7206,11 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 \openout5 = `main.mw'.
 
 Package marginnote Info: Margin note 83.1 is on absolute page 83
-(marginnote)              on input line 471.
-Package marginnote Info: right page because not two side mode on input line 471
+(marginnote)              on input line 469.
+Package marginnote Info: right page because not two side mode on input line 469
 .
 Package marginnote Info: xpos seems to be 70.56284pt,
-(marginnote)             \marginnoterightadjust ignored on input line 471.
+(marginnote)             \marginnoterightadjust ignored on input line 469.
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -7227,7 +7227,7 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 File: plots/ligament_breakup/wave_quant.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/wave_quant.pdf>
 Package pdftex.def Info: plots/ligament_breakup/wave_quant.pdf  used on input l
-ine 483.
+ine 481.
 (pdftex.def)             Requested size: 304.45923pt x 167.90611pt.
 \openout5 = `main.mw'.
 
@@ -7256,16 +7256,16 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 \openout5 = `main.mw'.
 
 Package marginnote Info: Margin note 84.1 is on absolute page 84
-(marginnote)              on input line 517.
-Package marginnote Info: right page because not two side mode on input line 517
+(marginnote)              on input line 515.
+Package marginnote Info: right page because not two side mode on input line 515
 .
 Package marginnote Info: xpos seems to be 129.24556pt,
-(marginnote)             \marginnoterightadjust ignored on input line 517.
-<plots/ligament_breakup/lig_mesh.pdf, id=2014, 47.42125pt x 142.26378pt>
+(marginnote)             \marginnoterightadjust ignored on input line 515.
+<plots/ligament_breakup/lig_mesh.pdf, id=2015, 47.42125pt x 142.26378pt>
 File: plots/ligament_breakup/lig_mesh.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/lig_mesh.pdf>
 Package pdftex.def Info: plots/ligament_breakup/lig_mesh.pdf  used on input lin
-e 555.
+e 553.
 (pdftex.def)             Requested size: 140.60052pt x 421.80185pt.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -7281,7 +7281,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 File: plots/ligament_breakup/drop_removal.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/drop_removal.pdf>
 Package pdftex.def Info: plots/ligament_breakup/drop_removal.pdf  used on input
- line 598.
+ line 596.
 (pdftex.def)             Requested size: 140.57085pt x 194.1643pt.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -7298,42 +7298,42 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 File: plots/ligament_breakup/3d_vs_2d_short.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/3d_vs_2d_short.pdf>
 Package pdftex.def Info: plots/ligament_breakup/3d_vs_2d_short.pdf  used on inp
-ut line 693.
+ut line 691.
 (pdftex.def)             Requested size: 468.34203pt x 677.25461pt.
 
 
-LaTeX Warning: Float too large for page by 43.97029pt on input line 706.
+LaTeX Warning: Float too large for page by 43.97029pt on input line 704.
 
 <plots/ligament_breakup/3d_vs_2d_long.pdf, id=2049, 375.41696pt x 542.87859pt>
 File: plots/ligament_breakup/3d_vs_2d_long.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/3d_vs_2d_long.pdf>
 Package pdftex.def Info: plots/ligament_breakup/3d_vs_2d_long.pdf  used on inpu
-t line 710.
+t line 708.
 (pdftex.def)             Requested size: 468.34203pt x 677.25461pt.
 
-LaTeX Warning: Float too large for page by 43.97029pt on input line 723.
+LaTeX Warning: Float too large for page by 43.97029pt on input line 721.
 
 Package marginnote Info: Margin note 86.1 is on absolute page 86
-(marginnote)              on input line 734.
-Package marginnote Info: right page because not two side mode on input line 734
+(marginnote)              on input line 732.
+Package marginnote Info: right page because not two side mode on input line 732
 .
 Package marginnote Info: xpos seems to be 70.56284pt,
-(marginnote)             \marginnoterightadjust ignored on input line 734.
+(marginnote)             \marginnoterightadjust ignored on input line 732.
 Package marginnote Info: Margin note 86.2 is on absolute page 86
-(marginnote)              on input line 753.
-Package marginnote Info: right page because not two side mode on input line 753
+(marginnote)              on input line 751.
+Package marginnote Info: right page because not two side mode on input line 751
 .
 Package marginnote Info: xpos seems to be 70.56284pt,
-(marginnote)             \marginnoterightadjust ignored on input line 753.
+(marginnote)             \marginnoterightadjust ignored on input line 751.
 <plots/ligament_breakup/resolution_compare.pdf, id=2053, 375.41696pt x 542.8785
 9pt>
 File: plots/ligament_breakup/resolution_compare.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/resolution_compare.pdf>
 Package pdftex.def Info: plots/ligament_breakup/resolution_compare.pdf  used on
- input line 765.
+ input line 763.
 (pdftex.def)             Requested size: 468.34203pt x 677.25461pt.
 
-LaTeX Warning: Float too large for page by 62.97029pt on input line 781.
+LaTeX Warning: Float too large for page by 62.97029pt on input line 779.
 
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -7380,40 +7380,40 @@ pt>
 File: plots/ligament_breakup/amplitude_compare.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/amplitude_compare.pdf>
 Package pdftex.def Info: plots/ligament_breakup/amplitude_compare.pdf  used on 
-input line 810.
+input line 818.
 (pdftex.def)             Requested size: 468.36201pt x 677.25468pt.
 
 
-LaTeX Warning: Float too large for page by 53.47037pt on input line 825.
+LaTeX Warning: Float too large for page by 53.47037pt on input line 833.
 
 <plots/ligament_breakup/ohnesorge_compare.pdf, id=2170, 375.43298pt x 542.87865
 pt>
 File: plots/ligament_breakup/ohnesorge_compare.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/ohnesorge_compare.pdf>
 Package pdftex.def Info: plots/ligament_breakup/ohnesorge_compare.pdf  used on 
-input line 830.
+input line 838.
 (pdftex.def)             Requested size: 468.36201pt x 677.25468pt.
 
-LaTeX Warning: Float too large for page by 62.97037pt on input line 847.
+LaTeX Warning: Float too large for page by 62.97037pt on input line 855.
 
 <plots/ligament_breakup/wave_compare.pdf, id=2171, 375.43298pt x 542.87865pt>
 File: plots/ligament_breakup/wave_compare.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/wave_compare.pdf>
 Package pdftex.def Info: plots/ligament_breakup/wave_compare.pdf  used on input
- line 852.
+ line 860.
 (pdftex.def)             Requested size: 468.36201pt x 677.25468pt.
 
-LaTeX Warning: Float too large for page by 60.94888pt on input line 868.
+LaTeX Warning: Float too large for page by 60.94888pt on input line 876.
 
 <plots/ligament_breakup/aspect_compare.pdf, id=2172, 375.41696pt x 542.87859pt>
 
 File: plots/ligament_breakup/aspect_compare.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/aspect_compare.pdf>
 Package pdftex.def Info: plots/ligament_breakup/aspect_compare.pdf  used on inp
-ut line 873.
+ut line 881.
 (pdftex.def)             Requested size: 468.34203pt x 677.25461pt.
 
-LaTeX Warning: Float too large for page by 53.47029pt on input line 888.
+LaTeX Warning: Float too large for page by 53.47029pt on input line 896.
 
 ) (./chapters/dropstat.tex
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -9483,7 +9483,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  59267 strings out of 494847
  1103688 string characters out of 6179080
- 1985471 words of memory out of 5000000
+ 1985608 words of memory out of 5000000
  60459 multiletter control sequences out of 15000+600000
  724987 words of font info for 381 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -9514,7 +9514,7 @@ are/texlive/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/newpx/zplx-regular.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (107 pages, 11920395 bytes).
+Output written on main.pdf (107 pages, 11920900 bytes).
 PDF statistics:
  2887 PDF objects out of 2984 (max. 8388607)
  2504 compressed objects within 26 object streams
