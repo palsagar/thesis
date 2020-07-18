@@ -1,10 +1,7 @@
+
 \begin{thenomenclature} 
-
- \nomgroup{A}
-
-  \item [{$c$}]\begingroup Speed of light in a vacuum inertial frame\nomeqref {\relax 0}
-		\nompageref{104}
-  \item [{$h$}]\begingroup Planck constant\nomeqref {\relax 0}
-		\nompageref{104}
+\nomgroup{A}
+  \item [{$c$}]\begingroup Speed of light in a vacuum inertial frame\nomeqref {\relax 0}\nompageref{104}
+  \item [{$h$}]\begingroup Planck constant\nomeqref {\relax 0}\nompageref{104}
 
 \end{thenomenclature}

@@ -1,1 +1,1 @@
-./compileall.sh && okular main.pdf &
+./compileall.sh && open main.pdf &
