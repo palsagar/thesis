@@ -7,7 +7,8 @@
 
 
 
-% interested in long time dynamics as coalescences lead to larger drop sizes
+% determination of droplet diameter and volume 
+
 
 
 \section{Millimeter Scale Ensembles}
@@ -45,11 +46,11 @@ particular probability density functions (PDF) defined as follows
 
 \begin{align}
 	\text{Gaussian : } \quad P\left( x ; \mu , \sigma \right) &= 
-	\frac{1}{\sigma \sqrt{2\pi}} \textrm{exp}\left[-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2\right] ,\\
+	\frac{1}{\sigma \sqrt{2\pi}} \textrm{exp}\left[-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2\right] \label{gauss},\\
 	\text{Log-Normal : } \quad P\left( x ; \mu , \sigma \right) &= 
-	\frac{1}{x \sigma \sqrt{2\pi}} \textrm{exp}\left[-\frac{1}{2}\left(\frac{\log x - \mu}{\sigma}\right)^2\right] ,\\
+	\frac{1}{x \sigma \sqrt{2\pi}} \textrm{exp}\left[-\frac{1}{2}\left(\frac{\log x - \mu}{\sigma}\right)^2\right] \label{log_normal},\\
 	\text{Gamma : } \quad P\left( x ; n,k \right) &= 
-	\frac{k^{n}}{\Gamma(n)} x^{n-1} \textrm{exp}\left(-k x\right) , 
+	\frac{k^{n}}{\Gamma(n)} x^{n-1} \textrm{exp}\left(-k x\right) \label{gamma}, 
 \end{align}
 
 where $x$ is the variable (diameter, volume etc) in question. 
@@ -63,6 +64,12 @@ the variable rescaled by its mean ($n / k$), which becomes
 The rescaling of variable results renders the function dependent solely 
 on the parameter $n$, identical to the form first used in \cite{vill_2}
 to represent the distribution of the normalized diameter.  
+At the large size limit of the distributions, the leading order terms 
+scale as $P(x) \sim \textrm{exp}(-x^2)$ for the Gaussian, $P(x) \sim \textrm{exp}(- \log x)$ for 
+the Log-Normal and finally $P(x) \sim \textrm{exp}(- x)$ in case of the Gamma function. 
+In essence, out of the three density functions, the Guassian predicts the lowest frequency of
+rare events (very large drops), the Log-Normal predicts the highest frequency whereas
+the Gamma function prediction is somewhere in between the other two. 
 
 Another important aspect to consider is the bin-width of the 
 histograms used to construct the probability distributions. 
@@ -90,9 +97,21 @@ a considerable amount of coalescences after the initial destabilization of the l
 \subsection*{Diameter Distributions}
 
 Figures \ref{t1_dia_bins} and \ref{t2_dia_bins} illustrate the probability distributions
-of droplet diameter corresponding to $T=15$ and $T=30$ respectively.  
-
-
+of the normalized droplet diameter corresponding to $T=15$ and $T=30$ respectively. 
+The diamters are normalized using the means of the associated samples. 
+The bin widths are always based on the properties of the largest sample.
+As one can observe, there are fewer drops in the largest sample at $T=30$ 
+compared to the largest sample at $T=30$, due to the additional coalescences.  
+The drop diameters are found to be more or less symmetrically distributed about the mean,
+although there is an small peak at the lower end of the dis.
+The choice of binning criteria does not seem to have any noticable effect on the 
+overall shape of the distribution, regardless of the size of the sample $N$.   
+A Guassian probability density function \eqref{gauss} appears to be a good 
+approximation to the underlying distribution.
+It is important to note that the Gaussian curve is not fitted to the heights of the 
+histogram bins, instead it is plotted on top of the distributions using the mean and 
+variance corresponding to the largest sample size, therefore rendering it independent
+of the choice of bin-width and free from any additional fitting parameters.  
 
 
 \begin{figure*}
@@ -110,6 +129,7 @@ hence they are plotted alongside the histograms instead of being fitted to the b
 \end{figure*}
 
 % long time scales
+
 
 
 \begin{figure*}
@@ -140,16 +160,46 @@ The Gaussian and Log-Normal functions are characterized by the mean and variance
 therefore are plotted alongside the histogram, whereas, the Gamma function is fitted to the bin heights,
 with $n= 11.63$ being the value corresponding to the best fit.
 	}
+\label{t2_dia_fits}
 \end{figure*}
 
 % N^{-1/2} scaling of error 
 
-% extrapolations of RP etc , limit of volume of largest drop
+In Fig. \ref{t2_dia_fits}, we present a comparison of the different probaility 
+density functions applied to the largest ensemble of drops characterized by $\Phi_0$ and $T=30$. 
+The Gaussian is found to be the best approximation to the normalized 
+diameter distribution, followed by the Gamma and Log-Normal functions.
+The Gaussian and Log-Normal curves are generated using the mean and variance 
+of the dataset, whereas the free parameter $n$ of the Gamma function is determined
+according to the best least-squares fit over the histogram. 
+A noteworthy point demonstrated by the inset of Fig. \ref{t2_dia_fits} is that
+the error \sidenote{The error is defined as the $L_2$ norm of the differences 
+between the bin hights of the sample and the largest sample, where both 
+samples have identical bin-width.} scales as $N^{-1/2}$, $N$ being the sample size.
+Additionally, the scaling is not sensitive to the choice of bin-width. 
+This strongly suggests the absence of any unforeseen correlations between the 
+individual realizations (corrugated ligaments) that form the ensemble.
+
 
 \subsection*{Volume Distributions}
 
-% short time scale 
+We now shift our attention towards the distribution of droplet volumes. 
+Figures \ref{t1_vol_bins} and \ref{t2_vol_bins} show the PDFs 
+of the normalized droplet volume corresponding to $T=15$ and $T=30$ respectively. 
+The volumes are normalized by the means of the associated samples. 
+As in the diameter distributions, the bin widths are always 
+based on the properties of the largest sample.
+In stark contrast to the case of the diameters, the drop volumes
+are found to be heavily skewed towards the smaller sizes.
+Similar to the diameter PDFs, the choice of bin-width seems to not have any considerable impact
+on the overall shape of the distribution, and is also independent of the sample size.   
+In this case though, the single parameter Gamma density function \eqref{gamma} appears to
+be the approximation to the volume distribution, with the best fit corresponding to 
+values of $n \approx 1.68$ and $n \approx 1.58$ corresponding to $T=15$ and $T=30$ respectively.
+There is a slight dependence of the parameter $n$ on the bin-width, which is expected 
+as $n$ itself is determined according to the best fit to the histogram in question.
 
+% short time scale 
 
 \begin{figure*}
 \centering
@@ -165,10 +215,7 @@ by that which provides the best (least-squares) fit to the corresponding bin hei
 \label{t1_vol_bins}
 \end{figure*}
 
-
-
 % long time scale
-
 
 \begin{figure*}
 \centering
@@ -184,9 +231,18 @@ by that which provides the best (least-squares) fit to the corresponding bin hei
 \label{t2_vol_bins}
 \end{figure*}
 
+Fig. \ref{t2_vol_fits} shows a comparison of the different probaility 
+density functions applied to the largest ensemble of drops characterized by $\Phi_0$ and $T=30$. 
+The Gamma density function is found to be the best approximation to the normalized 
+volume distribution, followed by the Log-Normal and Gaussian functions.
+Similar to the diameter case, the Gaussian and Log-Normal curves are 
+generated using the mean and variance of the dataset, 
+whereas the free parameter $n$ of the Gamma function is determined
+according to the best least-squares fit over the histogram. 
+As seen before, the error (inset of Fig. \ref{t2_vol_fits}) 
+scales as $N^{-1/2}$, regardless of the binning criteria used. 
 
 % PDF predictions of data at long times
-
 
 \begin{figure*}
 \centering
@@ -224,6 +280,7 @@ with $n= 1.57$ being the value corresponding to the best fit.
 \end{figure}
 
 % side by side comparison
+% extrapolations of RP etc , limit of volume of largest drop
 
 
 \begin{figure*}
