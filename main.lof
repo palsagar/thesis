@@ -141,11 +141,11 @@
 \defcounter {refsection}{0}\relax
 \contentsline {figure}{\numberline {\relax 8.6}{\ignorespaces Probability distribution functions of the droplet volume at time $T = 30$. The ensemble is characterized by $\Phi _0 \equiv \left ( Oh = 10^{-2}, K = 2\pi , \varepsilon = 1.0 , \Lambda = 50 \right )$. The diameters are normalized by the mean of the corresponding sample. The distribution is generated using 108 bins of uniform size, represented in green. The Gaussian and Log-Normal functions are characterized by the mean and variance of the original dataset, therefore are plotted alongside the histogram, whereas, the Gamma function is fitted to the bin heights, with $n= 1.57$ being the value corresponding to the best fit. \relax }}{89}{figure.caption.135}
 \defcounter {refsection}{0}\relax
-\contentsline {figure}{\numberline {\relax 8.7}{\ignorespaces \blindtext \relax }}{89}{figure.caption.137}
+\contentsline {figure}{\numberline {\relax 8.7}{\ignorespaces Temporal evolution of the probability distribution functions of the droplet diameter, which is rescaled by the width of the initial ligament. The ensemble is characterized by $\Phi _0 \equiv \left ( Oh = 10^{-2}, K = 2\pi , \varepsilon = 0.4 , \Lambda = 50 \right )$, which corresponds to \textit {weakly} perturbed initial ligaments shapes. \relax }}{89}{figure.caption.137}
 \defcounter {refsection}{0}\relax
-\contentsline {figure}{\numberline {\relax 8.8}{\ignorespaces \blindtext \relax }}{90}{figure.caption.138}
+\contentsline {figure}{\numberline {\relax 8.8}{\ignorespaces Temporal evolution of the probability distribution functions of the droplet diameter, which is rescaled by the width of the initial ligament. The ensemble is characterized by $\Phi _0 \equiv \left ( Oh = 10^{-2}, K = 2\pi , \varepsilon = 1.6 , \Lambda = 50 \right )$, which corresponds to \textit {strongly} perturbed initial ligaments shapes. \relax }}{90}{figure.caption.138}
 \defcounter {refsection}{0}\relax
-\contentsline {figure}{\numberline {\relax 8.9}{\ignorespaces \blindtext \relax }}{90}{figure.caption.139}
+\contentsline {figure}{\numberline {\relax 8.9}{\ignorespaces Comparison between the temporal evolution of the probability distribution functions of the droplet diameter, corresponding to strongly and weakly perturbed initial ligament shapes. The diameter is rescaled by the width of the initial ligament. The ensembles are characterized by $\Phi _0 \equiv \left ( Oh = 10^{-2}, K = 2\pi , \varepsilon = {0.4,1.6} , \Lambda = 50 \right )$. \relax }}{90}{figure.caption.139}
 \defcounter {refsection}{0}\relax
 \contentsline {figure}{\numberline {\relax 8.10}{\ignorespaces \blindtext \relax }}{92}{figure.caption.140}
 \defcounter {refsection}{0}\relax
