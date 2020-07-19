@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.31)  19 JUL 2020 20:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.31)  19 JUL 2020 22:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7512,59 +7512,94 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 ] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/short_time_diameter_bins.pdf, id=2566, 867.24pt x 867.24pt>
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+Package marginnote Info: Margin note 99.1 is on absolute page 99
+(marginnote)              on input line 74.
+Package marginnote Info: right page because not two side mode on input line 74.
+
+Package marginnote Info: xpos seems to be 171.12785pt,
+(marginnote)             \marginnoterightadjust ignored on input line 74.
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+
+ []
+
+<plots/drop_stats/short_time_diameter_bins.pdf, id=2571, 867.24pt x 867.24pt>
 File: plots/drop_stats/short_time_diameter_bins.pdf Graphic file (type pdf)
 <use plots/drop_stats/short_time_diameter_bins.pdf>
 Package pdftex.def Info: plots/drop_stats/short_time_diameter_bins.pdf  used on
- input line 74.
+ input line 100.
 (pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
-<plots/drop_stats/long_time_diameter_bins.pdf, id=2567, 867.24pt x 867.24pt>
+<plots/drop_stats/long_time_diameter_bins.pdf, id=2572, 867.24pt x 867.24pt>
 File: plots/drop_stats/long_time_diameter_bins.pdf Graphic file (type pdf)
 <use plots/drop_stats/long_time_diameter_bins.pdf>
 Package pdftex.def Info: plots/drop_stats/long_time_diameter_bins.pdf  used on 
-input line 91.
+input line 117.
 (pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
-<plots/drop_stats/long_time_diameter_fits.pdf, id=2568, 433.62pt x 289.08pt>
+<plots/drop_stats/long_time_diameter_fits.pdf, id=2573, 433.62pt x 289.08pt>
 File: plots/drop_stats/long_time_diameter_fits.pdf Graphic file (type pdf)
 <use plots/drop_stats/long_time_diameter_fits.pdf>
 Package pdftex.def Info: plots/drop_stats/long_time_diameter_fits.pdf  used on 
-input line 108.
+input line 134.
 (pdftex.def)             Requested size: 468.35556pt x 312.23703pt.
-<plots/drop_stats/short_time_volume_bins.pdf, id=2569, 867.24pt x 867.24pt>
+<plots/drop_stats/short_time_volume_bins.pdf, id=2574, 867.24pt x 867.24pt>
 File: plots/drop_stats/short_time_volume_bins.pdf Graphic file (type pdf)
 <use plots/drop_stats/short_time_volume_bins.pdf>
 Package pdftex.def Info: plots/drop_stats/short_time_volume_bins.pdf  used on i
-nput line 130.
+nput line 156.
 (pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
-<plots/drop_stats/long_time_volume_bins.pdf, id=2570, 867.24pt x 867.24pt>
+<plots/drop_stats/long_time_volume_bins.pdf, id=2575, 867.24pt x 867.24pt>
 File: plots/drop_stats/long_time_volume_bins.pdf Graphic file (type pdf)
 <use plots/drop_stats/long_time_volume_bins.pdf>
 Package pdftex.def Info: plots/drop_stats/long_time_volume_bins.pdf  used on in
-put line 149.
+put line 175.
 (pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
-<plots/drop_stats/long_time_volume_fits.pdf, id=2571, 433.62pt x 289.08pt>
+<plots/drop_stats/long_time_volume_fits.pdf, id=2576, 433.62pt x 289.08pt>
 File: plots/drop_stats/long_time_volume_fits.pdf Graphic file (type pdf)
 <use plots/drop_stats/long_time_volume_fits.pdf>
 Package pdftex.def Info: plots/drop_stats/long_time_volume_fits.pdf  used on in
-put line 167.
+put line 193.
 (pdftex.def)             Requested size: 468.35556pt x 312.23703pt.
-<plots/drop_stats/small_amp.pdf, id=2572, 385.81142pt x 287.37285pt>
+<plots/drop_stats/small_amp.pdf, id=2577, 385.81142pt x 287.37285pt>
 File: plots/drop_stats/small_amp.pdf Graphic file (type pdf)
 <use plots/drop_stats/small_amp.pdf>
-Package pdftex.def Info: plots/drop_stats/small_amp.pdf  used on input line 188
+Package pdftex.def Info: plots/drop_stats/small_amp.pdf  used on input line 214
 .
 (pdftex.def)             Requested size: 304.46388pt x 226.78087pt.
-<plots/drop_stats/large_amp.pdf, id=2573, 385.81142pt x 287.37285pt>
+<plots/drop_stats/large_amp.pdf, id=2578, 385.81142pt x 287.37285pt>
 File: plots/drop_stats/large_amp.pdf Graphic file (type pdf)
 <use plots/drop_stats/large_amp.pdf>
-Package pdftex.def Info: plots/drop_stats/large_amp.pdf  used on input line 195
+Package pdftex.def Info: plots/drop_stats/large_amp.pdf  used on input line 221
 .
 (pdftex.def)             Requested size: 304.46388pt x 226.78087pt.
-<plots/drop_stats/amp_dist_compare.pdf, id=2574, 722.7pt x 578.16pt>
+<plots/drop_stats/amp_dist_compare.pdf, id=2579, 722.7pt x 578.16pt>
 File: plots/drop_stats/amp_dist_compare.pdf Graphic file (type pdf)
 <use plots/drop_stats/amp_dist_compare.pdf>
 Package pdftex.def Info: plots/drop_stats/amp_dist_compare.pdf  used on input l
-ine 205.
+ine 231.
 (pdftex.def)             Requested size: 468.3379pt x 374.67033pt.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -7656,81 +7691,81 @@ clusion: multiple pdfs with page group included in a single page
 >] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/determine_fit_linear.pdf, id=2889, 368.66643pt x 631.65117pt>
+<plots/drop_stats/determine_fit_linear.pdf, id=2895, 368.66643pt x 631.65117pt>
 
 File: plots/drop_stats/determine_fit_linear.pdf Graphic file (type pdf)
 <use plots/drop_stats/determine_fit_linear.pdf>
 Package pdftex.def Info: plots/drop_stats/determine_fit_linear.pdf  used on inp
-ut line 224.
+ut line 250.
 (pdftex.def)             Requested size: 304.45169pt x 521.62947pt.
-<plots/drop_stats/linear_tail_fit_uncertainty_no.pdf, id=2890, 578.16pt x 433.6
+<plots/drop_stats/linear_tail_fit_uncertainty_no.pdf, id=2896, 578.16pt x 433.6
 2pt>
 File: plots/drop_stats/linear_tail_fit_uncertainty_no.pdf Graphic file (type pd
 f)
 <use plots/drop_stats/linear_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_tail_fit_uncertainty_no.pdf  u
-sed on input line 234.
+sed on input line 260.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf, id=2891, 578.16pt x 
+<plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf, id=2897, 578.16pt x 
 433.62pt>
 File: plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf Graphic file (ty
 pe pdf)
 <use plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.p
-df  used on input line 235.
+df  used on input line 261.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf, id=2892, 578.16pt x 433.
+<plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf, id=2898, 578.16pt x 433.
 62pt>
 File: plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf Graphic file (type p
 df)
 <use plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf  
-used on input line 244.
+used on input line 270.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf, id=2893, 578.16pt x
+<plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf, id=2899, 578.16pt x
  433.62pt>
 File: plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf Graphic file (t
 ype pdf)
 <use plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.
-pdf  used on input line 245.
+pdf  used on input line 271.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/determine_fit_log.pdf, id=2894, 368.66643pt x 631.65117pt>
+<plots/drop_stats/determine_fit_log.pdf, id=2900, 368.66643pt x 631.65117pt>
 File: plots/drop_stats/determine_fit_log.pdf Graphic file (type pdf)
 <use plots/drop_stats/determine_fit_log.pdf>
 Package pdftex.def Info: plots/drop_stats/determine_fit_log.pdf  used on input 
-line 257.
+line 283.
 (pdftex.def)             Requested size: 304.45169pt x 521.62947pt.
-<plots/drop_stats/log_tail_fit_uncertainty_no.pdf, id=2895, 578.16pt x 433.62pt
+<plots/drop_stats/log_tail_fit_uncertainty_no.pdf, id=2901, 578.16pt x 433.62pt
 >
 File: plots/drop_stats/log_tail_fit_uncertainty_no.pdf Graphic file (type pdf)
 <use plots/drop_stats/log_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/log_tail_fit_uncertainty_no.pdf  used
- on input line 266.
+ on input line 292.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf, id=2896, 578.16pt x 433
+<plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf, id=2902, 578.16pt x 433
 .62pt>
 File: plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf Graphic file (type 
 pdf)
 <use plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf 
- used on input line 267.
+ used on input line 293.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/log_tail_fit_uncertainty_yes.pdf, id=2897, 578.16pt x 433.62p
+<plots/drop_stats/log_tail_fit_uncertainty_yes.pdf, id=2903, 578.16pt x 433.62p
 t>
 File: plots/drop_stats/log_tail_fit_uncertainty_yes.pdf Graphic file (type pdf)
 
 <use plots/drop_stats/log_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/log_tail_fit_uncertainty_yes.pdf  use
-d on input line 277.
+d on input line 303.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf, id=2898, 578.16pt x 43
+<plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf, id=2904, 578.16pt x 43
 3.62pt>
 File: plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf Graphic file (type
  pdf)
 <use plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf
-  used on input line 278.
+  used on input line 304.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
 )
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -9854,10 +9889,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59441 strings out of 492982
- 1109472 string characters out of 6134896
- 2021203 words of memory out of 5000000
- 60790 multiletter control sequences out of 15000+600000
+ 59447 strings out of 492982
+ 1109605 string characters out of 6134896
+ 2024377 words of memory out of 5000000
+ 60795 multiletter control sequences out of 15000+600000
  719993 words of font info for 372 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,20n,108p,10476b,3278s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -9894,10 +9929,10 @@ texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/newpx/zplri.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/newpx/zplx-regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boo
 ndox/zxxrw8a.pfb>
-Output written on main.pdf (124 pages, 15431967 bytes).
+Output written on main.pdf (124 pages, 15434210 bytes).
 PDF statistics:
- 3701 PDF objects out of 4296 (max. 8388607)
- 3158 compressed objects within 32 object streams
- 603 named destinations out of 1000 (max. 500000)
+ 3709 PDF objects out of 4296 (max. 8388607)
+ 3166 compressed objects within 32 object streams
+ 604 named destinations out of 1000 (max. 500000)
  43751 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -41,7 +41,7 @@ by a combination of the time $T$ and $\Phi_0$, where
 The definitions of the adimensional groups are identical to that used
 in the previous chapter, hence are not repeated.
 Statistical descriptions of the drop sizes are commonly carried out using
-particular probability distribution functions (PDF) defined as follows 
+particular probability density functions (PDF) defined as follows 
 
 \begin{align}
 	\text{Gaussian : } \quad P\left( x ; \mu , \sigma \right) &= 
@@ -54,19 +54,45 @@ particular probability distribution functions (PDF) defined as follows
 
 where $x$ is the variable (diameter, volume etc) in question. 
 The Gamma distribution can be rearranged so that $x$ represents
-the variable rescaled by its mean ($n / k$), giving us 
+the variable rescaled by its mean ($n / k$), which becomes 
 
 \begin{align}
 	P\left( x ; n \right) = \frac{n^{n}}{\Gamma(n)} x^{n-1} \textrm{exp}\left(-n x\right) . 
 \end{align}
 
+The rescaling of variable results renders the function dependent solely 
+on the parameter $n$, identical to the form first used in \cite{vill_2}
+to represent the distribution of the normalized diameter.  
 
+Another important aspect to consider is the bin-width of the 
+histograms used to construct the probability distributions. 
+There are several choices regarding the criteria used to determine the optimal bin-width, 
+taking into consideration the size, variability and skewness of the underlying data set. 
+In in interest of simplicity, we restrict our focus to histograms with uniform bin-width. 
+In order to ascertain the dependence (if any) of the distribution on the number of bins  
+(uniform size), we use $4$ different estimators, the open source implementations of which
+can be found in the Numpy library \sidecite{numpy}.
+The simplest of the four estimators selects the number 
+of bins as the square root of the sample size.
+Another estimator is also based solely on the size of the dataset, 
+but the number of bins scales as the cube root of the data size.  
+A more robust estimator that takes into account the variability in the dataset
+is the Freedman Diaconis estimator, in which the bin width is proportional to the 
+inter quartile range, and inversely proportional to the cube root of the data size. 
+Finally, we also use an improved version of the Sturges estimator, that performs 
+well for non-normal datasets due to the fact that it takes into account the skewness. 
 
-%impact of bin sizes
+In the subsequent sections, we present a statistical picture of the drop sizes generated 
+from our ligament ensemble $\Phi_0$, where the sample size is of the order of $64,000$.
+The droplet data is primarily recorded on slow time scales, so that the data reflects 
+a considerable amount of coalescences after the initial destabilization of the ligaments. 
 
 \subsection*{Diameter Distributions}
 
-% short time scales
+Figures \ref{t1_dia_bins} and \ref{t2_dia_bins} illustrate the probability distributions
+of droplet diameter corresponding to $T=15$ and $T=30$ respectively.  
+
+
 
 
 \begin{figure*}
