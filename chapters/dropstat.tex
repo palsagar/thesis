@@ -308,7 +308,7 @@ demonstrates the temporal evolution of the droplet diameter distributions,
 where the diameter is rescaled by the (mean) width $W$ of the initial ligaments. 
 At small time scales, the distribution is bimodal in nature, consisting of a large
 number of drops that are quite smaller than even the initial ligament width. 
-This may be a consequence of the non-linear effects \cite{satellite_1,satellite_2} 
+This may be a consequence of the non-linear effects \cite{sat_1, sat_2} 
 that kick in immediately following the initial linear (exponential) growth phase, 
 often resulting in the liquid thread disintegrating into a collection of main 
 and (significantly smaller) satellite drops (see Fig. \ref{amp_comp} in the preceding chapter). 
@@ -388,14 +388,41 @@ dashed lines located on both sides of the thicker line corresponding to the resp
 
 \section{Description of Large Sizes}
 
+The approximately symmetrical diameter distributions that we have seen 
+thus far seem to be well described by a Gaussian probability density function. 
+We shift our focus to the shape of the distribution towards the right hand 
+side of the peak, which represents the large drops emerging from the coalescences.
+Although is is quite tempting to conclude that the PDF of the large sizes 
+scale as $e^{-x^{2}}$ (where $x = D/\langle D \rangle$), a quantitatively rigourous
+procedure is required to ascertain the exact shape in the vicinity of the PDF tail.
+Thus far, we have not taken into account the uncertainties corresponding to
+the bin heights, which might play a crucial role in determining which among
+the candidate scalings (such as $ e^{-x}$, $e^{-x^{2}}$ etc) best describe the rare events. 
+In order to compute the error bars associated to the bin heights, we define 
+a Bernoulli trial in which a particular drop from the sample $N$ either falls into
+bin $i$ or not, with an associated probability $p_i$ of falling into that particular bin.
+Therefore, $n_i$ drops falling into bin $i$ from a sample of $N$ can be described by a binomial distribution. 
+Now, we use a simple model for the bin height uncertainty by setting the length 
+of the error bars as the standard deviation 
+\sidenote{
+The expected value of $n_i$ (where $n_i \sim \mathcal{B}(N,p_i)$) is given by $N p_i$, 
+which is equal to the height of bin $i$. 
+The corresponding variance of $n_i$ is given by $Np_i(1- p_i)$. 
+}
+of the corresponding binomially distributed variable. 
+Our candidate functions for the large size descriptions are of the form 
 
-% estimation of error with binomial distribution
+\begin{align}
+	y = A \cdot \textrm{exp}\left[-n x^m\right] , \quad \text{where} \quad x = D/\langle D \rangle . 
+\label{main_func}
+\end{align}
+
+The goal is to search for the optimal parameter $m$ such that the function \eqref{main_func} 
+is the \textit{best fit} to the bin heights corresponding to the tail region of the distribution.
+A non-linear least squares fitting method based on the Levenberg-Marquardt algorithm \sidecite{least_square}
+is utilized, with the open-source implementation 
 
 
-
-% linear fitting, with and without uncertainty, full distribution and tail zoom  
-
-% methodology to determine best fit
 
 \begin{figure}
 \centering

@@ -114,7 +114,7 @@
 \defcounter {refsection}{0}\relax
 \contentsline {paragraph}{\nonumberline Corrugation Amplitude}{70}{section*.116}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Ohnesorge Number}{70}{section*.117}
+\contentsline {paragraph}{\nonumberline Ohnesorge Number}{71}{section*.117}
 \defcounter {refsection}{0}\relax
 \contentsline {paragraph}{\nonumberline Aspect Ratio}{71}{section*.118}
 \defcounter {refsection}{0}\relax
@@ -158,6 +158,4 @@
 \defcounter {refsection}{0}\relax
 \contentsline {subsubsection}{\nonumberline Example for list\xspace (4*description)}{105}{section*.161}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\nonumberline Bibliography}{106}{chapter*.162}
-\defcounter {refsection}{0}\relax
-\contentsline {chapter}{Notation}{110}{chapter*.163}
+\contentsline {chapter}{Notation}{106}{chapter*.162}
