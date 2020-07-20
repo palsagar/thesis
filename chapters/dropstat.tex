@@ -44,6 +44,8 @@ in the previous chapter, hence are not repeated.
 Statistical descriptions of the drop sizes are commonly carried out using
 particular probability density functions (PDF) defined as follows 
 
+
+
 \begin{align}
 	\text{Gaussian : } \quad P\left( x ; \mu , \sigma \right) &= 
 	\frac{1}{\sigma \sqrt{2\pi}} \textrm{exp}\left[-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2\right] \label{gauss},\\
@@ -71,6 +73,17 @@ In essence, out of the three density functions, the Guassian predicts the lowest
 rare events (very large drops), the Log-Normal predicts the highest frequency whereas
 the Gamma function prediction is somewhere in between the other two. 
 
+\begin{marginfigure}[-1cm]
+\centering
+\includegraphics{plots/drop_stats/diameter_compute.pdf}
+\caption{The shaded area $A$ represented by the dotted and dashed lines
+	is used to estimate the diameter of the droplet in question.
+	The resulting diameter is computed as $D = \sqrt{4A/\pi}$,
+	and the corresponding volume is given by $V = \pi D^3/6$.
+	} 
+\label{dia_compute}
+\end{marginfigure}
+
 Another important aspect to consider is the bin-width of the 
 histograms used to construct the probability distributions. 
 There are several choices regarding the criteria used to determine the optimal bin-width, 
@@ -78,7 +91,7 @@ taking into consideration the size, variability and skewness of the underlying d
 In in interest of simplicity, we restrict our focus to histograms with uniform bin-width. 
 In order to ascertain the dependence (if any) of the distribution on the number of bins  
 (uniform size), we use $4$ different estimators, the open source implementations of which
-can be found in the Numpy library \sidecite{numpy}.
+can be found in the Numpy library \cite{numpy}.
 The simplest of the four estimators selects the number 
 of bins as the square root of the sample size.
 Another estimator is also based solely on the size of the dataset, 
@@ -93,6 +106,9 @@ In the subsequent sections, we present a statistical picture of the drop sizes g
 from our ligament ensemble $\Phi_0$, where the sample size is of the order of $64,000$.
 The droplet data is primarily recorded on slow time scales, so that the data reflects 
 a considerable amount of coalescences after the initial destabilization of the ligaments. 
+In order to extract the diameter and volumes of the drops generated in our axisymmetric
+simulations, we for the commonly used area based estimation (see Fig. \ref{dia_compute}).
+
 
 \subsection*{Diameter Distributions}
 
@@ -263,15 +279,76 @@ with $n= 1.57$ being the value corresponding to the best fit.
 
 \subsection*{Influence of Corrugation Amplitude}
 
+\begin{marginfigure}[2cm]
+\centering
+\includegraphics{plots/drop_stats/amp_long_compare.pdf}
+	\caption{The fate of two ligaments whose initial surfaces 
+	are created using the same set of random overlapping waves, 
+	but differ by the strength of the perturbations.
+	The ligament on the left is part of ensemble $\Phi_1$ 
+	and the one on the right is part of $\Phi_2$. 
+	The droplets enclosed in the boxes (dashed lines)
+	are characteristic of the distintegration of weakly perturbed ligaments,
+	wherein their sizes are smaller than the typical size at least by a factor of $2$. 
+	}
+\label{amp_long_comp}
+\end{marginfigure}
+
+As discussed in the previous chapter, the ``smoothness'' of the initial geometrical
+shape of the ligament is expected to have a significant influence on the 
+destabilization of the liquid thread and the concomitant coalescence dynamics.
+In order to ascertain the impact of the strength of the initial perturbations
+on the resulting drop size distribution, we conduct simulations of two different 
+millimeter scale ensembles $\Phi_1$ and $\Phi_2$. Both of them are characterized 
+by the same set of adimensional parameters as in $\Phi_0$, except that $\varepsilon = 0.4$
+in case of $\Phi_1$, whereas $\varepsilon = 1.6$ in case of $\Phi_2$.
+
+For the case of weakly perturbed ligaments, Fig. \ref{tseries_small} 
+demonstrates the temporal evolution of the droplet diameter distributions, 
+where the diameter is rescaled by the (mean) width $W$ of the initial ligaments. 
+At small time scales, the distribution is bimodal in nature, consisting of a large
+number of drops that are quite smaller than even the initial ligament width. 
+This may be a consequence of the non-linear effects \cite{satellite_1,satellite_2} 
+that kick in immediately following the initial linear (exponential) growth phase, 
+often resulting in the liquid thread disintegrating into a collection of main 
+and (significantly smaller) satellite drops (see Fig. \ref{amp_comp} in the preceding chapter). 
+At large times, the peak corresponding to the smaller sizes is considerably diminished, 
+whereas the larger size peak develops into more of a ``plateau'' type shape.  
+This observed shifts in the distribution as a function of time can be explained by the 
+successive coalescences taking place, where the smallest drops coalesce with the largest drops.
+By largest drops, we mean the ones situated to the right of the large size peak, 
+corresponding to the region of the distribution which eventually gives rise to the plateau shape.
+
+
+Coming to the strongly perturbed ligament shapes, Fig. \ref{tseries_large} illustrates 
+the unimodal character of the overall distribution shape.
+There seems to be a lack of any significant qualitative change 
+when comparing the distributions at small and large time scales. 
+The large amplitude perturbations of the ligament surface do not 
+allow for any significant amount of liquid rearrangement within the bulk prior 
+to disintegration, thus the collection of drops formed immediately following the breakup
+of the thread-like structure are quite disperse when with respect to their sizes.
+The mean of the distribution displays a slight shift towards the larger sizes, with the passage of time. 
+This shift can be explained by the effect of random coalescences amongst droplets corresponding to all sizes.
+
+To summarize, in Fig. \ref{tseries_comp} we present a side-by-side comparison of 
+the aforementioned temporal evolutions of the droplet diameter distributions.  
+We infer that the primary influence of the corrugation strength 
+is that it changes the nature of the resulting distribution from bimodal to unimodal,
+as one increases the amplitude of the initial perturbations. 
+Although the dynamics of the droplet coalescences (post-breakup) follow different trajectories
+in accordance with the corrugation strength (see Fig. \ref{amp_long_comp}), 
+the distributions at large times end up looking rather similar.
+
 % temporal variation in drop size PDF's for low and high levels of corrugation
 
 \begin{figure}
 \centering
 \includegraphics{plots/drop_stats/small_amp.pdf}
-\caption{Temporal evolution of the probability distribution functions of the
-droplet diameter, which is rescaled by the width of the initial ligament. 
-The ensemble is characterized by $\Phi_0 \equiv \left( Oh = 10^{-2}, K = 2\pi 
-, \varepsilon = 0.4 , \Lambda = 50 \right)$, which corresponds to \textit{weakly} perturbed 
+\caption{Temporal evolution of the probability distribution functions of the droplet diameter.
+	The diameter is rescaled by the initial width $W$ of the ligaments.
+	The ensemble is characterized by $\Phi_1 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+, \varepsilon = 0.4 , \Lambda = 50 \right)$, thus consisting of \textit{weakly} perturbed 
 initial ligaments shapes. 
 	}
 \label{tseries_small}
@@ -280,10 +357,10 @@ initial ligaments shapes.
 \begin{figure}
 \centering
 \includegraphics{plots/drop_stats/large_amp.pdf}
-\caption{Temporal evolution of the probability distribution functions of the
-droplet diameter, which is rescaled by the width of the initial ligament. 
-The ensemble is characterized by $\Phi_0 \equiv \left( Oh = 10^{-2}, K = 2\pi 
-, \varepsilon = 1.6 , \Lambda = 50 \right)$, which corresponds to \textit{strongly} perturbed 
+\caption{Temporal evolution of the probability distribution functions of the droplet diameter.
+	The diameter is rescaled by the initial width $W$ of the ligaments.
+	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+, \varepsilon = 1.6 , \Lambda = 50 \right)$, thus consisting of \textit{strongly} perturbed 
 initial ligaments shapes. 
 	}
 \label{tseries_large}
@@ -297,10 +374,13 @@ initial ligaments shapes.
 \centering
 \includegraphics{plots/drop_stats/amp_dist_compare.pdf}
 \caption{Comparison between the temporal evolution of the probability distribution functions of the
-droplet diameter, corresponding to strongly and weakly perturbed initial ligament shapes. 
-The diameter is rescaled by the width of the initial ligament. 
-The ensembles are characterized by $\Phi_0 \equiv \left( Oh = 10^{-2}, K = 2\pi 
-, \varepsilon = {0.4,1.6} , \Lambda = 50 \right)$. 
+	droplet diameter, corresponding to the strongly ($\varepsilon = 0.4$) and 
+	weakly ($\varepsilon = 1.6$) perturbed ligament ensembles. 
+	The diameter is rescaled by the width of the initial ligament. 
+	The ensembles are characterized by $\Phi_{\{1,2\}} \equiv \left( Oh = 10^{-2}, K = 2\pi 
+, \varepsilon = \{0.4,1.6 \} , \Lambda = 50 \right)$. 
+The thick dashed lines correspond to the mean of the respective distribution, and the thinner
+dashed lines located on both sides of the thicker line corresponding to the respective interquartile ranges. 
 	}
 \label{tseries_comp}
 \end{figure*}

@@ -2658,6 +2658,69 @@
       \field{volume}{1}
       \field{year}{2006}
     \endentry
+    \entry{satellite_1}{article}{}
+      \name{author}{2}{}{%
+        {{hash=62a8093da126c29a7c147c00342ec268}{%
+           family={Vassallo},
+           familyi={V\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5246e4c52324e3b343d79c66c5aace26}{%
+           family={Ashgriz},
+           familyi={A\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society London}%
+      }
+      \strng{namehash}{81996a1bb2f88f8d27a07860e8a47538}
+      \strng{fullhash}{81996a1bb2f88f8d27a07860e8a47538}
+      \strng{bibnamehash}{81996a1bb2f88f8d27a07860e8a47538}
+      \strng{authorbibnamehash}{81996a1bb2f88f8d27a07860e8a47538}
+      \strng{authornamehash}{81996a1bb2f88f8d27a07860e8a47538}
+      \strng{authorfullhash}{81996a1bb2f88f8d27a07860e8a47538}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A: Mathematical and Physical Sciences}
+      \field{number}{1888}
+      \field{title}{Satellite formation and merging in liquid jet breakup}
+      \field{volume}{433}
+      \field{year}{1991}
+      \field{pages}{269\bibrangedash 286}
+      \range{pages}{18}
+    \endentry
+    \entry{satellite_2}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3812ea54783061a38708bd5acc37c552}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={HC},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IBM}%
+      }
+      \strng{namehash}{3812ea54783061a38708bd5acc37c552}
+      \strng{fullhash}{3812ea54783061a38708bd5acc37c552}
+      \strng{bibnamehash}{3812ea54783061a38708bd5acc37c552}
+      \strng{authorbibnamehash}{3812ea54783061a38708bd5acc37c552}
+      \strng{authornamehash}{3812ea54783061a38708bd5acc37c552}
+      \strng{authorfullhash}{3812ea54783061a38708bd5acc37c552}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IBM Journal of Research and Development}
+      \field{number}{4}
+      \field{title}{Drop formation in a liquid jet}
+      \field{volume}{18}
+      \field{year}{1974}
+      \field{pages}{364\bibrangedash 369}
+      \range{pages}{6}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
