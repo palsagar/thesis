@@ -420,14 +420,80 @@ Our candidate functions for the large size descriptions are of the form
 The goal is to search for the optimal parameter $m$ such that the function \eqref{main_func} 
 is the \textit{best fit} to the bin heights corresponding to the tail region of the distribution.
 A non-linear least squares fitting method based on the Levenberg-Marquardt algorithm \sidecite{least_square}
-is utilized, with the open-source implementation 
+is utilized, through its open-source implementation in the SciPy library \cite{scipy}. 
+This fitting routine can find the optimal parameters while taking into account the 
+aforementined uncertainty in the bin heights computed using the binomial variance. 
+An important point to note is that even though we can simply find the best fit
+to a given set of points , the goodness of the fit is also a function
+of the number of points used to minimize the least-squares error. 
 
+\begin{marginfigure}[-1cm]
+\centering
+\includegraphics{plots/drop_stats/window.pdf}
+\caption{A representation of the moving window of points which
+	is used in our search for the optimal parameters.
+	The window starts from the extreme tail end of the 
+	distribution, extending towards the peak of the curve
+	by including more bin heights on the way. In this 
+	particular figure, the window contains $6$ points.
+	The minimum size of the window should be greater than
+	the number of free parameters in the fitting function.}
+\label{window}
+\end{marginfigure}
+
+
+Therefore, we use a moving window of points (see Fig. \ref{window}) and quantify 
+the goodness of the fit as a function of the number of points used to estimate the optimal parameters.
+The ``goodness'' can be quantified by the standard deviation of the parameter 
+estimate which is returned by the non-linear least-squares fitting algorithm.  
+Finally, the value of the optimal parameters that correspond to the minimum error 
+(standard deviation of parameter estimate) over the different window sizes 
+is deemed to be the best fit to our set of bin heights near the tail region.
+Additionally, we reframe the fitting problem on logarithmic scales, so 
+as to make sure the optimal parameters found are not dependent on the rescaling of the axes. 
+Rearranging equation \eqref{main_func} by taking successive logarithms, we obtain 
+
+\begin{align}
+Y = m \cdot X + C ,
+\label{log_func}
+\end{align}
+
+where $Y = \log(-\log y)$ and $X = \log x$, hence transforming it into a linear regression problem.
+The overall fitting procedure can be summarized in the following steps : 
+
+\begin{enumerate}
+	\item The candidate function is chosen either in the exponential \eqref{main_func}
+		or the logarithmic form \eqref{log_func}.
+	\item A starting window size (greater than 3 points) is chosen.
+	\item The least-squares routine is run using the points falling within the window,
+		either by taking into account the uncertainty in the bin heights or not.
+	\item An optimal set of parameters ($A$, $n$ and $m$) is found, along with the variance
+		of the parameter estimate. 
+	\item The above operations are repeated by successively adding more points into the window,
+		till the edge of the window reaches the peak of the distribution. 
+	\item The parameter $m$ is selected corresponding to the number of points in the window 
+		for which the variance in the parameter estimate is minimum. 
+\end{enumerate}
 
 
 \begin{figure}
 \centering
 	\includegraphics{plots/drop_stats/determine_fit_linear.pdf}
-	\caption{\blindtext}
+\caption{
+	The variation in the optimal parameter $m$ as a 
+	function of the number of points in the window (see \ref{window}).
+	The least-squares procedure is performed on the 
+	candidate function in the exponential \eqref{main_func} form.
+	The error bars represent the standard deviation of the 
+	parameter estimate obtained from the least-squares routine,
+	where the value enclosed in the red box corresponds to the minimum error.
+	The figure (a) on top corresponds to the least-squares procedure where the 
+	uncertainty in the bin heights is taken into account, whereas the bottom
+	figure (b) corresponds to those carried out with zero uncertainty in the underlying distribution. 
+	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
+	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
+	}
 \label{determine_linear}
 \end{figure}
 
@@ -438,7 +504,17 @@ is utilized, with the open-source implementation
 \centering
 \includegraphics{plots/drop_stats/linear_tail_fit_uncertainty_no.pdf} \\
 \includegraphics{plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf} \\ 
-\caption{\blindtext}
+\caption{
+	The tail of the distribution fitted with the function 
+	in the exponential form \eqref{main_func}, using the optimal parameter
+	set that corresponds to the lowest standard deviation in the parameter estimate.
+	The uncertainty in the bin heights of the underlying distribution is \textit{not}
+	taken into account while conducting the least-squares procedure. 
+	The bottom figure is a closeup of the region in the vicinity of the tail.
+	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
+	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
+	}
 \label{linear_fits_wo}
 \end{figure}
 
@@ -448,7 +524,17 @@ is utilized, with the open-source implementation
 \centering
 \includegraphics{plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf} \\
 \includegraphics{plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf} \\ 
-\caption{\blindtext}
+\caption{
+	The tail of the distribution fitted with the function 
+	in the exponential form \eqref{main_func}, using the optimal parameter
+	set that corresponds to the lowest standard deviation in the parameter estimate.
+	The uncertainty in the bin heights of the underlying distribution \textit{is} 
+	taken into account while conducting the least-squares procedure. 
+	The bottom figure is a closeup of the region in the vicinity of the tail.
+	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
+	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
+	}
 \label{linear_fits_with}
 \end{figure}
 
@@ -460,7 +546,21 @@ is utilized, with the open-source implementation
 \begin{figure}
 \centering
 	\includegraphics{plots/drop_stats/determine_fit_log.pdf}
-	\caption{\blindtext}
+\caption{
+	The variation in the optimal parameter $m$ as a 
+	function of the number of points in the window (see \ref{window}).
+	The least-squares procedure is performed on the 
+	candidate function in the logarithmic \eqref{log_func} form.
+	The error bars represent the standard deviation of the 
+	parameter estimate obtained from the least-squares routine,
+	where the value enclosed in the red box corresponds to the minimum error.
+	The figure on top (a) corresponds to the least-squares procedure where the 
+	uncertainty in the bin heights is taken into account, whereas the bottom 
+	figure (b) corresponds to those carried out with zero uncertainty in the underlying distribution. 
+	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
+	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
+	}
 \label{determine_log}
 \end{figure}
 
@@ -470,7 +570,17 @@ is utilized, with the open-source implementation
 \centering
 \includegraphics{plots/drop_stats/log_tail_fit_uncertainty_no.pdf} \\
 \includegraphics{plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf} \\ 
-\caption{\blindtext}
+\caption{
+	The tail of the distribution fitted with the function 
+	in the logarithmic form \eqref{log_func}, using the optimal parameter
+	set that corresponds to the lowest standard deviation in the parameter estimate.
+	The uncertainty in the bin heights of the underlying distribution is \textit{not}
+	taken into account while conducting the least-squares procedure. 
+	The bottom figure is a closeup of the region in the vicinity of the tail.
+	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
+	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
+	}
 \label{log_fits_wo}
 \end{figure}
 
@@ -481,9 +591,31 @@ is utilized, with the open-source implementation
 \centering
 \includegraphics{plots/drop_stats/log_tail_fit_uncertainty_yes.pdf} \\
 \includegraphics{plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf} \\ 
-\caption{\blindtext}
+\caption{
+	The tail of the distribution fitted with the function 
+	in the logarithmic form \eqref{log_func}, using the optimal parameter
+	set that corresponds to the lowest standard deviation in the parameter estimate.
+	The uncertainty in the bin heights of the underlying distribution \textit{is} 
+	taken into account while conducting the least-squares procedure. 
+	The bottom figure is a closeup of the region in the vicinity of the tail.
+	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
+	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
+	}
 \label{log_fits_with}
 \end{figure}
+
+In figures \ref{determine_linear} and \ref{determine_log} we illustrate the determination
+of the optimal parameter set using the moving window of points as descibed previously.
+The optimal parameter set corresponding to the lowest standard deviation of the parameter estimate
+gives us $m \approx 6$, with the robustness of the result established by the fact that 
+it is insensitive to not only the form of the candidate function used, but also does not depend 
+on whether the uncertainty in the bin heights are taken into account or not.
+This leads us to the rather unusual result that even though the global shape of 
+the distribution varies as $e^{-x^2}$, at the limit of large $x$ 
+(see figures \ref{linear_fits_wo},\ref{linear_fits_with},\ref{log_fits_wo} and \ref{log_fits_with})
+the distribution tail is most accurately described by a function of the form $e^{-x^6}$.
+
 
 \subsection*{Weakly Non-Linear Theory}
 
