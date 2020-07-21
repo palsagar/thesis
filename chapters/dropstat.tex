@@ -2,6 +2,8 @@
 \chapter{Statistical Approach to Drop Formation}
 \labch{dropstat}
 
+%\input{macros}
+\input{nondim}
 
 \section{Monte Carlo Approach}
 
@@ -617,8 +619,189 @@ the distribution varies as $e^{-x^2}$, at the limit of large $x$
 the distribution tail is most accurately described by a function of the form $e^{-x^6}$.
 
 
-\subsection*{Weakly Non-Linear Theory}
+\subsection*{Gaussian random process theory for near-monochromatic waves}
 
+\newcommand\be{\begin{equation}}
+\newcommand\nd{\end{equation}}
+\newcommand\ii{{\textrm{i}}}
+
+
+In the regime where $h \ll 1$ the Navier--Stokes equations may be linearized.
+After a phase of linear growth, we expect none linear effects to take over and the thread to pinch wherever a
+minimum of radius has developped, that is a maximum of $h$. 
+A simple model is
+\be
+h_t = L h
+\nd
+where $L$ is a linear operator on the function $h(x,t)$.
+%
+\newcommand\hhh{\hat h}
+In Fourier space the equation is
+\be
+\hhh_{k,t} = s(k) \hhh_k \label{linth}
+\nd
+where $s(k)$ has a maximum $s_m = s(k_m)$ at the optimal wavelength $k_m = 2\pi/\lambda_m$ of
+the Rayleigh-Plateau-Savart instability, with $\lambda_m \sim 9.02$.
+As a result one can expand
+\be
+s(k) \simeq s_m -  C (k - k_m)^2 + \mathcal{O}((k - k_m)^3)
+\nd
+where $s_m$, $C$ and $k_m$ are $\mathcal{O}(1)$ constants in the dimensionless variables.
+The initial condition is a low-pass filtered noisy shape. We use the theory of
+Gaussian processes (see \cite{monin1971statistical} Chapter 6 for a good introduction).
+We represent the initial solution as
+\be
+h(x,0) = \int_{-\infty}^{\infty}  A(k) e^{\ii k x} {\textrm{d}} k
+\nd
+where $k_M \gg k_m$ is the cutoff defined above in the numerical section. (Without this cutoff the
+strong damping of the linear theory would still annihilate the large $k$ mode and give identical results.)
+The complex amplitudes $A(k)$ form also a Gaussian process \cite{monin1971statistical} with
+\be
+\langle A(k) \overline A(k^\prime) \rangle = \frac 12 E(k) \delta(k-k^\prime)
+\nd
+where $E(k)$ is the power spectrum of the initial conditions and
+$\langle \cdot \rangle$ is the averaging operator. 
+The initial condition is a random function characterised by its variance $v_0$, which can be shown using
+the Wiener-Khinchin theorem to be 
+\be
+v_0 = \langle h(x,0)^2 \rangle = \int_0^\infty E(k) {\textrm{d}}k
+\nd
+In the numerics we chose a low pass filter
+with $E(k)= v_0/(2k_M)$ for $k<k_M$ and $E(k)=0$ otherwise. 
+From (\ref{linth}) one has $A(k,t) = A(k) \exp[ s_m t -  C (k - k_m)^2 t]$ and 
+at finite time $t$ one has the shape
+\be
+h(x,t) = \int_{-\infty}^{\infty}  A(k) e^{s_m t -  C (k - k_m)^2 t}  e^{\ii k x} {\textrm{d}} k
+\nd
+which can be rewritten
+\be
+h(x,t) =  e^{s_m t +\ii k_m x} \int_{-\infty}^{\infty}  B'(\kappa) e^{-  C \kappa^2 t}  e^{\ii \kappa x} {\textrm{d}} \kappa
+\nd
+where
+$B(\kappa) = A(k_m + \kappa) = \overline A(-k_m -\kappa)$.
+The integral on the RHS is a slowly varying modulation of the monochromatic wave $e^{\ii k_m x}$. The long lengthscale for this slow variation is $\epsilon^{-1} = (C t)^{1/2}$ and the long space variable is $X = \epsilon^{-1} x$, with the corresponding small wavenumber $K = \epsilon k$ so that the slow modulation can be rewritten in slow variables as
+\be
+h(x,t) =   e^{s_m t +\ii k_m x} H(X)  + c.c. \label{slowamp}
+\nd
+where $c.c.$ denotes the complex conjugate and the complex amplitude is
+\be
+H(X) \simeq \int_{- \infty}^{\infty}  B(K) e^{-K^2}  e^{\ii K X} {\textrm{d}} K \label{saddle}
+\nd
+where $B(K) = B'(\kappa)$. 
+The slow modulation can be written as a product of a slowly varying amplitude and the exponential of a slow phase
+$H(X) = \rho(X) \exp [{ \ii \Phi(X) }]$. The throats of the  ligament are located at the minima of
+$h(x,t)$ that is at places where the total phase
+$\phi(x) =  k_m x + \Phi ( X) $ obeys the discrete condition $ \phi(x_n) = 2 n \pi $
+The problem is translationally invariant so without loss of generality the origin can be picked
+at a minimum where $\Phi(X) = 0$ so that the next minimum is at $x_1$ such that  $\phi(x_1)= 2 \pi$.
+Thus
+\be
+k_m x_1 + \Phi ( \epsilon x ) = 2 \pi
+\nd
+which expresses that $x_1$ is a small perturbation of the optimal Rayleigh-Plateau-Savart wavelength
+$x_{R} = 2 \pi / k_m$ and
+\be
+x_1 = x_R + \Phi(\epsilon x_1)/k_m
+\nd
+Since the variable $X$ is slow at we are looking at small distances $X_1 \sim \epsilon x_1$ in the slow variables
+one has $\rho(X_1) \simeq \rho_0$ and  $\Phi(X) \simeq \alpha X$ where the amplitude $\rho$ and the slope $\alpha$ are random
+variables. Then
+\be
+x_1 \simeq \lambda_m -  2 \pi \alpha \epsilon  \label{x1a}
+\nd
+(\ref{saddle})
+\be
+\rho [ 1 + \ii \alpha X] \simeq \int_{-\infty}^{\infty}  B(K) e^{-K^2} ( 1 + \ii K X)  {\textrm{d}} K 
+\nd
+and thus
+\be
+Var(\rho)  \simeq \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}  B(K) B(K') e^{-K^2-K'^2}  {\textrm{d}} K  {\textrm{d}} K' 
+\nd
+and
+\be
+Var(\rho \alpha) \simeq  \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}  B(K) B(K') e^{-K^2-K'^2}  K 'K {\textrm{d}} K 
+\nd
+{\em By the central limit theorem, since $B(K))$ is a Gaussian process, its integrals $\rho$ and $\alpha$ are Gaussian variables.}
+To compute their variances we use
+\be
+\langle B(K) \overline B(K') \rangle = \frac{E(k_m)}{2\epsilon} \delta(K-K')
+\nd
+Besides, from (\ref{slowamp}) 
+\be
+\langle \rho \rangle = \sqrt{v_0/2} 
+\nd
+From all the above
+\be
+\langle \rho^2 \rangle = \langle \rho \rangle^2 + \langle \rho'^2 \rangle = \frac{\sqrt \pi}{2\sqrt 2} \frac{E(k_m)}{\epsilon}
+\nd
+and
+\be
+\langle \rho^2 \alpha^2 \rangle = \frac{\sqrt \pi}{8\sqrt 2} \frac{E(k_m)}{\epsilon}
+\nd
+Since
+\be
+\langle \rho^2 \alpha^2 \rangle =  \langle \rho^2 \rangle \langle \alpha^2 \rangle
+\nd
+one has $Var( \alpha ) = \frac 14$
+and thus from \eqref{x1a}  $Var(x_1) =\pi^2 \epsilon^2$.
+The liquid mass in the interval of lenght $x_1$ will be captured in a breaking droplet
+once the nonlinear effects set in, at time $t_{NL}$. This will happen once the
+amplitude has reached an order 1 level that is when $t \simeq t_{NL}$ with
+\be
+t_{NL} \sim \frac 1{2s_m} \ln v_0
+\nd
+Once the breakup happens, the volume captured between the throats is
+$  V_e = \pi  x_1$ 
+the equivalent diameter of the resulting drops is
+$\pi d^3/6 =  \pi  x_1$  and $d^3 = 6  x_1$ so that
+the variable $d^3$ is Gaussian with standard deviation
+\be
+\sigma = 6  \pi \left( \frac {2 s_m} {C \ln v_0} \right)^{1/2}
+\nd
+Using
+\be
+P_d ( d) {\textrm{d}} d = P_{d^3} (d^3) {\textrm{d}} d^3
+\nd
+  The final droplet size distribution is
+  \be
+  P_{d,G} (d) =  \frac{3 d^2}{\sqrt{2\pi} \sigma} \exp\left[- \frac{(d^3 - d_m^3)^2}{2 \sigma^2}\right]
+  \nd
+  where $d_m$ is the equivalent diameter corresponding to the Rayleigh-Plateau wavelength
+  \be
+  \pi  d_m^3/6 \simeq  \lambda_m \pi 
+  \nd
+
+
+  The mechanism above is surface-tension dominated. Another mode for breakup arises when the
+  initial distribution reaches at some points the nonlinear regime. This occrus randomly along
+  the ligament length and is thus a Poisson process with probability of occurence per unit length
+  \be
+\lambda = \exp[{-1/(2 v_0^2)}]/l_c \label{p3}
+\nd
+where $l_c \sim 1/k_N$ is the correlation length of the initial condition. There is thus an exponential distiubution
+of breaking lengths $x_1$ and thus of droplet diameters $d$ with rate $\lambda$ and thus a distribution of diameters
+ \be
+  P_{d,P} (d) = {3d^2} \lambda e^{-\lambda d^3} \label{PP}
+  \nd
+  For large lengths and small rates $\lambda$, both types of breakup have small probability and the distributions
+  combine. A crossover occurs for $d_c$ given by
+ \be
+  {\lambda d_c^3} - \ln \lambda  \sim \frac{(d_c^3 - d_m^3)^2}{2 \sigma^2}
+  \nd
+  hence
+  \be
+  {\lambda d_c^3} + 1/(2 v_0^2) + \ln l_c \sim \frac{(d_c^3 - d_m^3)^2}{2 \sigma^2}
+  \nd 
+  Define the length
+  \be
+  \ell = (1/v_0)^{1/3} \sigma^{2/3} \sim   (6  \pi)^{2/3} \left( \frac {2 s_m} {C \ln v_0} \right)^{1/3}  (1/v_0)^{1/3}
+  \nd
+  For small $v_0$ one has $\ell \gg d_m$ and thus $d_c \sim \ell$. At $d \gg d_c$ the Poisson distribution
+  dominates and $P_d(d) \sim P_{d,P}$ . For $d \ll d_c$ the $d^3$-Gaussian distribution
+  dominates. This argument is however circumvented if as described above in the numerical initial conditions avoid large excursions of $h(x,0)$. Large excursions could however reappear due to the random
+  superposition of modes with random phases being remixed. This remixing of initial conditions follows
+  however the (conservative?) dynamics of shape fluctuations that is described in Section \label{s4} below, so
+  we defer the discussion to that regime.
 
 
 % stephane's predictions and verifications
