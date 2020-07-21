@@ -2196,18 +2196,18 @@
     <bcf:citekey order="258">plateau1849</bcf:citekey>
     <bcf:citekey order="259">chandra</bcf:citekey>
     <bcf:citekey order="260">weber1931</bcf:citekey>
-    <bcf:citekey order="261">vill_2</bcf:citekey>
-    <bcf:citekey order="262">numpy</bcf:citekey>
-    <bcf:citekey order="263">sat_1</bcf:citekey>
-    <bcf:citekey order="263">sat_2</bcf:citekey>
-    <bcf:citekey order="264">least_square</bcf:citekey>
-    <bcf:citekey order="265">least_square</bcf:citekey>
+    <bcf:citekey order="261">monin1971statistical</bcf:citekey>
+    <bcf:citekey order="262">monin1971statistical</bcf:citekey>
+    <bcf:citekey order="263">vill_2</bcf:citekey>
+    <bcf:citekey order="264">numpy</bcf:citekey>
+    <bcf:citekey order="265">sat_1</bcf:citekey>
+    <bcf:citekey order="265">sat_2</bcf:citekey>
     <bcf:citekey order="266">least_square</bcf:citekey>
     <bcf:citekey order="267">least_square</bcf:citekey>
     <bcf:citekey order="268">least_square</bcf:citekey>
-    <bcf:citekey order="269">scipy</bcf:citekey>
-    <bcf:citekey order="270">monin1971statistical</bcf:citekey>
-    <bcf:citekey order="271">monin1971statistical</bcf:citekey>
+    <bcf:citekey order="269">least_square</bcf:citekey>
+    <bcf:citekey order="270">least_square</bcf:citekey>
+    <bcf:citekey order="271">scipy</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
