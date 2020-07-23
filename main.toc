@@ -8,118 +8,118 @@
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {2}
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Numerical Development}{2}{part*.9}
+\contentsline {part}{\nonumberline Numerical Development}{3}{part*.11}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {2}Methodology}{3}{chapter.2}
+\contentsline {chapter}{\numberline {2}Methodology}{4}{chapter.2}
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {3}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {2.1}Governing Equations}{3}{section.2.1}
+\contentsline {section}{\numberline {2.1}Governing Equations}{4}{section.2.1}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {2.2}Interfacial Transport : VOF}{5}{section.2.2}
+\contentsline {section}{\numberline {2.2}Interfacial Transport : VOF}{6}{section.2.2}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Lagrangian Explicit}{7}{section*.15}
+\contentsline {paragraph}{\nonumberline Lagrangian Explicit}{8}{section*.17}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Eulerian Implicit}{8}{section*.17}
+\contentsline {paragraph}{\nonumberline Eulerian Implicit}{9}{section*.19}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {2.3}Time Marching}{9}{section.2.3}
+\contentsline {section}{\numberline {2.3}Time Marching}{10}{section.2.3}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {2.4}Source Terms}{11}{section.2.4}
+\contentsline {section}{\numberline {2.4}Source Terms}{12}{section.2.4}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {3}Artificial Atomization : The Falling Raindrop}{13}{chapter.3}
+\contentsline {chapter}{\numberline {3}Artificial Atomization : The Falling Raindrop}{14}{chapter.3}
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {4}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {3.1}Problem Setup}{13}{section.3.1}
+\contentsline {section}{\numberline {3.1}Problem Setup}{14}{section.3.1}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {3.2}Numerical Instabilities}{14}{section.3.2}
+\contentsline {section}{\numberline {3.2}Numerical Instabilities}{15}{section.3.2}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {3.3}Stabilization Strategies}{17}{section.3.3}
+\contentsline {section}{\numberline {3.3}Stabilization Strategies}{18}{section.3.3}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {4}Consistent Mass-Momentum Transport}{23}{chapter.4}
+\contentsline {chapter}{\numberline {4}Consistent Mass-Momentum Transport}{24}{chapter.4}
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {5}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {4.1}General Principles}{23}{section.4.1}
+\contentsline {section}{\numberline {4.1}General Principles}{24}{section.4.1}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {4.2}Basic Expressions}{26}{section.4.2}
+\contentsline {section}{\numberline {4.2}Basic Expressions}{27}{section.4.2}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {4.3}Advection on Staggered Grids}{33}{section.4.3}
+\contentsline {section}{\numberline {4.3}Advection on Staggered Grids}{34}{section.4.3}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline \textbf {Prolongation}}{37}{section*.51}
+\contentsline {paragraph}{\nonumberline \textbf {Prolongation}}{38}{section*.53}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline \textbf {Restriction}}{38}{figure.caption.53}
+\contentsline {paragraph}{\nonumberline \textbf {Restriction}}{39}{figure.caption.55}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {5}Numerical Benchmarks}{41}{chapter.5}
+\contentsline {chapter}{\numberline {5}Numerical Benchmarks}{42}{chapter.5}
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {6}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {5.1}Static Droplet}{41}{section.5.1}
+\contentsline {section}{\numberline {5.1}Static Droplet}{42}{section.5.1}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {5.2}Moving Droplet}{46}{section.5.2}
+\contentsline {section}{\numberline {5.2}Moving Droplet}{47}{section.5.2}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {5.3}Capillary Wave}{51}{section.5.3}
+\contentsline {section}{\numberline {5.3}Capillary Wave}{52}{section.5.3}
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Physics of Fragmentation}{57}{part*.86}
+\contentsline {part}{\nonumberline Physics of Fragmentation}{58}{part*.88}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {6}Generation of Corrugated Ligaments}{58}{chapter.6}
+\contentsline {chapter}{\numberline {6}Generation of Corrugated Ligaments}{59}{chapter.6}
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {7}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {6.1}Shape Characterization}{58}{section.6.1}
+\contentsline {section}{\numberline {6.1}Shape Characterization}{59}{section.6.1}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {6.2}Numerical Setup}{60}{section.6.2}
+\contentsline {section}{\numberline {6.2}Numerical Setup}{61}{section.6.2}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Numerical Platform : Basilisk}{60}{figure.caption.92}
+\contentsline {paragraph}{\nonumberline Numerical Platform : Basilisk}{61}{figure.caption.94}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {6.3}Impact of Initial Conditions}{67}{section.6.3}
+\contentsline {section}{\numberline {6.3}Impact of Initial Conditions}{68}{section.6.3}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Corrugation Amplitude}{67}{section*.105}
+\contentsline {paragraph}{\nonumberline Corrugation Amplitude}{68}{section*.107}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Ohnesorge Number}{67}{section*.106}
+\contentsline {paragraph}{\nonumberline Ohnesorge Number}{68}{section*.108}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Aspect Ratio}{68}{section*.107}
+\contentsline {paragraph}{\nonumberline Aspect Ratio}{69}{section*.109}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Cut-Off Frequency}{68}{section*.108}
+\contentsline {paragraph}{\nonumberline Cut-Off Frequency}{69}{section*.110}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {7}Statistical Approach to Drop Formation}{77}{chapter.7}
+\contentsline {chapter}{\numberline {7}Statistical Approach to Drop Formation}{78}{chapter.7}
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {8}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {7.1}Theoretical Development}{77}{section.7.1}
+\contentsline {section}{\numberline {7.1}Theoretical Development}{78}{section.7.1}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {7.2}Millimeter Scale Ensembles}{81}{section.7.2}
+\contentsline {section}{\numberline {7.2}Millimeter Scale Ensembles}{82}{section.7.2}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {7.3}Description of Large Sizes}{94}{section.7.3}
+\contentsline {section}{\numberline {7.3}Description of Large Sizes}{95}{section.7.3}
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Conclusions \& Perspectives}{102}{part*.140}
+\contentsline {part}{\nonumberline Conclusions \& Perspectives}{103}{part*.142}
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Appendix}{104}{part*.142}
+\contentsline {part}{\nonumberline Appendix}{105}{part*.144}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{105}{appendix.A}
+\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{106}{appendix.A}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{105}{section.A.1}
+\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{106}{section.A.1}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Heading on Level\xspace 2 (subsection)}{105}{section*.143}
+\contentsline {subsection}{\nonumberline Heading on Level\xspace 2 (subsection)}{106}{section*.145}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Heading on Level\xspace 3 (subsubsection)}{105}{section*.144}
+\contentsline {subsubsection}{\nonumberline Heading on Level\xspace 3 (subsubsection)}{106}{section*.146}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Heading on Level\xspace 4 (paragraph)}{106}{section*.145}
+\contentsline {paragraph}{\nonumberline Heading on Level\xspace 4 (paragraph)}{107}{section*.147}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {A.2}Lists}{106}{section.A.2}
+\contentsline {section}{\numberline {A.2}Lists}{107}{section.A.2}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Example for list\xspace (itemize)}{106}{section*.146}
+\contentsline {subsection}{\nonumberline Example for list\xspace (itemize)}{107}{section*.148}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*itemize)}{106}{section*.147}
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*itemize)}{107}{section*.149}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Example for list\xspace (enumerate)}{106}{section*.148}
+\contentsline {subsection}{\nonumberline Example for list\xspace (enumerate)}{107}{section*.150}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*enumerate)}{107}{section*.149}
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*enumerate)}{108}{section*.151}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Example for list\xspace (description)}{107}{section*.150}
+\contentsline {subsection}{\nonumberline Example for list\xspace (description)}{108}{section*.152}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*description)}{107}{section*.151}
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*description)}{108}{section*.153}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\nonumberline Bibliography}{108}{chapter*.152}
+\contentsline {chapter}{\nonumberline Bibliography}{109}{chapter*.154}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{Notation}{113}{chapter*.153}
+\contentsline {chapter}{Notation}{114}{chapter*.155}
