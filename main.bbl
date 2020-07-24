@@ -805,6 +805,55 @@
       \field{journaltitle}{URL http://basilisk. fr}
       \field{title}{Basilisk, a Free-Software program for the solution of partial differential equations on adaptive Cartesian meshes (2018)}
     \endentry
+    \entry{harmonic_mean}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c4525ccda29f1c9379b20cf7b2473686}{%
+           family={Boeck},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5f61775c2fbdd179d018bb797bd0ce1d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=42c64aa135345bd325c5082af4d60266}{%
+           family={L{ó}pez-Pag{é}s},
+           familyi={L\bibinithyphendelim P\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3c534761faf471bbeab0ef3d01c72e86}{%
+           family={Yecko},
+           familyi={Y\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3c7468a61741ca71de08cafd321e6374}
+      \strng{fullhash}{c5eb3a24a3287f90954b0634250c2a72}
+      \strng{bibnamehash}{3c7468a61741ca71de08cafd321e6374}
+      \strng{authorbibnamehash}{3c7468a61741ca71de08cafd321e6374}
+      \strng{authornamehash}{3c7468a61741ca71de08cafd321e6374}
+      \strng{authorfullhash}{c5eb3a24a3287f90954b0634250c2a72}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Computational Fluid Dynamics}
+      \field{number}{1}
+      \field{title}{Ligament formation in sheared liquid--gas layers}
+      \field{volume}{21}
+      \field{year}{2007}
+      \field{pages}{59\bibrangedash 76}
+      \range{pages}{18}
+    \endentry
     \entry{hirt1981volume}{article}{}
       \name{author}{2}{}{%
         {{hash=15122c1fc5762571f390893174800cbd}{%
@@ -827,8 +876,8 @@
       \strng{authorbibnamehash}{70b0cdd07cf135b60e9bac4335a50844}
       \strng{authornamehash}{70b0cdd07cf135b60e9bac4335a50844}
       \strng{authorfullhash}{70b0cdd07cf135b60e9bac4335a50844}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of computational physics}
@@ -861,8 +910,8 @@
       \strng{authorbibnamehash}{6cb3507b18e18d74735f3acdbe04654a}
       \strng{authornamehash}{6cb3507b18e18d74735f3acdbe04654a}
       \strng{authorfullhash}{6cb3507b18e18d74735f3acdbe04654a}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of computational physics}
@@ -900,8 +949,8 @@
       \strng{authorbibnamehash}{c6a5424a89f474437ffb66d29e4dc671}
       \strng{authornamehash}{c6a5424a89f474437ffb66d29e4dc671}
       \strng{authorfullhash}{c6a5424a89f474437ffb66d29e4dc671}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Direct numerical simulations of gas--liquid multiphase flows}
@@ -924,8 +973,8 @@
       \strng{authorbibnamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authornamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authorfullhash}{da4f5a8595565561cf6c514b5634ccc7}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annual Review of Fluid Mechanics}
@@ -1069,8 +1118,8 @@
       \strng{authorbibnamehash}{cdf11c9616042a96270afbb60ce49e48}
       \strng{authornamehash}{cdf11c9616042a96270afbb60ce49e48}
       \strng{authorfullhash}{cdf11c9616042a96270afbb60ce49e48}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1252,8 +1301,8 @@
       \strng{authorbibnamehash}{0165778ca44ec5a2bb1b3c43dfcc603b}
       \strng{authornamehash}{0165778ca44ec5a2bb1b3c43dfcc603b}
       \strng{authorfullhash}{0165778ca44ec5a2bb1b3c43dfcc603b}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{SIAM Journal on Numerical Analysis}
@@ -1361,8 +1410,8 @@
       \strng{authorbibnamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authornamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authorfullhash}{da4f5a8595565561cf6c514b5634ccc7}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1439,8 +1488,8 @@
       \strng{authorbibnamehash}{c04f099aa691206643c8e0e71d2fe81d}
       \strng{authornamehash}{c04f099aa691206643c8e0e71d2fe81d}
       \strng{authorfullhash}{363de97b4244152392184e38dc627e85}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1473,8 +1522,8 @@
       \strng{authorbibnamehash}{7f6f3ac72c46758936c314e43fadb283}
       \strng{authornamehash}{7f6f3ac72c46758936c314e43fadb283}
       \strng{authorfullhash}{7f6f3ac72c46758936c314e43fadb283}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1538,8 +1587,8 @@
       \strng{authorbibnamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
       \strng{authornamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
       \strng{authorfullhash}{32a637afed3be2bd32b7f90cc3a570aa}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1811.12327}
@@ -1627,8 +1676,8 @@
       \strng{authorbibnamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
       \strng{authornamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
       \strng{authorfullhash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Large eddy simulation of liquid jet primary breakup}
@@ -1652,8 +1701,8 @@
       \strng{authorbibnamehash}{33b7386d6d48b81c8ad90efd09b244da}
       \strng{authornamehash}{33b7386d6d48b81c8ad90efd09b244da}
       \strng{authorfullhash}{33b7386d6d48b81c8ad90efd09b244da}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal for numerical methods in fluids}

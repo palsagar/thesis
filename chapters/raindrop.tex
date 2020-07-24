@@ -4,9 +4,8 @@
 
 The focus of the present chapter shall be to take a closer look at the issues 
 plaguing numerical methods that try to deal with flows 
-entailing significant contrasts between the material 
-properties of the two fluids. Arguably, the most common
-instances of such flows are those involving the interaction
+entailing significant density contrasts between the two fluids. 
+Arguably, the most common instances of such flows are those involving the interaction
 between air and water, primarily in the form of droplets and 
 bubbles that play important roles in both natural and industrial processes. 
 As for the numerical platform, we use `PARIS Simulator' 
@@ -15,7 +14,7 @@ of the numerical methods implemented in `PARIS Simulator.}
 to carry out our simulations on this topic. 
 A flow configuration that combines the complexities of large 
 density-ratios with the interaction between capillary, viscous and 
-inertial stresses is that of a water droplet falling in the 
+inertial stresses is that of a water droplet falling in 
 air under the influence of gravitational acceleration.
 The contents of the chapter are primarily derived 
 from the recent investigations of the falling raindrop  
@@ -31,6 +30,11 @@ Weber and Bond numbers, the definitions of which are as follows :
 We=\frac{\rho_{g} U^2 D}{\sigma} \quad,\quad Re= \frac{\rho_{l} U D}{\mu_{g}} \quad,\quad Bo=\frac{\left(\rho_{l}-\rho_{g}\right) g D^2 }{\sigma}
 \end{align}
 
+\marginnote{As the density and viscosity ratios are corresponding to that of air-water systems at 20 degree Celcius,
+an equivalent characterization could be done using the Morton number $\left( Mo = \frac{g\mu_g^4(\rho_l-\rho_g)}{\rho_g^2 \sigma^3} \right)$ 
+in place of the Bond number.}
+
+
 The subscripts $l$ and $g$ represent liquid and gas phases respectively. 
 In our particular numerical setup, $We \simeq 3.2 $, $Re \simeq 1455 $ and $Bo \simeq 1.2 $, 
 thus corresponding to that of a $3mm$ diameter raindrop (a relatively large one) 
@@ -39,7 +43,7 @@ $8$ m/s (interpolated from empirical data, refer to Gunn and Kinzer \cite{gunn19
 The parameters in the problem setup are given in Table \ref{raindropprop}, 
 and the schematic diagram given in Fig. \ref{setup}. 
 The droplet is initially placed at the center of a cubic domain (3D), 
-whose side is 4 times the diameter of the drop. 
+where the length of the side is 4 times the diameter of the drop. 
 
 \begin{table*}[h!]
 \begin{center}
@@ -145,14 +149,14 @@ of the order $U^2/D$, whereas the pressure gradient is
 
 The pressure gradient in the liquid is much smaller, 
 however, in the case of a mixed cell the water density 
-multiplies with the gas acceleration $U^2/D$, so that
+may multiply (due to numerical errors) with the gas acceleration $U^2/D$, so that
 
 \begin{align}
 \partial_1 p \sim \rho_{l} U^2/D,
 \end{align}
 
 then a large pressure gradient results in the mixed cell or cells. 
-This large pressure gradient results in a pressure spikes inside the 
+This large pressure gradient results in pressure spikes inside the 
 droplet near the front stagnation point, as shown in Figure \ref{pressure_1}. 
 Such pressure gradients are balanced by surface tension only for a sufficiently 
 large curvatures near the droplet front. 
@@ -240,7 +244,7 @@ CIAM advection method, in conjunction with the Superbee limiter.}
 Visualization of the flow around the droplets (Figure \ref{flow_field}) 
 illustrates the challenging nature of the flow configuration, 
 even for such a seemingly simple physical problem. 
-As one can observe, the boundary layers are extremely thin. 
+As one can observe, the thin boundary layers are poorly resolved. 
 Therefore, even though the velocity field is continuous across the 
 interface (in the discrete sense) in the absence of mass transfer, 
 there is the appearance of strong velocity variations at the 
@@ -270,7 +274,7 @@ The droplet resolution for both methods is $D/h = 16$ .}
 \section{Stabilization Strategies}
 
 The cascading nature of the numerical instabilities that lead to 
-the eventual (un-physical) fragmentation of droplet is not just a 
+the eventual (un-physical) fragmentation of a droplet is not just a 
 cause of concern in the context of modeling a raindrop, but it has important
 implications within the more broader scope of 
 atomization and other complex fragmentation phenomena. 
@@ -479,7 +483,7 @@ the standard non-consistent method (refer to Fig. \ref{pressure_2}).
 Such abrupt changes in kinetic energy of the droplet have been 
 found to be associated with instants when the droplet undergoes 
 `artificial' atomization or breakup, henceforth resulting in 
-the catastrophic loss of stability for the numerical method. 
+catastrophic loss of stability for the numerical method. 
 We observe a systematic drop in the amount of the droplet 
 kinetic energy as we increase resolution, with the most probable explanation 
 being that of the suppression of spurious interfacial 
@@ -489,21 +493,21 @@ associated with the internal coherent vortical structures generated due to
 the interaction of aerodynamic shear at the interface, 
 evidenced by the non-zero value of the kinetic 
 energy even for the most highly resolved droplets. 
-Finally, the moment of inertia of the droplet appears to evolve 
+Finally, the moments of inertia of the droplet appear to evolve 
 in a smooth manner for all droplet resolutions, with higher 
-resolutions exhibiting lower amounts of inertia as a result of 
-the more compact shapes obtained once the 
-spurious interfacial deformation modes are subdued. 
+resolutions exhibiting lower values at the same instants of time (comparing the moments along the same direction), 
+as a result of the more compact shapes obtained once the 
+spurious interfacial deformation modes are subdued (due to higher resolution). 
 This observation holds true for the moment of inertia curves regardless of direction.           
 
 
 We have to keep in mind that the velocity inflow condition 
-does not correspond to the `exact' teminal velocity 
-field an actual falling raindrop might experience, 
+does not correspond to the `exact' terminal velocity 
+field of an actual falling raindrop might experience, 
 hence the droplet in our numerical setup does have some 
 finite acceleration due to the imbalance 
 between the aerodynamic forces and gravity. 
-In Figure \ref{drop_vel}, we demonstrate the velocity of 
+In Figure \ref{drop_vel}, we plot the velocity of 
 the center of mass of the droplet (in the frame of reference 
 of the box enclosing the droplet) as a function of time, 
 and its behavior as we increase the droplet resolution. 
@@ -513,15 +517,15 @@ linear increase (absolute value) in the velocity as a function of time.
 The temporal variation in the droplet velocity is fitted to a 
 linear polynomial in order to evaluate the droplet acceleration 
 by means of a standard least-squares approach, for each droplet resolution. 
-We illustrate (inset Figure \ref{drop_vel}) that we achieve more 
-accurate fits as a consequence of higher droplet resolutions, 
+We illustrate (inset Figure \ref{drop_vel}) the convergence in the estimated 
+accelarations as a consequence of increasing spatial resolution, 
 as evidenced by a decrease in the standard error on the fits 
 ranging from $\pm 11.1 \%$ for $D/h = 8$ to a value of $\pm 0.12 \%$ 
 for the highest resolution of $D/h = 64$. 
-The results obtained in this section indicate that especially 
-when it comes to low resolutions, 
+The results obtained in this section indicate that 
 our numerical method can be used to get relatively good 
 estimates of the underlying flow features of the droplet 
-without observing an un-physical evolution as a consequence of discretization errors.           
+without observing an un-physical evolution as a consequence 
+of discretization errors at low to moderate resolutions.           
 
 
