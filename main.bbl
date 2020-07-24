@@ -1533,68 +1533,6 @@
       \field{pages}{285\bibrangedash 300}
       \range{pages}{16}
     \endentry
-    \entry{caf_momcons}{article}{}
-      \name{author}{9}{}{%
-        {{hash=bef6c167a747e765ed1e454446b8a4f1}{%
-           family={Fuster},
-           familyi={F\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-        {{hash=8047ffe6a02573ba5ad15c2bf61a4e70}{%
-           family={Arrufat},
-           familyi={A\bibinitperiod},
-           given={T},
-           giveni={T\bibinitperiod}}}%
-        {{hash=d48ab6c4d2242ef647fb98727b0d74ba}{%
-           family={Crialesi-Esposito},
-           familyi={C\bibinithyphendelim E\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=dfe13e9b78c12ee80286c816d618f294}{%
-           family={Ling},
-           familyi={L\bibinitperiod},
-           given={Y},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=3c6a5406b23478a05acaf3773dcea155}{%
-           family={Malan},
-           familyi={M\bibinitperiod},
-           given={L},
-           giveni={L\bibinitperiod}}}%
-        {{hash=818917f559df7aab23519221065c2b67}{%
-           family={Pal},
-           familyi={P\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=a6f35adcff8e1de10946cf5c6ec6bce7}{%
-           family={Scardovelli},
-           familyi={S\bibinitperiod},
-           given={R},
-           giveni={R\bibinitperiod}}}%
-        {{hash=67bd3e8e8362d7d48106d883530bb486}{%
-           family={Tryggvason},
-           familyi={T\bibinitperiod},
-           given={G},
-           giveni={G\bibinitperiod}}}%
-        {{hash=0b169305b3d7acfb24c2d6aeb7ab980f}{%
-           family={Zaleski},
-           familyi={Z\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{eef7f4b671b3a693b5ac5dda75cd3694}
-      \strng{fullhash}{32a637afed3be2bd32b7f90cc3a570aa}
-      \strng{bibnamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
-      \strng{authorbibnamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
-      \strng{authornamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
-      \strng{authorfullhash}{32a637afed3be2bd32b7f90cc3a570aa}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1811.12327}
-      \field{title}{A momentum-conserving, consistent, Volume-of-Fluid method for incompressible flow on staggered grids}
-      \field{year}{2018}
-    \endentry
     \entry{gunn1949}{article}{}
       \name{author}{2}{}{%
         {{hash=5c4ba7f7ed43f788004f5452f05e509a}{%
@@ -1676,8 +1614,8 @@
       \strng{authorbibnamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
       \strng{authornamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
       \strng{authorfullhash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Large eddy simulation of liquid jet primary breakup}
@@ -1701,8 +1639,8 @@
       \strng{authorbibnamehash}{33b7386d6d48b81c8ad90efd09b244da}
       \strng{authornamehash}{33b7386d6d48b81c8ad90efd09b244da}
       \strng{authorfullhash}{33b7386d6d48b81c8ad90efd09b244da}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal for numerical methods in fluids}
@@ -1740,8 +1678,8 @@
       \strng{authorbibnamehash}{c9708c0ea61ac656c66a54ccce332eae}
       \strng{authornamehash}{c9708c0ea61ac656c66a54ccce332eae}
       \strng{authorfullhash}{c9708c0ea61ac656c66a54ccce332eae}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{ASME 2002 Joint US-European Fluids Engineering Division Conference}
@@ -2049,6 +1987,68 @@
       \field{year}{2019}
       \field{pages}{548\bibrangedash 594}
       \range{pages}{47}
+    \endentry
+    \entry{caf_momcons}{article}{}
+      \name{author}{9}{}{%
+        {{hash=bef6c167a747e765ed1e454446b8a4f1}{%
+           family={Fuster},
+           familyi={F\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8047ffe6a02573ba5ad15c2bf61a4e70}{%
+           family={Arrufat},
+           familyi={A\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d48ab6c4d2242ef647fb98727b0d74ba}{%
+           family={Crialesi-Esposito},
+           familyi={C\bibinithyphendelim E\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dfe13e9b78c12ee80286c816d618f294}{%
+           family={Ling},
+           familyi={L\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3c6a5406b23478a05acaf3773dcea155}{%
+           family={Malan},
+           familyi={M\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=818917f559df7aab23519221065c2b67}{%
+           family={Pal},
+           familyi={P\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a6f35adcff8e1de10946cf5c6ec6bce7}{%
+           family={Scardovelli},
+           familyi={S\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=67bd3e8e8362d7d48106d883530bb486}{%
+           family={Tryggvason},
+           familyi={T\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0b169305b3d7acfb24c2d6aeb7ab980f}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{eef7f4b671b3a693b5ac5dda75cd3694}
+      \strng{fullhash}{32a637afed3be2bd32b7f90cc3a570aa}
+      \strng{bibnamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
+      \strng{authorbibnamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
+      \strng{authornamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
+      \strng{authorfullhash}{32a637afed3be2bd32b7f90cc3a570aa}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1811.12327}
+      \field{title}{A momentum-conserving, consistent, Volume-of-Fluid method for incompressible flow on staggered grids}
+      \field{year}{2018}
     \endentry
     \entry{roe1985some}{inproceedings}{}
       \name{author}{1}{}{%
