@@ -456,35 +456,6 @@
       \field{pages}{1\bibrangedash 35}
       \range{pages}{35}
     \endentry
-    \entry{khi}{article}{}
-      \name{author}{1}{}{%
-        {{hash=42499dfc852eb2499dfa471c1aa9622f}{%
-           family={Drazin},
-           familyi={D\bibinitperiod},
-           given={PG},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{42499dfc852eb2499dfa471c1aa9622f}
-      \strng{fullhash}{42499dfc852eb2499dfa471c1aa9622f}
-      \strng{bibnamehash}{42499dfc852eb2499dfa471c1aa9622f}
-      \strng{authorbibnamehash}{42499dfc852eb2499dfa471c1aa9622f}
-      \strng{authornamehash}{42499dfc852eb2499dfa471c1aa9622f}
-      \strng{authorfullhash}{42499dfc852eb2499dfa471c1aa9622f}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Fluid Mechanics}
-      \field{number}{2}
-      \field{title}{Kelvin--Helmholtz instability of finite amplitude}
-      \field{volume}{42}
-      \field{year}{1970}
-      \field{pages}{321\bibrangedash 335}
-      \range{pages}{15}
-    \endentry
     \entry{bremond}{article}{}
       \name{author}{3}{}{%
         {{hash=913c44cc97507cd4dd92548afc9d616b}{%
@@ -555,6 +526,35 @@
       \field{year}{2018}
       \field{pages}{946\bibrangedash 967}
       \range{pages}{22}
+    \endentry
+    \entry{khi}{article}{}
+      \name{author}{1}{}{%
+        {{hash=42499dfc852eb2499dfa471c1aa9622f}{%
+           family={Drazin},
+           familyi={D\bibinitperiod},
+           given={PG},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{42499dfc852eb2499dfa471c1aa9622f}
+      \strng{fullhash}{42499dfc852eb2499dfa471c1aa9622f}
+      \strng{bibnamehash}{42499dfc852eb2499dfa471c1aa9622f}
+      \strng{authorbibnamehash}{42499dfc852eb2499dfa471c1aa9622f}
+      \strng{authornamehash}{42499dfc852eb2499dfa471c1aa9622f}
+      \strng{authorfullhash}{42499dfc852eb2499dfa471c1aa9622f}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{number}{2}
+      \field{title}{Kelvin--Helmholtz instability of finite amplitude}
+      \field{volume}{42}
+      \field{year}{1970}
+      \field{pages}{321\bibrangedash 335}
+      \range{pages}{15}
     \endentry
     \entry{lasheras}{article}{}
       \name{author}{2}{}{%
@@ -784,178 +784,6 @@
       \field{title}{PArallel, Robust, Interface Simulator (PARIS)}
       \field{year}{2019}
     \endentry
-    \entry{basilisk}{article}{}
-      \name{author}{1}{}{%
-        {{hash=315b27c79127c304f318dea9e0bfaa28}{%
-           family={Popinet},
-           familyi={P\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{315b27c79127c304f318dea9e0bfaa28}
-      \strng{fullhash}{315b27c79127c304f318dea9e0bfaa28}
-      \strng{bibnamehash}{315b27c79127c304f318dea9e0bfaa28}
-      \strng{authorbibnamehash}{315b27c79127c304f318dea9e0bfaa28}
-      \strng{authornamehash}{315b27c79127c304f318dea9e0bfaa28}
-      \strng{authorfullhash}{315b27c79127c304f318dea9e0bfaa28}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{URL http://basilisk. fr}
-      \field{title}{Basilisk, a Free-Software program for the solution of partial differential equations on adaptive Cartesian meshes (2018)}
-    \endentry
-    \entry{harmonic_mean}{article}{}
-      \name{author}{5}{}{%
-        {{hash=c4525ccda29f1c9379b20cf7b2473686}{%
-           family={Boeck},
-           familyi={B\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=5f61775c2fbdd179d018bb797bd0ce1d}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=42c64aa135345bd325c5082af4d60266}{%
-           family={L{ó}pez-Pag{é}s},
-           familyi={L\bibinithyphendelim P\bibinitperiod},
-           given={Enrique},
-           giveni={E\bibinitperiod}}}%
-        {{hash=3c534761faf471bbeab0ef3d01c72e86}{%
-           family={Yecko},
-           familyi={Y\bibinitperiod},
-           given={Philip},
-           giveni={P\bibinitperiod}}}%
-        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
-           family={Zaleski},
-           familyi={Z\bibinitperiod},
-           given={St{é}phane},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{3c7468a61741ca71de08cafd321e6374}
-      \strng{fullhash}{c5eb3a24a3287f90954b0634250c2a72}
-      \strng{bibnamehash}{3c7468a61741ca71de08cafd321e6374}
-      \strng{authorbibnamehash}{3c7468a61741ca71de08cafd321e6374}
-      \strng{authornamehash}{3c7468a61741ca71de08cafd321e6374}
-      \strng{authorfullhash}{c5eb3a24a3287f90954b0634250c2a72}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Theoretical and Computational Fluid Dynamics}
-      \field{number}{1}
-      \field{title}{Ligament formation in sheared liquid--gas layers}
-      \field{volume}{21}
-      \field{year}{2007}
-      \field{pages}{59\bibrangedash 76}
-      \range{pages}{18}
-    \endentry
-    \entry{hirt1981volume}{article}{}
-      \name{author}{2}{}{%
-        {{hash=15122c1fc5762571f390893174800cbd}{%
-           family={Hirt},
-           familyi={H\bibinitperiod},
-           given={Cyril\bibnamedelima W},
-           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=5e0ae9ed0b8773019647363abe6ec456}{%
-           family={Nichols},
-           familyi={N\bibinitperiod},
-           given={Billy\bibnamedelima D},
-           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Citeseer}%
-      }
-      \strng{namehash}{70b0cdd07cf135b60e9bac4335a50844}
-      \strng{fullhash}{70b0cdd07cf135b60e9bac4335a50844}
-      \strng{bibnamehash}{70b0cdd07cf135b60e9bac4335a50844}
-      \strng{authorbibnamehash}{70b0cdd07cf135b60e9bac4335a50844}
-      \strng{authornamehash}{70b0cdd07cf135b60e9bac4335a50844}
-      \strng{authorfullhash}{70b0cdd07cf135b60e9bac4335a50844}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of computational physics}
-      \field{number}{1}
-      \field{title}{Volume of fluid (VOF) method for the dynamics of free boundaries}
-      \field{volume}{39}
-      \field{year}{1981}
-      \field{pages}{201\bibrangedash 225}
-      \range{pages}{25}
-    \endentry
-    \entry{osher1988fronts}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d4ee7c8daf846ee1eddbbe56e4d658d9}{%
-           family={Osher},
-           familyi={O\bibinitperiod},
-           given={Stanley},
-           giveni={S\bibinitperiod}}}%
-        {{hash=861eb29259de3a2dd3218de52d1883b0}{%
-           family={Sethian},
-           familyi={S\bibinitperiod},
-           given={James\bibnamedelima A},
-           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{6cb3507b18e18d74735f3acdbe04654a}
-      \strng{fullhash}{6cb3507b18e18d74735f3acdbe04654a}
-      \strng{bibnamehash}{6cb3507b18e18d74735f3acdbe04654a}
-      \strng{authorbibnamehash}{6cb3507b18e18d74735f3acdbe04654a}
-      \strng{authornamehash}{6cb3507b18e18d74735f3acdbe04654a}
-      \strng{authorfullhash}{6cb3507b18e18d74735f3acdbe04654a}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of computational physics}
-      \field{number}{1}
-      \field{title}{Fronts propagating with curvature-dependent speed: algorithms based on Hamilton-Jacobi formulations}
-      \field{volume}{79}
-      \field{year}{1988}
-      \field{pages}{12\bibrangedash 49}
-      \range{pages}{38}
-    \endentry
-    \entry{zaleskibook}{book}{}
-      \name{author}{3}{}{%
-        {{hash=ae84e7db1139d3bd65b1ab75f6791549}{%
-           family={Tryggvason},
-           familyi={T\bibinitperiod},
-           given={Gr{é}tar},
-           giveni={G\bibinitperiod}}}%
-        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
-           family={Scardovelli},
-           familyi={S\bibinitperiod},
-           given={Ruben},
-           giveni={R\bibinitperiod}}}%
-        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
-           family={Zaleski},
-           familyi={Z\bibinitperiod},
-           given={St{é}phane},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{c6a5424a89f474437ffb66d29e4dc671}
-      \strng{fullhash}{c6a5424a89f474437ffb66d29e4dc671}
-      \strng{bibnamehash}{c6a5424a89f474437ffb66d29e4dc671}
-      \strng{authorbibnamehash}{c6a5424a89f474437ffb66d29e4dc671}
-      \strng{authornamehash}{c6a5424a89f474437ffb66d29e4dc671}
-      \strng{authorfullhash}{c6a5424a89f474437ffb66d29e4dc671}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Direct numerical simulations of gas--liquid multiphase flows}
-      \field{year}{2011}
-    \endentry
     \entry{popinet2018numerical}{article}{}
       \name{author}{1}{}{%
         {{hash=da4f5a8595565561cf6c514b5634ccc7}{%
@@ -973,8 +801,8 @@
       \strng{authorbibnamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authornamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authorfullhash}{da4f5a8595565561cf6c514b5634ccc7}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annual Review of Fluid Mechanics}
@@ -983,444 +811,6 @@
       \field{year}{2018}
       \field{pages}{49\bibrangedash 75}
       \range{pages}{27}
-    \endentry
-    \entry{zaleskiannual}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
-           family={Scardovelli},
-           familyi={S\bibinitperiod},
-           given={Ruben},
-           giveni={R\bibinitperiod}}}%
-        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
-           family={Zaleski},
-           familyi={Z\bibinitperiod},
-           given={St{é}phane},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
-      }
-      \strng{namehash}{181400f807c993375b1b742d97666cb5}
-      \strng{fullhash}{181400f807c993375b1b742d97666cb5}
-      \strng{bibnamehash}{181400f807c993375b1b742d97666cb5}
-      \strng{authorbibnamehash}{181400f807c993375b1b742d97666cb5}
-      \strng{authornamehash}{181400f807c993375b1b742d97666cb5}
-      \strng{authorfullhash}{181400f807c993375b1b742d97666cb5}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annual review of fluid mechanics}
-      \field{number}{1}
-      \field{title}{Direct numerical simulation of free-surface and interfacial flow}
-      \field{volume}{31}
-      \field{year}{1999}
-      \field{pages}{567\bibrangedash 603}
-      \range{pages}{37}
-    \endentry
-    \entry{vof_1}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
-           family={Scardovelli},
-           familyi={S\bibinitperiod},
-           given={Ruben},
-           giveni={R\bibinitperiod}}}%
-        {{hash=392dea952ad6ceca45788259e4153fcc}{%
-           family={Zaleski},
-           familyi={Z\bibinitperiod},
-           given={Stephane},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{cfd2ee3fad1205782800b3fc9d7e7255}
-      \strng{fullhash}{cfd2ee3fad1205782800b3fc9d7e7255}
-      \strng{bibnamehash}{cfd2ee3fad1205782800b3fc9d7e7255}
-      \strng{authorbibnamehash}{cfd2ee3fad1205782800b3fc9d7e7255}
-      \strng{authornamehash}{cfd2ee3fad1205782800b3fc9d7e7255}
-      \strng{authorfullhash}{cfd2ee3fad1205782800b3fc9d7e7255}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal for Numerical Methods in Fluids}
-      \field{number}{3}
-      \field{title}{Interface reconstruction with least-square fit and split Eulerian--Lagrangian advection}
-      \field{volume}{41}
-      \field{year}{2003}
-      \field{pages}{251\bibrangedash 274}
-      \range{pages}{24}
-    \endentry
-    \entry{vof_2}{article}{}
-      \name{author}{4}{}{%
-        {{hash=1daf5629f13129c3ff2a0e75f57b0259}{%
-           family={Aulisa},
-           familyi={A\bibinitperiod},
-           given={Eugenio},
-           giveni={E\bibinitperiod}}}%
-        {{hash=fc4d457aa2b00d0822213b3bd6795e82}{%
-           family={Manservisi},
-           familyi={M\bibinitperiod},
-           given={Sandro},
-           giveni={S\bibinitperiod}}}%
-        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
-           family={Scardovelli},
-           familyi={S\bibinitperiod},
-           given={Ruben},
-           giveni={R\bibinitperiod}}}%
-        {{hash=392dea952ad6ceca45788259e4153fcc}{%
-           family={Zaleski},
-           familyi={Z\bibinitperiod},
-           given={Stephane},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{5076e1b934a3a19846922c2e7a80fe7b}
-      \strng{fullhash}{a16c39068a00d4428385afcbca91e270}
-      \strng{bibnamehash}{5076e1b934a3a19846922c2e7a80fe7b}
-      \strng{authorbibnamehash}{5076e1b934a3a19846922c2e7a80fe7b}
-      \strng{authornamehash}{5076e1b934a3a19846922c2e7a80fe7b}
-      \strng{authorfullhash}{a16c39068a00d4428385afcbca91e270}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational Physics}
-      \field{number}{2}
-      \field{title}{Interface reconstruction with least-squares fit and split advection in three-dimensional Cartesian geometry}
-      \field{volume}{225}
-      \field{year}{2007}
-      \field{pages}{2301\bibrangedash 2319}
-      \range{pages}{19}
-    \endentry
-    \entry{wy}{article}{}
-      \name{author}{2}{}{%
-        {{hash=474344e0bec24371ba87e910fb32ced8}{%
-           family={Weymouth},
-           familyi={W\bibinitperiod},
-           given={Gabriel\bibnamedelima D},
-           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=ca9a3836a4bc33836ecfc105b858b6f8}{%
-           family={Yue},
-           familyi={Y\bibinitperiod},
-           given={Dick\bibnamedelima K-P},
-           giveni={D\bibinitperiod\bibinitdelim K\bibinithyphendelim P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{cdf11c9616042a96270afbb60ce49e48}
-      \strng{fullhash}{cdf11c9616042a96270afbb60ce49e48}
-      \strng{bibnamehash}{cdf11c9616042a96270afbb60ce49e48}
-      \strng{authorbibnamehash}{cdf11c9616042a96270afbb60ce49e48}
-      \strng{authornamehash}{cdf11c9616042a96270afbb60ce49e48}
-      \strng{authorfullhash}{cdf11c9616042a96270afbb60ce49e48}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational Physics}
-      \field{number}{8}
-      \field{title}{Conservative volume-of-fluid method for free-surface simulations on cartesian-grids}
-      \field{volume}{229}
-      \field{year}{2010}
-      \field{pages}{2853\bibrangedash 2865}
-      \range{pages}{13}
-    \endentry
-    \entry{mirjalili2017interface}{article}{}
-      \name{author}{3}{}{%
-        {{hash=0942bc844adf65575f3c960faa2b8f3d}{%
-           family={Mirjalili},
-           familyi={M\bibinitperiod},
-           given={Shahab},
-           giveni={S\bibinitperiod}}}%
-        {{hash=848fae3dfed0343116fb0b0ec3ab7d2e}{%
-           family={Jain},
-           familyi={J\bibinitperiod},
-           given={Suhas\bibnamedelima S},
-           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=66a7316b4b8568ea4182de5d42178b9e}{%
-           family={Dodd},
-           familyi={D\bibinitperiod},
-           given={Micheal},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{a46c2e53be4d58e4d8b100282701a9f9}
-      \strng{fullhash}{a46c2e53be4d58e4d8b100282701a9f9}
-      \strng{bibnamehash}{a46c2e53be4d58e4d8b100282701a9f9}
-      \strng{authorbibnamehash}{a46c2e53be4d58e4d8b100282701a9f9}
-      \strng{authornamehash}{a46c2e53be4d58e4d8b100282701a9f9}
-      \strng{authorfullhash}{a46c2e53be4d58e4d8b100282701a9f9}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Center for Turbulence Research Annual Research Briefs}
-      \field{title}{Interface-capturing methods for two-phase flows: An overview and recent developments}
-      \field{volume}{2017}
-      \field{year}{2017}
-      \field{pages}{117\bibrangedash 135}
-      \range{pages}{19}
-    \endentry
-    \entry{aulisa2003}{article}{}
-      \name{author}{4}{}{%
-        {{hash=1daf5629f13129c3ff2a0e75f57b0259}{%
-           family={Aulisa},
-           familyi={A\bibinitperiod},
-           given={Eugenio},
-           giveni={E\bibinitperiod}}}%
-        {{hash=fc4d457aa2b00d0822213b3bd6795e82}{%
-           family={Manservisi},
-           familyi={M\bibinitperiod},
-           given={Sandro},
-           giveni={S\bibinitperiod}}}%
-        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
-           family={Scardovelli},
-           familyi={S\bibinitperiod},
-           given={Ruben},
-           giveni={R\bibinitperiod}}}%
-        {{hash=392dea952ad6ceca45788259e4153fcc}{%
-           family={Zaleski},
-           familyi={Z\bibinitperiod},
-           given={Stephane},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{5076e1b934a3a19846922c2e7a80fe7b}
-      \strng{fullhash}{a16c39068a00d4428385afcbca91e270}
-      \strng{bibnamehash}{5076e1b934a3a19846922c2e7a80fe7b}
-      \strng{authorbibnamehash}{5076e1b934a3a19846922c2e7a80fe7b}
-      \strng{authornamehash}{5076e1b934a3a19846922c2e7a80fe7b}
-      \strng{authorfullhash}{a16c39068a00d4428385afcbca91e270}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational Physics}
-      \field{number}{1}
-      \field{title}{A geometrical area-preserving volume-of-fluid advection method}
-      \field{volume}{192}
-      \field{year}{2003}
-      \field{pages}{355\bibrangedash 364}
-      \range{pages}{10}
-    \endentry
-    \entry{li95}{article}{}
-      \name{author}{1}{}{%
-        {{hash=5f61775c2fbdd179d018bb797bd0ce1d}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{5f61775c2fbdd179d018bb797bd0ce1d}
-      \strng{fullhash}{5f61775c2fbdd179d018bb797bd0ce1d}
-      \strng{bibnamehash}{5f61775c2fbdd179d018bb797bd0ce1d}
-      \strng{authorbibnamehash}{5f61775c2fbdd179d018bb797bd0ce1d}
-      \strng{authornamehash}{5f61775c2fbdd179d018bb797bd0ce1d}
-      \strng{authorfullhash}{5f61775c2fbdd179d018bb797bd0ce1d}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Comptes rendus de l'Acad{é}mie des sciences. S{é}rie II, M{é}canique, physique, chimie, astronomie}
-      \field{number}{8}
-      \field{title}{Calcul d'interface affine par morceaux}
-      \field{volume}{320}
-      \field{year}{1995}
-      \field{pages}{391\bibrangedash 396}
-      \range{pages}{6}
-    \endentry
-    \entry{gueyffier}{article}{}
-      \name{author}{5}{}{%
-        {{hash=5772cb36bd5da41fff1c143ee50b6c88}{%
-           family={Gueyffier},
-           familyi={G\bibinitperiod},
-           given={Denis},
-           giveni={D\bibinitperiod}}}%
-        {{hash=5f61775c2fbdd179d018bb797bd0ce1d}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=afe97fdddda547b17f8665b71e3f188e}{%
-           family={Nadim},
-           familyi={N\bibinitperiod},
-           given={Ali},
-           giveni={A\bibinitperiod}}}%
-        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
-           family={Scardovelli},
-           familyi={S\bibinitperiod},
-           given={Ruben},
-           giveni={R\bibinitperiod}}}%
-        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
-           family={Zaleski},
-           familyi={Z\bibinitperiod},
-           given={St{é}phane},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{dac303776024328d8f62c0c7dd9ae85d}
-      \strng{fullhash}{c51fbf6f335a8d47bc09a68f62b31c9c}
-      \strng{bibnamehash}{dac303776024328d8f62c0c7dd9ae85d}
-      \strng{authorbibnamehash}{dac303776024328d8f62c0c7dd9ae85d}
-      \strng{authornamehash}{dac303776024328d8f62c0c7dd9ae85d}
-      \strng{authorfullhash}{c51fbf6f335a8d47bc09a68f62b31c9c}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational physics}
-      \field{number}{2}
-      \field{title}{Volume-of-fluid interface tracking with smoothed surface stress methods for three-dimensional flows}
-      \field{volume}{152}
-      \field{year}{1999}
-      \field{pages}{423\bibrangedash 456}
-      \range{pages}{34}
-    \endentry
-    \entry{flim_1}{article}{}
-      \name{author}{1}{}{%
-        {{hash=0165778ca44ec5a2bb1b3c43dfcc603b}{%
-           family={LeVeque},
-           familyi={L\bibinitperiod},
-           given={Randall\bibnamedelima J},
-           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {SIAM}%
-      }
-      \strng{namehash}{0165778ca44ec5a2bb1b3c43dfcc603b}
-      \strng{fullhash}{0165778ca44ec5a2bb1b3c43dfcc603b}
-      \strng{bibnamehash}{0165778ca44ec5a2bb1b3c43dfcc603b}
-      \strng{authorbibnamehash}{0165778ca44ec5a2bb1b3c43dfcc603b}
-      \strng{authornamehash}{0165778ca44ec5a2bb1b3c43dfcc603b}
-      \strng{authorfullhash}{0165778ca44ec5a2bb1b3c43dfcc603b}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{SIAM Journal on Numerical Analysis}
-      \field{number}{2}
-      \field{title}{High-resolution conservative algorithms for advection in incompressible flow}
-      \field{volume}{33}
-      \field{year}{1996}
-      \field{pages}{627\bibrangedash 665}
-      \range{pages}{39}
-    \endentry
-    \entry{flim_2}{article}{}
-      \name{author}{1}{}{%
-        {{hash=2c982ca86ca604f724dccc50bb3191f9}{%
-           family={Sweby},
-           familyi={S\bibinitperiod},
-           given={Peter\bibnamedelima K},
-           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {SIAM}%
-      }
-      \strng{namehash}{2c982ca86ca604f724dccc50bb3191f9}
-      \strng{fullhash}{2c982ca86ca604f724dccc50bb3191f9}
-      \strng{bibnamehash}{2c982ca86ca604f724dccc50bb3191f9}
-      \strng{authorbibnamehash}{2c982ca86ca604f724dccc50bb3191f9}
-      \strng{authornamehash}{2c982ca86ca604f724dccc50bb3191f9}
-      \strng{authorfullhash}{2c982ca86ca604f724dccc50bb3191f9}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{SIAM journal on numerical analysis}
-      \field{number}{5}
-      \field{title}{High resolution schemes using flux limiters for hyperbolic conservation laws}
-      \field{volume}{21}
-      \field{year}{1984}
-      \field{pages}{995\bibrangedash 1011}
-      \range{pages}{17}
-    \endentry
-    \entry{chorin1969convergence}{article}{}
-      \name{author}{1}{}{%
-        {{hash=f20dc923f2774277b97f4fe078cf0897}{%
-           family={Chorin},
-           familyi={C\bibinitperiod},
-           given={Alexandre\bibnamedelima Joel},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{f20dc923f2774277b97f4fe078cf0897}
-      \strng{fullhash}{f20dc923f2774277b97f4fe078cf0897}
-      \strng{bibnamehash}{f20dc923f2774277b97f4fe078cf0897}
-      \strng{authorbibnamehash}{f20dc923f2774277b97f4fe078cf0897}
-      \strng{authornamehash}{f20dc923f2774277b97f4fe078cf0897}
-      \strng{authorfullhash}{f20dc923f2774277b97f4fe078cf0897}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Mathematics of computation}
-      \field{number}{106}
-      \field{title}{On the convergence of discrete approximations to the Navier-Stokes equations}
-      \field{volume}{23}
-      \field{year}{1969}
-      \field{pages}{341\bibrangedash 353}
-      \range{pages}{13}
-    \endentry
-    \entry{briggs1987}{article}{}
-      \name{author}{1}{}{%
-        {{hash=2fd91fff9fdf3ea062aceb9d97330f94}{%
-           family={Briggs},
-           familyi={B\bibinitperiod},
-           given={William\bibnamedelima L},
-           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{2fd91fff9fdf3ea062aceb9d97330f94}
-      \strng{fullhash}{2fd91fff9fdf3ea062aceb9d97330f94}
-      \strng{bibnamehash}{2fd91fff9fdf3ea062aceb9d97330f94}
-      \strng{authorbibnamehash}{2fd91fff9fdf3ea062aceb9d97330f94}
-      \strng{authornamehash}{2fd91fff9fdf3ea062aceb9d97330f94}
-      \strng{authorfullhash}{2fd91fff9fdf3ea062aceb9d97330f94}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Carver, MB (1984)“Numerical Computation of Phase Separation in Two Fluid Flow,” ASME Journal of Fluids Engineering}
-      \field{title}{A Multigrid Tutorial, SIAM}
-      \field{volume}{106}
-      \field{year}{1987}
-      \field{pages}{147\bibrangedash 153}
-      \range{pages}{7}
-    \endentry
-    \entry{popinet_gerris}{article}{}
-      \name{author}{1}{}{%
-        {{hash=da4f5a8595565561cf6c514b5634ccc7}{%
-           family={Popinet},
-           familyi={P\bibinitperiod},
-           given={St{é}phane},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{da4f5a8595565561cf6c514b5634ccc7}
-      \strng{fullhash}{da4f5a8595565561cf6c514b5634ccc7}
-      \strng{bibnamehash}{da4f5a8595565561cf6c514b5634ccc7}
-      \strng{authorbibnamehash}{da4f5a8595565561cf6c514b5634ccc7}
-      \strng{authornamehash}{da4f5a8595565561cf6c514b5634ccc7}
-      \strng{authorfullhash}{da4f5a8595565561cf6c514b5634ccc7}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational Physics}
-      \field{number}{2}
-      \field{title}{Gerris: a tree-based adaptive solver for the incompressible Euler equations in complex geometries}
-      \field{volume}{190}
-      \field{year}{2003}
-      \field{pages}{572\bibrangedash 600}
-      \range{pages}{29}
     \endentry
     \entry{popinet2009accurate}{article}{}
       \name{author}{1}{}{%
@@ -1439,8 +829,8 @@
       \strng{authorbibnamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authornamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authorfullhash}{da4f5a8595565561cf6c514b5634ccc7}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1450,177 +840,6 @@
       \field{year}{2009}
       \field{pages}{5838\bibrangedash 5866}
       \range{pages}{29}
-    \endentry
-    \entry{bornia2011properties}{article}{}
-      \name{author}{5}{}{%
-        {{hash=21432fc69b64c06f1b099cd7a1db8263}{%
-           family={Bornia},
-           familyi={B\bibinitperiod},
-           given={G},
-           giveni={G\bibinitperiod}}}%
-        {{hash=820be6bc97ba8a6c8ce7ceed8bf2ac02}{%
-           family={Cervone},
-           familyi={C\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-        {{hash=fc4d457aa2b00d0822213b3bd6795e82}{%
-           family={Manservisi},
-           familyi={M\bibinitperiod},
-           given={Sandro},
-           giveni={S\bibinitperiod}}}%
-        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
-           family={Scardovelli},
-           familyi={S\bibinitperiod},
-           given={Ruben},
-           giveni={R\bibinitperiod}}}%
-        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
-           family={Zaleski},
-           familyi={Z\bibinitperiod},
-           given={St{é}phane},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{c04f099aa691206643c8e0e71d2fe81d}
-      \strng{fullhash}{363de97b4244152392184e38dc627e85}
-      \strng{bibnamehash}{c04f099aa691206643c8e0e71d2fe81d}
-      \strng{authorbibnamehash}{c04f099aa691206643c8e0e71d2fe81d}
-      \strng{authornamehash}{c04f099aa691206643c8e0e71d2fe81d}
-      \strng{authorfullhash}{363de97b4244152392184e38dc627e85}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational Physics}
-      \field{number}{4}
-      \field{title}{On the properties and limitations of the height function method in two-dimensional Cartesian geometry}
-      \field{volume}{230}
-      \field{year}{2011}
-      \field{pages}{851\bibrangedash 862}
-      \range{pages}{12}
-    \endentry
-    \entry{owkes2015mesh}{article}{}
-      \name{author}{2}{}{%
-        {{hash=15c5dc7b684142f15145a639fb27b919}{%
-           family={Owkes},
-           familyi={O\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod}}}%
-        {{hash=401172d8fa3016959e591fe085008d28}{%
-           family={Desjardins},
-           familyi={D\bibinitperiod},
-           given={Olivier},
-           giveni={O\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{7f6f3ac72c46758936c314e43fadb283}
-      \strng{fullhash}{7f6f3ac72c46758936c314e43fadb283}
-      \strng{bibnamehash}{7f6f3ac72c46758936c314e43fadb283}
-      \strng{authorbibnamehash}{7f6f3ac72c46758936c314e43fadb283}
-      \strng{authornamehash}{7f6f3ac72c46758936c314e43fadb283}
-      \strng{authorfullhash}{7f6f3ac72c46758936c314e43fadb283}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational Physics}
-      \field{title}{A mesh-decoupled height function method for computing interface curvature}
-      \field{volume}{281}
-      \field{year}{2015}
-      \field{pages}{285\bibrangedash 300}
-      \range{pages}{16}
-    \endentry
-    \entry{gunn1949}{article}{}
-      \name{author}{2}{}{%
-        {{hash=5c4ba7f7ed43f788004f5452f05e509a}{%
-           family={Gunn},
-           familyi={G\bibinitperiod},
-           given={Ross},
-           giveni={R\bibinitperiod}}}%
-        {{hash=2f4731078b11a5a0be15bf1b649e8a1c}{%
-           family={Kinzer},
-           familyi={K\bibinitperiod},
-           given={Gilbert\bibnamedelima D},
-           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \strng{namehash}{93ecfaa5e2b90a3820387e76bebf52d9}
-      \strng{fullhash}{93ecfaa5e2b90a3820387e76bebf52d9}
-      \strng{bibnamehash}{93ecfaa5e2b90a3820387e76bebf52d9}
-      \strng{authorbibnamehash}{93ecfaa5e2b90a3820387e76bebf52d9}
-      \strng{authornamehash}{93ecfaa5e2b90a3820387e76bebf52d9}
-      \strng{authorfullhash}{93ecfaa5e2b90a3820387e76bebf52d9}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Meteorology}
-      \field{number}{4}
-      \field{title}{The terminal velocity of fall for water droplets in stagnant air}
-      \field{volume}{6}
-      \field{year}{1949}
-      \field{pages}{243\bibrangedash 248}
-      \range{pages}{6}
-    \endentry
-    \entry{dodd2014}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4eb95dd9e75d422f29d7f0e0475ca71b}{%
-           family={Dodd},
-           familyi={D\bibinitperiod},
-           given={Michael\bibnamedelima S},
-           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=61ddd6837434af4a20d09cfb78a55cd0}{%
-           family={Ferrante},
-           familyi={F\bibinitperiod},
-           given={Antonino},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
-      \strng{fullhash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
-      \strng{bibnamehash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
-      \strng{authorbibnamehash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
-      \strng{authornamehash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
-      \strng{authorfullhash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational Physics}
-      \field{title}{A fast pressure-correction method for incompressible two-fluid flows}
-      \field{volume}{273}
-      \field{year}{2014}
-      \field{pages}{416\bibrangedash 434}
-      \range{pages}{19}
-    \endentry
-    \entry{xiao2012}{thesis}{}
-      \name{author}{1}{}{%
-        {{hash=20216f4bcc7e3ee2d8b6378aa8353675}{%
-           family={Xiao},
-           familyi={X\bibinitperiod},
-           given={Feng},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {{©} F. Xiao}%
-      }
-      \strng{namehash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \strng{fullhash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \strng{bibnamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \strng{authorbibnamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \strng{authornamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \strng{authorfullhash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Large eddy simulation of liquid jet primary breakup}
-      \field{type}{phdthesis}
-      \field{year}{2012}
     \endentry
     \entry{rudman1998volume}{article}{}
       \name{author}{1}{}{%
@@ -1639,8 +858,8 @@
       \strng{authorbibnamehash}{33b7386d6d48b81c8ad90efd09b244da}
       \strng{authornamehash}{33b7386d6d48b81c8ad90efd09b244da}
       \strng{authorfullhash}{33b7386d6d48b81c8ad90efd09b244da}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal for numerical methods in fluids}
@@ -1678,8 +897,8 @@
       \strng{authorbibnamehash}{c9708c0ea61ac656c66a54ccce332eae}
       \strng{authornamehash}{c9708c0ea61ac656c66a54ccce332eae}
       \strng{authorfullhash}{c9708c0ea61ac656c66a54ccce332eae}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{ASME 2002 Joint US-European Fluids Engineering Division Conference}
@@ -1710,8 +929,8 @@
       \strng{authorbibnamehash}{e9bea121ee0b8add911a4437d9c89e0e}
       \strng{authornamehash}{e9bea121ee0b8add911a4437d9c89e0e}
       \strng{authorfullhash}{e9bea121ee0b8add911a4437d9c89e0e}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computers \& Fluids}
@@ -1743,8 +962,8 @@
       \strng{authorbibnamehash}{61c89e1bd5eecdbded4ce8726d124e7c}
       \strng{authornamehash}{61c89e1bd5eecdbded4ce8726d124e7c}
       \strng{authorfullhash}{61c89e1bd5eecdbded4ce8726d124e7c}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physica Scripta}
@@ -1777,8 +996,8 @@
       \strng{authorbibnamehash}{f0c6c18982abac8fe59a2d8de3392e3a}
       \strng{authornamehash}{f0c6c18982abac8fe59a2d8de3392e3a}
       \strng{authorfullhash}{f0c6c18982abac8fe59a2d8de3392e3a}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1810,8 +1029,8 @@
       \strng{authorbibnamehash}{7f6f3ac72c46758936c314e43fadb283}
       \strng{authornamehash}{7f6f3ac72c46758936c314e43fadb283}
       \strng{authorfullhash}{7f6f3ac72c46758936c314e43fadb283}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1858,8 +1077,8 @@
       \strng{authorbibnamehash}{cf82b899bc05acd470a4dd95ff3669c3}
       \strng{authornamehash}{cf82b899bc05acd470a4dd95ff3669c3}
       \strng{authorfullhash}{f3be8b43e6de80386d494e218eb4e954}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computers \& Fluids}
@@ -1901,8 +1120,8 @@
       \strng{authorbibnamehash}{477112cc0551da824a68363ba09da332}
       \strng{authornamehash}{477112cc0551da824a68363ba09da332}
       \strng{authorfullhash}{6b86655fa9fd1d606e1b21d589b97c5a}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1934,8 +1153,8 @@
       \strng{authorbibnamehash}{0cc4e74d7cc2bee62fa37d24cf119a15}
       \strng{authornamehash}{0cc4e74d7cc2bee62fa37d24cf119a15}
       \strng{authorfullhash}{0cc4e74d7cc2bee62fa37d24cf119a15}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of computational physics}
@@ -1977,8 +1196,8 @@
       \strng{authorbibnamehash}{e389d8f26d798998246ceb7752aec912}
       \strng{authornamehash}{e389d8f26d798998246ceb7752aec912}
       \strng{authorfullhash}{29aea1e624819cf52c9856164eebdeeb}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1987,6 +1206,75 @@
       \field{year}{2019}
       \field{pages}{548\bibrangedash 594}
       \range{pages}{47}
+    \endentry
+    \entry{mirjalili2017interface}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0942bc844adf65575f3c960faa2b8f3d}{%
+           family={Mirjalili},
+           familyi={M\bibinitperiod},
+           given={Shahab},
+           giveni={S\bibinitperiod}}}%
+        {{hash=848fae3dfed0343116fb0b0ec3ab7d2e}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Suhas\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=66a7316b4b8568ea4182de5d42178b9e}{%
+           family={Dodd},
+           familyi={D\bibinitperiod},
+           given={Micheal},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a46c2e53be4d58e4d8b100282701a9f9}
+      \strng{fullhash}{a46c2e53be4d58e4d8b100282701a9f9}
+      \strng{bibnamehash}{a46c2e53be4d58e4d8b100282701a9f9}
+      \strng{authorbibnamehash}{a46c2e53be4d58e4d8b100282701a9f9}
+      \strng{authornamehash}{a46c2e53be4d58e4d8b100282701a9f9}
+      \strng{authorfullhash}{a46c2e53be4d58e4d8b100282701a9f9}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Center for Turbulence Research Annual Research Briefs}
+      \field{title}{Interface-capturing methods for two-phase flows: An overview and recent developments}
+      \field{volume}{2017}
+      \field{year}{2017}
+      \field{pages}{117\bibrangedash 135}
+      \range{pages}{19}
+    \endentry
+    \entry{wy}{article}{}
+      \name{author}{2}{}{%
+        {{hash=474344e0bec24371ba87e910fb32ced8}{%
+           family={Weymouth},
+           familyi={W\bibinitperiod},
+           given={Gabriel\bibnamedelima D},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=ca9a3836a4bc33836ecfc105b858b6f8}{%
+           family={Yue},
+           familyi={Y\bibinitperiod},
+           given={Dick\bibnamedelima K-P},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{cdf11c9616042a96270afbb60ce49e48}
+      \strng{fullhash}{cdf11c9616042a96270afbb60ce49e48}
+      \strng{bibnamehash}{cdf11c9616042a96270afbb60ce49e48}
+      \strng{authorbibnamehash}{cdf11c9616042a96270afbb60ce49e48}
+      \strng{authornamehash}{cdf11c9616042a96270afbb60ce49e48}
+      \strng{authorfullhash}{cdf11c9616042a96270afbb60ce49e48}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{8}
+      \field{title}{Conservative volume-of-fluid method for free-surface simulations on cartesian-grids}
+      \field{volume}{229}
+      \field{year}{2010}
+      \field{pages}{2853\bibrangedash 2865}
+      \range{pages}{13}
     \endentry
     \entry{caf_momcons}{article}{}
       \name{author}{9}{}{%
@@ -2042,13 +1330,474 @@
       \strng{authorbibnamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
       \strng{authornamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
       \strng{authorfullhash}{32a637afed3be2bd32b7f90cc3a570aa}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1811.12327}
       \field{title}{A momentum-conserving, consistent, Volume-of-Fluid method for incompressible flow on staggered grids}
       \field{year}{2018}
+    \endentry
+    \entry{harmonic_mean}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c4525ccda29f1c9379b20cf7b2473686}{%
+           family={Boeck},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5f61775c2fbdd179d018bb797bd0ce1d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=42c64aa135345bd325c5082af4d60266}{%
+           family={L{ó}pez-Pag{é}s},
+           familyi={L\bibinithyphendelim P\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3c534761faf471bbeab0ef3d01c72e86}{%
+           family={Yecko},
+           familyi={Y\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3c7468a61741ca71de08cafd321e6374}
+      \strng{fullhash}{c5eb3a24a3287f90954b0634250c2a72}
+      \strng{bibnamehash}{3c7468a61741ca71de08cafd321e6374}
+      \strng{authorbibnamehash}{3c7468a61741ca71de08cafd321e6374}
+      \strng{authornamehash}{3c7468a61741ca71de08cafd321e6374}
+      \strng{authorfullhash}{c5eb3a24a3287f90954b0634250c2a72}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretical and Computational Fluid Dynamics}
+      \field{number}{1}
+      \field{title}{Ligament formation in sheared liquid--gas layers}
+      \field{volume}{21}
+      \field{year}{2007}
+      \field{pages}{59\bibrangedash 76}
+      \range{pages}{18}
+    \endentry
+    \entry{hirt1981volume}{article}{}
+      \name{author}{2}{}{%
+        {{hash=15122c1fc5762571f390893174800cbd}{%
+           family={Hirt},
+           familyi={H\bibinitperiod},
+           given={Cyril\bibnamedelima W},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=5e0ae9ed0b8773019647363abe6ec456}{%
+           family={Nichols},
+           familyi={N\bibinitperiod},
+           given={Billy\bibnamedelima D},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{70b0cdd07cf135b60e9bac4335a50844}
+      \strng{fullhash}{70b0cdd07cf135b60e9bac4335a50844}
+      \strng{bibnamehash}{70b0cdd07cf135b60e9bac4335a50844}
+      \strng{authorbibnamehash}{70b0cdd07cf135b60e9bac4335a50844}
+      \strng{authornamehash}{70b0cdd07cf135b60e9bac4335a50844}
+      \strng{authorfullhash}{70b0cdd07cf135b60e9bac4335a50844}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of computational physics}
+      \field{number}{1}
+      \field{title}{Volume of fluid (VOF) method for the dynamics of free boundaries}
+      \field{volume}{39}
+      \field{year}{1981}
+      \field{pages}{201\bibrangedash 225}
+      \range{pages}{25}
+    \endentry
+    \entry{osher1988fronts}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d4ee7c8daf846ee1eddbbe56e4d658d9}{%
+           family={Osher},
+           familyi={O\bibinitperiod},
+           given={Stanley},
+           giveni={S\bibinitperiod}}}%
+        {{hash=861eb29259de3a2dd3218de52d1883b0}{%
+           family={Sethian},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6cb3507b18e18d74735f3acdbe04654a}
+      \strng{fullhash}{6cb3507b18e18d74735f3acdbe04654a}
+      \strng{bibnamehash}{6cb3507b18e18d74735f3acdbe04654a}
+      \strng{authorbibnamehash}{6cb3507b18e18d74735f3acdbe04654a}
+      \strng{authornamehash}{6cb3507b18e18d74735f3acdbe04654a}
+      \strng{authorfullhash}{6cb3507b18e18d74735f3acdbe04654a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of computational physics}
+      \field{number}{1}
+      \field{title}{Fronts propagating with curvature-dependent speed: algorithms based on Hamilton-Jacobi formulations}
+      \field{volume}{79}
+      \field{year}{1988}
+      \field{pages}{12\bibrangedash 49}
+      \range{pages}{38}
+    \endentry
+    \entry{zaleskibook}{book}{}
+      \name{author}{3}{}{%
+        {{hash=ae84e7db1139d3bd65b1ab75f6791549}{%
+           family={Tryggvason},
+           familyi={T\bibinitperiod},
+           given={Gr{é}tar},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
+           family={Scardovelli},
+           familyi={S\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{c6a5424a89f474437ffb66d29e4dc671}
+      \strng{fullhash}{c6a5424a89f474437ffb66d29e4dc671}
+      \strng{bibnamehash}{c6a5424a89f474437ffb66d29e4dc671}
+      \strng{authorbibnamehash}{c6a5424a89f474437ffb66d29e4dc671}
+      \strng{authornamehash}{c6a5424a89f474437ffb66d29e4dc671}
+      \strng{authorfullhash}{c6a5424a89f474437ffb66d29e4dc671}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Direct numerical simulations of gas--liquid multiphase flows}
+      \field{year}{2011}
+    \endentry
+    \entry{zaleskiannual}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
+           family={Scardovelli},
+           familyi={S\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
+      }
+      \strng{namehash}{181400f807c993375b1b742d97666cb5}
+      \strng{fullhash}{181400f807c993375b1b742d97666cb5}
+      \strng{bibnamehash}{181400f807c993375b1b742d97666cb5}
+      \strng{authorbibnamehash}{181400f807c993375b1b742d97666cb5}
+      \strng{authornamehash}{181400f807c993375b1b742d97666cb5}
+      \strng{authorfullhash}{181400f807c993375b1b742d97666cb5}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual review of fluid mechanics}
+      \field{number}{1}
+      \field{title}{Direct numerical simulation of free-surface and interfacial flow}
+      \field{volume}{31}
+      \field{year}{1999}
+      \field{pages}{567\bibrangedash 603}
+      \range{pages}{37}
+    \endentry
+    \entry{vof_1}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
+           family={Scardovelli},
+           familyi={S\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=392dea952ad6ceca45788259e4153fcc}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={Stephane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{cfd2ee3fad1205782800b3fc9d7e7255}
+      \strng{fullhash}{cfd2ee3fad1205782800b3fc9d7e7255}
+      \strng{bibnamehash}{cfd2ee3fad1205782800b3fc9d7e7255}
+      \strng{authorbibnamehash}{cfd2ee3fad1205782800b3fc9d7e7255}
+      \strng{authornamehash}{cfd2ee3fad1205782800b3fc9d7e7255}
+      \strng{authorfullhash}{cfd2ee3fad1205782800b3fc9d7e7255}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal for Numerical Methods in Fluids}
+      \field{number}{3}
+      \field{title}{Interface reconstruction with least-square fit and split Eulerian--Lagrangian advection}
+      \field{volume}{41}
+      \field{year}{2003}
+      \field{pages}{251\bibrangedash 274}
+      \range{pages}{24}
+    \endentry
+    \entry{vof_2}{article}{}
+      \name{author}{4}{}{%
+        {{hash=1daf5629f13129c3ff2a0e75f57b0259}{%
+           family={Aulisa},
+           familyi={A\bibinitperiod},
+           given={Eugenio},
+           giveni={E\bibinitperiod}}}%
+        {{hash=fc4d457aa2b00d0822213b3bd6795e82}{%
+           family={Manservisi},
+           familyi={M\bibinitperiod},
+           given={Sandro},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
+           family={Scardovelli},
+           familyi={S\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=392dea952ad6ceca45788259e4153fcc}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={Stephane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5076e1b934a3a19846922c2e7a80fe7b}
+      \strng{fullhash}{a16c39068a00d4428385afcbca91e270}
+      \strng{bibnamehash}{5076e1b934a3a19846922c2e7a80fe7b}
+      \strng{authorbibnamehash}{5076e1b934a3a19846922c2e7a80fe7b}
+      \strng{authornamehash}{5076e1b934a3a19846922c2e7a80fe7b}
+      \strng{authorfullhash}{a16c39068a00d4428385afcbca91e270}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{2}
+      \field{title}{Interface reconstruction with least-squares fit and split advection in three-dimensional Cartesian geometry}
+      \field{volume}{225}
+      \field{year}{2007}
+      \field{pages}{2301\bibrangedash 2319}
+      \range{pages}{19}
+    \endentry
+    \entry{basilisk}{article}{}
+      \name{author}{1}{}{%
+        {{hash=315b27c79127c304f318dea9e0bfaa28}{%
+           family={Popinet},
+           familyi={P\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{315b27c79127c304f318dea9e0bfaa28}
+      \strng{fullhash}{315b27c79127c304f318dea9e0bfaa28}
+      \strng{bibnamehash}{315b27c79127c304f318dea9e0bfaa28}
+      \strng{authorbibnamehash}{315b27c79127c304f318dea9e0bfaa28}
+      \strng{authornamehash}{315b27c79127c304f318dea9e0bfaa28}
+      \strng{authorfullhash}{315b27c79127c304f318dea9e0bfaa28}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{URL http://basilisk. fr}
+      \field{title}{Basilisk, a Free-Software program for the solution of partial differential equations on adaptive Cartesian meshes (2018)}
+    \endentry
+    \entry{aulisa2003}{article}{}
+      \name{author}{4}{}{%
+        {{hash=1daf5629f13129c3ff2a0e75f57b0259}{%
+           family={Aulisa},
+           familyi={A\bibinitperiod},
+           given={Eugenio},
+           giveni={E\bibinitperiod}}}%
+        {{hash=fc4d457aa2b00d0822213b3bd6795e82}{%
+           family={Manservisi},
+           familyi={M\bibinitperiod},
+           given={Sandro},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
+           family={Scardovelli},
+           familyi={S\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=392dea952ad6ceca45788259e4153fcc}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={Stephane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5076e1b934a3a19846922c2e7a80fe7b}
+      \strng{fullhash}{a16c39068a00d4428385afcbca91e270}
+      \strng{bibnamehash}{5076e1b934a3a19846922c2e7a80fe7b}
+      \strng{authorbibnamehash}{5076e1b934a3a19846922c2e7a80fe7b}
+      \strng{authornamehash}{5076e1b934a3a19846922c2e7a80fe7b}
+      \strng{authorfullhash}{a16c39068a00d4428385afcbca91e270}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{1}
+      \field{title}{A geometrical area-preserving volume-of-fluid advection method}
+      \field{volume}{192}
+      \field{year}{2003}
+      \field{pages}{355\bibrangedash 364}
+      \range{pages}{10}
+    \endentry
+    \entry{li95}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5f61775c2fbdd179d018bb797bd0ce1d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f61775c2fbdd179d018bb797bd0ce1d}
+      \strng{fullhash}{5f61775c2fbdd179d018bb797bd0ce1d}
+      \strng{bibnamehash}{5f61775c2fbdd179d018bb797bd0ce1d}
+      \strng{authorbibnamehash}{5f61775c2fbdd179d018bb797bd0ce1d}
+      \strng{authornamehash}{5f61775c2fbdd179d018bb797bd0ce1d}
+      \strng{authorfullhash}{5f61775c2fbdd179d018bb797bd0ce1d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Comptes rendus de l'Acad{é}mie des sciences. S{é}rie II, M{é}canique, physique, chimie, astronomie}
+      \field{number}{8}
+      \field{title}{Calcul d'interface affine par morceaux}
+      \field{volume}{320}
+      \field{year}{1995}
+      \field{pages}{391\bibrangedash 396}
+      \range{pages}{6}
+    \endentry
+    \entry{gueyffier}{article}{}
+      \name{author}{5}{}{%
+        {{hash=5772cb36bd5da41fff1c143ee50b6c88}{%
+           family={Gueyffier},
+           familyi={G\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5f61775c2fbdd179d018bb797bd0ce1d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=afe97fdddda547b17f8665b71e3f188e}{%
+           family={Nadim},
+           familyi={N\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
+           family={Scardovelli},
+           familyi={S\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{dac303776024328d8f62c0c7dd9ae85d}
+      \strng{fullhash}{c51fbf6f335a8d47bc09a68f62b31c9c}
+      \strng{bibnamehash}{dac303776024328d8f62c0c7dd9ae85d}
+      \strng{authorbibnamehash}{dac303776024328d8f62c0c7dd9ae85d}
+      \strng{authornamehash}{dac303776024328d8f62c0c7dd9ae85d}
+      \strng{authorfullhash}{c51fbf6f335a8d47bc09a68f62b31c9c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational physics}
+      \field{number}{2}
+      \field{title}{Volume-of-fluid interface tracking with smoothed surface stress methods for three-dimensional flows}
+      \field{volume}{152}
+      \field{year}{1999}
+      \field{pages}{423\bibrangedash 456}
+      \range{pages}{34}
+    \endentry
+    \entry{flim_1}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0165778ca44ec5a2bb1b3c43dfcc603b}{%
+           family={LeVeque},
+           familyi={L\bibinitperiod},
+           given={Randall\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SIAM}%
+      }
+      \strng{namehash}{0165778ca44ec5a2bb1b3c43dfcc603b}
+      \strng{fullhash}{0165778ca44ec5a2bb1b3c43dfcc603b}
+      \strng{bibnamehash}{0165778ca44ec5a2bb1b3c43dfcc603b}
+      \strng{authorbibnamehash}{0165778ca44ec5a2bb1b3c43dfcc603b}
+      \strng{authornamehash}{0165778ca44ec5a2bb1b3c43dfcc603b}
+      \strng{authorfullhash}{0165778ca44ec5a2bb1b3c43dfcc603b}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Journal on Numerical Analysis}
+      \field{number}{2}
+      \field{title}{High-resolution conservative algorithms for advection in incompressible flow}
+      \field{volume}{33}
+      \field{year}{1996}
+      \field{pages}{627\bibrangedash 665}
+      \range{pages}{39}
+    \endentry
+    \entry{flim_2}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2c982ca86ca604f724dccc50bb3191f9}{%
+           family={Sweby},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima K},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SIAM}%
+      }
+      \strng{namehash}{2c982ca86ca604f724dccc50bb3191f9}
+      \strng{fullhash}{2c982ca86ca604f724dccc50bb3191f9}
+      \strng{bibnamehash}{2c982ca86ca604f724dccc50bb3191f9}
+      \strng{authorbibnamehash}{2c982ca86ca604f724dccc50bb3191f9}
+      \strng{authornamehash}{2c982ca86ca604f724dccc50bb3191f9}
+      \strng{authorfullhash}{2c982ca86ca604f724dccc50bb3191f9}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM journal on numerical analysis}
+      \field{number}{5}
+      \field{title}{High resolution schemes using flux limiters for hyperbolic conservation laws}
+      \field{volume}{21}
+      \field{year}{1984}
+      \field{pages}{995\bibrangedash 1011}
+      \range{pages}{17}
     \endentry
     \entry{roe1985some}{inproceedings}{}
       \name{author}{1}{}{%
@@ -2073,6 +1822,168 @@
       \field{year}{1985}
       \field{pages}{163\bibrangedash 193}
       \range{pages}{31}
+    \endentry
+    \entry{bornia2011properties}{article}{}
+      \name{author}{5}{}{%
+        {{hash=21432fc69b64c06f1b099cd7a1db8263}{%
+           family={Bornia},
+           familyi={B\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=820be6bc97ba8a6c8ce7ceed8bf2ac02}{%
+           family={Cervone},
+           familyi={C\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fc4d457aa2b00d0822213b3bd6795e82}{%
+           family={Manservisi},
+           familyi={M\bibinitperiod},
+           given={Sandro},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1d971fd0bf7dd7da24b3fcd2c9f35150}{%
+           family={Scardovelli},
+           familyi={S\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7264ce0842cc4983725fa74468f8c1a6}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{c04f099aa691206643c8e0e71d2fe81d}
+      \strng{fullhash}{363de97b4244152392184e38dc627e85}
+      \strng{bibnamehash}{c04f099aa691206643c8e0e71d2fe81d}
+      \strng{authorbibnamehash}{c04f099aa691206643c8e0e71d2fe81d}
+      \strng{authornamehash}{c04f099aa691206643c8e0e71d2fe81d}
+      \strng{authorfullhash}{363de97b4244152392184e38dc627e85}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{4}
+      \field{title}{On the properties and limitations of the height function method in two-dimensional Cartesian geometry}
+      \field{volume}{230}
+      \field{year}{2011}
+      \field{pages}{851\bibrangedash 862}
+      \range{pages}{12}
+    \endentry
+    \entry{owkes2015mesh}{article}{}
+      \name{author}{2}{}{%
+        {{hash=15c5dc7b684142f15145a639fb27b919}{%
+           family={Owkes},
+           familyi={O\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=401172d8fa3016959e591fe085008d28}{%
+           family={Desjardins},
+           familyi={D\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7f6f3ac72c46758936c314e43fadb283}
+      \strng{fullhash}{7f6f3ac72c46758936c314e43fadb283}
+      \strng{bibnamehash}{7f6f3ac72c46758936c314e43fadb283}
+      \strng{authorbibnamehash}{7f6f3ac72c46758936c314e43fadb283}
+      \strng{authornamehash}{7f6f3ac72c46758936c314e43fadb283}
+      \strng{authorfullhash}{7f6f3ac72c46758936c314e43fadb283}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{A mesh-decoupled height function method for computing interface curvature}
+      \field{volume}{281}
+      \field{year}{2015}
+      \field{pages}{285\bibrangedash 300}
+      \range{pages}{16}
+    \endentry
+    \entry{chorin1969convergence}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f20dc923f2774277b97f4fe078cf0897}{%
+           family={Chorin},
+           familyi={C\bibinitperiod},
+           given={Alexandre\bibnamedelima Joel},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f20dc923f2774277b97f4fe078cf0897}
+      \strng{fullhash}{f20dc923f2774277b97f4fe078cf0897}
+      \strng{bibnamehash}{f20dc923f2774277b97f4fe078cf0897}
+      \strng{authorbibnamehash}{f20dc923f2774277b97f4fe078cf0897}
+      \strng{authornamehash}{f20dc923f2774277b97f4fe078cf0897}
+      \strng{authorfullhash}{f20dc923f2774277b97f4fe078cf0897}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematics of computation}
+      \field{number}{106}
+      \field{title}{On the convergence of discrete approximations to the Navier-Stokes equations}
+      \field{volume}{23}
+      \field{year}{1969}
+      \field{pages}{341\bibrangedash 353}
+      \range{pages}{13}
+    \endentry
+    \entry{briggs1987}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2fd91fff9fdf3ea062aceb9d97330f94}{%
+           family={Briggs},
+           familyi={B\bibinitperiod},
+           given={William\bibnamedelima L},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{2fd91fff9fdf3ea062aceb9d97330f94}
+      \strng{fullhash}{2fd91fff9fdf3ea062aceb9d97330f94}
+      \strng{bibnamehash}{2fd91fff9fdf3ea062aceb9d97330f94}
+      \strng{authorbibnamehash}{2fd91fff9fdf3ea062aceb9d97330f94}
+      \strng{authornamehash}{2fd91fff9fdf3ea062aceb9d97330f94}
+      \strng{authorfullhash}{2fd91fff9fdf3ea062aceb9d97330f94}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Carver, MB (1984)“Numerical Computation of Phase Separation in Two Fluid Flow,” ASME Journal of Fluids Engineering}
+      \field{title}{A Multigrid Tutorial, SIAM}
+      \field{volume}{106}
+      \field{year}{1987}
+      \field{pages}{147\bibrangedash 153}
+      \range{pages}{7}
+    \endentry
+    \entry{popinet_gerris}{article}{}
+      \name{author}{1}{}{%
+        {{hash=da4f5a8595565561cf6c514b5634ccc7}{%
+           family={Popinet},
+           familyi={P\bibinitperiod},
+           given={St{é}phane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{da4f5a8595565561cf6c514b5634ccc7}
+      \strng{fullhash}{da4f5a8595565561cf6c514b5634ccc7}
+      \strng{bibnamehash}{da4f5a8595565561cf6c514b5634ccc7}
+      \strng{authorbibnamehash}{da4f5a8595565561cf6c514b5634ccc7}
+      \strng{authornamehash}{da4f5a8595565561cf6c514b5634ccc7}
+      \strng{authorfullhash}{da4f5a8595565561cf6c514b5634ccc7}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{2}
+      \field{title}{Gerris: a tree-based adaptive solver for the incompressible Euler equations in complex geometries}
+      \field{volume}{190}
+      \field{year}{2003}
+      \field{pages}{572\bibrangedash 600}
+      \range{pages}{29}
     \endentry
     \entry{lafaurie1994modelling}{article}{}
       \name{author}{5}{}{%
@@ -2305,8 +2216,8 @@
       \strng{authorbibnamehash}{dc8b03b5d95543ce6576bc309ca8c8d7}
       \strng{authornamehash}{dc8b03b5d95543ce6576bc309ca8c8d7}
       \strng{authorfullhash}{dc8b03b5d95543ce6576bc309ca8c8d7}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Hydrodynamics}
@@ -2329,8 +2240,8 @@
       \strng{authorbibnamehash}{829d8d92082999fa63db051a25c8b7f3}
       \strng{authornamehash}{829d8d92082999fa63db051a25c8b7f3}
       \strng{authorfullhash}{829d8d92082999fa63db051a25c8b7f3}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Fluid Mechanics}
@@ -2358,8 +2269,8 @@
       \strng{authorbibnamehash}{829d8d92082999fa63db051a25c8b7f3}
       \strng{authornamehash}{829d8d92082999fa63db051a25c8b7f3}
       \strng{authorfullhash}{829d8d92082999fa63db051a25c8b7f3}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Physics of Fluids}
@@ -2369,6 +2280,95 @@
       \field{year}{1981}
       \field{pages}{1217\bibrangedash 1223}
       \range{pages}{7}
+    \endentry
+    \entry{gunn1949}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5c4ba7f7ed43f788004f5452f05e509a}{%
+           family={Gunn},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2f4731078b11a5a0be15bf1b649e8a1c}{%
+           family={Kinzer},
+           familyi={K\bibinitperiod},
+           given={Gilbert\bibnamedelima D},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{93ecfaa5e2b90a3820387e76bebf52d9}
+      \strng{fullhash}{93ecfaa5e2b90a3820387e76bebf52d9}
+      \strng{bibnamehash}{93ecfaa5e2b90a3820387e76bebf52d9}
+      \strng{authorbibnamehash}{93ecfaa5e2b90a3820387e76bebf52d9}
+      \strng{authornamehash}{93ecfaa5e2b90a3820387e76bebf52d9}
+      \strng{authorfullhash}{93ecfaa5e2b90a3820387e76bebf52d9}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Meteorology}
+      \field{number}{4}
+      \field{title}{The terminal velocity of fall for water droplets in stagnant air}
+      \field{volume}{6}
+      \field{year}{1949}
+      \field{pages}{243\bibrangedash 248}
+      \range{pages}{6}
+    \endentry
+    \entry{dodd2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4eb95dd9e75d422f29d7f0e0475ca71b}{%
+           family={Dodd},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=61ddd6837434af4a20d09cfb78a55cd0}{%
+           family={Ferrante},
+           familyi={F\bibinitperiod},
+           given={Antonino},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
+      \strng{fullhash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
+      \strng{bibnamehash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
+      \strng{authorbibnamehash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
+      \strng{authornamehash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
+      \strng{authorfullhash}{f8a5ec82ef0d4b644c1b047e208d9d9e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{title}{A fast pressure-correction method for incompressible two-fluid flows}
+      \field{volume}{273}
+      \field{year}{2014}
+      \field{pages}{416\bibrangedash 434}
+      \range{pages}{19}
+    \endentry
+    \entry{xiao2012}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=20216f4bcc7e3ee2d8b6378aa8353675}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {{©} F. Xiao}%
+      }
+      \strng{namehash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \strng{fullhash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \strng{bibnamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \strng{authorbibnamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \strng{authornamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \strng{authorfullhash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Large eddy simulation of liquid jet primary breakup}
+      \field{type}{phdthesis}
+      \field{year}{2012}
     \endentry
     \entry{vill_3}{article}{}
       \name{author}{2}{}{%
