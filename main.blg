@@ -1,17 +1,17 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [1] Config.pm:305> INFO - Logfile is 'main.blg'
-[32] biber:313> INFO - === jeu. juil. 23, 2020, 19:27:47
-[53] Biber.pm:371> INFO - Reading 'main.bcf'
-[127] Biber.pm:857> INFO - Found 97 citekeys in bib section 0
+[30] biber:313> INFO - === ven. juil. 24, 2020, 12:06:46
+[51] Biber.pm:371> INFO - Reading 'main.bcf'
+[127] Biber.pm:857> INFO - Found 98 citekeys in bib section 0
 [141] Biber.pm:3981> INFO - Processing section 0
 [151] Biber.pm:4154> INFO - Looking for bibtex format file 'main.bib' for section 0
 [155] bibtex.pm:1468> INFO - LaTeX decoding ...
-[269] bibtex.pm:1294> INFO - Found BibTeX data source 'main.bib'
-[854] Utils.pm:169> WARN - I didn't find a database entry for 'monin1971statistical' (section 0)
-[917] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[917] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[917] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[917] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
-[979] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1012] bbl.pm:720> INFO - Output to main.bbl
-[1012] Biber.pm:110> INFO - WARNINGS: 1
+[270] bibtex.pm:1294> INFO - Found BibTeX data source 'main.bib'
+[864] Utils.pm:169> WARN - I didn't find a database entry for 'monin1971statistical' (section 0)
+[928] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[928] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[928] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[929] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[990] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1024] bbl.pm:720> INFO - Output to main.bbl
+[1024] Biber.pm:110> INFO - WARNINGS: 1

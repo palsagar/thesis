@@ -6,7 +6,7 @@
 \begin{marginfigure}
 \centering
 \includegraphics{plots/intro/jet.pdf}
-\caption{Decay of a liquid jet into droplets due to the growth of capillary instabilities corresponding 
+\caption{Decay of a liquid jet into droplets driven by the growth of capillary instabilities corresponding 
 	to different excitation frequencies. Image reproduced from Rutland and Jameson \cite{rutland1971non}.
 	} 
 \label{jet}
@@ -27,6 +27,49 @@ Such processes are ubiquitous in a diverse range of applications spanning from c
 (\cite{lefebvre2017atomization,bayvel1993liquid}) to agricultural irrigation (\cite{lake1977effect,reichenberger2007mitigation}).    
 
 % Decay of jets, shear induced atomization, expansion of sheets , hole expansion in sheets, secondary atomization of drops 
+Although liquid atomization is basically the transformation of a compact volume into drops,
+this simplistic view masks the intricate interplay between inertia, viscosity and capillarity across 
+different length and time scales spanning several orders of magnitude.  
+Such non-trivial interactions are responsible for the abundant variety in the sequence 
+of toplogical progressions that eventually lead to the formation of stable drops. 
+The most basic transition involves the breakup of a cylindrical filament structure 
+(see Fig. \ref{jet}) at approximately regular intervals, driven primarily by the 
+growth of long wavelength perturbations due to capillary forces. 
+A slightly more complicated transition involves liquid sheets (refer to Fig. \ref{spread}), 
+where the inertial expansion of the sheet is opposed by the capillary deceleration of the edges,
+resulting in the formation of liquid rims due to volume accumulation at the edges, 
+the subsequent destabilization of which leads to the generation of drops. 
+Sticking to the breakup of liquid sheets, another imporant transition involves the  
+appearance of perforations or holes (see Fig. \ref{holes}) when the thickness of the sheet reaches a certain limit. 
+The ensuing rapid expansion of such perforations due to capillary retraction results in the formation of drops. 
+Arguably, the most convoluted route to drop formation in encountered when macroscopic 
+liquid structures are subjected to shear-driven instabilities (see Fig. \ref{shear}) that 
+arise at the interface due to the differential gas and liquid velocities. 
+These primary instabilities of the Kelvin-Helmholtz \cite{khi} variety lead to the creation 
+of a plethora of secondary structures, many of them corresponding to the aforementioned 
+topologies like filaments, expanding sheets with rims, expanding holes in thin sheets etc 
+amongst numerous others. The evolution and concomitant disintegration of such a diverse range
+of structures lead to the production of drops with ample dispersion in their sizes.  
+In view of the fascinating phenomena on offer, our present body of work broadly evolves 
+along two parallel tracks :
+
+\begin{itemize}
+	\item Development of high fidelity numerical methods that can reproduce the dynamics of such interfacial flows. 
+	\item Utilization of numerical methods 
+\end{itemize}
+
+\begin{marginfigure}
+\centering
+\includegraphics{plots/intro/spread.pdf}
+	\caption{ Examples of steady and unsteady liquid fragmentation, demonstrating the disintegration of the  
+	radially expanding liquid sheets driven by the capillary deceleration of the rims forming the edges of the sheet. 
+	(i) Steady fragmentation of radially expanding sheets driven by jet impact, image reproduced from Bremond et al. \cite{bremond}.
+	(ii) Unsteady fragmentation of liquid sheets following drop impact, image reproduced from Wang and Bourouiba \cite{lydia_3}.  
+	}
+\label{spread}
+\end{marginfigure}
+
+\Blindtext
 
 \begin{marginfigure}
 \centering
@@ -38,19 +81,6 @@ Such processes are ubiquitous in a diverse range of applications spanning from c
 	reproduced from Ling et al. \cite{ling}.
 	}
 \label{shear}
-\end{marginfigure}
-
-\Blindtext
-
-\begin{marginfigure}
-\centering
-\includegraphics{plots/intro/spread.pdf}
-	\caption{ Examples of steady and unsteady liquid fragmentation, demonstrating the disintegration of the  
-	radially expanding liquid sheets driven by the capillary deceleration of the rims bounding the sheets. 
-	(i) Steady fragmentation of radially expanding sheets driven by jet impact, image reproduced from Bremond et al. \cite{bremond}.
-	(ii) Unsteady fragmentation of liquid sheets following drop impact, image reproduced from Wang and Bourouiba \cite{lydia_3}.  
-	}
-\label{spread}
 \end{marginfigure}
 
 \blindtext
