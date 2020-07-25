@@ -3,7 +3,7 @@
 \labch{intro}
 
 % Importance of multiphase interfacial flows 
-\begin{marginfigure}
+\begin{marginfigure}[3cm]
 \centering
 \includegraphics{plots/intro/jet.pdf}
 \caption{Decay of a liquid jet into droplets driven by the growth of capillary instabilities corresponding 
@@ -26,16 +26,6 @@ driven by the action of capillary forces at the interface separating the fluids.
 Such processes are ubiquitous in a diverse range of applications spanning from combustion related processes 
 (\cite{lefebvre2017atomization,bayvel1993liquid}) to agricultural irrigation (\cite{lake1977effect,reichenberger2007mitigation}).    
 
-\begin{marginfigure}[2cm]
-\centering
-\includegraphics{plots/intro/spread.pdf}
-	\caption{ Examples of steady and unsteady liquid fragmentation, demonstrating the disintegration of the  
-	radially expanding liquid sheets driven by the capillary deceleration of the rims forming the edges of the sheet. 
-	(i) Steady fragmentation of radially expanding sheets driven by jet impact, image reproduced from Bremond et al. \cite{bremond}.
-	(ii) Unsteady fragmentation of liquid sheets following drop impact, image reproduced from Wang and Bourouiba \cite{lydia_3}.  
-	}
-\label{spread}
-\end{marginfigure}
 
 % Decay of jets, shear induced atomization, expansion of sheets , hole expansion in sheets, secondary atomization of drops 
 Although liquid atomization is basically the transformation of a compact volume into drops,
@@ -64,6 +54,17 @@ of structures lead to the production of drops with ample dispersion in their siz
 In view of the broad spectrum of liquid fragmentation phenomena that pique our scientific interest, 
 the present body of work is be divided across two central themes :  
 
+\begin{marginfigure}[2cm]
+\centering
+\includegraphics{plots/intro/spread.pdf}
+	\caption{ Examples of steady and unsteady liquid fragmentation, demonstrating the disintegration of the  
+	radially expanding liquid sheets driven by the capillary deceleration of the rims forming the edges of the sheet. 
+	(i) Steady fragmentation of radially expanding sheets driven by jet impact, image reproduced from Bremond et al. \cite{bremond}.
+	(ii) Unsteady fragmentation of liquid sheets following drop impact, image reproduced from Wang and Bourouiba \cite{lydia_3}.  
+	}
+\label{spread}
+\end{marginfigure}
+
 \begin{marginfigure}
 \centering
 \includegraphics{plots/intro/shear.pdf}
@@ -76,7 +77,7 @@ the present body of work is be divided across two central themes :
 \label{shear}
 \end{marginfigure}
 
-\begin{itemize}[]
+\begin{itemize}
 	\item Development of numerical methods that can reproduce the dynamics of liquid-gas interfacial flows
 		at low to moderate computational cost (spatial resolution), aimed towards flow configurations 
 		involving significant contrasts in material properties across the interface. 
@@ -84,8 +85,81 @@ the present body of work is be divided across two central themes :
 		characteristics of liquid structures on the resulting drop size distributions.  
 \end{itemize}
 
+In what follows, we take a closer look at the challenges associated to the above mentioned themes. 
 
-\begin{marginfigure}[-4cm]
+
+
+\section*{Challenges in Numerical Modeling}
+
+A substantially large subset of all surface tension dominated flows 
+involve significant disparities in the material properties across 
+the interface, the most common example being flow configurations 
+corresponding to air-water systems, where the densities and viscosities
+of the fluids are separated by (approximately) 3 and 2 orders or magnitude, respectively.  
+The development of numerical methods that attempt to model 
+such interfacial flows involving marked contrasts in density  
+face several challenges, key amongst them being the transport of 
+mathematical discontinuities that arise out of the aforementioned contrasts. 
+Extremely small numerical errors are ubiquitous as a consequence of the 
+numerous approximations involved at each and every step of the algorithm
+(e.g. propagation of the interface, curvature computation, surface tension modeling etc) . 
+In the context of such flows, such ``numerical errors'' may result in physically
+inconsistent mass and momentum transfer across the interface, often from
+the denser phase towards the lighter phase as a consequence of inadequate numerical resolution.
+The presence of large density contrasts tend to amplify
+the growth of these cascading numerical errors, eventually
+leading to significant (often catastrophic) interfacial deformations
+followed rapidly by a loss of numerical stability.
+
+% Artifical Atomization at low resolutions (raindrop crashes).
+
+A prime example of such a situation is the numerical simulation of a 
+raindrop falling in air under the action of gravity, at speeds near terminal velocity. 
+For a regime corresponding to low Weber numbers ($\approx 3$ in our case), there is abundant experimental evidence 
+(e.g. see \ref{drop_breakuo}) demonstrating that the drops do not undergo any significant deformation, 
+apart from some minor shape oscillations driven by the interplay between surface tension and inertia.  
+Fig. \ref{explode_compare} shows the results from a moderately resolved numerical simulation, 
+where the rapid and uncontrolled growth of numerical errors of lead to severe deformations of the interface, 
+finally resulting in the un-physical (read ``artificial'') atomization of the raindrop into numerous smaller fragments.
+
+\begin{figure*}
+\begin{center}
+\includegraphics{plots/raindrop/raindrop_explode.png}
+\end{center}
+\caption{Numerical simulations of a $3 mm$ raindrop falling in air under gravitational acceleration.
+	The flow is along the positive X direction, with gravity along the opposite direction. 
+	The red contour indicates the isosurface of the volume fraction 
+	field corresponding to a value of $0.5$, whereas the black contours 
+	surrounding the drop represent isosurfaces of the magnitude of vorticity.
+	The droplet has a relatively poor numerical resolution, corresponding to $D/h = 16$,
+	where $D$ is the drop diameter and $h$ is the grid size.
+	The top row illustrates the phenomenon of ``artificial atomization'' that occurs
+	while using the standard version of our numerical method, which does not maintain
+	consistency between the discrete transport of mass and momentum.
+	In contrast, the implementation of consistent mass and momentum transport
+	enables us to supress the massive interfacial deformations of the drop, 
+	as evidenced by the bottom row of figures depicting the same flow configuration. 
+	The development of methods concerning the consistent transport of mass and momentum 
+	is one of the central themes of this study.
+	}
+	\label{explode_compare}
+\end{figure*}
+
+In typical liquid atomization processes, the scale separation
+between the sizes corresponding to the largest and smallest liquid structures 
+are often several orders of magnitude, which inevitably lead to the smaller 
+structures often being poorly resolved due to the inherent limitations in computational power. 
+Thus, one can consider that the case of the (less than well resolved) falling raindrop to be 
+representative of many of the small structures that emerge out of liquid fragmentation phenomena. 
+In that regard, the occurrence of ``artificial'' atomization may significantly distort 
+our undertanding of the distribution of drop sizes, as there is no meaningful way 
+to distinguish between drops generated via physially consistent processes and 
+those produced as a result of cascading numerical errors. 
+
+
+% demonstrate the effect of such errors, raindrop, 
+
+\begin{marginfigure}
 \centering
 \includegraphics{plots/intro/holes.pdf}
 \caption{ Liquid fragmentation triggered by the growth of perforations in thin liquid sheets. 
@@ -97,32 +171,9 @@ the present body of work is be divided across two central themes :
 \label{holes}
 \end{marginfigure}
 
-\section*{Challenges in Numerical Modeling}
-
-The stability of numerical methods that attempt to model 
-interfacial flows involving large density contrasts 
-face several challenges, key amongst them being the transport of 
-mathematical discontinuities that arise from the contrast in
-the material properties of the fluids involved. 
-Extremely small numerical errors are ubiquitous as a consequence of the 
-numerous approximations involved at each and every step of the algorithm 
-In the context of such flows, such errors generally result in physically
-inconsistent mass and momentum transfer across the interface, often from
-the denser phase towards the lighter phase.
-The presence of large density or viscosity contrasts tend to amplify
-the growth of these cascading numerical errors, eventually
-leading to significant (often catastrophic) interfacial deformations
-followed rapidly by a loss of numerical stability. 
-In this chapter, we present a detailed exposition of our class 
-of numerical methods which are designed specifically to circumvent or
-suppress the growth of such numerical instabilities when dealing with
-flows entailing large density-ratios. 
-The implementations of the numerical algorithms are developed for 
-finite volume discretizations using uniform Cartesian grids in 3D, 
-on the `PARIS Simulator' \cite{paris} numerical platform.      
-
 In the past two decades, considerable efforts have been made 
-in the design of numerical methods to deal with marked density contrasts
+towards the design of numerical methods to specifically deal with 
+flows involving such marked density contrasts
 \sidenote{By marked density contrasts, we mean large $|\log r|$, where $r$ 
 is the ratio of the densities of the two fluids.}. 
 The underlying principle behind these endeavours is that the governing 
@@ -131,26 +182,38 @@ conservative formulation (divergence of fluxes), instead of standard
 non-conservative forms which themselves were adapted directly from 
 techniques developed originally for single-phase flows. 
 This formulation enables one to render the discrete transport of 
-momentum \textit{consistent} with respect to the discrete transport of mass  
+momentum \textit{consistent} with respect to the discrete transport of mass.  
 Such a tight coupling of the propagation of errors between the discrete 
 mass and momentum fields enables alleviation of many of the issues 
 that plague such numerical methods, especially in the 
-context of low to moderate spatial resolutions. 
-A secondary but important mitigating factor is the advancements 
+context of low to moderate spatial resolutions (see Fig. \ref{explode_compare}). 
+Exacerbating the already complicated nature of the discrete transport of material 
+discontinuities is the role of capillary forces on the evolution of the interface. 
+They are commmonly modeled as singular source terms in the momentum balance equation that 
+governs the evolution of the velocity field, with the capillary force itself 
+being proportional to the third derivative of the interfacial position. 
+Thus, a secondary but important mitigating factor is the advancements 
 made in the modeling of capillary forces, resulting in the adoption of 
 consistent and \textit{well-balanced} surface tension formulations.
-\sidenote{Consistency in the context of surface tension models refers to the ability 
+Consistency in the context of surface tension models refers to the ability 
 of methods to progressively achieve more accurate estimations of interfacial 
 curvature as a result of increasing spatial resolution, 
 whereas well-balanced refers to the ability to recover certain static 
 equilibrium solutions pertaining to surface tension dominated flows 
-without the perpetual presence of parasitic or spurious currents in the velocity fields.}.
+without the perpetual presence of parasitic or spurious currents in the velocity fields.
 We refer the reader to influential works of Popinet \cite{popinet2018numerical,popinet2009accurate}
-to get a better understanding of the issues surrounding surface tension implementations.  
+to get a better understanding of the issues surrounding different surface tension implementations.  
 
-\subsection*{Major Iterations in Literature}
 
-% literature review 
+%In this chapter, we present a detailed exposition of our class 
+%of numerical methods which are designed specifically to circumvent or
+%suppress the growth of such numerical instabilities when dealing with
+%flows entailing large density-ratios. 
+%The implementations of the numerical algorithms are developed for 
+%finite volume discretizations using uniform Cartesian grids in 3D, 
+%on the `PARIS Simulator' \cite{paris} numerical platform.      
+
+% Literature review of different attempts at momcons + summary tables
 
 % Rudman (1998) :
 The first study to address the issue of consistency between mass 
@@ -256,11 +319,7 @@ To get a bird's eye view of the numerous features employed by the methods
 in existing literature, we refer the reader to tables %\ref{table_vof} and \ref{table_ls}, 
 which respectively provide systematic overviews of the VOF based and level set based approaches.    
 
-% modified comparison charts with CAF paper added
-
-
-
-\subsection*{Our Approach}
+% Our Approach 
 
 In the present body of work, we start by precisely defining the
 essential (desired) attributes of a numerical scheme that 
@@ -293,26 +352,23 @@ direction-split mass transport algorithm of Weymouth and Yue \sidecite{wy}
 to the direction-split transport of momentum. 
 
 A thorough description of the shifted fractions method is can be found in
-the recent study by Fuster et al. \sidecite{caf_momcons} 
-, and a detailed exposition of the
-sub-grid method is currently under preparation at the time of writing.  
-We shall be taking a closer look at these two stratetgies in the upcoming sections.  
+the recent study \sidecite{caf_momcons} , and a detailed exposition of the sub grid method 
+is currently under preparation at the time of writing.  
+We shall be taking a closer look at these two stratetgies in the subsequent chapters.  
+
+
+% modified comparison charts with CAF paper added
+
+\input{chapters/table_momcons_vof.tex}
+\input{chapters/table_momcons_ls.tex}
 
 
 
-% Utility of numerical simulations, general info on interfacial tracking, Navier-Stokes 
 
-% Artifical Atomization at low resolutions (raindrop crashes).
-
-% Literature review of different attempts at momcons + summary tables
-
-% Our Approach 
-
-
-\section*{Polydispersity in Drop Sizes}
+\section*{Ligament Mediated Paradigm}
 
 % Ligament mediated paradigm
-% Breakup Regimes : Keller-Miksis inviscid, Paparouglou viscous, Eggers universal (inertio-visco) 
+% Pinch off regimes leading to drop formation  : Keller-Miksis inviscid, Paparouglou viscous, Eggers universal (inertio-visco) 
 
 % Log-Normal, Gamma , Poisson distributions and underlying mechanisms
 
