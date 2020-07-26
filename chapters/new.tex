@@ -2,8 +2,18 @@
 \chapter{Methodology}
 \labch{momcons}
  
-%--------------------------------------------------------------------------------------------------------------------------
-%--------------------------------------------------------------------------------------------------------------------------
+In this chapter, we describe the our numerical methodology behind modeling 
+the dynamics of immiscible incompressible liquid-gas interfacial flows under isothermal conditions. 
+The numerical implementation is based on finite volume discretizations on uniform Cartesian grids, 
+utilizing state of the art methods in interfacial reconstruction coupled with geometric
+transport of the corresponding fluxes, curvature computation and surface tension modeling. 
+A detailed exposition of our class of mass-momentum consistent numerical methods is provided, 
+which are specifically designed to circumvent or suppress the uncontrolled and rapid  
+growth of numerical instabilities that arise when dealing with flows entailing marked density contrasts . 
+The implementations of the algorithms are developed on the free and open-source 
+numerical platform called `PARIS Simulator' \cite{paris}, with the detailed descriptions 
+of the general capabilities of the solver to be found in the previously cited reference. 
+
 \section{Governing Equations}
 
 We use the one-fluid formulation for our system of governing equations, thus solving 
@@ -321,11 +331,45 @@ where $C$ is a constant with a value of either $0$ or $1$, determined by the val
 
 \section{Consistent Transport of Mass and Momentum}
 
-
+Generally, we have a choice regarding how to discretize 
+the convective operator of the incompressible Navier-Stokes equations. 
+There is a well established corpus of numerical methods tailored specifically 
+to deal with the non-conservative \sidenote{also referred to as the strong form, necessitating certain orders of smoothness of the primitive variable} form of the convective 
+operator that appears in the transport equations of mass and momentum 
+\sidenote{These methods are descendants of the class of numerical schemes used to solve hyperbolic partial differential equations.}
+, which perform quite well in the context of single phase flows.
+However, in interfacial flows we often deal with sharp discontinuities that 
+arise as a consequence of the contrast in material properties between the two fluids. 
+Therefore, even though the velocity field remains continuous throughout the domain, 
+the otherwise smooth density (mass) and momentum fields 
+contain sharp jumps localized at the interfacial position.     
+Therefore, in regions of constant density and and viscosity, the standard non-conservative
+form of the Navier-Stokes equations are discretized, whereas the discretization is
+reformulated in a conservative form at locations in the vicinity of the interface.  
 
 \subsection*{Spatiotemporal Discretization}
 
-In order to describe the overall numerical algorithm for the one-fluid Navier-Stokes equations with variable density and viscosity, we choose to the reframe our equations in a more convenient operator form, as presented below : 
+We assume a regular cubic (3D) or square grid (2D). 
+We also use staggered velocity and pressure grids. 
+This makes our method more complex than it would be on a
+collocated grid.
+
+The staggered grid is represented in Figure \ref{stag-grid}. In a staggered
+grid discretization of the advection equation
+the control volumes of the velocity components $u_1$ and $u_2$ are shifted with respect to the
+control volume surrounding the pressure $p$.
+The use of staggered control volumes has the advantage of
+suppressing neutral modes often observed in collocated methods but
+leads to more complex discretizations (see \cite{Tryggvason11} for a
+more detailed discussion.). 
+This type of staggered representation
+is easily generalized to three dimensions. In what follows we shall
+use these control volumes for the velocity or momentum components.
+
+
+In order to describe the overall numerical algorithm for the one-fluid 
+Navier-Stokes equations with variable density and viscosity, 
+we choose to the reframe our equations in a more convenient operator form, as presented below : 
 
 \begin{align}
    \frac{\partial}{\partial t} \left( \rho \boldsymbol{u} \right) = L\left( \rho,\boldsymbol{u} \right) - \nabla p
@@ -364,15 +408,20 @@ resulting in pressure and density being centered on identical control volumes.
 We apply the spatially discretized versions of these operators (denoted by the superscript $h$) 
 onto the primary variables ($C,\boldsymbol{u}$), and march forward in time using a small, 
 possibly variable time-step $\tau$ such that $t_{n+1} = t_{n} + \tau$. 
-We shall be dropping the subscripts $i,j,k$ from this point onwards, with the understanding 
-that the operators in equation \ref{opr} apply uniformly to all control volumes. 
 In the first part of the algorithm, the volume fraction field $C^{n}$ is updated to the next timestep 
-, with the superscript $n$ signifying discretization in time. The operation can be written as follows        
+, with the superscript $n$ signifying discretization in time. 
+The operation can be written as follows        
 
 \begin{align}
 	C^{n+1} = C^{n} + \tau L^{h}_{\textrm{vof}}\left( C^{n},\boldsymbol{u}^{n}\right)  
 \label{cvof_update}
 \end{align}
+
+\marginnote{
+The subscripts $i,j,k$ are dropped in equations \eqref{cvof_update} 
+and \eqref{mom_update}, with the understanding that the operators in 
+equation \ref{opr} apply uniformly to all control volumes. 
+}
 
 The temporal evolution of the volume fraction field represented above by the 
 operator $L^{h}_{\textrm{vof}}$ is in accordance with the Lagrangian explicit or Eulerian implicit 

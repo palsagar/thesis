@@ -633,6 +633,44 @@
       \field{pages}{268\bibrangedash 307}
       \range{pages}{40}
     \endentry
+    \entry{drop_breakup}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d3a3336afda8d6ef13e8489c165bd477}{%
+           family={Faeth},
+           familyi={F\bibinitperiod},
+           given={GM},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6bdac33a0c8c538d64988a046db83187}{%
+           family={Hsiang},
+           familyi={H\bibinitperiod},
+           given={L-P},
+           giveni={L\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=8667eae5674d7ee7ad0f80d0c0d76625}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={P-K},
+           giveni={P\bibinithyphendelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1fde1293b320b360b05c799129afddf0}
+      \strng{fullhash}{1fde1293b320b360b05c799129afddf0}
+      \strng{bibnamehash}{1fde1293b320b360b05c799129afddf0}
+      \strng{authorbibnamehash}{1fde1293b320b360b05c799129afddf0}
+      \strng{authornamehash}{1fde1293b320b360b05c799129afddf0}
+      \strng{authorfullhash}{1fde1293b320b360b05c799129afddf0}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Multiphase Flow}
+      \field{title}{Structure and breakup properties of sprays}
+      \field{volume}{21}
+      \field{year}{1995}
+      \field{pages}{99\bibrangedash 127}
+      \range{pages}{29}
+    \endentry
     \entry{hole_drop}{article}{}
       \name{author}{5}{}{%
         {{hash=860c7e7b0069a68e99d53206f98329d1}{%
@@ -928,8 +966,8 @@
       \strng{authorbibnamehash}{f0c6c18982abac8fe59a2d8de3392e3a}
       \strng{authornamehash}{f0c6c18982abac8fe59a2d8de3392e3a}
       \strng{authorfullhash}{f0c6c18982abac8fe59a2d8de3392e3a}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1270,6 +1308,74 @@
       \field{title}{A momentum-conserving, consistent, Volume-of-Fluid method for incompressible flow on staggered grids}
       \field{year}{2018}
     \endentry
+    \entry{paris}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=bc8ee198b0072628d12d08b33fd4c383}{%
+           family={Aniszewski},
+           familyi={A\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=8047ffe6a02573ba5ad15c2bf61a4e70}{%
+           family={Arrufat},
+           familyi={A\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d48ab6c4d2242ef647fb98727b0d74ba}{%
+           family={Crialesi-Esposito},
+           familyi={C\bibinithyphendelim E\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3ad89df6558722af61cd307a7feddcdb}{%
+           family={Dabiri},
+           familyi={D\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bef6c167a747e765ed1e454446b8a4f1}{%
+           family={Fuster},
+           familyi={F\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=dfe13e9b78c12ee80286c816d618f294}{%
+           family={Ling},
+           familyi={L\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=642f8aecd69ae5ee926bceabfd45a56d}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3c6a5406b23478a05acaf3773dcea155}{%
+           family={Malan},
+           familyi={M\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=818917f559df7aab23519221065c2b67}{%
+           family={Pal},
+           familyi={P\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a6f35adcff8e1de10946cf5c6ec6bce7}{%
+           family={Scardovelli},
+           familyi={S\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{17e367e9a705496b472f620b5b2b181a}
+      \strng{fullhash}{7bf80c34d720cf641679d494d0f29946}
+      \strng{bibnamehash}{17e367e9a705496b472f620b5b2b181a}
+      \strng{authorbibnamehash}{17e367e9a705496b472f620b5b2b181a}
+      \strng{authornamehash}{17e367e9a705496b472f620b5b2b181a}
+      \strng{authorfullhash}{7bf80c34d720cf641679d494d0f29946}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PArallel, Robust, Interface Simulator (PARIS)}
+      \field{year}{2019}
+    \endentry
     \entry{harmonic_mean}{article}{}
       \name{author}{5}{}{%
         {{hash=c4525ccda29f1c9379b20cf7b2473686}{%
@@ -1532,74 +1638,6 @@
       \field{year}{2007}
       \field{pages}{2301\bibrangedash 2319}
       \range{pages}{19}
-    \endentry
-    \entry{paris}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=bc8ee198b0072628d12d08b33fd4c383}{%
-           family={Aniszewski},
-           familyi={A\bibinitperiod},
-           given={W},
-           giveni={W\bibinitperiod}}}%
-        {{hash=8047ffe6a02573ba5ad15c2bf61a4e70}{%
-           family={Arrufat},
-           familyi={A\bibinitperiod},
-           given={T},
-           giveni={T\bibinitperiod}}}%
-        {{hash=d48ab6c4d2242ef647fb98727b0d74ba}{%
-           family={Crialesi-Esposito},
-           familyi={C\bibinithyphendelim E\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=3ad89df6558722af61cd307a7feddcdb}{%
-           family={Dabiri},
-           familyi={D\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=bef6c167a747e765ed1e454446b8a4f1}{%
-           family={Fuster},
-           familyi={F\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-        {{hash=dfe13e9b78c12ee80286c816d618f294}{%
-           family={Ling},
-           familyi={L\bibinitperiod},
-           given={Y},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=642f8aecd69ae5ee926bceabfd45a56d}{%
-           family={Lu},
-           familyi={L\bibinitperiod},
-           given={J},
-           giveni={J\bibinitperiod}}}%
-        {{hash=3c6a5406b23478a05acaf3773dcea155}{%
-           family={Malan},
-           familyi={M\bibinitperiod},
-           given={L},
-           giveni={L\bibinitperiod}}}%
-        {{hash=818917f559df7aab23519221065c2b67}{%
-           family={Pal},
-           familyi={P\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=a6f35adcff8e1de10946cf5c6ec6bce7}{%
-           family={Scardovelli},
-           familyi={S\bibinitperiod},
-           given={R},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{17e367e9a705496b472f620b5b2b181a}
-      \strng{fullhash}{7bf80c34d720cf641679d494d0f29946}
-      \strng{bibnamehash}{17e367e9a705496b472f620b5b2b181a}
-      \strng{authorbibnamehash}{17e367e9a705496b472f620b5b2b181a}
-      \strng{authornamehash}{17e367e9a705496b472f620b5b2b181a}
-      \strng{authorfullhash}{7bf80c34d720cf641679d494d0f29946}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{PArallel, Robust, Interface Simulator (PARIS)}
-      \field{year}{2019}
     \endentry
     \entry{basilisk}{article}{}
       \name{author}{1}{}{%
