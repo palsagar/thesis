@@ -1,17 +1,15 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'main.blg'
-[23] biber:313> INFO - === mar. juil. 21, 2020, 17:32:37
-[46] Biber.pm:371> INFO - Reading 'main.bcf'
-[115] Biber.pm:857> INFO - Found 79 citekeys in bib section 0
-[129] Biber.pm:3981> INFO - Processing section 0
-[138] Biber.pm:4154> INFO - Looking for bibtex format file 'main.bib' for section 0
-[142] bibtex.pm:1468> INFO - LaTeX decoding ...
-[244] bibtex.pm:1294> INFO - Found BibTeX data source 'main.bib'
-[677] Utils.pm:169> WARN - I didn't find a database entry for 'monin1971statistical' (section 0)
-[724] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[724] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[724] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[724] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
-[771] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[800] bbl.pm:720> INFO - Output to main.bbl
-[801] Biber.pm:110> INFO - WARNINGS: 1
+[27] biber:313> INFO - === mar. juil. 21, 2020, 19:46:57
+[50] Biber.pm:371> INFO - Reading 'main.bcf'
+[123] Biber.pm:857> INFO - Found 79 citekeys in bib section 0
+[137] Biber.pm:3981> INFO - Processing section 0
+[147] Biber.pm:4154> INFO - Looking for bibtex format file 'main.bib' for section 0
+[151] bibtex.pm:1468> INFO - LaTeX decoding ...
+[269] bibtex.pm:1294> INFO - Found BibTeX data source 'main.bib'
+[828] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[828] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[829] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[829] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[883] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[919] bbl.pm:720> INFO - Output to main.bbl

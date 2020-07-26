@@ -2633,6 +2633,35 @@
       \field{pages}{136\bibrangedash 159}
       \range{pages}{24}
     \endentry
+    \entry{monin1971statistical}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=891e08d9cb0889a34853ae33f0d66e45}{%
+           family={Monin},
+           familyi={M\bibinitperiod},
+           given={AS},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7eabfd72039b89f70ee37adefe01d6ca}{%
+           family={Yaglom},
+           familyi={Y\bibinitperiod},
+           given={AM},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press, Cambridge}%
+      }
+      \strng{namehash}{ee1988fb6ac9985f459454b272fb6f33}
+      \strng{fullhash}{ee1988fb6ac9985f459454b272fb6f33}
+      \strng{bibnamehash}{ee1988fb6ac9985f459454b272fb6f33}
+      \strng{authorbibnamehash}{ee1988fb6ac9985f459454b272fb6f33}
+      \strng{authornamehash}{ee1988fb6ac9985f459454b272fb6f33}
+      \strng{authorfullhash}{ee1988fb6ac9985f459454b272fb6f33}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Statistical Fluid Mechanics of Turbulence, Vol. 2}
+      \field{year}{1971}
+    \endentry
     \entry{numpy}{book}{}
       \name{author}{1}{}{%
         {{hash=30980b3a77ec5b6dd73ca40c2e6e8816}{%
@@ -2944,7 +2973,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{monin1971statistical}
 \endrefsection
 \endinput
 

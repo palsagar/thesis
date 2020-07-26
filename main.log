@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.31)  21 JUL 2020 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.31)  21 JUL 2020 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3369,15 +3369,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
-(./main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                monin1971statistical
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(./main.bbl)
 Package biblatex Info: Reference section=0 on input line 69.
 Package biblatex Info: Reference segment=0 on input line 69.
 
@@ -7535,6 +7527,12 @@ Package marginnote Info: right page because not two side mode on input line 2.
 Package marginnote Info: xpos seems to be 70.56284pt,
 (marginnote)             \marginnoterightadjust ignored on input line 2.
 (./nondim.tex)
+Package marginnote Info: Margin note 100.2 is on absolute page 100
+(marginnote)              on input line 52.
+Package marginnote Info: right page because not two side mode on input line 52.
+
+Package marginnote Info: xpos seems to be 70.56284pt,
+(marginnote)             \marginnoterightadjust ignored on input line 52.
 \openout5 = `main.mw'.
 
  [80
@@ -7547,6 +7545,12 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 
 \openout5 = `main.mw'.
 
+Package marginnote Info: Margin note 101.1 is on absolute page 102
+(marginnote)              on input line 122.
+Package marginnote Info: right page because not two side mode on input line 122
+.
+Package marginnote Info: xpos seems to be 359.09427pt,
+(marginnote)             \marginnoterightadjust ignored on input line 122.
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -7591,15 +7595,25 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [84] (./main.mw)
 \openout5 = `main.mw'.
 
+
+Overfull \hbox (156.52655pt too wide) has occurred while \output is active
+[][][] 
+ []
+
+\openout5 = `main.mw'.
+
+[85] (./main.mw)
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
 
-<plots/drop_stats/diameter_compute.pdf, id=2655, 59.27658pt x 142.66888pt>
+\openout5 = `main.mw'.
+
+<plots/drop_stats/diameter_compute.pdf, id=2663, 59.27658pt x 142.66888pt>
 File: plots/drop_stats/diameter_compute.pdf Graphic file (type pdf)
 <use plots/drop_stats/diameter_compute.pdf>
 Package pdftex.def Info: plots/drop_stats/diameter_compute.pdf  used on input l
-ine 312.
+ine 393.
 (pdftex.def)             Requested size: 140.58162pt x 338.35666pt.
 \openout5 = `main.mw'.
 
@@ -7612,55 +7626,66 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[85 <./plots/drop_stats/diameter_compute.pdf>] (./main.mw)
+[86 <./plots/drop_stats/diameter_compute.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/short_time_diameter_bins.pdf, id=2680, 867.24pt x 867.24pt>
+<plots/drop_stats/short_time_diameter_bins.pdf, id=2688, 867.24pt x 867.24pt>
 File: plots/drop_stats/short_time_diameter_bins.pdf Graphic file (type pdf)
 <use plots/drop_stats/short_time_diameter_bins.pdf>
 Package pdftex.def Info: plots/drop_stats/short_time_diameter_bins.pdf  used on
- input line 369.
+ input line 450.
 (pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
-<plots/drop_stats/long_time_diameter_bins.pdf, id=2681, 867.24pt x 867.24pt>
+<plots/drop_stats/long_time_diameter_bins.pdf, id=2689, 867.24pt x 867.24pt>
 File: plots/drop_stats/long_time_diameter_bins.pdf Graphic file (type pdf)
 <use plots/drop_stats/long_time_diameter_bins.pdf>
 Package pdftex.def Info: plots/drop_stats/long_time_diameter_bins.pdf  used on 
-input line 387.
+input line 468.
 (pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
-<plots/drop_stats/long_time_diameter_fits.pdf, id=2682, 433.62pt x 289.08pt>
+<plots/drop_stats/long_time_diameter_fits.pdf, id=2690, 433.62pt x 289.08pt>
 File: plots/drop_stats/long_time_diameter_fits.pdf Graphic file (type pdf)
 <use plots/drop_stats/long_time_diameter_fits.pdf>
 Package pdftex.def Info: plots/drop_stats/long_time_diameter_fits.pdf  used on 
-input line 404.
-(pdftex.def)             Requested size: 468.35556pt x 312.23703pt.
+input line 485.
+(pdftex.def)             Requested size: 304.45824pt x 202.97215pt.
 
-Overfull \hbox (156.52655pt too wide) has occurred while \output is active
-[][][] 
+Underfull \hbox (badness 10000) in paragraph at lines 493--493
+[][][]\T1/zpllf/b/n/8 Figure 8.4[][]: []\T1/zpllf/m/n/8 (+20) Prob-a-bil-ity di
+s-tri-bu-
  []
 
-\openout5 = `main.mw'.
 
-[86] (./main.mw)
-\openout5 = `main.mw'.
+Underfull \hbox (badness 7064) in paragraph at lines 493--493
+\T1/zpllf/m/n/8 (+20) tion func-tions of the droplet di-
+ []
 
-<plots/drop_stats/short_time_volume_bins.pdf, id=2695, 867.24pt x 867.24pt>
-File: plots/drop_stats/short_time_volume_bins.pdf Graphic file (type pdf)
-<use plots/drop_stats/short_time_volume_bins.pdf>
-Package pdftex.def Info: plots/drop_stats/short_time_volume_bins.pdf  used on i
-nput line 456.
-(pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
-<plots/drop_stats/long_time_volume_bins.pdf, id=2696, 867.24pt x 867.24pt>
-File: plots/drop_stats/long_time_volume_bins.pdf Graphic file (type pdf)
-<use plots/drop_stats/long_time_volume_bins.pdf>
-Package pdftex.def Info: plots/drop_stats/long_time_volume_bins.pdf  used on in
-put line 472.
-(pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
-<plots/drop_stats/long_time_volume_fits.pdf, id=2699, 433.62pt x 289.08pt>
+
+Underfull \hbox (badness 2662) in paragraph at lines 493--493
+\T1/zpllf/m/n/8 (+20) am-e-ter at time $\OML/npxmi/m/it/8 T \U/npxmia/m/it/8 5 
+\OT1/zpltlf/m/n/8 30$\T1/zpllf/m/n/8 (+20) . The en-
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 493--493
+\T1/zpllf/m/n/8 (+20) sem-ble is char-ac-ter-ized by $\U/npxmia/m/it/8 ^^H[] \L
+MS/npxsy/m/n/8 ^^Q
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--493
+[]$\T1/zpllf/m/n/8 (+20) .
+ []
+
+<plots/drop_stats/long_time_volume_fits.pdf, id=2691, 433.62pt x 289.08pt>
 File: plots/drop_stats/long_time_volume_fits.pdf Graphic file (type pdf)
 <use plots/drop_stats/long_time_volume_fits.pdf>
 Package pdftex.def Info: plots/drop_stats/long_time_volume_fits.pdf  used on in
 put line 499.
-(pdftex.def)             Requested size: 468.35556pt x 312.23703pt.
+(pdftex.def)             Requested size: 304.45824pt x 202.97215pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--507
+[]$\T1/zpllf/m/n/8 (+20) .
+ []
+
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
@@ -7671,6 +7696,18 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [87] (./main.mw)
 \openout5 = `main.mw'.
 
+<plots/drop_stats/short_time_volume_bins.pdf, id=2704, 867.24pt x 867.24pt>
+File: plots/drop_stats/short_time_volume_bins.pdf Graphic file (type pdf)
+<use plots/drop_stats/short_time_volume_bins.pdf>
+Package pdftex.def Info: plots/drop_stats/short_time_volume_bins.pdf  used on i
+nput line 551.
+(pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
+<plots/drop_stats/long_time_volume_bins.pdf, id=2705, 867.24pt x 867.24pt>
+File: plots/drop_stats/long_time_volume_bins.pdf Graphic file (type pdf)
+<use plots/drop_stats/long_time_volume_bins.pdf>
+Package pdftex.def Info: plots/drop_stats/long_time_volume_bins.pdf  used on in
+put line 567.
+(pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
@@ -7678,27 +7715,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[88 <./plots/drop_stats/short_time_diameter_bins.pdf>] (./main.mw)
-\openout5 = `main.mw'.
-
-
-Overfull \hbox (156.52655pt too wide) has occurred while \output is active
-[][][] 
- []
-
-\openout5 = `main.mw'.
-
-[89 <./plots/drop_stats/long_time_diameter_bins.pdf>] (./main.mw)
-\openout5 = `main.mw'.
-
-
-Overfull \hbox (156.52655pt too wide) has occurred while \output is active
-[][][] 
- []
-
-\openout5 = `main.mw'.
-
-[90 <./plots/drop_stats/long_time_diameter_fits.pdf>] (./main.mw)
+[88] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -7708,7 +7725,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[91 <./plots/drop_stats/short_time_volume_bins.pdf>] (./main.mw)
+[89 <./plots/drop_stats/short_time_diameter_bins.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -7718,7 +7735,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[92 <./plots/drop_stats/long_time_volume_bins.pdf>] (./main.mw)
+[90 <./plots/drop_stats/long_time_diameter_bins.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -7728,14 +7745,39 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[93 <./plots/drop_stats/long_time_volume_fits.pdf>] (./main.mw)
+[91 <./plots/drop_stats/long_time_diameter_fits.pdf> <./plots/drop_stats/long_t
+ime_volume_fits.pdf
+
+pdfTeX warning: pdflatex (file ./plots/drop_stats/long_time_volume_fits.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
+>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/amp_long_compare.pdf, id=2972, 109.14478pt x 247.53897pt>
+
+Overfull \hbox (156.52655pt too wide) has occurred while \output is active
+[][][] 
+ []
+
+\openout5 = `main.mw'.
+
+[92 <./plots/drop_stats/short_time_volume_bins.pdf>] (./main.mw)
+\openout5 = `main.mw'.
+
+
+Overfull \hbox (156.52655pt too wide) has occurred while \output is active
+[][][] 
+ []
+
+\openout5 = `main.mw'.
+
+[93 <./plots/drop_stats/long_time_volume_bins.pdf>] (./main.mw)
+\openout5 = `main.mw'.
+
+<plots/drop_stats/amp_long_compare.pdf, id=2974, 109.14478pt x 247.53897pt>
 File: plots/drop_stats/amp_long_compare.pdf Graphic file (type pdf)
 <use plots/drop_stats/amp_long_compare.pdf>
 Package pdftex.def Info: plots/drop_stats/amp_long_compare.pdf  used on input l
-ine 518.
+ine 597.
 (pdftex.def)             Requested size: 140.56084pt x 318.79022pt.
 \openout5 = `main.mw'.
 
@@ -7745,39 +7787,39 @@ ine 518.
 
 \openout5 = `main.mw'.
 
-<plots/drop_stats/small_amp.pdf, id=2980, 385.81142pt x 287.37285pt>
+<plots/drop_stats/small_amp.pdf, id=2982, 385.81142pt x 287.37285pt>
 File: plots/drop_stats/small_amp.pdf Graphic file (type pdf)
 <use plots/drop_stats/small_amp.pdf>
-Package pdftex.def Info: plots/drop_stats/small_amp.pdf  used on input line 581
+Package pdftex.def Info: plots/drop_stats/small_amp.pdf  used on input line 662
 .
 (pdftex.def)             Requested size: 304.46388pt x 226.78087pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
+Underfull \hbox (badness 10000) in paragraph at lines 668--668
 []$\T1/zpllf/m/n/8 (+20) ,
  []
 
-<plots/drop_stats/large_amp.pdf, id=2981, 385.81142pt x 287.37285pt>
+<plots/drop_stats/large_amp.pdf, id=2983, 385.81142pt x 287.37285pt>
 File: plots/drop_stats/large_amp.pdf Graphic file (type pdf)
 <use plots/drop_stats/large_amp.pdf>
-Package pdftex.def Info: plots/drop_stats/large_amp.pdf  used on input line 593
+Package pdftex.def Info: plots/drop_stats/large_amp.pdf  used on input line 674
 .
 (pdftex.def)             Requested size: 304.46388pt x 226.78087pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 599--599
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
 []$\T1/zpllf/m/n/8 (+20) ,
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 599--599
+Underfull \hbox (badness 1137) in paragraph at lines 680--680
 \T1/zpllf/m/n/8 (+20) thus con-sist-ing of \T1/zpllf/m/it/8 (+20) strongly \T1/
 zpllf/m/n/8 (+20) per-turbed
  []
 
-<plots/drop_stats/amp_dist_compare.pdf, id=2982, 722.7pt x 578.16pt>
+<plots/drop_stats/amp_dist_compare.pdf, id=2984, 722.7pt x 578.16pt>
 File: plots/drop_stats/amp_dist_compare.pdf Graphic file (type pdf)
 <use plots/drop_stats/amp_dist_compare.pdf>
 Package pdftex.def Info: plots/drop_stats/amp_dist_compare.pdf  used on input l
-ine 609.
+ine 690.
 (pdftex.def)             Requested size: 468.3379pt x 374.67033pt.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -7820,11 +7862,11 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 \openout5 = `main.mw'.
 
 Package marginnote Info: Margin note 117.1 is on absolute page 117
-(marginnote)              on input line 656.
-Package marginnote Info: right page because not two side mode on input line 656
+(marginnote)              on input line 737.
+Package marginnote Info: right page because not two side mode on input line 737
 .
-Package marginnote Info: xpos seems to be 225.71416pt,
-(marginnote)             \marginnoterightadjust ignored on input line 656.
+Package marginnote Info: xpos seems to be 225.85674pt,
+(marginnote)             \marginnoterightadjust ignored on input line 737.
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -7842,13 +7884,13 @@ Package marginnote Info: xpos seems to be 225.71416pt,
 \openout5 = `main.mw'.
 
 
-Overfull \hbox (7.25618pt too wide) in paragraph at lines 656--656
-[]| \T1/zpllf/m/n/8 (-20) [[][][]77[][]]: []Moré ([]1978), []`   The Levenberg-
+Overfull \hbox (7.41586pt too wide) in paragraph at lines 737--737
+[]| \T1/zpllf/m/n/8 (-20) [[][][]78[][]]: []Moré ([]1978), []`   The Levenberg-
 Marquardt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--656
+Underfull \hbox (badness 10000) in paragraph at lines 737--737
 
  []
 
@@ -7856,10 +7898,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 656--656
 
 \openout5 = `main.mw'.
 
-<plots/drop_stats/window.pdf, id=3044, 237.9767pt x 184.96382pt>
+<plots/drop_stats/window.pdf, id=3047, 237.9767pt x 184.96382pt>
 File: plots/drop_stats/window.pdf Graphic file (type pdf)
 <use plots/drop_stats/window.pdf>
-Package pdftex.def Info: plots/drop_stats/window.pdf  used on input line 666.
+Package pdftex.def Info: plots/drop_stats/window.pdf  used on input line 747.
 (pdftex.def)             Requested size: 140.55754pt x 109.24623pt.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -7873,166 +7915,166 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
  <./plots/drop_stats/window.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/determine_fit_linear.pdf, id=3065, 368.66643pt x 631.65117pt>
+<plots/drop_stats/determine_fit_linear.pdf, id=3068, 368.66643pt x 631.65117pt>
 
 File: plots/drop_stats/determine_fit_linear.pdf Graphic file (type pdf)
 <use plots/drop_stats/determine_fit_linear.pdf>
 Package pdftex.def Info: plots/drop_stats/determine_fit_linear.pdf  used on inp
-ut line 715.
+ut line 796.
 (pdftex.def)             Requested size: 304.45169pt x 521.62947pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 730--730
+Underfull \hbox (badness 10000) in paragraph at lines 811--811
 []$
  []
 
-<plots/drop_stats/linear_tail_fit_uncertainty_no.pdf, id=3068, 578.16pt x 433.6
+<plots/drop_stats/linear_tail_fit_uncertainty_no.pdf, id=3071, 578.16pt x 433.6
 2pt>
 File: plots/drop_stats/linear_tail_fit_uncertainty_no.pdf Graphic file (type pd
 f)
 <use plots/drop_stats/linear_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_tail_fit_uncertainty_no.pdf  u
-sed on input line 739.
+sed on input line 820.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf, id=3069, 578.16pt x 
+<plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf, id=3072, 578.16pt x 
 433.62pt>
 File: plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf Graphic file (ty
 pe pdf)
 <use plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.p
-df  used on input line 740.
+df  used on input line 821.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
 
-Underfull \hbox (badness 2922) in paragraph at lines 751--751
+Underfull \hbox (badness 2922) in paragraph at lines 832--832
 \T1/zpllf/m/n/8 (+20) set that cor-re-sponds to the low-est
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 751--751
+Underfull \hbox (badness 1371) in paragraph at lines 832--832
 \T1/zpllf/m/n/8 (+20) stan-dard de-vi-a-tion in the pa-ram-e-ter
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 751--751
+Underfull \hbox (badness 1019) in paragraph at lines 832--832
 \T1/zpllf/m/n/8 (+20) es-ti-mate. The un-cer-tainty in the bin
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 751--751
+Underfull \hbox (badness 3118) in paragraph at lines 832--832
 \T1/zpllf/m/n/8 (+20) duct-ing the least-squares pro-ce-dure.
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 751--751
+Underfull \hbox (badness 1675) in paragraph at lines 832--832
 \T1/zpllf/m/n/8 (+20) en-sem-ble is char-ac-ter-ized by $\U/npxmia/m/it/8 ^^H[]
  \LMS/npxsy/m/n/8 ^^Q
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
+Underfull \hbox (badness 10000) in paragraph at lines 832--832
 []$
  []
 
-<plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf, id=3071, 578.16pt x 433.
+<plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf, id=3074, 578.16pt x 433.
 62pt>
 File: plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf Graphic file (type p
 df)
 <use plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf  
-used on input line 759.
+used on input line 840.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf, id=3072, 578.16pt x
+<plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf, id=3075, 578.16pt x
  433.62pt>
 File: plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf Graphic file (t
 ype pdf)
 <use plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.
-pdf  used on input line 760.
+pdf  used on input line 841.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 771--771
+Underfull \hbox (badness 10000) in paragraph at lines 852--852
 []$
  []
 
-<plots/drop_stats/determine_fit_log.pdf, id=3074, 368.66643pt x 631.65117pt>
+<plots/drop_stats/determine_fit_log.pdf, id=3077, 368.66643pt x 631.65117pt>
 File: plots/drop_stats/determine_fit_log.pdf Graphic file (type pdf)
 <use plots/drop_stats/determine_fit_log.pdf>
 Package pdftex.def Info: plots/drop_stats/determine_fit_log.pdf  used on input 
-line 782.
+line 863.
 (pdftex.def)             Requested size: 304.45169pt x 521.62947pt.
 
-Underfull \hbox (badness 1354) in paragraph at lines 797--797
+Underfull \hbox (badness 1354) in paragraph at lines 878--878
 \T1/zpllf/m/n/8 (+20) stan-dard de-vi-a-tion of the pa-ram-e-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 797--797
+Underfull \hbox (badness 10000) in paragraph at lines 878--878
 []$
  []
 
-<plots/drop_stats/log_tail_fit_uncertainty_no.pdf, id=3077, 578.16pt x 433.62pt
+<plots/drop_stats/log_tail_fit_uncertainty_no.pdf, id=3080, 578.16pt x 433.62pt
 >
 File: plots/drop_stats/log_tail_fit_uncertainty_no.pdf Graphic file (type pdf)
 <use plots/drop_stats/log_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/log_tail_fit_uncertainty_no.pdf  used
- on input line 805.
+ on input line 886.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf, id=3078, 578.16pt x 433
+<plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf, id=3081, 578.16pt x 433
 .62pt>
 File: plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf Graphic file (type 
 pdf)
 <use plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf 
- used on input line 806.
+ used on input line 887.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
 
-Underfull \hbox (badness 2922) in paragraph at lines 817--817
+Underfull \hbox (badness 2922) in paragraph at lines 898--898
 \T1/zpllf/m/n/8 (+20) set that cor-re-sponds to the low-est
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 817--817
+Underfull \hbox (badness 1371) in paragraph at lines 898--898
 \T1/zpllf/m/n/8 (+20) stan-dard de-vi-a-tion in the pa-ram-e-ter
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 817--817
+Underfull \hbox (badness 1019) in paragraph at lines 898--898
 \T1/zpllf/m/n/8 (+20) es-ti-mate. The un-cer-tainty in the bin
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 817--817
+Underfull \hbox (badness 3118) in paragraph at lines 898--898
 \T1/zpllf/m/n/8 (+20) duct-ing the least-squares pro-ce-dure.
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 817--817
+Underfull \hbox (badness 1675) in paragraph at lines 898--898
 \T1/zpllf/m/n/8 (+20) en-sem-ble is char-ac-ter-ized by $\U/npxmia/m/it/8 ^^H[]
  \LMS/npxsy/m/n/8 ^^Q
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 817--817
+Underfull \hbox (badness 10000) in paragraph at lines 898--898
 []$
  []
 
-<plots/drop_stats/log_tail_fit_uncertainty_yes.pdf, id=3080, 578.16pt x 433.62p
+<plots/drop_stats/log_tail_fit_uncertainty_yes.pdf, id=3083, 578.16pt x 433.62p
 t>
 File: plots/drop_stats/log_tail_fit_uncertainty_yes.pdf Graphic file (type pdf)
 
 <use plots/drop_stats/log_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/log_tail_fit_uncertainty_yes.pdf  use
-d on input line 826.
+d on input line 907.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf, id=3081, 578.16pt x 43
+<plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf, id=3084, 578.16pt x 43
 3.62pt>
 File: plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf Graphic file (type
  pdf)
 <use plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf
-  used on input line 827.
+  used on input line 908.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 838--838
+Underfull \hbox (badness 10000) in paragraph at lines 919--919
 []$
  []
 
@@ -10180,10 +10222,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59617 strings out of 492982
- 1112049 string characters out of 6134896
- 2054693 words of memory out of 5000000
- 60865 multiletter control sequences out of 15000+600000
+ 59628 strings out of 492982
+ 1112328 string characters out of 6134896
+ 2056711 words of memory out of 5000000
+ 60874 multiletter control sequences out of 15000+600000
  721424 words of font info for 379 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,20n,108p,10476b,3278s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -10220,10 +10262,10 @@ texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/newpx/zplri.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/newpx/zplx-regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boo
 ndox/zxxrw8a.pfb>
-Output written on main.pdf (135 pages, 16102992 bytes).
+Output written on main.pdf (135 pages, 16103026 bytes).
 PDF statistics:
- 3916 PDF objects out of 4296 (max. 8388607)
- 3350 compressed objects within 34 object streams
- 666 named destinations out of 1000 (max. 500000)
+ 3924 PDF objects out of 4296 (max. 8388607)
+ 3358 compressed objects within 34 object streams
+ 668 named destinations out of 1000 (max. 500000)
  43766 words of extra memory for PDF output out of 51595 (max. 10000000)
 
