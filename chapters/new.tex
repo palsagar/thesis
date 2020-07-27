@@ -1608,10 +1608,10 @@ Finally, we obtain $u_q^{*} = (\rho_q u_q)^{n + 1}/\rho_q^{n + 1}$ on the stagge
 The resulting method not only maintains discrete consistency between
 mass and momentum transport on the staggered grid, but also ensures that
 the transport of momentum is consistent in 3D.
-The other time-split terms in equation (\ref{global_eqns}) 
+The other time-split terms in equation (\ref{mom_update}) 
 that arise from the source term discretizations, as well 
 as the terms in the projection step \eqref{ufinal} are solved in 
-a standard non-conservative way. 
+a standard non-conservative way, and are briefly covered in what follows. 
 The density on the faces of the central cells 
 are estimated using the restriction operations
 \marginnote{
@@ -1620,14 +1620,19 @@ is estimated using a simple average i.e. $\rho_{i+1/2,j,k} = (\rho_{i,j,k} + \rh
 }
 described previously, with these densities appearing 
 via the $ 1 / \rho_q $ pre-factor in front of all
-the different source terms. Additionally, the sub-grid volume fraction
+the terms in the momentum transport (e.g surface tension, viscous diffusion) 
+that are discretized in a non-conservative manner. 
+Additionally, the sub-grid volume fraction
 can be used to get better estimates of the curvature field, which
-itself if defined on the staggered control volumes. At the time of writing, 
-two different approaches are being developed and tested in order to 
-get more accurate curvature fields. 
-The detailed descriptions of the methods used in our numerical platforms to deal with surface tension,
-viscosity and body forces have already been carried out in \cite{paris, basilisk, popinet2009accurate}, 
-therefore we briefly touch upon certain aspects of the operators in question, in particular, 
+itself is defined on the staggered control volumes. 
+At the time of writing, two different approaches are being 
+developed and tested in order to get more accurate curvature fields. 
+The detailed descriptions of the methods used in our 
+numerical platforms to deal with surface tension,
+viscosity and body forces have already been carried 
+out in \cite{paris, basilisk, popinet2009accurate}, 
+therefore we briefly touch upon certain aspects of the 
+operators in question, in particular, 
 their interaction with the volume fraction field.
 
 \subsection*{Surface Tension}
