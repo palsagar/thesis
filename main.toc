@@ -24,7 +24,7 @@
 \defcounter {refsection}{0}\relax
 \contentsline {section}{\numberline {2.3}Consistent Transport of Mass and Momentum}{17}{section.2.3}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {2.4}Advection on Staggered Grids}{25}{section.2.4}
+\contentsline {section}{\numberline {2.4}Advection on Staggered Grids}{26}{section.2.4}
 \defcounter {refsection}{0}\relax
 \contentsline {paragraph}{\nonumberline \textbf {Prolongation}}{29}{section*.37}
 \defcounter {refsection}{0}\relax

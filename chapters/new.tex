@@ -349,23 +349,18 @@ reformulated in a conservative form at locations in the vicinity of the interfac
 
 \subsection*{Spatiotemporal Discretization}
 
-We assume a regular cubic (3D) or square grid (2D). 
-We also use staggered velocity and pressure grids. 
-This makes our method more complex than it would be on a
-collocated grid.
-
-The staggered grid is represented in Figure \ref{stag-grid}. In a staggered
-grid discretization of the advection equation
-the control volumes of the velocity components $u_1$ and $u_2$ are shifted with respect to the
-control volume surrounding the pressure $p$.
+We start by describing the spatial arrangement of our
+primary variables i.e. pressure ($p$) and velocity ($u_q$),
+where $q = 1,2,3$ represents the $x$,$y$ and $z$ componenets respectively.
+The control volume is in the form of a cube (3D) or a square (2D). 
+The pressure and velocity variables are defined in a staggered arrangement, 
+which means that the control volumes correpesponding to the velocity components 
+$u_1$ and $u_2$ are shifted with respect to the control volume for pressure.
+The staggered grid with the primary variables are represented in Figure \ref{stag-grid}.
 The use of staggered control volumes has the advantage of
-suppressing neutral modes often observed in collocated methods but
-leads to more complex discretizations (see \cite{Tryggvason11} for a
-more detailed discussion.). 
-This type of staggered representation
-is easily generalized to three dimensions. In what follows we shall
-use these control volumes for the velocity or momentum components.
-
+suppressing neutral modes (pressure oscillations) often observed in 
+collocated methods but leads to more complex discretizations 
+\sidenote{Refer to \cite{zaleskibook} for a more detailed discussion.}. 
 
 In order to describe the overall numerical algorithm for the one-fluid 
 Navier-Stokes equations with variable density and viscosity, 
@@ -442,14 +437,12 @@ QUICK, ENO, WENO, Superbee, Verstappen and BCG.
 \sidenote{These high-order spatial schemes are based on well established methods 
 developed to deal with hyperbolic conservation laws, for more details refer to the 
 studies of Leveque \cite{flim_1} and Sweby \cite{flim_2}.}. 
-For control volumes in the vicinity of the interface location, we revert to lower order
+For control volumes in the vicinity of the interface location, we revert to lower order 
 schemes due to the sharp jumps in the material properties across the interface.  
 The functionality of the operator $L^{h}_{\textrm{adv}}$ near the interface is tighly coupled
 to that of $L^{h}_{\textrm{vof}}$ from equation \ref{cvof_update}, 
 so as to ensure consistency in the discrete advection of mass and momentum.
-The details regarding this coupling shall be the focus 
-of subsequent chapters, where it is covered in more depth.
-
+The details regarding this coupling shall be the focus of this section. 
 
 \subsection*{Advection of Conserved Quantities}
 
@@ -511,8 +504,7 @@ Once an approximation for the evolution of $(\boldsymbol{u} H)$ during
 the time step is chosen, a four-dimensional integral remains to be
 computed in equation (\ref{faceint}).
 The advection schemes used are CIAM and Weymouth-Yue, which have been 
-described briefly in chapter \ref{ch:method}. 
-
+described in the previous section. 
 Directional splitting results in the breakdown of equation (\ref{sumf}) 
 into three equations, one for each advection substep -
 
@@ -565,11 +557,8 @@ compression coefficient $c_m$ on the Cartesian direction
 corresponding to the advection substep, 
 the sum $\sum_m c_m \partial_{m}^h u_m$ may not necessarily vanish
 even if the flow is incompressible.
-As mentioned previously in chapter \ref{ch:method}, the main appeal
-of the Weymouth-Yue method is its ability to keep this sum to zero,
-within the limits of machine precision. 
-
-
+As mentioned previously, the main appeal of the Weymouth-Yue method 
+is its ability to keep this sum to zero, within the limits of machine precision. 
 In order to achieve consistent transport of the discontinuous fields 
 of mass and momentum, we start by trying to understand the advection 
 of a generic \textit{conserved} scalar quantity $\phi$ by a continuous velocity field - 
@@ -1142,37 +1131,9 @@ The development of the consistent transport schemes should be integrated into
 the broader context of our numerical algorithm which deals with the 
 coupling between the conservative formulation of the 
 one-fluid Navier-Stokes equations and the geometric transport of the interface.  
-We briefly recapitulate the overall algorithm in operator form as previously described in 
-chapter \ref{ch:method}
-
-
-\marginnote{The superscript $h$ refers to discretization in space, 
-and $n$ corresponds to that in time.}
-
-
-\begin{align}
-	C^{n+1} &= C^{n} + \tau L^{h}_{\textrm{vof}}\left( C^{n},\boldsymbol{u}^{n}\right) \\  
-	\rho^{n+1}\cdot \boldsymbol{u}^{*} &= \rho^{n}\cdot \boldsymbol{u}^{n} + \tau L^{h}_{\textrm{adv}}\left( C^{n},\boldsymbol{u}^{n} \right) + \nonumber \\
-				      & \tau \left[ L^{h}_{\mu}\left(C^{n+1},\boldsymbol{u}^{n}\right) + L^{h}_{\sigma}\left(C^{n+1}\right) + L^{h}_{\textrm{g}}\left(C^{n+1}\right)\right]
-\label{global_eqns}
-\end{align}
-
-
-\marginnote{
-$L_{\textrm{adv}}$ represents the conservative advection, 
-$L_{\mu}$ represents the diffusive forces generated by viscous stresses,
-$L_{\sigma}$ represents the capillary forces arising from the surface tension model
-and finally $L_{g}$ represents the volumetric (body forces) source term. 
-}
-
-
-In the preceding sections, we have thus far dealt with the 
-intricacies concerning the coupling of the VOF advection ($L^{h}_{\textrm{vof}}$)  
-with that of the momentum advection ($L^{h}_{\textrm{adv}}$). In this section, we
-describe two distinct strategies that we have implemented in order to achieve 
+In this section, we describe two distinct strategies that we have implemented in order to achieve 
 discrete consistency between mass (VOF) and momentum transport, specifically 
-in the context of staggered Cartesian grids, with the configuration
-already illustrated in Fig. \ref{stag-grid}. 
+in the context of our staggered Cartesian grid (see Fig. \ref{stag-grid}). 
 
 
 \subsection*{Shifted Fractions Method}
@@ -1213,9 +1174,9 @@ each velocity (momentum) control volume overlaps two pressure/VOF (centered)
 control volumes i.e.  $\Omega_{i+1/2,j}$ overlaps $\Omega_{i,j}$ and $\Omega_{i+1,j}$
 Therefore, the two half-fractions from $\Omega_{i,j}$ and $\Omega_{i+1,j}$ are 
 added together to obtain an estimate
-\sidenote{These estimations utilize the set of geometric operations
+\sidenote{These estimations utilize the set of same set of geometric operations
 that are used in the reconstruction of the interface and fluxed volumes.
-The reader can refer to chapter \ref{ch:method} for a brief reminder.}
+.}
 of the shifted fraction $C_{i+1/2,j}$ in $\Omega_{i+1/2,j}$. 
 Once this key reconstruction step is carried out, the mass and momentum
 fields, as well as their corresponding fluxes can all be derived using the information
