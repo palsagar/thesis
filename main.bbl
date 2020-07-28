@@ -1438,6 +1438,97 @@
       \field{pages}{611\bibrangedash 626}
       \range{pages}{16}
     \endentry
+    \entry{end_pinch_1}{article}{}
+      \name{author}{2}{}{%
+        {{hash=77664cbb435aa9141abfe96a12cb33d7}{%
+           family={Hoepffner},
+           familyi={H\bibinitperiod},
+           given={J{é}r{ô}me},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f96db0ab850b39cb97f4ea28a91116ba}{%
+           family={Par{é}},
+           familyi={P\bibinitperiod},
+           given={Gouns{é}ti},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{a939693951957aa90d0902ea53309c4d}
+      \strng{fullhash}{a939693951957aa90d0902ea53309c4d}
+      \strng{bibnamehash}{a939693951957aa90d0902ea53309c4d}
+      \strng{authorbibnamehash}{a939693951957aa90d0902ea53309c4d}
+      \strng{authornamehash}{a939693951957aa90d0902ea53309c4d}
+      \strng{authorfullhash}{a939693951957aa90d0902ea53309c4d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Fluid Mech}
+      \field{title}{Recoil of a liquid filament: escape from pinch-off through creation of a vortex ring}
+      \field{volume}{734}
+      \field{year}{2013}
+      \field{pages}{183\bibrangedash 197}
+      \range{pages}{15}
+    \endentry
+    \entry{end_pinch_2}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2bbd461e0ff66213f0b86a45a7cafb04}{%
+           family={Schulkes},
+           familyi={S\bibinitperiod},
+           given={RMSM},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{2bbd461e0ff66213f0b86a45a7cafb04}
+      \strng{fullhash}{2bbd461e0ff66213f0b86a45a7cafb04}
+      \strng{bibnamehash}{2bbd461e0ff66213f0b86a45a7cafb04}
+      \strng{authorbibnamehash}{2bbd461e0ff66213f0b86a45a7cafb04}
+      \strng{authornamehash}{2bbd461e0ff66213f0b86a45a7cafb04}
+      \strng{authorfullhash}{2bbd461e0ff66213f0b86a45a7cafb04}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{The contraction of liquid filaments}
+      \field{volume}{309}
+      \field{year}{1996}
+      \field{pages}{277\bibrangedash 300}
+      \range{pages}{24}
+    \endentry
+    \entry{end_pinch_3}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6f144b4ec010b10635bc1ba3b2d0f274}{%
+           family={Stone},
+           familyi={S\bibinitperiod},
+           given={Howard\bibnamedelima A},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=dcbac77add03290a6a9bf0aa9c3c14fe}{%
+           family={Leal},
+           familyi={L\bibinitperiod},
+           given={L\bibnamedelima Gary},
+           giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{3e54e98600eb02201564caf930eccddc}
+      \strng{fullhash}{3e54e98600eb02201564caf930eccddc}
+      \strng{bibnamehash}{3e54e98600eb02201564caf930eccddc}
+      \strng{authorbibnamehash}{3e54e98600eb02201564caf930eccddc}
+      \strng{authornamehash}{3e54e98600eb02201564caf930eccddc}
+      \strng{authorfullhash}{3e54e98600eb02201564caf930eccddc}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Relaxation and breakup of an initially extended drop in an otherwise quiescent fluid}
+      \field{volume}{198}
+      \field{year}{1989}
+      \field{pages}{399\bibrangedash 427}
+      \range{pages}{29}
+    \endentry
     \entry{paris}{article}{}
       \true{moreauthor}
       \true{morelabelname}
