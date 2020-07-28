@@ -3,7 +3,7 @@
 \labch{intro}
 
 % Importance of multiphase interfacial flows 
-\begin{marginfigure}[3cm]
+\begin{marginfigure}[1cm]
 \centering
 \includegraphics{plots/intro/jet.pdf}
 \caption{Decay of a liquid jet into droplets driven by the growth of capillary instabilities corresponding 
@@ -26,6 +26,18 @@ driven by the action of capillary forces at the interface separating the fluids.
 Such processes are ubiquitous in a diverse range of applications spanning from combustion related processes 
 (\cite{lefebvre2017atomization,bayvel1993liquid}) to agricultural irrigation (\cite{lake1977effect,reichenberger2007mitigation}).    
 
+
+\begin{marginfigure}[3cm]
+\centering
+\includegraphics{plots/intro/shear.pdf}
+	\caption{ Experimental and numerical investigations of liquid atomization 
+	in which the primary stages of topological change are driven by shear instabilities. 
+	(i) Liquid jet disintegration by a high speed coaxial gas flow, image reproduced from Lasheras and Hopfinger \cite{lasheras}.
+	(ii) Atomization of a two-phase mixing layer between parallel liquid and gas streams, image 
+	reproduced from Ling et al. \cite{ling}.
+	}
+\label{shear}
+\end{marginfigure}
 
 % Decay of jets, shear induced atomization, expansion of sheets , hole expansion in sheets, secondary atomization of drops 
 Although liquid atomization is basically the transformation of a compact volume into drops,
@@ -65,17 +77,6 @@ the present body of work is be divided across two central themes :
 \label{spread}
 \end{marginfigure}
 
-\begin{marginfigure}
-\centering
-\includegraphics{plots/intro/shear.pdf}
-	\caption{ Experimental and numerical investigations of liquid atomization 
-	in which the primary stages of topological change are driven by shear instabilities. 
-	(i) Liquid jet disintegration by a high speed coaxial gas flow, image reproduced from Lasheras and Hopfinger \cite{lasheras}.
-	(ii) Atomization of a two-phase mixing layer between parallel liquid and gas streams, image 
-	reproduced from Ling et al. \cite{ling}.
-	}
-\label{shear}
-\end{marginfigure}
 
 \begin{itemize}
 	\item Development of numerical methods that can reproduce the dynamics of liquid-gas interfacial flows
@@ -113,6 +114,19 @@ followed rapidly by a loss of numerical stability.
 
 % Artifical Atomization at low resolutions (raindrop crashes).
 
+\begin{marginfigure}[0.5cm]
+\centering
+\includegraphics{plots/intro/holes.pdf}
+\caption{ Liquid fragmentation triggered by the growth of perforations in thin liquid sheets. 
+	(i) Secondary atomization (bag mode) of a drop in a crossflow, driven by the rapid capillary expansion of the hole. 
+	Images reproduced from Opfer et al. \cite{hole_drop}.
+	(ii) Effervescent atomization of expanding thin liquid sheets driven by the expansion of multiple perforations,
+	image reproduced from Dombrowski and Fraser \cite{hole_sheet}.
+	}
+\label{holes}
+\end{marginfigure}
+
+
 A prime example of such a situation is the numerical simulation of a 
 raindrop falling in air under the action of gravity, at speeds near terminal velocity. 
 For a regime corresponding to low Weber numbers ($\approx 3$ in our case), there is abundant experimental evidence 
@@ -122,28 +136,6 @@ Fig. \ref{explode_compare} shows the results from a moderately resolved numerica
 where the rapid and uncontrolled growth of numerical errors lead to severe deformations of the interface, 
 finally resulting in the un-physical (read ``artificial'') atomization of the raindrop into numerous smaller fragments.
 
-\begin{figure*}
-\begin{center}
-\includegraphics{plots/raindrop/raindrop_explode.png}
-\end{center}
-\caption{Numerical simulations of a $3 mm$ raindrop falling in air under gravitational acceleration.
-	The flow is along the positive X direction, with gravity along the opposite direction. 
-	The red contour indicates the isosurface of the volume fraction 
-	field corresponding to a value of $0.5$, whereas the black contours 
-	surrounding the drop represent isosurfaces of the magnitude of vorticity.
-	The droplet has a relatively poor numerical resolution, corresponding to $D/h = 16$,
-	where $D$ is the drop diameter and $h$ is the grid size.
-	The top row illustrates the phenomenon of ``artificial atomization'' that occurs
-	while using the standard version of our numerical method, which does not maintain
-	consistency between the discrete transport of mass and momentum.
-	In contrast, the implementation of consistent mass and momentum transport
-	enables us to supress the massive interfacial deformations of the drop, 
-	as evidenced by the bottom row of figures depicting the same flow configuration. 
-	The development of methods concerning the consistent transport of mass and momentum 
-	is one of the central themes of this study.
-	}
-	\label{explode_compare}
-\end{figure*}
 
 In typical liquid atomization processes, the scale separation
 between the sizes corresponding to the largest and smallest liquid structures 
@@ -159,17 +151,7 @@ those produced as a result of cascading numerical errors.
 
 % demonstrate the effect of such errors, raindrop, 
 
-\begin{marginfigure}
-\centering
-\includegraphics{plots/intro/holes.pdf}
-\caption{ Liquid fragmentation triggered by the growth of perforations in thin liquid sheets. 
-	(i) Secondary atomization (bag mode) of a drop in a crossflow, driven by the rapid capillary expansion of the hole. 
-	Images reproduced from Opfer et al. \cite{hole_drop}.
-	(ii) Effervescent atomization of expanding thin liquid sheets driven by the expansion of multiple perforations,
-	image reproduced from Dombrowski and Fraser \cite{hole_sheet}.
-	}
-\label{holes}
-\end{marginfigure}
+
 
 In the past two decades, considerable efforts have been made 
 towards the design of numerical methods to specifically deal with 
@@ -187,6 +169,8 @@ Such a tight coupling of the propagation of errors between the discrete
 mass and momentum fields enables alleviation of many of the issues 
 that plague such numerical methods, especially in the 
 context of low to moderate spatial resolutions (see Fig. \ref{explode_compare}). 
+
+
 Exacerbating the already complicated nature of the discrete transport of material 
 discontinuities is the role of capillary forces on the evolution of the interface. 
 They are commmonly modeled as singular source terms in the momentum balance equation that 
@@ -329,6 +313,29 @@ ensures discrete consistency between mass and momentum transport :
 		be obtained directly from geometrically 
 		computed fluxes of mass (volume). 
 \end{itemize}
+
+\begin{figure*}[h!]
+\begin{center}
+\includegraphics{plots/raindrop/raindrop_explode.png}
+\end{center}
+\caption{Numerical simulations of a $3 mm$ raindrop falling in air under gravitational acceleration.
+	The flow is along the positive X direction, with gravity along the opposite direction. 
+	The red contour indicates the isosurface of the volume fraction 
+	field corresponding to a value of $0.5$, whereas the black contours 
+	surrounding the drop represent isosurfaces of the magnitude of vorticity.
+	The droplet has a relatively poor numerical resolution, corresponding to $D/h = 16$,
+	where $D$ is the drop diameter and $h$ is the grid size.
+	The top row illustrates the phenomenon of ``artificial atomization'' that occurs
+	while using the standard version of our numerical method, which does not maintain
+	consistency between the discrete transport of mass and momentum.
+	In contrast, the implementation of consistent mass and momentum transport
+	enables us to supress the massive interfacial deformations of the drop, 
+	as evidenced by the bottom row of figures depicting the same flow configuration. 
+	The development of methods concerning the consistent transport of mass and momentum 
+	is one of the central themes of this study.
+	}
+	\label{explode_compare}
+\end{figure*}
 
 In order to tackle the challenge of consistent transport on staggered control 
 \sidenote{`PARIS Simulator' has a staggered configuration of primitive 
