@@ -4,9 +4,9 @@
 \defcounter {refsection}{0}\relax
 \contentsline {chapter}{\nonumberline Contents}{v}{chapter*.1}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {2}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
 \defcounter {refsection}{0}\relax
 \contentsline {part}{\nonumberline Numerical Development}{10}{part*.14}
 \defcounter {refsection}{0}\relax

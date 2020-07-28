@@ -1,4 +1,4 @@
-\setchapterpreamble[u]{\margintoc}
+setchapterpreamble[u]{\margintoc}
 \chapter{Introduction} 
 \labch{intro}
 
@@ -25,6 +25,8 @@ changes of varying complexity, ultimately resulting in the emergence of drops of
 driven by the action of capillary forces at the interface separating the fluids.  
 Such processes are ubiquitous in a diverse range of applications spanning from combustion related processes 
 (\cite{lefebvre2017atomization,bayvel1993liquid}) to agricultural irrigation (\cite{lake1977effect,reichenberger2007mitigation}).    
+In view of the broad spectrum of liquid fragmentation phenomena that pique our scientific interest, 
+the present body of work is be divided into two parts :  
 
 
 \begin{marginfigure}[3cm]
@@ -40,31 +42,6 @@ Such processes are ubiquitous in a diverse range of applications spanning from c
 \end{marginfigure}
 
 % Decay of jets, shear induced atomization, expansion of sheets , hole expansion in sheets, secondary atomization of drops 
-Although liquid atomization is basically the transformation of a compact volume into drops,
-this simplistic view masks the intricate interplay between inertia, viscosity and capillarity across 
-different length and time scales spanning several orders of magnitude.  
-Such non-trivial interactions are responsible for the abundant variety in the sequence 
-of toplogical progressions that eventually lead to the formation of stable drops. 
-The most basic transition involves the breakup of a cylindrical filament structure 
-(see Fig. \ref{jet}) at approximately regular intervals, driven primarily by the 
-growth of long wavelength perturbations due to capillary forces. 
-A slightly more complicated transition involves liquid sheets (refer to Fig. \ref{spread}), 
-where the inertial expansion of the sheet is opposed by the capillary deceleration of the edges,
-resulting in the formation of liquid rims due to volume accumulation at the edges, 
-the subsequent destabilization of which leads to the generation of drops. 
-Sticking to the breakup of liquid sheets, another imporant transition involves the  
-appearance of perforations or holes (see Fig. \ref{holes}) when the thickness of the sheet reaches a certain limit. 
-The ensuing rapid expansion of such perforations due to capillary retraction results in the formation of drops. 
-Arguably, the most convoluted route to drop formation in encountered when macroscopic 
-liquid structures are subjected to shear-driven instabilities (see Fig. \ref{shear}) that 
-arise at the interface due to the differential gas and liquid velocities. 
-These primary instabilities of the Kelvin-Helmholtz \cite{khi} variety lead to the creation 
-of a plethora of secondary structures, many of them corresponding to the aforementioned 
-topologies like filaments, expanding sheets with rims, expanding holes in thin sheets etc 
-amongst numerous others. The evolution and concomitant disintegration of such a diverse range
-of structures lead to the production of drops with ample dispersion in their sizes.  
-In view of the broad spectrum of liquid fragmentation phenomena that pique our scientific interest, 
-the present body of work is be divided across two central themes :  
 
 \begin{marginfigure}[2cm]
 \centering
@@ -87,8 +64,6 @@ the present body of work is be divided across two central themes :
 \end{itemize}
 
 In what follows, we take a closer look at the challenges associated to the above mentioned themes. 
-
-
 
 \section*{Challenges in Numerical Modeling}
 
@@ -356,6 +331,53 @@ the recent study \sidecite{caf_momcons} , and a detailed exposition of the sub g
 is currently under preparation at the time of writing.  
 We shall be taking a closer look at these two stratetgies in the subsequent chapters.  
 
+\section*{Ligament Mediated Paradigm}
+
+Liquid atomization is basically the transformation of a compact volume into drops.
+However, this simplistic view masks the intricate interplay between inertia, viscosity and capillarity across 
+different length and time scales spanning several orders of magnitude.  
+Such non-trivial interactions are responsible for the abundant variety in the sequence 
+of toplogical progressions that eventually lead to the formation of stable drops. 
+The most basic transition involves the breakup of a cylindrical filament structure 
+(see Fig. \ref{jet}) at approximately regular intervals, driven primarily by the 
+growth of long wavelength perturbations due to capillary forces. 
+A slightly more complicated transition involves liquid sheets (refer to Fig. \ref{spread}), 
+where the inertial expansion of the sheet is opposed by the capillary deceleration of the edges,
+resulting in the formation of liquid rims due to volume accumulation at the edges, 
+the subsequent destabilization of which leads to the generation of drops. 
+Sticking to the breakup of liquid sheets, another imporant transition involves the  
+appearance of perforations or holes (see Fig. \ref{holes}) when the thickness of the sheet reaches a certain limit. 
+The ensuing rapid expansion of such perforations due to capillary retraction results in the generation of drops. 
+Arguably, the most convoluted route to drop formation in encountered when macroscopic 
+liquid structures are subjected to shear-driven instabilities (see Fig. \ref{shear}) that 
+arise at the interface due to the differential gas and liquid velocities. 
+These primary instabilities of the Kelvin-Helmholtz \cite{khi} variety lead to the creation 
+of a plethora of secondary structures, many of them corresponding to the aforementioned 
+topologies like filaments, expanding sheets with rims, expanding holes in thin sheets etc amongst numerous others. 
+
+The development of a mechanistic understanding into the origins of polydispersity in the drop sizes  
+resulting from such fragmentation phenomena has drawn considerable scientific interest throughout the past few decades.
+Numerous investigations (both experimental and numerical) into the statistical description of drop sizes
+have lead to the popularization of three distinct classes of probability density functions, 
+namely the Log-normal, Gamma and Poisson distributions \cite{vill_1}.  
+In terms of physical interpretations, the log-normal model \cite{log_normal} is based on a sequential cascade
+of breakups, the Gamma family \cite{vill_2} based on the competing effects of aggregation and coalescence of liquid volumes, 
+and the Poisson model \cite{poisson} based on the instantaneous and random splitting of a volume into smaller constituents.  
+Even though the aforementioned models have been applied to a wide variety of flow configurations
+to varying degrees of success, there is a general lack of consensus regarding their validity, primarily 
+due to the markedly different trajectories \sidenote{Refer to Wang and Bourouiba \cite{lydia_3} for a discussion.} 
+followed by the initial liquid structures towards eventual drop formation. 
+Nevertheless, the one common feature that unites these seemingly disparate fragmentation processes 
+we have encountered thus far is the transformation of the initial liquid topology into transient columnar 
+structures called ligaments. It is the evolution and concomitant disintegration of these ligaments 
+that lead to the production of drops, hence becoming the focus of the second part of this study. 
+
+The topological change from the thread-like structure of ligaments to the 
+(approximately) spherical geometry of drops can procede along different routes.
+Although several factors play a role in the selection of the drop formation mechanism,
+ 
+
+% Summary of parts and chapters in thesis
 
 % modified comparison charts with CAF paper added
 
@@ -365,14 +387,46 @@ We shall be taking a closer look at these two stratetgies in the subsequent chap
 
 
 
-\section*{Ligament Mediated Paradigm}
-
-% Ligament mediated paradigm
-% Pinch off regimes leading to drop formation  : Keller-Miksis inviscid, Paparouglou viscous, Eggers universal (inertio-visco) 
-
-% Log-Normal, Gamma , Poisson distributions and underlying mechanisms
-
-% Our approach
 
 
-% Summary of parts and chapters in thesis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
