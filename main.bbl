@@ -1439,36 +1439,6 @@
       \range{pages}{16}
     \endentry
     \entry{end_pinch_1}{article}{}
-      \name{author}{2}{}{%
-        {{hash=77664cbb435aa9141abfe96a12cb33d7}{%
-           family={Hoepffner},
-           familyi={H\bibinitperiod},
-           given={J{é}r{ô}me},
-           giveni={J\bibinitperiod}}}%
-        {{hash=f96db0ab850b39cb97f4ea28a91116ba}{%
-           family={Par{é}},
-           familyi={P\bibinitperiod},
-           given={Gouns{é}ti},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{a939693951957aa90d0902ea53309c4d}
-      \strng{fullhash}{a939693951957aa90d0902ea53309c4d}
-      \strng{bibnamehash}{a939693951957aa90d0902ea53309c4d}
-      \strng{authorbibnamehash}{a939693951957aa90d0902ea53309c4d}
-      \strng{authornamehash}{a939693951957aa90d0902ea53309c4d}
-      \strng{authorfullhash}{a939693951957aa90d0902ea53309c4d}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Fluid Mech}
-      \field{title}{Recoil of a liquid filament: escape from pinch-off through creation of a vortex ring}
-      \field{volume}{734}
-      \field{year}{2013}
-      \field{pages}{183\bibrangedash 197}
-      \range{pages}{15}
-    \endentry
-    \entry{end_pinch_2}{article}{}
       \name{author}{1}{}{%
         {{hash=2bbd461e0ff66213f0b86a45a7cafb04}{%
            family={Schulkes},
@@ -1496,7 +1466,7 @@
       \field{pages}{277\bibrangedash 300}
       \range{pages}{24}
     \endentry
-    \entry{end_pinch_3}{article}{}
+    \entry{end_pinch_2}{article}{}
       \name{author}{2}{}{%
         {{hash=6f144b4ec010b10635bc1ba3b2d0f274}{%
            family={Stone},
@@ -1528,6 +1498,77 @@
       \field{year}{1989}
       \field{pages}{399\bibrangedash 427}
       \range{pages}{29}
+    \endentry
+    \entry{stone_1}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6f144b4ec010b10635bc1ba3b2d0f274}{%
+           family={Stone},
+           familyi={S\bibinitperiod},
+           given={Howard\bibnamedelima A},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9e9cc9349335eb308a3347bd6ea202da}{%
+           family={Bentley},
+           familyi={B\bibinitperiod},
+           given={BJ},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ce48e5c2f4f24a00c3db2bafe409333d}{%
+           family={Leal},
+           familyi={L\bibinitperiod},
+           given={LG},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{bb26666ab4db6bcfd068bbeab9cbcdd6}
+      \strng{fullhash}{bb26666ab4db6bcfd068bbeab9cbcdd6}
+      \strng{bibnamehash}{bb26666ab4db6bcfd068bbeab9cbcdd6}
+      \strng{authorbibnamehash}{bb26666ab4db6bcfd068bbeab9cbcdd6}
+      \strng{authornamehash}{bb26666ab4db6bcfd068bbeab9cbcdd6}
+      \strng{authorfullhash}{bb26666ab4db6bcfd068bbeab9cbcdd6}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{An experimental study of transient effects in the breakup of viscous drops}
+      \field{volume}{173}
+      \field{year}{1986}
+      \field{pages}{131\bibrangedash 158}
+      \range{pages}{28}
+    \endentry
+    \entry{end_pinch_3}{article}{}
+      \name{author}{2}{}{%
+        {{hash=308bb8371b4454475560c320db93f6f2}{%
+           family={Gordillo},
+           familyi={G\bibinitperiod},
+           given={Jos{é}\bibnamedelima Manuel},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d6a8c92df08c5d9e42210e45a7e71cfc}{%
+           family={Gekle},
+           familyi={G\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press, The Edinburgh Building, Cambridge CB 2 2 RU UK}%
+      }
+      \strng{namehash}{0966e0cc732e68de13c21dd63f01388c}
+      \strng{fullhash}{0966e0cc732e68de13c21dd63f01388c}
+      \strng{bibnamehash}{0966e0cc732e68de13c21dd63f01388c}
+      \strng{authorbibnamehash}{0966e0cc732e68de13c21dd63f01388c}
+      \strng{authornamehash}{0966e0cc732e68de13c21dd63f01388c}
+      \strng{authorfullhash}{0966e0cc732e68de13c21dd63f01388c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of fluid mechanics}
+      \field{title}{Generation and breakup of Worthington jets after cavity collapse. Part 2. Tip breakup of stretched jets}
+      \field{volume}{663}
+      \field{year}{2010}
+      \field{pages}{331\bibrangedash 346}
+      \range{pages}{16}
     \endentry
     \entry{paris}{article}{}
       \true{moreauthor}
