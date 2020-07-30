@@ -324,12 +324,7 @@ strategy of volume advection on a twice finer grid in order to
 enable consistent reconstruction of mass and momentum on the staggered control volumes. 
 Another key contribution of this body of work is to extend the conservative 
 direction-split mass transport algorithm of Weymouth and Yue \sidecite{wy} 
-to the direction-split transport of momentum. 
-
-A thorough description of the shifted fractions method is can be found in
-the recent study \sidecite{caf_momcons} , and a detailed exposition of the sub grid method 
-is currently under preparation at the time of writing.  
-We shall be taking a closer look at these two stratetgies in the subsequent chapters.  
+to the direction-split transport of momentum.
 
 \section*{Ligament Mediated Paradigm}
 
@@ -360,7 +355,7 @@ resulting from such fragmentation phenomena has drawn considerable scientific in
 Numerous investigations (both experimental and numerical) into the statistical description of drop sizes
 have lead to the popularization of three distinct classes of probability density functions, 
 namely the Log-normal, Gamma and Poisson distributions \cite{vill_1}.  
-In terms of physical interpretations, the log-normal model \cite{log_normal} is based on a sequential cascade
+In terms of physical interpretations, the Log-normal model \cite{log_normal} is based on a sequential cascade
 of breakups, the Gamma family \cite{vill_2} based on the competing effects of aggregation and coalescence of liquid volumes, 
 and the Poisson model \cite{poisson} based on the instantaneous and random splitting of a volume into smaller constituents.  
 Even though the aforementioned models have been applied to a wide variety of flow configurations
@@ -372,9 +367,8 @@ fragmentation processes we have encountered thus far is the transformation
 of the initial liquid topology into transient columnar structures called ligaments. 
 It is the evolution and concomitant disintegration of these ligaments 
 that finally lead to the production of drops, therefore we entertain 
-the possibility that the dynamics of such structures may provide us with 
-a universal mechanism that can explain the polidispersity in drop sizes. 
-
+the possibility that the dynamics of such structures may provide us with clues 
+towards a ``universal'' mechanism that can explain the polidispersity in drop sizes. 
 
 The topological change from the thread-like structure of the ligaments to the 
 (approximately) spherical geometry of drops can proceed along different paths, 
@@ -390,20 +384,68 @@ additional parameters such as the properties of the surrounding fluid and rate o
 Despite the richness in the dynamics of end-pinching, the mechanism determining the size of the resulting
 drops is quite well understood, with robust scaling laws establishing the drop diameters to be a linear
 function of the width of the original ligament \cite{end_pinch_1} (although there is some weak ($We^{-1/7}$) 
-dependence on the inertial stretching rate \cite{end_pinch_3} ).  
-This turns our attention solely towards the destabilization of the liquid bulk of the ligament. 
-The fluid flow in the vicinity of the points of breakup along the liquid thread 
-are essentially governed by self-similar solutions \cite{eggers1997nonlinear}, whose local nature 
-(independent of initial conditions) is attributed to the intrinsic non-linearities of the Navier-Stokes equations.  
-The exact form of such solutions depends on the relative strengths of inertia, capillary forces and viscosity
-at that particular length scale, which can be succintly characterized using a phase space composed of Weber and Ohnesorge numbers.  
+dependence on the inertial stretching rate \cite{end_pinch_3} ).
+This turns our attention solely towards the destabilization of the ligament bulk. 
+
+The mechanism of drop formation via the rupture of a liquid column is 
+fundamentally non-linear in nature \cite{eggers2008physics,eggers1995theory}, 
+corresponding to finite time singularities of the Navier-Stokes equations.  
+The fluid flow in the vicinity of the point of breakup along the liquid column 
+is essentially governed by self-similar solutions \cite{eggers1997nonlinear}, whose local nature 
+(independent of initial conditions) is attributed to the intrinsic non-linearities of the underlying equations.  
+The exact form of such solutions depends on the relative strengths of inertia, 
+capillary forces and viscosity at that particular length scale, which can be 
+succintly characterized by a point in the phase space of Weber and Ohnesorge numbers.  
+The regime in which inertial forces balance capillarity is commonly referred to as
+the inertial regime \cite{inertial_1,inertial_2} and the one in which viscosity balances
+the capillary forces is termed as the viscous regime \cite{viscous_1,viscous_2}, 
+where both regimes correspond to the evolution of the minimum thickness as self-similar solutions 
+of the the second kind (\cite{barenblatt}) due to their dependence on an external length scale.
+Finally at moments very close to the pinch-off, neither of the above regimes 
+are valid as the thickness of the thread approaches the intrinsic length scale (corresponding to $Oh = 1$) 
+of the fluid where inertia, capillary and viscous forces are in perfect balance \cite{length_1}.
+Here one observes the ``universal'' inertio-viscous regime \cite{length_2}, although the exact 
+trajectory towards this final shape before pinch-off involves complicated to and fro transitions 
+between the inertial and viscous regimes on extremely fast time scales \cite{plethora}. 
+Despite the fact that the non-linear dynamics near pinch-off provides us with insights into
+the mechanism of drops formation, including the production of ``satellite'' drops \cite{sat_1, satellite_1, satellite_2}.  
+it still does not explain the dispersion in the sizes of drops formed via rupture of the ligament along several points. 
+Prior to the onset of breakup, the flow inside the ligament is driven by the several factors such as  
+the inertial stretching, propagation of capillary waves along the surface, shear-driven interactions at the interface etc.   
+
+This brings us to the second theme of the present study, where we focus on quantifying the impact of the 
+rearrangement of liquid volumes within the ligament on the resulting polydispersity in the size of the drops generated. 
+Towards this objective, our approach involves conducting well resolved direct numerical simulations of 
+spatially periodic ligaments, where the periodicity enables us to suppress competition from the end-pinching mode. 
+The specifications of the initial conditions involve length scales, material properties of the fluids, and most importantly,
+generation of random but unique geometrical shapes of the ligament surface using sets of randomly overlapping waves.
+We incorporate stochasticity into our numerical investigation by carrying out ensembles of such numerical 
+simulations of slender ligaments with randomly perturbed shapes, in which each realization corresponds 
+to a random but unique initial configuration.
+
+An outline of the ensuing chapters is as follows: 
+
+\begin{itemize}
+	\item Chapter 2 provides details about the governing equations, basic numerical techniques
+		regarding the transport of interfaces (VOF), and a thorough exposition of our class 
+		of numerical methods that maintain consistency between the discrete transport of mass
+		and momentum in the context of staggered Cartesian grids.
+	\item Chapter 3 evaluates the performance and accuracy of the different numerical methods
+		we have developed thus far, presenting several quantitative comparisons 
+		against certain benchmark flow configurations.  
+	\item Chapter 4 demonstrates the robustness and stability of our numerical methods in the context of a 
+		challenging flow configuration of a raindrop falling in air under the influence of gravity.
+	\item Chapter 5 provides a thorough description of our numerical setup for the spatially periodic
+		ligments, methodology behind the generation of randomly perturbed (corrugated) surfaces 
+		and the impact of initial conditions on the drops generated due to the ligament breakup.
+	\item Chapter 6 presents a statistical description of drop sizes, including theoretical predictions 
+		based on random Gaussian processes and detailed explorations at the large size limits of the distributions.  
+\end{itemize}
 
 
-
-
-% Summary of parts and chapters in thesis
-
-% modified comparison charts with CAF paper added
+% modify the comparison charts to include CAF paper
+% change CAF paper biblio
+% modify the margin figure placements 
 
 \input{chapters/table_momcons_vof.tex}
 \input{chapters/table_momcons_ls.tex}

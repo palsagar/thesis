@@ -1217,68 +1217,6 @@
       \field{pages}{2853\bibrangedash 2865}
       \range{pages}{13}
     \endentry
-    \entry{caf_momcons}{article}{}
-      \name{author}{9}{}{%
-        {{hash=bef6c167a747e765ed1e454446b8a4f1}{%
-           family={Fuster},
-           familyi={F\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-        {{hash=8047ffe6a02573ba5ad15c2bf61a4e70}{%
-           family={Arrufat},
-           familyi={A\bibinitperiod},
-           given={T},
-           giveni={T\bibinitperiod}}}%
-        {{hash=d48ab6c4d2242ef647fb98727b0d74ba}{%
-           family={Crialesi-Esposito},
-           familyi={C\bibinithyphendelim E\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=dfe13e9b78c12ee80286c816d618f294}{%
-           family={Ling},
-           familyi={L\bibinitperiod},
-           given={Y},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=3c6a5406b23478a05acaf3773dcea155}{%
-           family={Malan},
-           familyi={M\bibinitperiod},
-           given={L},
-           giveni={L\bibinitperiod}}}%
-        {{hash=818917f559df7aab23519221065c2b67}{%
-           family={Pal},
-           familyi={P\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=a6f35adcff8e1de10946cf5c6ec6bce7}{%
-           family={Scardovelli},
-           familyi={S\bibinitperiod},
-           given={R},
-           giveni={R\bibinitperiod}}}%
-        {{hash=67bd3e8e8362d7d48106d883530bb486}{%
-           family={Tryggvason},
-           familyi={T\bibinitperiod},
-           given={G},
-           giveni={G\bibinitperiod}}}%
-        {{hash=0b169305b3d7acfb24c2d6aeb7ab980f}{%
-           family={Zaleski},
-           familyi={Z\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{eef7f4b671b3a693b5ac5dda75cd3694}
-      \strng{fullhash}{32a637afed3be2bd32b7f90cc3a570aa}
-      \strng{bibnamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
-      \strng{authorbibnamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
-      \strng{authornamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
-      \strng{authorfullhash}{32a637afed3be2bd32b7f90cc3a570aa}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1811.12327}
-      \field{title}{A momentum-conserving, consistent, Volume-of-Fluid method for incompressible flow on staggered grids}
-      \field{year}{2018}
-    \endentry
     \entry{khi}{article}{}
       \name{author}{1}{}{%
         {{hash=42499dfc852eb2499dfa471c1aa9622f}{%
@@ -1397,8 +1335,8 @@
       \strng{authorbibnamehash}{b79a04f0f2eca828549ccf6dbe47f52d}
       \strng{authornamehash}{b79a04f0f2eca828549ccf6dbe47f52d}
       \strng{authorfullhash}{b79a04f0f2eca828549ccf6dbe47f52d}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical review letters}
@@ -1426,8 +1364,8 @@
       \strng{authorbibnamehash}{919c5ef5430387539ad777fc89811b13}
       \strng{authornamehash}{919c5ef5430387539ad777fc89811b13}
       \strng{authorfullhash}{919c5ef5430387539ad777fc89811b13}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the Royal Society of London. Series A: Mathematical and Physical Sciences}
@@ -1455,8 +1393,8 @@
       \strng{authorbibnamehash}{2bbd461e0ff66213f0b86a45a7cafb04}
       \strng{authornamehash}{2bbd461e0ff66213f0b86a45a7cafb04}
       \strng{authorfullhash}{2bbd461e0ff66213f0b86a45a7cafb04}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Fluid Mechanics}
@@ -1488,8 +1426,8 @@
       \strng{authorbibnamehash}{3e54e98600eb02201564caf930eccddc}
       \strng{authornamehash}{3e54e98600eb02201564caf930eccddc}
       \strng{authorfullhash}{3e54e98600eb02201564caf930eccddc}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Fluid Mechanics}
@@ -1526,8 +1464,8 @@
       \strng{authorbibnamehash}{bb26666ab4db6bcfd068bbeab9cbcdd6}
       \strng{authornamehash}{bb26666ab4db6bcfd068bbeab9cbcdd6}
       \strng{authorfullhash}{bb26666ab4db6bcfd068bbeab9cbcdd6}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Fluid Mechanics}
@@ -1569,6 +1507,519 @@
       \field{year}{2010}
       \field{pages}{331\bibrangedash 346}
       \range{pages}{16}
+    \endentry
+    \entry{eggers2008physics}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6766e94f9360b3ab5ff97031d7ca7802}{%
+           family={Eggers},
+           familyi={E\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
+           family={Villermaux},
+           familyi={V\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{7e920789dd3399b509f98e4cc1fa2728}
+      \strng{fullhash}{7e920789dd3399b509f98e4cc1fa2728}
+      \strng{bibnamehash}{7e920789dd3399b509f98e4cc1fa2728}
+      \strng{authorbibnamehash}{7e920789dd3399b509f98e4cc1fa2728}
+      \strng{authornamehash}{7e920789dd3399b509f98e4cc1fa2728}
+      \strng{authorfullhash}{7e920789dd3399b509f98e4cc1fa2728}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reports on progress in physics}
+      \field{number}{3}
+      \field{title}{Physics of liquid jets}
+      \field{volume}{71}
+      \field{year}{2008}
+      \field{pages}{036601}
+      \range{pages}{1}
+    \endentry
+    \entry{eggers1995theory}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6766e94f9360b3ab5ff97031d7ca7802}{%
+           family={Eggers},
+           familyi={E\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{fullhash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{bibnamehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{authorbibnamehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{authornamehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{authorfullhash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of Fluids}
+      \field{number}{5}
+      \field{title}{Theory of drop formation}
+      \field{volume}{7}
+      \field{year}{1995}
+      \field{pages}{941\bibrangedash 953}
+      \range{pages}{13}
+    \endentry
+    \entry{eggers1997nonlinear}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6766e94f9360b3ab5ff97031d7ca7802}{%
+           family={Eggers},
+           familyi={E\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{fullhash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{bibnamehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{authorbibnamehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{authornamehash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \strng{authorfullhash}{6766e94f9360b3ab5ff97031d7ca7802}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of modern physics}
+      \field{number}{3}
+      \field{title}{Nonlinear dynamics and breakup of free-surface flows}
+      \field{volume}{69}
+      \field{year}{1997}
+      \field{pages}{865}
+      \range{pages}{1}
+    \endentry
+    \entry{inertial_1}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0c7729a1a5a394a186f414b9a2c9df1c}{%
+           family={Brenner},
+           familyi={B\bibinitperiod},
+           given={Michael\bibnamedelima P},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=6766e94f9360b3ab5ff97031d7ca7802}{%
+           family={Eggers},
+           familyi={E\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7401ee5ca2e09346224bcc3e384235a5}{%
+           family={Joseph},
+           familyi={J\bibinitperiod},
+           given={Kathy},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bfeb8bdd778082049b86993007d18d9b}{%
+           family={Nagel},
+           familyi={N\bibinitperiod},
+           given={Sidney\bibnamedelima R},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=749b1fbdda87cdf1a9e01394207ee4ca}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={XD},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{3bcd1308cde461b38e29ea632fe6f143}
+      \strng{fullhash}{c6aedf499e48a6b213af03f65e53ac36}
+      \strng{bibnamehash}{3bcd1308cde461b38e29ea632fe6f143}
+      \strng{authorbibnamehash}{3bcd1308cde461b38e29ea632fe6f143}
+      \strng{authornamehash}{3bcd1308cde461b38e29ea632fe6f143}
+      \strng{authorfullhash}{c6aedf499e48a6b213af03f65e53ac36}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of Fluids}
+      \field{number}{6}
+      \field{title}{Breakdown of scaling in droplet fission at high Reynolds number}
+      \field{volume}{9}
+      \field{year}{1997}
+      \field{pages}{1573\bibrangedash 1590}
+      \range{pages}{18}
+    \endentry
+    \entry{inertial_2}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c8e9b57c3d2145be24a386c6c1404454}{%
+           family={Keller},
+           familyi={K\bibinitperiod},
+           given={Joseph\bibnamedelima B},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=d9e8a1bfb297a934e0ee40d8712561fc}{%
+           family={Miksis},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SIAM}%
+      }
+      \strng{namehash}{284db248f320c4f4eb4e5945103ef361}
+      \strng{fullhash}{284db248f320c4f4eb4e5945103ef361}
+      \strng{bibnamehash}{284db248f320c4f4eb4e5945103ef361}
+      \strng{authorbibnamehash}{284db248f320c4f4eb4e5945103ef361}
+      \strng{authornamehash}{284db248f320c4f4eb4e5945103ef361}
+      \strng{authorfullhash}{284db248f320c4f4eb4e5945103ef361}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Journal on Applied Mathematics}
+      \field{number}{2}
+      \field{title}{Surface tension driven flows}
+      \field{volume}{43}
+      \field{year}{1983}
+      \field{pages}{268\bibrangedash 277}
+      \range{pages}{10}
+    \endentry
+    \entry{viscous_1}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f5bef1f413eb6e064f9f6c8261bee415}{%
+           family={Papageorgiou},
+           familyi={P\bibinitperiod},
+           given={Demetrios\bibnamedelima T},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{f5bef1f413eb6e064f9f6c8261bee415}
+      \strng{fullhash}{f5bef1f413eb6e064f9f6c8261bee415}
+      \strng{bibnamehash}{f5bef1f413eb6e064f9f6c8261bee415}
+      \strng{authorbibnamehash}{f5bef1f413eb6e064f9f6c8261bee415}
+      \strng{authornamehash}{f5bef1f413eb6e064f9f6c8261bee415}
+      \strng{authorfullhash}{f5bef1f413eb6e064f9f6c8261bee415}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of fluids}
+      \field{number}{7}
+      \field{title}{On the breakup of viscous liquid threads}
+      \field{volume}{7}
+      \field{year}{1995}
+      \field{pages}{1529\bibrangedash 1544}
+      \range{pages}{16}
+    \endentry
+    \entry{viscous_2}{article}{}
+      \name{author}{2}{}{%
+        {{hash=818bebd9cb267cc937a9a073dcf0583e}{%
+           family={McKinley},
+           familyi={M\bibinitperiod},
+           given={Gareth\bibnamedelima H},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=df9ed47b3b358035bce07a458ec050a0}{%
+           family={Tripathi},
+           familyi={T\bibinitperiod},
+           given={Anubhav},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Society of Rheology}%
+      }
+      \strng{namehash}{2b9c24e85dab49fc4df527d65f8c82bd}
+      \strng{fullhash}{2b9c24e85dab49fc4df527d65f8c82bd}
+      \strng{bibnamehash}{2b9c24e85dab49fc4df527d65f8c82bd}
+      \strng{authorbibnamehash}{2b9c24e85dab49fc4df527d65f8c82bd}
+      \strng{authornamehash}{2b9c24e85dab49fc4df527d65f8c82bd}
+      \strng{authorfullhash}{2b9c24e85dab49fc4df527d65f8c82bd}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Rheology}
+      \field{number}{3}
+      \field{title}{How to extract the Newtonian viscosity from capillary breakup measurements in a filament rheometer}
+      \field{volume}{44}
+      \field{year}{2000}
+      \field{pages}{653\bibrangedash 670}
+      \range{pages}{18}
+    \endentry
+    \entry{barenblatt}{book}{}
+      \name{author}{3}{}{%
+        {{hash=7dbdba27333a9c6fc1b9e2ba0109cdf3}{%
+           family={Barenblatt},
+           familyi={B\bibinitperiod},
+           given={Grigory\bibnamedelima Isaakovich},
+           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=934f47fe2056ac661d8c21d83384ff27}{%
+           family={Barenblatt},
+           familyi={B\bibinitperiod},
+           given={Grigorii\bibnamedelima Isaakovǐc},
+           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=77d35d334389d367e947cca3897f48ed}{%
+           family={Isaakovich},
+           familyi={I\bibinitperiod},
+           given={Barenblatt\bibnamedelima Grigory},
+           giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{79efcc27008a74c7f927e7b99cfd3054}
+      \strng{fullhash}{79efcc27008a74c7f927e7b99cfd3054}
+      \strng{bibnamehash}{79efcc27008a74c7f927e7b99cfd3054}
+      \strng{authorbibnamehash}{79efcc27008a74c7f927e7b99cfd3054}
+      \strng{authornamehash}{79efcc27008a74c7f927e7b99cfd3054}
+      \strng{authorfullhash}{79efcc27008a74c7f927e7b99cfd3054}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Scaling, self-similarity, and intermediate asymptotics: dimensional analysis and intermediate asymptotics}
+      \field{volume}{14}
+      \field{year}{1996}
+    \endentry
+    \entry{length_1}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7f2f3e885c39fdb4da79664116aa5bbf}{%
+           family={Peregrine},
+           familyi={P\bibinitperiod},
+           given={D\bibnamedelima Howell},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=8e28e00903cb669d0bc22eaac29b08ac}{%
+           family={Shoker},
+           familyi={S\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c133da3d3807000e9814572a515d1a87}{%
+           family={Symon},
+           familyi={S\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{08bd00e9dde02d099a23ca54644a35d7}
+      \strng{fullhash}{08bd00e9dde02d099a23ca54644a35d7}
+      \strng{bibnamehash}{08bd00e9dde02d099a23ca54644a35d7}
+      \strng{authorbibnamehash}{08bd00e9dde02d099a23ca54644a35d7}
+      \strng{authornamehash}{08bd00e9dde02d099a23ca54644a35d7}
+      \strng{authorfullhash}{08bd00e9dde02d099a23ca54644a35d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{The bifurcation of liquid bridges}
+      \field{volume}{212}
+      \field{year}{1990}
+      \field{pages}{25\bibrangedash 39}
+      \range{pages}{15}
+    \endentry
+    \entry{length_2}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6766e94f9360b3ab5ff97031d7ca7802}{%
+           family={Eggers},
+           familyi={E\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=da9bfc5fff264ed5ae3e3acff4578d2b}{%
+           family={Dupont},
+           familyi={D\bibinitperiod},
+           given={Todd\bibnamedelima F},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b590250243e62c1aaff1fc12fd0a480}
+      \strng{fullhash}{9b590250243e62c1aaff1fc12fd0a480}
+      \strng{bibnamehash}{9b590250243e62c1aaff1fc12fd0a480}
+      \strng{authorbibnamehash}{9b590250243e62c1aaff1fc12fd0a480}
+      \strng{authornamehash}{9b590250243e62c1aaff1fc12fd0a480}
+      \strng{authorfullhash}{9b590250243e62c1aaff1fc12fd0a480}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint physics/0110081}
+      \field{title}{Drop formation in a one-dimensional approximation of the Navier-Stokes equation}
+      \field{year}{2001}
+    \endentry
+    \entry{plethora}{article}{}
+      \name{author}{8}{}{%
+        {{hash=4e9727a42e4b50b530677f64f42a51fa}{%
+           family={Castrej{ó}n-Pita},
+           familyi={C\bibinithyphendelim P\bibinitperiod},
+           given={Jos{é}\bibnamedelima Rafael},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=911a021cf2734901e616462d182321e8}{%
+           family={Castrej{ó}n-Pita},
+           familyi={C\bibinithyphendelim P\bibinitperiod},
+           given={Alfonso\bibnamedelima Arturo},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=fb5af982ca0fd564e20ec0f76165561c}{%
+           family={Thete},
+           familyi={T\bibinitperiod},
+           given={Sumeet\bibnamedelima Suresh},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b82d39a17072deeb619a87cd19f0fede}{%
+           family={Sambath},
+           familyi={S\bibinitperiod},
+           given={Krishnaraj},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c2b9b41c3b5b3ef2a0218a43f28a9208}{%
+           family={Hutchings},
+           familyi={H\bibinitperiod},
+           given={Ian\bibnamedelima M},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=931ada197dcc44fac4f5d8536e1bde80}{%
+           family={Hinch},
+           familyi={H\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4245c44aaef21ab7a25c66035565aa73}{%
+           family={Lister},
+           familyi={L\bibinitperiod},
+           given={John\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=b67e59b2e7b2c18e35d66354b324e598}{%
+           family={Basaran},
+           familyi={B\bibinitperiod},
+           given={Osman\bibnamedelima A},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Acad Sciences}%
+      }
+      \strng{namehash}{dc882404edfbbfe3fcae58125d5f0673}
+      \strng{fullhash}{3ab02dd8830b2478099dfe22887391d6}
+      \strng{bibnamehash}{dc882404edfbbfe3fcae58125d5f0673}
+      \strng{authorbibnamehash}{dc882404edfbbfe3fcae58125d5f0673}
+      \strng{authornamehash}{dc882404edfbbfe3fcae58125d5f0673}
+      \strng{authorfullhash}{3ab02dd8830b2478099dfe22887391d6}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{number}{15}
+      \field{title}{Plethora of transitions during breakup of liquid filaments}
+      \field{volume}{112}
+      \field{year}{2015}
+      \field{pages}{4582\bibrangedash 4587}
+      \range{pages}{6}
+    \endentry
+    \entry{sat_1}{article}{}
+      \name{author}{2}{}{%
+        {{hash=62a8093da126c29a7c147c00342ec268}{%
+           family={Vassallo},
+           familyi={V\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5246e4c52324e3b343d79c66c5aace26}{%
+           family={Ashgriz},
+           familyi={A\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society London}%
+      }
+      \strng{namehash}{81996a1bb2f88f8d27a07860e8a47538}
+      \strng{fullhash}{81996a1bb2f88f8d27a07860e8a47538}
+      \strng{bibnamehash}{81996a1bb2f88f8d27a07860e8a47538}
+      \strng{authorbibnamehash}{81996a1bb2f88f8d27a07860e8a47538}
+      \strng{authornamehash}{81996a1bb2f88f8d27a07860e8a47538}
+      \strng{authorfullhash}{81996a1bb2f88f8d27a07860e8a47538}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A: Mathematical and Physical Sciences}
+      \field{number}{1888}
+      \field{title}{Satellite formation and merging in liquid jet breakup}
+      \field{volume}{433}
+      \field{year}{1991}
+      \field{pages}{269\bibrangedash 286}
+      \range{pages}{18}
+    \endentry
+    \entry{satellite_1}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2fb87a71f92e82b47388597c2063a4bd}{%
+           family={Tjahjadi},
+           familyi={T\bibinitperiod},
+           given={Mahari},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6f144b4ec010b10635bc1ba3b2d0f274}{%
+           family={Stone},
+           familyi={S\bibinitperiod},
+           given={Howard\bibnamedelima A},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ca61fad5e53b2f2f87b1956a55c4bb79}{%
+           family={Ottino},
+           familyi={O\bibinitperiod},
+           given={Julio\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{6c292b1210e76834da2a721c5484d01c}
+      \strng{fullhash}{6c292b1210e76834da2a721c5484d01c}
+      \strng{bibnamehash}{6c292b1210e76834da2a721c5484d01c}
+      \strng{authorbibnamehash}{6c292b1210e76834da2a721c5484d01c}
+      \strng{authornamehash}{6c292b1210e76834da2a721c5484d01c}
+      \strng{authorfullhash}{6c292b1210e76834da2a721c5484d01c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Satellite and subsatellite formation in capillary breakup}
+      \field{volume}{243}
+      \field{year}{1992}
+      \field{pages}{297\bibrangedash 317}
+      \range{pages}{21}
+    \endentry
+    \entry{satellite_2}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ae9aac8f96dfa450ed21765ea7145849}{%
+           family={Notz},
+           familyi={N\bibinitperiod},
+           given={Patrick\bibnamedelima K},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=a9f6727e41b586b99982acb29f266e49}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Alvin\bibnamedelima U},
+           giveni={A\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=b67e59b2e7b2c18e35d66354b324e598}{%
+           family={Basaran},
+           familyi={B\bibinitperiod},
+           given={Osman\bibnamedelima A},
+           giveni={O\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{6a4e8968113ce01c0d23a87ede8a1659}
+      \strng{fullhash}{6a4e8968113ce01c0d23a87ede8a1659}
+      \strng{bibnamehash}{6a4e8968113ce01c0d23a87ede8a1659}
+      \strng{authorbibnamehash}{6a4e8968113ce01c0d23a87ede8a1659}
+      \strng{authornamehash}{6a4e8968113ce01c0d23a87ede8a1659}
+      \strng{authorfullhash}{6a4e8968113ce01c0d23a87ede8a1659}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physics of Fluids}
+      \field{number}{3}
+      \field{title}{Satellite drops: Unexpected dynamics and change of scaling during pinch-off}
+      \field{volume}{13}
+      \field{year}{2001}
+      \field{pages}{549\bibrangedash 552}
+      \range{pages}{4}
     \endentry
     \entry{paris}{article}{}
       \true{moreauthor}
@@ -3500,35 +3951,6 @@
       \field{pages}{1\bibrangedash 1}
       \range{pages}{1}
     \endentry
-    \entry{eggers1997nonlinear}{article}{}
-      \name{author}{1}{}{%
-        {{hash=6766e94f9360b3ab5ff97031d7ca7802}{%
-           family={Eggers},
-           familyi={E\bibinitperiod},
-           given={Jens},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{6766e94f9360b3ab5ff97031d7ca7802}
-      \strng{fullhash}{6766e94f9360b3ab5ff97031d7ca7802}
-      \strng{bibnamehash}{6766e94f9360b3ab5ff97031d7ca7802}
-      \strng{authorbibnamehash}{6766e94f9360b3ab5ff97031d7ca7802}
-      \strng{authornamehash}{6766e94f9360b3ab5ff97031d7ca7802}
-      \strng{authorfullhash}{6766e94f9360b3ab5ff97031d7ca7802}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Reviews of modern physics}
-      \field{number}{3}
-      \field{title}{Nonlinear dynamics and breakup of free-surface flows}
-      \field{volume}{69}
-      \field{year}{1997}
-      \field{pages}{865}
-      \range{pages}{1}
-    \endentry
     \entry{chandra}{book}{}
       \name{author}{1}{}{%
         {{hash=2cdd974df31a73795c3a486550391e0c}{%
@@ -3631,40 +4053,6 @@
       \field{title}{A guide to NumPy}
       \field{volume}{1}
       \field{year}{2006}
-    \endentry
-    \entry{sat_1}{article}{}
-      \name{author}{2}{}{%
-        {{hash=62a8093da126c29a7c147c00342ec268}{%
-           family={Vassallo},
-           familyi={V\bibinitperiod},
-           given={P},
-           giveni={P\bibinitperiod}}}%
-        {{hash=5246e4c52324e3b343d79c66c5aace26}{%
-           family={Ashgriz},
-           familyi={A\bibinitperiod},
-           given={N},
-           giveni={N\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The Royal Society London}%
-      }
-      \strng{namehash}{81996a1bb2f88f8d27a07860e8a47538}
-      \strng{fullhash}{81996a1bb2f88f8d27a07860e8a47538}
-      \strng{bibnamehash}{81996a1bb2f88f8d27a07860e8a47538}
-      \strng{authorbibnamehash}{81996a1bb2f88f8d27a07860e8a47538}
-      \strng{authornamehash}{81996a1bb2f88f8d27a07860e8a47538}
-      \strng{authorfullhash}{81996a1bb2f88f8d27a07860e8a47538}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the Royal Society of London. Series A: Mathematical and Physical Sciences}
-      \field{number}{1888}
-      \field{title}{Satellite formation and merging in liquid jet breakup}
-      \field{volume}{433}
-      \field{year}{1991}
-      \field{pages}{269\bibrangedash 286}
-      \range{pages}{18}
     \endentry
     \entry{sat_2}{article}{}
       \name{author}{1}{}{%
@@ -3906,8 +4294,8 @@
       \strng{authorbibnamehash}{f252038edd7f112d75da3bf0c1edecbc}
       \strng{authornamehash}{f252038edd7f112d75da3bf0c1edecbc}
       \strng{authorfullhash}{edb0d45c98db948129bfc4e397bf4abc}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Methods}
