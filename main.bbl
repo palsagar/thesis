@@ -3063,6 +3063,68 @@
       \field{pages}{243\bibrangedash 248}
       \range{pages}{6}
     \endentry
+    \entry{xiao2012}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=20216f4bcc7e3ee2d8b6378aa8353675}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {{©} F. Xiao}%
+      }
+      \strng{namehash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \strng{fullhash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \strng{bibnamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \strng{authorbibnamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \strng{authornamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \strng{authorfullhash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Large eddy simulation of liquid jet primary breakup}
+      \field{type}{phdthesis}
+      \field{year}{2012}
+    \endentry
+    \entry{xiao2014large}{article}{}
+      \name{author}{3}{}{%
+        {{hash=20216f4bcc7e3ee2d8b6378aa8353675}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8ff401b2243598ccbaf3a9f13c7e4fee}{%
+           family={Dianat},
+           familyi={D\bibinitperiod},
+           given={Mehriar},
+           giveni={M\bibinitperiod}}}%
+        {{hash=38f9806d07cb3a86addf18a145e82f67}{%
+           family={McGuirk},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Begel House Inc.}%
+      }
+      \strng{namehash}{011bd0ace6b08b3d3042b9db65d09af9}
+      \strng{fullhash}{011bd0ace6b08b3d3042b9db65d09af9}
+      \strng{bibnamehash}{011bd0ace6b08b3d3042b9db65d09af9}
+      \strng{authorbibnamehash}{011bd0ace6b08b3d3042b9db65d09af9}
+      \strng{authornamehash}{011bd0ace6b08b3d3042b9db65d09af9}
+      \strng{authorfullhash}{011bd0ace6b08b3d3042b9db65d09af9}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Atomization and Sprays}
+      \field{number}{4}
+      \field{title}{Large eddy simulation of single droplet and liquid jet primary breakup using a coupled level set/volume of fluid method}
+      \field{volume}{24}
+      \field{year}{2014}
+    \endentry
     \entry{dodd2014}{article}{}
       \name{author}{2}{}{%
         {{hash=4eb95dd9e75d422f29d7f0e0475ca71b}{%
@@ -3096,30 +3158,31 @@
       \field{pages}{416\bibrangedash 434}
       \range{pages}{19}
     \endentry
-    \entry{xiao2012}{thesis}{}
+    \entry{rayleigh1879a}{article}{}
       \name{author}{1}{}{%
-        {{hash=20216f4bcc7e3ee2d8b6378aa8353675}{%
-           family={Xiao},
-           familyi={X\bibinitperiod},
-           given={Feng},
-           giveni={F\bibinitperiod}}}%
+        {{hash=c64c188dda50449eb5826d916df1a85a}{%
+           family={Rayleigh},
+           familyi={R\bibinitperiod},
+           given={Lord},
+           giveni={L\bibinitperiod}}}%
       }
-      \list{institution}{1}{%
-        {{©} F. Xiao}%
-      }
-      \strng{namehash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \strng{fullhash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \strng{bibnamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \strng{authorbibnamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \strng{authornamehash}{20216f4bcc7e3ee2d8b6378aa8353675}
-      \strng{authorfullhash}{20216f4bcc7e3ee2d8b6378aa8353675}
+      \strng{namehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{fullhash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{bibnamehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{authorbibnamehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{authornamehash}{c64c188dda50449eb5826d916df1a85a}
+      \strng{authorfullhash}{c64c188dda50449eb5826d916df1a85a}
       \field{sortinit}{2}
       \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Large eddy simulation of liquid jet primary breakup}
-      \field{type}{phdthesis}
-      \field{year}{2012}
+      \field{journaltitle}{Proc. R. Soc. London}
+      \field{number}{196-199}
+      \field{title}{On the capillary phenomena of jets}
+      \field{volume}{29}
+      \field{year}{1879}
+      \field{pages}{71\bibrangedash 97}
+      \range{pages}{27}
     \endentry
     \entry{vill_3}{article}{}
       \name{author}{2}{}{%
@@ -3154,32 +3217,6 @@
       \field{year}{2004}
       \field{pages}{2732\bibrangedash 2741}
       \range{pages}{10}
-    \endentry
-    \entry{rayleigh1879a}{article}{}
-      \name{author}{1}{}{%
-        {{hash=c64c188dda50449eb5826d916df1a85a}{%
-           family={Rayleigh},
-           familyi={R\bibinitperiod},
-           given={Lord},
-           giveni={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{c64c188dda50449eb5826d916df1a85a}
-      \strng{fullhash}{c64c188dda50449eb5826d916df1a85a}
-      \strng{bibnamehash}{c64c188dda50449eb5826d916df1a85a}
-      \strng{authorbibnamehash}{c64c188dda50449eb5826d916df1a85a}
-      \strng{authornamehash}{c64c188dda50449eb5826d916df1a85a}
-      \strng{authorfullhash}{c64c188dda50449eb5826d916df1a85a}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proc. R. Soc. London}
-      \field{number}{196-199}
-      \field{title}{On the capillary phenomena of jets}
-      \field{volume}{29}
-      \field{year}{1879}
-      \field{pages}{71\bibrangedash 97}
-      \range{pages}{27}
     \endentry
     \entry{rayleigh1879b}{article}{}
       \name{author}{1}{}{%

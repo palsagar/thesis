@@ -33,10 +33,17 @@ in place of the Bond number.}
 
 
 The subscripts $l$ and $g$ represent liquid and gas phases respectively. 
-In our particular numerical setup, $We \simeq 3.2 $, $Re \simeq 1455 $ and $Bo \simeq 1.2 $, 
+In our particular numerical setup, $We \simeq 3.2 $, 
+$Re \simeq 1455 $ and $Bo \simeq 1.2 $,
 thus corresponding to that of a $3mm$ diameter raindrop (a relatively large one) 
 falling in the air at an approximate terminal velocity of  
 $8$ m/s (interpolated from empirical data, refer to Gunn and Kinzer \cite{gunn1949}). 
+This choice of length scale of the drop is motivated by the paradigmatic value
+of a near-spherical raindrop simulation, and by the fact that the corresponding Weber
+number ($\sim 3$) is the same as in a similar air-water setup corresponding to  
+suddenly-accelerated-droplet (or ``secondary atomisation" ) simulations in the studies \cite{xiao2012,xiao2014large}.
+For such a low Weber number the capillary forces dominate and the 
+droplet should remain intact, and definitely not undergo any subsequent atomization. 
 The parameters in the problem setup are given in Table \ref{raindropprop}, 
 and the schematic diagram given in Fig. \ref{setup}. 
 The droplet is initially placed at the center of a cubic domain (3D), 
@@ -68,23 +75,28 @@ the numerical method has to accurately resolve the thin boundary layers
 the boundary layer has only by 3-4 cells across it. }, 
 the interaction of such layers with the capillary forces and finally 
 the non-linear feedback of the complex 
-3D vortical structures present in the wake behind the droplet. 
+3D vortical structures present in the wake behind the droplet.
+Arguably, the most natural type of computational setup would involve using 
+a large domain filled with air at rest, with zero inflow velocity and to
+let the droplet fall from the top of the domain.
 Such an undertaking was attempted by Dodd and Ferrante \cite{dodd2014}, 
 in which they managed to delineate the different regimes concerning the 
 behavior of the wake behind the droplet, although at relatively 
-lower Reynolds numbers (the maximum Reynolds tested was $\simeq 500$, 
-whereas in our case it is $\simeq 1500$).    
+lower Reynolds numbers corresponding to smaller drops 
+(the maximum Reynolds tested was $\simeq 500$, whereas in our case it is $\simeq 1500$).    
+We on the other hand use a significantly smaller domain ($L/D = 4$ where $L$ is the domain size), 
+with a constant value of inflow velocity (close to $8$ m/s), thus resulting in the drop 
+exiting the domain after a certain amount of time. 
+This setup proves to be quite convenient for relatively short-time investigations.
 Therefore, our objective behind the demonstration of this particular 
 test case is \textit{not} to develop a high fidelity model of a raindrop 
 \sidenote{In the Dodd and Ferrante \cite{dodd2014} study , 
 a droplet was allowed to fall from rest
 along a domain with a length corresponding to 32 times the droplet diameter, 
 therefore necessitating a problem size of approximately 260 million cells.}, 
-but rather carry out a stringent evaluation of the robustness of our numerical 
-method compared to ones that are not mass-momentum consistent. 
-For such a low Weber number the capillary forces dominate and the 
-droplet should remain intact, and definitely not undergo any subsequent atomization. 
-
+but rather carry out a stringent evaluation of the robustness of our class of 
+numerical methods (shifted fractions and sub-grid strategies) 
+compared to the standard version of the method that is not mass-momentum consistent. 
 
 % -----
 \begin{figure}[h!]
@@ -106,16 +118,21 @@ droplet should remain intact, and definitely not undergo any subsequent atomizat
 %---------------------------------------------------------------
 \section{Numerical Instabilities}
 
-Numerical simulations of this configuration at moderate resolution 
+Numerical simulations using a fixed inflow velocity with $U_0(t) = 8 $ m/s 
+were carried out for very short times (of the order of 1ms) at moderate resolution 
 \sidenote{Droplet resolutions between $D/h = 16$ to $D/h = 64$ are considered
-to be moderate, where $D$ is the droplet diameter and $h$ is the grid size.}
-carried out with the standard version
-\sidenote{The standard version is based on the non-conservative formulation
-of the Navier-Stokes equations, concomitantly not ensuring consistency
-between discrete mass and momentum transport.}
-of our numerical method results in the catastrophic 
-deformations of the droplet as illustrated in Fig. \ref{explode_compare}, 
-which we describe as `fictitious' or `artificial' atomization. 
+to be moderate, where $D$ is the droplet diameter and $h$ is the grid size.}.
+The simulations carried out with the standard version of our numerical method 
+result in the catastrophic deformations of the droplet as illustrated in Fig. \ref{explode_compare}, 
+which we describe as ``fictitious" or ``artificial" atomization. 
+They display marked peaks or spikes in kinetic energy as a function of time, 
+associated with massively deformed interface shapes (see figure \ref{explode_compare}). 
+Additionally, our studies suggest that certain combinations 
+of the advection scheme and the flux limiter are 
+numerically more robust than others
+,in particular, the most stable combinations 
+are that of CIAM advection with 
+Superbee limiter, and the WY advection with QUICK limiter. 
 
 \subsection*{Instability Mechanism}
 
@@ -275,30 +292,21 @@ the eventual (un-physical) fragmentation of a droplet is not just a
 cause of concern in the context of modeling a raindrop, but it has important
 implications within the more broader scope of 
 atomization and other complex fragmentation phenomena. 
-
-
-\subsection*{Primary Concern}
 Arguably, the most important objective of numerical investigations of physical
 phenomena involving fragmentation is the quantification of the size of 
 the features that result from a series of topological changes 
-\sidenote{In the context of surface tension dominated flows, these features are 
-primarily drops and bubbles, occassionally one can also be 
-interested in transient features such as thin sheets, ligaments etc. }. 
-A typical example is the statistical distributions of drop sizes, 
-where the drops are generated via some fragmentation mechanism. 
-\sidenote{These are generally in the form of probability density functions (PDF).}
-As demonstrated in the present studies using the standard non-consistent method,  
-the artificially atomized drop leads to the generation of a large number of 
+A typical example is the statistical distributions of drop sizes. 
+As demonstrated in the present study, using the standard non-consistent method  
+one observes artificially atomized drops thus leading to the generation of a large number of 
 smaller fragments, which if counted, will skew the resulting droplet size 
 distributions towards the smaller sizes.
-Therefore, the falling raindrop serves as a faithful representation of the 
+Therefore, we assert that the falling raindrop case serves as a faithful representation of the 
 numerous under-resolved features that are typically omnipresent in
 numerical studies of complex fragmentation phenomena.  
 The inability to discern between the drops resulting from physically consistent 
-mechanisms and those that result from `numerical fragmentation' is exactly
+mechanisms and those that result from numerical fragmentation is exactly
 why there is a need to develop numerical schemes that circumvent the occurrence
-of such numerical instabilities.  
-
+of such instabilities, especially as there will always be some constraints in computational power.  
 
 
 \subsection*{Consistent Mass-Momentum Transport}
@@ -317,12 +325,12 @@ is the formulation of the convective operators in the conservative manner i.e
 divergence of fluxes instead of gradients of the primary (discontinuous) variables.} 
 of the Navier-Stokes equations, in order
 to achieve consistency in the discrete transport of mass and momentum. 
-In this section, we shall take a closer look at how the utilisation of 
-the consistent method enables us not only to stabilize majority of the numerical
+In what follows, we demonstrate that the use of our class of consistent methods 
+enables us not only to stabilize a majority of the numerical
 instabilities we have come across, but also delivers relatively good approximations 
-of the flow dynamics involved. A thorough and detailed exposition of the principles
-behind the consistent method and the different strategies towards achieving consistent
-transport is covered in the ensuing chapter.  
+of the dynamics involved. A thorough and detailed exposition of the principles
+behind the consistent methods and the different strategies towards achieving consistent
+transport has already been covered in the preceding chapter.  
 
 We observe that applying the method that ensures consistent mass-momentum 
 transport brings a considerable and systematic improvement over a 
@@ -332,14 +340,6 @@ To summarize, the simulations broadly fall into three categories.
 The first two categories concern those that use the method ensuring  
 consistent mass-momentum transport, and as a result maintain 
 physical values of the kinetic energy and smooth interface shapes. 
-Certain simulations amongst the ones carried out with this consistent  
-method display some numerical instabilities (but not leading 
-to catastrophic deformation)
-\sidenote{This may be due certain issues regarding the treatment 
-of outflow boundary conditions in our numerical platform `PARIS Simulator'.}
-resulting due to the particular choice of 
-the advection scheme (CIAM/WY) and 
-flux limiter (QUICK/WENO/ENO/Superbee/Verstappen) combination. 
 
 \begin{figure}
 \begin{center}
@@ -366,6 +366,7 @@ at which the code crashes.}
 \label{explode_all}
 \end{figure}
 
+% multiplot caf_paper
 \begin{figure*}
 \begin{center}
 \includegraphics[width = 1.5\textwidth]{plots/raindrop/multiplot_raindrop.png}
@@ -378,23 +379,26 @@ performance of the consistent scheme for different spatial resolutions.
 (c) and (d) Moment of inertia of the droplet along the directions 
 perpendicular to flow (Y,Z), evolution of $I_{yy}$ 
 seems to be more or less identical to $I_{zz}$.}
-\label{multi}
+\label{multi_caf}
 \end{figure*}
 
-Finally, in the third category are the simulations carried out with the standard 
-non-consistent method that rapidly blow up, displaying marked peaks 
-or spikes in kinetic energy as a function of time, 
-associated with massively deformed interface shapes (see figure \ref{explode_compare}). 
-Additionally, our studies suggest that certain combinations 
-of the advection scheme and the flux limiter are 
-numerically more robust than others
-\sidenote{Further detailed investigations are required
-to understand the difference in code stability as a function
-of the choice of flux limiter and advection scheme combination. }
-, in particular, the most stable combinations 
-are that of CIAM advection with 
-Superbee limiter, and the WY advection with QUICK limiter. 
+% multiplot jcp_paper
+\begin{figure*}
+\begin{center}
+\includegraphics[width = 1.5\textwidth]{plots/raindrop/jcp_1.png}
+\end{center}
+\vspace*{-0.5cm}
+\caption{Temporal evolution of quantities of interest to evaluate the 
+performance of the consistent scheme for different spatial resolutions. 
+(a) Kinetic energy of the droplet. 
+(b) Moment of inertia of the droplet along the flow (X) direction. 
+(c) and (d) Moment of inertia of the droplet along the directions 
+perpendicular to flow (Y,Z), evolution of $I_{yy}$ 
+seems to be more or less identical to $I_{zz}$.}
+\label{multi_jcp}
+\end{figure*}
 
+% acc_conv caf_paper
 \begin{figure}
 \begin{center}
 \includegraphics[width = 1.0\textwidth]{plots/raindrop/dropl_velocity_accel_ppd.png}
@@ -410,9 +414,29 @@ computed using the best linear fit over the temporal variation
 of their respective velocities. 
 The error bars signify the asymptotic standard 
 error (least-squares) corresponding to the obtained linear fits.} 
-\label{drop_vel}
+\label{drop_vel_caf}
 \end{figure}
 
+% acc_conv jcp_paper
+\begin{figure}
+\begin{center}
+\includegraphics[width = 1.0\textwidth]{plots/raindrop/jcp_2.png}
+\end{center}
+\vspace*{-0.5cm}
+\caption{Comparison of droplet velocity as a function of time, 
+for different droplet resolutions.
+The simulations were carried out with the consistent version of our method,
+using the combination of the WY advection scheme with the QUICK limiter. 
+The droplet velocities correspond to that of their respective center of masses. 
+Inset : Convergence of the droplet acceleration as a function of resolution, 
+computed using the best linear fit over the temporal variation 
+of their respective velocities. 
+The error bars signify the asymptotic standard 
+error (least-squares) corresponding to the obtained linear fits.} 
+\label{drop_vel_jcp}
+\end{figure}
+
+% mass conservation caf_paper
 \begin{figure*}
 \begin{center}
 \begin{tabular}{cc}
@@ -454,15 +478,62 @@ The reduction in the relative error follows roughly second-order spatial converg
 \label{mass_conv}
 \end{figure*}
 
-We illustrate the performance of the consistent method through the 
-results of our simulations in Figure \ref{multi}. 
-The spatial resolutions correspond to $D/h = 8, 16, 32 $ and $64$ 
-using the WY advection scheme in combination with the QUICK flux limiter, 
+\subsection*{Convergence Study}
+
+For the next set of simulations, we use a fixed inflow velocity setup but with smaller initial velocity.
+We systematically vary the resolution from  $D/h = 8, 16, 32 $ and $64$. 
+Despite using our consistent methods, simulations at  $D/h = 8$ are sometimes unstable, 
+so we use a workaround and use a lower fixed inflow velocity of $U_0=5$ m/s, 
+which differs from the expected long term terminal velocity
+$U_{t} \simeq $8 m/s used in the previous set of simulations. 
+But, it does offer a milder initial condition and allows us to observe the first phase of the (physical)
+acceleration towards the final statistical steady state. 
+The simulations are carried out for 5 ms (for reasons of computational cost and also in order 
+to avoid the droplet getting too close to the domain boundaries) 
+and the convergence properties of the numerical system are examined within this time frame. 
+A brief review of the relevant time scales are as follows : 
+
+\begin{itemize}
+\item The time scale $t_a=D/U_0$ of the air flow around the droplet, around 0.6 milliseconds, much shorter
+than the simulation time. 
+\item The time $t_w = L/[2(U_t - U_0)] = 3$ms that the droplet would take to travel by half the domain
+  the domain once it had reached the terminal velocity. This time is not relevant here since one needs to wait first for the next two times
+  before terminal velocity is reached. 
+\item The time scale $t_c \simeq 15.1$ms \cite{rayleigh1879a} of capillary oscillations of the droplet shape.
+\item The time scale $t_i$ of relaxation to terminal velocity. Using the dynamics \eqref{borda} below, 
+	this time is $(\rho_l/\rho_g)\cdot( D/U_t) = 215 ms$, which is much longer than the simulation time. 
+\item The time scale $t_\mu$ needed to entrain the internal vortical motion of the liquid under the action of the gas. An estimate this time is  $D^2/\nu_l =  \textrm{Re} D/U_t = 400 ms$.
+\end{itemize}
+
+The time of relaxation may be estimated using a simple square-velocity drag law for the droplet. 
+We model the droplet motion as a one-dimensional dynamics under the effect of gravity and drag as
+
+\begin{align}
+	\rho_l \frac{\pi D^3}6 \frac{\textrm{d}U}{\textrm{d}t} =  \rho_l \frac{\pi D^3}6 g - C_D \rho_g \frac{\pi D^2} 8  U^2, \label{borda}
+\end{align}
+
+hence
+
+\begin{align}
+\frac{\textrm{d}U}{\textrm{d}t}  = -  \frac 34 \frac {r}{D} (U^2 - U_t^2) = -\frac{U-U_t}{t_i}, \label{dtu}
+\end{align}
+
+where for $U \simeq U_t$, thus giving us 
+
+\begin{align}
+t_i =  \frac 23 \frac {D}{r U_t}.
+\end{align}
+
+We illustrate the performance of the consistent methods through the 
+results of our simulations in figures \ref{multi_caf} and \ref{multi_jcp}
+for the shifted fractions (\textbf{MSHIFT}) and sub-grid (\textbf{MSUB}) methods respectively. 
+In case of both the methods, we use the WY advection scheme in combination with the QUICK flux limiter, 
 while keeping the same value for the inflow velocity boundary condition. 
 The quantities of interest while examining the robustness of the 
 method are the temporal evolution of the droplet kinetic energy 
-(Fig. \ref{multi}. (a) ) and the moment of inertia of the droplet 
-along the three directions (Fig. \ref{multi}. (b),(c),(d)) . 
+(figures \ref{multi_caf}. (a) and \ref{multi_jcp}. (a) ) 
+and the moment of inertia of the droplet along the three directions 
+(figures \ref{multi_caf}. (b),(c),(d) and \ref{multi_jcp}. (b),(c),(d)) . 
 The inflow is along the X direction with gravity opposite to it. 
 The moment of inertia is used as a descriptor of the 'average' droplet shape, 
 with the three moments of inertia along the different axes $I_m$ defined as - 
@@ -474,6 +545,16 @@ with the three moments of inertia along the different axes $I_m$ defined as -
 
 where $\mathcal{D}$ is the computational domain and $x_m$ is the 
 distance of the interface relative to the center of mass of the droplet.   
+The droplet kinetic energy is defined relative to the droplet center-of-mass, given by 
+
+\begin{align}
+	E_k = \langle \rho(x,t) || \boldsymbol{u}(x,t) - \boldsymbol{u}_{CM}||^2 \rangle
+\end{align}
+
+where $ \langle . \rangle$ is the spatial averaging operator over the  
+entire domain and $\boldsymbol{u}_{CM}$ is the droplet center of mass.
+
+
 The kinetic energy of the droplet evolves in a relatively smooth manner, 
 without the presence of sudden spikes and falls which are emblematic of 
 the standard non-consistent method (refer to Fig. \ref{pressure_2}). 
@@ -504,7 +585,7 @@ field of an actual falling raindrop might experience,
 hence the droplet in our numerical setup does have some 
 finite acceleration due to the imbalance 
 between the aerodynamic forces and gravity. 
-In Figure \ref{drop_vel}, we plot the velocity of 
+In figures \ref{drop_vel_caf} and \ref{drop_vel_jcp}, we plot the velocity of 
 the center of mass of the droplet (in the frame of reference 
 of the box enclosing the droplet) as a function of time, 
 and its behavior as we increase the droplet resolution. 
@@ -514,7 +595,7 @@ linear increase (absolute value) in the velocity as a function of time.
 The temporal variation in the droplet velocity is fitted to a 
 linear polynomial in order to evaluate the droplet acceleration 
 by means of a standard least-squares approach, for each droplet resolution. 
-We illustrate (inset Figure \ref{drop_vel}) the convergence in the estimated 
+We illustrate (inset Figure \ref{drop_vel_caf}) the convergence in the estimated 
 accelarations as a consequence of increasing spatial resolution, 
 as evidenced by a decrease in the standard error on the fits 
 ranging from $\pm 11.1 \%$ for $D/h = 8$ to a value of $\pm 0.12 \%$ 
