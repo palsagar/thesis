@@ -3,14 +3,6 @@ setchapterpreamble[u]{\margintoc}
 \labch{intro}
 
 % Importance of multiphase interfacial flows 
-\begin{marginfigure}[1cm]
-\centering
-\includegraphics{plots/intro/jet.pdf}
-\caption{Decay of a liquid jet into droplets driven by the growth of capillary instabilities corresponding 
-	to different excitation frequencies. Image reproduced from Rutland and Jameson \cite{rutland1971non}.
-	} 
-\label{jet}
-\end{marginfigure}
 
 The dynamics of liquid-gas interfacial flows play a critical role in several processes in nature, 
 as well as in myriad industrial applications. 
@@ -29,30 +21,9 @@ In view of the broad spectrum of liquid fragmentation phenomena that pique our s
 the present body of work is be divided into two parts :  
 
 
-\begin{marginfigure}[3cm]
-\centering
-\includegraphics{plots/intro/shear.pdf}
-	\caption{ Experimental and numerical investigations of liquid atomization 
-	in which the primary stages of topological change are driven by shear instabilities. 
-	(i) Liquid jet disintegration by a high speed coaxial gas flow, image reproduced from Lasheras and Hopfinger \cite{lasheras}.
-	(ii) Atomization of a two-phase mixing layer between parallel liquid and gas streams, image 
-	reproduced from Ling et al. \cite{ling}.
-	}
-\label{shear}
-\end{marginfigure}
 
 % Decay of jets, shear induced atomization, expansion of sheets , hole expansion in sheets, secondary atomization of drops 
 
-\begin{marginfigure}[2cm]
-\centering
-\includegraphics{plots/intro/spread.pdf}
-	\caption{ Examples of steady and unsteady liquid fragmentation, demonstrating the disintegration of the  
-	radially expanding liquid sheets driven by the capillary deceleration of the rims forming the edges of the sheet. 
-	(i) Steady fragmentation of radially expanding sheets driven by jet impact, image reproduced from Bremond et al. \cite{bremond}.
-	(ii) Unsteady fragmentation of liquid sheets following drop impact, image reproduced from Wang and Bourouiba \cite{lydia_3}.  
-	}
-\label{spread}
-\end{marginfigure}
 
 
 \begin{itemize}
@@ -270,9 +241,6 @@ computed via geometric constructions being an open question
 To get a bird's eye view of the numerous features employed by the methods 
 in existing literature, we refer the reader to tables %\ref{table_vof} and \ref{table_ls}, 
 which respectively provide systematic overviews of the VOF based and level set based approaches.    
-
-% Our Approach 
-
 In the present body of work, we start by precisely defining the
 essential (desired) attributes of a numerical scheme that 
 ensures discrete consistency between mass and momentum transport : 
@@ -328,6 +296,15 @@ to the direction-split transport of momentum.
 
 \section*{Ligament Mediated Paradigm}
 
+\begin{marginfigure}[1cm]
+\centering
+\includegraphics{plots/intro/jet.pdf}
+\caption{Decay of a liquid jet into droplets driven by the growth of capillary instabilities corresponding 
+	to different excitation frequencies. Image reproduced from Rutland and Jameson \cite{rutland1971non}.
+	} 
+\label{jet}
+\end{marginfigure}
+
 Liquid atomization is basically the transformation of a compact volume into drops.
 However, this simplistic view masks the intricate interplay between inertia, viscosity and capillarity across 
 different length and time scales spanning several orders of magnitude.  
@@ -350,6 +327,19 @@ These primary instabilities of the Kelvin-Helmholtz \cite{khi} variety lead to t
 of a plethora of secondary structures, many of them corresponding to the aforementioned 
 topologies like filaments, expanding sheets with rims, expanding holes in thin sheets etc amongst numerous others. 
 
+
+\begin{marginfigure}[2cm]
+\centering
+\includegraphics{plots/intro/spread.pdf}
+	\caption{ Examples of steady and unsteady liquid fragmentation, demonstrating the disintegration of the  
+	radially expanding liquid sheets driven by the capillary deceleration of the rims forming the edges of the sheet. 
+	(i) Steady fragmentation of radially expanding sheets driven by jet impact, image reproduced from Bremond et al. \cite{bremond}.
+	(ii) Unsteady fragmentation of liquid sheets following drop impact, image reproduced from Wang and Bourouiba \cite{lydia_3}.  
+	}
+\label{spread}
+\end{marginfigure}
+
+
 The development of a mechanistic understanding into the origins of polydispersity in the drop sizes  
 resulting from such fragmentation phenomena has drawn considerable scientific interest throughout the past few decades.
 Numerous investigations (both experimental and numerical) into the statistical description of drop sizes
@@ -370,6 +360,18 @@ that finally lead to the production of drops, therefore we entertain
 the possibility that the dynamics of such structures may provide us with clues 
 towards a ``universal'' mechanism that can explain the polidispersity in drop sizes. 
 
+\begin{marginfigure}
+\centering
+\includegraphics{plots/intro/shear.pdf}
+	\caption{ Experimental and numerical investigations of liquid atomization 
+	in which the primary stages of topological change are driven by shear instabilities. 
+	(i) Liquid jet disintegration by a high speed coaxial gas flow, image reproduced from Lasheras and Hopfinger \cite{lasheras}.
+	(ii) Atomization of a two-phase mixing layer between parallel liquid and gas streams, image 
+	reproduced from Ling et al. \cite{ling}.
+	}
+\label{shear}
+\end{marginfigure}
+
 The topological change from the thread-like structure of the ligaments to the 
 (approximately) spherical geometry of drops can proceed along different paths, 
 depending on whether the drop forms at the free ends or through the 
@@ -386,6 +388,7 @@ drops is quite well understood, with robust scaling laws establishing the drop d
 function of the width of the original ligament \cite{end_pinch_1} (although there is some weak ($We^{-1/7}$) 
 dependence on the inertial stretching rate \cite{end_pinch_3} ).
 This turns our attention solely towards the destabilization of the ligament bulk. 
+
 
 The mechanism of drop formation via the rupture of a liquid column is 
 fundamentally non-linear in nature \cite{eggers2008physics,eggers1995theory}, 
@@ -422,6 +425,8 @@ generation of random but unique geometrical shapes of the ligament surface using
 We incorporate stochasticity into our numerical investigation by carrying out ensembles of such numerical 
 simulations of slender ligaments with randomly perturbed shapes, in which each realization corresponds 
 to a random but unique initial configuration.
+
+\newpage
 
 An outline of the ensuing chapters is as follows: 
 

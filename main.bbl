@@ -19,40 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{rutland1971non}{article}{}
-      \name{author}{2}{}{%
-        {{hash=6767da9a613533d46dd63a6c378a92a6}{%
-           family={Rutland},
-           familyi={R\bibinitperiod},
-           given={DF},
-           giveni={D\bibinitperiod}}}%
-        {{hash=4e314c104bff5bbe92c5601a47018f67}{%
-           family={Jameson},
-           familyi={J\bibinitperiod},
-           given={GJ},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{0fef940aba78ad02ef7b366aebda1378}
-      \strng{fullhash}{0fef940aba78ad02ef7b366aebda1378}
-      \strng{bibnamehash}{0fef940aba78ad02ef7b366aebda1378}
-      \strng{authorbibnamehash}{0fef940aba78ad02ef7b366aebda1378}
-      \strng{authornamehash}{0fef940aba78ad02ef7b366aebda1378}
-      \strng{authorfullhash}{0fef940aba78ad02ef7b366aebda1378}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Fluid Mechanics}
-      \field{number}{2}
-      \field{title}{A non-linear effect in the capillary instability of liquid jets}
-      \field{volume}{46}
-      \field{year}{1971}
-      \field{pages}{267\bibrangedash 271}
-      \range{pages}{5}
-    \endentry
     \entry{seinfeld1998air}{article}{}
       \name{author}{2}{}{%
         {{hash=81028e878e8098b5d26e080815a4300c}{%
@@ -456,154 +422,6 @@
       \field{pages}{1\bibrangedash 35}
       \range{pages}{35}
     \endentry
-    \entry{lasheras}{article}{}
-      \name{author}{2}{}{%
-        {{hash=fda50eea2f45732e4f6bf798a3f05fa9}{%
-           family={Lasheras},
-           familyi={L\bibinitperiod},
-           given={Juan\bibnamedelima C},
-           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=1909b77e15c3fa701bb32d56315d0139}{%
-           family={Hopfinger},
-           familyi={H\bibinitperiod},
-           given={EJ},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
-      }
-      \strng{namehash}{e550aa6f27592eaba265560c20125914}
-      \strng{fullhash}{e550aa6f27592eaba265560c20125914}
-      \strng{bibnamehash}{e550aa6f27592eaba265560c20125914}
-      \strng{authorbibnamehash}{e550aa6f27592eaba265560c20125914}
-      \strng{authornamehash}{e550aa6f27592eaba265560c20125914}
-      \strng{authorfullhash}{e550aa6f27592eaba265560c20125914}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annual review of fluid mechanics}
-      \field{number}{1}
-      \field{title}{Liquid jet instability and atomization in a coaxial gas stream}
-      \field{volume}{32}
-      \field{year}{2000}
-      \field{pages}{275\bibrangedash 308}
-      \range{pages}{34}
-    \endentry
-    \entry{ling}{article}{}
-      \name{author}{4}{}{%
-        {{hash=dfe13e9b78c12ee80286c816d618f294}{%
-           family={Ling},
-           familyi={L\bibinitperiod},
-           given={Y},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=8b1ea46c19f9e8d728a6062d2779e425}{%
-           family={Fuster},
-           familyi={F\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=67bd3e8e8362d7d48106d883530bb486}{%
-           family={Tryggvason},
-           familyi={T\bibinitperiod},
-           given={G},
-           giveni={G\bibinitperiod}}}%
-        {{hash=0b169305b3d7acfb24c2d6aeb7ab980f}{%
-           family={Zaleski},
-           familyi={Z\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{79ed99fd82bbbcd6b384c6eaf8a0b9ad}
-      \strng{fullhash}{b0679c8e2d6fc4450bdaa5e1b848714b}
-      \strng{bibnamehash}{79ed99fd82bbbcd6b384c6eaf8a0b9ad}
-      \strng{authorbibnamehash}{79ed99fd82bbbcd6b384c6eaf8a0b9ad}
-      \strng{authornamehash}{79ed99fd82bbbcd6b384c6eaf8a0b9ad}
-      \strng{authorfullhash}{b0679c8e2d6fc4450bdaa5e1b848714b}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Fluid Mechanics}
-      \field{title}{A two-phase mixing layer between parallel gas and liquid streams: multiphase turbulence statistics and influence of interfacial instability}
-      \field{volume}{859}
-      \field{year}{2019}
-      \field{pages}{268\bibrangedash 307}
-      \range{pages}{40}
-    \endentry
-    \entry{bremond}{article}{}
-      \name{author}{3}{}{%
-        {{hash=913c44cc97507cd4dd92548afc9d616b}{%
-           family={Bremond},
-           familyi={B\bibinitperiod},
-           given={Nicolas},
-           giveni={N\bibinitperiod}}}%
-        {{hash=9867ae0c6dc72cb5b1639cd3db4604e0}{%
-           family={Clanet},
-           familyi={C\bibinitperiod},
-           given={Christophe},
-           giveni={C\bibinitperiod}}}%
-        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
-           family={Villermaux},
-           familyi={V\bibinitperiod},
-           given={Emmanuel},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge; New York: Cambridge University Press, 1956-}%
-      }
-      \strng{namehash}{17689d58cd6495a8c4f3f2100f094d74}
-      \strng{fullhash}{17689d58cd6495a8c4f3f2100f094d74}
-      \strng{bibnamehash}{17689d58cd6495a8c4f3f2100f094d74}
-      \strng{authorbibnamehash}{17689d58cd6495a8c4f3f2100f094d74}
-      \strng{authornamehash}{17689d58cd6495a8c4f3f2100f094d74}
-      \strng{authorfullhash}{17689d58cd6495a8c4f3f2100f094d74}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Fluid Mechanics}
-      \field{title}{Atomization of undulating liquid sheets}
-      \field{volume}{585}
-      \field{year}{2007}
-      \field{pages}{421\bibrangedash 456}
-      \range{pages}{36}
-    \endentry
-    \entry{lydia_3}{article}{}
-      \name{author}{2}{}{%
-        {{hash=61ad10c626e1d641e0b1d7b5f48d3233}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Y},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=67e18953c927577e833898b2e10b4ed1}{%
-           family={Bourouiba},
-           familyi={B\bibinitperiod},
-           given={L},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{31ff88a2e005d5d86ee9cca0c96e01fb}
-      \strng{fullhash}{31ff88a2e005d5d86ee9cca0c96e01fb}
-      \strng{bibnamehash}{31ff88a2e005d5d86ee9cca0c96e01fb}
-      \strng{authorbibnamehash}{31ff88a2e005d5d86ee9cca0c96e01fb}
-      \strng{authornamehash}{31ff88a2e005d5d86ee9cca0c96e01fb}
-      \strng{authorfullhash}{31ff88a2e005d5d86ee9cca0c96e01fb}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Fluid Mechanics}
-      \field{title}{Unsteady sheet fragmentation: droplet sizes and speeds}
-      \field{volume}{848}
-      \field{year}{2018}
-      \field{pages}{946\bibrangedash 967}
-      \range{pages}{22}
-    \endentry
     \entry{hole_drop}{article}{}
       \name{author}{5}{}{%
         {{hash=860c7e7b0069a68e99d53206f98329d1}{%
@@ -641,8 +459,8 @@
       \strng{authorbibnamehash}{bccd55d412cdea5a04a36e58baf7ad3d}
       \strng{authornamehash}{bccd55d412cdea5a04a36e58baf7ad3d}
       \strng{authorfullhash}{8c300af7417abb0c6b7a1413eab7c626}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review E}
@@ -675,8 +493,8 @@
       \strng{authorbibnamehash}{2a0637fdcd9db7162ea3d62554d60edc}
       \strng{authornamehash}{2a0637fdcd9db7162ea3d62554d60edc}
       \strng{authorfullhash}{2a0637fdcd9db7162ea3d62554d60edc}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Philosophical Transactions of the Royal Society of London. Series A, Mathematical and Physical Sciences}
@@ -714,8 +532,8 @@
       \strng{authorbibnamehash}{1fde1293b320b360b05c799129afddf0}
       \strng{authornamehash}{1fde1293b320b360b05c799129afddf0}
       \strng{authorfullhash}{1fde1293b320b360b05c799129afddf0}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Multiphase Flow}
@@ -742,8 +560,8 @@
       \strng{authorbibnamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authornamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authorfullhash}{da4f5a8595565561cf6c514b5634ccc7}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Annual Review of Fluid Mechanics}
@@ -770,8 +588,8 @@
       \strng{authorbibnamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authornamehash}{da4f5a8595565561cf6c514b5634ccc7}
       \strng{authorfullhash}{da4f5a8595565561cf6c514b5634ccc7}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -838,8 +656,8 @@
       \strng{authorbibnamehash}{c9708c0ea61ac656c66a54ccce332eae}
       \strng{authornamehash}{c9708c0ea61ac656c66a54ccce332eae}
       \strng{authorfullhash}{c9708c0ea61ac656c66a54ccce332eae}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{ASME 2002 Joint US-European Fluids Engineering Division Conference}
@@ -903,8 +721,8 @@
       \strng{authorbibnamehash}{61c89e1bd5eecdbded4ce8726d124e7c}
       \strng{authornamehash}{61c89e1bd5eecdbded4ce8726d124e7c}
       \strng{authorfullhash}{61c89e1bd5eecdbded4ce8726d124e7c}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physica Scripta}
@@ -937,8 +755,8 @@
       \strng{authorbibnamehash}{f0c6c18982abac8fe59a2d8de3392e3a}
       \strng{authornamehash}{f0c6c18982abac8fe59a2d8de3392e3a}
       \strng{authorfullhash}{f0c6c18982abac8fe59a2d8de3392e3a}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1018,8 +836,8 @@
       \strng{authorbibnamehash}{cf82b899bc05acd470a4dd95ff3669c3}
       \strng{authornamehash}{cf82b899bc05acd470a4dd95ff3669c3}
       \strng{authorfullhash}{f3be8b43e6de80386d494e218eb4e954}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Computers \& Fluids}
@@ -1137,8 +955,8 @@
       \strng{authorbibnamehash}{e389d8f26d798998246ceb7752aec912}
       \strng{authornamehash}{e389d8f26d798998246ceb7752aec912}
       \strng{authorfullhash}{29aea1e624819cf52c9856164eebdeeb}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Computational Physics}
@@ -1217,6 +1035,40 @@
       \field{pages}{2853\bibrangedash 2865}
       \range{pages}{13}
     \endentry
+    \entry{rutland1971non}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6767da9a613533d46dd63a6c378a92a6}{%
+           family={Rutland},
+           familyi={R\bibinitperiod},
+           given={DF},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4e314c104bff5bbe92c5601a47018f67}{%
+           family={Jameson},
+           familyi={J\bibinitperiod},
+           given={GJ},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{0fef940aba78ad02ef7b366aebda1378}
+      \strng{fullhash}{0fef940aba78ad02ef7b366aebda1378}
+      \strng{bibnamehash}{0fef940aba78ad02ef7b366aebda1378}
+      \strng{authorbibnamehash}{0fef940aba78ad02ef7b366aebda1378}
+      \strng{authornamehash}{0fef940aba78ad02ef7b366aebda1378}
+      \strng{authorfullhash}{0fef940aba78ad02ef7b366aebda1378}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{number}{2}
+      \field{title}{A non-linear effect in the capillary instability of liquid jets}
+      \field{volume}{46}
+      \field{year}{1971}
+      \field{pages}{267\bibrangedash 271}
+      \range{pages}{5}
+    \endentry
     \entry{khi}{article}{}
       \name{author}{1}{}{%
         {{hash=42499dfc852eb2499dfa471c1aa9622f}{%
@@ -1234,8 +1086,8 @@
       \strng{authorbibnamehash}{42499dfc852eb2499dfa471c1aa9622f}
       \strng{authornamehash}{42499dfc852eb2499dfa471c1aa9622f}
       \strng{authorfullhash}{42499dfc852eb2499dfa471c1aa9622f}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Fluid Mechanics}
@@ -1245,6 +1097,77 @@
       \field{year}{1970}
       \field{pages}{321\bibrangedash 335}
       \range{pages}{15}
+    \endentry
+    \entry{bremond}{article}{}
+      \name{author}{3}{}{%
+        {{hash=913c44cc97507cd4dd92548afc9d616b}{%
+           family={Bremond},
+           familyi={B\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9867ae0c6dc72cb5b1639cd3db4604e0}{%
+           family={Clanet},
+           familyi={C\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=db99ae44e5e03e687e084e29c29e0a0e}{%
+           family={Villermaux},
+           familyi={V\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge; New York: Cambridge University Press, 1956-}%
+      }
+      \strng{namehash}{17689d58cd6495a8c4f3f2100f094d74}
+      \strng{fullhash}{17689d58cd6495a8c4f3f2100f094d74}
+      \strng{bibnamehash}{17689d58cd6495a8c4f3f2100f094d74}
+      \strng{authorbibnamehash}{17689d58cd6495a8c4f3f2100f094d74}
+      \strng{authornamehash}{17689d58cd6495a8c4f3f2100f094d74}
+      \strng{authorfullhash}{17689d58cd6495a8c4f3f2100f094d74}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Atomization of undulating liquid sheets}
+      \field{volume}{585}
+      \field{year}{2007}
+      \field{pages}{421\bibrangedash 456}
+      \range{pages}{36}
+    \endentry
+    \entry{lydia_3}{article}{}
+      \name{author}{2}{}{%
+        {{hash=61ad10c626e1d641e0b1d7b5f48d3233}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=67e18953c927577e833898b2e10b4ed1}{%
+           family={Bourouiba},
+           familyi={B\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{31ff88a2e005d5d86ee9cca0c96e01fb}
+      \strng{fullhash}{31ff88a2e005d5d86ee9cca0c96e01fb}
+      \strng{bibnamehash}{31ff88a2e005d5d86ee9cca0c96e01fb}
+      \strng{authorbibnamehash}{31ff88a2e005d5d86ee9cca0c96e01fb}
+      \strng{authornamehash}{31ff88a2e005d5d86ee9cca0c96e01fb}
+      \strng{authorfullhash}{31ff88a2e005d5d86ee9cca0c96e01fb}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{Unsteady sheet fragmentation: droplet sizes and speeds}
+      \field{volume}{848}
+      \field{year}{2018}
+      \field{pages}{946\bibrangedash 967}
+      \range{pages}{22}
     \endentry
     \entry{vill_1}{article}{}
       \name{author}{1}{}{%
@@ -1375,6 +1298,83 @@
       \field{year}{1992}
       \field{pages}{611\bibrangedash 626}
       \range{pages}{16}
+    \endentry
+    \entry{lasheras}{article}{}
+      \name{author}{2}{}{%
+        {{hash=fda50eea2f45732e4f6bf798a3f05fa9}{%
+           family={Lasheras},
+           familyi={L\bibinitperiod},
+           given={Juan\bibnamedelima C},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=1909b77e15c3fa701bb32d56315d0139}{%
+           family={Hopfinger},
+           familyi={H\bibinitperiod},
+           given={EJ},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
+      }
+      \strng{namehash}{e550aa6f27592eaba265560c20125914}
+      \strng{fullhash}{e550aa6f27592eaba265560c20125914}
+      \strng{bibnamehash}{e550aa6f27592eaba265560c20125914}
+      \strng{authorbibnamehash}{e550aa6f27592eaba265560c20125914}
+      \strng{authornamehash}{e550aa6f27592eaba265560c20125914}
+      \strng{authorfullhash}{e550aa6f27592eaba265560c20125914}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual review of fluid mechanics}
+      \field{number}{1}
+      \field{title}{Liquid jet instability and atomization in a coaxial gas stream}
+      \field{volume}{32}
+      \field{year}{2000}
+      \field{pages}{275\bibrangedash 308}
+      \range{pages}{34}
+    \endentry
+    \entry{ling}{article}{}
+      \name{author}{4}{}{%
+        {{hash=dfe13e9b78c12ee80286c816d618f294}{%
+           family={Ling},
+           familyi={L\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8b1ea46c19f9e8d728a6062d2779e425}{%
+           family={Fuster},
+           familyi={F\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=67bd3e8e8362d7d48106d883530bb486}{%
+           family={Tryggvason},
+           familyi={T\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0b169305b3d7acfb24c2d6aeb7ab980f}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{79ed99fd82bbbcd6b384c6eaf8a0b9ad}
+      \strng{fullhash}{b0679c8e2d6fc4450bdaa5e1b848714b}
+      \strng{bibnamehash}{79ed99fd82bbbcd6b384c6eaf8a0b9ad}
+      \strng{authorbibnamehash}{79ed99fd82bbbcd6b384c6eaf8a0b9ad}
+      \strng{authornamehash}{79ed99fd82bbbcd6b384c6eaf8a0b9ad}
+      \strng{authorfullhash}{b0679c8e2d6fc4450bdaa5e1b848714b}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{A two-phase mixing layer between parallel gas and liquid streams: multiphase turbulence statistics and influence of interfacial instability}
+      \field{volume}{859}
+      \field{year}{2019}
+      \field{pages}{268\bibrangedash 307}
+      \range{pages}{40}
     \endentry
     \entry{end_pinch_1}{article}{}
       \name{author}{1}{}{%
