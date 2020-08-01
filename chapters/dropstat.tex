@@ -653,12 +653,12 @@ using a random process theory for near-monochromatic waves.
 \newcommand\nd{\end{equation}}
 \newcommand\ii{{\textrm{i}}}
 
-In the preceding section, we have obtained an exponential scaling of the form 
-$\textrm{exp}[-d^6]$ for the large drop sizes ($d$ is the normalized diameter), 
-which predicts a significantly lower frequency of rare events than all of our candidate 
+In the preceding section, we have obtained an exponential scaling for the probability distributions
+of drop diameter of the from $\textrm{exp}[-d^6]$, at the limit of large sizes. 
+Such a scaling predicts a significantly lower frequency of rare events than all of our candidate 
 probability density functions such as the Gaussian, Log-Normal and Gamma. 
-We present a theoretical model based on the linearization of the Navier-Stokes
-equations for weakly corrugated ligaments, where the ligament destabilizes 
+In order to explain this result, we develop a theoretical model based on the 
+linearization of the Navier-Stokes equations for weakly corrugated ligaments, where the ligament destabilizes 
 via the growth of perturbations corresponding to a random set of waves, with the assumption
 that the wavelengths are more or less normally distributed around the optimal wavelength 
 of the Rayleigh-Plateau-Savart instability \cite{rayleigh1879a,plateau1849}. 
@@ -670,7 +670,6 @@ initial unperturbed radius $a$ of the ligaments and times by the capillary time
 $\tau = (\rho a^3/\gamma)^{1/2}$ where $\gamma$ is the surface tension.
 Our numerical setup is associated to a finite domain such that $0 < x < L$. 
 The system is initialized at zero velocity and with a local radius $r(x,0) = 1 + h(x,0)$
-
 
 \be
 h(x,0) = \sum_{n=-N}^{N}  A_n e^{\ii k_n x} ,  \label{p1}
