@@ -1,0 +1,36 @@
+\setchapterpreamble[u]{\margintoc}
+\chapter{Conclusions \& Perspectives}
+\labch{conclusion}
+
+In this thesis, numerical investigations pertaining to two different aspects 
+of liquid-gas interfacial flows were carried out using advanced Volume-of-Fluid methods. 
+The first involves understanding and eventually suppressing certain types of 
+numerical instabilities that arise when dealing with flows having marked contrasts in density,
+particularly in the context of low to moderate numerical resolution. 
+The principle of maintaining consistency between the discrete transport of
+the discontinuous mass and momentum fields were implemented  
+using a conservative discretization of the two phase 
+Navier-Stokes equations on staggered Cartesian grids. 
+The \textit{shifted fractions} and \textit{sub-grid} methods were developed
+in order to address the challenge of consistent advection on staggered grids,
+coupled with the extension of the conservative direction-split mass transport
+algorithm of Weymouth and Yue \cite{wy} to the direction-split transport of momentum.
+Several performance aspects of the aforementioned methods were presented using 
+standard benchmark cases such as the behavior of spurious currents in static and
+moving droplets, and the propagation of damped capillary waves. 
+Each of these tests were conducted for density contrasts spanning several orders of magnitude, 
+including a realistic air-water configuration for the case of capillary waves. 
+Both of our consistent methods demonstrate slight to moderate levels of increased accuracy
+when compared to the standard version of our method that is not 
+consistent with respect to mass-momentum transport. 
+A second-order error convergence rate is observed in the case of the 
+static droplet and the capillary wave, with the rate
+reverting to first-order in the case of droplet advection.
+Finally, the robustness and stability of the present method was demonstrated
+using the case of a raindrop falling in air, which involves complex interactions
+of surface tension forces, viscosity and inertia. The method is able to deliver
+relatively good estimates of the flow features especially at low to moderate resolutions, 
+as evidenced by the smooth evolution of quantities such as the droplet kinetic
+energy and moment of inertia. A key feature of the our class of consistent methods 
+is the ability to circumvent un-physical interfacial deformations (artificial atomization of the raindrop)
+that are rampant in the case of the non consistent version of the method.
