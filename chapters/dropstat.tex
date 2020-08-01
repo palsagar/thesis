@@ -12,19 +12,19 @@ ligaments that are initially at rest, the axisymmetric shapes of which
 are generated in a precisely controllable (and reproducible) manner, 
 entailing the superposition of randomly overlapping waves. 
 The resulting individual ligaments are characterised primarily 
-by the its characteristic length scale, aspect ratio and the variance of 
+by the characteristic length scale, aspect ratio and the variance of 
 the initial white noise signal used to create the randomly corrugated shape.
 Direct numerical simulations (DNS) performed on these ligament shapes 
-provided us with important insights, primarily regarding the differences in the 
+provide us with important insights, primarily regarding the differences in the 
 trajectories of the destabilization and subsequent coalescence dynamics
 as a function of the set of initial conditions used. 
-In principle we can have an infinite number of unique initial corrugated shapes 
-using our white noise algorithm, with each shape characterized by an identical set 
-of adimensional parameters ($Oh$, $\varepsilon$, $\Lambda$ and $K$) .
-But, the properties of the drops generated via the ligament breakup 
+In principle we can generate an infinite number of unique initial corrugated shapes 
+using our white noise algorithm, each shape characterized by an identical set 
+of adimensional parameters ($\textrm{Oh}$, $\varepsilon$, $\Lambda$ and $K$) .
+The properties of the drops generated via the ligament breakup 
 using the DNS is in strict correspondence to the \textit{exact} initial shape 
-of the ligament, due to the deterministic nature of the underlying governing equations. 
-Therefore, even a slight change in initial conditions would lead us to a different collection 
+of the ligament due to the deterministic nature of the underlying governing equations. 
+Therefore, even a slight change in initial conditions lead us to a different collection 
 of drops, which may or may not be representative of the total population of drops associated to 
 that particular combination of dimensionless parameters. 
 
@@ -79,7 +79,7 @@ the local perturbation $h(x,t)$ is close to $-1$ or smaller.
 \subsection*{Gaussian random process theory for near-monochromatic waves}
 
 In the regime where $h \ll 1$ the Navier--Stokes equations may be linearized.
-After a phase of linear growth, we expect none linear effects to take over 
+After a phase of linear growth, we expect non linear effects to take over 
 and the thread to pinch wherever a minimum of radius has developed, i.e. a maximum of $h$. 
 A simple model accounting for the linear growth is  
 
@@ -116,10 +116,6 @@ h(x,0) = \int_{-\infty}^{\infty}  A(k) e^{\ii k x} {\textrm{d}} k ,
 \nd
 
 where $k_M \gg k_m$ is the cutoff defined above in the numerical section. 
-\marginnote{Even in the absence of this cutoff the
-strong damping of the linear theory would still annihilate the large $k$ modes
-thereby giving us identical results.
-}
 The complex amplitudes $A(k)$ form also a Gaussian process \cite{monin1971statistical} with
 
 \be
@@ -136,6 +132,10 @@ v_0 = \langle h(x,0)^2 \rangle = \int_0^\infty E(k) {\textrm{d}}k .
 \nd
 
 In the numerics we use a low pass filter
+\sidenote{Even in the absence of this cutoff the
+strong damping of the linear theory would still annihilate the large $k$ modes
+thereby giving us identical results.
+}
 with $E(k)= v_0/(2k_M)$ for $k<k_M$ and $E(k)=0$ otherwise. 
 From (\ref{linth}) one has $A(k,t) = A(k) \exp[ s_m t -  C (k - k_m)^2 t]$ and 
 at finite time $t$ one has the shape
@@ -255,7 +255,7 @@ amplitude has reached an order 1 level that is when $t \simeq t_{NL}$ with
 t_{NL} \sim \frac 1{2s_m} \ln v_0 .
 \nd
 
-Once the breakup happens, the volume captured between the throats is
+Once the breakup happens, the volume of the droplet captured between the throats is
 $  V_e = \pi  x_1$ , where the equivalent diameter of the resulting drops is
 $\pi d^3/6 =  \pi  x_1$  and $d^3 = 6  x_1$ so that
 the variable $d^3$ is Gaussian with standard deviation
@@ -268,10 +268,10 @@ the variable $d^3$ is Gaussian with standard deviation
 Using the property 
 
 \be
-P_d ( d) {\textrm{d}} d = P_{d^3} (d^3) {\textrm{d}} d^3
+P_d ( d) {\textrm{d}} d = P_{d^3} (d^3) {\textrm{d}} d^3 ,
 \nd
 
-The final droplet size distribution is
+the final droplet size distribution is
 
 \be
   P_{d,G} (d) =  \frac{3 d^2}{\sqrt{2\pi} \sigma} \exp\left[- \frac{(d^3 - d_m^3)^2}{2 \sigma^2}\right] , 
@@ -295,8 +295,8 @@ occurence per unit length
 \lambda = \exp[{-1/(2 v_0^2)}]/l_c \label{p3} , 
 \nd
 
-where $l_c \sim 1/k_N$ is the correlation length of the initial condition. There is thus an exponential distiubution
-of breaking lengths $x_1$ and thus of droplet diameters $d$ with rate $\lambda$ and thus a distribution of diameters
+where $l_c \sim 1/k_N$ is the correlation length of the initial condition. There is an exponential distiubution
+of breaking lengths $x_1$ and droplet diameters $d$ with rate $\lambda$ , thus resulting in a distribution of diameters
 
 \be
   P_{d,P} (d) = {3d^2} \lambda e^{-\lambda d^3} \label{PP} .
@@ -312,50 +312,49 @@ For large lengths and small rates $\lambda$, both types of breakup have small pr
 hence
 
 \be
-  {\lambda d_c^3} + 1/(2 v_0^2) + \ln l_c \sim \frac{(d_c^3 - d_m^3)^2}{2 \sigma^2}
+  {\lambda d_c^3} + 1/(2 v_0^2) + \ln l_c \sim \frac{(d_c^3 - d_m^3)^2}{2 \sigma^2} 
 \nd 
 
-We define the length
+Defining the length
 
 \be
-  \ell = (1/v_0)^{1/3} \sigma^{2/3} \sim   (6  \pi)^{2/3} \left( \frac {2 s_m} {C \ln v_0} \right)^{1/3}  (1/v_0)^{1/3}
+  \ell = (1/v_0)^{1/3} \sigma^{2/3} \sim   (6  \pi)^{2/3} \left( \frac {2 s_m} {C \ln v_0} \right)^{1/3}  (1/v_0)^{1/3} , 
 \nd
 
-In the regime of small $v_0$ one has $\ell \gg d_m$ and thus $d_c \sim \ell$. At $d \gg d_c$ the Poisson distribution
+in the regime of small $v_0$ one has $\ell \gg d_m$ and thus $d_c \sim \ell$. At $d \gg d_c$ the Poisson distribution
 dominates and $P_d(d) \sim P_{d,P}$ . 
 For $d \ll d_c$ the $d^3$-Gaussian distribution dominates. 
 
 
 \section{Millimeter Scale Ensembles}
 
-We turn our attention towards slender ligaments whose widths are of the 
+We now turn our attention towards slender ligaments whose widths are of the 
 order of millimeters, a scale at which a multitude of fragmentation phenomena
 \sidenote{Some examples of fragmentation at this length scale involve ligaments
 generated by drop splashes on different substrates, secondary atomization of raindrops etc. 
 }
-take place, that are more or less visible to the naked eye.
+take place that are more or less visible to the naked eye.
 In particular, for air-water systems (20 degree Celsius) the millimeter length 
-scale corresponds to $Oh \sim O(10^{-2})$, where $Oh$ is the Ohnesorge number
+scale corresponds to $\textrm{Oh} \sim O(10^{-2})$, where $\textrm{Oh}$ is the Ohnesorge number
 based on the characteristic length scale of the ligaments. 
 The characterization of our corrugated ligament setup using the set of adimensional
-(e.g. \eqref{base_params}) numbers as discussed in the previous chapter is extended 
+(equation \eqref{base_params}) numbers as discussed in the previous chapter is extended 
 to describe our ensemble of ligaments, such that the exact set of parameters
 correspond to a unique point in the phase space $\Phi$ of all possible combinations. 
-The coalescences that intermittently occur after the initial breakup phase of 
-the thread-like structure not only change the number of drops, but also impact the 
-mean and dispersion of the size distribution due to the increase in the number of drops that 
-are significantly larger than the width of the ligament of origin.   
+Coalescence that intermittently occurs after the initial breakup phase of 
+the thread-like structure not only change the number of drops, but also impacts the 
+mean and dispersion of the size distribution due to the increase in the number of drops
+significantly larger than the width of the ligament of origin.   
 This aspect of temporal dependence of the drop sizes corresponding to a particular ligament ensemble
 is taken into account by specifying the time at which the statistics are recorded. 
 Thus, our droplet ensembles associated with the millimeter scale ligaments can be uniquely described 
 by a combination of the time $T$ and $\Phi_0$, where
 
 \begin{align}
-	\Phi_0 \equiv \left( Oh=10^{-2}, K=2\pi, \epsilon=1.0, \Lambda=50 \right). 
+	\Phi_0 \equiv \left( \textrm{Oh}=10^{-2}, K=2\pi, \epsilon=1.0, \Lambda=50 \right). 
 \end{align}
 
-The definitions of the adimensional groups are identical to that used
-in the previous chapter, hence are not repeated.
+The definition of the adimensional groups are identical to that used in the previous chapter.
 Statistical descriptions of the drop sizes are commonly carried out using
 particular probability density functions (PDF) defined as follows 
 
@@ -403,10 +402,9 @@ Another important aspect to consider is the bin-width of the
 histograms used to construct the probability distributions. 
 There are several choices regarding the criteria used to determine the optimal bin-width, 
 taking into consideration the size, variability and skewness of the underlying data set. 
-In in interest of simplicity, we restrict our focus to histograms with uniform bin-width. 
+In the interest of simplicity, we restrict our focus to histograms with uniform bin-width. 
 In order to ascertain the dependence (if any) of the distribution on the number of bins  
-(uniform size), we use $4$ different estimators, the open source implementations of which
-can be found in the Numpy library \cite{numpy}.
+(uniform size), we use $4$ different estimators which can be found in the Numpy library \cite{numpy}.
 The simplest of the four estimators selects the number 
 of bins as the square root of the sample size.
 Another estimator is also based solely on the size of the dataset, 
@@ -431,10 +429,10 @@ Figures \ref{t1_dia_bins} and \ref{t2_dia_bins} illustrate the probability distr
 of the normalized droplet diameter corresponding to $T=15$ and $T=30$ respectively. 
 The diamters are normalized using the means of the associated samples. 
 The bin widths are always based on the properties of the largest sample.
-As one can observe, there are fewer drops in the largest sample at $T=30$ 
-compared to the largest sample at $T=30$, due to the additional coalescences.  
+As one can observe, there are fewer drops in all samples at $T=30$ 
+compared to the corresponding ones at $T=15$, due to the additional coalescences.  
 The drop diameters are found to be more or less symmetrically distributed about the mean,
-although there is an small peak at the lower end of the dis.
+although there is an small peak at the lower end of the distribution.
 The choice of binning criteria does not seem to have any noticable effect on the 
 overall shape of the distribution, regardless of the size of the sample $N$.   
 A Guassian probability density function \eqref{gauss} appears to be a good 
@@ -580,7 +578,7 @@ Fig. \ref{t2_vol_fits} shows a comparison of the different probaility
 density functions applied to the largest ensemble of drops characterized by $\Phi_0$ and $T=30$. 
 The Gamma density function is found to be the best approximation to the normalized 
 volume distribution, followed by the Log-Normal and Gaussian functions.
-Similar to the diameter case, the Gaussian and Log-Normal curves are 
+Similar to the diameter distribution fit, the Gaussian and Log-Normal curves are 
 generated using the mean and variance of the dataset, 
 whereas the free parameter $n$ of the Gamma function is determined
 according to the best least-squares fit over the histogram. 
@@ -614,25 +612,29 @@ shape of the ligament is expected to have a significant influence on the
 destabilization of the liquid thread and the concomitant coalescence dynamics.
 In order to ascertain the impact of the strength of the initial perturbations
 on the resulting drop size distribution, we conduct simulations of two different 
-millimeter scale ensembles $\Phi_1$ and $\Phi_2$. Both of them are characterized 
-by the same set of adimensional parameters as in $\Phi_0$, except that $\varepsilon = 0.4$
-in case of $\Phi_1$, whereas $\varepsilon = 1.6$ in case of $\Phi_2$.
+millimeter scale ensembles $\Phi_1$ and $\Phi_2$, defined below as 
+
+\begin{align}
+	\Phi_1 \equiv & \left( Oh = 10^{-2}, K = 2\pi , \varepsilon = 0.4 , \Lambda = 50 \right) ,  \\
+	\Phi_2 \equiv & \left( Oh = 10^{-2}, K = 2\pi , \varepsilon = 1.6 , \Lambda = 50 \right) . 
+\end{align}
 
 For the case of weakly perturbed ligaments, Fig. \ref{tseries_small} 
 demonstrates the temporal evolution of the droplet diameter distributions, 
 where the diameter is rescaled by the (mean) width $W$ of the initial ligaments. 
-At small time scales, the distribution is bimodal in nature, consisting of a large
-number of drops that are quite smaller than even the initial ligament width. 
+At small time scales, the distribution is bimodal in nature, including a large
+number of drops that are smaller than the initial ligament width. 
 This may be a consequence of the non-linear effects \cite{sat_1, sat_2} 
 that kick in immediately following the initial linear (exponential) growth phase, 
 often resulting in the liquid thread disintegrating into a collection of main 
-and (significantly smaller) satellite drops (see Fig. \ref{amp_comp} in the preceding chapter). 
+and satellite drops (see Fig. \ref{amp_comp} in the preceding chapter). 
 At large times, the peak corresponding to the smaller sizes is considerably diminished, 
 whereas the larger size peak develops into more of a ``plateau'' type shape.  
-This observed shifts in the distribution as a function of time can be explained by the 
-successive coalescences taking place, where the smallest drops coalesce with the largest drops.
+This shift in the distribution in time can be explained by 
+successive coalescence, where the smallest drops coalesce with the largest ones. 
 By largest drops, we mean the ones situated to the right of the large size peak, 
-corresponding to the region of the distribution which eventually gives rise to the plateau shape.
+corresponding to the region of the distribution which eventually 
+gives rise to the plateau in the droplet distribution.
 
 
 Coming to the strongly perturbed ligament shapes, Fig. \ref{tseries_large} illustrates 
@@ -704,17 +706,17 @@ dashed lines located on both sides of the thicker line corresponding to the resp
 \section{Description of Large Sizes}
 
 The approximately symmetrical diameter distributions that we have seen 
-thus far seem to be well described by a Gaussian probability density function. 
+thus far seem to be relatively well described by a Gaussian probability density function. 
 We shift our focus to the shape of the distribution towards the right hand 
 side of the peak, which represents the large drops emerging from the coalescences.
-Although is is quite tempting to conclude that the PDF of the large sizes 
+Although it is quite tempting to conclude that the PDF of the large sizes 
 scale as $e^{-x^{2}}$ (where $x = D/\langle D \rangle$), a quantitatively rigourous
 procedure is required to ascertain the exact shape in the vicinity of the PDF tail.
-Thus far, we have not taken into account the uncertainties corresponding to
-the bin heights, which might play a crucial role in determining which among
+In the distributions we have shown thus far, we have not taken into account the 
+uncertainties corresponding to the bin heights, which might play a crucial role in determining which among
 the candidate scalings (such as $ e^{-x}$, $e^{-x^{2}}$ etc) best describe the rare events. 
 In order to compute the error bars associated to the bin heights, we define 
-a Bernoulli trial in which a particular drop from the sample $N$ either falls into
+a Bernoulli trial in which a particular drop from the sample size of $N$ either falls into
 bin $i$ or not, with an associated probability $p_i$ of falling into that particular bin.
 Therefore, $n_i$ drops falling into bin $i$ from a sample of $N$ can be described by a binomial distribution. 
 Now, we use a simple model for the bin height uncertainty by setting the length 
@@ -739,7 +741,7 @@ is utilized, through its open-source implementation in the SciPy library \cite{s
 This fitting routine can find the optimal parameters while taking into account the 
 aforementined uncertainty in the bin heights computed using the binomial variance. 
 An important point to note is that even though we can simply find the best fit
-to a given set of points , the goodness of the fit is also a function
+to a given set of points, the quality of the fit is also a function
 of the number of points used to minimize the least-squares error. 
 
 \begin{marginfigure}[-1cm]
@@ -758,10 +760,10 @@ of the number of points used to minimize the least-squares error.
 
 
 Therefore, we use a moving window of points (see Fig. \ref{window}) and quantify 
-the goodness of the fit as a function of the number of points used to estimate the optimal parameters.
-The ``goodness'' can be quantified by the standard deviation of the parameter 
-estimate which is returned by the non-linear least-squares fitting algorithm.  
-Finally, the value of the optimal parameters that correspond to the minimum error 
+the quality of the fit as a function of the number of points used to estimate the optimal parameters.
+The ``quality'' of fit is quantified by the standard deviation of the
+estimate for ``m", which is returned by the non-linear least-squares fitting algorithm.  
+Finally, the value of the optimal parameters that minimize the error 
 (standard deviation of parameter estimate) over the different window sizes 
 is deemed to be the best fit to our set of bin heights near the tail region.
 Additionally, we reframe the fitting problem on logarithmic scales, so 
