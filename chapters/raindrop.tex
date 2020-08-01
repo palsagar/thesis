@@ -1,5 +1,5 @@
 \setchapterpreamble[u]{\margintoc}
-\chapter{Artificial Atomization : The Falling Raindrop}
+\chapter{The Falling Raindrop}
 \labch{raindrop}
 
 The focus of the present chapter shall be to take a closer look at the issues 
@@ -197,7 +197,7 @@ eventually lead to its rapid destabilization and concomitant breakup.
 \caption{The origin of the pressure peak in the front of the droplet. 
 (a) The profile of the pressure on the axis a few timesteps after initialisation 
 with the standard, non-consistent method (red curve) and the consistent method based
-on the conservative Navier-Stokes formulation (green curve). 
+on the shifted fractions (\textbf{MSHIFT}) strategy (green curve). 
 Much larger pressure gradients are present across the interface using the non-consistent method. 
 (b) The pressure distribution immediately after the start of the simulation 
 using the standard, non-consistent method. The pressure peak has not yet resulted
@@ -222,7 +222,7 @@ The standard non-consistent method displays spikes in the kinetic energy that ar
 approximately 3 orders of magnitude larger than that of the consistent method, 
 leading to rapid destabilization. 
 (b) The pressure distribution immediately after the start of the simulation 
-using the consistent method (based on a conservative Navier-Stokes formulation). 
+using the consistent method based on the shifted fractions (\textbf{MSHIFT}) strategy. 
 In all figures the droplet resolution corresponds to $D/h = 16$.
 The simulations are carried out with the CIAM advection method, in conjunction with the Superbee limiter.}
 \label{pressure_2}
@@ -240,7 +240,7 @@ The simulations are carried out with the CIAM advection method, in conjunction w
 \end{tabular}
 \end{center}
 \caption{Flow field around the $3 mm$ droplet with $D/h = 16$ immediately 
-after the start of the simulation with the consistent method, 
+after the start of the simulation with the consistent method (\textbf{MSHIFT}), 
 demonstrating the contours of the norm of the vorticity field (black lines) . 
 The 2D cross-section in these figures corresponds to the 
 mid-plane slice along the Z axis, where the inflow is along 
@@ -270,7 +270,7 @@ scale of the grid size for such coarse levels of grid refinement.
 \end{center}
 \caption{A comparison of the temporal evolution between the standard 
 non-consistent method (top row) and the consistent method based on the 
-conservative formulation of the governing equations (bottom row), 
+shifted fractions (\textbf{MSHIFT}) strategy (bottom row), 
 using the combination of CIAM advection scheme coupled with the Superbee flux limiter. 
 The flow is along the positive X direction, with gravity along the opposite direction. 
 The red contour indicates the isosurface of the volume fraction 
@@ -278,7 +278,9 @@ field corresponding to a value of $0.5$, whereas the black contours
 surrounding the drop represent isosurfaces of the magnitude of vorticity. 
 The raindrop with the non-consistent method displays massive deformations 
 leading to artificial breakup as a result of rapidly growing numerical instabilities. 
-The droplet resolution for both methods is $D/h = 16$ .}
+The droplet resolution for both methods is $D/h = 16$ .
+The temporal evolution in case of the sub-grid based consistent method (\textbf{MSUB}) produces 
+almost indistinguishable figures (bottom row), hence are not shown here.}
 \label{explode_compare}
 \end{figure*}
 
@@ -318,28 +320,25 @@ by using a combination of extremely refined meshes coupled with larger domains
 a computational domain with length corresponding to 32 times the diameter is
 employed, resulting in a problem size of approximately 260 million cells, 
 that too for a relatively low Reynolds number.}
-In what follows, we show that a more computationally efficient approach might be to use a 
+A more computationally efficient approach might be to use a 
 conservative formulation
 \sidenote{A prerequisite of methods that use consistent mass-momentum transport 
 is the formulation of the convective operators in the conservative manner i.e
 divergence of fluxes instead of gradients of the primary (discontinuous) variables.} 
 of the Navier-Stokes equations, in order
 to achieve consistency in the discrete transport of mass and momentum. 
-In what follows, we demonstrate that the use of our class of consistent methods 
-enables us not only to stabilize a majority of the numerical
-instabilities we have come across, but also delivers relatively good approximations 
-of the dynamics involved. A thorough and detailed exposition of the principles
+A thorough and detailed exposition of the principles
 behind the consistent methods and the different strategies towards achieving consistent
 transport has already been covered in the preceding chapter.  
+We observe that the use of our class of consistent methods 
+enables us to stabilize a majority of the numerical
+instabilities and bring a systematic improvement over wide range of 
+flux limiters (WENO, ENO, Superbee, QUICK, Verstappen) 
+and CFL numbers, as evidenced by comparing the figures \ref{pressure_1} and \ref{pressure_2}. 
 
-We observe that applying the method that ensures consistent mass-momentum 
 transport brings a considerable and systematic improvement over a 
 spectrum of different flux limiters (WENO, ENO, Superbee, QUICK, Verstappen) 
 and CFL numbers, as evidenced by comparing the figures \ref{pressure_1} and \ref{pressure_2}. 
-To summarize, the simulations broadly fall into three categories. 
-The first two categories concern those that use the method ensuring  
-consistent mass-momentum transport, and as a result maintain 
-physical values of the kinetic energy and smooth interface shapes. 
 
 \begin{figure}
 \begin{center}
@@ -449,7 +448,7 @@ error (least-squares) corresponding to the obtained linear fits.}
 \hspace*{-1.0cm}
 \includegraphics[width=0.7\textwidth]{plots/raindrop/raindrop_mass_conv_resolution.png} & 
 \hspace{-0.2cm}%
-\includegraphics[width=0.7\textwidth]{plots/raindrop/acc_conv.png} \\ 
+\includegraphics[width=0.7\textwidth]{plots/raindrop/new.png} \\ 
 \hspace{-0.2cm}%
 (c) & (d)
 \end{tabular}
@@ -565,45 +564,60 @@ catastrophic loss of stability for the numerical method.
 We observe a systematic drop in the amount of the droplet 
 kinetic energy as we increase resolution, with the most probable explanation 
 being that of the suppression of spurious interfacial 
-oscillations which are rampant at lower resolutions. 
+jitter which is rampant at lower resolutions. 
 There is also a component of the kinetic energy of the droplet 
 associated with the internal coherent vortical structures generated due to 
 the interaction of aerodynamic shear at the interface, 
 evidenced by the non-zero value of the kinetic 
 energy even for the most highly resolved droplets. 
-Finally, the moments of inertia of the droplet appear to evolve 
-in a smooth manner for all droplet resolutions, with higher 
-resolutions exhibiting lower values at the same instants of time (comparing the moments along the same direction), 
-as a result of the more compact shapes obtained once the 
-spurious interfacial deformation modes are subdued (due to higher resolution). 
-This observation holds true for the moment of inertia curves regardless of direction.           
+Finally. the moments of inertia of the droplet appear to evolve in a smooth manner 
+for both our methods, for all droplet resolutions.
 
-
+In figures \ref{drop_vel_caf} and \ref{drop_vel_jcp}, 
+we show the velocity of the center of mass of the droplet 
+(in the frame of reference of the box enclosing the droplet) 
+as a function of time, and its behavior as we increase the droplet resolution. 
 We have to keep in mind that the velocity inflow condition 
-does not correspond to the `exact' terminal velocity 
+of $5$ m/s does not correspond to the terminal velocity 
 field of an actual falling raindrop might experience, 
-hence the droplet in our numerical setup does have some 
-finite acceleration due to the imbalance 
-between the aerodynamic forces and gravity. 
-In figures \ref{drop_vel_caf} and \ref{drop_vel_jcp}, we plot the velocity of 
-the center of mass of the droplet (in the frame of reference 
-of the box enclosing the droplet) as a function of time, 
-and its behavior as we increase the droplet resolution. 
-As one can observe, due to the imbalance of forces acting on the droplet, 
-it undergoes a net acceleration as evidenced by the approximately 
-linear increase (absolute value) in the velocity as a function of time. 
+hence the droplet in our numerical setup has some 
+near constant acceleration for very small times once the simulation are started.
 The temporal variation in the droplet velocity is fitted to a 
 linear polynomial in order to evaluate the droplet acceleration 
 by means of a standard least-squares approach, for each droplet resolution. 
-We illustrate (inset Figure \ref{drop_vel_caf}) the convergence in the estimated 
-accelarations as a consequence of increasing spatial resolution, 
-as evidenced by a decrease in the standard error on the fits 
-ranging from $\pm 11.1 \%$ for $D/h = 8$ to a value of $\pm 0.12 \%$ 
-for the highest resolution of $D/h = 64$. 
-The results obtained in this section indicate that 
-our numerical method can be used to get relatively good 
-estimates of the underlying flow features of the droplet 
-without observing an un-physical evolution as a consequence 
-of discretization errors at low to moderate resolutions.           
+The observed accelerations (insets of figures \ref{drop_vel_caf} and \ref{drop_vel_jcp})
+for the \textbf{MSHIFT} and \textbf{MSUB} methods are 
+$\frac{\textrm{d}U}{\textrm{d}t} \simeq 5.8 \pm 0.1$ $m/s^2$
+and $\frac{\textrm{d}U}{\textrm{d}t} \simeq 4.5 \pm 0.4$ $m/s^2$
+respectively, the error estimates being obtained from the difference
+between the $D/h = 2^5$ and the $D/h = 2^6$ resolutions.
+The decrease of the error, obtained as above from the
+difference between succesive resolutions using the \textbf{MSHIFT} method 
+is plotted on Fig. \ref{mass_conv} (d), which shows the lack of any apparent 
+order, although the second-order convergence line is plotted as a reference.
+
+In Fig. \ref{mass_conv} we show the mass conservation properties 
+of the shifted fractions method (\textbf{MSHIFT}) corresponding to the two most 
+stable combinations, that is the WY advection with the QUICK 
+flux limiter and the CIAM advection with the Superbee limiter. 
+The mass conservation of the WY advection is strongly dependent
+on how accurately the divergence-free condition is enforced, which
+in turns is determined by the Poisson's solver tolerance. 
+A clipping procedure, with no redistribution, affects mass conservation as well.
+The WY combination is thus rather sensitive to these two parameters
+but overall performs much better than the CIAM combination which is
+inherently not mass-conserving and not very sensitive to the Poisson's solver 
+tolerance and the clipping parameter $\epsilon_{c}$.
+Mass conservation is also plotted with various 
+resolutions $D/h$ in Fig. \ref{mass_conv}c. 
+It is seen that going from $D/h=32$ to $D/h=64$
+the mass variation becomes larger for both methods, and grows over time at 
+high resolution for WY, pointing to an accumulation of many machine precision errors.
+
+
+The results obtained in this chapter strongly suggest that 
+our class of consistent numerical methods can be used to get relatively good 
+estimates of the underlying flow features of the droplet without observing 
+any un-physical evolution due to the discretization errors at low to moderate resolutions.           
 
 
