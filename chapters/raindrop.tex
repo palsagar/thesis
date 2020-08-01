@@ -4,7 +4,7 @@
 
 The focus of the present chapter shall be to take a closer look at the issues 
 plaguing numerical methods that try to deal with flows 
-entailing significant density contrasts between the two fluids. 
+entailing significant density contrasts between the fluids. 
 Arguably, the most common instances of such flows are those involving the interaction
 between air and water, primarily in the form of droplets and 
 bubbles that play important roles in both natural and industrial processes. 
@@ -24,24 +24,24 @@ The problem is characterized by a combination of Reynolds,
 Weber and Bond numbers, the definitions of which are as follows : 
 
 \begin{align}
-We=\frac{\rho_{g} U^2 D}{\sigma} \quad,\quad Re= \frac{\rho_{l} U D}{\mu_{g}} \quad,\quad Bo=\frac{\left(\rho_{l}-\rho_{g}\right) g D^2 }{\sigma}
+	\textrm{We}=\frac{\rho_{g} U^2 D}{\sigma} \quad,\quad \textrm{Re}= \frac{\rho_{l} U D}{\mu_{g}} \quad,\quad \textrm{Bo}=\frac{\left(\rho_{l}-\rho_{g}\right) g D^2 }{\sigma}
 \end{align}
 
 \marginnote{As the density and viscosity ratios are corresponding to that of air-water systems at 20 degree Celcius,
-an equivalent characterization could be done using the Morton number $\left( Mo = \frac{g\mu_g^4(\rho_l-\rho_g)}{\rho_g^2 \sigma^3} \right)$ 
+an equivalent characterization could be done using the Morton number $\left( \textrm{Mo} = \frac{g\mu_g^4(\rho_l-\rho_g)}{\rho_g^2 \sigma^3} \right)$ 
 in place of the Bond number.}
 
 
 The subscripts $l$ and $g$ represent liquid and gas phases respectively. 
-In our particular numerical setup, $We \simeq 3.2 $, 
-$Re \simeq 1455 $ and $Bo \simeq 1.2 $,
+In our particular numerical setup, $\textrm{We}\simeq 3.2 $, 
+$\textrm{Re} \simeq 1455 $ and $\textrm{Bo} \simeq 1.2 $,
 thus corresponding to that of a $3mm$ diameter raindrop (a relatively large one) 
 falling in the air at an approximate terminal velocity of  
 $8$ m/s (interpolated from empirical data, refer to Gunn and Kinzer \cite{gunn1949}). 
 This choice of length scale of the drop is motivated by the paradigmatic value
 of a near-spherical raindrop simulation, and by the fact that the corresponding Weber
 number ($\sim 3$) is the same as in a similar air-water setup corresponding to  
-suddenly-accelerated-droplet (or ``secondary atomisation" ) simulations in the studies \cite{xiao2012,xiao2014large}.
+suddenly-accelerated-droplet (or ``secondary atomization" ) simulations in the studies \cite{xiao2012,xiao2014large}.
 For such a low Weber number the capillary forces dominate and the 
 droplet should remain intact, and definitely not undergo any subsequent atomization. 
 The parameters in the problem setup are given in Table \ref{raindropprop}, 
@@ -315,11 +315,7 @@ of such instabilities, especially as there will always be some constraints in co
 
 The most common and brute force approach that one can apply 
 in order to suppress or circumvent such numerical instabilities is 
-by using a combination of extremely refined meshes coupled with larger domains
-\sidenote{In the study of Dodd and Ferrante \cite{dodd2014}, 
-a computational domain with length corresponding to 32 times the diameter is
-employed, resulting in a problem size of approximately 260 million cells, 
-that too for a relatively low Reynolds number.}
+by using a combination of extremely refined meshes coupled with large domains \cite{dodd2014}.
 A more computationally efficient approach might be to use a 
 conservative formulation
 \sidenote{A prerequisite of methods that use consistent mass-momentum transport 
@@ -336,10 +332,6 @@ instabilities and bring a systematic improvement over wide range of
 flux limiters (WENO, ENO, Superbee, QUICK, Verstappen) 
 and CFL numbers, as evidenced by comparing the figures \ref{pressure_1} and \ref{pressure_2}. 
 
-transport brings a considerable and systematic improvement over a 
-spectrum of different flux limiters (WENO, ENO, Superbee, QUICK, Verstappen) 
-and CFL numbers, as evidenced by comparing the figures \ref{pressure_1} and \ref{pressure_2}. 
-
 \begin{figure}
 \begin{center}
 \includegraphics[width = 1.0\textwidth]{plots/raindrop/combined_failures_raindrop.png}
@@ -347,7 +339,7 @@ and CFL numbers, as evidenced by comparing the figures \ref{pressure_1} and \ref
 \vspace*{-0.5cm}
 \caption{A juxtaposition of the different manifestations of  
 `artificial' atomization one encounters while using the standard 
-method that does not involve consistency between the discrete transport of mass and momentum. 
+method (\textbf{STD}) that does not involve consistency between the discrete transport of mass and momentum. 
 The red contours indicate the isosurface of the volume fraction 
 field corresponding to a value of $0.5$, acting as a good proxy for the exact interfacial position. 
 One can clearly observe that the un-physical fragmentation of the raindrop is symptomatic 
@@ -372,12 +364,13 @@ at which the code crashes.}
 \end{center}
 \vspace*{-0.5cm}
 \caption{Temporal evolution of quantities of interest to evaluate the 
-performance of the consistent scheme for different spatial resolutions. 
-(a) Kinetic energy of the droplet. 
-(b) Moment of inertia of the droplet along the flow (X) direction. 
-(c) and (d) Moment of inertia of the droplet along the directions 
-perpendicular to flow (Y,Z), evolution of $I_{yy}$ 
-seems to be more or less identical to $I_{zz}$.}
+	performance of our consistent scheme based on the 
+	shifted fractions (\textbf{MSHIFT}) method, for different spatial resolutions. 
+	(a) Kinetic energy relative to the droplet center-of-mass as defined in \eqref{drop_ke}. 
+	(b) Moment of inertia of the droplet along the flow (X) direction. 
+	(c) and (d) Moment of inertia of the droplet along the directions 
+	perpendicular to flow (Y,Z), evolution of $I_{yy}$ 
+	seems to be more or less identical to $I_{zz}$.}
 \label{multi_caf}
 \end{figure*}
 
@@ -388,12 +381,13 @@ seems to be more or less identical to $I_{zz}$.}
 \end{center}
 \vspace*{-0.5cm}
 \caption{Temporal evolution of quantities of interest to evaluate the 
-performance of the consistent scheme for different spatial resolutions. 
-(a) Kinetic energy of the droplet. 
-(b) Moment of inertia of the droplet along the flow (X) direction. 
-(c) and (d) Moment of inertia of the droplet along the directions 
-perpendicular to flow (Y,Z), evolution of $I_{yy}$ 
-seems to be more or less identical to $I_{zz}$.}
+	performance of our consistent scheme based on the 
+	sub-grid (\textbf{MSUB}) method, for different spatial resolutions. 
+	(a) Kinetic energy relative to the droplet center-of-mass as defined in \eqref{drop_ke}. 
+	(b) Moment of inertia of the droplet along the flow (X) direction. 
+	(c) and (d) Moment of inertia of the droplet along the directions 
+	perpendicular to flow (Y,Z), evolution of $I_{yy}$ 
+	seems to be more or less identical to $I_{zz}$.}
 \label{multi_jcp}
 \end{figure*}
 
@@ -403,16 +397,13 @@ seems to be more or less identical to $I_{zz}$.}
 \includegraphics[width = 1.0\textwidth]{plots/raindrop/dropl_velocity_accel_ppd.png}
 \end{center}
 \vspace*{-0.5cm}
-\caption{Comparison of droplet velocity as a function of time, 
-for different droplet resolutions.
-The simulations were carried out with the consistent version of our method,
-using the combination of the WY advection scheme with the QUICK limiter. 
-The droplet velocities correspond to that of their respective center of masses. 
-Inset : Convergence of the droplet acceleration as a function of resolution, 
-computed using the best linear fit over the temporal variation 
-of their respective velocities. 
-The error bars signify the asymptotic standard 
-error (least-squares) corresponding to the obtained linear fits.} 
+\caption{Comparison of droplet velocity as a function of time, for different droplet resolutions.
+	The simulations were carried out with a consistent scheme based on the 
+	shifted fractions (\textbf{MSHIFT}) method, using the WY advection scheme with the QUICK limiter. 
+	The droplet velocities correspond to that of their respective center of masses. 
+	Inset : Convergence of the droplet acceleration as a function of its resolution, 
+	computed using the best linear fit over the temporal variation of their respective velocities. 
+	The error bars signify the asymptotic standard error (least-squares) corresponding to the linear fits.} 
 \label{drop_vel_caf}
 \end{figure}
 
@@ -422,60 +413,16 @@ error (least-squares) corresponding to the obtained linear fits.}
 \includegraphics[width = 1.0\textwidth]{plots/raindrop/jcp_2.png}
 \end{center}
 \vspace*{-0.5cm}
-\caption{Comparison of droplet velocity as a function of time, 
-for different droplet resolutions.
-The simulations were carried out with the consistent version of our method,
-using the combination of the WY advection scheme with the QUICK limiter. 
-The droplet velocities correspond to that of their respective center of masses. 
-Inset : Convergence of the droplet acceleration as a function of resolution, 
-computed using the best linear fit over the temporal variation 
-of their respective velocities. 
-The error bars signify the asymptotic standard 
-error (least-squares) corresponding to the obtained linear fits.} 
+\caption{Comparison of droplet velocity as a function of time, for different droplet resolutions.
+	The simulations were carried out with a consistent scheme based on the 
+	sub-grid (\textbf{MSUB}) method, using the WY advection scheme with the QUICK limiter. 
+	The droplet velocities correspond to that of their respective center of masses. 
+	Inset : Convergence of the droplet acceleration as a function of its resolution, 
+	computed using the best linear fit over the temporal variation of their respective velocities. 
+	The error bars signify the asymptotic standard error (least-squares) corresponding to the linear fits.} 
 \label{drop_vel_jcp}
 \end{figure}
 
-% mass conservation caf_paper
-\begin{figure*}
-\begin{center}
-\begin{tabular}{cc}
-\hspace*{-1.0cm}
-\includegraphics[width=0.7\textwidth]{plots/raindrop/raindrop_mass_conv_16ppd.png} & 
-\hspace{-0.2cm}%
-\includegraphics[width=0.7\textwidth]{plots/raindrop/raindrop_mass_conv_clipping.png} \\ 
-\hspace{-0.2cm}%
-(a) & (b) \\
-\hspace*{-1.0cm}
-\includegraphics[width=0.7\textwidth]{plots/raindrop/raindrop_mass_conv_resolution.png} & 
-\hspace{-0.2cm}%
-\includegraphics[width=0.7\textwidth]{plots/raindrop/new.png} \\ 
-\hspace{-0.2cm}%
-(c) & (d)
-\end{tabular}
-\end{center}
-\caption{Relative change in the mass of the droplet 
-as a function of time in plots (a), (b) and (c). 
-The simulations are carried out with a resolution of $D/h = 16$, 
-for a total time of $0.1$ milliseconds. 
-The symbol ``WY'' in the legend corresponds to those run using 
-the Weymouth-Yue advection scheme in combination with the QUICK limiter, 
-and ``CIAM'' corresponds to the CIAM scheme in combination with the Superbee limiter. 
-(a) The dependence of the mass conservation properties of 
-the scheme as a function of the Poisson solver tolerance is tested. 
-For the WY-QUICK combination, using a stricter tolerance results 
-in better mass conservation, whereas the conservation properties of the 
-CIAM-Superbee combination seems to be independent of the tolerance.
-(b) Dependence of the mass conservation on the clipping parameter employed. 
-The CIAM-Superbee combination again seems to be impervious to changes in clipping, 
-whereas WY-QUICK seems to perform slightly better by lowering the parameter.
-(c) Dependence of the mass conservation properties on the droplet resolution. 
-The WY-QUICK combination displays better results for all except the lowest resolution.   
-(d) Variation of the relative error from the least-squares fit on the droplet acceleration, 
-in the frame of reference of the static box. 
-The corresponding droplet accelerations are plotted in the inset of figure \ref{drop_vel}. 
-The reduction in the relative error follows roughly second-order spatial convergence.}
-\label{mass_conv}
-\end{figure*}
 
 \subsection*{Convergence Study}
 
@@ -523,6 +470,48 @@ where for $U \simeq U_t$, thus giving us
 t_i =  \frac 23 \frac {D}{r U_t}.
 \end{align}
 
+% mass conservation caf_paper
+\begin{figure*}[h!]
+\begin{center}
+\begin{tabular}{cc}
+\hspace*{-1.0cm}
+\includegraphics[width=0.7\textwidth]{plots/raindrop/raindrop_mass_conv_16ppd.png} & 
+\hspace{-0.2cm}%
+\includegraphics[width=0.7\textwidth]{plots/raindrop/raindrop_mass_conv_clipping.png} \\ 
+\hspace{-0.2cm}%
+(a) & (b) \\
+\hspace*{-1.0cm}
+\includegraphics[width=0.7\textwidth]{plots/raindrop/raindrop_mass_conv_resolution.png} & 
+\hspace{-0.2cm}%
+\includegraphics[width=0.7\textwidth]{plots/raindrop/new.png} \\ 
+\hspace{-0.2cm}%
+(c) & (d)
+\end{tabular}
+\end{center}
+\caption{Relative change in the mass of the droplet 
+as a function of time in plots (a), (b) and (c). 
+The simulations are carried out with a resolution of $D/h = 16$, 
+for a total time of $0.1$ milliseconds using the consistent 
+scheme based on the shifted fractions (\textbf{MSHIFT}) method. 
+The symbol ``WY'' in the legend corresponds to those run using 
+the Weymouth-Yue advection scheme in combination with the QUICK limiter, 
+and ``CIAM'' corresponds to the CIAM scheme in combination with the Superbee limiter. 
+(a) Mass conservation properties of 
+the scheme as a function of the Poisson solver tolerance is tested. 
+For the WY-QUICK combination, using a stricter tolerance results 
+in better mass conservation, whereas the conservation properties of the 
+CIAM-Superbee combination seems to be independent of the tolerance.
+(b) Dependence of the mass conservation on the clipping parameter ($\epsilon$) employed. 
+The CIAM-Superbee combination again seems to be impervious to changes in clipping, 
+whereas WY-QUICK seems to perform slightly better by lowering the parameter.
+(c) Dependence of the mass conservation properties on the droplet resolution. 
+The WY-QUICK combination displays better results for all except the lowest resolution.   
+(d) Error estimation of the droplet acceleration in the frame of reference of the static box
+	The corresponding accelerations are plotted in the inset of fig. \ref{drop_vel_caf}.}
+\label{mass_conv}
+\end{figure*}
+
+
 We illustrate the performance of the consistent methods through the 
 results of our simulations in figures \ref{multi_caf} and \ref{multi_jcp}
 for the shifted fractions (\textbf{MSHIFT}) and sub-grid (\textbf{MSUB}) methods respectively. 
@@ -545,9 +534,10 @@ with the three moments of inertia along the different axes $I_m$ defined as -
 where $\mathcal{D}$ is the computational domain and $x_m$ is the 
 distance of the interface relative to the center of mass of the droplet.   
 The droplet kinetic energy is defined relative to the droplet center-of-mass, given by 
-
+ 
 \begin{align}
 	E_k = \langle \rho(x,t) || \boldsymbol{u}(x,t) - \boldsymbol{u}_{CM}||^2 \rangle
+	\label{drop_ke}
 \end{align}
 
 where $ \langle . \rangle$ is the spatial averaging operator over the  
@@ -570,7 +560,7 @@ associated with the internal coherent vortical structures generated due to
 the interaction of aerodynamic shear at the interface, 
 evidenced by the non-zero value of the kinetic 
 energy even for the most highly resolved droplets. 
-Finally. the moments of inertia of the droplet appear to evolve in a smooth manner 
+Finally, the moments of inertia of the droplet appear to evolve in a smooth manner 
 for both our methods, for all droplet resolutions.
 
 In figures \ref{drop_vel_caf} and \ref{drop_vel_jcp}, 
@@ -607,15 +597,14 @@ A clipping procedure, with no redistribution, affects mass conservation as well.
 The WY combination is thus rather sensitive to these two parameters
 but overall performs much better than the CIAM combination which is
 inherently not mass-conserving and not very sensitive to the Poisson's solver 
-tolerance and the clipping parameter $\epsilon_{c}$.
+tolerance and the clipping parameter $\epsilon$.
 Mass conservation is also plotted with various 
 resolutions $D/h$ in Fig. \ref{mass_conv}c. 
 It is seen that going from $D/h=32$ to $D/h=64$
 the mass variation becomes larger for both methods, and grows over time at 
 high resolution for WY, pointing to an accumulation of many machine precision errors.
 
-
-The results obtained in this chapter strongly suggest that 
+To sum it up, the results obtained in this chapter strongly suggest that 
 our class of consistent numerical methods can be used to get relatively good 
 estimates of the underlying flow features of the droplet without observing 
 any un-physical evolution due to the discretization errors at low to moderate resolutions.           
