@@ -80,7 +80,7 @@ the local perturbation $h(x,t)$ is close to $-1$ or smaller.
 
 In the regime where $h \ll 1$ the Navier--Stokes equations may be linearized.
 After a phase of linear growth, we expect non linear effects to take over 
-and the thread to pinch wherever a minimum of radius has developed, i.e. a maximum of $h$. 
+and the thread to pinch wherever a minimum of radius has developed. 
 A simple model accounting for the linear growth is  
 
 \be
@@ -99,7 +99,8 @@ In Fourier space the equation becomes
 \nd
 
 where $s(k)$ has a maximum $s_m = s(k_m)$ at the optimal wavelength $k_m = 2\pi/\lambda_m$ of
-the Rayleigh-Plateau-Savart instability, with $\lambda_m \sim 9.02$.
+the Rayleigh-Plateau-Savart instability, with $\lambda_m \sim 9.02 a$, where $a$ is the unperturbed
+radius of the liquid thread.
 As a result one can expand
 
 \be
@@ -154,7 +155,7 @@ where $B(\kappa) = A(k_m + \kappa) = \overline A(-k_m -\kappa)$.
 The integral on the RHS is a slowly varying modulation of the monochromatic wave $e^{\ii k_m x}$. 
 The long lengthscale for this slow variation is $\epsilon^{-1} = (C t)^{1/2}$ and 
 the long space variable is $X = \epsilon^{-1} x$, with the corresponding small 
-wavenumber $K = \epsilon k$ so that the slow modulation can be rewritten in slow variables as
+wavenumber $K = \epsilon \kappa$ so that the slow modulation can be rewritten in slow variables as
 
 \be
 h(x,t) =   e^{s_m t +\ii k_m x} H(X)  + c.c. \label{slowamp} , 
@@ -177,7 +178,7 @@ at a minimum where $\Phi(X) = 0$ so that the next minimum is at $x_1$ such that 
 Thus we obtain 
 
 \be
-k_m x_1 + \Phi ( \epsilon x ) = 2 \pi , 
+k_m x_1 + \Phi ( \epsilon x_1 ) = 2 \pi , 
 \nd
 
 which expresses that $x_1$ is a small perturbation of the optimal Rayleigh-Plateau-Savart wavelength
@@ -190,7 +191,7 @@ x_1 = x_R + \Phi(\epsilon x_1)/k_m .
 Since the variable $X$ is slow at we are looking at small 
 distances $X_1 \sim \epsilon x_1$ in the slow variables
 one has $\rho(X_1) \simeq \rho_0$ and  $\Phi(X) \simeq \alpha X$ where 
-the amplitude $\rho$ and the slope $\alpha$ are random
+the amplitude $\rho_0$ and the slope $\alpha$ are random
 variables. Hence we use the approximation  
 
 \be
@@ -281,9 +282,14 @@ the final droplet size distribution is
 where $d_m$ is the equivalent diameter corresponding to the Rayleigh-Plateau wavelength
 
 \be
-  \pi  d_m^3/6 \simeq  \lambda_m \pi . 
+  \pi  d_m^3/6 \simeq  \pi \lambda_m a^2 , 
 \nd
 
+which gives us 
+
+\be
+ \frac{d_m}{a} \simeq 3.78  
+\nd
 
 The mechanism described thus far is surface-tension dominated. 
 Another mode for breakup arises when the initial distribution reaches 
@@ -377,7 +383,7 @@ the variable rescaled by its mean ($n / k$), which becomes
 	P\left( x ; n \right) = \frac{n^{n}}{\Gamma(n)} x^{n-1} \textrm{exp}\left(-n x\right) . 
 \end{align}
 
-The rescaling of variable results renders the function dependent solely 
+The change of variable renders the function dependent solely 
 on the parameter $n$, identical to the form first used in \cite{vill_2}
 to represent the distribution of the normalized diameter.  
 At the large size limit of the distributions, the leading order terms 
@@ -427,7 +433,7 @@ simulations, we for the commonly used area based estimation (see Fig. \ref{dia_c
 
 Figures \ref{t1_dia_bins} and \ref{t2_dia_bins} illustrate the probability distributions
 of the normalized droplet diameter corresponding to $T=15$ and $T=30$ respectively. 
-The diamters are normalized using the means of the associated samples. 
+The diameters are normalized using the means of the associated samples. 
 The bin widths are always based on the properties of the largest sample.
 As one can observe, there are fewer drops in all samples at $T=30$ 
 compared to the corresponding ones at $T=15$, due to the additional coalescences.  
@@ -435,7 +441,7 @@ The drop diameters are found to be more or less symmetrically distributed about 
 although there is an small peak at the lower end of the distribution.
 The choice of binning criteria does not seem to have any noticable effect on the 
 overall shape of the distribution, regardless of the size of the sample $N$.   
-A Guassian probability density function \eqref{gauss} appears to be a good 
+A Gaussian probability density function \eqref{gauss} appears to be a good 
 approximation to the underlying distribution.
 It is important to note that the Gaussian curve is not fitted to the heights of the 
 histogram bins, instead it is plotted on top of the distributions using the mean and 
