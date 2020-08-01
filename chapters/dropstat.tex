@@ -519,7 +519,7 @@ The overall fitting procedure can be summarized in the following steps :
 	The figure (a) on top corresponds to the least-squares procedure where the 
 	uncertainty in the bin heights is taken into account, whereas the bottom
 	figure (b) corresponds to those carried out with zero uncertainty in the underlying distribution. 
-	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	The ensemble is characterized by $\Phi_0 \equiv \left( Oh = 10^{-2}, K = 2\pi 
 	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
 	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
 	}
@@ -540,7 +540,7 @@ The overall fitting procedure can be summarized in the following steps :
 	The uncertainty in the bin heights of the underlying distribution is \textit{not}
 	taken into account while conducting the least-squares procedure. 
 	The bottom figure is a closeup of the region in the vicinity of the tail.
-	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	The ensemble is characterized by $\Phi_0 \equiv \left( Oh = 10^{-2}, K = 2\pi 
 	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
 	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
 	}
@@ -560,7 +560,7 @@ The overall fitting procedure can be summarized in the following steps :
 	The uncertainty in the bin heights of the underlying distribution \textit{is} 
 	taken into account while conducting the least-squares procedure. 
 	The bottom figure is a closeup of the region in the vicinity of the tail.
-	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	The ensemble is characterized by $\Phi_0 \equiv \left( Oh = 10^{-2}, K = 2\pi 
 	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
 	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
 	}
@@ -586,7 +586,7 @@ The overall fitting procedure can be summarized in the following steps :
 	The figure on top (a) corresponds to the least-squares procedure where the 
 	uncertainty in the bin heights is taken into account, whereas the bottom 
 	figure (b) corresponds to those carried out with zero uncertainty in the underlying distribution. 
-	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	The ensemble is characterized by $\Phi_0 \equiv \left( Oh = 10^{-2}, K = 2\pi 
 	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
 	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
 	}
@@ -606,7 +606,7 @@ The overall fitting procedure can be summarized in the following steps :
 	The uncertainty in the bin heights of the underlying distribution is \textit{not}
 	taken into account while conducting the least-squares procedure. 
 	The bottom figure is a closeup of the region in the vicinity of the tail.
-	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	The ensemble is characterized by $\Phi_0 \equiv \left( Oh = 10^{-2}, K = 2\pi 
 	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
 	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
 	}
@@ -627,7 +627,7 @@ The overall fitting procedure can be summarized in the following steps :
 	The uncertainty in the bin heights of the underlying distribution \textit{is} 
 	taken into account while conducting the least-squares procedure. 
 	The bottom figure is a closeup of the region in the vicinity of the tail.
-	The ensemble is characterized by $\Phi_2 \equiv \left( Oh = 10^{-2}, K = 2\pi 
+	The ensemble is characterized by $\Phi_0 \equiv \left( Oh = 10^{-2}, K = 2\pi 
 	, \varepsilon = 1.0 , \Lambda = 50 \right)$ and $T = 30$, 
 	thus consisting of \textit{moderately} perturbed initial ligaments shapes. 
 	}
@@ -657,13 +657,11 @@ In the preceding section, we have obtained an exponential scaling for the probab
 of drop diameter of the from $\textrm{exp}[-d^6]$, at the limit of large sizes. 
 Such a scaling predicts a significantly lower frequency of rare events than all of our candidate 
 probability density functions such as the Gaussian, Log-Normal and Gamma. 
-In order to explain this result, we develop a theoretical model based on the 
+In an effort to explain this result, we develop a theoretical model based on the 
 linearization of the Navier-Stokes equations for weakly corrugated ligaments, where the ligament destabilizes 
 via the growth of perturbations corresponding to a random set of waves, with the assumption
 that the wavelengths are more or less normally distributed around the optimal wavelength 
-of the Rayleigh-Plateau-Savart instability \cite{rayleigh1879a,plateau1849}. 
-Note that the mathematical symbols, notations and variable names 
-used in this section are unique to this section only.
+of the Rayleigh-Plateau-Savart instability \cite{rayleigh1879a,plateau1849}.  Note that the mathematical symbols, notations and variable names used in this section are unique to this section only.
 
 In the surface tension dominated regime, it is convenient to rescale all lengths by the
 initial unperturbed radius $a$ of the ligaments and times by the capillary time
@@ -915,11 +913,9 @@ which gives us
 \includegraphics{plots/drop_stats/d6_scaling_compare.pdf}
 \caption{Probability distribution functions of the droplet diameter at time $T = 30$. 
 The ensemble is characterized by $\Phi_0 \equiv \left( Oh = 10^{-2}, K = 2\pi , \varepsilon = 1.0 , \Lambda = 50 \right)$. 
-The diameters are normalized by the mean of the corresponding sample.  
-The distributions are generated using datasets corresponding to four different sample sizes, 
-including four different choices of (uniform) bin width. 
-The Gaussian functions are characterized by the mean and variance of the original dataset, 
-hence they are plotted alongside the histograms instead of being fitted to the bin heights.
+The distribution is generated using 81 bins of uniform size, represented in green.  
+The Gaussian and Log-Normal functions are characterized by the mean and variance of the original dataset, 
+therefore are plotted alongside the histogram, whereas, the Gamma and $d^3$- Gaussian functions are fitted to the bin heights.
 	}
 \label{d3_gauss}
 \end{figure*}
@@ -963,20 +959,27 @@ Defining the length
 
 in the regime of small $v_0$ one has $\ell \gg d_m$ and thus $d_c \sim \ell$. At $d \gg d_c$ the Poisson distribution
 dominates and $P_d(d) \sim P_{d,P}$ . 
-For $d \ll d_c$ the $d^3$-Gaussian distribution dominates. 
-
-
-This variation matches the scaling from the theoretical prediction \eqref{theory_d6} of the 
-diameter distribution corresponding to the surface tension dominated regime (refer to section 8.1).
-Although our $e^{-x^6}$ scaling can be explained by the $d^3$-Gaussian like distribution, 
-the quantitative prediction of the standard deviation \eqref{d6_std} in the resulting diameter distribution
-given by our theory differs significantly from what we obtain via our numerical experiments.
-In addition, we do not observe the transition from a $e^{-x^6}$ to a $e^{-x^3}$ scaling 
+For $d \ll d_c$ the $d^3$- Gaussian distribution dominates. 
+Therefore, for ligaments corresponding to weakly perturbed initial 
+conditions (small corrugation amplitude), a $\textrm{exp}[-d^6]$ 
+scaling is expected by virtue of the $d^3$- Gaussian \eqref{theory_d6} predicted by our theory.   
+At the time of writing, we do not yet have a large enough ensemble of drops
+corresponding to such weakly corrugated ligaments, thus for the time being 
+we compare the theoretical prediction to our ensemble of \textit{moderately} 
+perturbed ligaments ($\Phi_0$ at $T=30$) as shown in Fig. \ref{d3_gauss}.
+The $d3$- Gaussian does not seem to be the best fit, although  
+the mode of the distribution seems to be well approximated by it. 
+Revisiting the description of the tail of the drop diameter distributions from 
+the previous section, the value of $n$ in the function $y = A\cdot \textrm{exp}[-nx^m]$
+is related to the standard deviation of the $d^3$- Gaussian (\eqref{d6_std}). 
+We find that the theoretical predictions of $n$ differ significantly 
+from what we obtain through our numerical results corresponding to the moderately perturbed ligament ensemble. 
+In addition, we do not observe the transition from a $e^{-d^6}$ to a $e^{-d^3}$ scaling 
 as predicted in the theory, at least in the few ensembles we have analysed thus far. 
-At the time of writing, the theoretical development is undergoing 
-successive refinements, so that we may obtain better predictions of 
-the resulting size distributions as a function of the initial 
-noise signal, as well as try to explain the discrepancies between 
-the current version of the theory and the numerical results.  
+
+We are currently in the process of applying successive refinements to the 
+theoretical development, as well as comparing the dispersion in the droplet sizes 
+resulting from the disintegration of large enough ensembles of \textit{weakly} corrugated 
+ligaments (the $d^3$- Gaussian prediction is valid only for very small amplitudes).  
 
 

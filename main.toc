@@ -82,34 +82,34 @@
 \defcounter {refsection}{0}\relax
 \contentsline {section}{\numberline {6.3}Theoretical Development}{105}{section.6.3}
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Conclusions \& Perspectives}{112}{part*.145}
+\contentsline {part}{\nonumberline Conclusions \& Perspectives}{111}{part*.145}
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Appendix}{114}{part*.147}
+\contentsline {part}{\nonumberline Appendix}{113}{part*.147}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{115}{appendix.A}
+\contentsline {chapter}{\numberline {A}Heading on Level\xspace 0 (chapter)}{114}{appendix.A}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{115}{section.A.1}
+\contentsline {section}{\numberline {A.1}Heading on Level\xspace 1 (section)}{114}{section.A.1}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Heading on Level\xspace 2 (subsection)}{115}{section*.148}
+\contentsline {subsection}{\nonumberline Heading on Level\xspace 2 (subsection)}{114}{section*.148}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Heading on Level\xspace 3 (subsubsection)}{115}{section*.149}
+\contentsline {subsubsection}{\nonumberline Heading on Level\xspace 3 (subsubsection)}{114}{section*.149}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Heading on Level\xspace 4 (paragraph)}{116}{section*.150}
+\contentsline {paragraph}{\nonumberline Heading on Level\xspace 4 (paragraph)}{115}{section*.150}
 \defcounter {refsection}{0}\relax
-\contentsline {section}{\numberline {A.2}Lists}{116}{section.A.2}
+\contentsline {section}{\numberline {A.2}Lists}{115}{section.A.2}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Example for list\xspace (itemize)}{116}{section*.151}
+\contentsline {subsection}{\nonumberline Example for list\xspace (itemize)}{115}{section*.151}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*itemize)}{116}{section*.152}
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*itemize)}{115}{section*.152}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Example for list\xspace (enumerate)}{116}{section*.153}
+\contentsline {subsection}{\nonumberline Example for list\xspace (enumerate)}{115}{section*.153}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*enumerate)}{117}{section*.154}
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*enumerate)}{116}{section*.154}
 \defcounter {refsection}{0}\relax
-\contentsline {subsection}{\nonumberline Example for list\xspace (description)}{117}{section*.155}
+\contentsline {subsection}{\nonumberline Example for list\xspace (description)}{116}{section*.155}
 \defcounter {refsection}{0}\relax
-\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*description)}{117}{section*.156}
+\contentsline {subsubsection}{\nonumberline Example for list\xspace (4*description)}{116}{section*.156}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\nonumberline Bibliography}{118}{chapter*.157}
+\contentsline {chapter}{\nonumberline Bibliography}{117}{chapter*.157}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{Notation}{124}{chapter*.158}
+\contentsline {chapter}{Notation}{123}{chapter*.158}
