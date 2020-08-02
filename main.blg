@@ -1,15 +1,15 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'main.blg'
-[27] biber:313> INFO - === dim. août  2, 2020, 17:47:11
-[55] Biber.pm:371> INFO - Reading 'main.bcf'
-[127] Biber.pm:857> INFO - Found 118 citekeys in bib section 0
-[139] Biber.pm:3981> INFO - Processing section 0
-[148] Biber.pm:4154> INFO - Looking for bibtex format file 'main.bib' for section 0
-[153] bibtex.pm:1468> INFO - LaTeX decoding ...
-[318] bibtex.pm:1294> INFO - Found BibTeX data source 'main.bib'
-[1070] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1070] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1070] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1070] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
-[1143] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1189] bbl.pm:720> INFO - Output to main.bbl
+[26] biber:313> INFO - === dim. août  2, 2020, 18:37:33
+[49] Biber.pm:371> INFO - Reading 'main.bcf'
+[124] Biber.pm:857> INFO - Found 118 citekeys in bib section 0
+[138] Biber.pm:3981> INFO - Processing section 0
+[149] Biber.pm:4154> INFO - Looking for bibtex format file 'main.bib' for section 0
+[154] bibtex.pm:1468> INFO - LaTeX decoding ...
+[317] bibtex.pm:1294> INFO - Found BibTeX data source 'main.bib'
+[1076] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1076] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1076] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1076] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[1150] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1198] bbl.pm:720> INFO - Output to main.bbl
