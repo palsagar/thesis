@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.31)  2 AUG 2020 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.31)  2 AUG 2020 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4089,8 +4089,8 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zpllf/b/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (2.0874pt too wide) detected at line 185
- [][][]\T1/zpllf/b/sc/12 112[][]
+Overfull \hbox (1.95937pt too wide) detected at line 185
+ [][][]\T1/zpllf/b/sc/12 113[][]
  []
 
 LaTeX Font Info:    Font shape `T1/zpllf/m/sl' will be
@@ -8451,14 +8451,23 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 
 \openout5 = `main.mw'.
 
-)
 \openout5 = `main.mw'.
 
- [111
+[111
 
 
 
 ] (./main.mw)
+\openout5 = `main.mw'.
+
+)
+Overfull \hbox (4.58882pt too wide) has occurred while \output is active
+[][][] 
+ []
+
+\openout5 = `main.mw'.
+
+[112] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -8500,7 +8509,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 part without number
 \openout5 = `main.mw'.
 
-[112
+[113
 
 
 
@@ -8562,7 +8571,7 @@ Overfull \hbox (163.88783pt too wide) in paragraph at lines 3--3
 
 \openout5 = `main.mw'.
 
-[113
+[114
 
 
 
@@ -8583,7 +8592,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[114] (./main.mw)
+[115] (./main.mw)
 \openout5 = `main.mw'.
 
 )
@@ -8593,7 +8602,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[115] (./main.mw)
+[116] (./main.mw)
 \openout5 = `main.mw'.
 
 
@@ -8635,18 +8644,13 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 chapter without number
 \openout5 = `main.mw'.
 
-[116
+[117
 
 
 
 
 
 ] (./main.mw)
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
- [117] (./main.mw)
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -8659,6 +8663,11 @@ chapter without number
  [119] (./main.mw)
 \openout5 = `main.mw'.
 
+\openout5 = `main.mw'.
+
+ [120] (./main.mw)
+\openout5 = `main.mw'.
+
 LaTeX Font Info:    Font shape `T1/zpllf/m/sc' will be
 (Font)              scaled to size 9.70001pt on input line 251.
 Package microtype Info: Character `029' is missing
@@ -8667,13 +8676,13 @@ Package microtype Info: Character `029' is missing
 \openout5 = `main.mw'.
 
 
-[120] (./main.mw)
+[121] (./main.mw)
 \openout5 = `main.mw'.
 
  (./main.nls
 \openout5 = `main.mw'.
 
- [121] (./main.mw)
+ [122] (./main.mw)
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -8997,7 +9006,7 @@ LaTeX Font Info:    Font shape `T1/zpllf/m/it' will be
 (./main.gls)
 \openout5 = `main.mw'.
 
- [122
+ [123
 
 
 ] (./main.mw)
@@ -10352,8 +10361,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59879 strings out of 492982
- 1119635 string characters out of 6134896
+ 59882 strings out of 492982
+ 1119659 string characters out of 6134896
  2112053 words of memory out of 5000000
  61068 multiletter control sequences out of 15000+600000
  721686 words of font info for 381 fonts, out of 8000000 for 9000
@@ -10392,10 +10401,10 @@ texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/newpx/zplri.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/newpx/zplx-regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boo
 ndox/zxxrw8a.pfb>
-Output written on main.pdf (142 pages, 18078329 bytes).
+Output written on main.pdf (143 pages, 18079312 bytes).
 PDF statistics:
- 4218 PDF objects out of 4296 (max. 8388607)
- 3610 compressed objects within 37 object streams
- 698 named destinations out of 1000 (max. 500000)
+ 4222 PDF objects out of 4296 (max. 8388607)
+ 3613 compressed objects within 37 object streams
+ 699 named destinations out of 1000 (max. 500000)
  43745 words of extra memory for PDF output out of 51595 (max. 10000000)
 
