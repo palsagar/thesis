@@ -36,9 +36,29 @@ static droplet and the capillary wave, with the rate
 reverting to first-order in the case of droplet advection.
 Finally, the robustness and stability of the present method was demonstrated
 using the case of a raindrop falling in air, which involves complex interactions
-of surface tension forces, viscosity and inertia. The method is able to deliver
-relatively good estimates of the flow features especially at low to moderate resolutions, 
-as evidenced by the smooth evolution of quantities such as the droplet kinetic
-energy and moment of inertia. A key feature of the our class of consistent methods 
-is the ability to circumvent un-physical interfacial deformations (artificial atomization of the raindrop)
-that are rampant in the case of the non consistent version of the method.
+of capillary forces, viscosity and inertia combined with the difficulties associated
+with flows involving marked density contrasts.  
+A key feature of the our class of consistent methods is the ability to circumvent 
+or suppress the un-physical interfacial deformations that are rampant 
+in the case of the standard non-consistent method, which typically results in the 
+``artificial'' atomization of the raindrop .
+Our methods are able to deliver relatively good estimates of the flow features 
+especially at low to moderate resolutions, as evidenced by the smooth evolution 
+of the droplet kinetic energy and the moments of inertia describing the average shape. 
+Furthermore, both methods are able to reproduce the physically consistent early phase 
+(almost constant) acceleration of the droplet towards the final statistical steady state.  
+
+Many of the complications in our methods are due to the staggered arrangement of the primary variables, 
+thus opening a possible avenue for exploration of different grid configurations when it comes to consistent transport.
+Another perspective is an assessment of the computational speed-up 
+of our methods compared to standard non-consistent methods which necessitate 
+significantly higher spatial resolutions in order to ensure numerical stability.  
+An interesting possibility exists in the context of the \textit{sub-grid} method, 
+where volume fraction information from the doubly refined grid could be used to
+obtain more accurate estimations of the interface curvature defined on the coarse grid level. 
+Finally, an interesting test would be to verify if both the consistent and non-consistent methods
+converge to identical solutions at sufficiently large mesh resolution, owing to the fact that they 
+are based on identical governing equations and differ mainly due to the choice of discretization scheme. 
+
+
+
