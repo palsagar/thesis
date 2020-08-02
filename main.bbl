@@ -2089,6 +2089,45 @@
       \field{title}{PArallel, Robust, Interface Simulator (PARIS)}
       \field{year}{2019}
     \endentry
+    \entry{csfmodel}{article}{}
+      \name{author}{3}{}{%
+        {{hash=232311a263b8f81ecd7769b2d58bdac8}{%
+           family={Brackbill},
+           familyi={B\bibinitperiod},
+           given={Jeremiah\bibnamedelima U},
+           giveni={J\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=af98f57c1d8bd71722c829d6cf1e1ec1}{%
+           family={Kothe},
+           familyi={K\bibinitperiod},
+           given={Douglas\bibnamedelima B},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=450741c01ebdd62e4f97ab6d478fc764}{%
+           family={Zemach},
+           familyi={Z\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \strng{fullhash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \strng{bibnamehash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \strng{authorbibnamehash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \strng{authornamehash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \strng{authorfullhash}{8e931b44ea5c9e80a4b4276f4a9e8140}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of computational physics}
+      \field{number}{2}
+      \field{title}{A continuum method for modeling surface tension}
+      \field{volume}{100}
+      \field{year}{1992}
+      \field{pages}{335\bibrangedash 354}
+      \range{pages}{20}
+    \endentry
     \entry{harmonic_mean}{article}{}
       \name{author}{5}{}{%
         {{hash=c4525ccda29f1c9379b20cf7b2473686}{%
@@ -2373,6 +2412,40 @@
       \field{journaltitle}{URL http://basilisk. fr}
       \field{title}{Basilisk, a Free-Software program for the solution of partial differential equations on adaptive Cartesian meshes (2018)}
     \endentry
+    \entry{rider_unsplit}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9de01958cfd902a3828e5c7306408fb3}{%
+           family={Rider},
+           familyi={R\bibinitperiod},
+           given={William\bibnamedelima J},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=af98f57c1d8bd71722c829d6cf1e1ec1}{%
+           family={Kothe},
+           familyi={K\bibinitperiod},
+           given={Douglas\bibnamedelima B},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{b45ce437f0689834841390f9eb2f865c}
+      \strng{fullhash}{b45ce437f0689834841390f9eb2f865c}
+      \strng{bibnamehash}{b45ce437f0689834841390f9eb2f865c}
+      \strng{authorbibnamehash}{b45ce437f0689834841390f9eb2f865c}
+      \strng{authornamehash}{b45ce437f0689834841390f9eb2f865c}
+      \strng{authorfullhash}{b45ce437f0689834841390f9eb2f865c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of computational physics}
+      \field{number}{2}
+      \field{title}{Reconstructing volume tracking}
+      \field{volume}{141}
+      \field{year}{1998}
+      \field{pages}{112\bibrangedash 152}
+      \range{pages}{41}
+    \endentry
     \entry{aulisa2003}{article}{}
       \name{author}{4}{}{%
         {{hash=1daf5629f13129c3ff2a0e75f57b0259}{%
@@ -2573,6 +2646,68 @@
       \field{year}{1985}
       \field{pages}{163\bibrangedash 193}
       \range{pages}{31}
+    \endentry
+    \entry{caf_momcons}{article}{}
+      \name{author}{9}{}{%
+        {{hash=bef6c167a747e765ed1e454446b8a4f1}{%
+           family={Fuster},
+           familyi={F\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8047ffe6a02573ba5ad15c2bf61a4e70}{%
+           family={Arrufat},
+           familyi={A\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d48ab6c4d2242ef647fb98727b0d74ba}{%
+           family={Crialesi-Esposito},
+           familyi={C\bibinithyphendelim E\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dfe13e9b78c12ee80286c816d618f294}{%
+           family={Ling},
+           familyi={L\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3c6a5406b23478a05acaf3773dcea155}{%
+           family={Malan},
+           familyi={M\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=818917f559df7aab23519221065c2b67}{%
+           family={Pal},
+           familyi={P\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a6f35adcff8e1de10946cf5c6ec6bce7}{%
+           family={Scardovelli},
+           familyi={S\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=67bd3e8e8362d7d48106d883530bb486}{%
+           family={Tryggvason},
+           familyi={T\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0b169305b3d7acfb24c2d6aeb7ab980f}{%
+           family={Zaleski},
+           familyi={Z\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{eef7f4b671b3a693b5ac5dda75cd3694}
+      \strng{fullhash}{32a637afed3be2bd32b7f90cc3a570aa}
+      \strng{bibnamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
+      \strng{authorbibnamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
+      \strng{authornamehash}{eef7f4b671b3a693b5ac5dda75cd3694}
+      \strng{authorfullhash}{32a637afed3be2bd32b7f90cc3a570aa}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1811.12327}
+      \field{title}{A momentum-conserving, consistent, Volume-of-Fluid method for incompressible flow on staggered grids}
+      \field{year}{2018}
     \endentry
     \entry{bornia2011properties}{article}{}
       \name{author}{5}{}{%

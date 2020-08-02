@@ -35,7 +35,7 @@ Thus, the equations are as follows :
 
 with $\rho$ and $\mu$ being the density and dynamical viscosity respectively. 
 The volumetric sources are modeled by the acceleration $g$, and the 
-deformation rate tensor $\boldsymbol{D}$ used to model the viscous stresses is defined as:  
+deformation rate tensor $\boldsymbol{D}$ used to model the viscous stresses defined as:  
 
 \begin{align}
 	\boldsymbol{D} = \frac{1}{2}\left[\nabla \boldsymbol{u} + \left(\nabla \boldsymbol{u}\right)^{T}\right]  
@@ -43,8 +43,8 @@ deformation rate tensor $\boldsymbol{D}$ used to model the viscous stresses is d
 
 
 The term $\sigma \kappa \delta_{s}\boldsymbol{n}$ models the surface tension forces in the 
-framework of the continuum surface-force (CSF) method. The normal vector to the interface 
-is $\boldsymbol{n}$, with $\sigma$ being the coefficient of surface tension and $\kappa$ the 
+framework of the continuum surface-force (CSF) method \cite{csfmodel}. The normal vector to the interface 
+is $\boldsymbol{n}$, $\sigma$  the coefficient of surface tension and $\kappa$ the 
 local interfacial curvature. The operator $\delta_{s}$ is the Dirac delta function, 
 the numerical approximation of which allows us to map the singular surface force distribution
 along the interface onto their volumetric equivalents for our Cartesian control volumes. 
@@ -168,7 +168,7 @@ geometrical flux reconstruction procedues are utilised.
 The temporal integration of the fluxes could be carried out either as a 
 series of one dimensional propagations along each of the spatial directions, 
 termed as direction-split, or carried out in one single sweep, 
-termed as multidimensional or unsplit.
+termed as multidimensional or unsplit \cite{rider_unsplit}.
 
 Direction-split methods are more intuitive and easier to develop 
 (extension of the one dimensional algorithm to 3D), 
@@ -341,7 +341,7 @@ operator that appears in the transport equations of mass and momentum
 However, in interfacial flows we often deal with sharp discontinuities that 
 arise as a consequence of the contrast in material properties between the two fluids. 
 Therefore, even though the velocity field remains continuous throughout the domain, 
-the otherwise smooth density (mass) and momentum fields 
+the otherwise smooth density and momentum fields 
 contain sharp jumps localized at the interfacial position.     
 Therefore, in regions of constant density and and viscosity, the standard non-conservative
 form of the Navier-Stokes equations are discretized, whereas the discretization is
@@ -546,9 +546,6 @@ spatial derivative corresponding to the $m$th component
 of the velocity vector along direction $m$, and
 the ``compression coefficient'' $c_m$ approximates the color fraction. 
 Its exact expression is dependent on the advection method
-\sidenote{Refer to chapter \ref{ch:method} to see the difference in
-the definitions of the compression coefficient between  
-the CIAM and Weymouth-Yue methods.}
 and it also entails the desirable property of $C$-bracketing
 \sidenote{The preservation of $0 \le \cijk \le 1$ 
 is referred to as $C$-bracketing. }. 
@@ -682,7 +679,9 @@ is not consistent with that of the advection of $C$.
 
 This apparent paradox is resolved by including the 
 compression term on the right hand side of \eqref{phiconv},
-in order to ensure consistency. 
+in order to ensure consistency \sidenote{
+	This strategy was introduced by Rudman \cite{rudman1998volume}.
+	}. 
 The advection equation for the conserved quantity now becomes - 
 
 
@@ -1143,7 +1142,7 @@ This strategy tackles the problem of staggered control volumes by reconstructing
 \sidenote{The reconstructions involve geometrical operations, thus are not
 easily translated into equations.}
 the centered volume fraction field onto the staggered control volumes 
-, thereby resulting in a field of \textit{shifted} fractions. 
+, thereby resulting in a field of \textit{shifted} fractions \cite{caf_momcons}. 
 
 
 \begin{figure}
@@ -1522,7 +1521,7 @@ we present Fig. \ref{momcons_sagar}, which illustrates a 2D version
 of the sub-grid method that ensures consistent and conservative 
 mass-momentum transport, highlighting the interactions between the 
 variables defined on the different grids. The algorithm is also
-summarized in the following steps, corresponding to a 2D setup : 
+summarized in the following steps : 
 
 
 \begin{figure}
