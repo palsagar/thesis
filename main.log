@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.31)  2 AUG 2020 18:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.31)  2 AUG 2020 19:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8451,17 +8451,16 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 
 \openout5 = `main.mw'.
 
-)
 \openout5 = `main.mw'.
 
- [111
+[111
 
 
 
 ] (./main.mw)
 \openout5 = `main.mw'.
 
-
+)
 Overfull \hbox (4.58882pt too wide) has occurred while \output is active
 [][][] 
  []
@@ -10362,11 +10361,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59882 strings out of 492982
- 1119659 string characters out of 6134896
+ 59884 strings out of 492982
+ 1119697 string characters out of 6134896
  2112053 words of memory out of 5000000
  61068 multiletter control sequences out of 15000+600000
- 721686 words of font info for 381 fonts, out of 8000000 for 9000
+ 721817 words of font info for 382 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,20n,108p,10476b,3278s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-lf-sc.enc}{/usr/s
@@ -10402,7 +10401,7 @@ texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/newpx/zplri.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/newpx/zplx-regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boo
 ndox/zxxrw8a.pfb>
-Output written on main.pdf (143 pages, 18080579 bytes).
+Output written on main.pdf (143 pages, 18081775 bytes).
 PDF statistics:
  4222 PDF objects out of 4296 (max. 8388607)
  3613 compressed objects within 37 object streams
