@@ -28,7 +28,7 @@ A popular numerical benchmark in the existing literature relevant to surface ten
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.8\textwidth]{plots/static_drop/config.png}
+    \includegraphics[width = 1.0\textwidth]{plots/static_drop/config.png}
     \caption{Schematic of the static droplet of dense fluid surrounded by a quiescent medium of lighter fluid. A $40 \times 40$ grid is employed to spatially discretize the domain.}
     \label{static_conf}
 \end{figure}
@@ -105,7 +105,7 @@ Fig. \ref{static_drop_conv} demonstrates the behavior of the shape errors define
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.9\textwidth]{plots/static_drop/static_drop_convergence.png}
+    \includegraphics[width = 1.0\textwidth]{plots/static_drop/convergence.pdf}
 	\caption{Second-order spatial convergence for the spurious current error norms corresponding to the most stringent parameter combination ($\rho_l/\rho_g = 1000$ , $La = 12000$) . Both of the norms ($L_\infty$ and $L_2$) seem to demonstrate a roughly second order rate of spatial convergence with each of the methods tested. However, \textbf{MSUB} has a marginally lower $L_2$ error compared to both \textbf{STD} and \textbf{MSHIFT} for all resolutions tested. There is negligible difference observed in the shape errors between \textbf{STD} and \textbf{MSHIFT} in both of the norm definitions.}   
     \label{static_drop_conv}
 \end{figure}
@@ -121,7 +121,7 @@ An incisive numerical setup that enables us to evaluate the accuracy of the coup
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.8\textwidth]{plots/droplet_advect/config.png}
+    \includegraphics[width = 1.0\textwidth]{plots/droplet_advect/config.png}
     \caption{Schematic of the droplet of dense fluid advected in a surrounding medium of lighter fluid. A $50 \times 50$ grid is employed to spatially discretize the domain, which is spatially periodic in the direction of droplet advection.}
     \label{moving_conf}
 \end{figure}
@@ -175,7 +175,7 @@ In order to evaluate the performance of our class of methods at different resolu
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.8\textwidth]{plots/droplet_advect/convergence_all.png}
+    \includegraphics[width = 1.0\textwidth]{plots/droplet_advect/convergence.pdf}
 	\caption{First-order (approximately) spatial convergence of the maximum of the spurious current error norms in the frame of reference of the moving droplet, for the most stringent parameter combination ($\rho_l/\rho_g = 1000 $ , $La = 12000$, $We = 0.4$). Methods \textbf{STD} and \textbf{MSHIFT} display similar convergence properties, whereas \textbf{MSUB} leads to significantly lower errors even though it doesn't quite follow the first-order convergence rate. }   
     \label{moving_drop_conv}
 \end{figure}
@@ -186,14 +186,14 @@ As the final point of inquiry into the performance of our class of methods, figu
 
 \begin{figure}
     \centering
-    \includegraphics[width = 0.8\textwidth]{plots/droplet_advect/webers.pdf}
+    \includegraphics[width = 1.0\textwidth]{plots/droplet_advect/webers.pdf}
 \caption{ Scaling of the maximum error norm as a function of Weber ($La = 12000$, $\rho_l / \rho_g = 1000$). }
     \label{web}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[width = 0.8\textwidth]{plots/droplet_advect/laplaces.pdf}
+    \includegraphics[width = 1.0\textwidth]{plots/droplet_advect/laplaces.pdf}
 \caption{ Scaling of the maximum error norm as a function of Laplace ($We = 0.4$, $\rho_l / \rho_g = 1000$). }
     \label{lap}
 \end{figure}
@@ -209,7 +209,7 @@ One of the fundamental features of immiscible multiphase flows involving interfa
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.6\textwidth]{plots/capwave/capwave_conf.png}
+    \includegraphics[width = 1.0\textwidth]{plots/capwave/capwave_conf.png}
 	\caption{Schematic of the initially perturbed planar interface separating two immiscible fluids of different densities and viscosities. A spatial resolution of $32 \times 96$ is used for spatial discretization (compared to $64 \times 192$ in Popinet \cite{popinet2009accurate}), with the width of the box corresponding to the size of the perturbed wavelength.}
     \label{capwave_conf}
 \end{figure}
@@ -245,7 +245,7 @@ The theoretical solution to this configuration corresponds to the closed-form ex
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.8\textwidth]{plots/capwave/compare_nonmc.png}
+    \includegraphics[width = 1.0\textwidth]{plots/capwave/compare_nonmc.png}
 	\caption{\textbf{STD} Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. More or less good agreement with theory is observed for all the density-ratios tested. }
     \label{capwave_nonmc}
 \end{figure}
@@ -254,14 +254,14 @@ As we can in figures \ref{capwave_nonmc} to \ref{capwave_sagar}, solutions from 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.8\textwidth]{plots/capwave/compare_daniel.png}
+    \includegraphics[width = 1.0\textwidth]{plots/capwave/compare_daniel.png}
 	\caption{\textbf{MSHIFT} Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Behavior is quite similar to \textbf{STD}, with good agreement with theory for all the density-ratios tested. }
     \label{capwave_daniel}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.8\textwidth]{plots/capwave/compare_sagar.png}
+    \includegraphics[width = 1.0\textwidth]{plots/capwave/compare_sagar.png}
 	\caption{\textbf{MSUB} Time evolution of the amplitude of the planar interface undergoing damped capillary oscillations, comparing the solution obtained by our numerical method with the closed-from Prosperetti solution. Slightly better agreement with theory when comparing to \textbf{STD} and \textbf{MSHIFT}, for all density-ratios tested. }
     \label{capwave_sagar}
 \end{figure}
@@ -274,7 +274,7 @@ The next step in our evaluation would be to quantify the accuracy of our numeric
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.8\textwidth]{plots/capwave/conv_r1.png}
+    \includegraphics[width = 1.0\textwidth]{plots/capwave/conv_r1.pdf}
 	\caption{Comparison of spatial convergence for the case of $\rho_l/\rho_g = 1 , La = 3000$, for our class of methods. There is no viscosity jump across the interface. All methods seem to demonstrate approximately second-order convergence. There seems to be no appreciable difference in the behavior of \textbf{STD} and \textbf{MSHIFT}, with \textbf{MSUB} displaying marginally lower errors compared to the others. }
     \label{conv_r1}
 \end{figure}
@@ -282,15 +282,15 @@ The next step in our evaluation would be to quantify the accuracy of our numeric
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.8\textwidth]{plots/capwave/conv_r10.png}
-	\caption{Comparison of spatial convergence for the case of $\rho_l/\rho_g = 10 , La = 3000$, for our class of methods. Again, there is no viscosity jump across the interface. All methods seem to demonstrate approximately second-order convergence upto $\L/ \Delta x = 32 $, beyond which there is a slight saturation in the rate of convergence. Qualitatively, \textbf{STD} and \textbf{MSHIFT} demonstrate similar behavior, with \textbf{MSUB} delivering slightly lower errors. In case of \textbf{MSUB}, the errors are marginally lower compared to \textbf{STD} and \textbf{MSHIFT} for higher resolutions. }
+    \includegraphics[width = 1.0\textwidth]{plots/capwave/conv_r10.pdf}
+	\caption{Comparison of spatial convergence for the case of $\rho_l/\rho_g = 10 , La = 3000$, for our class of methods. Again, there is no viscosity jump across the interface. All methods seem to demonstrate approximately second-order convergence upto $ L/ \Delta x = 32 $, beyond which there is a slight saturation in the rate of convergence. Qualitatively, \textbf{STD} and \textbf{MSHIFT} demonstrate similar behavior, with \textbf{MSUB} delivering the lowest errors. In case of \textbf{MSUB}, the errors are lower by a factor of $2$ compared to \textbf{STD} and \textbf{MSHIFT} for resolutions above $L / \Delta x = 16$. }
     \label{conv_r10}
 \end{figure}
 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.8\textwidth]{plots/capwave/conv_aw.png}
+    \includegraphics[width = 1.0\textwidth]{plots/capwave/conv_aw.pdf}
 	\caption{Comparison of spatial convergence for the Air-Water case corresponding to $\rho_l/\rho_g = 1000.0/1.2 , \mu_l/\mu_g = 1.003\cdot 10^{-3}/1.8\cdot 10^{-5} , La = 3000 $, for our class of methods. All methods seem to demonstrate approximately second-order convergence. No appreciable difference is observed between \textbf{STD} and \textbf{MSHIFT}, with \textbf{MSUB} delivering slightly lower errors although there is some saturation in the convergence rate at higher resolutions. }
     \label{conv_aw}
 \end{figure}
@@ -301,6 +301,6 @@ The next step in our evaluation would be to quantify the accuracy of our numeric
 
 where $h$ is the maximum inteface height obtained using our numerical simulations, and $h_{exact}$ being the maximum height obtained via time integration of the Prosperetti solution. In figures \ref{conv_r1} to \ref{conv_aw} we demonstrate the rate of spatial convergence of the $L_2$ error norms for different density-ratios, simultaneously comparing the behavior of the different methods \textbf{STD}, \textbf{MSHIFT} and \textbf{MSUB} at each density-ratio. In all the results presented, we maintain $La = 3000$ for all density-ratios, spatial resolutions and methods tested.  
 
-In figure \ref{conv_r1} we observe roughly second-order spatial convergence when it comes to equal densities across the interface, with \textbf{STD} and \textbf{MSHIFT} displaying nearly identical behavior, whereas \textbf{MSUB} does marginally better with lower errors for all resolutions. When it comes to $\rho_l / \rho_g = 10$ in figure \ref{conv_r10}, we observe a saturation in the initial second-order convergence rate irrespective of whichever method is used, however \textbf{MSUB} performs slightly better in terms of error when compared \textbf{STD} and \textbf{MSHIFT}. Finally, figure \ref{conv_aw} demonstrates the roughly second-order convergence of all three methods when it comes to the air-water configuration, again, with \textbf{MSUB} performing merginally better with lower errors. Not surprisingly, the largest errors arise for the air-water configuration errors across all methods. 
+In figure \ref{conv_r1} we observe roughly second-order spatial convergence when it comes to equal densities across the interface, with \textbf{STD} and \textbf{MSHIFT} displaying nearly identical behavior, whereas \textbf{MSUB} does marginally better with lower errors for all resolutions. When it comes to $\rho_l / \rho_g = 10$ in figure \ref{conv_r10}, we observe a saturation in the initial second-order convergence rate irrespective of whichever method is used, however \textbf{MSUB} performs much better in terms of error when compared \textbf{STD} and \textbf{MSHIFT}. Finally, figure \ref{conv_aw} demonstrates the roughly second-order convergence of all three methods when it comes to the air-water configuration, again, with \textbf{MSUB} performing merginally better with lower errors. Not surprisingly, the largest errors arise for the air-water configuration errors across all methods. 
 
 
