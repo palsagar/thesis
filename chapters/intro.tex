@@ -12,7 +12,7 @@ mixing/separation in context of metallurgical processes \cite{johansen1988fluid,
 conventional modes of heat transfer \cite{deckwer1980mechanism,bubble}
 and ever so importantly, the tranmission of pathogens \cite{lydia_1,lydia_2}. 
 One of the most fascinating features of multiphase flows is the process of atomization, 
-in which a liquid volume transitions into smaller fragments via a series of topological 
+in which a liquid volume breaks into smaller fragments via a series of topological 
 changes of varying complexity, ultimately resulting in the emergence of drops of various sizes
 driven by the action of capillary forces at the interface separating the fluids.  
 Such processes are ubiquitous in a diverse range of applications spanning from combustion related processes 
@@ -117,6 +117,14 @@ that plague such numerical methods, especially in the
 context of low to moderate spatial resolutions (see Fig. \ref{explode_compare}). 
 
 
+\marginnote{
+	A difference in the drop size distributions obtained via \textit{consistent} 
+	and non-consistent methods has been observed by Yue Ling and coworkers 
+	\cite{stanley_exp,stanley_lognormal} in the context of planar atomizing mixing layers. 
+	Use of the non-consistent method yielded in an exponential distribution for 
+	the large sizes, whereas with the consistent method they recovered a Log-Normal distribution. 
+	}
+
 Exacerbating the already complicated nature of the discrete transport of material 
 discontinuities is the role of capillary forces on the evolution of the interface. 
 They are commmonly modeled as singular source terms in the momentum balance equation that 
@@ -177,7 +185,7 @@ as well as a lack of well-balanced surface tension models for both these methods
 
 
 % LeChenadec & Pitsch (2013) | Owkes & Desjardins (2017) : 
-Recent advances concerning volume-of-fluid based methods that 
+Recent advances concerning Volume-of-Fluid based methods that 
 employ unsplit (conservative) geometric flux reconstructions 
 were made by LeChenadec and Pitsch \sidecite{le2013monotonicity}
 , and later by Owkes and Desjardins \cite{owkes2017mass}. 
@@ -222,7 +230,7 @@ Patel and Natarajan \sidecite{patel2017novel} developed a hybrid
 staggered-collocated approach to solve the consistency issue on 
 polygonal unstructured meshes, complemented with a well-balanced surface tension model. 
 Nevertheless, the VOF advection is based on algebraic transport, 
-not to mention the use of a VOF convolution based 
+not to mention the use of a convolution based 
 curvature computation, which is inherently not consistent. 
 
 
@@ -240,13 +248,13 @@ computed via geometric constructions being an open question
 
 To get a bird's eye view of the numerous features employed by the methods 
 in existing literature, we refer the reader to tables \ref{table_vof} and \ref{table_ls}, 
-which respectively provide systematic overviews of the VOF based and level set based approaches.    
+which respectively provide systematic overviews of the VOF and level set based approaches.    
 In the present body of work, we start by precisely defining the
 essential (desired) attributes of a numerical scheme that 
 ensures discrete consistency between mass and momentum transport : 
 
 \begin{itemize}
-	\item The discontinuity of the mass (volume fraction 
+	\item The discontinuity of the mass (volume-fraction 
 		derived density field) should propagate at the 
 		exact `numerical' speed as that of 
 		the discontinuity of the momentum field. 
@@ -281,8 +289,6 @@ ensures discrete consistency between mass and momentum transport :
 \end{figure*}
 
 In order to tackle the challenge of consistent transport on staggered control 
-\sidenote{`PARIS Simulator' has a staggered configuration of primitive 
-variables on regular Cartesian control volumes.}
 volume configurations, we have developed two different strategies, namely, 
 the \textit{shifted fractions} method and the \textit{sub-grid} method. 
 The former uses geometrical reconstructions to derive a 
@@ -309,7 +315,7 @@ Liquid atomization is basically the transformation of a compact volume into drop
 However, this simplistic view masks the intricate interplay between inertia, viscosity and capillarity across 
 different length and time scales spanning several orders of magnitude.  
 Such non-trivial interactions are responsible for the abundant variety in the sequence 
-of toplogical progressions that eventually lead to the formation of stable drops. 
+of topological progressions that eventually lead to the formation of stable drops. 
 The most basic transition involves the breakup of a cylindrical filament structure 
 (see Fig. \ref{jet}) at approximately regular intervals, driven primarily by the 
 growth of long wavelength perturbations due to capillary forces. 
@@ -340,11 +346,15 @@ topologies like filaments, expanding sheets with rims, expanding holes in thin s
 \end{marginfigure}
 
 
-The development of a mechanistic understanding into the origins of polydispersity in the drop sizes  
-resulting from such fragmentation phenomena has drawn considerable scientific interest throughout the past few decades.
+The development of quantitative models geared towards predicting the statistical properties 
+of certain attributes of the drops (sizes, shapes, velocities etc) generated from such fragmentation 
+phenomena has drawn considerable scientific interest throughout the past few decades.
 Numerous investigations (both experimental and numerical) into the statistical description of drop sizes
 have lead to the popularization of three distinct classes of probability density functions, 
-namely the Log-normal, Gamma and Poisson distributions \cite{vill_1}.  
+namely the Log-normal, Gamma and Poisson distributions \cite{vill_1}.
+In addition to the aforementioned families, distributions such as the Weibull \cite{weibull}, 
+Exponential \cite{exponential} and Beta \cite{beta} have also received significant attention, 
+particularly (but not limited to) in the context of raindrop sizes. 
 In terms of physical interpretations, the Log-normal model \cite{log_normal} is based on a sequential cascade
 of breakups, the Gamma family \cite{vill_2} based on the competing effects of aggregation and coalescence of liquid volumes, 
 and the Poisson model \cite{poisson} based on the instantaneous and random splitting of a volume into smaller constituents.  
@@ -377,7 +387,7 @@ The topological change from the thread-like structure of the ligaments to the
 depending on whether the drop forms at the free ends or through the 
 rupture of the main liquid column at different locations. 
 The former mode is referred to as end-pinching \cite{end_pinch_1,end_pinch_2}, 
-which generally occurs for regimes ($Oh < O(10^{-2})$) where the capillary driven
+which generally occurs for regimes ($\textrm{Oh} < O(10^{-2})$) where the capillary driven
 retraction of the ligament tips cannot be rapidly damped by the viscous forces. 
 Additionally, if the ligament is free at both ends and not slender enough (small elongation ratios), 
 there is a possibility that the capillary retraction contracts the entire volume into a single drop \cite{stone_1}. 
@@ -411,7 +421,7 @@ Here one observes the ``universal'' inertio-viscous regime \cite{length_2}, alth
 trajectory towards this final shape before pinch-off involves complicated to and fro transitions 
 between the inertial and viscous regimes on extremely fast time scales \cite{plethora}. 
 Despite the fact that the non-linear dynamics near pinch-off provides us with insights into
-the mechanism of drops formation, including the production of ``satellite'' drops \cite{sat_1, satellite_1, satellite_2}.  
+the mechanism of drops formation, including the production of ``satellite'' drops \cite{sat_1, satellite_1, satellite_2},  
 it still does not explain the dispersion in the sizes of drops formed via rupture of the ligament along several points. 
 Prior to the onset of breakup, the flow inside the ligament is driven by the several factors such as  
 the inertial stretching, propagation of capillary waves along the surface, shear-driven interactions at the interface etc.   
@@ -438,8 +448,8 @@ An outline of the ensuing chapters is as follows:
 	\item Chapter 3 evaluates the performance and accuracy of the different numerical methods
 		we have developed thus far, presenting several quantitative comparisons 
 		against certain benchmark flow configurations.  
-	\item Chapter 4 demonstrates the robustness and stability of our numerical methods in the context of a 
-		challenging flow configuration of a raindrop falling in air under the influence of gravity.
+	\item Chapter 4 demonstrates the robustness and stability of our numerical methods in the context of  
+		a challenging flow configuration in which a raindrop falls in the air under gravitational acceleration.
 	\item Chapter 5 provides a thorough description of our numerical setup for the spatially periodic
 		ligments, methodology behind the generation of randomly perturbed (corrugated) surfaces 
 		and the impact of initial conditions on the drops generated due to the ligament breakup.
