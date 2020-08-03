@@ -28,8 +28,8 @@ standard benchmark cases such as the behavior of spurious currents in static and
 moving droplets, and the propagation of damped capillary waves. 
 Each of these tests were conducted for density contrasts spanning several orders of magnitude, 
 including a realistic air-water configuration for the case of capillary waves. 
-Both of our consistent methods demonstrate slight to moderate levels of increased accuracy
-when compared to the standard version of our method that is not 
+Both of our consistent methods demonstrate moderate to significant levels of improvement 
+in accuracy when compared to the standard version of our method that is not 
 consistent with respect to mass-momentum transport. 
 A second-order error convergence rate is observed in the case of the 
 static droplet and the capillary wave, with the rate
@@ -38,7 +38,7 @@ Finally, the robustness and stability of the present method was demonstrated
 using the case of a raindrop falling in air, which involves complex interactions
 of capillary forces, viscosity and inertia combined with the difficulties associated
 with flows involving marked density contrasts.  
-A key feature of the our class of consistent methods is the ability to circumvent 
+A key feature of our class of consistent methods is the ability to circumvent 
 or suppress the un-physical interfacial deformations that are rampant 
 in the case of the standard non-consistent method, which typically results in the 
 ``artificial'' atomization of the raindrop .
@@ -59,7 +59,11 @@ obtain more accurate estimations of the interface curvature defined on the coars
 An interesting test would be to verify if both the consistent and non-consistent methods
 converge to identical solutions at sufficiently large mesh resolution, owing to the fact that they 
 are based on identical governing equations and differ mainly due to the choice of discretization scheme. 
-
+In view of the pervasiveness of shear-driven primary instabilities in a wide range 
+of fragmentation phenomena, a long term perspective would be to thoroughly evaluate 
+and subsequently improve the accuracy of our consistent methods in comparison to the theoretical 
+growth rate predictions (linear theory) of the Kelvin-Helmholtz instability for flows
+involving marked density constrasts, in a manner akin to our recent study \cite{caf_momcons}. 
 
 Moving onto the second part of the thesis, a thorough description of the 
 methodology behind the generation of slender periodic ligaments is provided, 
@@ -100,7 +104,7 @@ The theoretical predictions significantly differ from the observations derived f
 corresponding to \textit{moderately} perturbed ligament shapes, therefore opening the perspective
 of verifying the predictions within its scope of validity i.e. adequately large ensembles of \textit{weakly} perturbed ligaments.
 
-As we have devised a numerical setup that that allows us to efficiently generate
+As we have devised a numerical setup that allows us to efficiently generate
 large numbers of drops using high-fidelity simulations, an avenue for further investigation
 lies in the exploration of ligament ensembles corresponding to 
 larger aspect ratios, centimeter length scales and a broader range of initial corrugation strength. 
