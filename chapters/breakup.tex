@@ -143,7 +143,7 @@ Most notable amongst those studies is the one by Marmottant and Villermaux \cite
 wherein they illustrate the successive stages of the disintegration of 
 liquid ligaments formed when capillary tubes are rapidly retracted from 
 the surface of a liquid pool (refer to Fig. \ref{lig_stretch}). 
-Another set of observations were presented by Lhuissier and Villermaux \cite{sheet_hole},
+Another set of observations was presented by Lhuissier and Villermaux \cite{sheet_hole},
 where the disintegration phase sets in starting from a transient configuration
 of the ligaments arranged in a spider-web like network (Fig. \ref{lig_network}).  
 A more recent experiment is that of Keshavarz et al. \cite{mckinley},
@@ -199,13 +199,13 @@ are covered in Chapter 2.
 \end{marginfigure}
 
 
-A more detailed evaluation of the comparitive advantages of different  
+A more detailed evaluation of the comparative advantages of different  
 interfacial tracking approaches (e.g. VOF, level set, phase field etc) 
 can be found in the comprehensive review by Scardovelli and Zaleski 
 \cite{zaleskiannual}, or in a more recent exposition by  
 Mirjalili et al. \cite{mirjalili2017interface} on the same topic.
 The immiscible nature of the flows under consideration translates to the 
-absence of mass tranfer across the interface, thereby rendering the 
+absence of mass transfer across the interface, thereby rendering the 
 velocity field continuous across the interface at the incompressible limit. 
 The study is primarily focused on isothermal air-water systems, with 
 the material properties corresponding to that at 20 degrees Celcius. 
@@ -490,7 +490,7 @@ of Weber \cite{weber1931}, at the limit of low Reynolds is given by
 
 where $\omega_\mu = \sigma / \mu R $. 
 A similar conclusion can be drawn from \eqref{weber_chandra},
-that all the perturbations correponding to $x \geq 1 $ are 
+that all the perturbations corresponding to $x \geq 1 $ are 
 stable with respect to linear theory. 
 \marginnote{
 }
@@ -537,7 +537,7 @@ of the interface location, with the refinement criteria based on
 limiting gradients of volume fraction and velocity. The interface
 is represented by the white contours, the colormap on the left half is
 based on the axial velocity component, whereas the one on the right 
-correponds to that of vorticity. 
+corresponds to that of vorticity. 
 The colors red and blue correspond to 
 the higher and lower end values respectively, in case of both colormaps. 
 	}
@@ -554,7 +554,7 @@ the higher and lower end values respectively, in case of both colormaps.
 	\item The absence of the interaction of aerodynamic shear forces with the interface, in our particular
 		problem configuration. This prohibits the `numerical mixing' of the gas velocity with the
 		liquid density in the vicinity of poorly resolved interfacial cells, the concomitant 
-		un-physical momentum tranfer resulting in the rapid destabilization of the interface.   
+		un-physical momentum transfer resulting in the rapid destabilization of the interface.   
 \end{itemize}
 
 Furthermore, we have to tune the `knobs' of the 
@@ -602,7 +602,7 @@ local CFL number based on cell size) used for the numerical integration.
 The removal of these structures do not have any effect on the 
 underlying dynamics of the breakups and coalescences, and their sizes 
 are verified to be orders of magnitude below those corresponding to satellite drops. 
-Our threshold for removal correponds to structures that are resolved by 10 cells or less. 
+Our threshold for removal corresponds to structures that are resolved by 10 cells or less. 
 With regards to the iterative Poisson solver, we set a tolerance of $10^{-3}$, which in our
 operator-split framework (see \eqref{ufinal}) corresponds to the 
 accuracy by which the incompressibility condition \eqref{div} is verified. 
@@ -647,7 +647,7 @@ Apart from that, the full 3D simulations also resolve some
 finer thread like structures that appear in the vicinity 
 of the breakup region, the details of which are missing in the axisymmetric 3D simulations.  
 Overlooking some finer aspects captured by the full 3D simulations,  
-there seem to be no major discrenible differences between the axisymmetric 3D and full 3D simulations,
+there seem to be no major discernible differences between the axisymmetric 3D and full 3D simulations,
 with the axisymmetric 3D simulations acting as an accurate reduced order model concerning the 
 breakup and coalescence dynamics over both short and long time scales.
 Looking at the feasibility in terms of computational resources, the full 3D simulations 
@@ -655,7 +655,7 @@ are substantially more expensive than their axisymmetric 3D counterparts, by alm
 Considering the fact that we plan to carry out thousands of such simulations, the 
 slightly more accurate dynamics modeled by the full 3D simulations do not justify the
 approximately 20 fold increase in computational cost.   
-Hence, from this point onwards unless mentioned otherwise, all of the 
+Hence, from this point onwards, unless mentioned otherwise, all of the 
 simulations or results we present correspond to the axisymmetric 3D axisymmetric framework.
 
 % Oh = 0.01 
@@ -681,7 +681,7 @@ As we have discussed before, we use the adaptive mesh refinement capabilities
 of Basilisk to add greater resolution to regions in the vicinity of the interface, 
 therefore we have to impose an upper limit to the level of refinement as well. 
 Henceforth, we refer to this upper limit as ``maxlevel'', 
-where a ``maxlevel'' of $10$ correponds to a grid size of $L/ \Delta x = 2^{-10}$,  
+where a ``maxlevel'' of $10$ corresponds to a grid size of $L/ \Delta x = 2^{-10}$,  
 In Fig. \ref{res_comp} we illustrate the differences between simulations carried out
 using three different ``maxlevels'', corresponding to identical ligaments that
 are characterized by the non-dimensional parameters given in \eqref{base_params}.
@@ -716,7 +716,7 @@ In this study, we loosely define \textit{short} time scales as intervals $\Delta
 to $ \Delta t \leq 2T $, \textit{intermediate} ones as $ 2 < \Delta t \leq 5T $ 
 and \textit{long} time scales as intervals $\Delta t > 5T$. 
 In what follows, we briefly describe the influence of the adimensional 
-groups which precicely define the initial conditions for our ligament setup.  
+groups which precisely define the initial conditions for our ligament setup.  
 
 
 \paragraph{Corrugation Amplitude}
@@ -727,7 +727,7 @@ Figures \ref{amp_comp} and \ref{amp_comp_long} illustrates the differences broug
 evolution of ligaments (over both short and long time scales) with identical surface profiles 
 due to the differences in the average strength of the perturbations corresponding to that particular set of frequencies. 
 As one can clearly observe, the stronger the corrugations, 
-the lesser is the time available for rearragement of the liquid 
+the lesser is the time available for rearrangement of the liquid 
 volumes within the ligament, which completely changes the trajectory of 
 the system dynamics involving the subsequent coalescences.    
 

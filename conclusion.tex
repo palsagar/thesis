@@ -15,7 +15,7 @@ direct numerical simulations of the capillary-induced breakup of randomly corrug
 In the first part of the thesis, a detailed exposition into the design and 
 development of our numerical methods is provided, where the principle 
 of maintaining consistency between the discrete transport of
-the discontinuous mass and momentum fields were implemented  
+the discontinuous mass and momentum fields was implemented  
 using a conservative discretization of the two phase 
 Navier-Stokes equations on staggered Cartesian grids. 
 The \textit{shifted fractions} and \textit{sub-grid} methods were developed
@@ -27,14 +27,14 @@ Several performance aspects of the aforementioned methods were presented using
 standard benchmark cases such as the behavior of spurious currents in static and
 moving droplets, and the propagation of damped capillary waves. 
 Each of these tests were conducted for density contrasts spanning several orders of magnitude, 
-including a realistic air-water configuration for the case of capillary waves. 
+including a realistic air-water configuration in the case of capillary waves. 
 Both of our consistent methods demonstrate moderate to significant levels of improvement 
 in accuracy when compared to the standard version of our method that is not 
 consistent with respect to mass-momentum transport. 
 A second-order error convergence rate is observed in the case of the 
 static droplet and the capillary wave, with the rate
 reverting to first-order in the case of droplet advection.
-Finally, the robustness and stability of the present method was demonstrated
+Finally, the robustness and stability of the present method were demonstrated
 using the case of a raindrop falling in air, which involves complex interactions
 of capillary forces, viscosity and inertia combined with the difficulties associated
 with flows involving marked density contrasts.  
@@ -63,7 +63,7 @@ In view of the pervasiveness of shear-driven primary instabilities in a wide ran
 of fragmentation phenomena, a long term perspective would be to thoroughly evaluate 
 and subsequently improve the accuracy of our consistent methods in comparison to the theoretical 
 growth rate predictions (linear theory) of the Kelvin-Helmholtz instability for flows
-involving marked density constrasts, in a manner akin to our recent study \cite{caf_momcons}. 
+involving marked density contrasts, in a manner akin to our recent study \cite{caf_momcons}. 
 
 Moving onto the second part of the thesis, a thorough description of the 
 methodology behind the generation of slender periodic ligaments is provided, 
@@ -79,27 +79,27 @@ In the case of moderately perturbed millimeter scale water ligaments in air,
 the diameters of the resulting drops were found to be (approximately) symmetrically 
 distributed around the mean size, where the overall shape is relatively well described by 
 a Gaussian probability density function devoid of any free parameters.
-The shape of the diameter distributions are fairly robust, displaying negligible sensitivity
+The shape of the diameter distributions is fairly robust, displaying negligible sensitivity
 to the choice of bin-width used to generate the histograms.
 In addition, the distributions converge towards a fixed shape as we increase the sample size $N$, 
 where the error (defined with respect to the largest sample) scales as $N^{-1/2}$, therefore strongly 
-suggesting the absence of any hidden correlations between the individual realizations consituting the sample. 
+suggesting the absence of any hidden correlations between the individual realizations constituting the sample. 
 Amongst the initial conditions that influence the shape of the diameter distribution, the strength of 
-the corrugations act as a bifurcation parameter, changing the bimodal nature of the distribution shape for 
+the corrugations acts as a bifurcation parameter, changing the bimodal nature of the distribution shape for 
 weakly perturbed ligaments to a unimodal one as we go towards stronger initial perturbations. 
-Interestingly in the case of moderately perturbed ligaments, the tail of the diameter 
-distribution corresponding to the large drops are best described by an exponential scaling of
+Interestingly, in the case of moderately perturbed ligaments, the tail of the diameter 
+distribution corresponding to the large drops is best described by an exponential scaling of
 the form $e^{-d^6}$ even though the overall distribution seems to scale as $e^{-d^2}$. 
 This scaling result was found to be independent of whether uncertainty in the bin heights
-were included or not, and further verified by reconstructing the histograms on "$\log(\log)$ vs. $\log$" scales.      
-An interesting perspective is to compare the quality of the fit associated to 
+was included or not, and further verified by reconstructing the histograms on "$\log(\log)$ vs. $\log$" scales.      
+An interesting perspective is to compare the quality of the fit associated with 
 the exponential scaling to alternate forms such as log-normal, power law etc.  
 Finally, a Gaussian random process theory for near-monochromatic waves was developed 
 in an effort to explain the origins of the newfound $e^{-d^6}$ scaling.
 In the surface tension dominated regime associated to weakly perturbed initial ligament shapes, 
 the theory predicts a resulting drop diameter distribution in the form of a $d^3$- Gaussian, 
 as well as a functional relationship between the dispersion in the size of the drops and the 
-variance of the initial pertubations used to create the corrugated ligament surface. 
+variance of the initial perturbations used to create the corrugated ligament surface. 
 The theoretical predictions significantly differ from the observations derived from our numerical experiments
 corresponding to \textit{moderately} perturbed ligament shapes, therefore opening the perspective
 of verifying the predictions within its scope of validity i.e. adequately large ensembles of \textit{weakly} perturbed ligaments.

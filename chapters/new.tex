@@ -2,7 +2,7 @@
 \chapter{Methodology}
 \labch{momcons}
  
-In this chapter, we describe the our numerical methodology behind modeling 
+In this chapter, we describe our numerical methodology behind modeling 
 the dynamics of immiscible incompressible liquid-gas interfacial flows under isothermal conditions. 
 The numerical implementation is based on finite volume discretizations on uniform Cartesian grids, 
 utilizing state of the art methods in interfacial reconstruction coupled with geometric
@@ -20,7 +20,7 @@ We use the one-fluid formulation for our system of governing equations, thus sol
 the incompressible Navier-Stokes equations throughout the whole domain including regions 
 of variable density and viscosity, which itself depend on the explicit 
 location of the interface separating the two fluids.
-In the absence of mass tranfer, the velocity field is continuous across
+In the absence of mass transfer, the velocity field is continuous across
 the interface at the incompressible limit, with the interface evolving according to the local velocity vector.  
 Thus, the equations are as follows :  
 
@@ -179,7 +179,7 @@ can be found in the work by Weymouth and Yue \cite{wy}}.
 Multidimensional (unsplit) methods have an advantage in that respect due to the 
 fact that they are conservative by nature of their design, but are inherently 
 more complicated to develop and implement, with no straightforward extension from 2D to 3D.    
-For a more detailed and nuanced evaluation of the comparitive advantages of 
+For a more detailed and nuanced evaluation of the comparative advantages of 
 interfacial transport methods, we refer the reader to the recent review by 
 Mirjalili et al. \cite{mirjalili2017interface} on the given subject.     
 The propagation of the interface can be described by the evolution of
@@ -354,7 +354,7 @@ primary variables i.e. pressure ($p$) and velocity ($u_q$),
 where $q = 1,2,3$ represents the $x$,$y$ and $z$ componenets respectively.
 The control volume is in the form of a cube (3D) or a square (2D). 
 The pressure and velocity variables are defined in a staggered arrangement, 
-which means that the control volumes correpesponding to the velocity components 
+which means that the control volumes corresponding to the velocity components 
 $u_1$ and $u_2$ are shifted with respect to the control volume for pressure.
 The staggered grid with the primary variables are represented in Figure \ref{stag-grid}.
 The use of staggered control volumes has the advantage of
@@ -1104,8 +1104,7 @@ the other two directions $q=2,3$ is straightforward.
 
 
 Throughout this body of work, we have extensively tested and used 
-two variants of such interpolation functions, the exact implementation 
-of which can be found in Appendix A. The interpolation functions are :
+two variants of such interpolation functions :
 
 
 \marginnote{The reader can refer to influential works of 
