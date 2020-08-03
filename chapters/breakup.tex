@@ -40,17 +40,13 @@ not to mention the dissipative effects of viscosity.
 Although we present a convoluted picture of ligament dynamics prior
 to breakup, it is ultimately the capillary force that drives the 
 eventual topology change from the thread-like structure to that of the drop. 
-The primary role of the both the inertial and viscous forces is to oppose 
+Often the role played by both inertia and viscous forces is to oppose 
 or dampen the destabilizing effects of the capillarity induced deformations.   
 An additional mechanism to consider is the merger or coalescence of the 
 newly created droplets (post-breakup) along the axis of the former ligament
 structure, or with droplets originating from other sources in the near vicinity. 
 The generation of drops whose diameters are significantly larger than the 
 width of original ligament are predominantly driven by the aforementioned coalescences.  
-Therefore, considering the combined effects of the above mechanisms, we expect a significant
-departure of the resulting drop size distribution from that predicted by the  
-classical analysis of the Rayleigh-Plateau instability \cite{rayleigh1879a,rayleigh1879b}. 
-
 
 % Corrugation-coalescence model
 \section{Shape Characterization}
@@ -58,33 +54,31 @@ classical analysis of the Rayleigh-Plateau instability \cite{rayleigh1879a,rayle
 Linear theory based on the Rayleigh breakup of infinitely
 long liquid cylinders in a quiescent medium predicts the disintegration
 of the thread along regular intervals, the length of which is governed
-by the fastest growing spatial frequency. 
-The drops generated according to this model would be uniform in
-size, in sharp contrast to the significant variances in the size distributions
-observed in reality.  
-Even in the simpler case of decaying liquid jets, 
+by the fastest growing spatial frequency \cite{rayleigh1879a,rayleigh1879b}. 
+As an extrapolation of this model, one can consider the size of the drops formed 
+to be determined by the liquid volume contained within one wavelength corresponding 
+to the fastest growing mode, thereby resulting in a uniform drop size distribution. 
+This is in sharp contrast to the significant variances in the size distributions
+observed in reality \sidenote{Refer to the recent study by Wang and Bourouiba \cite{lydia_3} 
+for a discussion.}.  
+Even in the simple case of decaying liquid jets, 
 non-linearities near the breakup zone kick into effect beyond
 the initial exponential growth phase predicted by linear theory, 
 eventually resulting in the jet breaking up into 
-``main'' drops and significantly smaller ``satellite'' droplets 
-\sidenote{Refer to the high quality photographs in 
-the work of Rutland and Jameson \cite{rutland1971non}, where they demonstrate 
-the formation of ``satellite'' droplets that manifest due to the non-linear effects
-driving the jet breakup.}. 
+``main'' drops and significantly smaller ``satellite'' droplets \cite{rutland1971non}.
 Thus, simply taking into account the non-linear effects driving the breakup would
-lead to a bimodal distribution of droplet size, but this explanation 
+lead us to expect a bimodal distribution of droplet size, but this explanation 
 still fails to account for the broad distribution of sizes observed in 
 the outcomes of the majority of natural \cite{nature} and industrial \cite{industrial} processes. 
 
 
-As we have seen in the previous chapter, there are several hypotheses 
-in existing literature \sidecite{vill_1} 
+There are several hypotheses in existing literature \sidecite{vill_1} 
 that attempt to model the underlying physical mechanisms 
 that are responsible for the selection of droplet size. 
 A model first proposed by Villermaux and coworkers \sidecite{vill_2,vill_4}
 asserts that the variance in the droplet sizes is strongly 
 correlated to the initially corrugated shape of the 
-ligament, from which the drops originate. 
+ligament from which the drops originate. 
 In this model, the corrugated ligament is represented as a collection 
 of `blobs' (see Fig. \ref{blobs}), with the continuous interaction between 
 such blobs throughout the destabilization phase accounting for the 
@@ -158,7 +152,7 @@ but directed towards the behaviour of non-Newtonian fluids.
 The fundamental limitation that is common to experiments cited above 
 is the inability to precisely control the initial conditions.
 In other words, generating ligaments conforming `\textit{exactly}'
-to a specified geometrical shape is practically (almost) impossible 
+to a specified geometrical shape is practically impossible 
 due to the inherent difficulties associated with the control of free-surface flows.  
 In the absence of such precise control and reproducibility of the initial 
 ligament corrugations, one has to resort to a posteriori correlations between 
@@ -170,7 +164,7 @@ specifications of the initial conditions of the ligaments in question.
 An additional advantage offered by our high-fidelity numerical approach 
 is the access to a much wider range (compared to physical experiments) within the 
 space of all control parameters that influence the dispersion in the drop size distributions, 
-not to mention the higher levels of temporal resolution on offer 
+also including higher levels of temporal resolution on offer 
 that enable better tracking of the non-linear dynamics near pinch-off
 \sidenote{The characteristic time-scale of the flow near the 
 vicinity of the breakup is given by $ t_{\sigma} \sim \left(\rho r^3 / \sigma \right)^{1/2} $, thus
@@ -191,7 +185,8 @@ where the domains are composed of regions of variable density and viscosity.
 In order to reproduce the free-surface dynamics, a Volume-of-Fluid 
 (VOF) approach is used to capture the interface, the explicit location 
 of which marks the separation between the two fluids.
-
+The details regarding our VOF approach, governing equations etc
+are covered in Chapter 2. 
 
 \begin{marginfigure}
 \centering
@@ -249,7 +244,7 @@ recent examples being on the topic of air entrainement through wave breaking
 modeling of viscoelastic droplet splashes \cite{basilisk_4} and many more.
 
 
-\subsection*{Computational Schematic}
+\subsection*{Computational Setup}
 
 As discussed in the previous sections, the 
 dynamics of the liquid volume rearrangements 
@@ -272,13 +267,13 @@ and the acceleration of the ligament itself into
 the surrounding gas medium. 
 }
 with respect to the initial conditions. 
-Therefore, we opt for a very particular type of setup,
-with infinitely long ligaments having zero initial kinetic energy, 
+Therefore, we opt for a particular setup,
+with infinitely long ligaments having zero initial kinetic energy 
 and spatial periodicity in the geometrical shape along the axis. 
 We carry out the simulations in an axisymmetric framework, 
 therefore excluding any azimuthal variations
 in the initial shape as a consequence of this simplification. 
-Fig. \ref{schematic} illustrates the a 2D schematic of the
+Fig. \ref{schematic} illustrates the a schematic of the
 computational setup, where the domain is a square of side $L$. 
 The bottom side of the box acts as the axis of symmetry for 
 the corrugated ligament (detailed view in the inset of Fig. \ref{schematic}), 
@@ -293,7 +288,7 @@ with impenetrable free-slip conditions applied on the top side.
 \begin{figure}
 \centering
 \includegraphics{plots/ligament_breakup/schematic.pdf}
-\caption{ A 2D schematic of the computational domain.
+\caption{ A schematic of the computational domain.
 An infinitely long and axisymmetric corrugated ligament
 of mean radius $R$ is placed in a square box of side $L$.
 The bottom side of the box acts as the axis of symmetry 
@@ -318,9 +313,8 @@ corrugated surface profile of the ligament.
 Towards that objective, we construct a surface 
 using the superposition of random overlapping waves, 
 corresponding to an overall spatial period $L$ of the resulting profile. 
-The aspect of ``randomness'' is achieved by  
-using a state of the art white noise generation algorithm,
-introduced in the seminal work of Matsumoto and Nishimura \sidecite{rng}.
+The aspect of ``randomness'' is achieved by using a state of the art 
+white noise generation algorithm \sidecite{rng}.
 A robust and open source implementation of the aforementioned algorithm 
 is available in the GNU Scientific Library toolkit \cite{gnusl},
 and thus readily incorporated into our numerical platform Basilisk.   
@@ -338,8 +332,7 @@ and thus readily incorporated into our numerical platform Basilisk.
 \label{surface}
 \end{figure}
 
-The discretization of the radial profile $R(x)$ is denoted as $R_i$, 
-which can be expressed as the sum of the mean radius 
+The discretization of the radial profile $R_i$ can be expressed as the sum of the mean radius 
 (unperturbed) and some random perturbation such that    
 
 \begin{align}
@@ -379,15 +372,12 @@ in order to obtain the final description of the ligament's radial profile.
 \subsection*{Adimensional Groups}
 
 The initial conditions of the computational setup can be 
-characterized by Weber and Ohnesorge numbers, as defined below   
+characterized by the Ohnesorge number, as defined below   
 
 \begin{align}
-	We = 0 \quad , \quad Oh = \mu / \sqrt{\rho \sigma R} . 
+	\textrm{Oh} = \mu / \sqrt{\rho \sigma R} . 
 \end{align}
 
-The Weber number is zero due to the ligaments initially being at rest, 
-but during the rapid destabilization phase a part of the surface 
-potential is instantly transformed into kinetic energy of the liquid.  
 The Ohnesorge number is simply the square-root of the ratio  
 of the viscous length scale ($l_\mu$) \sidenote{
 The viscous length is defined as $l_{\mu} = \mu^2 / \rho \sigma $.
@@ -396,6 +386,11 @@ therefore is not influenced by initial conditions
 or any global parameters specific to the problem.
 } 
 to the characteristic length scale of the problem ($R$).
+The ligaments have zero initial kinetic energy, 
+but a part of the surface potential from the static initial conditions 
+is immediately converted into liquid inertia, 
+hence we can interpret that our setup is characterized 
+by $\textrm{We} = 1$, where $\textrm{We}$ is the Weber number.
 The geometrical shape of the ligament can 
 be characterized by the combination of a measure of the initial
 corrugation amplitude ($\varepsilon$),
@@ -454,8 +449,8 @@ Detailed derivations of \eqref{rayleigh_plateau} and \eqref{weber_chandra}
 can be found in the comprehensive review by Eggers \cite{eggers1997nonlinear}.
 }
 
-where $\omega_0 = \sqrt{\sigma/ \rho a^3}$, with $a$ being the radius 
-of the cylinder, and $x= ka$ is the reduced wavenumber of the initial perturbations. 
+where $\omega_0 = \sqrt{\sigma/ \rho R^3}$ and $x= kR$ is the 
+reduced wavenumber of the initial perturbations. 
 The relation \eqref{rayleigh_plateau} describing the classical 
 Rayleigh-Plateau instability \cite{rayleigh1879a, plateau1849} 
 demonstrates that only the perturbations corresponding to $x \leq 1 $ 
@@ -493,7 +488,7 @@ of Weber \cite{weber1931}, at the limit of low Reynolds is given by
 \label{weber_chandra}
 \end{align}
 
-where $\omega_\mu = \sigma / \mu a $. 
+where $\omega_\mu = \sigma / \mu R $. 
 A similar conclusion can be drawn from \eqref{weber_chandra},
 that all the perturbations correponding to $x \geq 1 $ are 
 stable with respect to linear theory. 
@@ -523,7 +518,7 @@ between these unstable modes will play a key role in the
 complex liquid rearrangements within the ligament bulk. 
 
 \subsection*{Numerical Fine Tuning}
-As we have discussed in the previous part (A) of the thesis,  
+As we have discussed in the previous part of the thesis,  
 one has to pay particular attention to several aspects pertaining to 
 the numerical stability of solvers when dealing with surface tension 
 dominated flows involving significant contrasts in material properties 
@@ -554,8 +549,8 @@ the higher and lower end values respectively, in case of both colormaps.
 		us to attain much higher levels of numerical resolution for the smaller/thinner 
 		liquid structures, while using significantly coarser meshes away from the interface.
 		For example, in our current simulations (see Fig. \ref{lig_mesh}), the number of cells
-		in the domain (2D) are of the order $10^4$, whereas an equivalent \textit{uniform} mesh 
-		(2D) would result in a problem size of order $10^6$, thereby differing by a factor of 100.
+		in the domain are of the order $10^4$, whereas an equivalent \textit{uniform} mesh 
+		would result in a problem size of order $10^6$, thereby differing by a factor of 100.
 	\item The absence of the interaction of aerodynamic shear forces with the interface, in our particular
 		problem configuration. This prohibits the `numerical mixing' of the gas velocity with the
 		liquid density in the vicinity of poorly resolved interfacial cells, the concomitant 
@@ -612,56 +607,56 @@ With regards to the iterative Poisson solver, we set a tolerance of $10^{-3}$, w
 operator-split framework (see \eqref{ufinal}) corresponds to the 
 accuracy by which the incompressibility condition \eqref{div} is verified. 
 
-\subsubsection*{2D versus 3D}
+\subsubsection*{Axisymmetric 3D versus Full 3D}
 
 An important question to ask ourselves before we conduct any large scale
 study is the feasibility of carrying out full 3D simulations. 
 In Basilisk, we have the option of carrying out axisymmetric simulations
 that resolve the underlying governing equations on cylindrical coordinates. 
 Due to the axial symmetry in the construction of our ligaments, carrying 
-out 2D axisymmetric simulations instead of full 3D ones seem to offer a more 
+out axisymmetric 3D simulations instead of full 3D ones seem to offer a more 
 computationally efficient approach, especially as we are interested in studying
 the dynamics of thousands of such ligaments. 
 We start with ligaments that correspond to the following parameters
 
 \begin{align}
-	Oh &= 10^{-2} \quad, \quad \varepsilon = 0.8 \quad , \\
+	\textrm{Oh} &= 10^{-2} \quad, \quad \varepsilon = 0.8 \quad , \\
 	\Lambda &= 50 \quad , \quad K = 2\pi \quad .
 \label{base_params}
 \end{align}
 
-The numerical resolution in our feasibility studies (in both 2D and 3D) correspond to 
+The numerical resolution in our feasibility studies (in both axisymmetric 3D and full 3D) correspond to 
 $W / \Delta x_{\textrm{min}} = 10.24$, where $\Delta x_{\textrm{min}}$ is the size 
-of the smallest grid cell in the octree (quadtree in 2D) mesh. 
+of the smallest grid cell in the octree mesh. 
 The computations were carried out on 16 processors in parallel, within the framework
 of parallelization through domain decomposition.
 The computational times required to resolve the dynamics up to $T = 30$ are $54$ seconds 
-and $976$ seconds for the 2D and 3D cases, respectively. 
+and $976$ seconds for the axisymmetric 3D and full 3D cases, respectively. 
 In figures \ref{2d_3d_short} and \ref{2d_3d_long}, we illustrate the differences 
-in the temporal evolution between a full 3D simulation and its 2D (axisymmetric)
+in the temporal evolution between a full 3D simulation and its axisymmetric 3D (axisymmetric)
 equivalent, on fast and slow time scales respectively. 
 As one can observe, the major qualitative difference 
-lies in the excitation of certain azimuthal modes in the 3D case, 
-which cannot be captured in the 2D case due to the 
+lies in the excitation of certain azimuthal modes in the full 3D case, 
+which cannot be captured in the axisymmetric 3D case due to the 
 imposition of symmetry about the central axis.
 Such a subtle difference in the dynamics may 
 explain the slightly higher tendency towards coalescence 
-in the 2D case, due to the fact that some of the energy from 
-the axial modes is transferred into the azimuthal modes in the 3D case. 
-Apart from that, the 3D simulations also resolve some 
+in the axisymmetric 3D case, due to the fact that some of the energy from 
+the axial modes is transferred into the azimuthal modes in the full 3D case. 
+Apart from that, the full 3D simulations also resolve some 
 finer thread like structures that appear in the vicinity 
-of the breakup region, the details of which are missing in the 2D simulations.  
-Overlooking some finer aspects captured by the 3D simulations,  
-there seem to be no major discrenible differences between the 2D and 3D simulations,
-with the 2D simulations acting as an accurate reduced order model concerning the 
+of the breakup region, the details of which are missing in the axisymmetric 3D simulations.  
+Overlooking some finer aspects captured by the full 3D simulations,  
+there seem to be no major discrenible differences between the axisymmetric 3D and full 3D simulations,
+with the axisymmetric 3D simulations acting as an accurate reduced order model concerning the 
 breakup and coalescence dynamics over both short and long time scales.
-Looking at the feasibility in terms of computational resources, the 3D simulations 
-are substantially more expensive than their 2D counterparts, by almost a factor of $20$ in most cases. 
+Looking at the feasibility in terms of computational resources, the full 3D simulations 
+are substantially more expensive than their axisymmetric 3D counterparts, by almost a factor of $20$ in most cases. 
 Considering the fact that we plan to carry out thousands of such simulations, the 
-slightly more accurate dynamics modeled by the 3D simulations do not justify the
+slightly more accurate dynamics modeled by the full 3D simulations do not justify the
 approximately 20 fold increase in computational cost.   
 Hence, from this point onwards unless mentioned otherwise, all of the 
-simulations or results we present correspond to the 2D axisymmetric framework.
+simulations or results we present correspond to the axisymmetric 3D axisymmetric framework.
 
 % Oh = 0.01 
 % amp = 0.4
@@ -678,9 +673,9 @@ simulations or results we present correspond to the 2D axisymmetric framework.
 Arguably the most important parameter on which the fidelity of our
 numerical simulations hinges on is the spatial resolution or grid size. 
 The octree structure in our solver entails successive refinements in the  
-size of the cubic cell (square cell in 2D) by factors of $2$ in each direction.
+size of the cubic cell (square cell in axisymmetric 3D) by factors of $2$ in each direction.
 \marginnote{In our simulations, the square domain of size $L$ has a minimum 
-level of refinement corresponding to a grid size of $L/\Delta x = 2^{-4}$,
+level of refinement corresponding to a grid size of $L/\Delta x = 2^{4}$,
 where $\Delta x$ is the size of the square cell.}  
 As we have discussed before, we use the adaptive mesh refinement capabilities 
 of Basilisk to add greater resolution to regions in the vicinity of the interface, 
@@ -738,14 +733,14 @@ the system dynamics involving the subsequent coalescences.
 
 \paragraph{Ohnesorge Number}
 The Ohnesorge number selects the characteristic size $R$ of our ligaments, 
-where $Oh \simeq O(10^{-2})$ and $Oh \simeq O(10^{-3})$ corresponds to 
+where $\textrm{Oh} \simeq O(10^{-2})$ and $\textrm{Oh} \simeq O(10^{-3})$ corresponds to 
 millimeter and centimeter scale water ligaments in air, respectively.  
 Fig. \ref{ohne_comp} outlines the temporal evolution of ligaments with   
 the exact same initial shapes, but corresponding to different length scales. 
 The interfacial shapes become more compact as one goes towards larger Ohnesorge
 numbers, also leading to slower flows and lower amounts of vorticity concentration at the interface.  
 These trends are quite expected as the effects of visous dissipation increase in influence
-as one goes towards smaller length scales ($R \sim Oh^{-2}$).
+as one goes towards smaller length scales ($R \sim \textrm{Oh}^{-2}$).
 
 \paragraph{Aspect Ratio}
 The parameter $\Lambda$ gives us a measure of the ``slenderness'' of the ligaments, 
@@ -801,16 +796,16 @@ descriptions pertaining to the influence of the initial conditions.
 
 \begin{figure*}
 \centering
-\includegraphics{plots/ligament_breakup/3d_vs_2d_short.pdf}
+\includegraphics{plots/ligament_breakup/3d_vs_2d_short_new.pdf}
 	\caption{Dynamics of the ligament destabilization, subsequent breakup 
 	and eventual coalescences over \textit{short} time scales. 
 	The physical parameters correspond to those defined in \eqref{base_params}.
 	The top row (light blue) represents the geometrical reconstructions of 
-	the interface shape for the 2D axisymmetric simulations, and the bottom 
+	the interface shape for the axisymmetric 3D simulations, and the bottom 
 	row (deep blue) represents those corresponding to the full 3D simulations.
-	The discrepancy between the 3D and 2D cases in terms of distances between
+	The discrepancy between the full 3D and axisymmetric 3D cases in terms of distances between
 	the neighbouring structures is merely an effect of the distortion of lengths
-	in the 3D case, due to the use of a single point perspective (non-parallel) 
+	in the full 3D case, due to the use of a single point perspective (non-parallel) 
 	projection in order to visualize the interface shapes. 
 	}
 \label{2d_3d_short}
@@ -818,16 +813,16 @@ descriptions pertaining to the influence of the initial conditions.
 
 \begin{figure*}
 \centering
-\includegraphics{plots/ligament_breakup/3d_vs_2d_long.pdf}
+\includegraphics{plots/ligament_breakup/3d_vs_2d_long_new.pdf}
 	\caption{Dynamics of the ligament destabilization, subsequent breakup 
 	and eventual coalescences over \textit{long} time scales. 
 	The physical parameters correspond to those defined in \eqref{base_params}.
 	The top row (light blue) represents the geometrical reconstructions of 
-	the interface shape for the 2D axisymmetric simulations, and the bottom 
+	the interface shape for the axisymmetric 3D simulations, and the bottom 
 	row (deep blue) represents those corresponding to the full 3D simulations.
-	The discrepancy between the 3D and 2D cases in terms of distances between
+	The discrepancy between the full 3D and axisymmetric 3D cases in terms of distances between
 	the neighbouring structures is merely an effect of the distortion of lengths
-	in the 3D case, due to the use of a single point perspective (non-parallel) 
+	in the full 3D case, due to the use of a single point perspective (non-parallel) 
 	projection in order to visualize the interface shapes. 
 	}
 \label{2d_3d_long}
@@ -879,8 +874,8 @@ descriptions pertaining to the influence of the initial conditions.
 	Simulations of identical ligament surface profiles
 	at different length scales in accordance with the  
 	Ohnesorge numbers that characterize them, with the smallest 
-	length scale represented by the top row ($Oh = 0.1$) and the largest 
-	length scale by the bottom row ($Oh = 0.001$). 
+	length scale represented by the top row ($\textrm{Oh} = 0.1$) and the largest 
+	length scale by the bottom row ($\textrm{Oh} = 0.001$). 
 	The colormap is kept the same across all figures, where the left 
 	side of the axis of symmetry in each figure corresponds to the axial component of 
 	velocity (values from $-1$ to $1$), whereas the one on the right refers to 
