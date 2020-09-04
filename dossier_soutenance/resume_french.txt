@@ -1,0 +1,13 @@
+La dynamique des fluides à l’interface liquide-gaz joue un rôle critique dans plusieurs phénomènes naturels ainsi que dans une myriade d'applications industrielles. 
+On peut trouver, au sein de systèmes dominés par la tension de surface tels que les gouttes ou les bulles, les mécanismes fondamentaux régissant entre 
+autre les transferts de chaleur et de masse à l'interface océan-atmosphère, les propriétés de mélange dans le contexte des processus métallurgiques, 
+les modes conventionnels de transfert de chaleur, ou encore la transmission d'agents pathogènes. L'une des caractéristiques les plus fascinantes 
+de ces écoulements multiphasiques est le processus d'atomisation, au cours duquel un volume de liquide se scinde en fragments de plus en plus petits. 
+Ce processus intervient via une série de changements topologiques de complexité variable, aboutissant à l'apparition de gouttes de différentes tailles. 
+Ce mécanisme est systématiquement présent dans une large gamme d'applications, allant des procédés de combustion à l'irrigation agricole. 
+Ce manuscrit présente des études numériques réalisées à l'aide de reconstruction géométrique avancée basée sur les méthodes de « Volume-of-Fluid ».
+Deux aspects différents des flux aux interfaces liquide-gaz avec fort contraste de densité sont abordés. 
+La première partie cherche à comprendre, et éventuellement à supprimer, certains types d'instabilités qui affectent les modèles numériques standards 
+en raison de la croissance en cascade des erreurs de discrétisation, qui sont endémiques à toute résolution numérique faible ou modérée. 
+Dans un second temps, ces travaux portent sur une description statistique de la taille des gouttes obtenues. 
+Ces gouttes sont alors générées en réalisant de nombreuses simulations numériques directes à haute résolution de la rupture capillaire de ligaments de courbure aléatoire.
