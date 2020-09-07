@@ -1,0 +1,154 @@
+\makeatletter
+\def\@ecole{école}
+\newcommand{\ecole}[1]{
+  \def\@ecole{#1}
+}
+
+\def\@specialite{Spécialité}
+\newcommand{\specialite}[1]{
+  \def\@specialite{#1}
+}
+
+\def\@ED{\'{E}cole Doctorale}
+\newcommand{\ED}[1]{
+  \def\@ED{#1}
+}
+
+\def\@doctorat{Doctorat}
+\newcommand{\doctorat}[1]{
+  \def\@doctorat{#1}
+}
+
+\def\@adresse{Adresse}
+\newcommand{\adresse}[1]{
+  \def\@adresse{#1}
+}
+
+\def\@directeur{directeur}
+\newcommand{\directeur}[1]{
+  \def\@directeur{#1}
+}
+
+\def\@encadrant{encadrant}
+\newcommand{\encadrant}[1]{
+  \def\@encadrant{#1}
+}
+\def\@jurya{}{}{}
+\newcommand{\jurya}[3]{
+  \def\@jurya{#1,	& #2	& #3\\}
+}
+\def\@juryb{}{}{}
+\newcommand{\juryb}[3]{
+  \def\@juryb{#1,	& #2	& #3\\}
+}
+\def\@juryc{}{}{}
+\newcommand{\juryc}[3]{
+  \def\@juryc{#1,	& #2	& #3\\}
+}
+\def\@juryd{}{}{}
+\newcommand{\juryd}[3]{
+  \def\@juryd{#1,	& #2	& #3\\}
+}
+\def\@jurye{}{}{}
+\newcommand{\jurye}[3]{
+  \def\@jurye{#1,	& #2	& #3\\}
+}
+\def\@juryf{}{}{}
+\newcommand{\juryf}[3]{
+  \def\@juryf{#1,	& #2	& #3\\}
+}
+\def\@juryg{}{}{}
+\newcommand{\juryg}[3]{
+  \def\@juryg{#1,	& #2	& #3\\}
+}
+\def\@juryh{}{}{}
+\newcommand{\juryh}[3]{
+  \def\@juryh{#1,	& #2	& #3\\}
+}
+\def\@juryi{}{}{}
+\newcommand{\juryi}[3]{
+  \def\@juryi{#1,	& #2	& #3\\}
+}
+\makeatother
+
+\newcommand\BackgroundPic{ %
+	\put(0,0){ %
+		\parbox[b][\paperheight]{\paperwidth}{ %
+			\includegraphics[height=3cm]{./images/bordure.png} %
+			\vfill
+		}
+	}
+}
+\newcommand\EtiquetteThese{ %
+	\put(0,0){ %
+		\parbox[t][\paperheight]{\paperwidth}{ %
+			\hfill
+			\colorbox{blue}{		
+				\begin{minipage}[b]{3em}
+					\centering\Huge\textcolor{white}{T\\H\\E\\S\\E\\}
+					\vspace{0.2cm}
+				\end{minipage}
+			}
+		}
+	}
+}
+
+\makeatletter
+\newcommand{\pagedegarde}{
+\newgeometry{top=2.5cm, bottom=2cm, left=2cm, right=1cm}
+%\AddToShipoutPicture*{\BackgroundPic}
+%\AddToShipoutPicture*{\EtiquetteThese}
+  \begin{titlepage}
+  \centering
+      \includegraphics[height=2cm]{images/SU.pdf}
+      \hfill
+      \includegraphics[height=2cm]{images/IJLRDA.jpg}\\
+    \vspace{1cm}
+      {\Large \@ED}\\
+    \vspace{1cm}
+      {\huge 
+      	%{\bfseries \@doctorat}\\
+    %\vspace{0.5cm}
+      	TH\`{E}SE}\\
+    \vspace{1cm}
+   		{\bfseries pour obtenir le grade de docteur délivré par}\\
+    \vspace{1cm}
+    	{\huge\bfseries \@ecole}\\
+    \vspace{0.5cm}
+    	{\Large{\bfseries Spécialité doctorale “\@specialite''}}\\
+    \vspace{1.2cm}
+    	\textit{présentée et soutenue publiquement par}\\
+    \vspace{0.5cm}
+    	{\Large {\bfseries \@author}} \\
+    \vspace{0.5cm}
+    	le \@date \\
+    \vfill
+       {\LARGE \color[rgb]{0,0,0.4} \bfseries{\@title}} \\
+\vspace{0.2cm}
+       {\large \color[rgb]{0,0,0.4}{\@subtitle}}\\ 
+    \vfill
+        Directeur de thèse : {\bfseries \@directeur}\\
+        Co-encadrant de thèse : {\bfseries \@encadrant}\\
+    \vfill
+	\begin{tabular}{>{\bfseries}lll}
+		\large Jury\\
+		\@jurya
+		\@juryb
+		\@juryc
+		\@juryd
+		\@jurye
+		\@juryf
+		\@juryg
+		\@juryh
+		\@juryi
+	\end{tabular}
+	\vfill
+	
+	\@adresse
+  \end{titlepage}
+
+
+
+
+\restoregeometry  
+}

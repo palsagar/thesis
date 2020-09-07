@@ -2,13 +2,15 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\nonumberline Contents}{iii}{chapter*.1}
+\contentsline {chapter}{Acknowledgement}{i}{chapter*.1}
+\defcounter {refsection}{0}\relax
+\contentsline {chapter}{\nonumberline Contents}{ii}{chapter*.2}
 \defcounter {refsection}{0}\relax
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {2}
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Numerical Development}{11}{part*.12}
+\contentsline {part}{\nonumberline Numerical Development}{11}{part*.13}
 \defcounter {refsection}{0}\relax
 \contentsline {chapter}{\numberline {2}Methodology}{12}{chapter.2}
 \defcounter {refsection}{0}\relax
@@ -18,17 +20,17 @@
 \defcounter {refsection}{0}\relax
 \contentsline {section}{\numberline {2.2}Interfacial Transport : VOF}{14}{section.2.2}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Lagrangian Explicit}{16}{section*.17}
+\contentsline {paragraph}{\nonumberline Lagrangian Explicit}{16}{section*.18}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Eulerian Implicit}{17}{section*.19}
+\contentsline {paragraph}{\nonumberline Eulerian Implicit}{17}{section*.20}
 \defcounter {refsection}{0}\relax
 \contentsline {section}{\numberline {2.3}Consistent Transport of Mass and Momentum}{18}{section.2.3}
 \defcounter {refsection}{0}\relax
 \contentsline {section}{\numberline {2.4}Advection on Staggered Grids}{27}{section.2.4}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline \textbf {Prolongation}}{30}{section*.35}
+\contentsline {paragraph}{\nonumberline \textbf {Prolongation}}{30}{section*.36}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline \textbf {Restriction}}{31}{figure.caption.37}
+\contentsline {paragraph}{\nonumberline \textbf {Restriction}}{31}{figure.caption.38}
 \defcounter {refsection}{0}\relax
 \contentsline {chapter}{\numberline {3}Numerical Benchmarks}{36}{chapter.3}
 \defcounter {refsection}{0}\relax
@@ -50,7 +52,7 @@
 \defcounter {refsection}{0}\relax
 \contentsline {section}{\numberline {4.3}Stabilization Strategies}{59}{section.4.3}
 \defcounter {refsection}{0}\relax
-\contentsline {part}{\nonumberline Physics of Fragmentation}{66}{part*.88}
+\contentsline {part}{\nonumberline Physics of Fragmentation}{66}{part*.89}
 \defcounter {refsection}{0}\relax
 \contentsline {chapter}{\numberline {5}Generation of Corrugated Ligaments}{67}{chapter.5}
 \defcounter {refsection}{0}\relax
@@ -60,17 +62,17 @@
 \defcounter {refsection}{0}\relax
 \contentsline {section}{\numberline {5.2}Numerical Setup}{69}{section.5.2}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Numerical Platform : Basilisk}{69}{figure.caption.94}
+\contentsline {paragraph}{\nonumberline Numerical Platform : Basilisk}{69}{figure.caption.95}
 \defcounter {refsection}{0}\relax
 \contentsline {section}{\numberline {5.3}Impact of Initial Conditions}{76}{section.5.3}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Corrugation Amplitude}{76}{section*.107}
+\contentsline {paragraph}{\nonumberline Corrugation Amplitude}{76}{section*.108}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Ohnesorge Number}{77}{section*.108}
+\contentsline {paragraph}{\nonumberline Ohnesorge Number}{77}{section*.109}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Aspect Ratio}{77}{section*.109}
+\contentsline {paragraph}{\nonumberline Aspect Ratio}{77}{section*.110}
 \defcounter {refsection}{0}\relax
-\contentsline {paragraph}{\nonumberline Cut-Off Frequency}{77}{section*.110}
+\contentsline {paragraph}{\nonumberline Cut-Off Frequency}{77}{section*.111}
 \defcounter {refsection}{0}\relax
 \contentsline {chapter}{\numberline {6}Statistical Approach to Drop Formation}{86}{chapter.6}
 \defcounter {refsection}{0}\relax
@@ -86,4 +88,4 @@
 \defcounter {refsection}{0}\relax
 \etoc@startlocaltoc {8}
 \defcounter {refsection}{0}\relax
-\contentsline {chapter}{\nonumberline Bibliography}{114}{chapter*.142}
+\contentsline {chapter}{\nonumberline Bibliography}{114}{chapter*.143}

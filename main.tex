@@ -1,4 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % kaobook
 % LaTeX Template
 % Version 1.2 (4/1/2020)
@@ -39,6 +38,11 @@
 \usepackage[english]{babel} % Load characters and hyphenation
 \usepackage[english=british]{csquotes} % English quotes
 
+% frontpage 
+\usepackage{ae,aecompl}
+\usepackage{eso-pic}
+\usepackage{array}
+
 % Load packages for testing
 \usepackage{blindtext}
 \usepackage{lscape}
@@ -67,33 +71,56 @@
 
 %----------------------------------------------------------------------------------------
 
+\input{Pagedegarde}
+
+\author{Sagar \textsc{Pal}}
+\title{Investigation of complex liquid-gas interfacial flows}
+\subtitle{A numerical study using advanced Volume-of-Fluid methods}
+\ED{ \'{E}cole doctorale n$^\circ$ 391 : Sciences m\'{e}canique, acoustique, \'{e}lectronique et robotique de Paris (SMAER)}
+\doctorat{Doctorat Sorbonne}
+\specialite{M\'{e}canique}
+\directeur{St\'{e}phane \textsc{Zaleski}}
+\encadrant{Daniel \textsc{Fuster}}
+\date{29 septembre 2020}
+\jurya{M. Jean-Luc Estivalezes}{Ma\^{i}tre de Recherche, ONERA}{Rapporteur}
+\juryb{Mme. Lydia Bourouiba}{Associate Professor, MIT}{Rapporteur}
+\juryc{M. Heinz Pitsch}{Professor, RWTH Aachen}{Examinateur}
+\juryd{M. St\'{e}phane Popinet}{Directeur de Recherche, CNRS}{Examinateur}
+\ecole{Sorbonne Universit\'{e}}
+\adresse{
+	\textbf{Institut Jean le Rond $\partial$ 'Alembert} \\
+	UMR CNRS 7190, Campus Pierre et Marie Curie, Paris , France
+}
+
 \begin{document}
+\pagedegarde
 
 %----------------------------------------------------------------------------------------
 %	BOOK INFORMATION
 %----------------------------------------------------------------------------------------
 
-\titlehead{PhD Thesis}
-%\subject{Use this document as a template}
-
-\title[]{Investigation of complex liquid-gas interfacial flows}
-
-\subtitle{A numerical study using \\ advanced Volume-of-Fluid methods}
-
-\author[]{Sagar Pal}
-
-\date{\today}
-
-\publishers{Institut Jean le Rond $\partial$'Alembert \\ Sorbonne Universit\'e}
+%\titlehead{PhD Thesis}
+%%\subject{Use this document as a template}
+%
+%\title[]{Investigation of complex liquid-gas interfacial flows}
+%
+%\subtitle{A numerical study using \\ advanced Volume-of-Fluid methods}
+%
+%\author[]{Sagar Pal}
+%
+%\date{\today}
+%
+%\publishers{Institut Jean le Rond $\partial$'Alembert \\ Sorbonne Universit\'e}
 
 %----------------------------------------------------------------------------------------
 
 \frontmatter % Denotes the start of the pre-document content, uses roman numerals
 
+
 %----------------------------------------------------------------------------------------
 %	OPENING PAGE
 %----------------------------------------------------------------------------------------
-
+%
 %\makeatletter
 %\extratitle{
 %	% In the title page, the title is vspaced by 9.5\baselineskip
@@ -105,40 +132,23 @@
 %	\end{center}
 %}
 %\makeatother
-
+%
 %----------------------------------------------------------------------------------------
 %	COPYRIGHT PAGE
 %----------------------------------------------------------------------------------------
 
-\makeatletter
-\uppertitleback{\@titlehead} % Header
-
-%\lowertitleback{
-%	\textbf{Disclaimer}\\
-%	You can edit this page to suit your needs. For instance, here we have a no copyright statement, a colophon and some other information. This page is based on the corresponding page of Ken Arroyo Ohori's thesis, with minimal changes.
-%	
-%	\medskip
-%	
-%	\textbf{No copyright}\\
-%	\cczero\ This book is released into the public domain using the CC0 code. To the extent possible under law, I waive all copyright and related or neighbouring rights to this work.
-%	
-%	To view a copy of the CC0 code, visit: \\\url{http://creativecommons.org/publicdomain/zero/1.0/}
-%	
-%	\medskip
-%	
-%	\textbf{Colophon} \\
-%	This document was typeset with the help of \href{https://sourceforge.net/projects/koma-script/}{\KOMAScript} and \href{https://www.latex-project.org/}{\LaTeX} using the \href{https://github.com/fmarotta/kaobook/}{kaobook} class.
-%	
-%	The source code of this book is available at:\\\url{https://github.com/fmarotta/kaobook}
-%	
-%	(You are welcome to contribute!)
-%	
-%	\medskip
-%	
-%	\textbf{Publisher} \\
-%	First printed in May 2019 by \@publishers
+%\extratitle{
+%	% In the title page, the title is vspaced by 9.5\baselineskip
+%	\vspace*{9\baselineskip}
+%	\vspace*{\parskip}
+%	\begin{center}
+%		% In the title page, \huge is set after the komafont for title
+%		\usekomafont{title}\huge Acknowledgement \\ 
+%	\end{center}
 %}
-%\makeatother
+%
+%\blindtext
+
 %
 %----------------------------------------------------------------------------------------
 %	DEDICATION
@@ -158,14 +168,14 @@
 % If twoside=false, \uppertitleback and \lowertitleback are not printed
 % To overcome this issue, we set twoside=semi just before printing the title pages, and set it back to false just after the title pages
 \KOMAoptions{twoside=semi}
-\maketitle
+%\maketitle
 \KOMAoptions{twoside=false}
 
 %----------------------------------------------------------------------------------------
 %	PREFACE
 %----------------------------------------------------------------------------------------
 
-%\input{chapters/preface.tex}
+\input{chapters/preface.tex}
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS & LIST OF FIGURES/TABLES
