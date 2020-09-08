@@ -1,0 +1,35 @@
+%\thispagestyle{empty}
+\clearpage
+  \begin{landscape}
+      \begin{table}[p]
+      	\renewcommand\arraystretch{3.5}
+      	\raggedleft
+	      \caption{ }
+	      \label{table_ls}
+        \resizebox{1.0\textwidth}{!}{%
+	  \begin{tabular}[t]{ >{\bfseries\raggedright}m{0.20\linewidth} >{\raggedright}m{0.16\linewidth}  >{\raggedright}m{0.16\linewidth} >{\raggedright}m{0.16\linewidth} >{\raggedright}m{0.16\linewidth} >{\raggedright\arraybackslash}m{0.16\linewidth} }
+      	  	\toprule
+		  & Raessi \& Pitsch \newline (CAF 2012)& Ghods \& Herrmann \newline (Physica Scripta 2013) & Vaudor et al. \newline (CAF 2017)
+		  & Nangia et al. \newline (JCP 2019) & Zuzio et al. \newline (JCP 2020) \\
+      	  	\midrule
+
+		  Basic Configuration & 2D Cartesian, \newline staggered & 3D hexahedral unstructured, \newline collocated & 3D Cartesian, \newline staggered & 3D Cartesian \newline staggered & 3D Cartesian \newline staggered \\ 
+
+		  Interface Representation & Level Set & Level Set & Coupled Level Set-VOF & Level Set & Coupled Level Set-VOF \\
+
+		  Flux Computation & Level Set derived, semi-Lagrangian & Level Set derived , Eulerian & split, geometric, Eulerian & algebraic Cubic Upwind, Eulerian & split, geometric, Eulerian \\
+
+		  Surface Tension & Ghost-Fluid Method & Continuum Surface-Force & Ghost-Fluid Method, well-balanced & Continuum Surface-Force, well-balanced & Ghost-Fluid Method \\
+      	  	
+		  Curvature Estimation & Level Set based & Level Set based & Level Set based & Level Set based & Level Set based \\
+
+                 Viscous Stresses & implicit, harmonic averaging & explicit, arithmetic averaging & semi-implicit, harmonic averaging & explicit, arithmetic averaging & explicit, arithmetic averaging \\ 
+		  
+		  Pressure-Poisson Solver & preconditioned multigrid, Krylov subspace & not specified & preconditioned multigrid, Conjugate Gradient & preconditioned GMRES, Krylov subspace & preconditioned multigrid, Conjugate Gradient \\
+
+
+      	  	\bottomrule
+	  \end{tabular}}
+      \end{table}
+  \end{landscape}	
+

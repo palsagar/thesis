@@ -22,6 +22,7 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
+\pdfobjcompresslevel 0
 
 \documentclass[
 	fontsize=10pt, % Base font size
@@ -184,7 +185,7 @@
 \begingroup % Local scope for the following commands
 
 % Define the style for the TOC, LOF, and LOT
-%\setstretch{1} % Uncomment to modify line spacing in the ToC
+\setstretch{1} % Uncomment to modify line spacing in the ToC
 %\hypersetup{linkcolor=blue} % Uncomment to set the colour of links in the ToC
 \setlength{\textheight}{23cm} % Manually adjust the height of the ToC pages
 
@@ -194,13 +195,13 @@
 
 \tableofcontents % Output the table of contents
 
-%\listoffigures % Output the list of figures
+\listoffigures % Output the list of figures
 
 % Comment both of the following lines to have the LOF and the LOT on different pages
 \let\cleardoublepage\bigskip
 \let\clearpage\bigskip
 
-%\listoftables % Output the list of tables
+\listoftables % Output the list of tables
 
 \endgroup
 

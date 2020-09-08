@@ -1,0 +1,34 @@
+%\thispagestyle{empty}
+\clearpage
+  \begin{landscape}
+      \begin{table}[p]
+      	\renewcommand\arraystretch{3.5}
+      	\raggedleft
+	      \caption{ }
+	      \label{table_vof}
+	  \resizebox{1.0\textwidth}{!}{%
+	  \begin{tabular}[t]{ >{\bfseries\raggedright}m{0.15\linewidth} >{\raggedright}m{0.15\linewidth}  >{\raggedright}m{0.15\linewidth}  >{\raggedright}m{0.15\linewidth} >{\raggedright}m{0.15\linewidth} >{\raggedright}m{0.15\linewidth} >{\raggedright\arraybackslash}m{0.15\linewidth} }
+      	  	\toprule
+		  & Rudman \newline(IJNMF 1998) &  Bussmann et al. \newline (ASME 2002) & LeChenadec \& Pitsch \newline (JCP 2013) & Owkes \& Desjardins \newline (JCP 2017) & Patel \& Natarajan \newline (JCP 2017) & Present Method(s) \\
+      	  	\midrule
+		  
+		  Basic Configuration & 2D Cartesian, \newline staggered & 3D hexahedral unstructured, \newline collocated & 3D Cartesian, \newline staggered & 3D Cartesian, \newline staggered & 3D polygonal unstructured, \newline staggered & 3D Cartesian \newline staggered \\ 
+
+		  Interface Representation & VOF, Piecewise Linear & VOF, Piecewise Linear & VOF, Piecewise Linear & VOF, Piecewise Linear & VOF, none & VOF, Piecewise Linear \\
+
+		  Flux Computation & split, algebraic Flux Corrected Transport, Eulerian  & unsplit, geometric, Eulerian & unsplit, geometric, semi-Lagrangian & unsplit, geometric, semi-Lagrangian & algebraic Cubic Upwind, Eulerian & split, geometric, Eulerian \\
+
+		  Surface Tension & Continuum Surface-Force & not specified & Ghost-Fluid Method, well-balanced & Continuum Surface-Force, well-balanced & Continuum Surface-Force, well-balanced & Continuum Surface-Force, well-balanced \\
+      	  	
+		  Curvature Estimation & VOF convolution (smoothed) & not specified & VOF convolution (smoothed) & hybrid mesh-decoupled height functions & VOF convolution (smoothed) & hybrid height functions and curve fitting \\
+
+                 Viscous Stresses & explicit, harmonic averaging & not specified & explicit, harmonic averaging & not specified & explicit, harmonic averaging & explicit, arithmetic averaging \\ 
+		  
+		  Pressure-Poisson Solver & preconditioned multigrid, Gauss-Seidel & not specified & not specified & not specified & preconditioned GMRES, Krylov subspace & preconditioned multigrid, Gauss-Seidel \\
+
+
+      	  	\bottomrule
+	  \end{tabular}}
+      \end{table}
+  \end{landscape}	
+

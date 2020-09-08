@@ -1,0 +1,2 @@
+simulations numériques directes, Volume de Fluide, fort contraste de densité, schémas numériques consistants en masse et quantité de mouvement, 
+description statistique des tailles de gouttes, rupture capillaire des ligaments liquides.  
