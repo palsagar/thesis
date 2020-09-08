@@ -9,5 +9,4 @@ Ce manuscrit présente des études numériques réalisées à l'aide de reconstr
 Deux aspects différents des flux aux interfaces liquide-gaz avec fort contraste de densité sont abordés. 
 La première partie cherche à comprendre, et éventuellement à supprimer, certains types d'instabilités qui affectent les modèles numériques standards 
 en raison de la croissance en cascade des erreurs de discrétisation, qui sont endémiques à toute résolution numérique faible ou modérée. 
-Dans un second temps, ces travaux portent sur une description statistique de la taille des gouttes obtenues. 
-Ces gouttes sont alors générées en réalisant de nombreuses simulations numériques directes à haute résolution de la rupture capillaire de ligaments de courbure aléatoire.
+Enfin, la deuxième partie de l'étude est consacrée à une description statistique des tailles de gouttes, lorsque ces dernières sont produites dans de grands ensembles statistiques de simulations numériques directes de la rupture capillaire des ligaments liquides perturbés par des corrugations aléatoires.
