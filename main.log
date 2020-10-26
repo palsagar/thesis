@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  9 SEP 2020 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  26 OCT 2020 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7566,11 +7566,11 @@ Underfull \hbox (badness 1137) in paragraph at lines 394--394
 zpllf/m/n/8 (+20) per-turbed
  []
 
-<plots/drop_stats/amp_dist_compare.pdf, id=3265, 722.7pt x 578.16pt>
-File: plots/drop_stats/amp_dist_compare.pdf Graphic file (type pdf)
-<use plots/drop_stats/amp_dist_compare.pdf>
-Package pdftex.def Info: plots/drop_stats/amp_dist_compare.pdf  used on input l
-ine 404.
+<plots/drop_stats/amp_dist_compare_new.pdf, id=3265, 722.7pt x 578.16pt>
+File: plots/drop_stats/amp_dist_compare_new.pdf Graphic file (type pdf)
+<use plots/drop_stats/amp_dist_compare_new.pdf>
+Package pdftex.def Info: plots/drop_stats/amp_dist_compare_new.pdf  used on inp
+ut line 404.
 (pdftex.def)             Requested size: 468.3379pt x 374.67033pt.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -7605,7 +7605,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 
 \openout5 = `main.mw'.
 
-[97 <./plots/drop_stats/amp_dist_compare.pdf>] (./main.mw)
+[97 <./plots/drop_stats/amp_dist_compare_new.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -7649,7 +7649,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 451--451
 
 \openout5 = `main.mw'.
 
-<plots/drop_stats/window.pdf, id=3328, 237.9767pt x 184.96382pt>
+<plots/drop_stats/window.pdf, id=3355, 237.9767pt x 184.96382pt>
 File: plots/drop_stats/window.pdf Graphic file (type pdf)
 <use plots/drop_stats/window.pdf>
 Package pdftex.def Info: plots/drop_stats/window.pdf  used on input line 461.
@@ -7666,7 +7666,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
  <./plots/drop_stats/window.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/determine_fit_linear.pdf, id=3349, 368.66643pt x 631.65117pt>
+<plots/drop_stats/determine_fit_linear.pdf, id=3376, 368.66643pt x 631.65117pt>
 
 File: plots/drop_stats/determine_fit_linear.pdf Graphic file (type pdf)
 <use plots/drop_stats/determine_fit_linear.pdf>
@@ -7683,7 +7683,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 525--525
 []$
  []
 
-<plots/drop_stats/linear_tail_fit_uncertainty_no.pdf, id=3352, 578.16pt x 433.6
+<plots/drop_stats/linear_tail_fit_uncertainty_no.pdf, id=3379, 578.16pt x 433.6
 2pt>
 File: plots/drop_stats/linear_tail_fit_uncertainty_no.pdf Graphic file (type pd
 f)
@@ -7691,7 +7691,7 @@ f)
 Package pdftex.def Info: plots/drop_stats/linear_tail_fit_uncertainty_no.pdf  u
 sed on input line 534.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf, id=3353, 578.16pt x 
+<plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf, id=3380, 578.16pt x 
 433.62pt>
 File: plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf Graphic file (ty
 pe pdf)
@@ -7730,7 +7730,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 546--546
 []$
  []
 
-<plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf, id=3355, 578.16pt x 433.
+<plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf, id=3382, 578.16pt x 433.
 62pt>
 File: plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf Graphic file (type p
 df)
@@ -7738,7 +7738,7 @@ df)
 Package pdftex.def Info: plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf  
 used on input line 554.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf, id=3356, 578.16pt x
+<plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf, id=3383, 578.16pt x
  433.62pt>
 File: plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf Graphic file (t
 ype pdf)
@@ -7751,7 +7751,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 566--566
 []$
  []
 
-<plots/drop_stats/determine_fit_log.pdf, id=3358, 368.66643pt x 631.65117pt>
+<plots/drop_stats/determine_fit_log.pdf, id=3385, 368.66643pt x 631.65117pt>
 File: plots/drop_stats/determine_fit_log.pdf Graphic file (type pdf)
 <use plots/drop_stats/determine_fit_log.pdf>
 Package pdftex.def Info: plots/drop_stats/determine_fit_log.pdf  used on input 
@@ -7767,14 +7767,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 592--592
 []$
  []
 
-<plots/drop_stats/log_tail_fit_uncertainty_no.pdf, id=3361, 578.16pt x 433.62pt
+<plots/drop_stats/log_tail_fit_uncertainty_no.pdf, id=3388, 578.16pt x 433.62pt
 >
 File: plots/drop_stats/log_tail_fit_uncertainty_no.pdf Graphic file (type pdf)
 <use plots/drop_stats/log_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/log_tail_fit_uncertainty_no.pdf  used
  on input line 600.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf, id=3362, 578.16pt x 433
+<plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf, id=3389, 578.16pt x 433
 .62pt>
 File: plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf Graphic file (type 
 pdf)
@@ -7813,7 +7813,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 612--612
 []$
  []
 
-<plots/drop_stats/log_tail_fit_uncertainty_yes.pdf, id=3364, 578.16pt x 433.62p
+<plots/drop_stats/log_tail_fit_uncertainty_yes.pdf, id=3391, 578.16pt x 433.62p
 t>
 File: plots/drop_stats/log_tail_fit_uncertainty_yes.pdf Graphic file (type pdf)
 
@@ -7821,7 +7821,7 @@ File: plots/drop_stats/log_tail_fit_uncertainty_yes.pdf Graphic file (type pdf)
 Package pdftex.def Info: plots/drop_stats/log_tail_fit_uncertainty_yes.pdf  use
 d on input line 621.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf, id=3365, 578.16pt x 43
+<plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf, id=3392, 578.16pt x 43
 3.62pt>
 File: plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf Graphic file (type
  pdf)
@@ -7986,7 +7986,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [109] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/d6_scaling_compare.pdf, id=3700, 722.7pt x 578.16pt>
+<plots/drop_stats/d6_scaling_compare.pdf, id=3727, 722.7pt x 578.16pt>
 File: plots/drop_stats/d6_scaling_compare.pdf Graphic file (type pdf)
 <use plots/drop_stats/d6_scaling_compare.pdf>
 Package pdftex.def Info: plots/drop_stats/d6_scaling_compare.pdf  used on input
@@ -9407,7 +9407,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  59767 strings out of 494847
- 1118096 string characters out of 6179080
+ 1118116 string characters out of 6179080
  2093408 words of memory out of 5000000
  60749 multiletter control sequences out of 15000+600000
  722278 words of font info for 382 fonts, out of 8000000 for 9000
@@ -9443,9 +9443,9 @@ are/texlive/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/newpx/zplx-regular.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (137 pages, 18831632 bytes).
+Output written on main.pdf (137 pages, 18830592 bytes).
 PDF statistics:
- 4290 PDF objects out of 4296 (max. 8388607)
+ 4317 PDF objects out of 5155 (max. 8388607)
  671 named destinations out of 1000 (max. 500000)
  43715 words of extra memory for PDF output out of 51595 (max. 10000000)
 
