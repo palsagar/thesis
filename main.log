@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  26 OCT 2020 17:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.24)  27 OCT 2020 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6673,7 +6673,7 @@ Package marginnote Info: Margin note 84.1 is on absolute page 84
 Package marginnote Info: right page because not two side mode on input line 3.
 Package marginnote Info: xpos seems to be 70.56284pt,
 (marginnote)             \marginnoterightadjust ignored on input line 3.
-<plots/ligament_breakup/lig_mar_vill_pof04.png, id=2317, 960.58875pt x 694.595p
+<plots/ligament_breakup/lig_mar_vill_pof04.png, id=2318, 960.58875pt x 694.595p
 t>
 File: plots/ligament_breakup/lig_mar_vill_pof04.png Graphic file (type png)
 <use plots/ligament_breakup/lig_mar_vill_pof04.png>
@@ -6833,7 +6833,7 @@ Package marginnote Info: xpos seems to be 146.37569pt,
 
 \openout5 = `main.mw'.
 
-<plots/ligament_breakup/lig_protoblobs.png, id=2345, 593.21625pt x 116.435pt>
+<plots/ligament_breakup/lig_protoblobs.png, id=2346, 593.21625pt x 116.435pt>
 File: plots/ligament_breakup/lig_protoblobs.png Graphic file (type png)
 <use plots/ligament_breakup/lig_protoblobs.png>
 Package pdftex.def Info: plots/ligament_breakup/lig_protoblobs.png  used on inp
@@ -6843,7 +6843,7 @@ ut line 101.
 
 \openout5 = `main.mw'.
 
-<plots/ligament_breakup/lig_sheet_hole.png, id=2348, 283.0575pt x 440.64626pt>
+<plots/ligament_breakup/lig_sheet_hole.png, id=2349, 283.0575pt x 440.64626pt>
 File: plots/ligament_breakup/lig_sheet_hole.png Graphic file (type png)
 <use plots/ligament_breakup/lig_sheet_hole.png>
 Package pdftex.def Info: plots/ligament_breakup/lig_sheet_hole.png  used on inp
@@ -6886,7 +6886,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 _sheet_hole.png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/ligament_breakup/octree.png, id=2369, 737.75626pt x 277.035pt>
+<plots/ligament_breakup/octree.png, id=2370, 737.75626pt x 277.035pt>
 File: plots/ligament_breakup/octree.png Graphic file (type png)
 <use plots/ligament_breakup/octree.png>
 Package pdftex.def Info: plots/ligament_breakup/octree.png  used on input line 
@@ -6904,7 +6904,7 @@ Package pdftex.def Info: plots/ligament_breakup/octree.png  used on input line
 
 \openout5 = `main.mw'.
 
-<plots/ligament_breakup/multi_scale.png, id=2373, 421.575pt x 437.635pt>
+<plots/ligament_breakup/multi_scale.png, id=2374, 421.575pt x 437.635pt>
 File: plots/ligament_breakup/multi_scale.png Graphic file (type png)
 <use plots/ligament_breakup/multi_scale.png>
 Package pdftex.def Info: plots/ligament_breakup/multi_scale.png  used on input 
@@ -6957,7 +6957,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 .png>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/ligament_breakup/schematic.pdf, id=2396, 323.2868pt x 327.9361pt>
+<plots/ligament_breakup/schematic.pdf, id=2397, 323.2868pt x 327.9361pt>
 File: plots/ligament_breakup/schematic.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/schematic.pdf>
 Package pdftex.def Info: plots/ligament_breakup/schematic.pdf  used on input li
@@ -7013,7 +7013,7 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [70 <./plots/ligament_breakup/schematic.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/ligament_breakup/profile.pdf, id=2420, 433.62pt x 216.81pt>
+<plots/ligament_breakup/profile.pdf, id=2421, 433.62pt x 216.81pt>
 File: plots/ligament_breakup/profile.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/profile.pdf>
 Package pdftex.def Info: plots/ligament_breakup/profile.pdf  used on input line
@@ -7045,20 +7045,12 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 
 \openout5 = `main.mw'.
 
-Package marginnote Info: Margin note 89.2 is on absolute page 89
-(marginnote)              on input line 450.
-Package marginnote Info: right page because not two side mode on input line 450
+Package marginnote Info: Margin note 89.2 is on absolute page 90
+(marginnote)              on input line 453.
+Package marginnote Info: right page because not two side mode on input line 453
 .
 Package marginnote Info: xpos seems to be 70.56284pt,
-(marginnote)             \marginnoterightadjust ignored on input line 450.
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
-\openout5 = `main.mw'.
-
+(marginnote)             \marginnoterightadjust ignored on input line 453.
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -7073,11 +7065,19 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [72] (./main.mw)
 \openout5 = `main.mw'.
 
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
+\openout5 = `main.mw'.
+
 <plots/ligament_breakup/wave_quant.pdf, id=2468, 310.98471pt x 171.50485pt>
 File: plots/ligament_breakup/wave_quant.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/wave_quant.pdf>
 Package pdftex.def Info: plots/ligament_breakup/wave_quant.pdf  used on input l
-ine 462.
+ine 465.
 (pdftex.def)             Requested size: 304.45923pt x 167.90611pt.
 \openout5 = `main.mw'.
 
@@ -7096,11 +7096,11 @@ ine 462.
 \openout5 = `main.mw'.
 
 Package marginnote Info: Margin note 90.1 is on absolute page 90
-(marginnote)              on input line 496.
-Package marginnote Info: right page because not two side mode on input line 496
+(marginnote)              on input line 499.
+Package marginnote Info: right page because not two side mode on input line 499
 .
 Package marginnote Info: xpos seems to be 129.1843pt,
-(marginnote)             \marginnoterightadjust ignored on input line 496.
+(marginnote)             \marginnoterightadjust ignored on input line 499.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
@@ -7111,17 +7111,17 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [73 <./plots/ligament_breakup/wave_quant.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/ligament_breakup/lig_mesh.pdf, id=2499, 47.42125pt x 142.26378pt>
+<plots/ligament_breakup/lig_mesh.pdf, id=2500, 47.42125pt x 142.26378pt>
 File: plots/ligament_breakup/lig_mesh.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/lig_mesh.pdf>
 Package pdftex.def Info: plots/ligament_breakup/lig_mesh.pdf  used on input lin
-e 534.
+e 537.
 (pdftex.def)             Requested size: 140.60052pt x 421.80185pt.
-<plots/ligament_breakup/drop_removal.pdf, id=2501, 102.99599pt x 142.26378pt>
+<plots/ligament_breakup/drop_removal.pdf, id=2502, 102.99599pt x 142.26378pt>
 File: plots/ligament_breakup/drop_removal.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/drop_removal.pdf>
 Package pdftex.def Info: plots/ligament_breakup/drop_removal.pdf  used on input
- line 577.
+ line 580.
 (pdftex.def)             Requested size: 140.57085pt x 194.1643pt.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -7134,17 +7134,17 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 \openout5 = `main.mw'.
 
 Package marginnote Info: Margin note 92.1 is on absolute page 93
-(marginnote)              on input line 679.
-Package marginnote Info: right page because not two side mode on input line 679
+(marginnote)              on input line 682.
+Package marginnote Info: right page because not two side mode on input line 682
 .
 Package marginnote Info: xpos seems to be 136.16292pt,
-(marginnote)             \marginnoterightadjust ignored on input line 679.
+(marginnote)             \marginnoterightadjust ignored on input line 682.
 Package marginnote Info: Margin note 92.2 is on absolute page 93
-(marginnote)              on input line 698.
-Package marginnote Info: right page because not two side mode on input line 698
+(marginnote)              on input line 701.
+Package marginnote Info: right page because not two side mode on input line 701
 .
 Package marginnote Info: xpos seems to be 70.56284pt,
-(marginnote)             \marginnoterightadjust ignored on input line 698.
+(marginnote)             \marginnoterightadjust ignored on input line 701.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [][][] 
@@ -7165,85 +7165,85 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [76] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/ligament_breakup/resolution_compare.pdf, id=2543, 375.41696pt x 542.8785
+<plots/ligament_breakup/resolution_compare.pdf, id=2544, 375.41696pt x 542.8785
 9pt>
 File: plots/ligament_breakup/resolution_compare.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/resolution_compare.pdf>
 Package pdftex.def Info: plots/ligament_breakup/resolution_compare.pdf  used on
- input line 779.
+ input line 782.
 (pdftex.def)             Requested size: 468.34203pt x 677.25461pt.
 
 
-LaTeX Warning: Float too large for page by 62.97029pt on input line 795.
+LaTeX Warning: Float too large for page by 62.97029pt on input line 798.
 
-<plots/ligament_breakup/3d_vs_2d_short_new.pdf, id=2544, 375.41696pt x 542.8785
+<plots/ligament_breakup/3d_vs_2d_short_new.pdf, id=2545, 375.41696pt x 542.8785
 9pt>
 File: plots/ligament_breakup/3d_vs_2d_short_new.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/3d_vs_2d_short_new.pdf>
 Package pdftex.def Info: plots/ligament_breakup/3d_vs_2d_short_new.pdf  used on
- input line 799.
+ input line 802.
 (pdftex.def)             Requested size: 468.34203pt x 677.25461pt.
 
-LaTeX Warning: Float too large for page by 53.47029pt on input line 812.
+LaTeX Warning: Float too large for page by 53.47029pt on input line 815.
 
-<plots/ligament_breakup/3d_vs_2d_long_new.pdf, id=2546, 375.41696pt x 542.87859
+<plots/ligament_breakup/3d_vs_2d_long_new.pdf, id=2547, 375.41696pt x 542.87859
 pt>
 File: plots/ligament_breakup/3d_vs_2d_long_new.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/3d_vs_2d_long_new.pdf>
 Package pdftex.def Info: plots/ligament_breakup/3d_vs_2d_long_new.pdf  used on 
-input line 816.
+input line 819.
 (pdftex.def)             Requested size: 468.34203pt x 677.25461pt.
 
-LaTeX Warning: Float too large for page by 53.47029pt on input line 829.
+LaTeX Warning: Float too large for page by 53.47029pt on input line 832.
 
-<plots/ligament_breakup/amplitude_compare.pdf, id=2548, 375.43298pt x 542.87865
+<plots/ligament_breakup/amplitude_compare.pdf, id=2549, 375.43298pt x 542.87865
 pt>
 File: plots/ligament_breakup/amplitude_compare.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/amplitude_compare.pdf>
 Package pdftex.def Info: plots/ligament_breakup/amplitude_compare.pdf  used on 
-input line 833.
+input line 836.
 (pdftex.def)             Requested size: 468.36201pt x 677.25468pt.
 
-LaTeX Warning: Float too large for page by 53.47037pt on input line 848.
+LaTeX Warning: Float too large for page by 53.47037pt on input line 851.
 
-<plots/ligament_breakup/amp_compare_long.pdf, id=2549, 375.41696pt x 542.87859p
+<plots/ligament_breakup/amp_compare_long.pdf, id=2550, 375.41696pt x 542.87859p
 t>
 File: plots/ligament_breakup/amp_compare_long.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/amp_compare_long.pdf>
 Package pdftex.def Info: plots/ligament_breakup/amp_compare_long.pdf  used on i
-nput line 852.
+nput line 855.
 (pdftex.def)             Requested size: 468.34203pt x 677.25461pt.
 
-LaTeX Warning: Float too large for page by 53.47029pt on input line 867.
+LaTeX Warning: Float too large for page by 53.47029pt on input line 870.
 
-<plots/ligament_breakup/ohnesorge_compare.pdf, id=2550, 375.43298pt x 542.87865
+<plots/ligament_breakup/ohnesorge_compare.pdf, id=2551, 375.43298pt x 542.87865
 pt>
 File: plots/ligament_breakup/ohnesorge_compare.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/ohnesorge_compare.pdf>
 Package pdftex.def Info: plots/ligament_breakup/ohnesorge_compare.pdf  used on 
-input line 871.
+input line 874.
 (pdftex.def)             Requested size: 468.36201pt x 677.25468pt.
 
-LaTeX Warning: Float too large for page by 62.97037pt on input line 888.
+LaTeX Warning: Float too large for page by 62.97037pt on input line 891.
 
-<plots/ligament_breakup/aspect_compare.pdf, id=2551, 375.41696pt x 542.87859pt>
+<plots/ligament_breakup/aspect_compare.pdf, id=2552, 375.41696pt x 542.87859pt>
 
 File: plots/ligament_breakup/aspect_compare.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/aspect_compare.pdf>
 Package pdftex.def Info: plots/ligament_breakup/aspect_compare.pdf  used on inp
-ut line 892.
+ut line 895.
 (pdftex.def)             Requested size: 468.34203pt x 677.25461pt.
 
-LaTeX Warning: Float too large for page by 53.47029pt on input line 907.
+LaTeX Warning: Float too large for page by 53.47029pt on input line 910.
 
-<plots/ligament_breakup/wave_compare.pdf, id=2552, 375.43298pt x 542.87865pt>
+<plots/ligament_breakup/wave_compare.pdf, id=2553, 375.43298pt x 542.87865pt>
 File: plots/ligament_breakup/wave_compare.pdf Graphic file (type pdf)
 <use plots/ligament_breakup/wave_compare.pdf>
 Package pdftex.def Info: plots/ligament_breakup/wave_compare.pdf  used on input
- line 911.
+ line 914.
 (pdftex.def)             Requested size: 468.36201pt x 677.25468pt.
 
-LaTeX Warning: Float too large for page by 60.94888pt on input line 927.
+LaTeX Warning: Float too large for page by 60.94888pt on input line 930.
 
 ) (./chapters/dropstat.tex
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -7360,7 +7360,7 @@ Package marginnote Info: xpos seems to be 70.56284pt,
 
 \openout5 = `main.mw'.
 
-<plots/drop_stats/diameter_compute.pdf, id=2949, 59.27658pt x 142.66888pt>
+<plots/drop_stats/diameter_compute.pdf, id=2950, 59.27658pt x 142.66888pt>
 File: plots/drop_stats/diameter_compute.pdf Graphic file (type pdf)
 <use plots/drop_stats/diameter_compute.pdf>
 Package pdftex.def Info: plots/drop_stats/diameter_compute.pdf  used on input l
@@ -7380,19 +7380,19 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [87 <./plots/drop_stats/diameter_compute.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/short_time_diameter_bins.pdf, id=2975, 867.24pt x 867.24pt>
+<plots/drop_stats/short_time_diameter_bins.pdf, id=2976, 867.24pt x 867.24pt>
 File: plots/drop_stats/short_time_diameter_bins.pdf Graphic file (type pdf)
 <use plots/drop_stats/short_time_diameter_bins.pdf>
 Package pdftex.def Info: plots/drop_stats/short_time_diameter_bins.pdf  used on
  input line 160.
 (pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
-<plots/drop_stats/long_time_diameter_bins.pdf, id=2976, 867.24pt x 867.24pt>
+<plots/drop_stats/long_time_diameter_bins.pdf, id=2977, 867.24pt x 867.24pt>
 File: plots/drop_stats/long_time_diameter_bins.pdf Graphic file (type pdf)
 <use plots/drop_stats/long_time_diameter_bins.pdf>
 Package pdftex.def Info: plots/drop_stats/long_time_diameter_bins.pdf  used on 
 input line 178.
 (pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
-<plots/drop_stats/long_time_diameter_fits.pdf, id=2977, 433.62pt x 289.08pt>
+<plots/drop_stats/long_time_diameter_fits.pdf, id=2978, 433.62pt x 289.08pt>
 File: plots/drop_stats/long_time_diameter_fits.pdf Graphic file (type pdf)
 <use plots/drop_stats/long_time_diameter_fits.pdf>
 Package pdftex.def Info: plots/drop_stats/long_time_diameter_fits.pdf  used on 
@@ -7426,7 +7426,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--203
 []$\T1/zpllf/m/n/8 (+20) .
  []
 
-<plots/drop_stats/long_time_volume_fits.pdf, id=2978, 433.62pt x 289.08pt>
+<plots/drop_stats/long_time_volume_fits.pdf, id=2979, 433.62pt x 289.08pt>
 File: plots/drop_stats/long_time_volume_fits.pdf Graphic file (type pdf)
 <use plots/drop_stats/long_time_volume_fits.pdf>
 Package pdftex.def Info: plots/drop_stats/long_time_volume_fits.pdf  used on in
@@ -7447,13 +7447,13 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [88] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/short_time_volume_bins.pdf, id=2990, 867.24pt x 867.24pt>
+<plots/drop_stats/short_time_volume_bins.pdf, id=2991, 867.24pt x 867.24pt>
 File: plots/drop_stats/short_time_volume_bins.pdf Graphic file (type pdf)
 <use plots/drop_stats/short_time_volume_bins.pdf>
 Package pdftex.def Info: plots/drop_stats/short_time_volume_bins.pdf  used on i
 nput line 261.
 (pdftex.def)             Requested size: 468.34233pt x 468.34233pt.
-<plots/drop_stats/long_time_volume_bins.pdf, id=2991, 867.24pt x 867.24pt>
+<plots/drop_stats/long_time_volume_bins.pdf, id=2992, 867.24pt x 867.24pt>
 File: plots/drop_stats/long_time_volume_bins.pdf Graphic file (type pdf)
 <use plots/drop_stats/long_time_volume_bins.pdf>
 Package pdftex.def Info: plots/drop_stats/long_time_volume_bins.pdf  used on in
@@ -7524,11 +7524,11 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [94 <./plots/drop_stats/long_time_volume_bins.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/amp_long_compare.pdf, id=3255, 109.14478pt x 247.53897pt>
+<plots/drop_stats/amp_long_compare.pdf, id=3256, 109.14478pt x 247.53897pt>
 File: plots/drop_stats/amp_long_compare.pdf Graphic file (type pdf)
 <use plots/drop_stats/amp_long_compare.pdf>
 Package pdftex.def Info: plots/drop_stats/amp_long_compare.pdf  used on input l
-ine 307.
+ine 309.
 (pdftex.def)             Requested size: 140.56084pt x 318.79022pt.
 \openout5 = `main.mw'.
 
@@ -7538,39 +7538,39 @@ ine 307.
 
 \openout5 = `main.mw'.
 
-<plots/drop_stats/small_amp.pdf, id=3263, 385.81142pt x 287.37285pt>
+<plots/drop_stats/small_amp.pdf, id=3264, 385.81142pt x 287.37285pt>
 File: plots/drop_stats/small_amp.pdf Graphic file (type pdf)
 <use plots/drop_stats/small_amp.pdf>
-Package pdftex.def Info: plots/drop_stats/small_amp.pdf  used on input line 376
+Package pdftex.def Info: plots/drop_stats/small_amp.pdf  used on input line 378
 .
 (pdftex.def)             Requested size: 304.46388pt x 226.78087pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--382
+Underfull \hbox (badness 10000) in paragraph at lines 384--384
 []$\T1/zpllf/m/n/8 (+20) ,
  []
 
-<plots/drop_stats/large_amp.pdf, id=3264, 385.81142pt x 287.37285pt>
+<plots/drop_stats/large_amp.pdf, id=3265, 385.81142pt x 287.37285pt>
 File: plots/drop_stats/large_amp.pdf Graphic file (type pdf)
 <use plots/drop_stats/large_amp.pdf>
-Package pdftex.def Info: plots/drop_stats/large_amp.pdf  used on input line 388
+Package pdftex.def Info: plots/drop_stats/large_amp.pdf  used on input line 390
 .
 (pdftex.def)             Requested size: 304.46388pt x 226.78087pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--394
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
 []$\T1/zpllf/m/n/8 (+20) ,
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 394--394
+Underfull \hbox (badness 1137) in paragraph at lines 396--396
 \T1/zpllf/m/n/8 (+20) thus con-sist-ing of \T1/zpllf/m/it/8 (+20) strongly \T1/
 zpllf/m/n/8 (+20) per-turbed
  []
 
-<plots/drop_stats/amp_dist_compare_new.pdf, id=3265, 722.7pt x 578.16pt>
+<plots/drop_stats/amp_dist_compare_new.pdf, id=3266, 722.7pt x 578.16pt>
 File: plots/drop_stats/amp_dist_compare_new.pdf Graphic file (type pdf)
 <use plots/drop_stats/amp_dist_compare_new.pdf>
 Package pdftex.def Info: plots/drop_stats/amp_dist_compare_new.pdf  used on inp
-ut line 404.
+ut line 406.
 (pdftex.def)             Requested size: 468.3379pt x 374.67033pt.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -7613,11 +7613,11 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 \openout5 = `main.mw'.
 
 Package marginnote Info: Margin note 115.1 is on absolute page 115
-(marginnote)              on input line 451.
-Package marginnote Info: right page because not two side mode on input line 451
+(marginnote)              on input line 453.
+Package marginnote Info: right page because not two side mode on input line 453
 .
 Package marginnote Info: xpos seems to be 228.79681pt,
-(marginnote)             \marginnoterightadjust ignored on input line 451.
+(marginnote)             \marginnoterightadjust ignored on input line 453.
 \openout5 = `main.mw'.
 
 \openout5 = `main.mw'.
@@ -7635,13 +7635,13 @@ Package marginnote Info: xpos seems to be 228.79681pt,
 \openout5 = `main.mw'.
 
 
-Overfull \hbox (10.70872pt too wide) in paragraph at lines 451--451
+Overfull \hbox (10.70872pt too wide) in paragraph at lines 453--453
 []| \T1/zpllf/m/n/8 (-20) [[][][]124[][]]: []Moré ([]1978), []`   The Levenberg
 -Marquardt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--451
+Underfull \hbox (badness 10000) in paragraph at lines 453--453
 
  []
 
@@ -7649,10 +7649,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 451--451
 
 \openout5 = `main.mw'.
 
-<plots/drop_stats/window.pdf, id=3355, 237.9767pt x 184.96382pt>
+<plots/drop_stats/window.pdf, id=3356, 237.9767pt x 184.96382pt>
 File: plots/drop_stats/window.pdf Graphic file (type pdf)
 <use plots/drop_stats/window.pdf>
-Package pdftex.def Info: plots/drop_stats/window.pdf  used on input line 461.
+Package pdftex.def Info: plots/drop_stats/window.pdf  used on input line 463.
 (pdftex.def)             Requested size: 140.55754pt x 109.24623pt.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -7666,171 +7666,171 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
  <./plots/drop_stats/window.pdf>] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/determine_fit_linear.pdf, id=3376, 368.66643pt x 631.65117pt>
+<plots/drop_stats/determine_fit_linear.pdf, id=3377, 368.66643pt x 631.65117pt>
 
 File: plots/drop_stats/determine_fit_linear.pdf Graphic file (type pdf)
 <use plots/drop_stats/determine_fit_linear.pdf>
 Package pdftex.def Info: plots/drop_stats/determine_fit_linear.pdf  used on inp
-ut line 510.
+ut line 512.
 (pdftex.def)             Requested size: 304.45169pt x 521.62947pt.
 
-Underfull \hbox (badness 1354) in paragraph at lines 525--525
+Underfull \hbox (badness 1354) in paragraph at lines 527--527
 \T1/zpllf/m/n/8 (+20) stan-dard de-vi-a-tion of the pa-ram-e-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--525
+Underfull \hbox (badness 10000) in paragraph at lines 527--527
 []$
  []
 
-<plots/drop_stats/linear_tail_fit_uncertainty_no.pdf, id=3379, 578.16pt x 433.6
+<plots/drop_stats/linear_tail_fit_uncertainty_no.pdf, id=3380, 578.16pt x 433.6
 2pt>
 File: plots/drop_stats/linear_tail_fit_uncertainty_no.pdf Graphic file (type pd
 f)
 <use plots/drop_stats/linear_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_tail_fit_uncertainty_no.pdf  u
-sed on input line 534.
+sed on input line 536.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf, id=3380, 578.16pt x 
+<plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf, id=3381, 578.16pt x 
 433.62pt>
 File: plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf Graphic file (ty
 pe pdf)
 <use plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_zoom_tail_fit_uncertainty_no.p
-df  used on input line 535.
+df  used on input line 537.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
 
-Underfull \hbox (badness 2922) in paragraph at lines 546--546
+Underfull \hbox (badness 2922) in paragraph at lines 548--548
 \T1/zpllf/m/n/8 (+20) set that cor-re-sponds to the low-est
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 546--546
+Underfull \hbox (badness 1371) in paragraph at lines 548--548
 \T1/zpllf/m/n/8 (+20) stan-dard de-vi-a-tion in the pa-ram-e-ter
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 546--546
+Underfull \hbox (badness 1019) in paragraph at lines 548--548
 \T1/zpllf/m/n/8 (+20) es-ti-mate. The un-cer-tainty in the bin
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 546--546
+Underfull \hbox (badness 3118) in paragraph at lines 548--548
 \T1/zpllf/m/n/8 (+20) duct-ing the least-squares pro-ce-dure.
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 546--546
+Underfull \hbox (badness 1675) in paragraph at lines 548--548
 \T1/zpllf/m/n/8 (+20) en-sem-ble is char-ac-ter-ized by $\U/npxmia/m/it/8 ^^H[]
  \LMS/npxsy/m/n/8 ^^Q
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--546
+Underfull \hbox (badness 10000) in paragraph at lines 548--548
 []$
  []
 
-<plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf, id=3382, 578.16pt x 433.
+<plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf, id=3383, 578.16pt x 433.
 62pt>
 File: plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf Graphic file (type p
 df)
 <use plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_tail_fit_uncertainty_yes.pdf  
-used on input line 554.
+used on input line 556.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf, id=3383, 578.16pt x
+<plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf, id=3384, 578.16pt x
  433.62pt>
 File: plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf Graphic file (t
 ype pdf)
 <use plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/linear_zoom_tail_fit_uncertainty_yes.
-pdf  used on input line 555.
+pdf  used on input line 557.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 566--566
+Underfull \hbox (badness 10000) in paragraph at lines 568--568
 []$
  []
 
-<plots/drop_stats/determine_fit_log.pdf, id=3385, 368.66643pt x 631.65117pt>
+<plots/drop_stats/determine_fit_log.pdf, id=3386, 368.66643pt x 631.65117pt>
 File: plots/drop_stats/determine_fit_log.pdf Graphic file (type pdf)
 <use plots/drop_stats/determine_fit_log.pdf>
 Package pdftex.def Info: plots/drop_stats/determine_fit_log.pdf  used on input 
-line 577.
+line 579.
 (pdftex.def)             Requested size: 304.45169pt x 521.62947pt.
 
-Underfull \hbox (badness 1354) in paragraph at lines 592--592
+Underfull \hbox (badness 1354) in paragraph at lines 594--594
 \T1/zpllf/m/n/8 (+20) stan-dard de-vi-a-tion of the pa-ram-e-ter
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--592
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
 []$
  []
 
-<plots/drop_stats/log_tail_fit_uncertainty_no.pdf, id=3388, 578.16pt x 433.62pt
+<plots/drop_stats/log_tail_fit_uncertainty_no.pdf, id=3389, 578.16pt x 433.62pt
 >
 File: plots/drop_stats/log_tail_fit_uncertainty_no.pdf Graphic file (type pdf)
 <use plots/drop_stats/log_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/log_tail_fit_uncertainty_no.pdf  used
- on input line 600.
+ on input line 602.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf, id=3389, 578.16pt x 433
+<plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf, id=3390, 578.16pt x 433
 .62pt>
 File: plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf Graphic file (type 
 pdf)
 <use plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf>
 Package pdftex.def Info: plots/drop_stats/log_zoom_tail_fit_uncertainty_no.pdf 
- used on input line 601.
+ used on input line 603.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
 
-Underfull \hbox (badness 2922) in paragraph at lines 612--612
+Underfull \hbox (badness 2922) in paragraph at lines 614--614
 \T1/zpllf/m/n/8 (+20) set that cor-re-sponds to the low-est
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 612--612
+Underfull \hbox (badness 1371) in paragraph at lines 614--614
 \T1/zpllf/m/n/8 (+20) stan-dard de-vi-a-tion in the pa-ram-e-ter
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 612--612
+Underfull \hbox (badness 1019) in paragraph at lines 614--614
 \T1/zpllf/m/n/8 (+20) es-ti-mate. The un-cer-tainty in the bin
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 612--612
+Underfull \hbox (badness 3118) in paragraph at lines 614--614
 \T1/zpllf/m/n/8 (+20) duct-ing the least-squares pro-ce-dure.
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 612--612
+Underfull \hbox (badness 1675) in paragraph at lines 614--614
 \T1/zpllf/m/n/8 (+20) en-sem-ble is char-ac-ter-ized by $\U/npxmia/m/it/8 ^^H[]
  \LMS/npxsy/m/n/8 ^^Q
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--612
+Underfull \hbox (badness 10000) in paragraph at lines 614--614
 []$
  []
 
-<plots/drop_stats/log_tail_fit_uncertainty_yes.pdf, id=3391, 578.16pt x 433.62p
+<plots/drop_stats/log_tail_fit_uncertainty_yes.pdf, id=3392, 578.16pt x 433.62p
 t>
 File: plots/drop_stats/log_tail_fit_uncertainty_yes.pdf Graphic file (type pdf)
 
 <use plots/drop_stats/log_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/log_tail_fit_uncertainty_yes.pdf  use
-d on input line 621.
+d on input line 623.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
-<plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf, id=3392, 578.16pt x 43
+<plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf, id=3393, 578.16pt x 43
 3.62pt>
 File: plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf Graphic file (type
  pdf)
 <use plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf>
 Package pdftex.def Info: plots/drop_stats/log_zoom_tail_fit_uncertainty_yes.pdf
-  used on input line 622.
+  used on input line 624.
 (pdftex.def)             Requested size: 304.43839pt x 228.3288pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 633--633
+Underfull \hbox (badness 10000) in paragraph at lines 635--635
 []$
  []
 
@@ -7986,11 +7986,11 @@ Overfull \hbox (156.52655pt too wide) has occurred while \output is active
 [109] (./main.mw)
 \openout5 = `main.mw'.
 
-<plots/drop_stats/d6_scaling_compare.pdf, id=3727, 722.7pt x 578.16pt>
+<plots/drop_stats/d6_scaling_compare.pdf, id=3728, 722.7pt x 578.16pt>
 File: plots/drop_stats/d6_scaling_compare.pdf Graphic file (type pdf)
 <use plots/drop_stats/d6_scaling_compare.pdf>
 Package pdftex.def Info: plots/drop_stats/d6_scaling_compare.pdf  used on input
- line 913.
+ line 915.
 (pdftex.def)             Requested size: 468.3379pt x 374.67033pt.
 
 Overfull \hbox (156.52655pt too wide) has occurred while \output is active
@@ -9406,9 +9406,9 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59767 strings out of 494847
- 1118116 string characters out of 6179080
- 2093408 words of memory out of 5000000
+ 59768 strings out of 494847
+ 1118128 string characters out of 6179080
+ 2093341 words of memory out of 5000000
  60749 multiletter control sequences out of 15000+600000
  722278 words of font info for 382 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -9443,9 +9443,9 @@ are/texlive/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/newpx/zplri.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/newpx/zplx-regular.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (137 pages, 18830592 bytes).
+Output written on main.pdf (137 pages, 18831988 bytes).
 PDF statistics:
- 4317 PDF objects out of 5155 (max. 8388607)
- 671 named destinations out of 1000 (max. 500000)
+ 4318 PDF objects out of 5155 (max. 8388607)
+ 672 named destinations out of 1000 (max. 500000)
  43715 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -575,12 +575,19 @@ near constant acceleration for very small times once the simulation are started.
 The temporal variation in the droplet velocity is fitted to a 
 linear polynomial in order to evaluate the droplet acceleration 
 by means of a standard least-squares approach, for each droplet resolution. 
-The observed accelerations (insets of figures \ref{drop_vel_caf} and \ref{drop_vel_jcp})
+The observed accelerations 
+\sidenote{The accelerations correspond to the finest droplet resolution 
+($D/\Delta x = 64$) in figures \ref{drop_vel_caf} and \ref{drop_vel_jcp} 
+for the \textbf{MSHIFT} and \textbf{MSUB} methods respectively. 
+}
 for the \textbf{MSHIFT} and \textbf{MSUB} methods are 
 $\frac{\textrm{d}U}{\textrm{d}t} \simeq 5.8 \pm 0.1$ $m/s^2$
 and $\frac{\textrm{d}U}{\textrm{d}t} \simeq 4.5 \pm 0.4$ $m/s^2$
 respectively, the error estimates being obtained from the difference
-between the $D/h = 2^5$ and the $D/h = 2^6$ resolutions.
+between the $D/\Delta x = 2^5$ and the $D/\Delta x = 2^6$ resolutions.
+The disparity between the two methods concerning the acceleration of the 
+droplet center of mass is approximately $20\%$, the exact cause of 
+this discrepancy is yet to be ascertained. 
 The decrease of the error, obtained as above from the
 difference between succesive resolutions using the \textbf{MSHIFT} method 
 is plotted on Fig. \ref{mass_conv} (d), which shows the lack of any apparent 
